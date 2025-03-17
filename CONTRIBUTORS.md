@@ -300,6 +300,11 @@
       <b><a href="https://github.com/AN1MATEK" style="color: #ffa500;">AN1MATEK</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/12488767?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="cynicalgeek">
+      <br>
+      <b><a href="https://github.com/cynicalgeek" style="color: #ffa500;">cynicalgeek</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/12660469?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="bobokun">
       <br>
       <b><a href="https://github.com/bobokun" style="color: #ffa500;">bobokun</a></b>
@@ -324,7 +329,7 @@
       <br>
       <b><a href="https://github.com/Qstick" style="color: #ffa500;">Qstick</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/107214609?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="qsuicide">
       <br>
       <b><a href="https://github.com/qsuicide" style="color: #ffa500;">qsuicide</a></b>
@@ -349,7 +354,7 @@
       <br>
       <b><a href="https://github.com/ehippy" style="color: #ffa500;">ehippy</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/65756895?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="patrick-5546">
       <br>
       <b><a href="https://github.com/patrick-5546" style="color: #ffa500;">patrick-5546</a></b>
@@ -358,16 +363,6 @@
       <img src="https://avatars.githubusercontent.com/u/119024055?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="OneRadRedDad">
       <br>
       <b><a href="https://github.com/OneRadRedDad" style="color: #ffa500;">OneRadRedDad</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/15257926?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="2fst4u">
-      <br>
-      <b><a href="https://github.com/2fst4u" style="color: #ffa500;">2fst4u</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/12488767?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="cynicalgeek">
-      <br>
-      <b><a href="https://github.com/cynicalgeek" style="color: #ffa500;">cynicalgeek</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/7321764?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="f0e">
@@ -379,10 +374,15 @@
       <br>
       <b><a href="https://github.com/garypiner" style="color: #ffa500;">garypiner</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/6664588?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="TESTPERSONAL">
       <br>
       <b><a href="https://github.com/TESTPERSONAL" style="color: #ffa500;">TESTPERSONAL</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/3870233?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="jetuser">
+      <br>
+      <b><a href="https://github.com/jetuser" style="color: #ffa500;">jetuser</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/23060984?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="lundwall">
@@ -430,6 +430,11 @@
       <b><a href="https://github.com/zenodotus280" style="color: #ffa500;">zenodotus280</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/15257926?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="2fst4u">
+      <br>
+      <b><a href="https://github.com/2fst4u" style="color: #ffa500;">2fst4u</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/31081056?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="adapowers">
       <br>
       <b><a href="https://github.com/adapowers" style="color: #ffa500;">adapowers</a></b>
@@ -449,7 +454,7 @@
       <br>
       <b><a href="https://github.com/BernCarney" style="color: #ffa500;">BernCarney</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/19196374?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Brandoskey">
       <br>
       <b><a href="https://github.com/Brandoskey" style="color: #ffa500;">Brandoskey</a></b>
@@ -474,7 +479,7 @@
       <br>
       <b><a href="https://github.com/ColinHebert" style="color: #ffa500;">ColinHebert</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/8067383?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="dako98">
       <br>
       <b><a href="https://github.com/dako98" style="color: #ffa500;">dako98</a></b>
@@ -499,7 +504,7 @@
       <br>
       <b><a href="https://github.com/BlackDark" style="color: #ffa500;">BlackDark</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/9016208?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Seros">
       <br>
       <b><a href="https://github.com/Seros" style="color: #ffa500;">Seros</a></b>
@@ -524,7 +529,7 @@
       <br>
       <b><a href="https://github.com/jalmansor" style="color: #ffa500;">jalmansor</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/23200350?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="jwoodhouse">
       <br>
       <b><a href="https://github.com/jwoodhouse" style="color: #ffa500;">jwoodhouse</a></b>
@@ -549,7 +554,7 @@
       <br>
       <b><a href="https://github.com/maximuskowalski" style="color: #ffa500;">maximuskowalski</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/48334675?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="nmcc1212">
       <br>
       <b><a href="https://github.com/nmcc1212" style="color: #ffa500;">nmcc1212</a></b>
