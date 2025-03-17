@@ -12,7 +12,6 @@
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "Bluray-576p", "allowed": false },
-    { "name": "HDTV-720p", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
     {

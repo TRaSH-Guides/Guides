@@ -34,14 +34,14 @@
     {
       "name": "WEB 480p",
       "allowed": true,
-      "items": ["WEBRip-480p", "WEBDL-480p"]
+      "items": ["WEBDL-480p", "WEBRip-480p"]
     },
     { "name": "Bluray-480p", "allowed": true },
     { "name": "Bluray-576p", "allowed": true },
     {
       "name": "WEB 720p",
       "allowed": true,
-      "items": ["WEBRip-720p", "WEBDL-720p", "HDTV-720p"]
+      "items": ["WEBDL-720p", "WEBRip-720p", "HDTV-720p"]
     },
     { "name": "Bluray-720p", "allowed": true },
     {
