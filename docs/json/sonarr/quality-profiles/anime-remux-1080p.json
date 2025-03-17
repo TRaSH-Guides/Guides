@@ -10,6 +10,10 @@
   "cutoffFormatScore": 10000,
   "minUpgradeFormatScore": 1,
   "items": [
+    { "name": "Unknown", "allowed": false },
+    { "name": "Bluray-576p", "allowed": false },
+    { "name": "HDTV-720p", "allowed": false },
+    { "name": "Raw-HD", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
     {
       "name": "WEB 2160p",
@@ -18,9 +22,6 @@
     },
     { "name": "Bluray-2160p", "allowed": false },
     { "name": "Bluray-2160p Remux", "allowed": false },
-    { "name": "Unknown", "allowed": false },
-    { "name": "Bluray-576p", "allowed": false },
-    { "name": "Raw-HD", "allowed": false },
     { "name": "SDTV", "allowed": true },
     { "name": "DVD", "allowed": true },
     {

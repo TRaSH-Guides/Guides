@@ -12,6 +12,13 @@
   "language": "Original",
   "items": [
     { "name": "Unknown", "allowed": false },
+    { "name": "WORKPRINT", "allowed": false },
+    { "name": "CAM", "allowed": false },
+    { "name": "TELESYNC", "allowed": false },
+    { "name": "TELECINE", "allowed": false },
+    { "name": "REGIONAL", "allowed": false },
+    { "name": "DVDSCR", "allowed": false },
+    { "name": "DVD-R", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
     {
       "name": "WEB 2160p",
@@ -20,6 +27,7 @@
     },
     { "name": "Bluray-2160p", "allowed": false },
     { "name": "Remux-2160p", "allowed": false },
+    { "name": "BR-DISK", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
     { "name": "SDTV", "allowed": true },
     { "name": "DVD", "allowed": true },
