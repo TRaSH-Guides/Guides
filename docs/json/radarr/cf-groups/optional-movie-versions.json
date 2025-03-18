@@ -43,5 +43,10 @@
       "trash_id": "9f6cbff8cfe4ebbc1bde14c7b7bec0de",
       "required": false
     }
-  ]
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38"
+    }
+  }
 }
