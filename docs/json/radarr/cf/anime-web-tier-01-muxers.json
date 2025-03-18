@@ -48,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Baws)\\b"
+        "value": "\\b(Baws|McBalls)\\b"
       }
     },
     {
