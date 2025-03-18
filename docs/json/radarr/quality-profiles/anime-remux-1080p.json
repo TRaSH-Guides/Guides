@@ -50,7 +50,7 @@
       "items": ["WEBDL-1080p", "WEBRip-1080p", "HDTV-1080p"]
     },
     {
-      "name": "Remux-1080p",
+      "name": "Remux 1080p",
       "allowed": true,
       "items": ["Bluray-1080p", "Remux-1080p"]
     }
