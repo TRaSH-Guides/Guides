@@ -268,6 +268,15 @@
       }
     },
     {
+      "name": "McBalls",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(McBalls)\\b"
+      }
+    },
+    {
       "name": "Metal",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
