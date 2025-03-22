@@ -265,7 +265,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FMD)\\b"
+        "value": "^(FMD)$"
       }
     },
     {
