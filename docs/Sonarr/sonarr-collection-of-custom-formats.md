@@ -3489,7 +3489,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    Language Specification Original + French
+    {! include-markdown "../../includes/cf-descriptions/language-original-plus-french.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
