@@ -80,6 +80,15 @@
       }
     },
     {
+      "name": "FMD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FMD)$"
+      }
+    },
+    {
       "name": "GHOSTS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
