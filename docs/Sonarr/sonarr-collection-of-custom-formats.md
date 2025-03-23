@@ -809,7 +809,7 @@ We've made 3 guides related to this.
 
 ??? question "LQ (Release Title)- [Click to show/hide]"
 
-    ! include-markdown "../../includes/cf-descriptions/lq-release-title
+    {! include-markdown "../../includes/cf-descriptions/lq-release-title !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2543,7 +2543,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    ! include-markdown "../../includes/cf-descriptions/anime-bd-tier-07-p2pscene
+    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-07-p2pscene !}
 
 ??? example "JSON - [Click to show/hide]"
 
