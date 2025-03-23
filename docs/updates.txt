@@ -1,3 +1,13 @@
+# 2025-03-23 00:25
+- [feat(starr): Add RlsGrp `FMD` to `LQ`](https://github.com/TRaSH-Guides/Guides/pull/2338)
+- [fix(guide-sync): corrected duplicate trash_id with two groups](https://github.com/TRaSH-Guides/Guides/pull/2337)
+- [feat(starr-anime): match McBalls for Baws](https://github.com/TRaSH-Guides/Guides/pull/2332)
+- [fix(guide-sync): cutoff name for the anime profiles](https://github.com/TRaSH-Guides/Guides/pull/2334)
+- [fix(guide-sync): Add group exclusion for the anime profiles](https://github.com/TRaSH-Guides/Guides/pull/2333)
+- [fix(guide-sync): Add missing quality sources for the new  Anime profiles take 2](https://github.com/TRaSH-Guides/Guides/pull/2331)
+- [fix(guide-sync): Add missing quality sources for the new  Anime profiles](https://github.com/TRaSH-Guides/Guides/pull/2330)
+- [feat(guide-sync): Add Anime profiles for sonarr and radarr](https://github.com/TRaSH-Guides/Guides/pull/2267)
+
 # 2025-03-16 00:25
 - [feat(guide-sync): Add Season Pack to Sonarr Profile Groups](https://github.com/TRaSH-Guides/Guides/pull/2319)
 - [feat(misc): Simplified How Setup TorGuard for port forwarding instructions ](https://github.com/TRaSH-Guides/Guides/pull/2327)
