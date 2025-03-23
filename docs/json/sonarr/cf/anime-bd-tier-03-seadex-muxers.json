@@ -124,6 +124,15 @@
       }
     },
     {
+      "name": "Flugel",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Flugel)\\b"
+      }
+    },
+    {
       "name": "Galator",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
