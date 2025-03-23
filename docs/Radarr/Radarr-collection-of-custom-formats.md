@@ -3102,9 +3102,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 01 - [Click to show/hide]"
 
-    - WIP
-    - Groups that are known to be active and only doing Anime
-    - Groups whose releases are at least comparable to SeaDex recommended.
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3120,9 +3118,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 02 - [Click to show/hide]"
 
-    - WIP
-    - Groups that are known to be active and only doing Anime, but with few releases per year.
-    - Groups that are known to be active and doing Anime AND other types of releases.
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-02.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3138,10 +3134,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 03 - [Click to show/hide]"
 
-    - WIP
-    - Groups with no or little activity that have at some point made an interesting release which is either the only one available (in VOSTFR/MULTi) or still top of its category.
-    - Groups that haven't released much or are not well recognized. (yet)
-    - Groups doing only anime that have retired (or no longer exist) and may not have the best quality by today's standards.
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-03.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3157,7 +3150,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime FanSub - [Click to show/hide]"
 
-    Known good groups that only do FanSub in good quality.
+    {! include-markdown "../../includes/cf-descriptions/french-anime-fansub.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3487,7 +3480,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    Language Specification Original + French
+    {! include-markdown "../../includes/cf-descriptions/language-original-plus-french.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
