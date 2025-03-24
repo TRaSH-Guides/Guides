@@ -9,7 +9,7 @@ jobs:
   update-fork:
     runs-on: ubuntu-latest
     steps:
-      - uses: Shurtu-gal/autoupdate-fork-action@v1
+      - uses: Shurtu-gal/autoupdate-fork-action
         with:
           github_token: ${{ secrets.BOT_TOKEN }}
           pr_filter: labelled
