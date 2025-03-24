@@ -3,6 +3,7 @@ on:
   schedule:
     # Runs at 12:00am UTC every day
     - cron: '30 5 * * *'
+  workflow_dispatch:
 
 jobs:
   update-fork:
