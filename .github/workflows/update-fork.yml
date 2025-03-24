@@ -1,0 +1,17 @@
+name: Update Fork
+on:
+  schedule:
+    # Runs at 12:00am UTC every day
+    - cron: '30 5 * * *'
+
+jobs:
+  update-fork:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Shurtu-gal/autoupdate-fork-action@v1
+        with:
+          github_token: ${{ secrets.BOT_TOKEN }}
+          pr_filter: labelled
+          pr_label: fork-update
+          # Only update PRs on master branch
+          base_branch: master
