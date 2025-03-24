@@ -1,0 +1,29 @@
+{
+  "trash_id": "0320ed04ceb168f6c06d92a682840750",
+  "trash_scores": {
+    "default": 10
+  },
+  "trash_description": "Language: Prefer Spanish: Add points if release is in Spanish but not Spain Spanish",
+  "name": "Language: Prefer Spanish",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Spanish (Latin America)",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 37
+      }
+    },
+    {
+      "name": "Spanish (Spain)",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    }
+  ]
+}

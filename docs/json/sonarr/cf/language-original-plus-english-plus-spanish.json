@@ -1,0 +1,55 @@
+{
+  "trash_id": "1f1415fc2f30d7ed10966114d69d6e7d",
+  "trash_scores": {
+    "default": 10
+  },
+  "name": "Language: Original + English + Spanish",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
+    {
+      "name": "English Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1
+      }
+    },
+    {
+      "name": "Spanish Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 37
+      }
+    },
+    {
+      "name": "Spanish (Spain) Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(MULTi)(\\b|\\d)"
+      }
+    }
+  ]
+}

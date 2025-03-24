@@ -1,19 +1,19 @@
 {
-  "trash_id": "359bcb1537bc3e13f94648919f9c05de",
+  "trash_id": "92495be8b4ee9b5e32d9d34ca536fd73",
   "trash_scores": {
     "default": 10
   },
-  "trash_description": "Language: Prefer English: Add points if release is in English",
-  "name": "Language: Prefer English",
+  "trash_description": "Language: Prefer Original: Add points if release is in Original language",
+  "name": "Language: Prefer Original",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "English",
+      "name": "Original Language",
       "implementation": "LanguageSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": 1
+        "value": -2
       }
     }
   ]
