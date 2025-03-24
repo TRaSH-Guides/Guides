@@ -1,0 +1,20 @@
+{
+  "trash_id": "9bc8f11675d444583ed575b0581e6ae4",
+  "trash_scores": {
+    "default": -10000
+  },
+  "trash_description": "Language: Spanish Only: Because it uses reverse scoring, and if you use the default scores, it will assign all releases without the English audio a score of -10000.",
+  "name": "Language: Not Spanish",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not Spanish Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 37
+      }
+    }
+  ]
+}
