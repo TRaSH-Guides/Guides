@@ -1,0 +1,20 @@
+{
+  "trash_id": "359bcb1537bc3e13f94648919f9c05de",
+  "trash_scores": {
+    "default": 10
+  },
+  "trash_description": "Language: Prefer English: Add points if release is in English",
+  "name": "Language: Prefer English",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "English",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    }
+  ]
+},
