@@ -3,16 +3,17 @@
 
 ??? question "Why choose this quality profile? - [Click to show/hide]"
 
-    - You run a second 'Streaming Optimized' instance of Radarr and want both versions, or you just want streaming-optimized 1080p overall.
-    - You want fewer upgrades than with SQP-1 because the WEBDL has often been watched before the BHDstudio Blu-ray is released.
-    - You want good compatibility across various playback devices without compromising release quality.
+    - You run a second "Streaming Optimized" instance of Radarr and want both versions, or you just want streaming-optimized 1080p overall.
+    - You want fewer upgrades than with SQP-1 because the WEBDL is often watched before the BHDStudio Blu-ray is released.
+    - You desire good compatibility across various playback devices without compromising release quality.
     - You want little to no transcoding for low-powered devices or remote streaming.
-    - SSmaller file sizes and bitrates. (The same quality as you would get with the official streaming services)
-    - Easier to get even without access to top-tier trackers/indexers.
+    - Smaller file sizes and bitrates ( the same quality as you would get with official streaming services).
+    - Easier to obtain even without access to top-tier trackers or indexers.
     - You prefer Dolby Digital Plus (Atmos) audio over Dolby Digital, as WEB-DLs commonly come with Dolby Digital Plus (Atmos) audio.
-    - You prefer Imax-Enhanced.
-    - You prefer included embedded subs.
-    - More cross-seed hits, as WEBDL is more spread out over the trackers.
+    - You prefer IMAX-Enhanced.
+    - You prefer included embedded subtitles.
+    - More cross-seed hits, as WEBDL is more widespread over the trackers.
+
     ---
 
     **BHDStudio release HQ 1080p Encodes with the following features:**
