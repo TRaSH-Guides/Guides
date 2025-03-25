@@ -12,6 +12,29 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 - Make sure that after the changes, you don't get any [markdownlint](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) errors
 - If the `metadata.json` and `metadata.schema.json` needs changes, announce it first in the Discord `#development` channel and ping `voidpointer` and `nitsua` so the 3rd party apps don't break :bangbang:
 
+## Index
+
+- [Branch naming](#branch-naming)
+- [Pull Request naming](#pull-request-naming)
+    - [Types](#types)
+    - [Guide categories](#guide-categories)
+- [Radarr/Sonarr Custom Format (JSON](#radarrsonarr-custom-format-json)
+    - [Release Group Reclassifications, Removals, or Additions](#release-group-reclassifications-removals-or-additions)
+    - [General Guidelines](#general-guidelines)
+    - [JSON File Naming](#file-naming)
+    - [Hashcode](#hashcode)
+    - [Regex Test Cases](#regex-test-cases)
+    - [Scoring](#scoring)
+- [YAML file naming](#yaml-file-naming)
+- [Quality Profiles and 3rd party sync apps](#quality-profiles-and-3rd-party-sync-apps)
+    - [quality-profiles](#quality-profiles)
+    - [cf-groups](#cf-groups)
+        - [Group Specific settings](#group-specific-settings)
+        - [Group Custom Format specific settings](#group-custom-format-specific-settings)
+- [Recommendations](#recommendations)
+    - [Preview Docs Locally](#preview-docs-locally)
+    - [Preview after Pull Request](#preview-after-pull-request)
+
 ## Branch naming
 
 > [!IMPORTANT]
@@ -179,12 +202,13 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 
 ## YAML file naming
 
+- YAML file names are always written in small letters, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
+
 > [!CAUTION]
 >
 > - If a hashcode is needed **No** hashcode can exist multiple times :bangbang:
 >
 - Use [this website](https://md5.gromweb.com) to generate an md5 hash
-- YAML file names are always written in small letters, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
 
 ## Quality Profiles and 3rd party sync apps
 
@@ -326,3 +350,7 @@ changes to mkdocs:
 ```bash
 mkdocs serve
 ```
+
+### Preview after Pull Request
+
+After the Pull Request is pushed to GitHub and clears all checks, you can now get a Branch Preview URL.
