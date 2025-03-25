@@ -1,7 +1,7 @@
 {
   "name": "[SQP] Disable if one Radarr",
   "trash_id": "feee39414cb4052dbc55d8752f87e211",
-  "trash_description": "Disable this option if you plan to run only one Radarr instance.",
+  "trash_description": "Disable this option if you plan to run only one Radarr instance.<br>Please don't forget to check the guide for extra instructions!",
   "default": "true",
   "custom_formats": [
     {
