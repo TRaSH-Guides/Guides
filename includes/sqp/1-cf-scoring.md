@@ -52,7 +52,7 @@
 
 {! include-markdown "../../includes/sqp/hd-radarr-misc-optional.md" !}
 
-??? abstract "Movie Versions - [Click to show/hide]"
+??? abstract "Movie Versions (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: | ------------------------------------------------------ |

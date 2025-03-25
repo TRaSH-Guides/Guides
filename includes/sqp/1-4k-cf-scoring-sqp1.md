@@ -126,7 +126,7 @@
 
 {! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
-??? abstract "Movie Versions - [Click to show/hide]"
+??? abstract "Movie Versions (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: | ------------------------------------------------------ |
