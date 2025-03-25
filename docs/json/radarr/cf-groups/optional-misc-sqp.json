@@ -1,0 +1,98 @@
+{
+  "name": "[Optional] Miscellaneous SQP",
+  "trash_id": "c4492eebd0c2ddc14c2c91623aa7f95d",
+  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.",
+  "custom_formats": [
+    {
+      "name": "Bad Dual Groups",
+      "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "required": false
+    },
+    {
+      "name": "Black and White Editions",
+      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+      "required": false
+    },
+    {
+      "name": "DV (Disk)",
+      "trash_id": "f700d29429c023a5734505e77daeaea7",
+      "required": false
+    },
+    {
+      "name": "EVO (no WEBDL)",
+      "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
+      "required": false
+    },
+    {
+      "name": "HFR",
+      "trash_id": "973613461ac2cea99d52c4cd6e177ab82",
+      "required": false
+    },
+    {
+      "name": "Multi",
+      "trash_id": "4b900e171accbfb172729b63323ea8ca",
+      "required": false
+    },
+    {
+      "name": "No-RlsGroup",
+      "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
+      "required": false
+    },
+    {
+      "name": "Obfuscated",
+      "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
+      "required": false
+    },
+    {
+      "name": "Retags",
+      "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
+      "required": false
+    },
+    {
+      "name": "Scene",
+      "trash_id": "f537cf427b64c38c8e36298f657e4828",
+      "required": false
+    },
+    {
+      "name": "VC-1",
+      "trash_id": "11cd1db7165d6a7ad9a83bc97b8b1060",
+      "required": false
+    },
+    {
+      "name": "VP9",
+      "trash_id": "ae4cfaa9283a4f2150ac3da08e388723",
+      "required": false
+    },
+    {
+      "name": "x265",
+      "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
+      "required": false
+    },
+    {
+      "name": "x266",
+      "trash_id": "390455c22a9cac81a738f6cbad705c3c",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+      "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+      "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
+      "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
+      "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
+      "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
+      "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+      "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
+      "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
+      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+      "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+      "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+      "SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
+      "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
+      "SQP-1 WEB (2160p)": "e91c9adaca0231493f4af0d571b907f9",
+      "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38"
+    }
+  }
+}
+
