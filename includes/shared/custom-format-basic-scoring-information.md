@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-!!! info "How Does Custom Format Scoring Work?"
+??? question "How Does Custom Format Scoring Work? - [Click to show/hide]"
 
     Let’s say you have three custom formats, A, B and C. Scored as:
 

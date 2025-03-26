@@ -1,15 +1,15 @@
 {
-  "trash_id": "2cf36c1f0106ffac993be003ade51865",
-  "name": "[SQP] SQP-3",
-  "trash_score_set": "sqp-3",
-  "trash_description": "This Special Quality Profile is an advanced Quality Profile designed for a specific use case. Before using this Quality Profile please join the <a href=\"https://trash-guides.info/discord\" target=\"_blank\">TRaSH-Guide Discord</a> for more information. Open the #access-to-sqp channel and accept the three simple rules. Any questions related to the SQP should only be asked in the dedicated SQP support channels.",
-  "group": 99,
+  "trash_id": "123451ff7a86a41ee209f6ffac3d2d21c2ee5",
+  "name": "[Use brackets if it's a non english profile,sqp or anime] Profile name",
+  "trash_description": "Quality Profile that covers:<br>- SDTV, DVD<br>- HDTV 720p, 1080p<br>- WEBDL: 480p, 720, 1080p<br>- Bluray 480p, 576p, 720p, 1080p<br>- Remux 1080p",
+  "group": "https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#quality-profiles-and-3rd-party-sync-apps",
+  "trash_score_set": "use only if you need to use a non standard score set, else remove this entry",
   "upgradeAllowed": true,
-  "cutoff": "WEB|Remux|2160p",
-  "minFormatScore": 550,
+  "cutoff": "Remux-1080p",
+  "minFormatScore": 100,
   "cutoffFormatScore": 10000,
   "minUpgradeFormatScore": 1,
-  "language": "Original",
+  "language": "Original (This is only for Radarr)",
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "WORKPRINT", "allowed": false },
@@ -36,25 +36,27 @@
     },
     { "name": "Bluray-720p", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
-    { "name": "Bluray-1080p", "allowed": false },
-    { "name": "HDTV-2160p", "allowed": false },
-    { "name": "Bluray-2160p", "allowed": false },
-    { "name": "BR-DISK", "allowed": false },
-    { "name": "Raw-HD", "allowed": false },
-    { "name": "Remux-1080p", "allowed": true },
     {
-      "name": "WEB|Remux|2160p",
+      "name": "WEB 1080p",
       "allowed": true,
-      "items": [
-        "WEBDL-1080p",
-        "WEBRip-1080p",
-        "WEBDL-2160p",
-        "WEBRip-2160p",
-        "Remux-2160p"
-      ]
-    }
+      "items": ["WEBDL-1080p", "WEBRip-1080p"]
+    },
+    { "name": "Bluray-1080p", "allowed": false },
+    { "name": "Remux-1080p", "allowed": true },
+    { "name": "HDTV-2160p", "allowed": false },
+    {
+      "name": "WEB 2160p",
+      "allowed": false,
+      "items": ["WEBDL-2160p", "WEBRip-2160p"]
+    },
+    { "name": "Bluray-2160p", "allowed": false },
+    { "name": "Remux-2160p", "allowed": false },
+    { "name": "BR-DISK", "allowed": false },
+    { "name": "Raw-HD", "allowed": false }
   ],
   "formatItems": {
+    "CF name": "CF Hash",
+    "Description": "These are the base CF that the user won't be able to deselect in the groups",
     "DV HDR10Plus": "c53085ddbd027d9624b320627748612f",
     "DV HDR10": "e23edd2482476e595fb990b12e7c609c",
     "DV": "58d6a88f13e2db7f5059c41047876f00",
@@ -84,8 +86,6 @@
     "Extras": "0a3f082873eb454bde444150b70253cc",
     "Sing-Along Versions": "712d74cd88bceb883ee32f773656b1f5",
     "AV1": "cae4ca30163749b891686f95532519bd",
-    "1080p": "820b09bb9acbfde9c35c71e0e565dad8",
-    "2160p": "fb392fb0d61a010ae38e49ceaa24a1ef",
     "AMZN": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
     "ATVP": "40e9380490e748672c2522eaaeb692f7",
     "BCORE": "cc5e51a9e85a6296ceefe097a77f12f4",

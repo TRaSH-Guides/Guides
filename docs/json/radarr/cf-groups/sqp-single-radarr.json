@@ -1,0 +1,34 @@
+{
+  "name": "[SQP] Disable if one Radarr",
+  "trash_id": "feee39414cb4052dbc55d8752f87e211",
+  "trash_description": "Disable this option if you plan to run only one Radarr instance.<br>Please don't forget to check the guide for extra instructions!",
+  "default": "true",
+  "custom_formats": [
+    {
+      "name": "x264",
+      "trash_id": "2899d84dc9372de3408e6d8cc18e9666",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+      "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+      "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
+      "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
+      "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
+      "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
+      "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+      "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
+      "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
+      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+      "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+      "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+      "SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
+      "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
+      "SQP-1 WEB (2160p)": "e91c9adaca0231493f4af0d571b907f9",
+      "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38"
+    }
+  }
+}
+
