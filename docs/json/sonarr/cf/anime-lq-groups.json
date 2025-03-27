@@ -444,7 +444,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Hitoku\\]|-Hitoki\\b"
+        "value": "\\[Hitoku\\]|-Hitoku\\b"
       }
     },
     {
