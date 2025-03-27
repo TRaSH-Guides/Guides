@@ -462,7 +462,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HR)\\b"
+        "value": "\\[HR\\]|-HR\\b"
       }
     },
     {
