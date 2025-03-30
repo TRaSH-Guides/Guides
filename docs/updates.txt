@@ -1,3 +1,14 @@
+# 2025-03-30 00:26
+- [feat(starr-anime): Anime LQ Groups should only match HR as an anime group and correct Hitoku typo](https://github.com/TRaSH-Guides/Guides/pull/2349)
+- [fix(guide-sync): Added excludes to [Optional] Miscellaneous](https://github.com/TRaSH-Guides/Guides/pull/2348)
+- [feat(guide-sync): Several small updates and fixes](https://github.com/TRaSH-Guides/Guides/pull/2341)
+- [ci(pre-commit): add config](https://github.com/TRaSH-Guides/Guides/pull/2339)
+- [chore(guide): Update CONTRIBUTING.md](https://github.com/TRaSH-Guides/Guides/pull/2342)
+- [feat(starr): Add RlsGrp `tokar86a` to the `Bad Dual Groups` Custom Format](https://github.com/TRaSH-Guides/Guides/pull/2326)
+- [feat(starr-anime): Add Flugel to Anime BD Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2346)
+- [chore(sonarr): Fix markdown includes not rendering correctly for some custom formats](https://github.com/TRaSH-Guides/Guides/pull/2345)
+- [feat(guide): Centralize the last descriptions on the Custom Format Collection page](https://github.com/TRaSH-Guides/Guides/pull/2340)
+
 # 2025-03-23 00:25
 - [feat(starr): Add RlsGrp `FMD` to `LQ`](https://github.com/TRaSH-Guides/Guides/pull/2338)
 - [fix(guide-sync): corrected duplicate trash_id with two groups](https://github.com/TRaSH-Guides/Guides/pull/2337)
