@@ -1,7 +1,5 @@
 # NZBGet - Paths and Categories
 
-!!! note "NZBGet development has been picked up again by new developers over at [github](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}!"
-
 {! include-markdown "../../../includes/downloaders/path.md" !}
 
 ---
