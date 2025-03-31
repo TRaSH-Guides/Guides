@@ -48,7 +48,7 @@ Destination directory for downloaded files.
 
 Directory to store intermediate/temporary files.
 
-*If this option is set (not empty) the files are downloaded into this directory first. After successfully downloading the nzb-file (possibly after par-repair), the files are moved to the destination directory (option DestDir). If the download or unpack fails, the files remain in the intermediate directory.*
+*If this option is set (not empty) the files are downloaded into this directory first. After successfully downloading the nzb-file (possibly after par-repair), the files are moved to the destination directory (option [DestDir](#destdir)). If the download or unpack fails, the files remain in the intermediate directory.*
 
 !!! success ""
 
@@ -224,7 +224,7 @@ Unpack downloaded nzb-files.
 
 !!! success ""
 
-    **Suggested:** `Yes``.
+    **Suggested:** `Yes`.
 
 #### CategoryX.Extensions
 
@@ -273,7 +273,7 @@ Flush the download queue to disk.
     **Suggested:** `Yes`.
 
 !!! tip
-    You can disable this option if it negatively affects your system's disk performance. In that case, you should create backups of the queue directory (option QueueDir). Keep the option enabled if your system often crashes.
+    You can disable this option if it negatively affects your system's disk performance. In that case, you should create backups of the queue directory (option [QueueDir](#queuedir)). Keep the option enabled if your system often crashes.
 
 #### ContinuePartial
 
@@ -378,7 +378,7 @@ Delete the source nzb-file when it is not needed anymore.
 
 Check CRC of downloaded and decoded articles.
 
-Normally, this option should be enabled to better detect download errors and for quick par-verification (option ParQuick).
+Normally, this option should be enabled to better detect download errors and for quick par-verification (option [ParQuick](#parquick)).
 
 !!! success ""
 
@@ -396,16 +396,16 @@ Whether and how par-verification must be performed.
     **Suggested:** `Auto`.
 
 !!! info
-    - **Auto** - par-check is performed when needed. One par2-file is always downloaded. Additional par2-files are downloaded if required for repair. Repair is performed if the option ParRepair is enabled.
-    - **Always** - check every download (even undamaged). One par2-file is always downloaded. Additional par2-files are downloaded if needed for repair. Repair is performed if the option ParRepair is enabled.
-    - **Force** - force par-check for every download (even undamaged). All par2-files are always downloaded. Repair is performed if the option ParRepair is enabled.
+    - **Auto** - par-check is performed when needed. One par2-file is always downloaded. Additional par2-files are downloaded if required for repair. Repair is performed if the option [ParRepair](#parrepair) is enabled.
+    - **Always** - check every download (even undamaged). One par2-file is always downloaded. Additional par2-files are downloaded if needed for repair. Repair is performed if the option [ParRepair](#parrepair) is enabled.
+    - **Force** - force par-check for every download (even undamaged). All par2-files are always downloaded. Repair is performed if the option [ParRepair](#parrepair) is enabled.
     - **Manual** — par-check is skipped. One par2-file is always downloaded. If a damaged download is detected, all par2-files are downloaded, but neither par-check nor par-repair takes place. The download can then be repaired manually, eventually on another faster computer.
 
 #### ParRepair
 
 Automatic par-repair after par-verification.
 
-*If the option ParCheck is set to `Auto` or `Force` this option determines whether the download must be repaired when needed. The option can be disabled if a computer does not have enough CPU power since repair may consume too many resources and time on a slow computer.*
+*If the option [ParCheck](#parcheck) is set to `Auto` or `Force` this option determines whether the download must be repaired when needed. The option can be disabled if a computer does not have enough CPU power since repair may consume too many resources and time on a slow computer.*
 
 !!! success ""
 
@@ -483,7 +483,7 @@ Check for renamed RAR files.
 
 *Rar-rename restores original file names using information stored in rar-files. When enabled, the rar-rename is performed as one of the first steps of post-processing for every nzb-file.*
 
-*Rar-rename is useful for downloads that do not have par2-files or for downloads that have files renamed before creating par2-files. In both cases, par-rename (option ParRename) can't rename files, and the rar-rename makes it possible to unpack downloads that would fail otherwise.*
+*Rar-rename is useful for downloads that do not have par2-files or for downloads that have files renamed before creating par2-files. In both cases, par-rename (option [ParRename](#parrename)) can't rename files, and the rar-rename makes it possible to unpack downloads that would fail otherwise.*
 
 !!! success ""
 
@@ -493,7 +493,7 @@ Check for renamed RAR files.
 
 Directly rename files during downloading.
 
-*This is similar to par-renaming (option ParRename), but the files are renamed during downloading instead of the post-processing stage. This requires some tricky handling of files and works only for healthy downloads.*
+*This is similar to par-renaming (option [ParRename](#parrename)), but the files are renamed during downloading instead of the post-processing stage. This requires some tricky handling of files and works only for healthy downloads.*
 
 !!! success ""
 
@@ -513,7 +513,7 @@ What to do if your download health drops below critical health.
     - **Pause** - pause nzb-file.
     - **None** - Do nothing (continue download).
 
-!!! tip "For automatic duplicate handling, the option must be set to `Delete`, `Park`, or `None`. If it is set to "Pause" you will need to manually move another duplicate from history to queue. See also option DupeCheck."
+!!! tip "For automatic duplicate handling, the option must be set to `Delete`, `Park`, or `None`. If it is set to "Pause" you will need to manually move another duplicate from history to queue. See also option [DupeCheck](#dupecheck)."
 
 #### ParTimeLimit
 
@@ -571,7 +571,7 @@ Directly unpack files during downloading.
     - This option requires unpack to be enabled in general via the option Unpack.
     - For best results, activate the DirectRename and ReorderFiles options.
 
-!!! warning "`DirectUnpack` might lower your download speed, but the overall time could be faster. (Disable on low-powered devices)."
+!!! warning "[DirectUnpack](#directunpack) might lower your download speed, but the overall time could be faster. (Disable on low-powered devices)."
 
 #### UnpackPauseQueue
 
@@ -609,7 +609,7 @@ Files to ignore during unpack.
 
 !!! info "The Starr apps focus solely on media files and typically ignore all those extensions."
 
-Add these extensions (*primarily for Windows users as they could potentially be abused or exploited*) to your `UnpackIgnoreExt`.
+Add these extensions (*primarily for Windows users as they could potentially be abused or exploited*) to your [UnpackIgnoreExt](#unpackignoreext).
 
 ```none
 ade, adp, app, application, appref-ms, asp, aspx, asx, bas, bat, bgi, cab, cer, chm, cmd, cnt, com, cpl, crt, csh, der, diagcab, exe, fxp, gadget, grp, hlp, hpj, hta, htc, inf, ins, iso, isp, its, jar, jnlp, js, jse, ksh, lnk, mad, maf, mag, mam, maq, mar, mas, mat, mau, mav, maw, mcf, mda, mdb, mde, mdt, mdw, mdz, msc, msh, msh1, msh2, mshxml, msh1xml, msh2xml, msi, msp, mst, msu, ops, osd, pcd, pif, pl, plg, prf, prg, printerexport, ps1, ps1xml, ps2, ps2xml, psc1, psc2, psd1, psdm1, pst, py, pyc, pyo, pyw, pyz, pyzw, reg, scf, scr, sct, shb, shs, theme, tmp, url, vb, vbe, vbp, vbs, vhd, vhdx, vsmacros, vsw, webpnp, website, ws, wsc, wsf, wsh, xbap, xll, xnk
