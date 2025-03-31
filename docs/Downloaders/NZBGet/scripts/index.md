@@ -46,4 +46,3 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
     ```python
     [[% filter indent(width=4) %]][[% include 'Downloaders/NZBGet/scripts/replace_for/replace_for.py' %]][[% endfilter %]]
     ```
-
