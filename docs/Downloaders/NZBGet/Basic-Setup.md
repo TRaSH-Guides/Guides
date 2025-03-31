@@ -12,11 +12,13 @@
 
 ---
 
-## Paths
-
-`Settings` => `PATHS`
+## Settings
 
 We will only cover the so-called most important and common settings. For the other settings, please refer to the descriptions provided in the application.
+
+### Paths
+
+`Settings` => `PATHS`
 
 | Name         | Description                                 |
 | :----------- | :------------------------------------------ |
@@ -26,7 +28,7 @@ We will only cover the so-called most important and common settings. For the oth
 
 ![!paths](images/paths.png)
 
-### MainDir
+#### MainDir
 
 Root directory for all tasks.
 
@@ -34,7 +36,7 @@ Root directory for all tasks.
 
     **Suggested:** If you use docker this should be set to `/config`.
 
-### DestDir
+#### DestDir
 
 Destination directory for downloaded files.
 
@@ -42,7 +44,7 @@ Destination directory for downloaded files.
 
     **Suggested:** `/data/usenet`.
 
-### InterDir
+#### InterDir
 
 Directory to store intermediate/temporary files.
 
@@ -52,7 +54,7 @@ Directory to store intermediate/temporary files.
 
     **Suggested:** `/data/usenet/intermediate` or `/data/usenet/incomplete`.
 
-### NzbDir
+#### NzbDir
 
 Directory for incoming nzb-files.
 
@@ -60,7 +62,7 @@ Directory for incoming nzb-files.
 
     **Suggested:** `Default`.
 
-### QueueDir
+#### QueueDir
 
 Directory to store program state.
 
@@ -70,7 +72,7 @@ Directory to store program state.
 
     **Suggested:** `Default`.
 
-### ScriptDir
+#### ScriptDir
 
 Directory with post-processing and other scripts.
 
@@ -80,15 +82,13 @@ Directory with post-processing and other scripts.
 
 ---
 
-## News-Servers
+### News-Servers
 
 `Settings` => `NEWS-SERVERS`
 
-We will only cover the so-called most important and common settings. For the other settings, please refer to the descriptions provided in the application.
-
 ![!newsservers](images/newsservers.png)
 
-### ServerX.Active
+#### ServerX.Active
 
 Enable this news server.
 
@@ -96,7 +96,7 @@ Enable this news server.
 
     **Suggested:** `Yes`.
 
-### ServerX.Name
+#### ServerX.Name
 
 Name of your news server.
 
@@ -106,7 +106,7 @@ Name of your news server.
 
     **Suggested:** Your news server name.
 
-### ServerX.Level
+#### ServerX.Level
 
 The level (priority) of your news server.
 
@@ -114,7 +114,7 @@ The level (priority) of your news server.
 
     **Suggested:** Put your major download servers at level `0` and your fill servers at levels `1`, `2`, etc..
 
-### ServerX.Optional
+#### ServerX.Optional
 
 This is an optional non-reliable server.
 
@@ -126,7 +126,7 @@ This is an optional non-reliable server.
 
 !!! info "Only switch to `Yes` if this news server is a non-reliable server."
 
-### ServerX.Host
+#### ServerX.Host
 
 Host name of news server.
 
@@ -134,7 +134,7 @@ Host name of news server.
 
     **Suggested:** The host name of your news server.
 
-### ServerX.Encryption
+#### ServerX.Encryption
 
 Encrypted server connection (TLS/SSL).
 
@@ -144,7 +144,7 @@ Encrypted server connection (TLS/SSL).
 
     **Suggested:** `Yes`.
 
-### ServerX.Port
+#### ServerX.Port
 
 News Server port
 
@@ -155,7 +155,7 @@ News Server port
 
     **Suggested:** Any secure port that your news server offers.
 
-### ServerX.Username
+#### ServerX.Username
 
 User name to use for authentication.
 
@@ -163,7 +163,7 @@ User name to use for authentication.
 
     **Suggested:** Your news server Username is used for authentication.
 
-### ServerX.Password
+#### ServerX.Password
 
 Password to use for authentication.
 
@@ -171,7 +171,7 @@ Password to use for authentication.
 
     **Suggested:** Your news server Password that is used for authentication.
 
-### ServerX.Connections
+#### ServerX.Connections
 
 Maximum number of simultaneous connections to this server.
 
@@ -179,7 +179,7 @@ Maximum number of simultaneous connections to this server.
 
     **Suggested:** Use the lowest possible number of connections to reach your max download speed `+1` connection.
 
-### ServerX.Retention
+#### ServerX.Retention
 
 Server retention time.
 
@@ -191,15 +191,13 @@ Server retention time.
 
 ---
 
-## Categories
+### Categories
 
 `Settings` => `CATEGORIES`
 
-We will only cover the so-called most important and common settings. For the other settings, please refer to the descriptions provided in the application.
-
 ![!categories](images/categories.png)
 
-### CategoryX.Name
+#### CategoryX.Name
 
 Category name.
 
@@ -207,7 +205,7 @@ Category name.
 
     **Suggested:** This should match what you use in Sonarr/Radarr categories (`tv`, `movies`, etc).
 
-### Category1.DestDir
+#### CategoryX.DestDir
 
 Destination directory for this category.
 
@@ -220,7 +218,7 @@ Destination directory for this category.
 
 {! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
 
-### CategoryX.Unpack
+#### CategoryX.Unpack
 
 Unpack downloaded nzb-files.
 
@@ -228,7 +226,7 @@ Unpack downloaded nzb-files.
 
     **Suggested:** `Yes``.
 
-### CategoryX.Extensions
+#### CategoryX.Extensions
 
 List of extension scripts for this category.
 
@@ -238,15 +236,13 @@ List of extension scripts for this category.
 
 ---
 
-## Incoming Nzbs
+### Incoming Nzbs
 
 `Settings` => `INCOMING NZBS`
 
-We will only cover the so-called most important and common settings. For the other settings, please refer to the descriptions provided in the application.
-
 ![!incoming](images/incoming.png)
 
-### AppendCategoryDir
+#### AppendCategoryDir
 
 Create subdirectory with category-name in destination-directory.
 
@@ -254,7 +250,7 @@ Create subdirectory with category-name in destination-directory.
 
     **Suggested:** `Yes`.
 
-### DupeCheck
+#### DupeCheck
 
 Check for duplicate titles.
 
@@ -262,15 +258,13 @@ Check for duplicate titles.
 
     **Suggested:** `Yes`.
 
-### Download Queue
+#### Download Queue
 
 `Settings` => `DOWNLOAD QUEUE`
 
-We will only cover the so-called most important and common settings. For the other settings, please refer to the descriptions provided in the application.
-
 ![!queue](images/queue.png)
 
-### FlushQueue
+#### FlushQueue
 
 Flush the download queue to disk.
 
@@ -281,7 +275,7 @@ Flush the download queue to disk.
 !!! tip
     You can disable this option if it negatively affects your system's disk performance. In that case, you should create backups of the queue directory (option QueueDir). Keep the option enabled if your system often crashes.
 
-### ContinuePartial
+#### ContinuePartial
 
 Continue the download of partially downloaded files.
 
@@ -292,7 +286,7 @@ Continue the download of partially downloaded files.
 !!! tip
     Disabling this option may slightly reduce disk access and is recommended on fast connections.
 
-### ArticleCache
+#### ArticleCache
 
 Memory limit for article cache.
 
@@ -300,7 +294,7 @@ Memory limit for article cache.
 
     **Suggested:** `500`.
 
-### DirectWrite
+#### DirectWrite
 
 Write decoded articles directly into the destination output file.
 
@@ -308,7 +302,7 @@ Write decoded articles directly into the destination output file.
 
     **Suggested:** `Yes`.
 
-### WriteBuffer
+#### WriteBuffer
 
 Memory limit for per connection write buffer.
 
@@ -318,7 +312,7 @@ Memory limit for per connection write buffer.
 
 !!! warning "If you're running low on memory, avoid setting this value too high."
 
-### FileNaming
+#### FileNaming
 
 How to name downloaded files.
 
@@ -331,7 +325,7 @@ How to name downloaded files.
     - **Nzb** - use file names as defined in nzb-file.
     - **Auto** - prefer names from article metadata for obfuscated files use names from nzb-file.
 
-### RenameAfterUnpack
+#### RenameAfterUnpack
 
 Rename downloaded files after unpack.
 
@@ -341,7 +335,7 @@ Rename downloaded files after unpack.
 
     **Suggested:** `Yes`.
 
-### ReorderFiles
+#### ReorderFiles
 
 Reorder files within NZBS for optimal download order.
 
@@ -349,7 +343,7 @@ Reorder files within NZBS for optimal download order.
 
     **Suggested:** `Yes`.
 
-### PostStrategy
+#### PostStrategy
 
 Post-processing strategy.
 
@@ -364,7 +358,7 @@ Post-processing strategy.
     - **Aggressive** - Will simultaneously post-process up to three items, including one par repair task.
     - **Rocket** - Will simultaneously post-process up to six items, including one or two par repair tasks.
 
-### NzbCleanupDisk
+#### NzbCleanupDisk
 
 Delete the source nzb-file when it is not needed anymore.
 
@@ -374,15 +368,13 @@ Delete the source nzb-file when it is not needed anymore.
 
 ---
 
-## Check and Repair
+### Check and Repair
 
 `Settings` => `CHECK AND REPAIR`
 
-We will only cover the so-called most important and common settings. For the other settings, please refer to the descriptions provided in the application.
-
 ![!checkAndRepair](images/checkAndRepair.png)
 
-### CrcCheck
+#### CrcCheck
 
 Check CRC of downloaded and decoded articles.
 
@@ -395,7 +387,7 @@ Normally, this option should be enabled to better detect download errors and for
 !!! tip
     Setting this option to `No` could speed up your download and post-processing time.
 
-### ParCheck
+#### ParCheck
 
 Whether and how par-verification must be performed.
 
@@ -409,7 +401,7 @@ Whether and how par-verification must be performed.
     - **Force** - force par-check for every download (even undamaged). All par2-files are always downloaded. Repair is performed if the option ParRepair is enabled.
     - **Manual** — par-check is skipped. One par2-file is always downloaded. If a damaged download is detected, all par2-files are downloaded, but neither par-check nor par-repair takes place. The download can then be repaired manually, eventually on another faster computer.
 
-### ParRepair
+#### ParRepair
 
 Automatic par-repair after par-verification.
 
@@ -419,7 +411,7 @@ Automatic par-repair after par-verification.
 
     **Suggested:** `Yes`.
 
-### ParScan
+#### ParScan
 
 What files should be scanned during par-verification.
 
@@ -433,7 +425,7 @@ What files should be scanned during par-verification.
     - **Full** - Scan all files in the destination directory. Can be very time-consuming but may sometimes repair where Limited and Extended fail.
     - **Dupe** — Scan files belonging to the par-set first, then scan other files until repair is possible. Even files from other duplicate downloads are scanned. This can be very time-consuming but brings the best results.
 
-### ParQuick
+#### ParQuick
 
 Quick file verification during par-check.
 
@@ -445,7 +437,7 @@ Quick file verification during par-check.
 
 !!! info "If the option is disabled, the files will be verified as usual. That's slow. Use this if the quick verification doesn't work properly."
 
-### ParBuffer
+#### ParBuffer
 
 Memory limit for par-repair buffer.
 
@@ -459,7 +451,7 @@ Memory limit for par-repair buffer.
     - If you have a lot of RAM, set the option to a few hundred (MB) for the best repair performance
     - Avoid setting this value too high if you're running low on memory.
 
-### ParThreads
+#### ParThreads
 
 Number of threads to use during par-repair.
 
@@ -475,7 +467,7 @@ Number of threads to use during par-repair.
 
 !!! warning "Par2 repair can be very resource intensive, and it could slow down your system performance and even interfere with video playback"
 
-### ParRename
+#### ParRename
 
 Check for renamed and missing files using par-files.
 
@@ -485,7 +477,7 @@ Check for renamed and missing files using par-files.
 
     **Suggested:** `Yes`.
 
-### RarRename
+#### RarRename
 
 Check for renamed RAR files.
 
@@ -497,7 +489,7 @@ Check for renamed RAR files.
 
     **Suggested:** `Yes`.
 
-### DirectRename
+#### DirectRename
 
 Directly rename files during downloading.
 
@@ -507,7 +499,7 @@ Directly rename files during downloading.
 
     **Suggested:** `Yes`.
 
-### HealthCheck
+#### HealthCheck
 
 What to do if your download health drops below critical health.
 
@@ -523,7 +515,7 @@ What to do if your download health drops below critical health.
 
 !!! tip "For automatic duplicate handling, the option must be set to `Delete`, `Park`, or `None`. If it is set to "Pause" you will need to manually move another duplicate from history to queue. See also option DupeCheck."
 
-### ParTimeLimit
+#### ParTimeLimit
 
 Maximum allowed time for par-repair.
 
@@ -535,7 +527,7 @@ Maximum allowed time for par-repair.
 
 !!! info "Value `0` means unlimited."
 
-### ParPauseQueue
+#### ParPauseQueue
 
 Pause the download queue during check/repair.
 
@@ -547,11 +539,9 @@ Pause the download queue during check/repair.
 
 ---
 
-## Unpack
+### Unpack
 
 `Settings` => `UNPACK`
-
-We will only cover the so-called most important and common settings. For the other settings, please refer to the descriptions provided in the application.
 
 ![!unpack](images/unpack.png)
 
@@ -559,7 +549,7 @@ Pause the download queue during check/repair.
 
 *Enable the option to give the CPU more time for par-check/repair. That helps to speed up check/repair on slow CPUs with fast connection (e.g. NAS-devices).*
 
-### Unpack (Global)
+#### Unpack (Global)
 
 Unpack downloaded nzb-files.
 
@@ -567,7 +557,7 @@ Unpack downloaded nzb-files.
 
     **Suggested:** `Yes`.
 
-### DirectUnpack
+#### DirectUnpack
 
 Directly unpack files during downloading.
 
@@ -583,7 +573,7 @@ Directly unpack files during downloading.
 
 !!! warning "`DirectUnpack` might lower your download speed, but the overall time could be faster. (Disable on low-powered devices)."
 
-### UnpackPauseQueue
+#### UnpackPauseQueue
 
 Pause the download queue during unpack.
 
@@ -593,7 +583,7 @@ Pause the download queue during unpack.
 
     **Suggested:** `Yes`.
 
-### UnpackCleanupDisk
+#### UnpackCleanupDisk
 
 Delete archive files after successful unpacking.
 
@@ -601,21 +591,21 @@ Delete archive files after successful unpacking.
 
     **Suggested:** `Yes`.
 
-### UnrarCmd
+#### UnrarCmd
 
 Full path to unrar executable.
 
 *The option can also contain extra switches to pass to unrar.*
 
-### ExtCleanupDisk
+#### ExtCleanupDisk
 
 Files to delete after successful download.
 
-### UnpackIgnoreExt
+#### UnpackIgnoreExt
 
 Files to ignore during unpack.
 
-#### Prevent unwanted extensions
+##### Prevent unwanted extensions
 
 !!! info "The Starr apps focus solely on media files and typically ignore all those extensions."
 
@@ -629,23 +619,21 @@ ade, adp, app, application, appref-ms, asp, aspx, asx, bas, bat, bgi, cab, cer, 
 
 ---
 
-## Extension Scripts
+### Extension Scripts
 
 `Settings` => `EXTENSION SCRIPTS`
 
-We will only cover the so-called most important and common settings. For the other settings, please refer to the descriptions provided in the application.
-
 ![!extScripts](images/extScripts.png)
 
-### Extensions
+#### Extensions
 
 List of active extension scripts for new downloads.
 
-### ScriptOrder
+#### ScriptOrder
 
 Execution order for extension scripts.
 
-### ScriptPauseQueue
+#### ScriptPauseQueue
 
 Pause the download queue during the executing of the post-process script.
 
@@ -655,7 +643,7 @@ Pause the download queue during the executing of the post-process script.
 
     **Suggested:** `Yes`.
 
-### ShellOverride
+#### ShellOverride
 
 Shell overrides for script interpreters.
 
@@ -663,7 +651,7 @@ Shell overrides for script interpreters.
 
 ---
 
-## Extension Manager
+### Extension Manager
 
 `Settings` => `EXTENSION SCRIPTS`
 
