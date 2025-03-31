@@ -46,7 +46,7 @@ Destination directory for downloaded files.
 
 Directory to store intermediate/temporary files.
 
-*If this option is set (not empty) the files are downloaded into this directory first. After successful download of nzb-file (possibly after par-repair) the files are moved to destination directory (option DestDir). If download or unpack fail the files remain in intermediate directory.*
+*If this option is set (not empty) the files are downloaded into this directory first. After successfully downloading the nzb-file (possibly after par-repair), the files are moved to the destination directory (option DestDir). If the download or unpack fails, the files remain in the intermediate directory.*
 
 !!! success ""
 
@@ -64,7 +64,7 @@ Directory for incoming nzb-files.
 
 Directory to store program state.
 
-*This directory is used to save download queue, history, information about fetched RSS feeds, statistics, etc.*
+*This directory is used to save the download queue, history, information about fetched RSS feeds, statistics, etc.*
 
 !!! success ""
 
@@ -108,7 +108,7 @@ Name of your news server.
 
 ### ServerX.Level
 
-Level (priority) of your news server.
+The level (priority) of your news server.
 
 !!! success ""
 
@@ -118,7 +118,7 @@ Level (priority) of your news server.
 
 This is an optional non-reliable server.
 
-*Marking server as optional tells NZBGet to ignore this server if a connection to this server cannot be established.*
+*Marking the server as optional tells NZBGet to ignore this server if a connection to this server cannot be established.*
 
 !!! success ""
 
@@ -161,7 +161,7 @@ User name to use for authentication.
 
 !!! success ""
 
-    **Suggested:** Your news server User name that is used for authentication.
+    **Suggested:** Your news server Username is used for authentication.
 
 ### ServerX.Password
 
@@ -183,7 +183,7 @@ Maximum number of simultaneous connections to this server.
 
 Server retention time.
 
-*How long the articles are stored on the news server.*
+*How long are the articles stored on the news server.*
 
 !!! success ""
 
@@ -234,7 +234,7 @@ List of extension scripts for this category.
 
 !!! success ""
 
-    **Suggested:** Depends if you need to run an extension script.
+    **Suggested:** It depends on whether you need to run an extension script.
 
 ---
 
@@ -272,25 +272,25 @@ We will only cover the so-called most important and common settings. For the oth
 
 ### FlushQueue
 
-Flush download queue to disk.
+Flush the download queue to disk.
 
 !!! success ""
 
     **Suggested:** `Yes`.
 
 !!! tip
-    You can disable this option if it negatively affects disk performance on your system. You should create backups of queue-directory (option QueueDir) in that case. Keep the option enabled if your system often crashes.
+    You can disable this option if it negatively affects your system's disk performance. In that case, you should create backups of the queue directory (option QueueDir). Keep the option enabled if your system often crashes.
 
 ### ContinuePartial
 
-Continue download of partially downloaded files.
+Continue the download of partially downloaded files.
 
 !!! success ""
 
     **Suggested:** `Yes`.
 
 !!! tip
-    Disabling this option may slightly reduce disk access and is therefore recommended on fast connections.
+    Disabling this option may slightly reduce disk access and is recommended on fast connections.
 
 ### ArticleCache
 
@@ -302,7 +302,7 @@ Memory limit for article cache.
 
 ### DirectWrite
 
-Write decoded articles directly into destination output file.
+Write decoded articles directly into the destination output file.
 
 !!! success ""
 
@@ -327,9 +327,9 @@ How to name downloaded files.
     **Suggested:** `Auto`.
 
 !!! info
-    - `Article` - use file names stored in article metadata.
-    - `Nzb` - use file names as defined in nzb-file.
-    - `Auto` - prefer names from article metadata for obfuscated files use names from nzb-file.
+    - **Article** - use file names stored in article metadata.
+    - **Nzb** - use file names as defined in nzb-file.
+    - **Auto** - prefer names from article metadata for obfuscated files use names from nzb-file.
 
 ### RenameAfterUnpack
 
@@ -343,7 +343,7 @@ Rename downloaded files after unpack.
 
 ### ReorderFiles
 
-Reorder files within nzbs for optimal download order.
+Reorder files within NZBS for optimal download order.
 
 !!! success ""
 
@@ -353,21 +353,20 @@ Reorder files within nzbs for optimal download order.
 
 Post-processing strategy.
 
-*Computer resources are in heavy demand when post-processing with simultaneous tasks - make sure the hardware is capable.*
+*Computer resources are in heavy demand when post-processing with simultaneous tasks - ensure the hardware is capable.*
 
 !!! success ""
 
     **Suggested:** `Balanced`.
 
 !!! info
-
-    - `Balanced` - items that do not need par repair are post processed one at a time while par repair tasks may also run simultaneously one after another at the same time. This means that a post process par repair will not prevent another task from running, but at a cost of using more computer resource
-    - `Aggressive` - will simultaneously post process up to three items including one par repair task
-    - `Rocket` - will simultaneously post process up to six items including one or two par repair tasks.
+    - **Balanced** - Items that do not need par repair are post-processed one at a time, while par repair tasks may also run simultaneously one after another at the same time. This means that a post-process par repair will not prevent another task from running, but at a cost of using more computer resource
+    - **Aggressive** - Will simultaneously post-process up to three items, including one par repair task.
+    - **Rocket** - Will simultaneously post-process up to six items, including one or two par repair tasks.
 
 ### NzbCleanupDisk
 
-Delete source nzb-file when it is not needed anymore.
+Delete the source nzb-file when it is not needed anymore.
 
 !!! success ""
 
@@ -387,7 +386,7 @@ We will only cover the so-called most important and common settings. For the oth
 
 Check CRC of downloaded and decoded articles.
 
-Normally this option should be enabled for better detecting of download errors and for quick par-verification (option ParQuick).
+Normally, this option should be enabled to better detect download errors and for quick par-verification (option ParQuick).
 
 !!! success ""
 
@@ -405,16 +404,16 @@ Whether and how par-verification must be performed.
     **Suggested:** `Auto`.
 
 !!! info
-    - Auto - par-check is performed when needed. One par2-file is always downloaded. Additional par2-files are downloaded if needed for repair. Repair is performed if the option ParRepair is enabled
-    - Always - check every download (even undamaged). One par2-file is always downloaded. Additional par2-files are downloaded if needed for repair. Repair is performed if the option ParRepair is enabled
-    - Force - force par-check for every download (even undamaged). All par2-files are always downloaded. Repair is performed if the option ParRepair is enabled
-    - Manual - par-check is skipped. One par2-file is always downloaded. If a damaged download is detected, all par2-files are downloaded but neither par-check nor par-repair take place. The download can be then repaired manually, eventually on another faster computer.
+    - **Auto** - par-check is performed when needed. One par2-file is always downloaded. Additional par2-files are downloaded if required for repair. Repair is performed if the option ParRepair is enabled.
+    - **Always** - check every download (even undamaged). One par2-file is always downloaded. Additional par2-files are downloaded if needed for repair. Repair is performed if the option ParRepair is enabled.
+    - **Force** - force par-check for every download (even undamaged). All par2-files are always downloaded. Repair is performed if the option ParRepair is enabled.
+    - **Manual** — par-check is skipped. One par2-file is always downloaded. If a damaged download is detected, all par2-files are downloaded, but neither par-check nor par-repair takes place. The download can then be repaired manually, eventually on another faster computer.
 
 ### ParRepair
 
 Automatic par-repair after par-verification.
 
-*If option ParCheck is set to "Auto" or "Force" this option defines if the download must be repaired when needed. The option can be disabled if a computer does not have enough CPU power, since repairing may consume too many resources and time on a slow computer.*
+*If the option ParCheck is set to `Auto` or `Force` this option determines whether the download must be repaired when needed. The option can be disabled if a computer does not have enough CPU power since repair may consume too many resources and time on a slow computer.*
 
 !!! success ""
 
@@ -429,22 +428,22 @@ What files should be scanned during par-verification.
     **Suggested:** `Extended`.
 
 !!! info
-    - Limited - scan only files belonging to par-set
-    - Extended - scan files belonging to par-set first, scan other files until all missing files are found
-    - Full - scan all files in destination directory. Can be very time consuming but may sometimes repair where Limited and Extended fail
-    - Dupe - scan files belonging to par-set first, scan other files until repair is possible. Even files from other duplicate-downloads are scanned. Can be very time consuming but brings best results.
+    - **Limited** - Scan only files belonging to par-set.
+    - **Extended** - Scan files belonging to par-set first, then scan other files until all missing files are found.
+    - **Full** - Scan all files in the destination directory. Can be very time-consuming but may sometimes repair where Limited and Extended fail.
+    - **Dupe** — Scan files belonging to the par-set first, then scan other files until repair is possible. Even files from other duplicate downloads are scanned. This can be very time-consuming but brings the best results.
 
 ### ParQuick
 
 Quick file verification during par-check.
 
-*If the option is active the files are quickly verified using checksums calculated during download quick verification is very fast because it doesn't require the reading of files from disk, NZBGet knows checksums of downloaded files and quickly compares them with checksums stored in the par-file.*
+*If the option is active, the files are quickly verified using checksums calculated during download. Quick verification is very fast because it doesn't require reading files from disk. NZBGet knows the checksums of downloaded files and quickly compares them with those stored in the par-file.*
 
 !!! success ""
 
     **Suggested:** `Yes`.
 
-!!! info "If the option is disabled the files are verified as usual. That's slow. Use this if the quick verification doesn't work properly."
+!!! info "If the option is disabled, the files will be verified as usual. That's slow. Use this if the quick verification doesn't work properly."
 
 ### ParBuffer
 
@@ -457,21 +456,21 @@ Memory limit for par-repair buffer.
     **Suggested:** `500`.
 
 !!! tip
-    - If you have a lot of RAM set the option to few hundreds (MB) for the best repair performance
-    - If you're running low on memory, avoid setting this value too high.
+    - If you have a lot of RAM, set the option to a few hundred (MB) for the best repair performance
+    - Avoid setting this value too high if you're running low on memory.
 
 ### ParThreads
 
 Number of threads to use during par-repair.
 
-*On multi-core CPUs for the best speed set the option to the number of logical cores (physical cores + hyper-threading units). If you want to utilize the CPU to 100% you may need to add one or two additional threads to compensate for wait intervals used for thread synchronization.*
+*On multi-core CPUs for the best speed, set the option to the number of logical cores (physical cores + hyper-threading units). If you want to utilize the CPU to 100%, you may need to add one or two additional threads to compensate for wait intervals used for thread synchronization.*
 
 !!! success ""
 
     **Suggested:** Half of your logical cores are on your server, so it doesn't interfere with other processes on your server, such as video playback.
 
 !!! info
-    - On single-core CPUs use only one thread.
+    - On single-core CPUs, only one thread is used.
     - Set to `0` to automatically use all available CPU cores (may not work on old or exotic platforms).
 
 !!! warning "Par2 repair can be very resource intensive, and it could slow down your system performance and even interfere with video playback"
@@ -480,7 +479,7 @@ Number of threads to use during par-repair.
 
 Check for renamed and missing files using par-files.
 
-*Par-rename restores original file names using information stored in par2-files. It also detects missing files (files listed in par2-files but not present on disk). When enabled the par-rename is performed as the first step of post-processing for every nzb-file.*
+*Par-rename restores original file names using information stored in par2-files. It also detects missing files (files listed in par2-files but not present on disk). When enabled, the par-rename is performed as the first post-processing step for every NZB file.*
 
 !!! success ""
 
@@ -488,11 +487,11 @@ Check for renamed and missing files using par-files.
 
 ### RarRename
 
-Check for renamed rar-files.
+Check for renamed RAR files.
 
-*Rar-rename restores original file names using information stored in rar-files. When enabled the rar-rename is performed as one of the first steps of post-processing for every nzb-file.*
+*Rar-rename restores original file names using information stored in rar-files. When enabled, the rar-rename is performed as one of the first steps of post-processing for every nzb-file.*
 
-*Rar-rename is useful for downloads not having par2-files or for downloads those files were renamed before creating par2-files. In both cases par-rename (option ParRename) can't rename files and the rar-rename makes it possible to unpack downloads which would fail otherwise.*
+*Rar-rename is useful for downloads that do not have par2-files or for downloads that have files renamed before creating par2-files. In both cases, par-rename (option ParRename) can't rename files, and the rar-rename makes it possible to unpack downloads that would fail otherwise.*
 
 !!! success ""
 
@@ -502,7 +501,7 @@ Check for renamed rar-files.
 
 Directly rename files during downloading.
 
-*This is similar to par-renaming (option ParRename) but the files are renamed during downloading instead of post-processing stage. This requires some tricky handling of files and works only for healthy downloads.*
+*This is similar to par-renaming (option ParRename), but the files are renamed during downloading instead of the post-processing stage. This requires some tricky handling of files and works only for healthy downloads.*
 
 !!! success ""
 
@@ -510,25 +509,25 @@ Directly rename files during downloading.
 
 ### HealthCheck
 
-What to do if download health drops below critical health.
+What to do if your download health drops below critical health.
 
 !!! success ""
 
     **Suggested:** `Delete`.
 
 !!! info
-    - Delete - delete nzb-file from queue, also delete already downloaded files
-    - Park - move nzb-file to history, keep already downloaded files. Commands "Download remaining files" and "Retry failed articles" are available for this nzb
-    - Pause - pause nzb-file
-    - None - do nothing (continue download).
+    - **Delete** - delete nzb-file from queue, also delete already downloaded files.
+    - **Park** - move the nzb-file to history, and keep the already downloaded files. The commands "Download remaining files" and "Retry failed articles" are available for this nzb.
+    - **Pause** - pause nzb-file.
+    - **None** - Do nothing (continue download).
 
-!!! tip "For automatic duplicate handling option must be set to `Delete`, `Park` or `None`. If it is set to "Pause" you will need to manually move another duplicate from history to queue. See also option DupeCheck."
+!!! tip "For automatic duplicate handling, the option must be set to `Delete`, `Park`, or `None`. If it is set to "Pause" you will need to manually move another duplicate from history to queue. See also option DupeCheck."
 
 ### ParTimeLimit
 
 Maximum allowed time for par-repair.
 
-*If you use NZBGet on a very slow computer like NAS-device, it may be good to limit the time allowed for par-repair. NZBGet calculates the estimated time required for par-repair. If the estimated value exceeds the limit defined here, NZBGet cancels the repair.*
+*Limiting the time allowed for par-repair may be a good idea if you use NZBGet on a very slow computer like a NAS-device. NZBGet calculates the estimated time required for par-repair. If the estimated value exceeds the limit defined here, NZBGet cancels the repair.*
 
 !!! success ""
 
@@ -538,9 +537,9 @@ Maximum allowed time for par-repair.
 
 ### ParPauseQueue
 
-Pause download queue during check/repair.
+Pause the download queue during check/repair.
 
-*Enable the option to give CPU more time for par-check/repair. That helps to speed up check/repair on slow CPUs with fast connection (e.g. NAS-devices).*
+*Enable the option to give the CPU more time for par-check/repair. That helps to speed up check/repair on slow CPUs with fast connection (e.g. NAS-devices).*
 
 !!! success ""
 
@@ -556,9 +555,9 @@ We will only cover the so-called most important and common settings. For the oth
 
 ![!unpack](images/unpack.png)
 
-Pause download queue during check/repair.
+Pause the download queue during check/repair.
 
-*Enable the option to give CPU more time for par-check/repair. That helps to speed up check/repair on slow CPUs with fast connection (e.g. NAS-devices).*
+*Enable the option to give the CPU more time for par-check/repair. That helps to speed up check/repair on slow CPUs with fast connection (e.g. NAS-devices).*
 
 ### Unpack (Global)
 
@@ -572,23 +571,23 @@ Unpack downloaded nzb-files.
 
 Directly unpack files during downloading.
 
-*When active the files are unpacked during downloading instead of post-processing stage. This works only for healthy downloads. Damaged downloads are unpacked as usual during post-processing stage after par-repair.*
+*When active, the files are unpacked during downloading instead of the post-processing stage. This works only for healthy downloads. Damaged downloads are unpacked as usual during the post-processing stage after par-repair.*
 
 !!! success ""
 
     **Suggested:** `Yes`.
 
 !!! info
-    - This option requires unpack to be enabled in general via option Unpack.
-    - For best results also activate option DirectRename and option ReorderFiles.
+    - This option requires unpack to be enabled in general via the option Unpack.
+    - For best results, activate the DirectRename and ReorderFiles options.
 
-!!! warning "`DirectUnpack` might lower your download speed but the overall time could be faster. (disable on low-powered devices)"
+!!! warning "`DirectUnpack` might lower your download speed, but the overall time could be faster. (Disable on low-powered devices)."
 
 ### UnpackPauseQueue
 
-Pause download queue during unpack.
+Pause the download queue during unpack.
 
-*Enable the option to give CPU more time for unpacking. That helps to speed up unpacking on slow CPUs.*
+*Enable the option to give the CPU more time for unpacking. That helps to speed up unpacking on slow CPUs.*
 
 !!! success ""
 
@@ -626,7 +625,7 @@ Add these extensions (*primarily for Windows users as they could potentially be 
 ade, adp, app, application, appref-ms, asp, aspx, asx, bas, bat, bgi, cab, cer, chm, cmd, cnt, com, cpl, crt, csh, der, diagcab, exe, fxp, gadget, grp, hlp, hpj, hta, htc, inf, ins, iso, isp, its, jar, jnlp, js, jse, ksh, lnk, mad, maf, mag, mam, maq, mar, mas, mat, mau, mav, maw, mcf, mda, mdb, mde, mdt, mdw, mdz, msc, msh, msh1, msh2, mshxml, msh1xml, msh2xml, msi, msp, mst, msu, ops, osd, pcd, pif, pl, plg, prf, prg, printerexport, ps1, ps1xml, ps2, ps2xml, psc1, psc2, psd1, psdm1, pst, py, pyc, pyo, pyw, pyz, pyzw, reg, scf, scr, sct, shb, shs, theme, tmp, url, vb, vbe, vbp, vbs, vhd, vhdx, vsmacros, vsw, webpnp, website, ws, wsc, wsf, wsh, xbap, xll, xnk
 ```
 
-!!! tip "If you are using NZBGet to download games and apps, this list shouldn't be used. You can either create a separate category, set it to download only, and manually extract the files, or use a separate app or instance for them."
+!!! tip "If you are using NZBGet to download games and apps, this list shouldn't be used. You can create a separate category, set it to download only, manually extract the files, or use a separate app or instance for them."
 
 ---
 
@@ -648,9 +647,9 @@ Execution order for extension scripts.
 
 ### ScriptPauseQueue
 
-Pause download queue during executing of postprocess-script
+Pause the download queue during the executing of the post-process script.
 
-*Enable the option to give CPU more time for postprocess-script. That helps to speed up postprocess on slow CPUs with fast connection (e.g. NAS-devices).*
+*Enable the option to give the CPU more time for postprocess-script. That helps to speed up postprocess on slow CPUs with fast connection (e.g. NAS-devices).*
 
 !!! success ""
 
@@ -670,7 +669,7 @@ Shell overrides for script interpreters.
 
 ![!extScripts](images/extension-manager.png)
 
-The Extension Manager is a tool for downloading, updating and deleting NZBGet extensions with backwards compatibility with extensions based on header configuration definition.
+The Extension Manager is a tool for downloading, updating and deleting NZBGet extensions. It is backward-compatible with extensions based on header configuration definitions.
 
 ---
 
