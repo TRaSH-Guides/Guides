@@ -663,7 +663,7 @@ The Extension Manager is a tool for downloading, updating and deleting NZBGet ex
 
 ## Recommended Sonarr/Radarr Settings
 
-The following settings are recommended for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
+The following settings are recommended for Sonarr/Radarr, otherwise, Sonarr/Radarr could miss downloads that are still in the queue/history.
 Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 ### Sonarr
@@ -674,9 +674,9 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     ![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` in step 3.
+    Make sure you check all three boxes under `Completed Download Handling` in step 3.
 
-    Select NZBGet in step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+    In step 4, select NZBGet, scroll to the bottom of the new window where it says `Completed Download Handling`, and check both boxes.
 
     ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-nzbget.png)
 
@@ -688,8 +688,12 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     ![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` in step 3,
+    Make sure you enable `Completed Download Handling` in step 3,
 
     and both boxes under `Failed Download Handling` in step 4.
+
+    In step 5, select NZBGet, scroll to the bottom of the new window where it says `Completed Download Handling`, and check both boxes.
+
+    ![!Radarr: Download Clients - SABnzbd](images/radarr-download-clients-nzbget.png)
 
 --8<-- "includes/support.md"
