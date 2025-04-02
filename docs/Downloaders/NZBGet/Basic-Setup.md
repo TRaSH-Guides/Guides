@@ -54,6 +54,9 @@ Directory to store intermediate/temporary files.
 
     **Suggested:** `/data/usenet/intermediate` or `/data/usenet/incomplete`.
 
+!!! tip
+    In case of performance issues on higher-end environments, you can significantly improve unpack performance by placing the [InterDir](#interdir) on separate physical hard drives, preferably an SSD or NVMe, separate from the destination directory (option [DestDir](#destdir)) and the media directory where Radarr/Sonarr transfers the files.
+
 #### NzbDir
 
 Directory for incoming nzb-files.
