@@ -38,11 +38,11 @@
     { "name": "HDTV-1080p", "allowed": false },
     {
       "name": "WEB 1080p",
-      "allowed": true,
+      "allowed": false,
       "items": ["WEBDL-1080p", "WEBRip-1080p"]
     },
     { "name": "Bluray-1080p", "allowed": false },
-    { "name": "Remux-1080p", "allowed": true },
+    { "name": "Remux-1080p", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
     {
       "name": "WEB 2160p",
