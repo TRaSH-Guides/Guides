@@ -37,9 +37,10 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
     Install Instructions:
 
         1. Copy script to NZBGet's script folder
-        1. Run: `sudo chmod +x replace_for.py`
-        1. In NZBGet go to `Settings` => `Extension Scripts`
-        1. Enable `replace_for.py` in the `Extensions` setting.
+        2. Run: `sudo chmod +x replace_for.py`
+        3. Run: `dos2unix replace_for.py`
+        4. In NZBGet go to `Settings` => `Extension Scripts`
+        5. Enable `replace_for.py` in the `Extensions` setting.
 
 ??? example "Script"
 
