@@ -204,6 +204,12 @@ An application designed to help with the automation and management of your movie
 
 ## S
 
+### SCENE
+
+This term refers to underground groups specializing in cracking and releasing copyrighted material, known as "scene releases". These groups operate without public websites, do not accept requests, and generally don't interact much with the wider internet. They follow strict [rules](https://scenerules.org/){:target="\_blank" rel="noopener noreferrer"} and prioritize internal competition and prestige within their community. Releases are typically distributed through FTP servers, from which they eventually trickle down to private and then public trackers and indexers.
+
+[More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Warez_scene){:target="\_blank" rel="noopener noreferrer"}
+
 ### Seeder
 
 BitTorrent users who possess the complete set of files in a specific torrent and are sharing them, a process known as 'seeding'.
