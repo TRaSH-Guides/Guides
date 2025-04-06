@@ -1,3 +1,8 @@
+# 2025-04-06 00:25
+- [feat(glossary): add SCENE](https://github.com/TRaSH-Guides/Guides/pull/2357)
+- [fix(downloaders): run dos2unix before executing](https://github.com/TRaSH-Guides/Guides/pull/2356)
+- [feat(downloaders): Updated the NZBGet Guide (Approved by the NZBGet Team)](https://github.com/TRaSH-Guides/Guides/pull/2353)
+
 # 2025-03-30 00:26
 - [feat(starr-anime): Anime LQ Groups should only match HR as an anime group and correct Hitoku typo](https://github.com/TRaSH-Guides/Guides/pull/2349)
 - [fix(guide-sync): Added excludes to [Optional] Miscellaneous](https://github.com/TRaSH-Guides/Guides/pull/2348)
