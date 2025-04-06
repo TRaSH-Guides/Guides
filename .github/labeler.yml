@@ -22,9 +22,6 @@
             "docs/json/radarr/naming/**",
             "docs/Radarr/**",
           ]
-"Area: Recyclarr":
-  - changed-files:
-      - any-glob-to-any-file: ["docs/recyclarr-configs/**"]
 "Area: Sonarr":
   - changed-files:
       - any-glob-to-any-file:
@@ -65,6 +62,5 @@
             "!docs/Plex/**",
             "!docs/Prowlarr/**",
             "!docs/Radarr/**",
-            "!docs/recyclarr-configs/**",
             "!docs/Sonarr/**",
           ]

@@ -15,8 +15,5 @@
       "quality_profiles": ["docs/json/sonarr/quality-profiles"],
       "custom_format_groups": ["docs/json/sonarr/cf-groups"]
     }
-  },
-  "recyclarr": {
-    "templates": "docs/recyclarr-configs"
   }
 }
