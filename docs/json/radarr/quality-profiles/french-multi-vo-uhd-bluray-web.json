@@ -42,7 +42,6 @@
       "items": ["WEBDL-1080p", "WEBRip-1080p"]
     },
     { "name": "Bluray-1080p", "allowed": false },
-    { "name": "Remux-1080p", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
     { "name": "Remux-2160p", "allowed": false },
     { "name": "BR-DISK", "allowed": false },
@@ -53,7 +52,7 @@
       "allowed": true,
       "items": [
         "WEBDL-2160p",
-        "WEBDL-2160p",
+        "WEBRip-2160p",
         "Bluray-2160p"
       ]
     }
