@@ -55,7 +55,7 @@
         "Bluray-2160p"
       ]
     },
-    { "name": "Remux-2160p", "allowed": false }
+    { "name": "Remux-2160p", "allowed": true }
   ],
   "formatItems": {
     "VFF": "404c08fd0bd67f39b4d8e5709319094e",

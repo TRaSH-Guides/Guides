@@ -49,7 +49,7 @@
     { "name": "Raw-HD", "allowed": false },
     { "name": "Remux-1080p", "allowed": true },
     {
-      "name": "Bluray|WEB 1080p",
+      "name": "Bluray|WEB 2160p",
       "allowed": true,
       "items": [
         "WEBDL-2160p",
