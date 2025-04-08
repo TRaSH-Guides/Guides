@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ##### Select the following qualities
 
 - `Bluray-2160p`
@@ -20,3 +21,4 @@
 
     - `Bluray-2160p`
     - The merged quality group: `WEB-2160p`
+<!-- markdownlint-enable MD041-->

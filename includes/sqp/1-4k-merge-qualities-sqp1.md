@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ##### Merge the following Qualities together
 
 - Bluray-1080p
@@ -18,3 +19,4 @@ and merge the following 2160p ones in a new group
 and name it: `WEB-2160p`
 
 ![!Merge the following Qualities together](/SQP/images/1-4k-merge-qualities-sqp1.png)
+<!-- markdownlint-enable MD041-->

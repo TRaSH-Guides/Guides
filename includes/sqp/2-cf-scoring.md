@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 #### Custom Formats and scores
 
 **The following Custom Formats are required:**
@@ -37,3 +38,4 @@
 {! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+<!-- markdownlint-enable MD041-->
