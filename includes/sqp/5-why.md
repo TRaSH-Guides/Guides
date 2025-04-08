@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ## Why choose this quality profile
 
 ??? question "Why choose this quality profile? - [Click to show/hide]"
@@ -7,3 +8,4 @@
     - You do want the highest quality as possible to watch but want to save space for archiving without losing video and audio quality.
     - HDR/DoVi (Depending what's offered and often both)
     - HD Audio (Atmos, TrueHD etc...)
+<!-- markdownlint-enable MD041-->

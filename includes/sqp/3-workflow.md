@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ## Workflow Logic
 
 ??? abstract "Workflow Logic - [Click to show/hide]"
@@ -18,3 +19,4 @@
     - 1080p Remux
 
     !!! info "[*Optional*] IMAX Enhanced (IMAX-E)<br>- When an IMAX Enhanced exists it will upgrade/downgrade to IMAX Enhanced.<br>- IMAX Enhanced will **ONLY** be chosen if it has the same **AUDIO** and **HDR Metadata**<br>- It won't downgrade from a `TrueHD Atmos` to a `DD+ Atmos` or from a `DV` to a `HDR`."
+<!-- markdownlint-enable MD041-->

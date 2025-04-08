@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 #### Quality Profile Settings
 
 - **Enable:** `Upgrades Allowed`
@@ -17,3 +18,4 @@
 
         - Always follow the data described in the guide.
         - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+<!-- markdownlint-enable MD041-->
