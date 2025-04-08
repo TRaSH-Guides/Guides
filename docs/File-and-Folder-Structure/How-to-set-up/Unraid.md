@@ -91,6 +91,20 @@ mkdir -p /mnt/user/data/{usenet/{incomplete,complete}/{tv,movies,music},media/{t
 mkdir -p /mnt/user/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 ```
 
+##### Fix unRaid permissions
+
+When you need to fix your permissions, for example, after you have moved/copied items, manually created folders, or used the [Fastest way to create the needed subfolders](#fastest-way-to-create-the-needed-subfolders), you can use two methods to adjust your permissions.
+
+1. UnRaid's `Docker Safe New Perms` that  can be found under Tools in the Dashboard. (_This utility will restore standard unRaid permissions to all shares and files without affecting any APPDATA shares for Docker applications._)
+1. From the terminal by using the following two commands.
+
+    !!! danger "Only run this command if you strictly follow the guide's suggested folder and share setup."
+
+    ```bash
+    chown -R nobody:users /mnt/user/data/
+    chmod -R a=,a+rX,u+w,g+w /mnt/user/data/
+    ```
+
 ---
 
 ### Breakdown of the Folder Structure
