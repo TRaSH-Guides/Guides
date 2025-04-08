@@ -40,13 +40,13 @@ These are third-party applications that sync several sections of the guide with 
 
 ### Notifiarr
 
-[Notifiarr](https://notifiarr.com){:target="\_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/FAQ#q-what-are-the-user-level-differences){:target="\_blank" rel="noopener noreferrer"})
+[Notifiarr](https://notifiarr.com){:target="\_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/pages/faq/faq/#q-what-are-the-user-level-differences){:target="\_blank" rel="noopener noreferrer"})
 
-Notifiarr provides notification aggregation, system monitoring, and TRaSH Guides Sync as part of its Patron paid features.
+Notifiarr provides notification aggregation, system monitoring, and TRaSH Guides Sync as part of its one-time Patron paid features.
 
 Once set up, it is fully automated and checks for updates to custom formats and guide profiles every X minutes. It then sends these updates to your Radarr and Sonarr clients.
 
-[Instructions](https://notifiarr.wiki/en/Website/Integrations/Trash){:target="\_blank" rel="noopener noreferrer"}
+[Instructions](https://notifiarr.wiki/pages/integrations/trash/){:target="\_blank" rel="noopener noreferrer"}
 
 #### Video Tutorial
 
