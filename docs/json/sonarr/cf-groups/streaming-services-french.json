@@ -18,5 +18,11 @@
       "trash_id": "0455d6519a550dbf648c97b56e7231d2",
       "required": true
     }
-  ]
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
+      "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e"
+    }
+  }
 }
