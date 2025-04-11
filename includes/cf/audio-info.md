@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-??? info "I have an AppleTV - [Click to show/hide]"
+??? info "I have an Apple TV - [Click to show/hide]"
 
     ![!Audio Formats Flowchart](/Radarr/images/plex-audio-atv.png)
 
