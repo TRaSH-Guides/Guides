@@ -11,7 +11,7 @@
 
     {! include-markdown "../../includes/cf/dv-limitations-atv.md" !}
 
-    - <sup>(*1*) *PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used*</sup>
+    - <sup>(*1*) *PLEX for Apple TV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used.*</sup>
     - <sup>(*2*) *Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.*</sup>
     - <sup>(*3*) *PLEX for AppleTV will only play profile 8 correctly if CMv2.9 is used. However, we have also received reports that in some cases, it will fall back to HDR10, or you may encounter a black screen.*<br><br>The following information has been provided by a PLEX for AppleTV/Infuse user:<br>To prevent so called fake DV (“Your TV will incorrectly indicate that it is playing DV”)**<br>“With Infuse ensure you set the Extended Dolby Vision settings to Limited (prefer accuracy), convert P8 to P5 (when possible), and play other P8 as HDR (output will switch to either DoVi or HDR depending on the video)”**</sup>
 
