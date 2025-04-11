@@ -5,7 +5,7 @@
 
     There are several possible reasons why your TV would show purple or green colors when playing Dolby Vision content.
 
-    1. **Unsupported Hardware**: Your TV or hardware media player device (Roku, AppleTV, etc) doesn't support Dolby Vision or your hardware media player device doesn't support all the Dolby Vision Profiles. As a result, the device might struggle to produce accurate colors, leading to a purple or green tint.
+    1. **Unsupported Hardware**: Your TV or hardware media player device (Roku, Apple TV, etc) doesn't support Dolby Vision or your hardware media player device doesn't support all the Dolby Vision Profiles. As a result, the device might struggle to produce accurate colors, leading to a purple or green tint.
 
     1. **Incorrect Display Settings**: Dolby Vision content often requires specific settings to be enabled on your TV or display device in order to deliver the intended visual experience. If these settings are not configured properly, it can result in the device showing distorted colors (including purple or green hues).
 

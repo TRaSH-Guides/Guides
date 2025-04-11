@@ -193,7 +193,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ### HDR Formats
 
-- You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
+- You have a 4K TV and a hardware media player device (such as Roku, Apple TV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
