@@ -1,3 +1,14 @@
+# 2025-04-13 00:49
+- [feat(starr): Update the DV information for the Infuse player, which appears to support the CMv4.0 metadata](https://github.com/TRaSH-Guides/Guides/pull/2343)
+- [feat(guide-sync): Add `French MULTi.VO` profiles for Sonarr](https://github.com/TRaSH-Guides/Guides/pull/2365)
+- [fix(radarr): Add missing Custom Format `Repack3` to all applicable guide profiles](https://github.com/TRaSH-Guides/Guides/pull/2363)
+- [feat(hardlinks): Added a permissions note to Unraid if a user creates folders as root](https://github.com/TRaSH-Guides/Guides/pull/2364)
+- [fix(guide-sync): Update Notifiarr links to the new wiki pages](https://github.com/TRaSH-Guides/Guides/pull/2362)
+- [fix: french profiles](https://github.com/TRaSH-Guides/Guides/pull/)
+- [fix(guide-sync): `French MULTi.VO` profiles for Radarr](https://github.com/TRaSH-Guides/Guides/pull/2361)
+- [chore(guide-sync): Remove Recyclarr config templates](https://github.com/TRaSH-Guides/Guides/pull/2359)
+- [feat(guide-sync): Add `French MULTi.VO` profiles for Radarr](https://github.com/TRaSH-Guides/Guides/pull/2358)
+
 # 2025-04-06 00:25
 - [feat(glossary): add SCENE](https://github.com/TRaSH-Guides/Guides/pull/2357)
 - [fix(downloaders): run dos2unix before executing](https://github.com/TRaSH-Guides/Guides/pull/2356)
