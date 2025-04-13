@@ -68,6 +68,15 @@
       "fields": {
         "value": "\\b(SobsPlease)\\b"
       }
+    },
+    {
+      "name": "Some-Stuffs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Some-Stuffs)\\b"
+      }
     }
   ]
 }
