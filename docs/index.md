@@ -30,7 +30,7 @@ I try to make my guides as easy as possible for everyone to understand and, in m
 - If you found an actual issue related to the guide you can open a Github [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"}.
 
 <center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary .custom_width }</center>
-<center>[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}</center>
+<center>[![Discord chat](https://trash-guides.info/assets/discord.png){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}</center>
 
 ---
 
