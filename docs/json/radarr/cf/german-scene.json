@@ -275,6 +275,33 @@
       "fields": {
         "value": "^(OCA)$"
       }
+    },
+    {
+      "name": "UNDERTAKERS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(UNDERTAKERS)$"
+      }
+    },
+    {
+      "name": "CDP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CDP)$"
+      }
+    },
+    {
+      "name": "SAViOURHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SAViOURHD)$"
+      }
     }
   ]
 }

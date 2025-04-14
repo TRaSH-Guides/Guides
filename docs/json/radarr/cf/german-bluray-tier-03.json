@@ -34,6 +34,42 @@
       }
     },
     {
+      "name": "HDSource",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDSource)$"
+      }
+    },
+    {
+      "name": "UNFIrED",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(UNFIrED)$"
+      }
+    },
+    {
+      "name": "iNCEPTION",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNCEPTION)$"
+      }
+    },
+    {
+      "name": "FX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FX)$"
+      }
+    },
+    {
       "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,

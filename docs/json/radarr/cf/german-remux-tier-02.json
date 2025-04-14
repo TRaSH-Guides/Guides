@@ -25,6 +25,33 @@
       }
     },
     {
+      "name": "HDSource",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDSource)$"
+      }
+    },
+    {
+      "name": "iNCEPTION",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNCEPTION)$"
+      }
+    },
+    {
+      "name": "FX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FX)$"
+      }
+    },
+    {
       "name": "Remux",
       "implementation": "QualityModifierSpecification",
       "negate": false,
