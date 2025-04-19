@@ -92,7 +92,7 @@ Select your preferred download client.
 
 The only thing you need to change/create is a separate `Category` that you are going to use for {++Radarr 2++}
 
-!!! warning "This can not and should not be the same category you use for ^^==Radarr 1==^^, but a separate `Category`."
+!!! warning "This must not be the same category you use for ^^==Radarr 1==^^ - use a new `Category`."
 
 ### How does this Radarr Sync work (using full sync)
 
@@ -109,7 +109,7 @@ You now only need to make use of ^^==Radarr 1==^^. All movies you add to ^^==Rad
     - ^^==Sonarr 1==^^ = The main 1080p WEB-DL Sonarr.
     - {++Sonarr 2++} = 4K/2160p (UHD) WEB-DL Sonarr.
 
-    This option will show how to cherry-pick which movies/TV shows you want as 4K/2160p (UHD).
+    This option will show how to selectively add which movies/TV shows you want as 4K/2160p (UHD).
 
 ### Extra preparation (using profiles)
 
@@ -167,7 +167,7 @@ Select your preferred download client.
 
 The only thing you need to change/create is a separate `Category` that you are going to use for {++Sonarr 2++}
 
-!!! warning "This can not and should not be the same category you use for ^^==Sonarr 1==^^, but a separate `Category`."
+!!! warning "This must not be the same category you use for ^^==Sonarr 1==^^, - use a new `Category`."
 
 ### How does this Sonarr Sync work (using profiles)
 
@@ -247,7 +247,7 @@ There are different ways to add tags to your movies or shows in Radarr/Sonarr
 
     !!! info "If you have multiple Radarr added, make sure you edit it in ^^==Radarr 1==^^"
 
-    ![Tags - Using a 3rd party apps - Jellyseerr](images/radarr-tags-3rd-party-app-jellyseerr.png)
+    ![Tags - Using a 3rd party app - Jellyseerr](images/radarr-tags-3rd-party-app-jellyseerr.png)
 
     1. The tags we will use in {++Radarr 2++}. In this example, we will use the tag: `radarr-hd-sync`.
     1. This is more of a Jellyseerr setting for your ^^==Radarr 1==^^. Enable this setting if you would like to scan your Radarr/Sonarr server for existing media/request status. You should enable this setting so that users cannot submit requests for media that have already been requested or are already available.
