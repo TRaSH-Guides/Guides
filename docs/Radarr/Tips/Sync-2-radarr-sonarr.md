@@ -190,62 +190,68 @@ You now only need to make use of ^^==Sonarr 1==^^. When you have a TV show (or a
 
 There are different ways to add tags to your movies or shows in Radarr/Sonarr
 
-- Manually in Radarr/Sonarr.
-- Automated way in Radarr/Sonarr using `Auto Tagging`.
-- Using 3rd party apps like Jellyseerr, Kometa, and others.
+- [Manually](#manually) add tags.
+- [Automated way](#automated) in Radarr/Sonarr using `Auto Tagging`.
+- [3rd party apps](#3rd-party) like Jellyseerr, Kometa, and others.
 
-#### Manually add tags
+=== "Manually"
 
-In ^^==Radarr 1==^^ select a movie you want to sync to {++Radarr 2++}, and in the tags box type the tag name you wish to use to trigger the sync in {++Radarr 2++}.
+    **Manually add tags**
 
-![Radarr Add Tag Manual](images/radarr-add-tag-manual.png)
+    In ^^==Radarr 1==^^ select a movie you want to sync to {++Radarr 2++}, and in the tags box type the tag name you wish to use to trigger the sync in {++Radarr 2++}.
 
-1. In this example, we will use the tag: `radarr-hd-sync`.
-1. Click on Save.
+    ![Radarr Add Tag Manual](images/radarr-add-tag-manual.png)
 
-#### Automated way in Radarr
+    1. In this example, we will use the tag: `radarr-hd-sync`.
+    1. Click on Save.
 
-There are different ways to use the built-in Automated way, depending on which conditions you want to use. In this example, we are going to use the root folder
+=== "Automated"
 
-In ^^==Radarr 1==^^ goto `Settings` => `Tags` => `Auto Tagging`, Click on the ![cf-plus-add-small](/Radarr/images/cf-plus-add-small.png) sign and in the `Add Auto Tag` window, click again on the ![cf-plus-add-small](/Radarr/images/cf-plus-add-small.png) sign under conditions.
+    **Automated way**
 
-![Auto Tagging - Add Auto Tag](images/radarr-auto-tagging-add-auto-tag.png)
+    There are different ways to use the built-in Automated way, depending on which conditions you want to use. In this example, we are going to use the root folder
 
-You will be presented with a new window to choose several conditions.
+    In ^^==Radarr 1==^^ goto `Settings` => `Tags` => `Auto Tagging`, Click on the ![cf-plus-add-small](/Radarr/images/cf-plus-add-small.png) sign and in the `Add Auto Tag` window, click again on the ![cf-plus-add-small](/Radarr/images/cf-plus-add-small.png) sign under conditions.
 
-![Auto Tagging - Add Condition](images/radarr-auto-tagging-add-condition.png)
+    ![Auto Tagging - Add Auto Tag](images/radarr-auto-tagging-add-auto-tag.png)
 
-For this example, we are going to use the condition: `Root Folder`
+    You will be presented with a new window to choose several conditions.
 
-![Auto Tagging - Add Condition - Root Folder](images/radarr-auto-tagging-add-condition-root-folder.png)
+    ![Auto Tagging - Add Condition](images/radarr-auto-tagging-add-condition.png)
 
-1. The name used for the condition, in this example, we used `Movies (UHD)`.
-1. The root folder that we want to keep track of, in this example, we used `/data/media/movies-uhd`.
-1. If you use multiple conditions, you can choose which condition is required, in this example, we enabled it.
+    For this example, we are going to use the condition: `Root Folder`
 
-After you add all the needed info and click on save, you will see the new condition you created.
+    ![Auto Tagging - Add Condition - Root Folder](images/radarr-auto-tagging-add-condition-root-folder.png)
 
-![Auto Tagging - Add Condition - Final Steps](images/radarr-auto-tagging-add-condition-final-steps.png)
+    1. The name used for the condition, in this example, we used `Movies (UHD)`.
+    1. The root folder that we want to keep track of, in this example, we used `/data/media/movies-uhd`.
+    1. If you use multiple conditions, you can choose which condition is required, in this example, we enabled it.
 
-1. The name used for the `Auto Tagging`, in this example, we used `Radarr-UHD => HD`.
-1. If you want to remove the tags automatically if the condition no longer matches.
-1. The tags we will use in {++Radarr 2++}. In this example, we will use the tag: `radarr-hd-sync`.
-1. The condition you created before.
-1. Do not forget to click on `Save`.
+    After you add all the needed info and click on save, you will see the new condition you created.
 
-#### Using a 3rd party apps
+    ![Auto Tagging - Add Condition - Final Steps](images/radarr-auto-tagging-add-condition-final-steps.png)
 
-You can use several third-party apps for this option. In this example, we will use Jellyseerr (_The same concept also works with Overseerr_).
+    1. The name used for the `Auto Tagging`, in this example, we used `Radarr-UHD => HD`.
+    1. If you want to remove the tags automatically if the condition no longer matches.
+    1. The tags we will use in {++Radarr 2++}. In this example, we will use the tag: `radarr-hd-sync`.
+    1. The condition you created before.
+    1. Do not forget to click on `Save`.
 
-In Jellyseerr, go to `Settings` => `Services`, where you will add Radarr/Sonarr (_If you already added Radarr/Sonarr, click on edit_).
+=== "3rd party"
 
-!!! info "If you have multiple Radarr added, make sure you edit it in ^^==Radarr 1==^^"
+    **3rd party apps**
 
-![Tags - Using a 3rd party apps - Jellyseerr](images/radarr-tags-3rd-party-app-jellyseerr.png)
+    You can use several third-party apps for this option. In this example, we will use Jellyseerr (_The same concept also works with Overseerr_).
 
-1. The tags we will use in {++Radarr 2++}. In this example, we will use the tag: `radarr-hd-sync`.
-1. This is more of a Jellyseerr setting for your ^^==Radarr 1==^^. Enable this setting if you would like to scan your Radarr/Sonarr server for existing media/request status. You should enable this setting so that users cannot submit requests for media that have already been requested or are already available.
-1. This is more of a Jellyseerr setting for your ^^==Radarr 1==^^. Enable this setting to have Radarr/Sonarr automatically search for media upon approval of a request.
+    In Jellyseerr, go to `Settings` => `Services`, where you will add Radarr/Sonarr (_If you already added Radarr/Sonarr, click on edit_).
+
+    !!! info "If you have multiple Radarr added, make sure you edit it in ^^==Radarr 1==^^"
+
+    ![Tags - Using a 3rd party apps - Jellyseerr](images/radarr-tags-3rd-party-app-jellyseerr.png)
+
+    1. The tags we will use in {++Radarr 2++}. In this example, we will use the tag: `radarr-hd-sync`.
+    1. This is more of a Jellyseerr setting for your ^^==Radarr 1==^^. Enable this setting if you would like to scan your Radarr/Sonarr server for existing media/request status. You should enable this setting so that users cannot submit requests for media that have already been requested or are already available.
+    1. This is more of a Jellyseerr setting for your ^^==Radarr 1==^^. Enable this setting to have Radarr/Sonarr automatically search for media upon approval of a request.
 
 ### Adding the Radarr Sync list (using tags)
 
