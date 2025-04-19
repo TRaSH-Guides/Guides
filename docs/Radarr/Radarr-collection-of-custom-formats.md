@@ -1,4 +1,6 @@
-# Collection of Custom Formats
+# Collection of Custom Formats for Radarr
+
+{! include-markdown "../../includes/starr/cf-not-compatible.md" !}
 
 Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
 These CFs have been collected from discussions on Discord or created with help from others.
