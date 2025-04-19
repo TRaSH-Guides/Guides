@@ -34,6 +34,15 @@
       }
     },
     {
+      "name": "PaTroL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PaTroL)$"
+      }
+    },
+    {
       "name": "JellyfinPlex",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

@@ -383,6 +383,15 @@
       "fields": {
         "value": "^(FRAGGERS)$"
       }
+    },
+    {
+      "name": "REEL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(REEL)$"
+      }
     }
   ]
 }

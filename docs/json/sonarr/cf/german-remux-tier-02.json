@@ -25,6 +25,15 @@
       }
     },
     {
+      "name": "HDSource",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDSource)$"
+      }
+    },
+    {
       "name": "Remux",
       "implementation": "SourceSpecification",
       "negate": false,

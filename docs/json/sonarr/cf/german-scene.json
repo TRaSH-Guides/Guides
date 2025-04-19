@@ -320,6 +320,24 @@
       "fields": {
         "value": "^(GTVG)$"
       }
+    },
+    {
+      "name": "CDP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CDP)$"
+      }
+    },
+    {
+      "name": "CDD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CDD)$"
+      }
     }
   ]
 }
