@@ -1,25 +1,25 @@
 # How to Sync 2 Radarr or Sonarr with each other
 
 <div class="annotate" markdown>
-In this guide, we will explain how to sync two (or more) Radarr/Sonarr instances.
+This guide will explain how to sync two (or more) Radarr/Sonarr instances.
 
 ## Why would you want to run two instances of Sonarr or Radarr?
 
-- 1080p and 2160p versions of the same movie or episode.
-- Different versions of the same movie (Special Edition, Theatrical Cut, etc.)
+- You want 1080p and 2160p versions of the same movie or episode.
+- You want different versions of the same movie (Special Edition, Theatrical Cut, etc.)
 - Etc.
 
-## Which options are we going to cover
+## Which options will we cover
 
 - Option 1 (full sync): This option will show you how to create a 1:1 copy of your Radarr/Sonarr instances, as it will synchronize everything.
-- Option 2 (profiles): This option will show how to cherry-pick which movies/TV shows you want as 4K/2160p (UHD).
+- Option 2 (profiles): This option will show you how to cherry-pick which movies/TV shows you want in 4K/2160p (UHD).
 - Option 3 (tags): This option can be used for a full sync or to cherry-pick.
 
 ## Preparation
 
-!!! bug ""
+!!! note ""
 
-    We won't explain how to set up two Radarr/Sonarr instances for your system, as it depends on how you have it installed and running.
+    We won't explain how to set up two Radarr/Sonarr instances for your system, as it depends on how it is installed and running.
 
     - [Radarr Multiple Instance Information](https://wiki.servarr.com/radarr/installation#multiple-instances).
     - [Sonarr Multiple Instance Information](https://wiki.servarr.com/sonarr/installation#multiple-instances).
@@ -27,12 +27,12 @@ In this guide, we will explain how to sync two (or more) Radarr/Sonarr instances
 For this, you need to have prepared the following:
 
 - Two Radarr/Sonarr instances that are fully set up (Indexers, Custom Formats, Downloaders, etc.).
-- One download client (_Two if you prefer Usenet and Torrents_).
+- One download client (_two if you prefer Usenet and Torrents_).
 - Your download client must have two separate categories (movies-hd, movies-uhd, tv-hd, tv-uhd, etc.).
 
 !!! warning
 
-    :bangbang:You can't use the same root (media library) folder for both Radarr/Sonarr instances.:bangbang:
+    :bangbang:You can not use the same root (media library) folder for both Radarr/Sonarr instances.:bangbang:
 
     Make sure to use two separate root folders in Radarr and Sonarr (movies-hd, movies-uhd, tv-hd, tv-uhd, etc.).
 
@@ -42,16 +42,16 @@ For this, you need to have prepared the following:
 
 !!! info ""
 
-    In this example, we are going to use two Radarr instances (The basics are the same for Sonarr).
+    In this example, we will use two Radarr instances (the basics are the same for Sonarr).
 
     - ^^==Radarr 1==^^ = The main 4K/2160p (UHD) Radarr.
-    - {++Radarr 2++} = The 1080p (HD) Radarr that we've set up for a streaming-optimized quality profile.
+    - {++Radarr 2++} = The 1080p (HD) Radarr that we have set up for a streaming-optimized quality profile.
 
     This option will show you how to create a 1:1 copy of your Radarr/Sonarr instances, as it will synchronize everything.
 
 ### Adding the Radarr Sync list (using full sync)
 
-In {++Radarr 2++} go to `Settings` => `Import Lists`
+In Radarr 2, go to `Settings` => `Import Lists`.
 
 ![Radarr Settings Lists](images/radarr-settings-lists.png)
 
@@ -59,28 +59,28 @@ Click on the + to add a list and select `Radarr`
 
 ![Radarr add List](images/radarr-add-list.png)
 
-Then you get a screen with the following options:
+You will get a screen with the following options:
 
 ![Radarr Add Lists Options](images/radarr-add-lists-options.png)
 
 1. The name you want to call your Sync list.
-1. Enable to Enable the list.
+1. Enable the list.
 1. Enable so the movies will be automatically added.
-1. Enable so the movies will be added and monitored (if disabled then there will be no search done for the movies).
+1. Enable it so the movies will be added and monitored (if disabled, no search will be done for the movies).
 1. Enable so Radarr will perform a search when a movie is added.
 1. When Radarr shall consider a movie as available. (1)
 1. The Quality Profile you want to use for {++Radarr 2++}.
 1. Your {++Radarr 2++} root location for your media library.
-1. Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the movie was added)
+1. Tags that will be added on import from this list (if you use multiple lists, it makes it easier to determine from which list the movie was added)
 1. The Full URL to ^^==Radarr 1==^^ (Use container name or local URL if they run on the same system).
-1. Your API Key of ^^==Radarr 1==^^. :circle-question:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
+1. Your API Key of ^^==Radarr 1==^^. :circle-question:{ title="After adding your API key, click the test button at the bottom to see if you have a successful connection." }
 1. Which Profile of ^^==Radarr 1==^^ you want to Sync with {++Radarr 2++}. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
 1. [_Optional_] Use tags from ^^==Radarr 1==^^ to add Movies to {++Radarr 2++}. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
 1. [_Optional_] Add all movies from the chosen root folder from ^^==Radarr 1==^^. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
 
 ### Radarr Download client setup (using full sync)
 
-You do not need a separate download client for your two Radarr instances, this all can be done with one download client (_Two if you prefer Usenet and Torrents_).
+You do not need a separate download client for your two Radarr instances, and this can all be done with one download client (_two if you prefer Usenet and Torrents_).
 
 `Settings` => `Download Clients`
 
@@ -92,9 +92,7 @@ Select your preferred download client.
 
 The only thing you need to change/create is a separate `Category` that you are going to use for {++Radarr 2++}
 
-!!! warning
-
-    This can't and shouldn't be the same category you use for ^^==Radarr 1==^^ but a separate `Category`.
+!!! warning "This can not and should not be the same category you use for ^^==Radarr 1==^^, but a separate `Category`."
 
 ### How does this Radarr Sync work (using full sync)
 
@@ -106,7 +104,7 @@ You now only need to make use of ^^==Radarr 1==^^. All movies you add to ^^==Rad
 
 !!! info ""
 
-    In this example, we are going to use two Sonarr instances (The basics are the same for Radarr).
+    In this example, we will use two Sonarr instances (The basics are the same for Radarr).
 
     - ^^==Sonarr 1==^^ = The main 1080p WEB-DL Sonarr.
     - {++Sonarr 2++} = 4K/2160p (UHD) WEB-DL Sonarr.
@@ -133,12 +131,12 @@ Click on the + to add a list and select `Sonarr`
 
 ![!Sonarr add List](images/sonarr-add-list.png)
 
-Then you get a screen with the following options:
+You will get a screen with the following options:
 
 ![!Sonarr Add Lists Options](images/sonarr-add-lists-options.png)
 
 1. The name you want to call your Sync list.
-1. Enable so the TV Shows will be automatically added.
+1. Enable so that the TV Shows will be automatically added.
 1. Enable so Sonarr will perform a search when a TV Show is added.
 1. Choose how you want the series monitored initially. (2)
 1. Which new seasons should be monitored automatically? (3)
@@ -146,9 +144,9 @@ Then you get a screen with the following options:
 1. The Quality Profile you want to use for {++Sonarr 2++}.
 1. Series Type. (4)
 1. If you want to use Season Folders (**RECOMMENDED**).
-1. Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the TV Shows was added)
+1. Tags that will be added on import from this list (if you use multiple lists, it makes it easier to determine from which list the TV Shows were added)
 1. The Full URL to ^^==Sonarr 1==^^ (Use container name or local URL if they run on the same system).
-1. Your API Key of ^^==Sonarr 1==^^. :circle-question:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
+1. Your API Key of ^^==Sonarr 1==^^. :circle-question:{ title="After adding your API key, click the test button at the bottom to see if you have a successful connection." }
 1. Sync season monitoring (**SUGGESTION: DISABLED**)
 1. The Cloned Profile of ^^==Sonarr 1==^^ that we are going to use to sync with {++Sonarr 2++}.
 1. [_Optional_] Use tags from ^^==Sonarr 1==^^ to add TV Shows to {++Sonarr 2++}. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Sonarr 1" }
@@ -157,7 +155,7 @@ Then you get a screen with the following options:
 
 ### Sonarr Download client setup (using profiles)
 
-You do not need a separate download client for your two Sonarr/Radarr instances, this can all be done with one download client (_Two if you prefer Usenet and Torrents_).
+You do not need a separate download client for your two Sonarr/Radarr instances, and this can all be done with one download client (_two if you prefer Usenet and Torrents_).
 
 `Settings` => `Download Clients`
 
@@ -167,15 +165,13 @@ Select your preferred download client.
 
 ![!Sonarr Categories](images/sonarr-categories.png)
 
-Only thing you need to change/create is a separate `Category` that you are going to use for {++Sonarr 2++}
+The only thing you need to change/create is a separate `Category` that you are going to use for {++Sonarr 2++}
 
-!!! tip
-
-    This can't and shouldn't be the same category you use for ^^==Sonarr 1==^^ but a separate `Category`.
+!!! warning "This can not and should not be the same category you use for ^^==Sonarr 1==^^, but a separate `Category`."
 
 ### How does this Sonarr Sync work (using profiles)
 
-You now only need to make use of ^^==Sonarr 1==^^. When you have a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.
+You now only need to make use of ^^==Sonarr 1==^^. When you have a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD), you make sure you use the Cloned Quality Profile. And it will sync at a scheduled time.
 
 ---
 
@@ -183,10 +179,10 @@ You now only need to make use of ^^==Sonarr 1==^^. When you have a TV show (or a
 
 !!! info ""
 
-    In this example, we are going to use two Radarr instances (The basics are the same for Sonarr).
+    In this example, we will use two Radarr instances (The basics are the same for Sonarr).
 
     - ^^==Radarr 1==^^ = The main 4K/2160p (UHD) Radarr.
-    - {++Radarr 2++} = The 1080p (HD) Radarr that we've set up for a streaming-optimized quality profile.
+    - {++Radarr 2++} = The 1080p (HD) Radarr we've set up for a streaming-optimized quality profile.
 
     This option will show you how to create a 1:1 copy of your Radarr/Sonarr instances, as it will synchronize everything.
 
@@ -196,60 +192,60 @@ There are different ways to add tags to your movies or shows in Radarr/Sonarr
 
 - Manually in Radarr/Sonarr.
 - Automated way in Radarr/Sonarr using `Auto Tagging`.
-- Using 3rd party apps like Jellyseer, Kometa, and others.
+- Using 3rd party apps like Jellyseerr, Kometa, and others.
 
 #### Manually add tags
 
-In ^^==Radarr 1==^^ select a movie you want to sync to {++Radarr 2++}, and in the tags box type the tag name you want to use to trigger the sync in {++Radarr 2++}.
+In ^^==Radarr 1==^^ select a movie you want to sync to {++Radarr 2++}, and in the tags box type the tag name you wish to use to trigger the sync in {++Radarr 2++}.
 
 ![Radarr Add Tag Manual](images/radarr-add-tag-manual.png)
 
-1. In this example we are going to use the tag: `radarr-hd-sync`.
+1. In this example, we will use the tag: `radarr-hd-sync`.
 1. Click on Save.
 
 #### Automated way in Radarr
 
-There are different ways to use the build-in Automated way depending which conditions you want to use, in this example we are going to use the root folder
+There are different ways to use the built-in Automated way, depending on which conditions you want to use. In this example, we are going to use the root folder
 
-In ^^==Radarr 1==^^ goto `Settings` => `Tags` => `Auto Tagging`, Click on the ![cf-plus-add-small](/Radarr/images/cf-plus-add-small.png) sign and in the `Add Auto Tag` window click again on the ![cf-plus-add-small](/Radarr/images/cf-plus-add-small.png) sign under conditions.
+In ^^==Radarr 1==^^ goto `Settings` => `Tags` => `Auto Tagging`, Click on the ![cf-plus-add-small](/Radarr/images/cf-plus-add-small.png) sign and in the `Add Auto Tag` window, click again on the ![cf-plus-add-small](/Radarr/images/cf-plus-add-small.png) sign under conditions.
 
 ![Auto Tagging - Add Auto Tag](images/radarr-auto-tagging-add-auto-tag.png)
 
-You will be presented with a new window where you can choose several conditions.
+You will be presented with a new window to choose several conditions.
 
 ![Auto Tagging - Add Condition](images/radarr-auto-tagging-add-condition.png)
 
-For this example we are going to use the condition: `Root Folder`
+For this example, we are going to use the condition: `Root Folder`
 
 ![Auto Tagging - Add Condition - Root Folder](images/radarr-auto-tagging-add-condition-root-folder.png)
 
-1. The name used for the condition, in this example we used `Movies (UHD)`.
-1. The root folder that we want to keep track off, in this example we used `/data/media/movies-uhd`.
-1. If you use multiple conditions you can choose which condition is required, in this example we enabled it.
+1. The name used for the condition, in this example, we used `Movies (UHD)`.
+1. The root folder that we want to keep track of, in this example, we used `/data/media/movies-uhd`.
+1. If you use multiple conditions, you can choose which condition is required, in this example, we enabled it.
 
-After you added all the needed info you click on save, you will see the new condition you created.
+After you add all the needed info and click on save, you will see the new condition you created.
 
 ![Auto Tagging - Add Condition - Final Steps](images/radarr-auto-tagging-add-condition-final-steps.png)
 
-1. The name used for the `Auto Tagging`, in this example we used `Radarr-UHD => HD`.
-1. If you want to remove the tags automatically if the condition does not match (anymore).
-1. The used tags we are going to use in {++Radarr 2++}, In this example we are going to use the tag: `radarr-hd-sync`.
+1. The name used for the `Auto Tagging`, in this example, we used `Radarr-UHD => HD`.
+1. If you want to remove the tags automatically if the condition no longer matches.
+1. The tags we will use in {++Radarr 2++}. In this example, we will use the tag: `radarr-hd-sync`.
 1. The condition you created before.
 1. Do not forget to click on `Save`.
 
 #### Using a 3rd party apps
 
-There are several 3rd party apps you can use for this option, in this example we are going to make use  of Jellyseerr (_Same concept works also with Overseerr_).
+You can use several third-party apps for this option. In this example, we will use Jellyseerr (_The same concept also works with Overseerr_).
 
-In Jellyseer go to `Settings` => `Services` where you going to add Radarr/Sonarr (_If you already added Radarr/Sonarr click on edit_).
+In Jellyseerr, go to `Settings` => `Services`, where you will add Radarr/Sonarr (_If you already added Radarr/Sonarr, click on edit_).
 
-!!! info "If you have multiple Radarr added make sure you edit it in ^^==Radarr 1==^^"
+!!! info "If you have multiple Radarr added, make sure you edit it in ^^==Radarr 1==^^"
 
 ![Tags - Using a 3rd party apps - Jellyseerr](images/radarr-tags-3rd-party-app-jellyseerr.png)
 
-1. The used tags we are going to use in {++Radarr 2++}, In this example we are going to use the tag: `radarr-hd-sync`.
-1. This is more a Jellyseerr settings for your ^^==Radarr 1==^^, Enable this setting if you would like to scan your Radarr/Sonarr server for existing media/request status. It is recommended that you enable this setting, so that users cannot submit requests for media which has already been requested or is already available.
-1. This is more a Jellyseerr settings for your ^^==Radarr 1==^^, Enable this setting to have Radarr/Sonarr to automatically search for media upon approval of a request.
+1. The tags we will use in {++Radarr 2++}. In this example, we will use the tag: `radarr-hd-sync`.
+1. This is more of a Jellyseerr setting for your ^^==Radarr 1==^^. Enable this setting if you would like to scan your Radarr/Sonarr server for existing media/request status. You should enable this setting so that users cannot submit requests for media that have already been requested or are already available.
+1. This is more of a Jellyseerr setting for your ^^==Radarr 1==^^. Enable this setting to have Radarr/Sonarr automatically search for media upon approval of a request.
 
 ### Adding the Radarr Sync list (using tags)
 
@@ -261,26 +257,26 @@ Click on the + to add a list and select `Radarr`
 
 ![Radarr add List](images/radarr-add-list.png)
 
-Then you get a screen with the following options:
+You will get a screen with the following options:
 
 ![Radarr Add Lists Options](images/radarr-add-lists-options-tags.png)
 
 1. The name you want to call your Sync list.
-1. Enable to Enable the list.
+1. Enable the list.
 1. Enable so the movies will be automatically added.
-1. Enable so the movies will be added and monitored (if disabled then there will be no search done for the movies).
+1. Enable it so the movies will be added and monitored (if disabled, no search will be done for the movies).
 1. Enable so Radarr will perform a search when a movie is added.
 1. When Radarr shall consider a movie as available. (5)
 1. The Quality Profile you want to use for {++Radarr 2++}.
 1. Your {++Radarr 2++} root location for your media library.
-1. Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the movie was added)
+1. Tags that will be added on import from this list (if you use multiple lists, it makes it easier to determine from which list the movie was added)
 1. The Full URL to ^^==Radarr 1==^^ (Use container name or local URL if they run on the same system).
-1. Your API Key of ^^==Radarr 1==^^. :circle-question:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
+1. Your API Key of ^^==Radarr 1==^^. :circle-question:{ title="After adding your API key, click the test button at the bottom to see if you have a successful connection." }
 1. The used tags from ^^==Radarr 1==^^ to add Movies to {++Radarr 2++}. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
 
 ### Radarr Download client setup (using tags)
 
-You do not need a separate download client for your two Radarr instances, this all can be done with one download client (_Two if you prefer Usenet and Torrents_).
+You do not need a separate download client for your two Radarr instances, and this can all be done with one download client (_two if you prefer Usenet and Torrents_).
 
 `Settings` => `Download Clients`
 
@@ -292,13 +288,11 @@ Select your preferred download client.
 
 The only thing you need to change/create is a separate `Category` that you are going to use for {++Radarr 2++}
 
-!!! warning
-
-    This can't and shouldn't be the same category you use for ^^==Radarr 1==^^ but a separate `Category`.
+!!! warning "This can not and should not be the same category you use for ^^==Radarr 1==^^, but a separate `Category`."
 
 ### How does this Radarr Sync work (using tags)
 
-You now only need to make use of ^^==Radarr 1==^^. All movies you add to ^^==Radarr 1==^^ will be synced to {++Radarr 2++} at a scheduled time.
+Depending on your chosen option, it will sync movies from ^^==Radarr 1==^^ to ^^ {++Radarr 2++} at a scheduled time.
 
 ---
 </div>
