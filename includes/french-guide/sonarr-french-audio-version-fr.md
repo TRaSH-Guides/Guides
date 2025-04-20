@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Versions françaises - [Cliquer pour afficher/masquer]"
 
     | Formats Personnalisés                                                                              | Trash ID                                        |
@@ -11,3 +12,4 @@
     | [{{ sonarr['cf']['french-vq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vq)         | {{ sonarr['cf']['french-vq']['trash_id'] }}     |
     | [{{ sonarr['cf']['french-vfb']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfb)       | {{ sonarr['cf']['french-vfb']['trash_id'] }}    |
     | [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) | {{ sonarr['cf']['french-vostfr']['trash_id'] }} |
+<!-- markdownlint-enable MD041-->

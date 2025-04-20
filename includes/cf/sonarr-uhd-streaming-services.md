@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "General Streaming Services (UHD) - [Click to show/hide]"
 
     | Custom Format                                                                                                                   |                                Score                                 | Trash ID                                              |
@@ -26,3 +27,4 @@
     Some streaming services have UHD releases that are generally better or worse than their HD counterparts. The UHD Streaming Boost and UHD Streaming Cut custom formats adjust those streaming services' scores appropriately for UHD releases.
 
     These two custom formats must be included in your profile for UHD releases to be scored correctly.
+<!-- markdownlint-enable MD041-->

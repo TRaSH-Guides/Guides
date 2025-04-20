@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Anime CF/Scoring - [Click to show/hide]"
 
     | Custom Format                                                                                                                                       |                                          Score                                          | Trash ID                                                             |
@@ -38,3 +39,4 @@
     | [{{ radarr['cf']['av1']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#av1)                                                               |                {{ radarr['cf']['av1']['trash_scores']['anime-radarr'] }}                | {{ radarr['cf']['av1']['trash_id'] }}                                |
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
+<!-- markdownlint-enable MD041-->

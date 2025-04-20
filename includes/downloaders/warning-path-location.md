@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 !!! Warning "ATTENTION"
 
     1. You set your download location in your download client
@@ -7,3 +8,4 @@
     1. Plex, Emby, JellyFin, or Kodi should **ONLY** have access to your media folder/library
 
     :bangbang: __**Your Download and Media Library should be **NEVER** the same locations**__ :bangbang:
+<!-- markdownlint-enable MD041-->

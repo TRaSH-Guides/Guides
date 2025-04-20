@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Indésirable - [Cliquer pour afficher/masquer]"
 
     | Formats Personnalisés                                                                                           |                               Score                               | Trash ID                                           |
@@ -35,3 +36,4 @@
         |-----------------------------------------------------------------------------------------------|:--------------------------------------------------------:|-------------------------------------------|
         | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   |                            0                             | {{ sonarr['cf']['fansub']['trash_id'] }}  |
         | [{{ sonarr['cf']['fastsub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fastsub) | {{ sonarr['cf']['fastsub']['trash_scores']['default'] }} | {{ sonarr['cf']['fastsub']['trash_id'] }} |
+<!-- markdownlint-enable MD041-->

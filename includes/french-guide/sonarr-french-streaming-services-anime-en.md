@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "French Anime Streaming Services - [Click to show/hide]"
 
     | Custom Format                                                                                   |                            Score                            | Trash ID                                     |
@@ -21,3 +22,4 @@
 
         - **ADN**: Animation Digital Network, abbreviated ADN, formerly Anime Digital Network, is a VoD and simulcast platform born from the merger between KZPlay, belonging to Kazé, and Genzai, belonging to Kana Home Video, with the theme of broadcasting series and features Japanese and Franco-Belgian animated films.
         - **WKN** (*or Wakanim*): Wakanim was a French subscription video on-demand streaming service owned by U.S.-based Funimation. The service was specialized in the online streaming and simulcasting of Japanese anime series. It was also the first company to offer videos for download without digital rights management on anime series in Europe. The service was consolidated into Crunchyroll in March 2022.
+<!-- markdownlint-enable MD041-->

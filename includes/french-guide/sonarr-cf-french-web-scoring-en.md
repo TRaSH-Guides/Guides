@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Language Profiles Related Custom Formats Scoring - [Click to show/hide]"
 
     | Custom Format                                                                                                                   | Trash ID                                                   |                              VOSTFR Profile Score                               |                              MULTi.VF Profile Score                               |                              MULTi.VO Profile Score                               |
@@ -20,3 +21,4 @@
     Note: French Scene groups are included as a fallback if you really want their releases despite a potential loss in quality. Either set the CF score to `{{ sonarr['cf']['french-scene']['trash_scores']['default'] }}` (default) or `0` depending on what you want to achieve. Not including them may hinder your capacity to get releases with `French` audio.
 
     Note: The [{{ sonarr['cf']['multi']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi) CF is not really needed for the `VOSTFR` profile, as it is only used for renaming your file in order to keep the [{{ sonarr['cf']['language-original-plus-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#language-original-plus-french) CF's scoring.
+<!-- markdownlint-enable MD041-->

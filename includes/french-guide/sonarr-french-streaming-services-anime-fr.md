@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Services de streaming français d'Animés - [Cliquer pour afficher/masquer]"
 
     | Formats Personnalisés                                                                           |                            Score                            | Trash ID                                     |
@@ -21,3 +22,4 @@
 
         - **ADN**: Animation Digital Network, abrégé ADN, anciennement Anime Digital Network, est une plate-forme de VoD et simulcast née de la fusion entre KZPlay, appartenant à Kazé, et Genzai, appartenant à Kana Home Video, ayant pour thématique la diffusion de séries et longs métrages d'animation japonaise et franco-belge.
         - **WKN** (*ou Wakanim*): Wakanim est une plateforme de VOD ayant pour thématique la diffusion de séries d'animation japonaise. C'est également la première société à proposer des vidéos en téléchargement sans gestion des droits numériques sur des séries d'animation en Europe. En mars 2022, le catalogue de la plateforme est fusionné sur Crunchyroll.
+<!-- markdownlint-enable MD041-->

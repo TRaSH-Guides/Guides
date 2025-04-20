@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ### Choisir le bon Profil de langue
 
 - **Original avec sous-titres**, ou **VOSTFR**: Vous ne voulez que l'audio `Original` (`Anglais`, `Espagnol`, `Coréen`, etc.) et les sous-titres `Français`.
@@ -16,3 +17,4 @@
 
 !!! tip "Pour le profil VOSTFR, il est recommandé de configurer Bazarr"
     Pour ce faire, suivez le [Bazarr Setup Guide](/Bazarr/Setup-Guide) (anglais seulement). Bazarr vous aidera à obtenir des sous-titres `Français` lorsque aucune release VOSTFR n'est disponible.
+<!-- markdownlint-enable MD041-->

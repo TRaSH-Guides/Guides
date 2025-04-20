@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Miscellaneous (Required) - [Click to show/hide]"
 
     | Custom Format                                                                                            |                             Score                              | Trash ID                                        |
@@ -15,3 +16,4 @@
         ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
 
         This way you make sure the Custom Formats preferences will be used and not ignored.
+<!-- markdownlint-enable MD041-->

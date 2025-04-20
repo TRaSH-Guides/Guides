@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Unwanted - [Click to show/hide]"
 
     | Custom Format                                                                                                   |                               Score                               | Trash ID                                           |
@@ -28,3 +29,4 @@
     - **{{ radarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
 
         {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+<!-- markdownlint-enable MD041-->

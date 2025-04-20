@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Scoring des Formats Personnalisés liés aux Profils de Langue - [Cliquez pour afficher/masquer]"
 
     | Formats Personnalisés                                                                                                           | Trash ID                                                   |                              VOSTFR Profile Score                               |                              MULTi.VF Profile Score                               |                              MULTi.VO Profile Score                               |
@@ -24,3 +25,4 @@
     Note: Les formats personnalisés Blu-ray ne sont pas inclus, car on cherche à fallback sur du web pour ce profil. Toutefois, il est possible de les ajouter si nécessaire.
 
     Note : Le Format Personnalisé [{{ radarr['cf']['multi']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi) est dispensable pour le profil `VOSTFR`. En effet il est utilisé dans le but de renommer les fichiers afin de conserver le score attribué par le format personnalisé [{{ radarr['cf']['language-original-plus-french']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#language-original-plus-french).
+<!-- markdownlint-enable MD041-->

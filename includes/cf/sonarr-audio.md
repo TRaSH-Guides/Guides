@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Audio - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf/audio-info.md" !}
@@ -20,3 +21,4 @@
     | [{{ sonarr['cf']['dts']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dts)                         |       {{ sonarr['cf']['dts']['trash_scores']['default'] }}       | {{ sonarr['cf']['dts']['trash_id'] }}             |
     | [{{ sonarr['cf']['aac']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#aac)                         |       {{ sonarr['cf']['aac']['trash_scores']['default'] }}       | {{ sonarr['cf']['aac']['trash_id'] }}             |
     | [{{ sonarr['cf']['dd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dd)                           |       {{ sonarr['cf']['dd']['trash_scores']['default'] }}        | {{ sonarr['cf']['dd']['trash_id'] }}              |
+<!-- markdownlint-enable MD041-->

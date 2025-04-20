@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ```none
 data
 ├── torrents
@@ -18,3 +19,4 @@ data
     ├── music
     └── tv
 ```
+<!-- markdownlint-enable MD041-->

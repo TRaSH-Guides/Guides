@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Language Profiles Related Custom Formats Scoring - [Click to show/hide]"
 
     | Custom Format                                                                                                                   | Trash ID                                                   |                              VOSTFR Profile Score                               |                              MULTi.VF Profile Score                               |                              MULTi.VO Profile Score                               |
@@ -24,3 +25,4 @@
     Note: the bluray CFs are note included as the main fallback for this profile is web. However, feel free to add them if needed.
 
     Note: The [{{ radarr['cf']['multi']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi) CF is not really needed for the `VOSTFR` profile, as it is only used for renaming your file in order to keep the [{{ radarr['cf']['language-original-plus-french']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#language-original-plus-french) CF's scoring.
+<!-- markdownlint-enable MD041-->

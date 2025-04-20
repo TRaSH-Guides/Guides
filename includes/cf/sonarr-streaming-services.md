@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "General Streaming Services - [Click to show/hide]"
 
     | Custom Format                                                                               |                          Score                          | Trash ID                                 |
@@ -18,3 +19,4 @@
     | [{{ sonarr['cf']['sho']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sho)       |  {{ sonarr['cf']['sho']['trash_scores']['default'] }}   | {{ sonarr['cf']['sho']['trash_id'] }}    |
     | [{{ sonarr['cf']['stan']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#stan)     |  {{ sonarr['cf']['stan']['trash_scores']['default'] }}  | {{ sonarr['cf']['stan']['trash_id'] }}   |
     | [{{ sonarr['cf']['syfy']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#syfy)     |  {{ sonarr['cf']['syfy']['trash_scores']['default'] }}  | {{ sonarr['cf']['syfy']['trash_id'] }}   |
+<!-- markdownlint-enable MD041-->

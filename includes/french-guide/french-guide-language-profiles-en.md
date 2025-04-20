@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ### Getting the Right Language Profile
 
 - **Want Original with subs**, or **VOSTFR**: You only want `Original` audio (`English`, `Spanish`, `Korean`, etc.) and `French` subtitles.
@@ -16,3 +17,4 @@
 
 !!! tip "For the VOSTFR profile, it is recommended to get Bazarr up and running"
     To do so, follow the [Bazarr Setup Guide](/Bazarr/Setup-Guide). Bazarr will help you get `French` subtitles when no VOSTFR releases are available.
+<!-- markdownlint-enable MD041-->

@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 !!! info "Important"
 
     Dans un premier temps, vous devez suivre les sections suivantes du Guide Anime original (en anglais uniquemment) :
@@ -23,3 +24,4 @@
             Dans cet exemple, si vous préférez la VOSTFR à d'éventuelles releases MULTi/DUAL (audio original et français), vous devez donner un score de `{{ radarr['cf']['french-vostfr']['trash_scores']['french-anime-vostfr'] }}` pour le Format Personnalisés [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/radarr-collection-of-custom-formats/#vostfr).
 
             (Optionnel) Vous pouvez également essayer de configurer [Bazarr](/Bazarr/Setup-Guide){:target="_blank" rel="noopener noreferrer"} (*en anglais*) pour obtenir les sous-titres français de vos animes. Cette option est toute fois moins recommandée, car on trouve moins de sous-titres pour les animes en ligne que pour les séries habituelles. Cependant, cela peut être une alternative intéressante.
+<!-- markdownlint-enable MD041-->

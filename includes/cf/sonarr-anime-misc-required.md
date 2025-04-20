@@ -15,3 +15,4 @@
         ![!cf-mm-propers-repacks-disable](/Sonarr/images/cf-mm-propers-repacks-disable.png)
 
         This way you make sure the Custom Formats preferences will be used and not ignored.
+<!-- markdownlint-enable MD041-->

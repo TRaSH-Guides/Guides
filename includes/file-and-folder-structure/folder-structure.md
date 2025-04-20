@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ## Folder Structure
 
 !!! warning
@@ -17,3 +18,4 @@ The `data` folder has sub-folders for `torrents` and `usenet` and each of these 
 _In this examples I'm using lower case on all folder on purpose, being Linux is case sensitive._
 
 {! include-markdown "./docker-tree-full.md" !}
+<!-- markdownlint-enable MD041-->
