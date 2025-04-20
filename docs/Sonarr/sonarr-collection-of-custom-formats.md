@@ -142,7 +142,7 @@ We've made 3 guides related to this.
 | German Source Groups                            | German Miscellaneous                                  | French Source Groups                          | French Audio Version |
 | ----------------------------------------------- | ----------------------------------------------------- | --------------------------------------------- | -------------------- |
 | [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                               | [FR Remux Tier 01](#fr-remux-tier-01)         | [VFF](#vff)          |
-| [German Remux Tier 01](#german-remux-tier-02)   | [German LQ (Release Title)](#german-lq-release-title) | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) | [VOF](#vof)          |
+| [German Remux Tier 02](#german-remux-tier-02)   | [German LQ (Release Title)](#german-lq-release-title) | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) | [VOF](#vof)          |
 | [German Bluray Tier 01](#german-bluray-tier-01) | [German Microsized](#german-microsized)               | [FR WEB Tier 01](#fr-web-tier-01)             | [VFI](#vfi)          |
 | [German Bluray Tier 02](#german-bluray-tier-02) | [German 1080p Booster](#german-1080p-booster)         | [FR WEB Tier 02](#fr-web-tier-02)             | [VF2](#vf2)          |
 | [German Bluray Tier 03](#german-bluray-tier-03) | [German 2160p Booster](#german-2160p-booster)         | [FR WEB Tier 03](#fr-web-tier-03)             | [VFQ](#vfq)          |
@@ -3573,12 +3573,12 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-english.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-not-german-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-german-english.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-german-or-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
