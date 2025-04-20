@@ -98,6 +98,15 @@
       }
     },
     {
+      "name": "BTM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BTM)$"
+      }
+    },
+    {
       "name": "C1NEM4",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
