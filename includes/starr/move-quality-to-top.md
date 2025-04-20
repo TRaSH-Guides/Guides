@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 !!! info
 
     The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.
@@ -11,3 +12,4 @@
     This is why it's recommended to move the selected quality to the top of the list.
 
     [Source: Wiki Servarr](https://wiki.servarr.com/en/radarr/settings#quality-profiles){:target="_blank" rel="noopener noreferrer"}
+<!-- markdownlint-enable MD041-->
