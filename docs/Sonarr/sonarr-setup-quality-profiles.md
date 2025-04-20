@@ -64,7 +64,7 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 ---
 
-{! include-markdown "../../includes/merge-quality/sonarrv4-current-logic.md" !}
+{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
 
 ---
 

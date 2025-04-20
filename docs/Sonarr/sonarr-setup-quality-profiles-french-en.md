@@ -77,7 +77,7 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 ## Score logic
 
-{! include-markdown "../../includes/merge-quality/sonarrv4-current-logic.md" !}
+{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
 
 ---
 
