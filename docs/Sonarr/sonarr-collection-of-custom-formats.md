@@ -30,19 +30,24 @@ We've made 3 guides related to this.
 
 ---
 
-| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
-| ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10+](#dv-hdr10plus)        |
-| [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV HDR10](#dv-hdr10)             |
-| [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra) | [3.0 Sound](#30-sound)       | [DV](#dv)                         |
-| [DD+ ATMOS](#ddplus-atmos)            | [AAC](#aac)               | [4.0 Sound](#40-sound)       | [DV HLG](#dv-hlg)                 |
-| [TrueHD](#truehd)                     | [DD](#dd)                 | [5.1 Surround](#51-surround) | [DV SDR](#dv-sdr)                 |
-| [DTS-HD MA](#dts-hd-ma)               | [MP3](#mp3)               | [6.1 Surround](#61-surround) | [HDR10+](#hdr10plus)              |
-| [DD+](#ddplus)                        | [Opus](#opus)             | [7.1 Surround](#71-surround) | [HDR10](#hdr10)                   |
-| [DTS-ES](#dts-es)                     |                           |                              | [HDR](#hdr)                       |
-| [DTS](#dts)                           |                           |                              | [HDR (undefined)](#hdr-undefined) |
-|                                       |                           |                              | [PQ](#pq)                         |
-|                                       |                           |                              | [HLG](#hlg)                       |
+| Audio Formats                         | Audio Channels               | HDR Formats                       | HDR Optional                           |
+| ------------------------------------- | ---------------------------- | --------------------------------- | -------------------------------------- |
+| [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [DV HDR10+](#dv-hdr10plus)        | [DV (Disk)](#dv-disk)                  |
+| [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [DV HDR10](#dv-hdr10)             | [DV (WEBDL)](#dv-webdl)                |
+| [ATMOS (undefined)](#atmos-undefined) | [3.0 Sound](#30-sound)       | [DV](#dv)                         | [DV HDR10+ Boost](#dv-hdr10plus-boost) |
+| [DD+ ATMOS](#ddplus-atmos)            | [4.0 Sound](#40-sound)       | [DV HLG](#dv-hlg)                 | [HDR10+ Boost](#hdr10plus-boost)       |
+| [TrueHD](#truehd)                     | [5.1 Surround](#51-surround) | [DV SDR](#dv-sdr)                 | [SDR](#sdr)                            |
+| [DTS-HD MA](#dts-hd-ma)               | [6.1 Surround](#61-surround) | [HDR10+](#hdr10plus)              | [SDR (no WEBDL)](#sdr-no-webdl)        |
+| [DD+](#ddplus)                        | [7.1 Surround](#71-surround) | [HDR10](#hdr10)                   |                                        |
+| [DTS-ES](#dts-es)                     |                              | [HDR](#hdr)                       |                                        |
+| [DTS](#dts)                           |                              | [HDR (undefined)](#hdr-undefined) |                                        |
+| [FLAC](#flac)                         |                              | [PQ](#pq)                         |                                        |
+| [PCM](#pcm)                           |                              | [HLG](#hlg)                       |                                        |
+| [DTS-HD HRA](#dts-hd-hra)             |                              |                                   |                                        |
+| [AAC](#aac)                           |                              |                                   |                                        |
+| [DD](#dd)                             |                              |                                   |                                        |
+| [MP3](#mp3)                           |                              |                                   |                                        |
+| [Opus](#opus)                         |                              |                                   |                                        |
 
 ---
 
@@ -61,8 +66,8 @@ We've made 3 guides related to this.
 
 | General Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------- | ------------------------ | ------------------------ |
-| [Amazon](#amzn)            | [MyCANAL](#mycanal)       | [FOD](#fod)              | [NLZiet](#nlz)           |
-| [Apple TV+](#atvp)         | [AUViO](#auvio)           | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| [Amazon](#amzn)            | [AUViO](#auvio)           | [FOD](#fod)              | [NLZiet](#nlz)           |
+| [Apple TV+](#atvp)         | [MyCANAL](#mycanal)       | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
 | [Comedy Central](#cc)      | [SALTO](#salto)           | [TVer](#tver)            |                          |
 | [DC Universe](#dcu)        |                           | [TVING](#tving)          |                          |
 | [Disney+](#dsnp)           |                           | [U-NEXT](#u-next)        |                          |
@@ -92,37 +97,31 @@ We've made 3 guides related to this.
 
 ---
 
-| Miscellaneous                          | Language profiles                                                  |
-| -------------------------------------- | ------------------------------------------------------------------ |
-| [720p](#720p)                          | [Language: German](#language-german)                               |
-| [1080p](#1080p)                        | [Language: German DL](#language-german-dl)                         |
-| [2160p](#2160p)                        | [Language: German DL (undefined)](#language-german-dl-undefined)   |
-| [Bad Dual Groups](#bad-dual-groups)    | [Language: Not English (English Only)](#language-not-english)      |
-| [DV (Disk)](#dv-disk)                  | [Language: Not French (French Only)](#language-not-french)         |
-| [DV (WEBDL)](#dv-webdl)                | [Language: Not Original (Original Only)](#language-not-original)   |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Original + French](#language-original-plus-french)      |
-| [FreeLeech](#freeleech)                | [Language: Not German or English](#language-not-german-or-english) |
-| [HDR10+ Boost](#hdr10plus-boost)       |                                                                    |
-| [HFR](#hfr)                            |                                                                    |
-| [Internal](#internal)                  |                                                                    |
-| [MPEG2](#mpeg2)                        |                                                                    |
-| [Multi](#multi)                        |                                                                    |
-| [No-RlsGroup](#no-rlsgroup)            |                                                                    |
-| [Obfuscated](#obfuscated)              |                                                                    |
-| [Repack v2](#repack-v2)                |                                                                    |
-| [Repack v3](#repack-v3)                |                                                                    |
-| [Repack/Proper](#repackproper)         |                                                                    |
-| [Retags](#retags)                      |                                                                    |
-| [Scene](#scene)                        |                                                                    |
-| [SDR (no WEBDL)](#sdr-no-webdl)        |                                                                    |
-| [SDR](#sdr)                            |                                                                    |
-| [Season Packs](#season-pack)           |                                                                    |
-| [VC-1](#vc-1)                          |                                                                    |
-| [VP9](#vp9)                            |                                                                    |
-| [x264](#x264)                          |                                                                    |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                                                                    |
-| [x265](#x265)                          |                                                                    |
-| [x266](#x266)                          |                                                                    |
+| Miscellaneous                       | Language profiles                                                  |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| [720p](#720p)                       | [Language: German](#language-german)                               |
+| [1080p](#1080p)                     | [Language: German DL](#language-german-dl)                         |
+| [2160p](#2160p)                     | [Language: German DL (undefined)](#language-german-dl-undefined)   |
+| [Bad Dual Groups](#bad-dual-groups) | [Language: Not English (English Only)](#language-not-english)      |
+| [FreeLeech](#freeleech)             | [Language: Not French (French Only)](#language-not-french)         |
+| [HFR](#hfr)                         | [Language: Not Original (Original Only)](#language-not-original)   |
+| [Internal](#internal)               | [Language: Original + French](#language-original-plus-french)      |
+| [MPEG2](#mpeg2)                     | [Language: Not German or English](#language-not-german-or-english) |
+| [Multi](#multi)                     |                                                                    |
+| [No-RlsGroup](#no-rlsgroup)         |                                                                    |
+| [Obfuscated](#obfuscated)           |                                                                    |
+| [Repack/Proper](#repackproper)      |                                                                    |
+| [Repack v2](#repack-v2)             |                                                                    |
+| [Repack v3](#repack-v3)             |                                                                    |
+| [Retags](#retags)                   |                                                                    |
+| [Scene](#scene)                     |                                                                    |
+| [Season Packs](#season-pack)        |                                                                    |
+| [VC-1](#vc-1)                       |                                                                    |
+| [VP9](#vp9)                         |                                                                    |
+| [x264](#x264)                       |                                                                    |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)  |                                                                    |
+| [x265](#x265)                       |                                                                    |
+| [x266](#x266)                       |                                                                    |
 
 ---
 
@@ -154,7 +153,7 @@ We've made 3 guides related to this.
 |                                                 |                                                       | [FR LQ](#fr-lq)                               | [FastSUB](#fastsub)  |
 |                                                 |                                                       |                                               | [FastSUB](#fastsub)  |
 
-## Audio Advanced
+## Audio Formats
 
 ---
 
@@ -713,6 +712,106 @@ We've made 3 guides related to this.
 
 ---
 
+## HDR Optional
+
+---
+
+### DV (Disk)
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dv-disk.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-disk.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### DV (WEBDL)
+
+<sub>DV = DoVi = Dolby Vision</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dv-webdl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### DV HDR10Plus Boost
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus-boost.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10plus-boost.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### HDR10Plus Boost
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+### SDR
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### SDR (no WEBDL)
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl-sonarr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ## Series Versions
 
 ---
@@ -1063,56 +1162,6 @@ We've made 3 guides related to this.
 
 ---
 
-### DV (WEBDL)
-
-<sub>DV = DoVi = Dolby Vision</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-webdl.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### HDR10Plus Boost
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### DV HDR10Plus Boost
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus-boost.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10plus-boost.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
 ### No-RlsGroup
 
 ??? question "Description - [Click to show/hide]"
@@ -1283,54 +1332,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/internal.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### SDR
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### SDR (no WEBDL)
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl-sonarr.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### DV (Disk)
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-disk.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-disk.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

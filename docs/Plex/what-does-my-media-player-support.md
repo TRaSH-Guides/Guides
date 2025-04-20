@@ -104,6 +104,6 @@ To make this easier, we've made a section labeled "How to set up a quality profi
 
 #### How to make use of Audio Formats for Sonarr
 
-At the moment, we've decided not to add `Audio Advanced` Custom Formats to the WEB profile. You will hardly find HD audio with WEB-DL (Most newer WEBDL will have Atmos). If you also want HD audio formats, we would suggest going for Remuxes.
+At the moment, we've decided not to add `Audio Formats` Custom Formats to the WEB profile. You will hardly find HD audio with WEB-DL (Most newer WEBDL will have Atmos). If you also want HD audio formats, we would suggest going for Remuxes.
 
 --8<-- "includes/support.md"

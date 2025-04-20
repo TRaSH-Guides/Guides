@@ -287,11 +287,11 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 ---
 
-### Advanced Audio and HDR Formats
+### Audio Formats and HDR Formats
 
 TRaSH provides great guides and explanations about them at the following links:
 
-- [Advanced Audio](/Radarr/radarr-setup-quality-profiles/#advanced-audio){:target="_blank" rel="noopener noreferrer"}
+- [Audio Formats](/Radarr/radarr-setup-quality-profiles/#audio-formats){:target="_blank" rel="noopener noreferrer"}
 - [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
 
 ---
