@@ -1,3 +1,10 @@
+# 2025-04-20 00:26
+- [fix(guide-sync): Remove the exclude from the `DV HDR10+/HDR10+ Boost` group.](https://github.com/TRaSH-Guides/Guides/pull/2375)
+- [feat(starr): Add tag option to `How to Sync 2 Radarr/Sonarr with each other`](https://github.com/TRaSH-Guides/Guides/pull/2372)
+- [feat(starr-german): Tier update](https://github.com/TRaSH-Guides/Guides/pull/2370)
+- [fix(guide): broken shields in the index.md](https://github.com/TRaSH-Guides/Guides/pull/2371)
+- [feat(starr-anime): Move Some-Stuffs to Anime Web Tier 05](https://github.com/TRaSH-Guides/Guides/pull/2367)
+
 # 2025-04-13 00:49
 - [feat(starr): Update the DV information for the Infuse player, which appears to support the CMv4.0 metadata](https://github.com/TRaSH-Guides/Guides/pull/2343)
 - [feat(guide-sync): Add `French MULTi.VO` profiles for Sonarr](https://github.com/TRaSH-Guides/Guides/pull/2365)
