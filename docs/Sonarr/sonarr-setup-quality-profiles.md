@@ -203,7 +203,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ### Why only WEB-DL
 
-??? question "Why do you only have a release profile for WEB-DL - [Click to show/hide]"
+??? question "Why do you only have Profiles for WEB-DL - [Click to show/hide]"
 
     We only do WEB-DL, myself, for TV shows. In our opinion, WEB-DL is the sweet spot between quality and size (you often don't see big differences anyway for TV shows) except for shows like GOT, Vikings, etc.
 

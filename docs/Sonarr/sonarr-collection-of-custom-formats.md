@@ -5,9 +5,6 @@ These CFs have been collected from discussions on Discord or created with help f
 
 Special thanks to everyone who has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, and the community.
 
-Sonarr V4+ introduces Custom Formats. These are much more advanced/powerful than the release profiles, although this also means a Custom Format can require more knowledge to set up or create.
-We've made 3 guides related to this.
-
 - [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
 - [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
 - [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="\_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
