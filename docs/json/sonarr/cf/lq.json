@@ -17,6 +17,15 @@
       }
     },
     {
+      "name": "BTM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BTM)$"
+      }
+    },
+    {
       "name": "CHX",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
