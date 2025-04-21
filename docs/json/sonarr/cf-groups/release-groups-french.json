@@ -24,8 +24,13 @@
       "required": false
     },
     {
-      "name": "FR Scene Groups",
+      "name": "FR WEB Tier 03",
       "trash_id": "dbfc0a4b5cb4cbd693311c4482ae9683",
+      "required": false
+    },
+    {
+      "name": "FR Scene Groups",
+      "trash_id": "2f3422339d185eb227a324644a2fbfca",
       "required": false
     }
   ],
