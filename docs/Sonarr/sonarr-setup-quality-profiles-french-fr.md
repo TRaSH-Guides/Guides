@@ -124,7 +124,7 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-fr.md" !}
 
-Note : Les Formats Personnalisés `Audio Advanced` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.
+Note : Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.
 
 ---
 
@@ -163,7 +163,7 @@ Note : Les Formats Personnalisés `Audio Advanced` ne sont pas utilisés dans le
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-fr.md" !}
 
-Note : Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.
+Note : Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.
 
 ---
 

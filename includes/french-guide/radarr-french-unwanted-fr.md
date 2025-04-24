@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Indésirable - [Cliquer pour afficher/masquer]"
 
     | Formats Personnalisés                                                                                           |                               Score                               | Trash ID                                           |
@@ -28,3 +29,4 @@
     - **{{ radarr['cf']['av1']['name'] }} :** Cela bloque toutes les publications encodées en AV1.
 
         {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+<!-- markdownlint-enable MD041-->

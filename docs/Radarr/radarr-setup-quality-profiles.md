@@ -114,7 +114,7 @@ If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
-Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
+Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
 
 Use the following main settings in your profile.
 
@@ -292,7 +292,7 @@ Use the following main settings in your profile.
 
 The following custom format groups should be combined with the Quality Profiles above. Users will need to choose which options and custom formats they prefer.
 
-### Advanced Audio
+### Audio Formats
 
 - You have a hardware media player device and an audio setup that supports **ALL** HD Audio (TrueHD, DTS-X, DTS-HD, etc).
 
@@ -369,7 +369,7 @@ This is a must-have for every Quality Profile you use in our opinion. All these 
 
     Elsewhere in the guide, you will find a separate group of custom formats called `Audio Channels`. These will match the number of audio channels in a release, for example, 2.0 (stereo) or 5.1/7.1 (surround sound). We wouldn't add the audio channels Custom Formats as you could limit yourself in the amount of releases you're able to get. Only use them if you have a specific need for them.
 
-    Using this with any kind of Remux Quality Profile is useless, in our opinion, being that 99% of all Remuxes are multi-audio anyway. You can get better scores just by using the `Audio Advanced` Custom Formats.
+    Using this with any kind of Remux Quality Profile is useless, in our opinion, being that 99% of all Remuxes are multi-audio anyway. You can get better scores just by using the `Audio Formats` Custom Formats.
 
 ### Avoid using the x264/x265 Custom Format
 

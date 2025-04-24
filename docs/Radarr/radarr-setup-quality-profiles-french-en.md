@@ -129,7 +129,7 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
-Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
+Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
 
 ---
 
@@ -273,11 +273,11 @@ If you are looking to grab Anime with either French subs or MULTi audio (origina
 
 ---
 
-### Advanced Audio and HDR Formats
+### Audio Formats and HDR Formats
 
 TRaSH provides great guides and explanations about them at the following links:
 
-- [Advanced Audio](/Radarr/radarr-setup-quality-profiles/#advanced-audio){:target="\_blank" rel="noopener noreferrer"}
+- [Audio Formats](/Radarr/radarr-setup-quality-profiles/#audio-formats){:target="\_blank" rel="noopener noreferrer"}
 - [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="\_blank" rel="noopener noreferrer"}
 
 ---

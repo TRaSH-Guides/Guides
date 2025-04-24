@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 This basic example is based on the use of Docker images
 
 !!! tip ""
@@ -15,3 +16,4 @@ This basic example is based on the use of Docker images
     - `/downloads` => `/data/downloads`, `/data/usenet`, `/data/torrents`
     - `/movies` => `/data/media/movies`
     - `/tv` => `/data/media/tv`
+<!-- markdownlint-enable MD041-->

@@ -2,15 +2,14 @@
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-Here you will find a set of guidelines for contributing to [TRaSH Guides](https://trash-guides.info/),
-These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+Here you will find guidelines for contributing to [TRaSH Guides](https://trash-guides.info/). These are mostly guidelines, not rules. Use your best judgment and feel free to propose changes to this document in a pull request.
 
 ## Guidelines
 
-- Make sure you're editing the latest version.
-- If you propose changes, ensure they don't break anything else in the guides.
-- Make sure that after the changes, you don't get any [markdownlint](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) errors
-- If the `metadata.json` and `metadata.schema.json` needs changes, announce it first in the Discord `#development` channel and ping `voidpointer` and `nitsua` so the 3rd party apps don't break :bangbang:
+- Ensure you're editing the latest version.
+- If you suggest changes, ensure they don't cause any issues, inconsistencies or breakages elsewhere in the guides.
+- After the modifications, verify that you do not receive any [markdownlint](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) errors.
+- If the `metadata.json` and `metadata.schema.json` require changes, announce it first in the Discord `#development` channel and ping `voidpointer` and `nitsua` to prevent disruption to third-party apps :bangbang:
 
 ## Index
 
@@ -127,7 +126,7 @@ _Examples:_
 
 > [!CAUTION]
 >
-> - Custom Format name needs to match JSON name :bangbang:
+> - The names of the Custom Format and the JSON must be identical. :bangbang:
 > - No hashcode can exist multiple times :bangbang:
 >
 - Tiers only hold release groups that have at least done several dozen objectively high-quality releases or are added for a specific reason. (If they do mainly niche stuff and/or foreign stuff, they won't be added)
@@ -157,7 +156,7 @@ General Structure
 ### File Naming
 
 > [!CAUTION]
-> JSON file names are always written in lowercase, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
+> JSON file names are always written in lowercase. Spaces must be replaced by dashes, `plus` should be used instead of the `+` symbol, and no spaces or special characters should be used except for dashes. :bangbang:
 
 ### Hashcode
 
@@ -202,7 +201,7 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 
 ## YAML file naming
 
-- YAML file names are always written in small letters, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
+- YAML file names are always written in lowercase. Spaces must be replaced by dashes, `plus` should be used instead of the `+` symbol, and no spaces or special characters should be used except for dashes. :bangbang:
 
 > [!CAUTION]
 >

@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ```none
 data
 └── media
@@ -6,3 +7,4 @@ data
     ├── books
     └── tv
 ```
+<!-- markdownlint-enable MD041-->

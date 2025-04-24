@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Miscellaneous (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                 |                              Score                               | Trash ID                                          |
@@ -18,3 +19,4 @@
     - **{{ sonarr['cf']['obfuscated']['name'] }}:** [*Optional*] Use these only if you wish to avoid renamed releases.
     - **{{ sonarr['cf']['retags']['name'] }}:** [*Optional*] Use this if you wish to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release (e.g. TGx downsampling an NTb release from 5.1 audio to 2.0 audio, yet maintaining the NTb naming).
     - **{{ sonarr['cf']['scene']['name'] }}:** [*Optional*] Use this only if you want to avoid SCENE releases.
+<!-- markdownlint-enable MD041-->

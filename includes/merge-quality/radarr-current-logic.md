@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ### Radarr current logic
 
 ??? abstract "Radarr current logic - [Click to show/hide]"
@@ -22,3 +23,4 @@
         REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.
 
         `Settings` => `Media Management` => `File Management` => `Proper & Repacks` Change to `Do Not Prefer` and use the [Repack/Proper Custom Format](/Radarr/Radarr-collection-of-custom-formats/#repackproper){:target="_blank" rel="noopener noreferrer"}
+<!-- markdownlint-enable MD041-->

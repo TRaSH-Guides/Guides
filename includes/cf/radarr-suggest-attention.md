@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 I suggest to follow the following Guides first.
 
 - [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="\_blank" rel="noopener noreferrer"}.
@@ -6,3 +7,4 @@ I suggest to follow the following Guides first.
 For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.
 
 {! include-markdown "../../includes/cf/score-attention.md" !}
+<!-- markdownlint-enable MD041-->

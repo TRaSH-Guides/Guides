@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 Those are all optional and only there to rename your release or to avoid getting a certain type of French audio. Examples:
 
 - You prefer to have both VFF and VFQ, known as VF2 audio; in this case, you will score VF2 at `101` and keep the others at `0` (default).
@@ -30,3 +31,4 @@ Those are all optional and only there to rename your release or to avoid getting
 
     - *[1] VF is included under the VFQ Custom Format, but it should be noted that it was often mismatched with VFF instead of VFQ pre-2022.*
     - *[2] It should be noted that SUBFRENCH is included in this Custom Format.*
+<!-- markdownlint-enable MD041-->

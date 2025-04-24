@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Anime CF/Scoring - [Click to show/hide]"
 
     | Custom Format                                                                                                                                       |                                          Score                                          | Trash ID                                                             |
@@ -36,3 +37,4 @@
     | [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr)                                                  |           {{ sonarr['cf']['french-vostfr']['trash_scores']['anime-sonarr'] }}           | {{ sonarr['cf']['french-vostfr']['trash_id'] }}                      |
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
+<!-- markdownlint-enable MD041-->

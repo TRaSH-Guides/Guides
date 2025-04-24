@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ### Sonarr current logic
 
 ??? abstract "Sonarr current logic - [Click to show/hide]"
@@ -20,8 +21,11 @@
 
     !!! warning ""
 
-        \* Use Custom Formats and TRaSH Guide's [season pack custom format](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats/#season-pack) with a score greater than zero to prefer season packs.
+        \* Use the [Season Pack Custom Format](/Sonarr/sonarr-collection-of-custom-formats/#season-pack) with a score greater than zero to prefer season packs.
 
     !!! warning ""
 
-        REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality. [Set Media Management => File Management `Download Proper & Repacks` to "Do Not Prefer"](/sonarr/settings#file-management) and use [TRaSH's Repack/Proper Custom Format](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats/#repackproper) with a positive score as suggested by [TRaSH's Guides](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/)
+        REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.
+
+        `Settings` => `Media Management` => `File Management` => `Proper & Repacks` Change to `Do Not Prefer` and use the [Repack/Proper Custom Format](/Sonarr/sonarr-collection-of-custom-formats/#repackproper){:target="_blank" rel="noopener noreferrer"}
+<!-- markdownlint-enable MD041-->

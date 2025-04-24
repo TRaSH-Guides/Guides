@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 Cette section est optionnelle et est uniquement là pour renommer votre release ou pour éviter d'obtenir un certain type d'audio français. Exemples :
 
 - Vous préférez avoir à la fois la VFF et la VFQ, connues sous le nom de VF2 ; dans ce cas, vous attribuerez un score de `101` à VF2 et laisserez les autres à `0` (par défaut).
@@ -30,3 +31,4 @@ Cette section est optionnelle et est uniquement là pour renommer votre release 
 
     - *[1] VF est inclus dans le Format Personnalisé VFQ, mais il convient de noter qu'il était souvent associé à VFF au lieu de VFQ avant 2022.*
     - *[2] Il est à noter que SUBFRENCH est inclus dans ce Format Personnalisé.*
+<!-- markdownlint-enable MD041-->

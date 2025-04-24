@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Scoring des Formats Personnalisés liés aux Profils de Langue - [Cliquez pour afficher/masquer]"
 
     | Formats Personnalisés                                                                                                           | Trash ID                                                   |                              VOSTFR Profile Score                               |                              MULTi.VF Profile Score                               |                              MULTi.VO Profile Score                               |
@@ -22,3 +23,4 @@
     Note : Les groupes de la Scène française sont inclus comme solution de rechange si vous voulez vraiment leurs releases malgré une éventuelle perte de qualité. Vous pouvez leur attribuer un score de `{{ radarr['cf']['french-scene']['trash_scores']['default'] }}` (par défaut) ou de `0` selon ce que vous voulez obtenir. Ne pas les inclure peut toutefois limiter votre capacité à obtenir des releases avec un audio `Français`.
 
     Note : Le Format Personnalisé [{{ radarr['cf']['multi']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi) est dispensable pour le profil `VOSTFR`. En effet il est utilisé dans le but de renommer les fichiers afin de conserver le score attribué par le format personnalisé [{{ radarr['cf']['language-original-plus-french']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#language-original-plus-french).
+<!-- markdownlint-enable MD041-->

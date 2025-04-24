@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Versions françaises - [Cliquer pour afficher/masquer]"
 
     | Formats Personnalisés                                                                              | Trash ID                                        |
@@ -11,3 +12,4 @@
     | [{{ radarr['cf']['french-vq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vq)         | {{ radarr['cf']['french-vq']['trash_id'] }}     |
     | [{{ radarr['cf']['french-vfb']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfb)       | {{ radarr['cf']['french-vfb']['trash_id'] }}    |
     | [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) | {{ radarr['cf']['french-vostfr']['trash_id'] }} |
+<!-- markdownlint-enable MD041-->

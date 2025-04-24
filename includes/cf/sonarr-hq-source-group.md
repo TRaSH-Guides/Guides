@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "HQ Source Groups - [Click to show/hide]"
 
     | Custom Format                                                                                                   |                            Score                             | Trash ID                                      |
@@ -10,3 +11,4 @@
     !!! info
 
         :exclamation: = The reason why this Custom Format gets positively scored is because it's the only quality scene group that exists (up until now). Scene groups don't add a streaming service to their release names, so the score is adjusted to take this into account.
+<!-- markdownlint-enable MD041-->

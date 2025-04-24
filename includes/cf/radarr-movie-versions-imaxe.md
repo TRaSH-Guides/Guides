@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Movie Versions (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
@@ -19,3 +20,4 @@
         {{ radarr['cf']['imax-enhanced']['name'] }} exclusive expanded aspect ratio is 1:90:1, which offers up to 26% more picture for select sequences, meaning more of the action is visible on screen.
 
         If you don't prefer `{{ radarr['cf']['imax-enhanced']['name'] }}` then don't add it or use a score of `0`
+<!-- markdownlint-enable MD041-->

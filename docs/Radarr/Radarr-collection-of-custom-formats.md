@@ -5,8 +5,6 @@ These CFs have been collected from discussions on Discord or created with help f
 
 Special thanks to everyone who has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, Team Radarr, and the community.
 
-With Radarr V3, Custom Formats are much more advanced/powerful than with V2, although this also means a Custom Format can require more knowledge to set up or create.
-
 After requesting with Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This provides everyone with an easy way to share and use Custom Formats.
 
 We've made 3 guides related to this.
@@ -33,19 +31,24 @@ We've made 3 guides related to this.
 
 ---
 
-| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
-| ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10+](#dv-hdr10plus)        |
-| [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV HDR10](#dv-hdr10)             |
-| [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra) | [3.0 Sound](#30-sound)       | [DV](#dv)                         |
-| [DD+ ATMOS](#ddplus-atmos)            | [AAC](#aac)               | [4.0 Sound](#40-sound)       | [DV HLG](#dv-hlg)                 |
-| [TrueHD](#truehd)                     | [DD](#dd)                 | [5.1 Surround](#51-surround) | [DV SDR](#dv-sdr)                 |
-| [DTS-HD MA](#dts-hd-ma)               | [MP3](#mp3)               | [6.1 Surround](#61-surround) | [HDR10+](#hdr10plus)              |
-| [DD+](#ddplus)                        | [Opus](#opus)             | [7.1 Surround](#71-surround) | [HDR10](#hdr10)                   |
-| [DTS-ES](#dts-es)                     |                           |                              | [HDR](#hdr)                       |
-| [DTS](#dts)                           |                           |                              | [HDR (undefined)](#hdr-undefined) |
-|                                       |                           |                              | [PQ](#pq)                         |
-|                                       |                           |                              | [HLG](#hlg)                       |
+| Audio Formats                         | Audio Channels               | HDR Formats                       | HDR Optional                           |
+| ------------------------------------- | ---------------------------- | --------------------------------- | -------------------------------------- |
+| [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [DV HDR10+](#dv-hdr10plus)        | [DV (Disk)](#dv-disk)                  |
+| [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [DV HDR10](#dv-hdr10)             | [DV (WEBDL)](#dv-webdl)                |
+| [ATMOS (undefined)](#atmos-undefined) | [3.0 Sound](#30-sound)       | [DV](#dv)                         | [DV HDR10+ Boost](#dv-hdr10plus-boost) |
+| [DD+ ATMOS](#ddplus-atmos)            | [4.0 Sound](#40-sound)       | [DV HLG](#dv-hlg)                 | [HDR10+ Boost](#hdr10plus-boost)       |
+| [TrueHD](#truehd)                     | [5.1 Surround](#51-surround) | [DV SDR](#dv-sdr)                 | [SDR](#sdr)                            |
+| [DTS-HD MA](#dts-hd-ma)               | [6.1 Surround](#61-surround) | [HDR10+](#hdr10plus)              | [SDR (no WEBDL)](#sdr-no-webdl)        |
+| [DD+](#ddplus)                        | [7.1 Surround](#71-surround) | [HDR10](#hdr10)                   |                                        |
+| [DTS-ES](#dts-es)                     |                              | [HDR](#hdr)                       |                                        |
+| [DTS](#dts)                           |                              | [HDR (undefined)](#hdr-undefined) |                                        |
+| [FLAC](#flac)                         |                              | [PQ](#pq)                         |                                        |
+| [PCM](#pcm)                           |                              | [HLG](#hlg)                       |                                        |
+| [DTS-HD HRA](#dts-hd-hra)             |                              |                                   |                                        |
+| [AAC](#aac)                           |                              |                                   |                                        |
+| [DD](#dd)                             |                              |                                   |                                        |
+| [MP3](#mp3)                           |                              |                                   |                                        |
+| [Opus](#opus)                         |                              |                                   |                                        |
 
 ---
 
@@ -91,7 +94,6 @@ We've made 3 guides related to this.
 | [MY5](#my5)           | [Crave](#crav)          |                          |
 | [NOW](#now)           | [OViD](#ovid)           |                          |
 |                       | [Star+](#strp)          |                          |
-|                       |                         |                          |
 
 ---
 
@@ -103,12 +105,8 @@ We've made 3 guides related to this.
 | [Bad Dual Groups](#bad-dual-groups)                   | [Language: Not English (English Only)](#language-not-english)      |
 | [Black and White Editions](#black-and-white-editions) | [Language: Not French (French Only)](#language-not-french)         |
 | [Dutch Groups](#dutch-groups)                         | [Language: Not Original (Original Only)](#language-not-original)   |
-| [DV (Disk)](#dv-disk)                                 | [Language: Original + French](#language-original-plus-french)      |
-| [DV (WEBDL)](#dv-webdl)                               | [Language: Not German or English](#language-not-german-or-english) |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost)                |                                                                    |
-| [EVO (no WEBDL)](#evo-no-webdl)                       |                                                                    |
-| [FreeLeech](#freeleech)                               |                                                                    |
-| [HDR10+ Boost](#hdr10plus-boost)                      |                                                                    |
+| [EVO (no WEBDL)](#evo-no-webdl)                       | [Language: Original + French](#language-original-plus-french)      |
+| [FreeLeech](#freeleech)                               | [Language: Not German or English](#language-not-german-or-english) |
 | [HFR](#hfr)                                           |                                                                    |
 | [Internal](#internal)                                 |                                                                    |
 | [MPEG2](#mpeg2)                                       |                                                                    |
@@ -120,8 +118,6 @@ We've made 3 guides related to this.
 | [Repack3](#repack3)                                   |                                                                    |
 | [Retags](#retags)                                     |                                                                    |
 | [Scene](#scene)                                       |                                                                    |
-| [SDR (no WEBDL)](#sdr-no-webdl)                       |                                                                    |
-| [SDR](#sdr)                                           |                                                                    |
 | [VC-1](#vc-1)                                         |                                                                    |
 | [VP9](#vp9)                                           |                                                                    |
 | [x264](#x264)                                         |                                                                    |
@@ -163,7 +159,7 @@ We've made 3 guides related to this.
 
 ---
 
-## Audio Advanced
+## Audio Formats
 
 ---
 
@@ -720,6 +716,108 @@ We've made 3 guides related to this.
 
 ---
 
+## HDR Optional
+
+---
+
+### DV (Disk)
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dv-disk.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-disk.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### DV (WEBDL)
+
+<sub>DV = DoVi = Dolby Vision</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dv-webdl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### DV HDR10Plus Boost
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus-boost.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-hdr10plus-boost.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### HDR10Plus Boost
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### SDR
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### SDR (no WEBDL)
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl-radarr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ## Movie Versions
 
 ---
@@ -1154,24 +1252,6 @@ We've made 3 guides related to this.
 
 ---
 
-### DV (WEBDL)
-
-<sub>DV = DoVi = Dolby Vision</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-webdl.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
 ### EVO (no WEBDL)
 
 ??? question "Description - [Click to show/hide]"
@@ -1182,38 +1262,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/evo-no-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### HDR10Plus Boost
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### DV HDR10Plus Boost
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus-boost.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-hdr10plus-boost.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1342,54 +1390,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/internal.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### SDR
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### SDR (no WEBDL)
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl-radarr.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### DV (Disk)
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-disk.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-disk.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -3564,12 +3564,12 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-english.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-not-german-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-english.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-or-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 !!! warning "Information Regarding HD audio"
 
     It should be noted that many problems can arise from this profile if you use the HD audio Custom Formats, as:
@@ -16,3 +17,4 @@
     !!! tip
 
         This is why the Group tiers exist; they try to get hold of the groups that tend to provide the best original and French audio for a release. However, it is not infallible, and, once again, a movie may not have an equivalent FR audio track to the original audio's highest quality one.
+<!-- markdownlint-enable MD041-->

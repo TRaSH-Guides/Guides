@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "General Streaming Services - [Click to show/hide]"
 
     | Custom Format                                                                             |                         Score                          | Trash ID                                |
@@ -24,3 +25,4 @@
 
     - The reason why these Custom Formats have a score of `0` is because they are mainly used for the naming scheme and other variables should decide for movies if a certain release if preferred.
     - `BCore`, `CRiT` and `MA` are the only ones with a score because of their better source material, or higher bitrate and quality compared to other streaming services.
+<!-- markdownlint-enable MD041-->

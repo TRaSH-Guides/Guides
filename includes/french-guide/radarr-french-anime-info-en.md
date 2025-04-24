@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 !!! info "Important"
 
     In a first time you should follow the original Anime Guide following sections:
@@ -23,3 +24,4 @@
         For this example if you prefer VOSTFR over potential MULTi/DUAL (original and French) audio releases, you should score the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/radarr-collection-of-custom-formats/#vostfr) to `{{ radarr['cf']['french-vostfr']['trash_scores']['french-anime-vostfr'] }}`.
 
          *(Optional) You can also try to set up [Bazarr](/Bazarr/Setup-Guide){:target="_blank" rel="noopener noreferrer"} to get French Sub. This is less preferred as fewer anime subs can be found online than from normal TV shows. However, it can be still a great backup.*
+<!-- markdownlint-enable MD041-->

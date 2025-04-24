@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Miscellaneous (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                                   |                                   Score                                   | Trash ID                                                   |
@@ -22,3 +23,4 @@
     - **{{ radarr['cf']['obfuscated']['name'] }}:** [*Optional*] Use these only if you wish to avoid renamed releases.
     - **{{ radarr['cf']['retags']['name'] }}:** [*Optional*] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.
     - **{{ radarr['cf']['scene']['name'] }}:** [*Optional*] Use this only if you want to avoid SCENE releases.
+<!-- markdownlint-enable MD041-->

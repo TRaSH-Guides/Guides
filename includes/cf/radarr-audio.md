@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Audio (Optional) - [Click to show/hide]"
 
     **Why should I choose All Audio formats?**
@@ -30,3 +31,4 @@
     | [{{ radarr['cf']['dts']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts)                         |       {{ radarr['cf']['dts']['trash_scores']['default'] }}       | {{ radarr['cf']['dts']['trash_id'] }}             |
     | [{{ radarr['cf']['aac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#aac)                         |       {{ radarr['cf']['aac']['trash_scores']['default'] }}       | {{ radarr['cf']['aac']['trash_id'] }}             |
     | [{{ radarr['cf']['dd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dd)                           |       {{ radarr['cf']['dd']['trash_scores']['default'] }}        | {{ radarr['cf']['dd']['trash_id'] }}              |
+<!-- markdownlint-enable MD041-->

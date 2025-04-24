@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ```none
 data
 └── usenet
@@ -8,3 +9,4 @@ data
         ├── music
         └── tv
 ```
+<!-- markdownlint-enable MD041-->

@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Anime Streaming Services - [Click to show/hide]"
 
     | Custom Format                                                                                   |                              Score                               | Trash ID                                     |
@@ -13,3 +14,4 @@
     | [{{ sonarr['cf']['bglobal']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#b-global)  |                                0                                 | {{ sonarr['cf']['bglobal']['trash_id'] }}    |
     | [{{ sonarr['cf']['bilibili']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#bilibili) |                                0                                 | {{ sonarr['cf']['bilibili']['trash_id'] }}   |
     | [{{ sonarr['cf']['hidive']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hidive)     |                                0                                 | {{ sonarr['cf']['hidive']['trash_id'] }}     |
+<!-- markdownlint-enable MD041-->

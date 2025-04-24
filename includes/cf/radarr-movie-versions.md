@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Movie Versions (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
@@ -10,3 +11,4 @@
     | [{{ radarr['cf']['vinegar-syndrome']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vinegar-syndrome)         |   {{ radarr['cf']['vinegar-syndrome']['trash_scores']['default'] }}   | {{ radarr['cf']['vinegar-syndrome']['trash_id'] }}     |
     | [{{ radarr['cf']['special-edition']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#special-edition)           |   {{ radarr['cf']['special-edition']['trash_scores']['default'] }}    | {{ radarr['cf']['special-edition']['trash_id'] }}      |
     | [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax)                                 |         {{ radarr['cf']['imax']['trash_scores']['default'] }}         | {{ radarr['cf']['imax']['trash_id'] }}                 |
+<!-- markdownlint-enable MD041-->

@@ -88,7 +88,7 @@ Sonarr also addresses this issue in their own [Wiki](https://wiki.servarr.com/so
 
 ## Score logic
 
-{! include-markdown "../../includes/merge-quality/sonarrv4-current-logic.md" !}
+{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
 
 ---
 

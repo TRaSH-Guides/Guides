@@ -47,7 +47,7 @@
 
         **Why would I add this Custom Format?**
 
-        - You have a (Samsung) TV that supports HDR10+.
+        - You have a TV (e.g., Samsung) that supports HDR10+.
         - According the flowchart I should add this Custom Format
 
         <p align="center">![Flowchart](/Radarr/images/flowchart-hdr10plus-boost.png){ width="20%" height="20%" }

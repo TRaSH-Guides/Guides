@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 !!! warning "Informations concernant les audios HD"
 
     Il convient de noter que divers problèmes peuvent survenir avec ce profil si vous utilisez les formats personnalisés de l'audio HD, car :
@@ -16,3 +17,4 @@
     !!! tip
 
         Pour cette raison, les Formats Personnalisés de Groupes P2P existent ; ils tentent de regrouper les groupes qui ont tendance à fournir les meilleures pistes audio originales et françaises pour une release. Cependant, cette approche n'est pas infaillible et un film peut ne pas avoir une piste audio FR équivalente à la piste la plus élevée de l'audio original.
+<!-- markdownlint-enable MD041-->
