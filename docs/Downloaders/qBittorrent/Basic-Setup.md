@@ -124,7 +124,7 @@ This is where you would add for example your SOCKS5 settings from your VPN provi
 
 !!! success ""
 
-    **Suggested: `I personally don't recommend this unsecure option being it's un-encrypted and only spoofs your IP.`**
+    **Suggested: `I personally don't recommend this insecure option being it's unencrypted and only spoofs your IP.`**
 
 ---
 

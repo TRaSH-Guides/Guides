@@ -27,7 +27,7 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
     Install Instructions:
 
         1. Copy script to SABnzbd's `scripts` folder
-        2. Use your prefered shell and navigate to the `scripts` folder with the command `cd` (example `cd /mnt/user/appdata/sabnzdb/scripts`).
+        2. Use your preferred shell and navigate to the `scripts` folder with the command `cd` (example `cd /mnt/user/appdata/sabnzdb/scripts`).
         3. Run: `sudo chmod +x Clean.py`
         4. Run: `dos2unix Clean.py`
         5. In SABnzbd go to `Settings` => `Switches`
