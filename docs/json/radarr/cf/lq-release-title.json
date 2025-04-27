@@ -53,6 +53,15 @@
       }
     },
     {
+      "name": "PiRaTeS (no WEBDL)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!([ ._-]web[ ._-]?(dl|rip)?).*?)\\b(PiRaTeS)\\b"
+      }
+    },
+    {
       "name": "SWTYBLZ",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
