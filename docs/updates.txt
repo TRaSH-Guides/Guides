@@ -1,3 +1,9 @@
+# 2025-04-27 00:26
+- [feat(starr): Collection of Custom Formats pages to explicitly state if you are on the Radarr/Sonarr page.](https://github.com/TRaSH-Guides/Guides/pull/2374)
+- [chore(guide): Several backend cleanup and fixes](https://github.com/TRaSH-Guides/Guides/pull/2378)
+- [fix(sonarr-french): update cf-groups/release-groups-french.json](https://github.com/TRaSH-Guides/Guides/pull/2380)
+- [feat(starr): Add BTM to LQ Custom Formats](https://github.com/TRaSH-Guides/Guides/pull/2377)
+
 # 2025-04-20 00:26
 - [fix(guide-sync): Remove the exclude from the `DV HDR10+/HDR10+ Boost` group.](https://github.com/TRaSH-Guides/Guides/pull/2375)
 - [feat(starr): Add tag option to `How to Sync 2 Radarr/Sonarr with each other`](https://github.com/TRaSH-Guides/Guides/pull/2372)
