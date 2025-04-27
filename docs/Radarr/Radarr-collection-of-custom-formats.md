@@ -100,16 +100,15 @@ We've made 3 guides related to this.
 ---
 
 | Miscellaneous                                         | Language profiles                                                  |
-| ----------------------------------------------------- | ------------------------------------------------------------------ |
+|-------------------------------------------------------|--------------------------------------------------------------------|
 | [720p](#720p)                                         | [Language: German](#language-german)                               |
 | [1080p](#1080p)                                       | [Language: German DL](#language-german-dl)                         |
 | [2160p](#2160p)                                       | [Language: German DL (undefined)](#language-german-dl-undefined)   |
 | [Bad Dual Groups](#bad-dual-groups)                   | [Language: Not English (English Only)](#language-not-english)      |
 | [Black and White Editions](#black-and-white-editions) | [Language: Not French (French Only)](#language-not-french)         |
 | [Dutch Groups](#dutch-groups)                         | [Language: Not Original (Original Only)](#language-not-original)   |
-| [EVO (no WEBDL)](#evo-no-webdl)                       | [Language: Original + French](#language-original-plus-french)      |
-| [FreeLeech](#freeleech)                               | [Language: Not German or English](#language-not-german-or-english) |
-| [HFR](#hfr)                                           |                                                                    |
+| [FreeLeech](#freeleech)                               | [Language: Original + French](#language-original-plus-french)      |
+| [HFR](#hfr)                                           | [Language: Not German or English](#language-not-german-or-english) |
 | [Internal](#internal)                                 |                                                                    |
 | [MPEG2](#mpeg2)                                       |                                                                    |
 | [Multi](#multi)                                       |                                                                    |
@@ -1248,22 +1247,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/black-and-white-editions.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### EVO (no WEBDL)
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/evo-no-webdl.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/evo-no-webdl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
