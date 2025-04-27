@@ -141,7 +141,7 @@ Host name of news server.
 
 Encrypted server connection (TLS/SSL).
 
-*By changing this option you should also change the option Port accordingly because unsecure and encrypted connections use different ports.*
+*By changing this option you should also change the option Port accordingly because insecure and encrypted connections use different ports.*
 
 !!! success ""
 
