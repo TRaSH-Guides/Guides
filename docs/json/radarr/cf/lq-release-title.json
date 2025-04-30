@@ -26,6 +26,15 @@
       }
     },
     {
+      "name": "EVO (no WEBDL)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!([ ._-]web[ ._-]?(dl|rip)?).*?)\\b(EVO)\\b"
+      }
+    },
+    {
       "name": "Feranki1980",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

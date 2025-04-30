@@ -19,11 +19,6 @@
       "required": false
     },
     {
-      "name": "EVO (no WEBDL)",
-      "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
-      "required": false
-    },
-    {
       "name": "HFR",
       "trash_id": "973613461ac2cea99d52c4cd6e177ab82",
       "required": false
