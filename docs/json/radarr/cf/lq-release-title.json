@@ -4,6 +4,7 @@
     "default": -10000,
     "german": -35000
   },
+  "trash_regex": "https://regex101.com/r/8TIqc2/latest",
   "name": "LQ (Release Title)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -31,7 +32,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!([ ._-]web[ ._-]?(dl|rip)?).*?)\\b(EVO)\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO)\\b"
       }
     },
     {
@@ -67,7 +68,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!([ ._-]web[ ._-]?(dl|rip)?).*?)\\b(PiRaTeS)\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(PiRaTeS)\\b"
       }
     },
     {
