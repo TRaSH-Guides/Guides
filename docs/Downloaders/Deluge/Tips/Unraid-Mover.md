@@ -1,14 +1,10 @@
 # unRAID Mover and Deluge
 
-When you make use of the unRAID cache drive for your `/data/torrents` share, and the torrents in Deluge are still seeding, the mover can't move files since they are still in use.
+When you make use of the unRAID cache drive for your `/data/torrents` share, and the torrents in Deluge are actively seeding, the unRAID mover cannot move files, or the hard link will break since they are still in use.
 
 Using the following instructions will allow you to move the files with the use of the Deluge JSON-RPC.
 
-!!! abstract "Workflow Rules"
-
-    1. Pause torrents in a specified age range that reside on your cache drive.
-    1. Run the unRAID mover.
-    1. Resume the torrents after the mover has completed.
+--8<-- "includes/downloaders/mover-workflow.md"
 
 !!! warning
 
