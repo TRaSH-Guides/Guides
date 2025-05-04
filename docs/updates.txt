@@ -1,3 +1,10 @@
+# 2025-05-04 00:28
+- [feat(downloaders): Added a description of what the mover script does +  Mover Tuning tips](https://github.com/TRaSH-Guides/Guides/pull/2389)
+- [fix(radarr): PiRaTeS & EVO LQ (Release Title) regex](https://github.com/TRaSH-Guides/Guides/pull/2388)
+- [feat(radarr): DELETE CF `EVO (no WEBDL)` and move to `LQ (Release Title)`](https://github.com/TRaSH-Guides/Guides/pull/2386)
+- [feat(radarr): Do not match RlsGrp `PiRaTeS` when it is a WEB-DL](https://github.com/TRaSH-Guides/Guides/pull/2385)
+- [style(misc): fixed some typos](https://github.com/TRaSH-Guides/Guides/pull/2381)
+
 # 2025-04-27 00:26
 - [feat(starr): Collection of Custom Formats pages to explicitly state if you are on the Radarr/Sonarr page.](https://github.com/TRaSH-Guides/Guides/pull/2374)
 - [chore(guide): Several backend cleanup and fixes](https://github.com/TRaSH-Guides/Guides/pull/2378)
