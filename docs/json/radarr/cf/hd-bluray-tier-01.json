@@ -226,6 +226,15 @@
       "fields": {
         "value": "^(ZQ)$"
       }
+    },
+    {
+      "name": "ZoroSenpai",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ZoroSenpai)$"
+      }
     }
   ]
 }
