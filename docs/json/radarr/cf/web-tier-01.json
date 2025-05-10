@@ -178,6 +178,15 @@
       "fields": {
         "value": "^(TEPES)$"
       }
+    },
+    {
+      "name": "ZoroSenpai",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ZoroSenpai)$"
+      }
     }
   ]
 }
