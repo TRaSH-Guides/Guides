@@ -1,3 +1,6 @@
+# 2025-05-11 00:27
+- [feat(radarr): Add `ZoroSenpai` to `HD Bluray Tier 01` and `WEB Tier 01`](https://github.com/TRaSH-Guides/Guides/pull/2391)
+
 # 2025-05-04 00:28
 - [feat(downloaders): Added a description of what the mover script does +  Mover Tuning tips](https://github.com/TRaSH-Guides/Guides/pull/2389)
 - [fix(radarr): PiRaTeS & EVO LQ (Release Title) regex](https://github.com/TRaSH-Guides/Guides/pull/2388)
