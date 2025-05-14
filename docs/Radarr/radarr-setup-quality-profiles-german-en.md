@@ -178,6 +178,8 @@ If you prefer 1080p Remuxes (Remux-1080p)
     - WEBDL-1080p
     - WEBRip-1080p
 
+{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+
 {! include-markdown "../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}

@@ -169,6 +169,8 @@ If you prefer 1080p Remuxes (Bluray-1080p Remux)
     - WEBDL-1080p
     - WEBRip-1080p
 
+{! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
+
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
