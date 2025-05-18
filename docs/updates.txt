@@ -1,3 +1,6 @@
+# 2025-05-18 00:27
+- [fix(starr-german): Add german audio block to sonarr and radarr HD remux profiles](https://github.com/TRaSH-Guides/Guides/pull/2393)
+
 # 2025-05-11 00:27
 - [feat(radarr): Add `ZoroSenpai` to `HD Bluray Tier 01` and `WEB Tier 01`](https://github.com/TRaSH-Guides/Guides/pull/2391)
 
