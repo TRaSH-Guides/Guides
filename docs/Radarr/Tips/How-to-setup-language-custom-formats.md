@@ -29,7 +29,7 @@ Add the following JSON to your Radarr/Sonarr with a score in your profile of `-1
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-original.json' %]][[% endfilter %]]
     ```
 
 !!! tip
@@ -53,7 +53,7 @@ Add the following JSON to your Radarr/Sonarr with a score in your profile of `-1
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-english.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-english.json' %]][[% endfilter %]]
     ```
 
 !!! tip
