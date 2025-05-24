@@ -260,6 +260,15 @@
       "fields": {
         "value": "^(ZNM)$"
       }
+    },
+    {
+      "name": "BiOMA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BiOMA)$"
+      }
     }
   ]
 }
