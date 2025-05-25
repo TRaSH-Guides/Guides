@@ -1,3 +1,8 @@
+# 2025-05-25 00:28
+- [feat(radarr): add AOC to LQ](https://github.com/TRaSH-Guides/Guides/pull/2396)
+- [chore(starr): remove duplicate guide-only CFs](https://github.com/TRaSH-Guides/Guides/pull/2398)
+- [ci(markdownlint): disable MD036 and MD059 markdownlint rules](https://github.com/TRaSH-Guides/Guides/pull/2397)
+
 # 2025-05-18 00:27
 - [fix(starr-german): Add german audio block to sonarr and radarr HD remux profiles](https://github.com/TRaSH-Guides/Guides/pull/2393)
 
