@@ -260,24 +260,6 @@
       "fields": {
         "value": "^(ZNM)$"
       }
-    },
-    {
-      "name": "BiOMA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BiOMA)$"
-      }
-    },
-    {
-      "name": "sh4down",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(sh4down)$"
-      }
     }
   ]
 }
