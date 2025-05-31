@@ -332,6 +332,15 @@
       }
     },
     {
+      "name": "HDHUB4U",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDHUB4U)$"
+      }
+    },
+    {
       "name": "HDS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
