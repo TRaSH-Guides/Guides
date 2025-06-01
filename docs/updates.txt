@@ -1,3 +1,8 @@
+# 2025-06-01 00:32
+- [feat(guide): Add `HDHUB4U` to Radarr LQ JSON](https://github.com/TRaSH-Guides/Guides/pull/2404)
+- [fix(starr-german): add ML to German CF to avoid matching ML](https://github.com/TRaSH-Guides/Guides/pull/2400)
+- [feat(starr): add `BiOMA` and `sh4down` to Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/2399)
+
 # 2025-05-25 00:28
 - [feat(radarr): add AOC to LQ](https://github.com/TRaSH-Guides/Guides/pull/2396)
 - [chore(starr): remove duplicate guide-only CFs](https://github.com/TRaSH-Guides/Guides/pull/2398)
