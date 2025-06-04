@@ -106,6 +106,33 @@
       "fields": {
         "value": "\\b(Will1869)\\b"
       }
+    },
+    {
+      "name": "HDHUB4U",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HDHUB4U)\\b"
+      }
+    },
+    {
+      "name": "READNFO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(READNFO)\\b"
+      }
+    },
+    {
+      "name": "READ NOTE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(READ(\\s|\\.)+NOTE)\\b"
+      }
     }
   ]
 }
