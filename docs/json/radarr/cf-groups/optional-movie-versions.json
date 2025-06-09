@@ -24,6 +24,11 @@
       "required": false
     },
     {
+      "name": "Open Matte",
+      "trash_id": "09d9dd29a0fc958f9796e65c2a8864b4",
+      "required": false
+    },
+    {
       "name": "Vinegar Syndrome",
       "trash_id": "db9b4c4b53d312a3ca5f1378f6440fc9",
       "required": false
@@ -31,6 +36,16 @@
     {
       "name": "Special Edition",
       "trash_id": "957d0f44b592285f26449575e8b1167e",
+      "required": false
+    },
+    {
+      "name": "Theatrical Cut",
+      "trash_id": "e9001909a4c88013a359d0b9920d7bea",
+      "required": false
+    },
+    {
+      "name": "Hybrid",
+      "trash_id": "0f12c086e289cf966fa5948eac571f44",
       "required": false
     },
     {
