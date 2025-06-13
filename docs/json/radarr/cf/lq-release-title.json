@@ -72,6 +72,15 @@
       }
     },
     {
+      "name": "READ NOTE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(READ(\\s|\\.)+NOTE)\\b"
+      }
+    },
+    {
       "name": "SWTYBLZ",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
