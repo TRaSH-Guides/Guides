@@ -4,15 +4,8 @@
     **Why would I choose All HDR formats?**
 
     - You have a 4K/2160p TV and a hardware media player device (such as Roku, Apple TV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
-
-        {! include-markdown "../../includes/cf/dv-limitations-atv.md" !}
-
     - You've chosen a profile that includes 4K/2160p releases. You must use all the HDR formats with 4k/2160p profiles.
     - You must add **ALL** the HDR formats - don't leave any of them out!
-
-    {! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
-
-    {! include-markdown "../../includes/cf/dv-info-profiles.md" !}
 
     {! include-markdown "../../includes/cf/which-hdr-formats-should-i-choose.md" !}
 
@@ -59,4 +52,10 @@
         | ------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------: | ---------------------------------------------------- |
         | [{{ radarr['cf']['hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost)       |  {{ radarr['cf']['hdr10plus-boost']['trash_scores']['default'] }}   | {{ radarr['cf']['hdr10plus-boost']['trash_id'] }}    |
         | [{{ radarr['cf']['dv-hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10plus-boost) | {{ radarr['cf']['dv-hdr10plus-boost']['trash_scores']['default'] }} | {{ radarr['cf']['dv-hdr10plus-boost']['trash_id'] }} |
+
+    ---
+
+    {! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
+
+    {! include-markdown "../../includes/cf/dv-info-profiles.md" !}
 <!-- markdownlint-enable MD041-->
