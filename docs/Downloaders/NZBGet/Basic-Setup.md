@@ -614,9 +614,7 @@ Files to ignore during unpack.
 
 Add these extensions (*primarily for Windows users as they could potentially be abused or exploited*) to your [UnpackIgnoreExt](#unpackignoreext).
 
-```none
-ade, adp, app, application, appref-ms, asp, aspx, asx, bas, bat, bgi, cab, cer, chm, cmd, cnt, com, cpl, crt, csh, der, diagcab, exe, fxp, gadget, grp, hlp, hpj, hta, htc, inf, ins, iso, isp, its, jar, jnlp, js, jse, ksh, lnk, mad, maf, mag, mam, maq, mar, mas, mat, mau, mav, maw, mcf, mda, mdb, mde, mdt, mdw, mdz, msc, msh, msh1, msh2, mshxml, msh1xml, msh2xml, msi, msp, mst, msu, ops, osd, pcd, pif, pl, plg, prf, prg, printerexport, ps1, ps1xml, ps2, ps2xml, psc1, psc2, psd1, psdm1, pst, py, pyc, pyo, pyw, pyz, pyzw, reg, scf, scr, sct, shb, shs, theme, tmp, url, vb, vbe, vbp, vbs, vhd, vhdx, vsmacros, vsw, webpnp, website, ws, wsc, wsf, wsh, xbap, xll, xnk
-```
+{! include-markdown "../../../includes/downloaders/unwanted-extensions.md" !}
 
 !!! tip "If you are using NZBGet to download games and apps, this list shouldn't be used. You can create a separate category, set it to download only, manually extract the files, or use a separate app or instance for them."
 
