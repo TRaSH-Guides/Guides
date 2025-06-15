@@ -1,3 +1,7 @@
+# 2025-06-15 00:29
+- [feat(radarr): Add READ NOTE to Radarr lq-release-title.json](https://github.com/TRaSH-Guides/Guides/pull/2406)
+- [feat(starr): Add RlsGrp `RAWR` to `WEB Tier 02`](https://github.com/TRaSH-Guides/Guides/pull/2407)
+
 # 2025-06-01 00:32
 - [feat(guide): Add `HDHUB4U` to Radarr LQ JSON](https://github.com/TRaSH-Guides/Guides/pull/2404)
 - [fix(starr-german): add ML to German CF to avoid matching ML](https://github.com/TRaSH-Guides/Guides/pull/2400)
