@@ -1,3 +1,9 @@
+# 2025-06-22 00:29
+- [feat(guide-sync): Added SQP-3 (Audio)](https://github.com/TRaSH-Guides/Guides/pull/2414)
+- [feat(downloaders): Add `sln` and `vcxproj` to the SABnzbd/NZBGet Unwanted Extensions List](https://github.com/TRaSH-Guides/Guides/pull/2403)
+- [feat(guide-sync): Added the missing movie versions: Open Matte, Theatrical Cut, and Hybrid](https://github.com/TRaSH-Guides/Guides/pull/2409)
+- [feat(starr): Improve the HDR Formats layout in the Starr profiles](https://github.com/TRaSH-Guides/Guides/pull/2410)
+
 # 2025-06-15 00:29
 - [feat(radarr): Add READ NOTE to Radarr lq-release-title.json](https://github.com/TRaSH-Guides/Guides/pull/2406)
 - [feat(starr): Add RlsGrp `RAWR` to `WEB Tier 02`](https://github.com/TRaSH-Guides/Guides/pull/2407)
