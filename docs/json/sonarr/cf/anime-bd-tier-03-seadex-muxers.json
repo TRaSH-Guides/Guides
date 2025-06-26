@@ -70,6 +70,15 @@
       }
     },
     {
+      "name": "B00BA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(B00BA)\\b"
+      }
+    },
+    {
       "name": "CBT",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
