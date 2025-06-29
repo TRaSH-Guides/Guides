@@ -1,3 +1,6 @@
+# 2025-06-29 00:29
+- [feat(starr-anime): Add B00BA to Anime Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2417)
+
 # 2025-06-22 00:29
 - [feat(guide-sync): Added SQP-3 (Audio)](https://github.com/TRaSH-Guides/Guides/pull/2414)
 - [feat(downloaders): Add `sln` and `vcxproj` to the SABnzbd/NZBGet Unwanted Extensions List](https://github.com/TRaSH-Guides/Guides/pull/2403)
