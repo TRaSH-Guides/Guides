@@ -2,8 +2,6 @@ name: Lint - YAML
 
 on:
   push:
-    branches:
-      - master
   pull_request:
 
 jobs:

@@ -2,8 +2,6 @@ name: Lint - EditorConfig
 
 on:
   push:
-    branches:
-      - master
   pull_request:
 
 jobs:
