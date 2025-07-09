@@ -9,10 +9,10 @@ on:
 jobs:
   editorconfig-checker:
     runs-on: ubuntu-latest
+    container:
+      image: mstruebing/editorconfig-checker:v3.3.0@sha256:a04d1bf7c8c7e01534e11ce9253d66721d7b039722ce514910c59bb68ce14f50
+      options: --user 0:0
     steps:
-      - uses: actions/checkout@v4.1.6
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: editorconfig-checker
-        run: |
-          docker run --rm \
-            -v "${GITHUB_WORKSPACE}":/check \
-            mstruebing/editorconfig-checker
+        run: editorconfig-checker .

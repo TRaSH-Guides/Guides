@@ -9,13 +9,10 @@ on:
 jobs:
   markdownlint:
     runs-on: ubuntu-latest
+    container:
+      image: davidanson/markdownlint-cli2:v0.18.1
+      options: --user 0:0
     steps:
-      - uses: actions/checkout@v4.1.6
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: markdownlint
-        # markdownlint-cli pinned to v0.45.0
-        run: |
-          docker run --rm \
-            -v "${GITHUB_WORKSPACE}":/workdir \
-            ghcr.io/igorshubovych/markdownlint-cli@sha256:27eadb7b23b79b4b01b9220e18467d041804e632f41cf69b9c1613b48ed72749 \
-            -c "/workdir/.markdownlint.yaml" \
-            .
+        run: markdownlint-cli2 .
