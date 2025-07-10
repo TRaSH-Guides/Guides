@@ -2,8 +2,6 @@ name: Validate Metadata JSON
 
 on:
   push:
-    branches:
-      - master
     paths:
       - metadata.json
       - metadata.schema.json

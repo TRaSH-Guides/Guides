@@ -2,8 +2,6 @@ name: Build and Deploy Docs
 
 on:
   push:
-    branches:
-      - master
 
 jobs:
   build:
@@ -50,7 +48,7 @@ jobs:
           mkdocs --version
 
       - name: Publish to Cloudflare Pages
-        if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
+        if: github.event_name == 'push' && github.event.repository.fork == false
         id: cloudflare
         uses: cloudflare/wrangler-action@v3.1.0
         with:
@@ -59,5 +57,5 @@ jobs:
           command: >
             pages deploy site
             --project-name=trash-guides
-            --branch=master
+            --branch=${{ github.ref_name }}
             --commit-hash=${{ github.sha }}

@@ -2,8 +2,6 @@ name: Validate Custom Format JSONs
 
 on:
   push:
-    branches:
-      - master
     paths:
       - .github/workflows/custom-format-validation.yml
       - docs/json/guide-only/*.json
