@@ -25,7 +25,7 @@ jobs:
       pr_number: ${{ steps.pr_info.outputs.pr_number }}
       pr_sha: ${{ steps.pr_info.outputs.pr_sha }}
     steps:
-      - name: 'Download artifact'
+      - name: Download artifact
         uses: actions/download-artifact@v4.3.0
         with:
           run-id: ${{ github.event.workflow_run.id }}
@@ -42,7 +42,7 @@ jobs:
           echo "pr_number=$(cat ${{ github.workspace }}/pr_info/PR_NUMBER)" >> $GITHUB_OUTPUT
           echo "pr_sha=$(cat ${{ github.workspace }}/pr_info/PR_SHA)" >> $GITHUB_OUTPUT
 
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           ref: ${{ steps.pr_info.outputs.pr_sha }}
@@ -97,7 +97,7 @@ jobs:
     runs-on: ubuntu-latest
     if: always() && github.event.repository.fork == false
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Comment PR
