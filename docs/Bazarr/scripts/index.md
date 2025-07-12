@@ -31,7 +31,7 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
     
     Automatically removes common annoying scene branding and attribution entries from subtitle files. Only .SRT format subtitles are supported.
     
-    <a href="https://raw.githubusercontent.com/TheCaptain989/bazarr-cleansubs/refs/heads/master/cleansubs.sh" download>Download</a> the script from GitHub and place in the `/config` directory of bazarr.
+    <a href="https://github.com/TheCaptain989/bazarr-cleansubs/raw/refs/heads/master/cleansubs.sh" download>Download</a> the script from GitHub and place in the `/config` directory of bazarr.
 
 ??? example "Script"
 
