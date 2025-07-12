@@ -20,3 +20,21 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
     ```sh
     [[% filter indent(width=4) %]][[% include 'Bazarr/scripts/2to3-language-code/2to3_language_code.sh' %]][[% endfilter %]]
     ```
+
+## Cleansubs
+
+??? info "cleansubs"
+
+    - Title: `cleansubs.sh`
+    - Author: [TheCaptain989](https://github.com/TheCaptain989)
+    - Website: https://github.com/TheCaptain989/bazarr-cleansubs
+    
+    A shell script to automatically remove common annoying scene branding and   attribution entries from subtitle files. Only .SRT format subtitles are   supported.
+    
+    [Download](https://raw.githubusercontent.com/TheCaptain989/bazarr-cleansubs/refs/heads/master/cleansubs.sh) from GitHub source and place in the `/config` directory of bazarr.
+
+??? example "Script"
+
+    Configure a custom script from the Bazarr *Settings* > *Subtitles* screen by typing the following in the **Post-processing command** field (Note the double quotes!): 
+    
+    `/config/cleansubs.sh -f "{{subtitles}}" ;`
