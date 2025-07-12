@@ -35,7 +35,7 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
 
 ??? example "Script"
 
-    Configure a custom script from the Bazarr *Settings* > *Subtitles* screen by pasting the following in the **Command** field under **Custom Post-Processing**: 
+    Configure a custom script from Bazarr's *Settings* > *Subtitles* screen by pasting the following in the **Command** field under **Custom Post-Processing**: 
     
     ```sh
     /config/cleansubs.sh -f "{{subtitles}}" ;
