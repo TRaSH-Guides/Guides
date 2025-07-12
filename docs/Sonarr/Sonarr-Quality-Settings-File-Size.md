@@ -8,7 +8,7 @@
 
 --8<-- "includes/starr/quality-size-preferred-info.md"
 
-!!! info "`1000` is the displayed value for Unlimited"
+!!! info "{{ sonarr['quality-size']['series']['qualities'][13]['max'] }} is the displayed value for Unlimited"
 
 === "Standard"
 
