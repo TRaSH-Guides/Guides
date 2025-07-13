@@ -1,3 +1,7 @@
+# 2025-07-13 00:30
+- [feat(starr): Add some scene groups](https://github.com/TRaSH-Guides/Guides/pull/2419)
+- [fix(starr): Update the maximum file size score to reflect the new maximum file size.](https://github.com/TRaSH-Guides/Guides/pull/2422)
+
 # 2025-06-29 00:29
 - [feat(starr-anime): Add B00BA to Anime Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2417)
 
