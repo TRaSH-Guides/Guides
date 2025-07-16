@@ -48,7 +48,7 @@ jobs:
           mkdocs --version
 
       - name: Publish to Cloudflare Pages
-        if: github.event_name == 'push' && github.event.repository.fork == false
+        if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref) && github.event.repository.fork == false
         id: cloudflare
         uses: cloudflare/wrangler-action@v3.1.0
         with:
