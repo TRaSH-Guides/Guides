@@ -2,7 +2,7 @@ version: "3.2"
 services:
   radarr:
     container_name: radarr
-    image: ghcr.io/hotio/radarr:latest@sha256:79c751100d1398305f05290068cef7367dc8cf1c3d7642db1da70a10da9dfa6e
+    image: ghcr.io/hotio/radarr:latest
     restart: unless-stopped
     logging:
       driver: json-file
@@ -18,7 +18,7 @@ services:
       - /data:/data
   sonarr:
     container_name: sonarr
-    image: ghcr.io/hotio/sonarr:latest@sha256:6a8f771b42a96683af146aff683122102193767c12f3fb9b5c1c90e42a111896
+    image: ghcr.io/hotio/sonarr:latest
     restart: unless-stopped
     logging:
       driver: json-file
@@ -34,7 +34,7 @@ services:
       - /data:/data
   bazarr:
     container_name: bazarr
-    image: ghcr.io/hotio/bazarr:latest@sha256:93f3434da7d48fa2417f6fe09a955f17859f4366b2252ee6c45d8d049ad1a01b
+    image: ghcr.io/hotio/bazarr:latest
     restart: unless-stopped
     logging:
       driver: json-file
@@ -50,7 +50,7 @@ services:
       - /data/media:/data/media
   sabnzbd:
     container_name: sabnzbd
-    image: ghcr.io/hotio/sabnzbd:latest@sha256:aff501a8144b64f8bd318768e37987d7d6c02c41b95917519343eb960c41ae0a
+    image: ghcr.io/hotio/sabnzbd:latest
     restart: unless-stopped
     logging:
       driver: json-file
