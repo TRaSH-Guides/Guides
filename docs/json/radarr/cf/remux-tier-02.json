@@ -18,15 +18,6 @@
       }
     },
     {
-      "name": "Flights",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Flights)$"
-      }
-    },
-    {
       "name": "NCmt",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

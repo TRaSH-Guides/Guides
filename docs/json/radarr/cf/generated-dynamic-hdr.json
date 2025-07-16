@@ -26,6 +26,15 @@
       }
     },
     {
+      "name": "Flights",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Flights)$"
+      }
+    },
+    {
       "name": "SasukeducK",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -77,6 +86,24 @@
       "required": false,
       "fields": {
         "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
+      }
+    },
+    {
+      "name": "Not WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "Not WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 8
       }
     }
   ]
