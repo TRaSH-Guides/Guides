@@ -81,7 +81,7 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         id: cloudflare
-        uses: cloudflare/wrangler-action@v3.1.0
+        uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # v3.14.1
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
