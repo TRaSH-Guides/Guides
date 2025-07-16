@@ -1,0 +1,39 @@
+name: Lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  editorconfig-checker:
+    runs-on: ubuntu-latest
+    container:
+      image: mstruebing/editorconfig-checker:v3.3.0@sha256:a04d1bf7c8c7e01534e11ce9253d66721d7b039722ce514910c59bb68ce14f50
+      options: --user 0:0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: editorconfig-checker
+        run: editorconfig-checker .
+
+  markdownlint:
+    runs-on: ubuntu-latest
+    container:
+      image: davidanson/markdownlint-cli2:v0.18.1@sha256:173cb697a255a8a985f2c6a83b4f7a8b3c98f4fb382c71c45f1c52e4d4fed63a
+      options: --user 0:0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: markdownlint
+        run: markdownlint-cli2 **.{md,markdown}
+
+  yamllint:
+    runs-on: ubuntu-latest
+    container:
+      image: peterdavehello/yamllint:1.37.0@sha256:bb8e9a2970f31503714447e2c309add8eb27ad57a66dee6fa2d37322415ed0ae
+      options: --user 0:0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: yamllint
+        run: yamllint .

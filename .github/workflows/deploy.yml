@@ -2,8 +2,6 @@ name: Build and Deploy Docs
 
 on:
   push:
-    branches:
-      - master
 
 jobs:
   build:
@@ -13,8 +11,8 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4.1.6
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           fetch-depth: 0
           sparse-checkout: |
@@ -50,14 +48,14 @@ jobs:
           mkdocs --version
 
       - name: Publish to Cloudflare Pages
-        if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
+        if: github.event_name == 'push' && github.event.repository.fork == false
         id: cloudflare
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v3.1.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: >
             pages deploy site
             --project-name=trash-guides
-            --branch=master
+            --branch=${{ github.ref_name }}
             --commit-hash=${{ github.sha }}

@@ -22,7 +22,8 @@ jobs:
           echo ${{ github.event.pull_request.number }} > ./pr_info/PR_NUMBER
           echo ${{ github.event.pull_request.head.sha }} > ./pr_info/PR_SHA
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload PR info
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: pr_info
           path: pr_info/
