@@ -17,14 +17,14 @@
     {
       "quality": "WEBDL-1080p",
       "min": 12.5,
-      "preferred": 84.7,
-      "max": 85.7
+      "preferred": 101,
+      "max": 102
     },
     {
       "quality": "WEBRip-1080p",
       "min": 12.5,
-      "preferred": 84.7,
-      "max": 85.7
+      "preferred": 101,
+      "max": 102
     },
     {
       "quality": "Bluray-720p",
