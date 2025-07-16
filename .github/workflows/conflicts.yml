@@ -11,7 +11,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Label merge conflicts
-        uses: mschilde/auto-label-merge-conflicts@v2.0
+        uses: mschilde/auto-label-merge-conflicts@5981f8933e92b78098af86b9e33fe0871cc7a3be # v2.0
         if: github.event.repository.fork == false
         with:
           CONFLICT_LABEL_NAME: "Status: Conflicted"
