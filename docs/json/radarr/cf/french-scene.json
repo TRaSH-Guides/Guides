@@ -116,7 +116,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LYPSG)$"
+        "value": "^(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LUCKY|LYPSG)$"
       }
     },
     {
