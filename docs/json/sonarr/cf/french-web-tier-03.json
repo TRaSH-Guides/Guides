@@ -93,6 +93,15 @@
       }
     },
     {
+      "name": "WaCkS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WaCkS)$"
+      }
+    },
+    {
       "name": "WQM",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

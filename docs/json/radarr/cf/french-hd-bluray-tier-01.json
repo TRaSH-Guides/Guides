@@ -91,6 +91,15 @@
       "fields": {
         "value": "^(Psaro)$"
       }
+    },
+    {
+      "name": "YODA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(YODA)$"
+      }
     }
   ]
 }

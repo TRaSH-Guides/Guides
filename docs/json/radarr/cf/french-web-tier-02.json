@@ -109,6 +109,15 @@
       "fields": {
         "value": "^(TkHD)$"
       }
+    },
+    {
+      "name": "WaCkS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WaCkS)$"
+      }
     }
   ]
 }

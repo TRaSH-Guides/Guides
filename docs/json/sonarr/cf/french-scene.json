@@ -116,7 +116,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LYPSG)$"
+        "value": "^(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LUCKY|LYPSG)$"
       }
     },
     {
@@ -188,7 +188,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(UKDHD|UKDTV|ULSHD|Ulysse|USUNSKiLLED|URY|USURY)$"
+        "value": "^(UKDHD|UKDTV|ULSHD|Ulysse|(US)?UNSKiLLED|URY|USURY)$"
       }
     },
     {

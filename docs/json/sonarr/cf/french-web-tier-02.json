@@ -93,6 +93,15 @@
       }
     },
     {
+      "name": "RG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RG)$"
+      }
+    },
+    {
       "name": "RiPiT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

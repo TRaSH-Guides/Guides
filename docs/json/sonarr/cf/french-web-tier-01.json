@@ -102,6 +102,15 @@
       }
     },
     {
+      "name": "SUPPLY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SUPPLY)$"
+      }
+    },
+    {
       "name": "TFA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
