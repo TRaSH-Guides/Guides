@@ -27,6 +27,15 @@
       }
     },
     {
+      "name": "D3US",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(-D3US|D3US-)"
+      }
+    },
+    {
       "name": "EVO (no WEBDL)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
