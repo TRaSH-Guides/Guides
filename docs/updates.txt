@@ -1,3 +1,14 @@
+# 2025-07-20 00:30
+- [feat(starr): Updated the Starr naming scheme and made it as consistent as possible](https://github.com/TRaSH-Guides/Guides/pull/2416)
+- [feat(starr-french): Update Group Tiers](https://github.com/TRaSH-Guides/Guides/pull/2437)
+- [feat(guide): Add `E` to Radarr `LQ` custom format](https://github.com/TRaSH-Guides/Guides/pull/2436)
+- [chore(misc): update copyright year](https://github.com/TRaSH-Guides/Guides/pull/2435)
+- [ci: tooling-fixes](https://github.com/TRaSH-Guides/Guides/pull/2434)
+- [ci: 💚 refactor GHA lint tools](https://github.com/TRaSH-Guides/Guides/pull/2421)
+- [feat(radarr): Increase SQP quality size for WEBDL/WEBRip-1080p](https://github.com/TRaSH-Guides/Guides/pull/2428)
+- [feat(radarr): Re-Tier/Move RlsGRp Flights to Generated Dynamic HDR](https://github.com/TRaSH-Guides/Guides/pull/2429)
+- [fix(starr): remove sphd](https://github.com/TRaSH-Guides/Guides/pull/2426)
+
 # 2025-07-13 00:30
 - [feat(starr): Add some scene groups](https://github.com/TRaSH-Guides/Guides/pull/2419)
 - [fix(starr): Update the maximum file size score to reflect the new maximum file size.](https://github.com/TRaSH-Guides/Guides/pull/2422)
