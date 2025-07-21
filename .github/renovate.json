@@ -12,6 +12,10 @@
     ":enableVulnerabilityAlerts",
     ":renovatePrefix"
   ],
-  "baseBranches": ["$default"],
-  "ignorePaths": ["includes/docker/docker-compose.yml"]
+  "baseBranchPatterns": [
+    "$default"
+  ],
+  "ignorePaths": [
+    "includes/docker/docker-compose.yml"
+  ]
 }
