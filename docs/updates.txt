@@ -1,3 +1,7 @@
+# 2025-07-27 00:31
+- [fix(guide-sync): Updated Radarr Optional Misc custom format group HFR ID to match Radarr custom format HFR ID](https://github.com/TRaSH-Guides/Guides/pull/2442)
+- [feat(guide): Add D3US to `lq-release-title.json`](https://github.com/TRaSH-Guides/Guides/pull/2439)
+
 # 2025-07-20 00:30
 - [feat(starr): Updated the Starr naming scheme and made it as consistent as possible](https://github.com/TRaSH-Guides/Guides/pull/2416)
 - [feat(starr-french): Update Group Tiers](https://github.com/TRaSH-Guides/Guides/pull/2437)
