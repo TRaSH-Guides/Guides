@@ -19,7 +19,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const titleRegex = /^(Revert \")?(((feat|fix|chore)\((((radarr|sonarr|starr)(-(german|french|anime))?)|(prowlarr|lidarr|bazarr|hardlinks|downloaders|plex|guide(-sync)?|misc|glossary|gha|deps))\))|(docs|style|refactor|perf|test|update|build|ci)(\([\w\/-]+\))?):\s.+$/;
+            const titleRegex = /^(Revert \")?(((feat|fix|chore)\((((radarr|sonarr|starr)(-(german|french|anime))?)|(prowlarr|lidarr|bazarr|hardlinks|downloaders|plex|guide(-sync)?|misc|glossary|gha|deps|config))\))|(docs|style|refactor|perf|test|update|build|ci)(\([\w\/-]+\))?):\s.+$/;
             const title = context.payload.pull_request.title;
             const isValid = titleRegex.test(title);
             if (!isValid) {
