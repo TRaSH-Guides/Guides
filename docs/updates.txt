@@ -1,3 +1,6 @@
+# 2025-08-03 00:31
+- [fix(config): allow renovate to migrate its own config](https://github.com/TRaSH-Guides/Guides/pull/2441)
+
 # 2025-07-27 00:31
 - [fix(guide-sync): Updated Radarr Optional Misc custom format group HFR ID to match Radarr custom format HFR ID](https://github.com/TRaSH-Guides/Guides/pull/2442)
 - [feat(guide): Add D3US to `lq-release-title.json`](https://github.com/TRaSH-Guides/Guides/pull/2439)
