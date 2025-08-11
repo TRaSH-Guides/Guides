@@ -5,7 +5,7 @@ class ContributorsFetcher {
   constructor() {
     this.contributors = '<div style="display: flex; flex-wrap: wrap;">';
     this.index = 0;
-    this.excludedUsers = new Set(['actions-user', 'mynameisbogdan']);
+    this.excludedUsers = new Set(['actions-user', 'mynameisbogdan', 'ImgBotApp']);
     this.excludedTypes = new Set(['Bot']);
   }
 
