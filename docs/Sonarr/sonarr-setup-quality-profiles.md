@@ -142,7 +142,7 @@ If you prefer 2160p WEBDL (WEB-2160p)
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
@@ -195,7 +195,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 - You have a 4K TV and a hardware media player device (such as Roku, Apple TV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 ---
 

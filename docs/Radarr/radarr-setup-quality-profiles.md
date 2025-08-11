@@ -148,7 +148,7 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md" !}
 
@@ -248,7 +248,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
@@ -312,7 +312,7 @@ _The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we 
 
 - You have a 4K TV and a hardware media player device (such as Roku, Apple TV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 ---
 
