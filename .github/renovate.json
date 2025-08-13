@@ -3,7 +3,7 @@
   "extends": [
     "config:best-practices",
     "customManagers:githubActionsVersions",
-    ":automergeBranch",
+    ":automergePr",
     ":automergeDigest",
     ":automergeLinters",
     ":automergeStableNonMajor",
