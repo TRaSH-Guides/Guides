@@ -17,5 +17,25 @@
   ],
   "ignorePaths": [
     "includes/docker/docker-compose.yml"
+  ],
+  "packageRules": [
+    {
+      "description": "Group Python pip dependencies",
+      "matchManagers": ["pip_requirements"],
+      "groupName": "Python dependencies",
+      "groupSlug": "python-deps"
+    },
+    {
+      "description": "Group GitHub Actions dependencies",
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions",
+      "groupSlug": "github-actions"
+    },
+    {
+      "description": "Group Docker dependencies",
+      "matchManagers": ["docker-compose", "dockerfile"],
+      "groupName": "Docker dependencies",
+      "groupSlug": "docker-deps"
+    }
   ]
 }
