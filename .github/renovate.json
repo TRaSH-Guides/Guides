@@ -3,7 +3,7 @@
   "extends": [
     "config:best-practices",
     "customManagers:githubActionsVersions",
-    ":automergeBranch",
+    ":automergePr",
     ":automergeDigest",
     ":automergeLinters",
     ":automergeStableNonMajor",
@@ -17,5 +17,52 @@
   ],
   "ignorePaths": [
     "includes/docker/docker-compose.yml"
+  ],
+  "packageRules": [
+    {
+      "description": "Group Python non-major dependencies",
+      "matchManagers": ["pip_requirements"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "Python dependencies",
+      "groupSlug": "python-deps"
+    },
+    {
+      "description": "Group Python major dependencies",
+      "matchManagers": ["pip_requirements"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "Python major dependencies",
+      "groupSlug": "python-major",
+      "automerge": false
+    },
+    {
+      "description": "Group GitHub Actions non-major dependencies",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "GitHub Actions",
+      "groupSlug": "github-actions"
+    },
+    {
+      "description": "Group GitHub Actions major dependencies",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "GitHub Actions major",
+      "groupSlug": "github-actions-major",
+      "automerge": false
+    },
+    {
+      "description": "Group Docker non-major dependencies",
+      "matchManagers": ["docker-compose", "dockerfile"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "Docker dependencies",
+      "groupSlug": "docker-deps"
+    },
+    {
+      "description": "Group Docker major dependencies",
+      "matchManagers": ["docker-compose", "dockerfile"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "Docker major dependencies",
+      "groupSlug": "docker-major",
+      "automerge": false
+    }
   ]
 }
