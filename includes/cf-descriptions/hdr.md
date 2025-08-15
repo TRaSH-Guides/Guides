@@ -1,7 +1,9 @@
 <!-- markdownlint-disable MD041-->
 **HDR**<br>
 
-This custom format is a sort of "catch-all" for all the HDR-related formats, including those that have `HDR10` or `HDR10+` fallback, such as `DV HDR10` or `DV HDR10+`.
+This Custom Format serves as a catch-all for all HDR-related formats, including those with `HDR10` or `HDR10+` fallback capabilities, such as `DV HDR10` or `DV HDR10+`.
+
+**Supported Formats**
 
 - `HDR10+`
 - `HDR10`
