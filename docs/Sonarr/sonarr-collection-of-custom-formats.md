@@ -29,24 +29,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-| Audio Formats                         | Audio Channels               | HDR Formats                       | HDR Optional                           |
-| ------------------------------------- | ---------------------------- | --------------------------------- | -------------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [DV](#dv)                         | [DV (Disk)](#dv-disk)                  |
-| [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [HDR](#hdr)                       | [DV (WEBDL)](#dv-webdl)                |
-| [ATMOS (undefined)](#atmos-undefined) | [3.0 Sound](#30-sound)       | [HDR10+](#hdr10plus)              | [SDR](#sdr)                            |
-| [DD+ ATMOS](#ddplus-atmos)            | [4.0 Sound](#40-sound)       |                                   | [SDR (no WEBDL)](#sdr-no-webdl)        |
-| [TrueHD](#truehd)                     | [5.1 Surround](#51-surround) |                                   |                                        |
-| [DTS-HD MA](#dts-hd-ma)               | [6.1 Surround](#61-surround) |                                   |                                        |
-| [DD+](#ddplus)                        | [7.1 Surround](#71-surround) |                                   |                                        |
-| [DTS-ES](#dts-es)                     |                              |                                   |                                        |
-| [DTS](#dts)                           |                              |                                   |                                        |
-| [FLAC](#flac)                         |                              |                                   |                                        |
-| [PCM](#pcm)                           |                              |                                   |                                        |
-| [DTS-HD HRA](#dts-hd-hra)             |                              |                                   |                                        |
-| [AAC](#aac)                           |                              |                                   |                                        |
-| [DD](#dd)                             |                              |                                   |                                        |
-| [MP3](#mp3)                           |                              |                                   |                                        |
-| [Opus](#opus)                         |                              |                                   |                                        |
+| Audio Formats                         | Audio Channels               | HDR Formats                      | HDR Optional                    |
+|---------------------------------------|------------------------------|----------------------------------|---------------------------------|
+| [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [DV](#dv)                        | [DV (Disk)](#dv-disk)           |
+| [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [HDR](#hdr)                      | [DV (WEBDL)](#dv-webdl)         |
+| [ATMOS (undefined)](#atmos-undefined) | [3.0 Sound](#30-sound)       | [HDR10+ Boost](#hdr10plus-boost) | [SDR](#sdr)                     |
+| [DD+ ATMOS](#ddplus-atmos)            | [4.0 Sound](#40-sound)       |                                  | [SDR (no WEBDL)](#sdr-no-webdl) |
+| [TrueHD](#truehd)                     | [5.1 Surround](#51-surround) |                                  |                                 |
+| [DTS-HD MA](#dts-hd-ma)               | [6.1 Surround](#61-surround) |                                  |                                 |
+| [DD+](#ddplus)                        | [7.1 Surround](#71-surround) |                                  |                                 |
+| [DTS-ES](#dts-es)                     |                              |                                  |                                 |
+| [DTS](#dts)                           |                              |                                  |                                 |
+| [FLAC](#flac)                         |                              |                                  |                                 |
+| [PCM](#pcm)                           |                              |                                  |                                 |
+| [DTS-HD HRA](#dts-hd-hra)             |                              |                                  |                                 |
+| [AAC](#aac)                           |                              |                                  |                                 |
+| [DD](#dd)                             |                              |                                  |                                 |
+| [MP3](#mp3)                           |                              |                                  |                                 |
+| [Opus](#opus)                         |                              |                                  |                                 |
 
 ---
 
@@ -554,12 +554,12 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hdr10plus.md" !}
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
