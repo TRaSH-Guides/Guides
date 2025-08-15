@@ -1,5 +1,5 @@
 {
-  "trash_id": "e61e28db95d22bedcadf030b8f156d96",
+  "trash_id": "493b6d1dbec3c3364c59d7607f7e3405",
   "trash_scores": {
     "default": 500
   },
@@ -10,72 +10,63 @@
       "name": "HDR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(HDR)\\b"
       }
     },
     {
-      "name": "Not DV",
+      "name": "HDR10",
       "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
+      "negate": false,
+      "required": false,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
+        "value": "\\b(HDR10(?![+]|P(lus)?))"
       }
     },
     {
-      "name": "Not HDR10",
+      "name": "HDR10+",
       "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
+      "negate": false,
+      "required": false,
       "fields": {
-        "value": "\\bHDR10(?!\\+|Plus)\\b"
+        "value": "\\b(HDR10(?=[+]|P(lus)?))"
       }
     },
     {
-      "name": "Not HDR10+",
+      "name": "HLG",
       "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
+      "negate": false,
+      "required": false,
       "fields": {
-        "value": "\\bHDR10(\\+|P(lus)?\\b)"
+        "value": "\\b(HLG)\\b"
       }
     },
     {
-      "name": "Not HLG",
+      "name": "PQ",
       "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bHLG(\\b|\\d)"
-      }
-    },
-    {
-      "name": "Not PQ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
+      "negate": false,
+      "required": false,
       "fields": {
         "value": "\\b(PQ)\\b"
       }
     },
     {
-      "name": "Not RlsGrp (Missing HDR)",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": true,
-      "required": true,
+      "name": "DV With HDR10 fallback",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
       "fields": {
-        "value": "\\b(FraMeSToR|HQMUX|SiCFoI)\\b"
+        "value": "soon"
       }
     },
     {
-      "name": "Not SDR",
+      "name": "RlsGrp (Missing HDR)",
       "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
+      "negate": false,
+      "required": false,
       "fields": {
-        "value": "\\bSDR(\\b|\\d)"
+        "value": "soon"
       }
     }
   ]
