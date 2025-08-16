@@ -36,6 +36,15 @@
       }
     },
     {
+      "name": "BYNDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BYNDR)$"
+      }
+    },
+    {
       "name": "Chotab",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
