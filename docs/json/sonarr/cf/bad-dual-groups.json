@@ -28,6 +28,15 @@
       }
     },
     {
+      "name": "BiOMA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BiOMA)$"
+      }
+    },
+    {
       "name": "BlackBit",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
