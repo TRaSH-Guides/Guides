@@ -145,7 +145,7 @@ Note: The `Audio Formats` Custom Formats aren't used in the profile, as WEB-DL d
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
 

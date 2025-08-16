@@ -227,7 +227,7 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 {! include-markdown "../../includes/german-guide/radarr-cf-german-uhd-bluray-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
@@ -267,7 +267,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 

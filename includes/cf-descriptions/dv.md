@@ -1,11 +1,11 @@
 <!-- markdownlint-disable MD041-->
-_This Custom Format will only match on_ `DV` **NOT** _on_ `DV HDR10` _etc_.
-
 **DV**<br>
 
-Depending on the source (WEB-DL, Bluray, or Remux) this format will match the following:
+This Custom Format serves as a catch-all for all Dolby Vision–related formats.
 
-- With Remuxes, it means that it will have `DV HDR10`.
-- With Bluray encodes, it means it will have `DV HDR10`.
-- With WEB-DL, it means 99% it will only support Dolby Vision without `HDR10` fallback (Incompatible devices will playback with blown out pinks and greens, if you have this issue always make sure you also add the following [Custom Format](#dv-webdl) with a score of `-10000`)
+Depending on the source (WEB-DL, Blu-ray, or Remux), it matches the following formats:
+
+- **Remuxes:** Include `DV HDR10` or `DV HDR10+`
+- **Blu-ray encodes:** Include `DV HDR10` or `DV HDR10+`
+- **WEB-DL:** In most cases, only Dolby Vision is present without an `HDR10` fallback. On incompatible devices, this can cause severe color issues such as blown-out pinks and greens. If you encounter this issue, make sure to also add the `DV (WEBDL)` format with a score of `-10000`
 <!-- markdownlint-enable MD041-->

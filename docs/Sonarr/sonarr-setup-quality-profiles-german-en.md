@@ -214,7 +214,7 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-uhd-bluray-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
@@ -250,7 +250,7 @@ If you prefer 2160p Remuxes (Bluray-2160p Remux)
 
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 

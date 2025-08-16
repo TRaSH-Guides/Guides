@@ -196,7 +196,7 @@ Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB prof
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
@@ -239,7 +239,7 @@ Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB prof
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 

@@ -1,11 +1,11 @@
 {
-  "name": "[HDR Formats] Dolby Vision Incompatible Devices",
-  "trash_id": "9f6e0b72dd733fb4616e9880bc313c42",
-  "trash_description": "Not all devices in your chain support Dolby Vision, You share your media library with other family members that don't have Dolby Vision compatible devices.",
+  "name": "[HDR Formats] HDR10+ Boost",
+  "trash_id": "7d366c213e5c23a052b157356fac1921",
+  "trash_description": "If you prefer HDR10+ releases and have compatible equipment, add the `HDR10+ Boost` custom format. This prioritizes releases containing HDR10+ over standard HDR releases.",
   "custom_formats": [
     {
-      "name": "DV (WEBDL)",
-      "trash_id": "9b27ab6498ec0f31a3353992e19434ca",
+      "name": "HDR10+ Boost",
+      "trash_id": "0c4b99df9206d2cfac3c05ab897dd62a",
       "required": true
     }
   ],

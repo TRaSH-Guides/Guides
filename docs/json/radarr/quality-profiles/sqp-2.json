@@ -55,17 +55,6 @@
     }
   ],
   "formatItems": {
-    "DV HDR10Plus": "c53085ddbd027d9624b320627748612f",
-    "DV HDR10": "e23edd2482476e595fb990b12e7c609c",
-    "DV": "58d6a88f13e2db7f5059c41047876f00",
-    "DV HLG": "55d53828b9d81cbe20b02efd00aa0efd",
-    "DV SDR": "a3e19f8f627608af0211acd02bf89735",
-    "HDR10+": "b974a6cd08c1066250f1f177d7aa1225",
-    "HDR10": "dfb86d5941bc9075d6af23b09c2aeecd",
-    "HDR": "e61e28db95d22bedcadf030b8f156d96",
-    "HDR (undefined)": "2a4d9069cc1fe3242ff9bdaebed239bb",
-    "PQ": "08d6d8834ad9ec87b1dc7ec8148e7a1f",
-    "HLG": "9364dd386c9b4a1100dde8264690add7",
     "Remux Tier 01": "3a3ff47579026e76d6504ebea39390de",
     "Remux Tier 02": "9f98181fe5a3fbeb0cc29340da2a468a",
     "Remux Tier 03": "8baaf0b3142bf4d94c42a724f034e27a",
