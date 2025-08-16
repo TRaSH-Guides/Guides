@@ -9,15 +9,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "BYNDR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BYNDR)$"
-      }
-    },
-    {
       "name": "DRACULA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
