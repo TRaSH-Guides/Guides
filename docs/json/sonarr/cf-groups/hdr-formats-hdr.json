@@ -1,0 +1,23 @@
+{
+  "name": "[HDR Formats] HDR",
+  "trash_id": "d9acca37ab4ab8f6428b68125fc0cacb",
+  "trash_description": "All users with HDR-capable equipment should add the `HDR` Custom Format.",
+  "default": "true",
+  "custom_formats": [
+    {
+      "name": "HDR",
+      "trash_id": "505d871304820ba7106b693be6fe4a9e",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+      "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+      "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
+      "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
+      "[Anime] Remux-1080p": "20e0fc959f1f1704bed501f23bdae76f"
+    }
+  }
+}
