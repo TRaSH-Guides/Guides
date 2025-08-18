@@ -12,6 +12,9 @@
     ":enableVulnerabilityAlerts",
     ":renovatePrefix"
   ],
+  "pre-commit": {
+    "enabled": true
+  },
   "baseBranchPatterns": [
     "$default"
   ],
@@ -62,6 +65,21 @@
       "matchUpdateTypes": ["major"],
       "groupName": "Docker major dependencies",
       "groupSlug": "docker-major",
+      "automerge": false
+    },
+    {
+      "description": "Group pre-commit hook non-major dependencies",
+      "matchManagers": ["pre-commit"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "Pre-commit hooks",
+      "groupSlug": "pre-commit-hooks"
+    },
+    {
+      "description": "Group pre-commit hook major dependencies",
+      "matchManagers": ["pre-commit"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "Pre-commit hooks major",
+      "groupSlug": "pre-commit-hooks-major",
       "automerge": false
     }
   ]
