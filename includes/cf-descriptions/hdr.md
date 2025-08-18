@@ -1,12 +1,12 @@
-<!-- markdownlint-disable MD041-->
+<!-- markdownlint-disable MD041 MD036-->
 **HDR**<br>
 
 This Custom Format serves as a catch-all for all HDR-related formats, including those with `HDR10` or `HDR10+` fallback capabilities, such as `DV HDR10` or `DV HDR10+`.
 
 **Supported Formats**
 
-- `HDR10+`
+- `HDR10+`:circle-question:{ title="If you have non compatible equipment that doesn't support HDR10+, it will typically fallback to HDR10" }
 - `HDR10`
 - `PQ`
 - `HLG`
-<!-- markdownlint-enable MD041-->
+<!-- markdownlint-enable MD041 MD036-->

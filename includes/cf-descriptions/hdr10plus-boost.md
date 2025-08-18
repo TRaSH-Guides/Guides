@@ -1,5 +1,5 @@
-<!-- markdownlint-disable MD041-->
+<!-- markdownlint-disable MD041 MD036-->
 **HDR10+ Boost**<br>
 
-This custom format provides HDR10+ releases with a small scoring boost, making them preferred over regular static HDR formats.
-<!-- markdownlint-enable MD041-->
+If you prefer HDR10+ releases and have compatible equipment, add the `HDR10+ Boost` custom format. This prioritizes releases containing HDR10+ over standard HDR releases.
+<!-- markdownlint-enable MD041 MD036-->
