@@ -5,8 +5,8 @@
 
     | Custom Format                                                                                                 |                              Score                               | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
-    | [{{ sonarr['cf']['dv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv)                           |       {{ sonarr['cf']['dv']['trash_scores']['default'] }}        | {{ sonarr['cf']['dv']['trash_id'] }}              |
     | [{{ sonarr['cf']['hdr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hdr)                         |       {{ sonarr['cf']['hdr']['trash_scores']['default'] }}       | {{ sonarr['cf']['hdr']['trash_id'] }}             |
+    | [{{ sonarr['cf']['dv-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-boost)               |    {{ sonarr['cf']['dv-boost']['trash_scores']['default'] }}     | {{ sonarr['cf']['dv-boost']['trash_id'] }}        |
     | [{{ sonarr['cf']['hdr10plus-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus-boost) | {{ sonarr['cf']['hdr10plus-boost']['trash_scores']['default'] }} | {{ sonarr['cf']['hdr10plus-boost']['trash_id'] }} |
     | [{{ sonarr['cf']['dv-webdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl)               |    {{ sonarr['cf']['dv-webdl']['trash_scores']['default'] }}     | {{ sonarr['cf']['dv-webdl']['trash_id'] }}        |
 

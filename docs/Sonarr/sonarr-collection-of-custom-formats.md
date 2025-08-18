@@ -31,8 +31,8 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 | Audio Formats                         | Audio Channels               | HDR Formats                      | HDR Optional                    |
 |---------------------------------------|------------------------------|----------------------------------|---------------------------------|
-| [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [DV](#dv)                        | [DV (Disk)](#dv-disk)           |
-| [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [HDR](#hdr)                      | [DV (WEBDL)](#dv-webdl)         |
+| [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [HDR](#hdr)                      | [DV (Disk)](#dv-disk)           |
+| [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [DV Boost](#dv-boost)            | [DV (WEBDL)](#dv-webdl)         |
 | [ATMOS (undefined)](#atmos-undefined) | [3.0 Sound](#30-sound)       | [HDR10+ Boost](#hdr10plus-boost) | [SDR](#sdr)                     |
 | [DD+ ATMOS](#ddplus-atmos)            | [4.0 Sound](#40-sound)       |                                  | [SDR (no WEBDL)](#sdr-no-webdl) |
 | [TrueHD](#truehd)                     | [5.1 Surround](#51-surround) |                                  |                                 |
@@ -512,26 +512,6 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### DV
-
-<sub>DV = DoVi = Dolby Vision</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    --8<-- "includes/cf-descriptions/dv.md"
-
-<!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case, the pointer to `#dv-webdl` in `includes/dv.md`-->
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
 ### HDR
 
 <sub>HDR</sub>
@@ -544,6 +524,26 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### DV Boost
+
+<sub>DV = DoVi = Dolby Vision</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    --8<-- "includes/cf-descriptions/dv-boost.md"
+
+<!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case, the pointer to `#dv-webdl` in `includes/dv.md`-->
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-boost.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

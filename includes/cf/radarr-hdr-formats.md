@@ -5,8 +5,8 @@
 
     | Custom Format                                                                                                 |                              Score                               | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
-    | [{{ radarr['cf']['dv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv)                           |       {{ radarr['cf']['dv']['trash_scores']['default'] }}        | {{ radarr['cf']['dv']['trash_id'] }}              |
     | [{{ radarr['cf']['hdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr)                         |       {{ radarr['cf']['hdr']['trash_scores']['default'] }}       | {{ radarr['cf']['hdr']['trash_id'] }}             |
+    | [{{ radarr['cf']['dv-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-boost)               |    {{ radarr['cf']['dv-boost']['trash_scores']['default'] }}     | {{ radarr['cf']['dv-boost']['trash_id'] }}        |
     | [{{ radarr['cf']['hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost) | {{ radarr['cf']['hdr10plus-boost']['trash_scores']['default'] }} | {{ radarr['cf']['hdr10plus-boost']['trash_id'] }} |
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)               |    {{ radarr['cf']['dv-webdl']['trash_scores']['default'] }}     | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
 
