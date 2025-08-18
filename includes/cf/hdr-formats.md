@@ -1,21 +1,15 @@
-<!-- markdownlint-disable MD041-->
-**HDR Setup**
+<!-- markdownlint-disable MD041 MD036-->
+**HDR Formats Setup**
+
+**HDR**
 
 All users with HDR-capable equipment must add the `HDR` and `DV (WEBDL)` custom formats. This configuration ensures that the most compatible HDR formats are prioritized while excluding WEB-sourced Dolby Vision releases that lack an HDR base layer.
 
-**Dolby Vision (DV)**
+--8<-- "includes/cf-descriptions/dv-boost.md"
 
-Users with Dolby Vision-compatible equipment should add the `DV` custom format. This prioritizes releases containing Dolby Vision over standard HDR releases.
+--8<-- "includes/cf-descriptions/hdr10plus-boost.md"
 
-{==
-
-**Important:** If *everyone* who uses your media server has equipment that fully supports Dolby Vision, you can safely remove the `DV (WEBDL)` custom format. However, in all other circumstances, removing the `DV (WEBDL)` custom format will cause playback issues.
-
-==}
-
-**HDR10+ Boost**
-
-If you prefer HDR10+ releases and have compatible equipment, add the `HDR10+ Boost` custom format. This prioritizes releases containing HDR10+ over standard HDR releases.
+---
 
 ??? question "Why do I need `DV (WEBDL)`? - [Click to show/hide]"
 
@@ -25,4 +19,4 @@ If you prefer HDR10+ releases and have compatible equipment, add the `HDR10+ Boo
     - It excludes WEB-sourced Dolby Vision releases without an HDR base layer (Profile 5)
 
     **When to use:** If not every device accessing your media server supports Dolby Vision, you should add the `DV (WEBDL)` custom format to prevent compatibility issues.
-<!-- markdownlint-enable MD041-->
+<!-- markdownlint-enable MD041 MD036-->
