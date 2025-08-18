@@ -1,11 +1,11 @@
 {
-  "name": "[HDR Formats] DV",
-  "trash_id": "b27cc56cdb51e0f21c940e9546e4890e",
-  "trash_description": "Users with Dolby Vision-compatible equipment should add the `DV` custom format. This prioritizes releases containing Dolby Vision over standard HDR releases.",
+  "name": "[HDR Formats] DV Boost",
+  "trash_id": "e0b2774083df4265f25c9e5bc6c80940",
+  "trash_description": "Users with Dolby Vision-compatible equipment should add the `DV Boost` custom format. This prioritizes releases containing Dolby Vision over standard HDR releases.",
   "default": "true",
   "custom_formats": [
     {
-      "name": "DV",
+      "name": "DV Boost",
       "trash_id": "7c3a61a9c6cb04f52f1544be6d44a026",
       "required": true
     }
