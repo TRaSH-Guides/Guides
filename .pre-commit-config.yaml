@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.31.3
+    rev: 0.33.3
     hooks:
       - id: check-jsonschema
         name: Validate Guide only Custom Formats
@@ -21,7 +21,7 @@ repos:
         args: ["-v", "--schemafile", "schemas/sonarr-cf.schema.json"]
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.36.2
+    rev: v1.37.1
     hooks:
       - id: yamllint
         name: YAML Lint
@@ -29,7 +29,7 @@ repos:
         args: ["-c", "yamllint.yml"]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.44.0
+    rev: v0.45.0
     hooks:
       - id: markdownlint
         name: Markdown Lint
@@ -37,7 +37,7 @@ repos:
         args: ["-c", ".markdownlint.yaml"]
 
   - repo: https://github.com/editorconfig-checker/editorconfig-checker
-    rev: v3.2.1
+    rev: v3.4.0
     hooks:
       - id: editorconfig-checker
         name: EditorConfig Lint
