@@ -1,12 +1,5 @@
 <!-- markdownlint-disable MD041 MD036-->
 **DV (WEBDL)**<br>
 
-The `DV (WEBDL)` custom format serves two important purposes:
-
-- It ensures that the most compatible HDR formats are prioritized
-- It excludes WEB-sourced Dolby Vision releases without an HDR base layer (DV Profile 5)
-
-**When to use:** If not every device accessing your media server supports Dolby Vision, you should add the `DV (WEBDL)` custom format to prevent compatibility issues.
-
---8<-- "includes/cf-descriptions/apply-10000.md"
+If ^^**NOT**^^ every device accessing your media server supports Dolby Vision, add the DV (WEBDL) custom format to ensure maximum compatibility with your setup. Preventing playback issues on devices that don't fully support Dolby Vision.
 <!-- markdownlint-enable MD041 MD036-->
