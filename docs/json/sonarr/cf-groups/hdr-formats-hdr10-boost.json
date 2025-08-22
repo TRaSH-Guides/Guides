@@ -1,7 +1,7 @@
 {
   "name": "[HDR Formats] HDR10+ Boost",
   "trash_id": "7d366c213e5c23a052b157356fac1921",
-  "trash_description": "If you prefer HDR10+ releases and have compatible equipment, add the `HDR10+ Boost` custom format. This prioritizes releases containing HDR10+ over standard HDR releases.",
+  "trash_description": "If you prefer HDR10+ releases and have compatible equipment, add the HDR10+ Boost custom format. This custom format prioritizes releases containing HDR10+ over standard HDR releases.",
   "custom_formats": [
     {
       "name": "HDR10+ Boost",

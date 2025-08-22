@@ -1,7 +1,7 @@
 {
-  "name": "[HDR Formats] Dolby Vision Incompatible Devices",
-  "trash_id": "6eed4d3404df4f5f1202c8b9f2341765",
-  "trash_description": "If not every device accessing your media server supports Dolby Vision, you should add the `DV (WEBDL)` custom format to prevent compatibility issues.",
+  "name": "[HDR Formats] DV (WEBDL)",
+  "trash_id": "7fc2751eef7e6bdc70b74136e5e35c76",
+  "trash_description": "If NOT every device accessing your media server supports Dolby Vision, add the DV (WEBDL) custom format to ensure maximum compatibility with your setup. Preventing playback issues on devices that don't fully support Dolby Vision.",
   "custom_formats": [
     {
       "name": "DV (WEBDL)",

@@ -1,7 +1,7 @@
 {
   "name": "[HDR Formats] HDR",
-  "trash_id": "d9acca37ab4ab8f6428b68125fc0cacb",
-  "trash_description": "All users with HDR-capable equipment should add the `HDR` Custom Format.",
+  "trash_id": "7e1724c5da59e7474803ad25be98f6a3",
+  "trash_description": "All users with HDR-capable equipment should add the HDR custom format.",
   "default": "true",
   "custom_formats": [
     {
