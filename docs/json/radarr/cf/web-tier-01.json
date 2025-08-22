@@ -180,6 +180,15 @@
       }
     },
     {
+      "name": "TheFarm",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TheFarm)$"
+      }
+    },
+    {
       "name": "ZoroSenpai",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
