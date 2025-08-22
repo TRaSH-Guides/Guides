@@ -1,0 +1,19 @@
+{
+  "trash_id": "d66d26d37c32b0137cd26f42abaa7c2e",
+  "trash_scores": {
+    "default": 231
+  },
+  "name": "TheFarm",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "TheFarm",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "^(TheFarm)$"
+      }
+    }
+  ]
+}
