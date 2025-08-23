@@ -9,7 +9,6 @@ Some prefer high-quality audio (HD Audio), others high-quality video. Many prefe
 
 Here we will try to explain how to make the most of Custom Formats to help you set up your quality profiles for your personal preferences.
 
-- We've created a [flowchart](#which-quality-profile-should-you-choose) to make your decisions/choices easier.
 - We've also created an Excel sheet with several tested [media player devices](/Plex/what-does-my-media-player-support){:target="\_blank" rel="noopener noreferrer"} to display what formats and capabilities they support, sourced from information provided by our community. We hope this Excel sheet will be a helpful resource for those looking for a reliable media player device and will help you choose the appropriate quality profile.
 
 ---
@@ -69,20 +68,7 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 ---
 
-## Which Quality Profile should you choose
-
-??? abstract "Which Quality Profile should you choose - [Click to show/hide]"
-
-    <p align="center">*Click on the image below to see how to make use of the flowchart.*
-
-    <p align="center">![Flowchart](/Radarr/images/flowchart-guide-radarr.png){ width="10%" height="10%" }
-
-    ![Flowchart](/Radarr/images/flowchart-quality-profiles-radarr.png)
-
-    <center>If you're unsure or have questions, do not hesitate to ask for help on Discord</center>
-
-    <center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary }</center>
-    <center>[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}</center>
+{! include-markdown "../../includes/starr/which-quality-profile-should-you-choose.md" !}
 
 ---
 

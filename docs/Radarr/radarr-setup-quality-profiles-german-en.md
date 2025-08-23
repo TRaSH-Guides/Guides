@@ -21,9 +21,6 @@ It is quite important that you follow and understand what is expected by TRaSH's
 
 !!! warning "Please read those two sections before continuing the guide, as they contain important information. The rest of this guide will assume you did."
 
-!!! tip
-    TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision easier. Remember that this chart does not include any of the following Custom Formats, and you will still need to read this guide to get German-only/German Dual Language("German DL") releases.
-
 ---
 
 ## Using this Guide

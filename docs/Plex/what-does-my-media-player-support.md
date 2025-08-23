@@ -72,7 +72,6 @@ Overall, audio passthrough is the ideal way to send audio from your media server
 ## What should I do next with this info
 
 The next thing to do is set up a proper quality profile with the info you gathered from this sheet.
-To make this easier, we've made a section labeled "How to set up a quality profile for Radarr/Sonarr" that has a flowchart to help you even more to decide what to choose.
 
 ### Radarr
 
