@@ -1,3 +1,10 @@
+# 2025-08-24 00:28
+- [feat(radarr): Add RlsGrp `TheFarm` to `WEB Tier 01`](https://github.com/TRaSH-Guides/Guides/pull/2470)
+- [chore(misc): enable Renovate management of pre-commit hooks](https://github.com/TRaSH-Guides/Guides/pull/2467)
+- [feat(starr): Move RlsGrp `BYNDR` to `WEB Tier 02`](https://github.com/TRaSH-Guides/Guides/pull/2464)
+- [feat(sonarr): Add RlsGrp `BiOMA` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2463)
+- [feat(radarr): Add DRX to LQ](https://github.com/TRaSH-Guides/Guides/pull/2466)
+
 # 2025-08-17 00:29
 - [chore(misc): improve Renovate configuration with PR method and smart dependency grouping](https://github.com/TRaSH-Guides/Guides/pull/2457)
 - [chore(contributors): Update CONTRIBUTORS.md](https://github.com/TRaSH-Guides/Guides/pull/)
