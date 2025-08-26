@@ -6,7 +6,7 @@
 
 --8<-- "includes/cf-descriptions/hdr10plus-boost.md"
 
-!!! info "If you prefer both Dolby Vision and HDR10+, add both boosters!"
+!!! info "If you prefer both Dolby Vision and HDR10+, add both boost custom formats!"
 
 ---
 --8<-- "includes/cf-descriptions/dv-webdl.md"
