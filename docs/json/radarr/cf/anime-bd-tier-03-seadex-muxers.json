@@ -151,6 +151,15 @@
       }
     },
     {
+      "name": "Headpatter",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Headpatter\\]|-Headpatter\\b"
+      }
+    },
+    {
       "name": "Holomux",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
