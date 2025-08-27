@@ -7,6 +7,15 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "DV With HDR10 fallback",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?=.*\\b(?:(dv|dovi|dolby[ .]?v(ision)?)\\b))(?!(?=.*\\b(WEB)\\b)(?!.*\\b(hulu)\\b))"
+      }
+    },
+    {
       "name": "HDR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -52,21 +61,12 @@
       }
     },
     {
-      "name": "DV With HDR10 fallback",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "soon"
-      }
-    },
-    {
       "name": "RlsGrp (Missing HDR)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "soon"
+        "value": "^(?=.*\\b(?:FraMeSToR|HQMUX|SiCFoI)\\b)(?=.*\\b2160p\\b)(?!.*\\b(HDR10([+]|P(lus)?)))(?!.*\\bSDR\\b).*"
       }
     }
   ]
