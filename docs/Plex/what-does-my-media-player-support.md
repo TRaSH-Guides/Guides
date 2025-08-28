@@ -72,7 +72,6 @@ Overall, audio passthrough is the ideal way to send audio from your media server
 ## What should I do next with this info
 
 The next thing to do is set up a proper quality profile with the info you gathered from this sheet.
-To make this easier, we've made a section labeled "How to set up a quality profile for Radarr/Sonarr" that has a flowchart to help you even more to decide what to choose.
 
 ### Radarr
 
@@ -82,7 +81,7 @@ To make this easier, we've made a section labeled "How to set up a quality profi
 
 - [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 #### How to make use of Audio Formats for Radarr
 
@@ -100,7 +99,7 @@ To make this easier, we've made a section labeled "How to set up a quality profi
 
 - [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 #### How to make use of Audio Formats for Sonarr
 

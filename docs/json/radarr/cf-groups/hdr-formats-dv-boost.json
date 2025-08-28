@@ -1,16 +1,11 @@
 {
-  "name": "[HDR Formats] DV HDR10+ and HDR10+ Boost",
-  "trash_id": "d4cfd16fa73c59a980d36f42bb26d8a0",
-  "trash_description": "You have a TV (e.g., Samsung) and Media Player Device (e.g., Apple TV 4K 3rd generation) that supports HDR10+",
+  "name": "[HDR Formats] DV Boost",
+  "trash_id": "1616617ab3a14397a2b2321bcbda44d1",
+  "trash_description": "If you prefer Dolby Vision and have compatible equipment, add the DV Boost custom format. This custom format prioritizes releases containing Dolby Vision over standard HDR releases.",
   "custom_formats": [
     {
-      "name": "HDR10+ Boost",
-      "trash_id": "b17886cb4158d9fea189859409975758",
-      "required": true
-    },
-    {
-      "name": "DV HDR10+ Boost",
-      "trash_id": "55a5b50cb416dea5a50c4955896217ab",
+      "name": "DV Boost",
+      "trash_id": "b337d6812e06c200ec9a2d3cfa9d20a7",
       "required": true
     }
   ],

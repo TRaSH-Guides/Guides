@@ -1,15 +1,7 @@
-<!-- markdownlint-disable MD041-->
+<!-- markdownlint-disable MD041 MD036-->
 **DV (WEBDL)**<br>
 
-!!! info "Use this Custom Format if Not all devices in your chain support Dolby Vision, You share your media library with other family members that don't have Dolby Vision compatible devices."
+If ^^**NOT**^^ every device accessing your media server supports Dolby Vision, add the DV (WEBDL) custom format to ensure maximum compatibility with your setup. This prevents playback issues on devices that don't fully support Dolby Vision.
 
-This is a special Custom Format that blocks WEBDLs **WITH** Dolby Vision but **WITHOUT** HDR10 fallback.
-
-This Custom Format works together with the normal DV Custom Format that you would use to prefer Dolby Vision.
-
-Most WEBDL from Streaming Services **DO NOT** have the fallback to HDR10. During playback, issues with weird colors (typically a green hue) can result when you attempt to play it on a non-Dolby Vision-compatible setup.
-
-Remuxes and Bluray have a fallback to HDR10.
-
---8<-- "includes/cf-descriptions/apply-10000.md"
-<!-- markdownlint-enable MD041-->
+<sub>*This also applies to Dolby Vision releases without HDR10 fallback (Profile 5).*</sub>
+<!-- markdownlint-enable MD041 MD036-->

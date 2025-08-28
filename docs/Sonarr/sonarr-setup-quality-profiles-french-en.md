@@ -17,9 +17,6 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 !!! warning "Please read those two sections before continuing the guide as they hold important information. The rest of this guide will assume you did."
 
-!!! tip
-    TRaSH created a [flowchart](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision easier. Remember that this chart does not include any of the following Custom Formats, and you will still need to read this guide to get MULTi releases.
-
 ---
 
 ## FAQ
@@ -145,7 +142,7 @@ Note: The `Audio Formats` Custom Formats aren't used in the profile, as WEB-DL d
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
 

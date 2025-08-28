@@ -29,24 +29,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-| Audio Formats                         | Audio Channels               | HDR Formats                       | HDR Optional                           |
-| ------------------------------------- | ---------------------------- | --------------------------------- | -------------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [DV HDR10+](#dv-hdr10plus)        | [DV (Disk)](#dv-disk)                  |
-| [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [DV HDR10](#dv-hdr10)             | [DV (WEBDL)](#dv-webdl)                |
-| [ATMOS (undefined)](#atmos-undefined) | [3.0 Sound](#30-sound)       | [DV](#dv)                         | [DV HDR10+ Boost](#dv-hdr10plus-boost) |
-| [DD+ ATMOS](#ddplus-atmos)            | [4.0 Sound](#40-sound)       | [DV HLG](#dv-hlg)                 | [HDR10+ Boost](#hdr10plus-boost)       |
-| [TrueHD](#truehd)                     | [5.1 Surround](#51-surround) | [DV SDR](#dv-sdr)                 | [SDR](#sdr)                            |
-| [DTS-HD MA](#dts-hd-ma)               | [6.1 Surround](#61-surround) | [HDR10+](#hdr10plus)              | [SDR (no WEBDL)](#sdr-no-webdl)        |
-| [DD+](#ddplus)                        | [7.1 Surround](#71-surround) | [HDR10](#hdr10)                   |                                        |
-| [DTS-ES](#dts-es)                     |                              | [HDR](#hdr)                       |                                        |
-| [DTS](#dts)                           |                              | [HDR (undefined)](#hdr-undefined) |                                        |
-| [FLAC](#flac)                         |                              | [PQ](#pq)                         |                                        |
-| [PCM](#pcm)                           |                              | [HLG](#hlg)                       |                                        |
-| [DTS-HD HRA](#dts-hd-hra)             |                              |                                   |                                        |
-| [AAC](#aac)                           |                              |                                   |                                        |
-| [DD](#dd)                             |                              |                                   |                                        |
-| [MP3](#mp3)                           |                              |                                   |                                        |
-| [Opus](#opus)                         |                              |                                   |                                        |
+| Audio Formats                         | Audio Channels               | HDR Formats                      | HDR Optional                    |
+|---------------------------------------|------------------------------|----------------------------------|---------------------------------|
+| [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [HDR](#hdr)                      | [DV (Disk)](#dv-disk)           |
+| [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [DV Boost](#dv-boost)            | [DV (WEBDL)](#dv-webdl)         |
+| [ATMOS (undefined)](#atmos-undefined) | [3.0 Sound](#30-sound)       | [HDR10+ Boost](#hdr10plus-boost) | [SDR](#sdr)                     |
+| [DD+ ATMOS](#ddplus-atmos)            | [4.0 Sound](#40-sound)       |                                  | [SDR (no WEBDL)](#sdr-no-webdl) |
+| [TrueHD](#truehd)                     | [5.1 Surround](#51-surround) |                                  |                                 |
+| [DTS-HD MA](#dts-hd-ma)               | [6.1 Surround](#61-surround) |                                  |                                 |
+| [DD+](#ddplus)                        | [7.1 Surround](#71-surround) |                                  |                                 |
+| [DTS-ES](#dts-es)                     |                              |                                  |                                 |
+| [DTS](#dts)                           |                              |                                  |                                 |
+| [FLAC](#flac)                         |                              |                                  |                                 |
+| [PCM](#pcm)                           |                              |                                  |                                 |
+| [DTS-HD HRA](#dts-hd-hra)             |                              |                                  |                                 |
+| [AAC](#aac)                           |                              |                                  |                                 |
+| [DD](#dd)                             |                              |                                  |                                 |
+| [MP3](#mp3)                           |                              |                                  |                                 |
+| [Opus](#opus)                         |                              |                                  |                                 |
 
 ---
 
@@ -512,135 +512,6 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### DV HDR10Plus
-
-<sub>DV = DoVi = Dolby Vision</sub><br>
-<sub>HDR10+ = HDR10P = HDR10Plus</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10plus.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### DV HDR10
-
-<sub>DV = DoVi = Dolby Vision</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-hdr10.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### DV
-
-<sub>DV = DoVi = Dolby Vision</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    --8<-- "includes/cf-descriptions/dv.md"
-
-<!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case, the pointer to `#dv-webdl` in `includes/dv.md`-->
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### DV HLG
-
-<sub>DV = DoVi = Dolby Vision</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-hlg.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hlg.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### DV SDR
-
-<sub>DV = DoVi = Dolby Vision</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-sdr.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-sdr.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### HDR10Plus
-
-<sub>HDR10+ = HDR10P = HDR10Plus</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hdr10plus.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### HDR10
-
-<sub>HDR10</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hdr10.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
 ### HDR
 
 <sub>HDR</sub>
@@ -659,52 +530,36 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### HDR (undefined)
+### DV Boost
+
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hdr-undefined.md" !}
+    --8<-- "includes/cf-descriptions/dv-boost.md"
+
+<!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case, the pointer to `#dv-webdl` in `includes/dv.md`-->
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr-undefined.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-boost.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### PQ
-
-<sub>PQ = PQ10</sub>
+### HDR10Plus Boost
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/pq.md" !}
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pq.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### HLG
-
-<sub>HLG = HLG10</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hlg.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -748,36 +603,6 @@ Special thanks to everyone who has helped in the creation and testing of these C
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
-
-### DV HDR10Plus Boost
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus-boost.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10plus-boost.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### HDR10Plus Boost
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
 
 ### SDR
 

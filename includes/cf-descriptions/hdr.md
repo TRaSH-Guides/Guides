@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-_This Custom Format will only match on_ `HDR` **NOT** _on_ `HDR10`, `HDR10+` _etc_
-
+<!-- markdownlint-disable MD041 MD036-->
 **HDR**<br>
 
-This Custom Format is a sort of "catch-all" for the `HDR` scene naming scheme where we don't know, based on name alone, which HDR formats are included - it could be `HDR10`, `HDR10+` or even `PQ`.
-<!-- markdownlint-enable MD041-->
+All users with HDR-capable equipment should add the HDR custom format.
+
+<sub>*This is a catch-all custom format for all HDR-related formats, including those with HDR10 or HDR10+ fallback capabilities, such as DV HDR10 or DV HDR10+.*</sub>
+<!-- markdownlint-enable MD041 MD036-->

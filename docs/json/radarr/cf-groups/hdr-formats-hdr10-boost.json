@@ -1,11 +1,11 @@
 {
-  "name": "[HDR Formats] Dolby Vision Incompatible Devices",
-  "trash_id": "6eed4d3404df4f5f1202c8b9f2341765",
-  "trash_description": "Not all devices in your chain support Dolby Vision, You share your media library with other family members that don't have Dolby Vision compatible devices.",
+  "name": "[HDR Formats] HDR10+ Boost",
+  "trash_id": "b29413a7487478fe98228ce79e5689e4",
+  "trash_description": "If you prefer HDR10+ releases and have compatible equipment, add the HDR10+ Boost custom format. This custom format prioritizes releases containing HDR10+ over standard HDR releases.",
   "custom_formats": [
     {
-      "name": "DV (WEBDL)",
-      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
+      "name": "HDR10+ Boost",
+      "trash_id": "caa37d0df9c348912df1fb1d88f9273a",
       "required": true
     }
   ],
@@ -19,8 +19,6 @@
       "[French MULTi.VO] HD Remux (1080p)": "c6460a102b312200c095a2d0982e0461",
       "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
       "SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
-      "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
-      "SQP-1 WEB (2160p)": "e91c9adaca0231493f4af0d571b907f9",
       "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38"
     }
   }
