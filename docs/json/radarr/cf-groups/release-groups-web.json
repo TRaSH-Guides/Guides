@@ -1,52 +1,23 @@
 {
-  "name": "[Release Groups] French",
-  "trash_id": "12a919c8a5e2342db6e9c0b4e3c0756e",
-  "trash_description": "A collection of French release groups.",
+  "name": "[Release Groups] WEB",
+  "trash_id": "2e8ede48948e8fe5e4c68a1e09e843e8",
+  "trash_description": "Collection of WEB Tiered Groups for Radarr",
+  "default": "true",
   "custom_formats": [
     {
-      "name": "FR Remux Tier 01",
-      "trash_id": "5583260016e0b9f683f53af41fb42e4a",
-      "required": false
+      "name": "WEB Tier 01",
+      "trash_id": "c20f169ef63c5f40c2def54abaf4438e",
+      "required": true
     },
     {
-      "name": "FR Remux Tier 02",
-      "trash_id": "9019d81307e68cd4a7eb06a567e833b8",
-      "required": false
+      "name": "WEB Tier 02",
+      "trash_id": "403816d65392c79236dcb6dd591aeda4",
+      "required": true
     },
     {
-      "name": "FR UHD Bluray Tier 01",
-      "trash_id": "64f8f12bbf7472a6ccf838bfd6b5e3e8",
-      "required": false
-    },
-    {
-      "name": "FR UHD Bluray Tier 02",
-      "trash_id": "0dcf0c8a386d82e3f2d424189af14065",
-      "required": false
-    },
-    {
-      "name": "FR HD Bluray Tier 01",
-      "trash_id": "5322da05b19d857acc1e75be3edf47b3",
-      "required": false
-    },
-    {
-      "name": "FR HD Bluray Tier 02",
-      "trash_id": "57f34251344be2e283fc30e00e458be6",
-      "required": false
-    },
-    {
-      "name": "FR WEB Tier 01",
-      "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
-      "required": false
-    },
-    {
-      "name": "FR WEB Tier 02",
-      "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
-      "required": false
-    },
-    {
-      "name": "FR Scene Groups",
-      "trash_id": "0d94489c0d5828cd3bf9409d309fb32b",
-      "required": false
+      "name": "WEB Tier 03",
+      "trash_id": "af94e0fe497124d1f9ce732069ec8c3b",
+      "required": true
     }
   ],
   "quality_profiles": {
