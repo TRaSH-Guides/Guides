@@ -1,3 +1,8 @@
+# 2025-08-31 00:27
+- [refactor(starr): remove unnecessary HDR regex](https://github.com/TRaSH-Guides/Guides/pull/2475)
+- [feat(starr): Refactoring of the HDR Formats](https://github.com/TRaSH-Guides/Guides/pull/2455)
+- [feat(starr-anime): Add Headpatter to Anime Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2473)
+
 # 2025-08-24 00:28
 - [feat(radarr): Add RlsGrp `TheFarm` to `WEB Tier 01`](https://github.com/TRaSH-Guides/Guides/pull/2470)
 - [chore(misc): enable Renovate management of pre-commit hooks](https://github.com/TRaSH-Guides/Guides/pull/2467)
