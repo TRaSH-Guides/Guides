@@ -88,15 +88,6 @@
       }
     },
     {
-      "name": "CRUCiBLE",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[CRUCiBLE\\]|-CRUCiBLE\\b"
-      }
-    },
-    {
       "name": "CTR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
