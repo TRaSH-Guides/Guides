@@ -13,7 +13,7 @@
       }
     },
     {
-      "name": "6.1 Surround",
+      "name": "Not 6.1 Surround",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,

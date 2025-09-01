@@ -36,7 +36,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?<!repac)[^0-9][1-4][ .][0-1]|\\b(Stereo|Mono)\\b"
+        "value": "(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\b(Stereo|Mono)\\b"
       }
     }
   ]
