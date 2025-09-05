@@ -1,72 +1,22 @@
 {
-  "name": "Release Groups",
-  "trash_id": "0891e90b7edea483b30a69ba66c8693e",
-  "trash_description": "A collection of English/International release groups.",
+  "name": "[Release Groups] UHD Bluray",
+  "trash_id": "ea858f7b13df9456f3ea41d47fabc735",
+  "trash_description": "Collection of UHD Bluray Tiered Groups for Radarr",
   "custom_formats": [
-    {
-      "name": "Remux Tier 01",
-      "trash_id": "3a3ff47579026e76d6504ebea39390de",
-      "required": false
-    },
-    {
-      "name": "Remux Tier 02",
-      "trash_id": "9f98181fe5a3fbeb0cc29340da2a468a",
-      "required": false
-    },
-    {
-      "name": "Remux Tier 03",
-      "trash_id": "8baaf0b3142bf4d94c42a724f034e27a",
-      "required": false
-    },
     {
       "name": "UHD Bluray Tier 01",
       "trash_id": "4d74ac4c4db0b64bff6ce0cffef99bf0",
-      "required": false
+      "required": true
     },
     {
       "name": "UHD Bluray Tier 02",
       "trash_id": "a58f517a70193f8e578056642178419d",
-      "required": false
+      "required": true
     },
     {
       "name": "UHD Bluray Tier 03",
       "trash_id": "e71939fae578037e7aed3ee219bbe7c1",
-      "required": false
-    },
-    {
-      "name": "HD Bluray Tier 01",
-      "trash_id": "ed27ebfef2f323e964fb1f61391bcb35",
-      "required": false
-    },
-    {
-      "name": "HD Bluray Tier 02",
-      "trash_id": "c20c8647f2746a1f4c4262b0fbbeeeae",
-      "required": false
-    },
-    {
-      "name": "HD Bluray Tier 03",
-      "trash_id": "5608c71bcebba0a5e666223bae8c9227",
-      "required": false
-    },
-    {
-      "name": "UHD Bluray Tier 03",
-      "trash_id": "e71939fae578037e7aed3ee219bbe7c1",
-      "required": false
-    },
-    {
-      "name": "WEB Tier 01",
-      "trash_id": "c20f169ef63c5f40c2def54abaf4438e",
-      "required": false
-    },
-    {
-      "name": "WEB Tier 02",
-      "trash_id": "403816d65392c79236dcb6dd591aeda4",
-      "required": false
-    },
-    {
-      "name": "WEB Tier 03",
-      "trash_id": "af94e0fe497124d1f9ce732069ec8c3b",
-      "required": false
+      "required": true
     }
   ],
   "quality_profiles": {
