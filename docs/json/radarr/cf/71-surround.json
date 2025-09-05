@@ -13,24 +13,6 @@
       }
     },
     {
-      "name": "Not 5.1 Surround",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "[^0-9]5[ .][0-1]\\b"
-      }
-    },
-    {
-      "name": "Not 6.1 Surround",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "[^0-9]6[ .][0-1]\\b"
-      }
-    },
-    {
       "name": "Not Low Channel Count",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
