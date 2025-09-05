@@ -14,7 +14,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<=\\b\\d{3,4}p\\b)(?=.*\\b(HEVC)\\b)?(?=.*\\b(AI)\\b)"
+        "value": "(?<=\\b\\d{3,4}p\\b)(?=.*\\b(HEVC|AV1)\\b)(?=.*\\b(AI)\\b)"
       }
     },
     {
