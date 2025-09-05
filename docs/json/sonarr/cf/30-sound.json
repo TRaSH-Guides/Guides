@@ -18,7 +18,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "[^0-9]1[ .]0|\\bMono\\b|\\[PCM \\]"
+        "value": "[^0-9]1[ .]0\\b|\\bMono\\b|\\[PCM \\]"
       }
     },
     {
