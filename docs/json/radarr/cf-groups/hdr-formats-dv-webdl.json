@@ -1,10 +1,10 @@
 {
-  "name": "[HDR Formats] DV (WEBDL)",
+  "name": "[HDR Formats] DV (w/o HDR fallback)",
   "trash_id": "7fc2751eef7e6bdc70b74136e5e35c76",
-  "trash_description": "If NOT every device accessing your media server supports Dolby Vision, add the DV (WEBDL) custom format to ensure maximum compatibility with your setup. This prevents playback issues on devices that don't fully support Dolby Vision.",
+  "trash_description": "If NOT every device accessing your media server supports Dolby Vision, add the DV (w/o HDR fallback) custom format to ensure maximum compatibility with your setup. This prevents playback issues on devices that don't fully support Dolby Vision.",
   "custom_formats": [
     {
-      "name": "DV (WEBDL)",
+      "name": "DV (w/o HDR fallback)",
       "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
       "required": true
     }

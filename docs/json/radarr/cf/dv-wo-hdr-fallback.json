@@ -1,9 +1,9 @@
 {
-  "trash_id": "9b27ab6498ec0f31a3353992e19434ca",
+  "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
   "trash_scores": {
     "default": -10000
   },
-  "name": "DV (WEBDL)",
+  "name": "DV (w/o HDR fallback)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
+        "value": "\\b(dv|dovi|dolby[ .]?V(ision)?)\\b"
       }
     },
     {
@@ -21,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 7
       }
     },
     {
@@ -30,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
+        "value": 8
       }
     },
     {

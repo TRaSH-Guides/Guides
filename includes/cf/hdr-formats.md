@@ -9,7 +9,7 @@
 !!! info "If you prefer both Dolby Vision and HDR10+, add both boost custom formats!"
 
 ---
---8<-- "includes/cf-descriptions/dv-webdl.md"
+--8<-- "includes/cf-descriptions/dv-wo-hdr-fallback.md"
 
 ---
 <!-- markdownlint-enable MD041 MD036-->
