@@ -1,3 +1,7 @@
+# 2025-09-07 00:26
+- [fix(starr): audio channel CFs consistency](https://github.com/TRaSH-Guides/Guides/pull/2478)
+- [update(anime): remove CRUCiBLE due to retagging](https://github.com/TRaSH-Guides/Guides/pull/2477)
+
 # 2025-08-31 00:27
 - [refactor(starr): remove unnecessary HDR regex](https://github.com/TRaSH-Guides/Guides/pull/2475)
 - [feat(starr): Refactoring of the HDR Formats](https://github.com/TRaSH-Guides/Guides/pull/2455)
