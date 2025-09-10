@@ -72,6 +72,15 @@
       }
     },
     {
+      "name": "PiRAMiDHEAD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PiRAMiDHEAD)$"
+      }
+    },
+    {
       "name": "PmP",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
