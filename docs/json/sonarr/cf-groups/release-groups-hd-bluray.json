@@ -1,0 +1,34 @@
+{
+  "name": "[Release Groups] HD Bluray",
+  "trash_id": "c7ac01c8b3d633f5b911f9dcdf7cfeb4",
+  "trash_description": "Collection of HD Bluray Tiered Groups for Sonarr",
+  "custom_formats": [
+    {
+      "name": "HD Bluray Tier 01",
+      "trash_id": "d6819cba26b1a6508138d25fb5e32293",
+      "required": true
+    },
+    {
+      "name": "HD Bluray Tier 02",
+      "trash_id": "c2216b7b8aa545dc1ce8388c618f8d57",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+      "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+      "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+      "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+      "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+      "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
+      "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
+      "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
+      "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642",
+      "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
+      "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
+      "[Anime] Remux-1080p": "20e0fc959f1f1704bed501f23bdae76f"
+    }
+  }
+}
