@@ -1,7 +1,7 @@
 {
   "trash_id": "1bfc773c53283d47c68e535811da30b7",
   "trash_scores": {
-      "default": 2650
+    "default": 2650
   },
   "name": "German Bluray Tier 02",
   "includeCustomFormatWhenRenaming": false,
@@ -58,6 +58,15 @@
       "required": false,
       "fields": {
         "value": "^(paranoid06)$"
+      }
+    },
+    {
+      "name": "RocketHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RocketHD)$"
       }
     },
     {

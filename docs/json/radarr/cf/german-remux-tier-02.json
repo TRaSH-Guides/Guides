@@ -1,7 +1,7 @@
 {
   "trash_id": "f9cf598d55ce532d63596b060a6db9ee",
   "trash_scores": {
-      "default": 3900
+    "default": 3900
   },
   "name": "German Remux Tier 02",
   "includeCustomFormatWhenRenaming": false,
@@ -49,6 +49,15 @@
       "required": false,
       "fields": {
         "value": "^(FX)$"
+      }
+    },
+    {
+      "name": "RocketHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RocketHD)$"
       }
     },
     {
