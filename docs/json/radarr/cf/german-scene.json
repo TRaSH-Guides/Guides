@@ -1,7 +1,7 @@
 {
   "trash_id": "2d136d4e33082fe573d06b1f237c40dd",
   "trash_scores": {
-      "default": 1700
+    "default": 1700
   },
   "name": "German Scene",
   "includeCustomFormatWhenRenaming": false,
@@ -301,6 +301,51 @@
       "required": false,
       "fields": {
         "value": "^(SAViOURHD)$"
+      }
+    },
+    {
+      "name": "RiLE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RiLE)$"
+      }
+    },
+    {
+      "name": "CONTRiBUTiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CONTRiBUTiON)$"
+      }
+    },
+    {
+      "name": "GOREHOUNDS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GOREHOUNDS)$"
+      }
+    },
+    {
+      "name": "SPiCY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SPiCY)$"
+      }
+    },
+    {
+      "name": "bi0hazard",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(bi0hazard)$"
       }
     }
   ]
