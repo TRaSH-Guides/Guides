@@ -1,3 +1,8 @@
+# 2025-09-14 00:26
+- [chore(guide): Updated the home/index page](https://github.com/TRaSH-Guides/Guides/pull/2488)
+- [feat(radarr): Add RlsGrp `PiRAMiDHEAD` to `Remux Tier 01`](https://github.com/TRaSH-Guides/Guides/pull/2487)
+- [feat(starr): Renamed `DV (WEBDL)` to `DV (w/o HDR fallback)`](https://github.com/TRaSH-Guides/Guides/pull/2485)
+
 # 2025-09-07 00:26
 - [fix(starr): audio channel CFs consistency](https://github.com/TRaSH-Guides/Guides/pull/2478)
 - [update(anime): remove CRUCiBLE due to retagging](https://github.com/TRaSH-Guides/Guides/pull/2477)
