@@ -4,8 +4,8 @@
   },
   "series": {
     "default": "{Series TitleYear}",
-    "plex-imdb": "{Series TitleYear} {imdb-{ImdbId}}",
-    "plex-tvdb": "{Series TitleYear} {tvdb-{TvdbId}}",
+    "plex-imdb": "{Series TitleYear} [imdb-{ImdbId}]",
+    "plex-tvdb": "{Series TitleYear} [tvdb-{TvdbId}]",
     "emby-imdb": "{Series TitleYear} [imdb-{ImdbId}]",
     "emby-tvdb": "{Series TitleYear} [tvdb-{TvdbId}]",
     "jellyfin-tvdb": "{Series TitleYear} [tvdbid-{TvdbId}]"
