@@ -12,7 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?=.*\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)(?!(?=.*\\b(WEB)\\b)(?!.*\\b(hulu)\\b))"
+        "value": "^(?=.*\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)(?!(?=.*\\b(WEB[ ._-]?(DL|Rip)?)\\b)(?!.*\\b(hulu)\\b))"
       }
     },
     {
