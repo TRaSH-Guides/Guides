@@ -1,7 +1,7 @@
 {
   "trash_id": "54795711b78ea87e56127928c423689b",
   "trash_scores": {
-      "default": 2900
+    "default": 2900
   },
   "name": "German Bluray Tier 01",
   "includeCustomFormatWhenRenaming": false,
@@ -94,6 +94,15 @@
       "required": false,
       "fields": {
         "value": "^(MAMA)$"
+      }
+    },
+    {
+      "name": "WalterBishop",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WalterBishop)$"
       }
     },
     {

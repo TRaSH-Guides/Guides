@@ -1,7 +1,7 @@
 {
   "trash_id": "263943bc5d99550c68aad0c4278ba1c7",
   "trash_scores": {
-      "default": -35000
+    "default": -35000
   },
   "name": "German LQ",
   "includeCustomFormatWhenRenaming": false,
@@ -391,6 +391,15 @@
       "required": false,
       "fields": {
         "value": "^(REEL)$"
+      }
+    },
+    {
+      "name": "VideoStar",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VideoStar)$"
       }
     }
   ]

@@ -1,7 +1,7 @@
 {
   "trash_id": "d8f8e1539827967e0e564833e6c08d33",
   "trash_scores": {
-      "default": 2300
+    "default": 2300
   },
   "name": "German Bluray Tier 03",
   "includeCustomFormatWhenRenaming": false,
@@ -22,6 +22,15 @@
       "required": false,
       "fields": {
         "value": "^(HQC)$"
+      }
+    },
+    {
+      "name": "RDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RDR)$"
       }
     },
     {

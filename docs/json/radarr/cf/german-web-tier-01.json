@@ -1,7 +1,7 @@
 {
   "trash_id": "a2ab25194f463f057a5559c03c84a3df",
   "trash_scores": {
-      "default": 2100
+    "default": 2100
   },
   "name": "German Web Tier 01",
   "includeCustomFormatWhenRenaming": false,
@@ -130,6 +130,24 @@
       "required": false,
       "fields": {
         "value": "\\b(TOJ)\\b"
+      }
+    },
+    {
+      "name": "WalterBishop",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WalterBishop)$"
+      }
+    },
+    {
+      "name": "pmHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(pmHD)$"
       }
     },
     {

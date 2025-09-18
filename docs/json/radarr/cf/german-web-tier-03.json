@@ -1,7 +1,7 @@
 {
   "trash_id": "439f9d71becaed589058ec949e037ff3",
   "trash_scores": {
-      "default": 1800
+    "default": 1800
   },
   "name": "German Web Tier 03",
   "includeCustomFormatWhenRenaming": false,
@@ -40,6 +40,15 @@
       "required": false,
       "fields": {
         "value": "^(FX)$"
+      }
+    },
+    {
+      "name": "RDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RDR)$"
       }
     },
     {
