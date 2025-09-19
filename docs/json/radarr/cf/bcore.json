@@ -16,7 +16,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(BCORE)\\b"
+        "value": "\\b((B)?CORE)\\b"
       }
     },
     {
