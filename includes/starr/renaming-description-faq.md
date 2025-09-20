@@ -1,42 +1,44 @@
 <!-- markdownlint-disable MD041-->
-On the Radarr/Sonarr Discord people often ask,
+On the Radarr/Sonarr Discord, people often ask:
 
-- “What's the recommended/best way to name your files or folders?”
-- “Why is my naming scheme bad?”
+- "What's the best way to name my files and folders?"
+- "Why doesn't my naming scheme work well?"
 
-Even though it is a personal preference, it is still recommended to add non-recoverable information for several reasons.
+While naming is a personal choice, adding non-recoverable information to your filenames is strongly recommended for several good reasons.
 
 ## FAQ
 
-??? question "Why?"
+??? question "Why should I include extra information in filenames?"
 
-    - If, for whatever reason, you ever need to do a re-install or a full re-import in the Starr Apps or Plex/Emby/Jellyfin, it's nice to have all that info in the filename so it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
-    - Prevent download loops.
+    - **Easy re-imports**: If you ever need to reinstall or re-import your media in Radarr/Sonarr or media servers like Plex/Emby/Jellyfin, having all the details in the filename helps everything get imported correctly. Without this info, files might get wrongly identified as HDTV or WEB-DL quality.
+    - **Prevents duplicate downloads**: Radarr/Sonarr won't accidentally download the same file again.
 
-??? question "What's non-recoverable information?"
+??? question "What's non-recoverable information and can't be recovered later?"
 
-    - Quality Source (HDTV, WEBDL, Bluray, Remux, etc..)
-    - Release group
-    - Edition version
-    - Repack/Proper
+    - **Quality source** (HDTV, WEB-DL, Blu-ray, Remux, etc.)
+    - **Release group** (the team that created the release)
+    - **Edition type** (Director's Cut, Theatrical, Unrated, etc.)
+    - **Repack/Proper status** (whether it's a fixed version)
 
 ??? question "Why is the non-recoverable information important/needed?"
 
-    - **Prevent download loops**.
-    - **Quality Source (HDTV, WEBDL, Bluray, Remux, etc..)**: Can you tell from the following info: `movie (year).ext`, which quality source the file is from? Probably not, and there is no real way to determine it if it's lost after import. Why would you care? Mainly if you ever want to upgrade or downgrade your media file and to prevent re-downloads of the same file.
-    - **Release group**: With the knowledge of which release group your release belongs to, you can determine if the file has any issues related to that specific release. It can also help find extra information if it's a hybrid release or which sources are used.
-    - **Edition version**: To determine if the release is an directors cut, theatrical, unrated, etc.
-    - **Repack/Proper**: To determine if the release was a repack or a proper, so you know if you have the correct version and not the broken one with playback issues or other issues with the media file.
+    - **Stops download loops**: With a proper naming Radarr/Sonarr knows what you already have.
+    - **Quality source**: Can you tell what quality `Movie (2023).mkv` is just by looking at it? Probably not. Without this info, you can't easily upgrade or downgrade your files, and you might download the same movie or TV show again.
+    - **Release group**: Knowing the release group helps you identify if there are known issues with that specific release. It also helps you find extra information about hybrid releases or source materials.
+    - **Edition type**: Tells you if you have the Director's Cut, Theatrical version, Unrated version, etc.
+    - **Repack/Proper**: Shows whether you have the fixed version or the original (possibly broken) release.
 
-??? question "But Plex, Emby and Jellyfin work fine with just `movie (year).ext`/`tv showname SxxExx.ext`"
+??? question "Don't Plex, Emby, and Jellyfin work fine with simple names like `movie (year).ext`/`tv showname SxxExx.ext`?"
 
-    - True, but they don't care about the quality of your media file you're using, their main purpose is just to provide you with your media library and play the media files.
+    - Yes, they do work with simple names. However, these media servers only care about organizing and playing your files—they don't track quality or help prevent duplicate downloads. That's what Radarr/Sonarr handles.
 
-??? question "Why is the file naming so long?"
+??? question "Why are the recommended filenames so long?"
 
-    - To make sure your filename contains all the info needed to prevent download loops after import.
-    - The so-called "naming tokens" not used in your media file won't be used/shown.
-    - Any proper media server (Plex, Emby, or Jellyfin) won't display the actual filename outright anyway, so why worry about how the file's naming looks when it has all the needed info included?
+    - **Complete information**: To ensure your files have all the details needed to prevent download loops after import.
+    - **Only used parts show up**: If your file doesn't have certain attributes (like being a repack), those parts won't appear in the filename.
+    - **Media servers hide filenames anyway**: Plex, Emby, and Jellyfin display movie titles and show information, not the actual filename, so the length doesn't matter for viewing.
 
-The naming scheme provided here is made with the help of the Sonarr/Radarr (Support) Team and information provided by the community.
+---
+
+*This naming guide was created with help from the Sonarr/Radarr support team and community feedback.*
 <!-- markdownlint-enable MD041-->
