@@ -1,3 +1,9 @@
+# 2025-09-21 00:27
+- [chore(contributors): Update CONTRIBUTORS.md](https://github.com/TRaSH-Guides/Guides/pull/)
+- [feat(guide-sync): Added more groups as optionals](https://github.com/TRaSH-Guides/Guides/pull/2476)
+- [feat(starr-german): Add Release Groups to German Tiers](https://github.com/TRaSH-Guides/Guides/pull/2489)
+- [fix(starr): HDR CF DV condition](https://github.com/TRaSH-Guides/Guides/pull/2492)
+
 # 2025-09-14 00:26
 - [chore(guide): Updated the home/index page](https://github.com/TRaSH-Guides/Guides/pull/2488)
 - [feat(radarr): Add RlsGrp `PiRAMiDHEAD` to `Remux Tier 01`](https://github.com/TRaSH-Guides/Guides/pull/2487)
