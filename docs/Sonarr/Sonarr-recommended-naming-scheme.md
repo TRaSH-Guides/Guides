@@ -180,7 +180,7 @@ The filename can be obscured or unclear, whereas the release naming is clear, es
 Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's the closest to the P2P/scene naming scheme, except it uses the exact audio and HDR formats from the media file, where the original release or filename might be unclear.
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['file']['p2p-scene'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['p2p-scene'] }}
 ```
 
 <sub><sup>**Single Episode**: `The.Series.Title's!.2010.S01E01.Episode.Title.1.ATVP.WEBDL-2160p.EAC3.Atmos.5.1.DV.HDR10Plus.h265-RlsGrp`</sup></sub>
