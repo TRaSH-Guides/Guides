@@ -4,19 +4,26 @@
 
 ---
 
-## Preparation
+## Getting Started
 
-Go to `Settings` => `Media Management` and make sure that `Show Advanced` at the top is enabled.
+First, you need to set up Sonarr to show all the naming options:
 
-![Enable Advanced](images/sonarr-show-adavanced.png)
+1. Go to **Settings** → **Media Management**
+2. Enable **Show Advanced** at the top of the page
 
-Once you clicked on the button it should look like this and you should see all the advanced options.
+    ![Enable Advanced](images/sonarr-show-advanced.png)
 
-![Unhide Advanced](images/unhide-advanced.png)
+    After you click this button, you'll see all the advanced options like this:
 
-Finally, enable `Rename Episodes` to reveal the episode renaming options.
+    ![Unhide Advanced](images/unhide-advanced.png)
 
-![Enable Rename Episodes](images/sonarr-enable-rename.png)
+3. Enable **Rename Episodes** to see the episode naming options
+
+    ![Enable Rename Episodes](images/sonarr-enable-rename.png)
+
+4. Also make sure **Analyze video files** is enabled under **File Management**
+
+    ![Enable Analyze video files](images/sonarr-enable-analyze-video-files.png)
 
 ---
 
@@ -148,22 +155,36 @@ Prefixed Range
 
 ---
 
-## Original Title vs Original Filename
+## Alternative Episode Naming Options
+
+These are other standard episode format naming schemes that work well. Use these if you don't like the brackets used in the main recommendations.
 
 ### Original Title
 
-Another option is to use `{Original Title}` rather than the recommended naming scheme outlined above. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
+Another option is to use `{Original Title}` instead of the recommended naming scheme above. `{Original Title}` uses the title of the release, which includes all the information from the release itself. The benefit of this naming scheme is that it prevents download loops that can happen during import when there's a mismatch between the release title and the file contents (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is that you have less control over how the files are named.
 
-If using this alternate naming scheme we suggest using `{Original Title}` over `{Original Filename}`
+If you use this alternate naming scheme, we suggest using `{Original Title}` instead of `{Original Filename}`.
 
 Why?
 
-The filename can be Obscured where the Release naming isn't, especially when you use Usenet.
+The filename can be obscured or unclear, whereas the release naming is clear, especially when you use Usenet.
 
 `{Original Title}` => `The.Series.Title.S01E01.Episode.Title.1080p.AMZN.WEB-DL.DDP5.1.H.264-RlsGrp`
 
 `{Original Filename}` => `show episode 1-1080p` or `lchd-tkk1080p` or `t1i0p3s7i8yuti`
 
 ---
+
+### P2P/Scene Naming
+
+Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's the closest to the P2P/scene naming scheme, except it uses the exact audio and HDR formats from the media file, where the original release or filename might be unclear.
+
+```bash
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['p2p-scene'] }}
+```
+
+<sub><sup>**Single Episode**: `The.Series.Title's!.2010.S01E01.Episode.Title.1.ATVP.WEBDL-2160p.EAC3.Atmos.5.1.DV.HDR10Plus.h265-RlsGrp`</sup></sub>
+
+<sub><sup>**Multi Episode**: `The.Series.Title's!.2010.S01E01-E03.Episode.ATVP.WEBDL-2160p.EAC3.Atmos.5.1.DV.HDR10Plus.h265-RlsGrp`</sup></sub>
 
 --8<-- "includes/support.md"

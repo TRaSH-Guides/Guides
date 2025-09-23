@@ -1,22 +1,29 @@
-# Recommended naming scheme
+# Recommended Naming Scheme
 
 --8<-- "includes/starr/renaming-description-faq.md"
 
 ---
 
-## Preparation
+## Getting Started
 
-Go to `Settings` => `Media Management` and make sure that `Show Advanced` at the top is enabled.
+First, you need to set up Radarr to show all the naming options:
 
-![Enable Advanced](images/radarr-show-adavanced.png)
+1. Go to **Settings** → **Media Management**
+2. Enable **Show Advanced** at the top of the page
 
-Once you've clicked on the button it should look like this and you should see all the advanced options.
+    ![Enable Advanced](images/radarr-show-adavanced.png)
 
-![Unhide Advanced](images/unhide-advanced.png)
+    After you click this button, you'll see all the advanced options like this:
 
-Finally, enable `Rename Movies` to reveal the movie renaming options.
+    ![Unhide Advanced](images/unhide-advanced.png)
 
-![Enable Rename Movies](images/radarr-enable-rename.png)
+3. Enable **Rename Movies** to see the movie renaming options.
+
+    ![Enable Rename Movies](images/radarr-enable-rename.png)
+
+4. Also make sure **Analyze video files** is enabled under **File Management**
+
+    ![Enable Analyze video files](images/radarr-enable-analyze-video-files.png)
 
 ## Standard Movie Format
 
@@ -28,13 +35,13 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
     {{ radarr['naming']['radarr-naming']['file']['standard'] }}
     ```
 
-    <sub><sup>**Movie**: `The Movie Title (2010) {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+    <sub><sup>**Movie**: `The Movie Title (2010) {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
 === "Plex"
 
-    This naming scheme is made to be used with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="\_blank" rel="noopener noreferrer"},
+    This naming scheme is designed to work with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="\_blank" rel="noopener noreferrer"}.
 
-    !!! danger "If you use the `{edition-{Edition Tags}}` part of the recommended file name, then Plex will recognize the edition of the movie and add it the the Plex UI - e.g., Directors Cut.<br><br>However, this means that if you have two copies of a movie with different editions in a single merged library - for example, a 1080p Directors Cut and a 2160p Theatrical Edition - then these will show as two separate items in Plex.<br><br>If you only want a movie to appear once per library, where you keep more than one copy of a movie, then replace: `{edition-{Edition Tags}}` with `{Edition Tags}`."
+    !!! danger "If you use the `{edition-{Edition Tags}}` part of the recommended file name, Plex will recognize the movie edition and add it to the Plex interface - for example, Director's Cut.<br><br>However, this means that if you have two copies of a movie with different editions in a single merged library - for example, a 1080p Director's Cut and a 2160p Theatrical Edition - these will appear as two separate items in Plex.<br><br>If you want a movie to appear only once per library when you keep more than one copy of a movie, replace: `{edition-{Edition Tags}}` with `{Edition Tags}`."
 
     === "Plex (IMDb)"
 
@@ -44,7 +51,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['plex-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
     === "Plex (TMDb)"
 
@@ -52,7 +59,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['plex-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
     === "Plex Anime (IMDb)"
 
@@ -62,7 +69,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['plex-anime-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
 
     === "Plex Anime (TMDb)"
 
@@ -70,7 +77,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['plex-anime-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
 
 === "Emby"
 
@@ -84,7 +91,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['emby-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
     === "Emby (TMDb)"
 
@@ -92,7 +99,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['emby-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
     === "Emby Anime (IMDb)"
 
@@ -102,7 +109,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['emby-anime-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
 
     === "Emby Anime (TMDb)"
 
@@ -110,7 +117,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['emby-anime-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
 
 === "Jellyfin"
 
@@ -122,7 +129,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
     === "Jellyfin (TMDb)"
 
@@ -130,7 +137,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
     === "Jellyfin Anime (IMDb)"
 
@@ -138,7 +145,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
 
     === "Jellyfin Anime (TMDb)"
 
@@ -146,25 +153,41 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
 
 ---
 
-## Original Title vs Original Filename
+## Alternative Movie Naming Options
+
+These are other standard movie format naming schemes that work well. Use these if you don't like the brackets used in the main recommendations.
 
 ### Original Title
 
-Another option is to use `{Original Title}` rather than the recommended naming scheme outlined above. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
+Another option is to use `{Original Title}` instead of the recommended naming scheme above. `{Original Title}` uses the title of the release, which includes all the information from the release itself. The benefit of this naming scheme is that it prevents download loops that can happen during import when there's a mismatch between the release title and the file contents (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is that you have less control over how the files are named.
 
-If using this alternate naming scheme I suggest using `{Original Title}` over `{Original Filename}`
+If you use this alternate naming scheme, we suggest using `{Original Title}` instead of `{Original Filename}`.
 
 Why?
 
-The filename can be Obscured where the Release naming isn't, especially when you use Usenet.
+The filename can be obscured or unclear, whereas the release naming is clear, especially when you use Usenet.
 
-`{Original Title}` => `The.Movie.Title.2010.REMASTERED.1080p.BluRay.x264-GROUP`
+`{Original Title}` => `The.Movie.Title.2010.REMASTERED.1080p.BluRay.x264-RlsGrp`
 
-`{Original Filename}` => `group-karatekid-1080p` or `lchd-tkk1080p` or `t1i0p3s7i8yuti`
+`{Original Filename}` => `rlsgrp-karatekid-1080p` or `lchd-tkk1080p` or `t1i0p3s7i8yuti`
+
+---
+
+### P2P/Scene Naming
+
+Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's the closest to the P2P/scene naming scheme, except it uses the exact audio and HDR formats from the media file, where the original release or filename might be unclear.
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['p2p-scene'] }}
+```
+
+<sub><sup>**Movie**: `The.Movie.Title.2010.Ultimate.Extended.Edition.3D.Hybrid.Remux-2160p.TrueHD.Atmos.7.1.DV.HDR10Plus.HEVC-RlsGrp`</sup></sub>
+
+<sub><sup>**Movie**: `The.Movie.Title.2010.MA.WEBDL-2160p.TrueHD.Atmos.7.1.DV.HDR10Plus.h265-RlsGrp`</sup></sub>
 
 ---
 
@@ -172,11 +195,11 @@ The filename can be Obscured where the Release naming isn't, especially when you
 
 --8<-- "includes/radarr/imdb-vs-tmdb.md"
 
-!!! warning "Please note that folder names are created in the database whenever the movie is added to Radarr and it may be missing or incorrect at that time, resulting in your folder having a blank ID.:bangbang:<br><br>If you instead add it to the filename, the IMDb/TMDb ID will be freshly pulled for any download or upgrade."
+!!! warning "Please note that folder names are created in the database when the movie is added to Radarr, and the ID may be missing or wrong at that time. This could result in your folder having a blank ID. :bangbang:<br><br>If you add the ID to the filename instead, the IMDb/TMDb ID will be pulled fresh for any download or upgrade."
 
 === "Standard Folder"
 
-    Minimum needed and recommended
+    The minimum needed and recommended format
 
     ```bash
     {{ radarr['naming']['radarr-naming']['folder']['default'] }}
@@ -249,7 +272,5 @@ The filename can be Obscured where the Release naming isn't, especially when you
         ```
 
         <sub><sup>**Example**: `The Movie Title (2010) [tmdbid-1520211]`</sup></sub>
-
----
 
 --8<-- "includes/support.md"
