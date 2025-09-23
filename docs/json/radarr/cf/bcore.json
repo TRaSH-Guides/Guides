@@ -16,7 +16,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b((B)?CORE)\\b"
+        "value": "\\b(BCORE)\\b|\\b(\\d{3,4}(p|i))\\b.*\\b(CORE)\\b"
       }
     },
     {
