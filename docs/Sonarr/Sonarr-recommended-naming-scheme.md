@@ -11,7 +11,7 @@ First, you need to set up Sonarr to show all the naming options:
 1. Go to **Settings** → **Media Management**
 2. Enabled **Show Advanced** at the top of the page
 
-    ![Enable Advanced](images/sonarr-show-adavanced.png)
+    ![Enable Advanced](images/sonarr-show-advanced.png)
 
     After you click this button, you'll see all the advanced options like this:
 
