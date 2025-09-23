@@ -9,7 +9,7 @@
 First, you need to set up Radarr to show all the naming options:
 
 1. Go to **Settings** → **Media Management**
-2. Enabled **Show Advanced** at the top of the page
+2. Enable **Show Advanced** at the top of the page
 
     ![Enable Advanced](images/radarr-show-adavanced.png)
 
@@ -17,7 +17,7 @@ First, you need to set up Radarr to show all the naming options:
 
     ![Unhide Advanced](images/unhide-advanced.png)
 
-3. Enabled **Rename Movies** to see the movie renaming options.
+3. Enable **Rename Movies** to see the movie renaming options.
 
     ![Enable Rename Movies](images/radarr-enable-rename.png)
 

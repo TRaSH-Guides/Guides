@@ -9,7 +9,7 @@
 First, you need to set up Sonarr to show all the naming options:
 
 1. Go to **Settings** → **Media Management**
-2. Enabled **Show Advanced** at the top of the page
+2. Enable **Show Advanced** at the top of the page
 
     ![Enable Advanced](images/sonarr-show-advanced.png)
 
@@ -17,7 +17,7 @@ First, you need to set up Sonarr to show all the naming options:
 
     ![Unhide Advanced](images/unhide-advanced.png)
 
-3. Enabled **Rename Episodes** to see the episode naming options
+3. Enable **Rename Episodes** to see the episode naming options
 
     ![Enable Rename Episodes](images/sonarr-enable-rename.png)
 
