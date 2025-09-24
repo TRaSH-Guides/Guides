@@ -88,6 +88,15 @@
       }
     },
     {
+      "name": "CRUCiBLE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[CRUCiBLE\\]|-CRUCiBLE\\b"
+      }
+    },
+    {
       "name": "CyC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
