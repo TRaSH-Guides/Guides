@@ -36,6 +36,15 @@
       }
     },
     {
+      "name": "RW",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RW)\\b"
+      }
+    },
+    {
       "name": "TheUpscaler",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -50,7 +59,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(UPS|Up(s(caled?|UHD)|(Rez)))\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b"
       }
     }
   ]
