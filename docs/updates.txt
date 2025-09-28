@@ -1,3 +1,9 @@
+# 2025-09-28 00:27
+- [feat(starr-anime): Add CRUCiBLE to Anime Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2499)
+- [fix(radarr): bcore regex could match movie titles](https://github.com/TRaSH-Guides/Guides/pull/2498)
+- [feat(radarr): Add `CORE` matching to the  `BCORE` streaming services custom format](https://github.com/TRaSH-Guides/Guides/pull/2494)
+- [feat(guide): Added the NEW `P2P/Scene Naming` to the Naming Scheme Guide](https://github.com/TRaSH-Guides/Guides/pull/2496)
+
 # 2025-09-21 00:27
 - [chore(contributors): Update CONTRIBUTORS.md](https://github.com/TRaSH-Guides/Guides/pull/)
 - [feat(guide-sync): Added more groups as optionals](https://github.com/TRaSH-Guides/Guides/pull/2476)
