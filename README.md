@@ -1,8 +1,8 @@
 # About TRaSH-Guides
 
-TRaSH-Guides is a comprehensive collection of guides for Radarr, Sonarr, and related media management applications, that addresses frequently asked questions and offers optimal configurations across the entire media server stack.
+TRaSH-Guides is a complete collection of guides for Radarr, Sonarr, and related media management tools. These guides answer common questions and provide the best settings for your entire media server setup.
 
-The guide can be found at the following location [trash-guides.info](https://trash-guides.info/)
+You can find the guides at [trash-guides.info](https://trash-guides.info/)
 
 ## Official Collaboration
 
@@ -10,31 +10,31 @@ The guides are developed in **close collaboration with the Radarr and Sonarr dev
 
 ### What We Cover
 
-TRaSH-Guides provides extensive documentation that addresses frequently asked questions and offers optimal configurations across the entire media server stack, including:
+TRaSH-Guides offers detailed documentation that answers common questions and provides the best settings for your entire media server setup, including:
 
-**Core Applications:**
+**Main Applications:**
 
 - Radarr & Sonarr
 - Prowlarr
 - Download clients (qBittorrent, NZBGet, SABnzbd, Deluge)
 - Media servers
 
-**Media Server Architecture:**
+**Media Server Setup:**
 
-- How to establish a proper and optimal share and folder structure that supports hardlinks and atomic moves
+- How to create a proper and optimal share and folder structure that supports hardlinks and atomic moves
 
 **Key Features:**
 
-- Guides approved by original developers or created with their direct input
-- Production-tested configurations used by thousands of users
-- Regular updates to stay current with application changes
+- Guides approved by the original developers or created with their direct help
+- Settings tested in real-world use by thousands of users
+- Regular updates to keep up with application changes
 
-## Support
+## Getting Help
 
-If you have any questions about the guide or need assistance, please join our [Discord](https://trash-guides.info/discord) server.
+If you have questions about the guides or need help, please join our [Discord](https://trash-guides.info/discord) server.
 
-Do not open an issue on GitHub for support questions. Any support questions will be closed. If you are unsure, please check out the [discord](https://trash-guides.info/discord) server first.
+**Important:** Do not create GitHub issues for support questions. These will be closed automatically. If you're not sure, please check our [Discord](https://trash-guides.info/discord) server first.
 
-## Would you happen to have any suggestions for the guide?
+## Have Suggestions for the Guides?
 
-Join the [#suggestions](https://discord.com/channels/492590071455940612/1021029470389403818) section of our [discord](https://trash-guides.info/discord) server.
+Join the [#suggestions](https://discord.com/channels/492590071455940612/1021029470389403818) section of our [Discord](https://trash-guides.info/discord) server.
