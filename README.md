@@ -1,6 +1,33 @@
-# Guides mainly for the Starr Apps (Sonarr/Radarr) and everything related to them
+# About TRaSH-Guides
+
+TRaSH-Guides is a comprehensive collection of guides for Radarr, Sonarr, and related media management applications, that addresses frequently asked questions and offers optimal configurations across the entire media server stack.
 
 The guide can be found at the following location [trash-guides.info](https://trash-guides.info/)
+
+## Official Collaboration
+
+The guides are developed in **close collaboration with the Radarr and Sonarr development teams** and serve as officially supported documentation that users are regularly directed to.
+
+### What We Cover
+
+TRaSH-Guides provides extensive documentation that addresses frequently asked questions and offers optimal configurations across the entire media server stack, including:
+
+**Core Applications:**
+
+- Radarr & Sonarr
+- Prowlarr
+- Download clients (qBittorrent, NZBGet, SABnzbd, Deluge)
+- Media servers
+
+**Media Server Architecture:**
+
+- How to establish a proper and optimal share and folder structure that supports hardlinks and atomic moves
+
+**Key Features:**
+
+- Guides approved by original developers or created with their direct input
+- Production-tested configurations used by thousands of users
+- Regular updates to stay current with application changes
 
 ## Support
 
