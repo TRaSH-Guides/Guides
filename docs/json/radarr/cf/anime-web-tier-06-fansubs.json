@@ -70,6 +70,15 @@
       }
     },
     {
+      "name": "KawaSubs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KawaSubs)\\b"
+      }
+    },
+    {
       "name": "Tsundere",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
