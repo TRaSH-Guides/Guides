@@ -1,4 +1,4 @@
-# Guides mainly for the Starr Apps (Sonarr/Radarr) and everything related to them
+# TRaSH-Guides is a comprehensive collection of guides for Radarr, Sonarr, and related media management applications.
 
 The guide can be found at the following location [trash-guides.info](https://trash-guides.info/)
 
