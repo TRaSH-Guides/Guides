@@ -1,6 +1,6 @@
 # About TRaSH-Guides
 
-TRaSH-Guides is a complete collection of guides for Radarr, Sonarr, and related media management tools. These guides answer common questions and provide the best settings for your entire media server setup.
+TRaSH-Guides is a comprehensive collection of guides for Radarr, Sonarr, and related media management tools. These guides answer common questions and provide the best settings for your entire media server setup.
 
 You can find the guides at [trash-guides.info](https://trash-guides.info/)
 
