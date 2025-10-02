@@ -1,19 +1,15 @@
 {
-  "trash_id": "0e99e7cc719a8a73b2668c3a0c3fe10c",
-  "trash_scores": {
-    "default": 75
-  },
-  "trash_regex": "https://regex101.com/r/eQuNMO/1",
-  "name": "U-NEXT",
+  "trash_id": "44c2b54d7c81c1a442a8b2cabeaef54f",
+  "name": "ROKU",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "U-NEXT",
+      "name": "ROKU",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(u-next)\\b"
+        "value": "\\b(ROKU)\\b"
       }
     },
     {
@@ -22,7 +18,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 7
       }
     },
     {
@@ -31,7 +27,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
+        "value": 8
       }
     }
   ]

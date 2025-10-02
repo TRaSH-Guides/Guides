@@ -74,11 +74,12 @@ We've made 3 guides related to this.
 | General Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------ | ------------------------ |
 | [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
-| [Apple TV+](#atvp)         | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
-| [Bravia Core](#bcore)      | [TVer](#tver)            |                          |
-| [Criterion Channel](#crit) | [TVING](#tving)          |                          |
-| [Disney+](#dsnp)           | [U-NEXT](#u-next)        |                          |
-| [HBO](#hbo)                | [VIU](#viu)              |                          |
+| [Apple TV](#atv)           | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| [Apple TV+](#atvp)         | [TVer](#tver)            |                          |
+| [Bravia Core](#bcore)      | [TVING](#tving)          |                          |
+| [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
+| [Disney+](#dsnp)           | [VIU](#viu)              |                          |
+| [HBO](#hbo)                |                          |                          |
 | [HBO Max](#hmax)           |                          |                          |
 | [Hulu](#hulu)              |                          |                          |
 | [iTunes](#it)              |                          |                          |
@@ -87,6 +88,7 @@ We've made 3 guides related to this.
 | [Netflix](#nf)             |                          |                          |
 | [Peacock TV](#pcok)        |                          |                          |
 | [Paramount+](#pmtp)        |                          |                          |
+| [ROKU](#roku)              |                          |                          |
 | [Stan](#stan)              |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
@@ -1596,6 +1598,24 @@ We've made 3 guides related to this.
 
 ---
 
+#### ATV
+
+<sub>Apple TV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/atv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 #### ATVP
 
 <sub>Apple TV+</sub>
@@ -1824,6 +1844,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### ROKU
+
+<sub>ROKU</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/roku.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/roku.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

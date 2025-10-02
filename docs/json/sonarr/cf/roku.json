@@ -1,0 +1,37 @@
+{
+    "trash_id": "da393fd4e2c0cce7c9dc2669c43e0593",
+    "trash_scores": {
+        "default": 75
+    },
+    "name": "ROKU",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+        {
+            "name": "ROKU",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": "\\b(roku)\\b"
+            }
+        },
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 7
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 8
+            }
+        }
+    ]
+}
