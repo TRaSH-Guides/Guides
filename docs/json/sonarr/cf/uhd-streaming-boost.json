@@ -10,7 +10,7 @@
       "name": "Disney+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
       }
@@ -37,7 +37,7 @@
       "name": "Netflix",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(nf|netflix(u?hd)?)\\b"
       }

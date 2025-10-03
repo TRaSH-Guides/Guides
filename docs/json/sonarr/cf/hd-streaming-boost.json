@@ -10,7 +10,7 @@
       "name": "Disney+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
       }
