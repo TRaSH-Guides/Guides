@@ -18,20 +18,5 @@
       "fileMatch": ["docs/json/sonarr/cf/*.json"],
       "url": "./schemas/sonarr-cf.schema.json"
     }
-  ],
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "[json]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "[markdown]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "[yaml]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  }
+  ]
 }
