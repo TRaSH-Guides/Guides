@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(atv)\\b"
+        "value": "\\b(ATV)\\b"
       }
     },
     {
