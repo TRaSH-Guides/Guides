@@ -10,6 +10,11 @@
       "required": true
     },
     {
+      "name": "ATV",
+      "trash_id": "d9e511921c8cedc7282e291b0209cdc5",
+      "required": true
+    },
+    {
       "name": "ATVP",
       "trash_id": "f67c9ca88f463a48346062e8ad07713f",
       "required": true
@@ -67,6 +72,11 @@
     {
       "name": "PMTP",
       "trash_id": "c67a75ae4a1715f2bb4d492755ba4195",
+      "required": true
+    },
+    {
+      "name": "ROKU",
+      "trash_id": "da393fd4e2c0cce7c9dc2669c43e0593",
       "required": true
     },
     {

@@ -19,4 +19,11 @@
     | [{{ sonarr['cf']['sho']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sho)       |  {{ sonarr['cf']['sho']['trash_scores']['default'] }}   | {{ sonarr['cf']['sho']['trash_id'] }}    |
     | [{{ sonarr['cf']['stan']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#stan)     |  {{ sonarr['cf']['stan']['trash_scores']['default'] }}  | {{ sonarr['cf']['stan']['trash_id'] }}   |
     | [{{ sonarr['cf']['syfy']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#syfy)     |  {{ sonarr['cf']['syfy']['trash_scores']['default'] }}  | {{ sonarr['cf']['syfy']['trash_id'] }}   |
+    | :warning: [{{ sonarr['cf']['hd-streaming-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hd-streaming-boost)     |  {{ sonarr['cf']['hd-streaming-boost']['trash_scores']['default'] }}  | {{ sonarr['cf']['hd-streaming-boost']['trash_id'] }}   |
+
+    !!! warning "HD Streaming Boost Custom Format"
+
+    The HD Streaming Boost custom format increases the score of some streaming services' HD releases when those are known to have better quality compared to other streaming services.
+
+    This custom format must be included in your profile for streaming service releases to be scored correctly.
 <!-- markdownlint-enable MD041-->

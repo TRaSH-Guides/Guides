@@ -1,36 +1,45 @@
 {
   "trash_id": "43b3cf48cb385cd3eac608ee6bca7f09",
   "trash_scores": {
-    "default": 20
+    "default": 75
   },
   "name": "UHD Streaming Boost",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Peacock TV",
+      "name": "Disney+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(pcok|Peacock TV)\\b"
+        "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
       }
     },
     {
-      "name": "Paramount+",
+      "name": "HBO Max",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(pmtp|Paramount\\+)\\b"
+        "value": "\\b(hmax|hbom|hbo[ ._-]?max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
       }
     },
     {
-      "name": "Hulu",
+      "name": "HMAX Rename",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(hulu)\\b"
+        "value": "\\[(HMAX)\\b|\\b(HMAX)\\]"
+      }
+    },
+    {
+      "name": "Netflix",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(nf|netflix(u?hd)?)\\b"
       }
     },
     {

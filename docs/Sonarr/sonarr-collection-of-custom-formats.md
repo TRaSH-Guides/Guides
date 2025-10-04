@@ -66,11 +66,12 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | General Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------- | ------------------------ | ------------------------ |
 | [Amazon](#amzn)            | [AUViO](#auvio)           | [FOD](#fod)              | [NLZiet](#nlz)           |
-| [Apple TV+](#atvp)         | [MyCANAL](#mycanal)       | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
-| [Comedy Central](#cc)      | [SALTO](#salto)           | [TVer](#tver)            |                          |
-| [DC Universe](#dcu)        |                           | [TVING](#tving)          |                          |
-| [Disney+](#dsnp)           |                           | [U-NEXT](#u-next)        |                          |
-| [HBO Max](#hmax)           |                           | [VIU](#viu)              |                          |
+| [Apple TV](#atv)           | [MyCANAL](#mycanal)       | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| [Apple TV+](#atvp)         | [SALTO](#salto)           | [TVer](#tver)            |                          |
+| [Comedy Central](#cc)      |                           | [TVING](#tving)          |                          |
+| [DC Universe](#dcu)        |                           | [U-NEXT](#u-next)        |                          |
+| [Disney+](#dsnp)           |                           | [VIU](#viu)              |                          |
+| [HBO Max](#hmax)           |                           |                          |                          |
 | [HBO](#hbo)                |                           |                          |                          |
 | [Hulu](#hulu)              |                           |                          |                          |
 | [iTunes](#it)              |                           |                          |                          |
@@ -78,6 +79,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [Netflix](#nf)             |                           |                          |                          |
 | [Paramount+](#pmtp)        |                           |                          |                          |
 | [Peacock TV](#pcok)        |                           |                          |                          |
+| [ROKU](#roku)              |                           |                          |                          |
 | [SHOWTIME](#sho)           |                           |                          |                          |
 | [Stan](#stan)              |                           |                          |                          |
 | [Syfy](#syfy)              |                           |                          |                          |
@@ -85,7 +87,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
 | --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
 | [4OD](#4od)           | [AUBC](#aubc)           | [ABEMA](#abema)          | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [ALL4](#all4)         | [CBC](#cbc)             | [ADN](#adn)              | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| [ALL4](#all4)         | [CBC](#cbc)             | [ADN](#adn)              | [HD Streaming Boost](#hd-streaming-boost)   |
 | [BBC iPlayer](#ip)    | [Crave](#crav)          | [B-Global](#b-global)    |                                             |
 | [ITVX](#itvx)         | [Discovery+](#dscp)     | [Bilibili](#bilibili)    |                                             |
 | [MY5](#my5)           | [OViD](#ovid)           | [Crunchyroll](#cr)       |                                             |
@@ -1332,6 +1334,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
+#### ATV
+
+<sub>Apple TV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/atv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 #### ATVP
 
 <sub>Apple TV+</sub>
@@ -1542,6 +1562,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcok.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### ROKU
+
+<sub>ROKU</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/roku.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/roku.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -2248,16 +2286,16 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-#### UHD Streaming Cut
+#### HD Streaming Boost
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/uhd-streaming-cut.md" !}
+    {! include-markdown "../../includes/cf-descriptions/hd-streaming-boost.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-cut.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-streaming-boost.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
