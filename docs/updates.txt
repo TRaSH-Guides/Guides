@@ -1,3 +1,9 @@
+# 2025-10-05 00:27
+- [feat(guide): Streaming Services Update](https://github.com/TRaSH-Guides/Guides/pull/2508)
+- [feat(starr-anime): Add KawaSubs to Anime Web Tier 06](https://github.com/TRaSH-Guides/Guides/pull/2505)
+- [fix(starr): update Upscale CF](https://github.com/TRaSH-Guides/Guides/pull/2502)
+- [chore(guide):  Update the site description](https://github.com/TRaSH-Guides/Guides/pull/2504)
+
 # 2025-09-28 00:27
 - [feat(starr-anime): Add CRUCiBLE to Anime Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2499)
 - [fix(radarr): bcore regex could match movie titles](https://github.com/TRaSH-Guides/Guides/pull/2498)
