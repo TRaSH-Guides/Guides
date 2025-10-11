@@ -156,7 +156,10 @@ Then go in to `Settings` => `Special` => `Values`.
 
 Scroll down to `host_whitelist (  )` and enter your Docker container name and or your domain name.
 
-Example: `sabnzbd.domain.tld, <container name >`
+!!! tip
+    When using hotio containers with VPN, use the `.internal` domain for container names (e.g., `sabnzbd.internal`) to ensure proper connectivity.
+
+Example: `sabnzbd.domain.tld, sabnzbd.internal`
 
 ![!SABnzbd: host_whitelist (  )](images/sabnzbd-special-host-whitelist.png)
 

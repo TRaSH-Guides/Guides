@@ -65,6 +65,9 @@ A screen will pop up with the following options:
 
         This is what you put in your Host in Remote Path Mapping.
 
+        !!! tip
+            When using hotio containers with VPN, use the `.internal` domain for container names (e.g., `qbittorrent.internal`).
+
         ## Remote Path
 
         To find what you need to put in your remote path you need to open up your download client and look what you've used there as download location.
