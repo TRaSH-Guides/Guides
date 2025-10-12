@@ -1,3 +1,9 @@
+# 2025-10-12 00:25
+- [fix(sonarr): update webrip and webdl CF references](https://github.com/TRaSH-Guides/Guides/pull/2512)
+- [fix(guide): Updated streaming service scores for Sonarr](https://github.com/TRaSH-Guides/Guides/pull/2513)
+- [fix(guide-sync): Add missing HD Streaming Boosts to 1080p Sonarr quality profiles](https://github.com/TRaSH-Guides/Guides/pull/2511)
+- [feat(guide-sync): Move several CFs into CF group files and removing them from individual quality profiles, allowing for greater flexibility](https://github.com/TRaSH-Guides/Guides/pull/2509)
+
 # 2025-10-05 00:27
 - [feat(guide): Streaming Services Update](https://github.com/TRaSH-Guides/Guides/pull/2508)
 - [feat(starr-anime): Add KawaSubs to Anime Web Tier 06](https://github.com/TRaSH-Guides/Guides/pull/2505)
