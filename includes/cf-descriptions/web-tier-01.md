@@ -3,8 +3,8 @@
 
 Groups that:
 
-- Have established themselves as consistently delivering high-quality releases.
-- Create hybrids.
-- If TV Shows => Sign up for the gentleman list on a certain private tracker.
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Create hybrids using multiple high-quality sources
+- Sign up for the gentleman list on a certain private tracker (TV releases)
 - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 <!-- markdownlint-enable MD041-->
