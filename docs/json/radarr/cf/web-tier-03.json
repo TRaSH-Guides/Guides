@@ -27,6 +27,15 @@
       }
     },
     {
+      "name": "Dooky",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Dooky)$"
+      }
+    },
+    {
       "name": "GNOMiSSiON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

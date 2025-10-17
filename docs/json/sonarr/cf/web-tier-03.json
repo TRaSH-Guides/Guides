@@ -18,6 +18,15 @@
       }
     },
     {
+      "name": "Dooky",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Dooky)$"
+      }
+    },
+    {
       "name": "NINJACENTRAL",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
