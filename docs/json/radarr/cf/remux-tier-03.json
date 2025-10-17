@@ -18,12 +18,12 @@
       }
     },
     {
-      "name": "ATELiER",
+      "name": "12GaugeShotgun",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(ATELiER)$"
+        "value": "^(12GaugeShotgun)$"
       }
     },
     {

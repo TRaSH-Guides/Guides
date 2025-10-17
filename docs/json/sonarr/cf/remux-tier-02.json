@@ -18,6 +18,15 @@
       }
     },
     {
+      "name": "12GaugeShotgun",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(12GaugeShotgun)$"
+      }
+    },
+    {
       "name": "decibeL",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

@@ -39,15 +39,6 @@
       }
     },
     {
-      "name": "ATELiER",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ATELiER)$"
-      }
-    },
-    {
       "name": "BHDStudio",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
