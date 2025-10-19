@@ -1,3 +1,9 @@
+# 2025-10-19 00:28
+- [feat(guide): Update Tier Descriptions](https://github.com/TRaSH-Guides/Guides/pull/2520)
+- [feat(guide): October 2025 Tier Membership update](https://github.com/TRaSH-Guides/Guides/pull/2521)
+- [docs: Add .internal domain recommendations for Docker container names](https://github.com/TRaSH-Guides/Guides/pull/2514)
+- [chore(contributors): Update CONTRIBUTORS.md](https://github.com/TRaSH-Guides/Guides/pull/)
+
 # 2025-10-12 00:25
 - [fix(sonarr): update webrip and webdl CF references](https://github.com/TRaSH-Guides/Guides/pull/2512)
 - [fix(guide): Updated streaming service scores for Sonarr](https://github.com/TRaSH-Guides/Guides/pull/2513)
