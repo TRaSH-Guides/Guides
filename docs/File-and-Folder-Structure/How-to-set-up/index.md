@@ -3,10 +3,9 @@
 This section will show several how-to guides for installing the Starr Apps.
 This is all done in a way to achieve [Hardlinks and Instant Moves (Atomic-Moves)](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/).
 
-
 ## Folder Setup
 
-Before you proceed to setup in either of these installation methods, having a folder on your drive would be good to have. 
+Before you proceed to setup in either of these installation methods, having a folder on your drive would be good to have.
 
 ## Linux/MacOS
 
