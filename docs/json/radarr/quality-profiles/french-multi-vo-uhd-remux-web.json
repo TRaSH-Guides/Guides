@@ -47,7 +47,7 @@
     { "name": "BR-DISK", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
     {
-      "name": "Bluray|WEB 1080p",
+      "name": "Bluray|WEB 2160p",
       "allowed": true,
       "items": [
         "WEBDL-2160p",
