@@ -65,6 +65,10 @@ check_and_install_fclones() {
 
         # Add boot-time copy and PATH setup if not already in /boot/config/go
         if ! grep -q "fclones boot-time setup" "$GO_FILE"; then
+            if [ ! -w "$GO_FILE" ]; then
+                echo "Error: Cannot write to $GO_FILE. Please check permissions." >&2
+                exit 1
+            fi
             echo "" >> "$GO_FILE"
             echo "# fclones boot-time setup" >> "$GO_FILE"
             echo "export PATH=/usr/local/bin:\$PATH" >> "$GO_FILE"
