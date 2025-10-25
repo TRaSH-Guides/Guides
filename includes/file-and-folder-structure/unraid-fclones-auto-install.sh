@@ -20,8 +20,18 @@ check_and_install_fclones() {
         echo "fclones not found, installing..."
     fi
 
+    # Check for curl or wget
+    if command -v curl >/dev/null 2>&1; then
+        GITHUB_API_CMD="curl -s https://api.github.com/repos/pkolaczk/fclones/releases/latest"
+    elif command -v wget >/dev/null 2>&1; then
+        GITHUB_API_CMD="wget -qO- https://api.github.com/repos/pkolaczk/fclones/releases/latest"
+    else
+        echo "Error: Neither 'curl' nor 'wget' is installed. Please install one of them to continue."
+        exit 1
+    fi
+
     # Fetch latest release from GitHub
-    LATEST_VERSION=$(curl -s https://api.github.com/repos/pkolaczk/fclones/releases/latest | grep -Po '"tag_name": "\K.*?(?=")')
+    LATEST_VERSION=$($GITHUB_API_CMD | grep -Po '"tag_name": "\K.*?(?=")')
     if [[ -z "$LATEST_VERSION" ]]; then
         echo "Could not fetch latest release, using default version $DEFAULT_VERSION"
         LATEST_VERSION="$DEFAULT_VERSION"
