@@ -199,7 +199,7 @@ For this option, you'll use three files (or four if you also want to run fclones
         --8<-- "includes/downloaders/mover-tuning-end.sh"
         ```
 
-- **[fclones.sh](https://gist.github.com/BaukeZwart/b570ce6b6165c4f0b64c5b98d9d3af1e){:target="_blank" rel="noopener noreferrer"}** - *Read the instructions inside the script* - Use this script to [Replace copies with hardlinks](/File-and-Folder-Structure/Replace-copies-with-hardlinks/){:target="_blank" rel="noopener noreferrer"}
+- **[fclones.sh](https://gist.github.com/BaukeZwart/b570ce6b6165c4f0b64c5b98d9d3af1e){:target="_blank" rel="noopener noreferrer"}** - *Read the instructions inside the script* - Use this script to [Replace copies with hardlinks](/File-and-Folder-Structure/Replace-copies-with-hardlinks/#fclones-on-unraid){:target="_blank" rel="noopener noreferrer"}
 
 Once you've downloaded all the scripts, make sure the permissions are correct and that the scripts are executable. You can do this from a terminal with the following command:
 
