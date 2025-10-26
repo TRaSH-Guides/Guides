@@ -1,3 +1,7 @@
+# 2025-10-26 00:26
+- [fix(radarr-french): incorrect quality group name in CF](https://github.com/TRaSH-Guides/Guides/pull/2523)
+- [chore(contributors): Update CONTRIBUTORS.md](https://github.com/TRaSH-Guides/Guides/pull/)
+
 # 2025-10-19 00:28
 - [feat(guide): Update Tier Descriptions](https://github.com/TRaSH-Guides/Guides/pull/2520)
 - [feat(guide): October 2025 Tier Membership update](https://github.com/TRaSH-Guides/Guides/pull/2521)
