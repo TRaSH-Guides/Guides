@@ -52,6 +52,15 @@
       }
     },
     {
+      "name": "Cytox",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Cytox)\\b"
+      }
+    },
+    {
       "name": "Dae",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
