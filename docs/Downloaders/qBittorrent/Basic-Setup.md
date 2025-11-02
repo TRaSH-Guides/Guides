@@ -34,7 +34,15 @@
 
     !!! success ""
 
-        **Suggested: `Enabled`**
+        **Suggested: `Personal Preferences`**
+
+    !!! danger "Important: Disable Pre-allocation in qBittorrent if you're using unRaid with a cache drive"
+
+        Go to qBittorrent → Options → Downloads and **disable** this option:
+
+        `Pre-allocate disk space for all files`
+
+        When this option is enabled, it keeps the reserved space locked (in use) until you quit qBittorrent.
 
 ### Saving Management
 
