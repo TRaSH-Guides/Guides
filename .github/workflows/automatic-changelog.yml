@@ -27,7 +27,7 @@ jobs:
 
       - name: Run git log
         run: |
-          git log --no-merges --perl-regexp --author='^(?!.*(\[bot\]|actions@github\.com)).*$' --grep='^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert|update)(\(.*?\))?:' --since="${{ env.LAST_EDIT_TIME }}" --pretty="%s" > log_output.txt
+          git log --no-merges --perl-regexp --author='^(?!.*(\[bot\]|actions@github\.com)).*$' --grep='^(feat|fix|chore|docs|style|refactor|perf|test|build|revert|update)(\(.*?\))?:(?! Update CONTRIBUTORS.md)' --since="${{ env.LAST_EDIT_TIME }}" --pretty="%s" > log_output.txt
 
       - name: Check if there are new commits
         run: |

@@ -1,3 +1,7 @@
+# 2025-11-02 00:28
+- [feat(starr-anime): Add Cytox to Anime Web Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2527)
+- [chore(contributors): Update CONTRIBUTORS.md](https://github.com/TRaSH-Guides/Guides/pull/)
+
 # 2025-10-26 00:26
 - [fix(radarr-french): incorrect quality group name in CF](https://github.com/TRaSH-Guides/Guides/pull/2523)
 - [chore(contributors): Update CONTRIBUTORS.md](https://github.com/TRaSH-Guides/Guides/pull/)
