@@ -1,12 +1,15 @@
 # unRAID Mover and qBittorrent
 
-When you use the unRAID cache drive for your `/data/torrents` share and your torrents are actively seeding in qBittorrent, the unRAID mover can't move files. This happens because the files are still in use, which would break the hard links.
+When you use the unRAID cache drive for your `/data/torrents` share while torrents are actively seeding in qBittorrent, the unRAID mover cannot move files. This happens because the files are still in use, which would break the hard links.
 
 Using the instructions below, you can move files using the qBittorrent API with the qBit-Mover script.
 
 ---
 
-## How the Mover Script Works
+## How the qBit-Mover Script Works
+
+!!! info
+    The qBit-Mover script doesn't move files itself. It only pauses and resumes torrents, and it can trigger the unRAID mover or Mover Tuning.
 
 This guide explains two ways to use the mover script:
 
@@ -18,24 +21,46 @@ This guide explains two ways to use the mover script:
 This option uses the Mover Tuning plugin to:
 
 1. Pause torrents within a specific age range that are on your cache drive
-2. Resume the torrents after the unRAID mover finishes
+1. Resume the torrents after the unRAID mover finishes
+
+It also offers these features:
+
+- Automatically install and update the qbittorrent-api module (REQUIRED)
+- Automatically download the qBit-Mover script (REQUIRED)
+- qBit-Manage integration (OPTIONAL but recommended)
+    - Start qBit-Manage before qBit-Mover runs
+    - Resume qBit-Manage after qBit-Mover completes or after fclones finishes
+- Automatically download fclones (OPTIONAL)
+    - Run fclones (Replace copies with hardlinks)
+- Automatically set the correct unRAID User/Group and permissions
 
 ### Option 2
 
 This option runs the script from User Scripts to:
 
 1. Pause torrents within a specific age range that are on your cache drive
-2. Run/trigger the unRAID mover
-3. Resume the torrents after the unRAID mover finishes
+1. Run/trigger the unRAID mover
+1. Resume the torrents after the unRAID mover finishes
+
+---
+
+## Requirements
+
+!!! danger "Important: Disable Pre-allocation in qBittorrent"
+    Go to qBittorrent → Options → Downloads and **disable** this option:
+
+    `Pre-allocate disk space for all files`
+
+    When this option is enabled, it keeps the reserved space locked (in use) until you quit qBittorrent.
+
+### Tips & Info
 
 !!! tip
-
-    - Don't disable the mover from `Settings` → `Scheduler` → `Mover Settings`. Instead, you could set the mover to run once a month, one minute after you run the script. The mover shouldn't run because it's already running.
+    - Don't disable the mover from **Settings** → **Scheduler** → **Mover Settings**. Instead, you could set the mover to run once a month, one minute after you run the qBit Mover script. The mover shouldn't run because it's already running.
     - If you're also using Mover Tuning, don't disable the mover from running on a schedule—this could completely disable it.
-    - We recommend using Mover Tuning. If you do, make sure `Move files that are greater than this many days old:` matches the number of days you set in the script.
+    - We recommend using Mover Tuning. If you do, make sure **Move files that are greater than this many days old** matches the number of days you set in the qBit-Mover script or config.
 
-!!! warning
-
+!!! info
     The screenshots below are **EXAMPLES** to show you how things should look and where to add data. They are **NOT** always 100% accurate reflections of the actual data or the exact values you need.
 
     - Always follow the recommendations in this guide.
@@ -43,193 +68,74 @@ This option runs the script from User Scripts to:
 
 ---
 
-## Requirements
-
-!!! danger "Important: Disable Pre-allocation in qBittorrent"
-
-    Go to qBittorrent → Options → Downloads and **disable** this option:
-
-    `Pre-allocate disk space for all files`
-
-    When this option is enabled, it keeps the reserved space locked (in use) until you quit qBittorrent.
-
-### qBit-Mover Script
-
-Download the latest qBit-Mover script [HERE](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="_blank" rel="noopener noreferrer"}.
-
-Big thanks to [bobokun](https://github.com/bobokun){:target="_blank" rel="noopener noreferrer"}, the developer of [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="_blank" rel="noopener noreferrer"}, for creating this script with all the requested changes.
-
-#### Save the Script to Your Preferred Location
-
-Place the qBit-Mover script somewhere easy to access and remember.
-
-**Suggested locations:**
-
-- `/mnt/user/appdata/qbt-mover/mover.py`
-- `/mnt/user/appdata/scripts/mover.py`
-
-### Required Plugins
+## Option 1: Mover Tuning
 
 Install the following plugins:
 
-- User Scripts
 - Python 3 for unRAID (unRAID Plugin)
-- Mover Tuning (if you want to use Option 1)
+- Mover Tuning (unRAID Plugin)
 
----
+Install the following container (Optional but suggested):
 
-## Install the `qbittorrent-api` Module
-
-Make sure you've installed the required plugins first.
-
-The script needs the `qbittorrent-api` module to work, so you need to install it when your unRAID server starts or when the Array starts for the first time.
-
-Choose one of the following three methods (select a tab) to install `qbittorrent-api`.
-
-=== "User Scripts"
-
-    This method installs the `qbittorrent-api` module when the Array starts for the first time.
-
-    In your unRAID Dashboard, go to the **Settings** tab and select **User Scripts** in the **User Utilities** section at the bottom.
-
-    ![User Scripts](images/Unraid-settings-user-scripts-icon.png)
-
-    At the bottom of the **User Scripts** page, click the **ADD NEW SCRIPT** button.
-
-    ![Add New Script](images/Unraid-user-scripts-add-new-script-icon.png)
-
-    A popup will ask you to name the script. For this example, use `Install qBittorrent-API` and click **OK**.
-
-    ![Install qBittorrent API](images/Unraid-user-scripts-add-new-script-enter-name.png)
-
-    Click the cogwheel next to the new script in the list and select **Edit Script**.
-
-    ![Select user script](images/Unraid-settings-user-scripts-list-select-qbit-api.png)
-
-    Copy and paste the following into the new window that opens, then click **SAVE CHANGES**.
-
-    ```bash
-    #!/bin/bash
-    pip3 install qbittorrent-api
-    ```
-
-    ![Bash script](images/Unraid-settings-user-scripts-qbit-api.png)
-
-    In the schedule list, select when the script should run and choose `At First Array Start Only`.
-
-    ![Set Run Time](images/Unraid-settings-user-scripts-qbit-api-schedule.png)
-
-    Click **Apply**.
-
-    Finally, click **RUN IN BACKGROUND** or restart your unRAID server to install the `qbittorrent-api` module.
-
-    ![RUN IN BACKGROUND](images/Unraid-settings-user-scripts-qbit-api-run-background.png)
-
-=== "Python venv"
-
-    This method creates a [Python virtual environment](https://docs.python.org/3/library/venv.html) on your disk. You'll use this to run and store dependencies (`qbittorrent-api`) for this specific environment.
-
-    With this method, you **only need to set this up once** and it will remain after reboots (unlike the other methods).
-
-    First, choose a location for your new Python environment.
-
-    !!! info
-
-        In the next steps, you'll choose a [location to store the script](#save-the-script-to-your-preferred-location). Try to keep things organized.
-
-    **Suggested locations:**
-
-    - `/mnt/user/appdata/qbt-mover/.venv`
-    - `/mnt/user/appdata/scripts/.venv`
-
-    Run the following command in unRAID's terminal using the directory you chose:
-
-    ```bash
-    python3 -m venv --clear /mnt/user/appdata/scripts/.venv
-    ```
-
-    Now enter this new environment and install the dependency (`qbittorrent-api`):
-
-    ```bash
-    source /mnt/user/appdata/scripts/.venv/bin/activate
-    pip3 install qbittorrent-api
-    deactivate # to exit the environment
-    ```
-
-    !!! info
-
-        Replace `/mnt/user/appdata/scripts/.venv` with the path you chose.
-
-=== "Go File"
-
-    This method installs the `qbittorrent-api` module when the unRAID server starts.
-
-    On your USB stick/key, go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"} or [Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}).
-
-    Copy and paste the following command:
-
-    ```bash
-    pip3 install qbittorrent-api
-    ```
-
-    Restart your unRAID server or run the command above from the terminal.
-
----
-
-## Option 1: Mover Tuning
+- qBit-Manage
 
 !!! danger "This option expects that you follow the guide's suggested paths as described in this section."
 
-For this option, you'll use three files (or four if you also want to run fclones after the mover has run). In this example, we'll place them all in `/mnt/user/appdata/qbt-mover/`:
+For this option, you only need to download three files and place them in `/mnt/user/appdata/qbt-mover/`:
 
-- **[qBit-Mover script](#qbit-mover-script)** - The qBit-Mover script mentioned in [qBit-Mover script](#qbit-mover-script)
-- **[mover-tuning-start.sh](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh)** - The script that will run before the mover starts. *Read the instructions inside the script*
+- **[mover-tuning-start.sh](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh)** - The script that runs before the mover starts.
 
     ??? example "mover-tuning-start.sh - [Click to show/hide]"
-
         ```bash
         --8<-- "includes/downloaders/mover-tuning-start.sh"
         ```
 
-- **[mover-tuning-end.sh](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh)** - The script that will run after the mover has finished. *Read the instructions inside the script*
+- **[mover-tuning-end.sh](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh)** - The script that runs after the mover finishes.
 
     ??? example "mover-tuning-end.sh - [Click to show/hide]"
-
         ```bash
         --8<-- "includes/downloaders/mover-tuning-end.sh"
         ```
 
-- **[fclones.sh](https://gist.github.com/BaukeZwart/b570ce6b6165c4f0b64c5b98d9d3af1e){:target="_blank" rel="noopener noreferrer"}** - *Read the instructions inside the script* - Use this script to [Replace copies with hardlinks](/File-and-Folder-Structure/Replace-copies-with-hardlinks/#fclones-on-unraid){:target="_blank" rel="noopener noreferrer"}
+- **[mover-tuning.cfg](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg)** - This config file holds all the user variables used by the other scripts. *Read and edit the instructions inside the script.*
+
+    ??? example "mover-tuning.cfg - [Click to show/hide]"
+        ```bash
+        --8<-- "includes/downloaders/mover-tuning.cfg"
+        ```
+
+### Permissions
 
 Once you've downloaded all the scripts, make sure the permissions are correct and that the scripts are executable. You can do this from a terminal with the following command:
 
 ```bash
 chown -R nobody:users /mnt/user/appdata/qbt-mover/
 chmod -R a=,a+rX,u+w,g+w /mnt/user/appdata/qbt-mover/
-chmod +x /mnt/user/appdata/qbt-mover/mover.py
 chmod +x /mnt/user/appdata/qbt-mover/mover-tuning-start.sh
 chmod +x /mnt/user/appdata/qbt-mover/mover-tuning-end.sh
-chmod +x /mnt/user/appdata/qbt-mover/fclones.sh
+chmod +x /mnt/user/appdata/qbt-mover/mover-tuning.cfg
 ```
 
-Make sure you've installed the Mover Tuning plugin as mentioned in [Requirements](#required-plugins).
+---
+
+### Mover Tuning Settings
 
 We'll only cover the Mover Tuning settings that are important for qBit-Mover, not every single setting.
 
 In your unRAID Dashboard, go to the **Settings** tab and select **Scheduler** in the **User Preferences** section.
 
-### Mover Settings
+#### Mover Settings
 
 In the Scheduler under Mover Settings, first set when the mover should run:
 
 ![Mover Settings](images/unraid-settings-scheduler-mover-settings.png)
 
 1. Choose how often you want the mover to run
-2. Choose when you want the mover to run
-3. Enable mover logging if you want to see what's being moved in the log files
-4. Click **APPLY** to save the settings
+1. Choose when you want the mover to run
+1. Enable mover logging if you want to see what's being moved in the log files
+1. Click **APPLY** to save the settings
 
-### Mover Tuning - Plugin Settings
+#### Mover Tuning - Plugin Settings
 
 ![Mover Tuning - Plugin Settings](images/unraid-settings-scheduler-mover-tuning-plugin-settings.png)
 
@@ -265,7 +171,7 @@ In the Scheduler under Mover Settings, first set when the mover should run:
 
 1. Select "Yes" to follow plugin filters, or "No" to run the original mover (ignores plugin filters) from the button.
 
-### Mover Tuning - Filters
+#### Mover Tuning - Filters
 
 ![Mover Tuning - Filters](images/unraid-settings-scheduler-mover-tuning-plugin-filters.png)
 
@@ -317,7 +223,7 @@ In the Scheduler under Mover Settings, first set when the mover should run:
 1. Set to "Yes" if you want to move all files from your cache to the array when the percentage below is exceeded.
 1. Set the percentage of disk space used on the Primary pool that triggers a move of all files from your cache to your array.
 
-### Mover Tuning - Options
+#### Mover Tuning - Options
 
 ![Mover Tuning - Options](images/unraid-settings-scheduler-mover-tuning-options.png)
 
@@ -354,6 +260,120 @@ In the Scheduler under Mover Settings, first set when the mover should run:
 
 ## Option 2: User Scripts
 
+Install the following plugins:
+
+- User Scripts
+- Python 3 for unRAID (unRAID Plugin)
+
+### qBit-Mover Script
+
+Download the latest qBit-Mover script [HERE](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="_blank" rel="noopener noreferrer"}.
+
+Big thanks to [bobokun](https://github.com/bobokun){:target="_blank" rel="noopener noreferrer"}, the developer of [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="_blank" rel="noopener noreferrer"}, for creating this script with all the requested changes.
+
+#### Save the Script to Your Preferred Location
+
+Place the qBit-Mover script somewhere easy to access and remember.
+
+**Suggested locations:**
+
+- `/mnt/user/appdata/qbt-mover/mover.py`
+- `/mnt/user/appdata/scripts/mover.py`
+
+### Install the `qbittorrent-api` Module
+
+The script needs the `qbittorrent-api` module to work, so you need to install it when your unRAID server starts or when the Array starts for the first time.
+
+Choose one of the following three methods (select a tab) to install `qbittorrent-api`.
+
+=== "Python venv (Recommended)"
+
+    This method creates a [Python virtual environment](https://docs.python.org/3/library/venv.html) on your disk. You'll use this to run and store dependencies (`qbittorrent-api`) for this specific environment.
+
+    With this method, you **only need to set this up once** and it will remain after reboots (unlike the other methods).
+
+    First, choose a location for your new Python environment.
+
+    !!! info
+        In the next steps, you'll choose a [location to store the script](#save-the-script-to-your-preferred-location). Try to keep things organized.
+
+    **Suggested locations:**
+
+    - `/mnt/user/appdata/qbt-mover/.venv`
+    - `/mnt/user/appdata/scripts/.venv`
+
+    Run the following command in unRAID's terminal using the directory you chose:
+
+    ```bash
+    python3 -m venv --clear /mnt/user/appdata/scripts/.venv
+    ```
+
+    Now enter this new environment and install the dependency (`qbittorrent-api`):
+
+    ```bash
+    source /mnt/user/appdata/scripts/.venv/bin/activate
+    pip3 install qbittorrent-api
+    deactivate # to exit the environment
+    ```
+
+    !!! info
+        Replace `/mnt/user/appdata/scripts/.venv` with the path you chose.
+
+=== "User Scripts"
+
+    This method installs the `qbittorrent-api` module when the Array starts for the first time.
+
+    In your unRAID Dashboard, go to the **Settings** tab and select **User Scripts** in the **User Utilities** section at the bottom.
+
+    ![User Scripts](images/Unraid-settings-user-scripts-icon.png)
+
+    At the bottom of the **User Scripts** page, click the **ADD NEW SCRIPT** button.
+
+    ![Add New Script](images/Unraid-user-scripts-add-new-script-icon.png)
+
+    A popup will ask you to name the script. For this example, use `Install qBittorrent-API` and click **OK**.
+
+    ![Install qBittorrent API](images/Unraid-user-scripts-add-new-script-enter-name.png)
+
+    Click the cogwheel next to the new script in the list and select **Edit Script**.
+
+    ![Select user script](images/Unraid-settings-user-scripts-list-select-qbit-api.png)
+
+    Copy and paste the following into the new window that opens, then click **SAVE CHANGES**.
+
+    ```bash
+    #!/bin/bash
+    pip3 install qbittorrent-api
+    ```
+
+    ![Bash script](images/Unraid-settings-user-scripts-qbit-api.png)
+
+    In the schedule list, select when the script should run and choose `At First Array Start Only`.
+
+    ![Set Run Time](images/Unraid-settings-user-scripts-qbit-api-schedule.png)
+
+    Click **Apply**.
+
+    Finally, click **RUN IN BACKGROUND** or restart your unRAID server to install the `qbittorrent-api` module.
+
+    ![RUN IN BACKGROUND](images/Unraid-settings-user-scripts-qbit-api-run-background.png)
+
+=== "Go File"
+
+    This method installs the `qbittorrent-api` module when the unRAID server starts.
+
+    On your USB stick/key, go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"} or [Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}).
+
+    Copy and paste the following command:
+
+    ```bash
+    pip3 install qbittorrent-api
+    ```
+
+    Restart your unRAID server or run the command above from the terminal.
+
+### Set Up the Scheduler
+
 Set up the scheduler for when the mover should run.
 
 In your unRAID Dashboard, go to the **Settings** tab and select **User Scripts** in the **User Utilities** section at the bottom.
@@ -375,7 +395,6 @@ Click the cogwheel next to the new script in the list.
 Choose your method (select a tab) and copy/paste the script into the new window that opens, then click **SAVE CHANGES**.
 
 !!! info "Important: Replace placeholders"
-
     Replace `ip` with your unRAID server IP and `port` with your qBittorrent WebGUI port.
 
 === "Python (Native)"
@@ -402,18 +421,17 @@ Choose your method (select a tab) and copy/paste the script into the new window 
     ```
 
 !!! info "Update the script path"
-
     Replace `/mnt/user/appdata/scripts/` in the script with the path you chose for the Python script (qBit-Mover script).
 
 ### Script Parameters Explained
 
-| Parameter | Description |
-|-----------|-------------|
-| `--days_from` | Set the number of days to stop torrents **from** for the move |
-| `--days_to` | Set the number of days to stop torrents **to** for the move |
-| `--host` | Replace `ip` with your unRAID server IP and `port` with your qBittorrent WebGUI port |
-| `--user` | Your qBittorrent username (if you have authentication enabled) |
-| `--password` | Your qBittorrent password (if you have authentication enabled) |
+| Parameter       | Description                                                                                                                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `--days_from`   | Set the number of days to stop torrents **from** for the move                                                                                                                                                            |
+| `--days_to`     | Set the number of days to stop torrents **to** for the move                                                                                                                                                              |
+| `--host`        | Replace `ip` with your unRAID server IP and `port` with your qBittorrent WebGUI port                                                                                                                                     |
+| `--user`        | Your qBittorrent username (if you have authentication enabled)                                                                                                                                                           |
+| `--password`    | Your qBittorrent password (if you have authentication enabled)                                                                                                                                                           |
 | `--cache-mount` | Cache mount point in Unraid. This filters for only torrents that exist on the cache mount. Use this option ONLY if you follow the TRaSH Guides folder structure. (For the default cache drive, set this to `/mnt/cache`) |
 
 ### Set the Schedule
