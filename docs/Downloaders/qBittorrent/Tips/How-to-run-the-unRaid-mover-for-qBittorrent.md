@@ -119,7 +119,6 @@ chown -R nobody:users /mnt/user/appdata/qbt-mover/
 chmod -R a=,a+rX,u+w,g+w /mnt/user/appdata/qbt-mover/
 chmod +x /mnt/user/appdata/qbt-mover/mover-tuning-start.sh
 chmod +x /mnt/user/appdata/qbt-mover/mover-tuning-end.sh
-chmod +x /mnt/user/appdata/qbt-mover/mover-tuning.cfg
 ```
 
 ---
