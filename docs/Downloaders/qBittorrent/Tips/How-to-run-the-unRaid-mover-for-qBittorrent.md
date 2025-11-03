@@ -8,8 +8,7 @@ Using the instructions below, you can move files using the qBittorrent API with 
 
 ## How the qBit-Mover Script Works
 
-!!! info
-    The qBit-Mover script doesn't move files itself. It only pauses and resumes torrents, and it can trigger the unRAID mover or Mover Tuning.
+!!! info "The qBit-Mover script doesn't move files itself. It only pauses and resumes torrents, and it can trigger the unRAID mover or Mover Tuning."
 
 This guide explains two ways to use the mover script:
 
@@ -25,12 +24,15 @@ This option uses the Mover Tuning plugin to:
 
 It also offers these features:
 
-- Automatically install and update the qbittorrent-api module (REQUIRED)
-- Automatically download the qBit-Mover script (REQUIRED)
-- qBit-Manage integration (OPTIONAL but recommended)
-    - Start qBit-Manage before qBit-Mover runs
-    - Resume qBit-Manage after qBit-Mover completes or after fclones finishes
-- Automatically download fclones (OPTIONAL)
+- Automatically install and update the qbittorrent-api module (**REQUIRED**)
+- Automatically download the qBit-Mover script (**REQUIRED**)
+- qBit-Manage integration (*OPTIONAL*)
+    - Stop qBit-Manage before qBit-Mover runs
+    - Start qBit-Manage after qBit-Mover completes or after fclones finishes
+
+        !!! warning "If qBit-Manage runs while files are moving from cache to your array, it may incorrectly mark your files as NoHL. We strongly recommend enabling this option to prevent this issue."
+
+- Automatically download fclones (*OPTIONAL*)
     - Run fclones (Replace copies with hardlinks)
 - Automatically set the correct unRAID User/Group and permissions
 
@@ -70,6 +72,8 @@ This option runs the script from User Scripts to:
 
 ## Option 1: Mover Tuning
 
+!!! danger "This option expects that you follow the guide's suggested paths as described in this section."
+
 Install the following plugins:
 
 - Python 3 for unRAID (unRAID Plugin)
@@ -79,7 +83,7 @@ Install the following container (Optional but suggested):
 
 - qBit-Manage
 
-!!! danger "This option expects that you follow the guide's suggested paths as described in this section."
+---
 
 For this option, you only need to download three files and place them in `/mnt/user/appdata/qbt-mover/`:
 
@@ -97,7 +101,9 @@ For this option, you only need to download three files and place them in `/mnt/u
         --8<-- "includes/downloaders/mover-tuning-end.sh"
         ```
 
-- **[mover-tuning.cfg](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg)** - This config file holds all the user variables used by the other scripts. *Read and edit the instructions inside the script.*
+- **[mover-tuning.cfg](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg)** - This config file holds all the user variables used by the other scripts.
+
+    !!! info "Read and edit the instructions inside the script."
 
     ??? example "mover-tuning.cfg - [Click to show/hide]"
         ```bash
