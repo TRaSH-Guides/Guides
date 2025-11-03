@@ -124,13 +124,7 @@ We're going to install fclones with the help of a script that will place fclones
 
 5. Copy and paste the script below into the new window that opens, then click **SAVE CHANGES**.
 
-    **[unRAID fclones installer](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/files-and-folder-structure/unraid-fclones-auto-install.sh)** - This script will install fclones on unRAID or update the current version.
-
-    ??? example "unRAID fclones installer - [Click to show/hide]"
-
-        ```bash
-        --8<-- "includes/file-and-folder-structure/unraid-fclones-auto-install.sh"
-        ```
+    **[unRAID fclones installer](https://gist.github.com/johnwinger8/e668f05fa2be05cdd7348f5edc394fb8){:target="_blank" rel="noopener noreferrer"}** - This script will install fclones on unRAID or update the current version.
 
 6. If you want to keep fclones up to date, you can choose when the script should run to stay up to date. If you only want to run it once or handle the updates manually, skip this step.
 
@@ -142,7 +136,7 @@ We're going to install fclones with the help of a script that will place fclones
 
     ![RUN IN BACKGROUND](images/Unraid-settings-user-scripts-fclones-auto-install-run-background.png)
 
-Big thanks to johnwinger for creating the unraid-fclones-auto-install.sh!
+Big thanks to johnwinger for creating the unRAID fclones installer!
 
 #### How to Run fclones
 
