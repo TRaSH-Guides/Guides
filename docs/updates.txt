@@ -1,3 +1,7 @@
+# 2025-11-09 00:28
+- [feat(downloaders): How to use the unRaid qBit-Mover with the Mover Tuning plugin](https://github.com/TRaSH-Guides/Guides/pull/2526)
+- [feat(guide): Remove WEBDL exclusion from Dynamic Generate HDR custom format](https://github.com/TRaSH-Guides/Guides/pull/2531)
+
 # 2025-11-02 00:28
 - [feat(starr-anime): Add Cytox to Anime Web Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2527)
 - [chore(contributors): Update CONTRIBUTORS.md](https://github.com/TRaSH-Guides/Guides/pull/)
