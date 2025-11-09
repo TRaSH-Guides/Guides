@@ -9,4 +9,4 @@
 - [3rd Party tools](/Downloaders/qBittorrent/3rd-party-tools/) - A collection of 3rd party tools and other related links for qBittorrent.
 - Tips - Several tips/tweaks for qBittorrent.
     - [unRAID Mover and qBittorrent](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/) - How to move your files from your cache drive to your array when torrents are still seeding.
-    - [Themes and UI Replacements](/Downloaders/qBittorrent/Tips/Themes-and-UI-replacements/) - Themes and UI replacements you can use with qBittorrent.
+    - [qBittorrent UI Replacements](/Downloaders/qBittorrent/Tips/qBit-UI-replacements/) - qBit UI replacements you can use with qBittorrent.
