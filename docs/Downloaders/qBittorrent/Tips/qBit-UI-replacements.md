@@ -1,4 +1,4 @@
-# qBit UI Replacements
+# qBittorrent UI Replacements
 
 A list of alternative user interfaces for qBittorrent.
 
