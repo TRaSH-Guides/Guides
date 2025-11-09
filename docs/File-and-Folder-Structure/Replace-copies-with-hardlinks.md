@@ -14,9 +14,9 @@ The latest binaries are available for Windows at the links above. For Mac or Lin
     If you want to learn what else [jdupes](https://codeberg.org/jbruchon/jdupes){:target="_blank" rel="noopener noreferrer"} can do, please [read the usage manual](https://codeberg.org/jbruchon/jdupes#usage){:target="_blank" rel="noopener noreferrer"}.
 
 !!! tip "Performance Considerations"
-    This process can place a heavy load on your system for an extended time, depending on your library size. As duplicates are found and hardlinks are created, the process becomes more efficient because linked files and different-sized files are not repeatedly checked. This means subsequent runs will finish faster.
+    This process can place a heavy load on your system for an extended time, depending on your library size. As duplicates are found and hardlinks are created, the process becomes more efficient because linked files and different-sized files are not repeatedly checked. This means later runs will finish faster.
 
-    You can speed this up significantly by using a hash database. This stores information about your files (including their signatures) across `jdupes` runs, which vastly increases the speed.
+    You can speed this up significantly by using a hash database. This stores information about your files (including their signatures) across `jdupes` runs, which greatly increases the speed.
 
     Simply add the following option **before your directories** with a path that is always available and persistent:
 
@@ -100,9 +100,13 @@ fclones --one-fs --hidden --follow-links "/mnt/user/data/torrents/movies/" "/mnt
 
 ### fclones on unRAID
 
-This is very straightforward because two users on our Discord created a bash script to make this as simple as possible.
+This is straightforward because two users on our Discord created a bash script to make this as simple as possible.
 
-#### How to Install fclones on unRAID
+#### The All-in-One Script (Recommended)
+
+Use option 1 in the following guide: [How to run the unRAID mover for qBittorrent with the Mover Tuning](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/){:target="_blank" rel="noopener noreferrer"} that also will install fclones for you automatically.
+
+#### How to Install the Standalone fclones on unRAID
 
 We're going to install fclones with the help of a script that will place fclones in `/usr/local/bin/`.
 
@@ -120,13 +124,13 @@ We're going to install fclones with the help of a script that will place fclones
 
 4. Click the cogwheel next to the new script in the list and select **Edit Script**.
 
-    ![Select user script](images/Unraid-settings-user-scripts-list-select-fclones-auto-install.png)
+    ![Select User Script](images/Unraid-settings-user-scripts-list-select-fclones-auto-install.png)
 
 5. Copy and paste the script below into the new window that opens, then click **SAVE CHANGES**.
 
     **[unRAID fclones installer](https://gist.github.com/johnwinger8/e668f05fa2be05cdd7348f5edc394fb8){:target="_blank" rel="noopener noreferrer"}** - This script will install fclones on unRAID or update the current version.
 
-6. If you want to keep fclones up to date, you can choose when the script should run to stay up to date. If you only want to run it once or handle the updates manually, skip this step.
+6. If you want to keep fclones up to date, you can choose when the script should run to stay current. If you only want to run it once or handle the updates manually, skip this step.
 
     ![Set Run Time](images/Unraid-settings-user-scripts-fclones-auto-install-schedule.png)
 
@@ -138,13 +142,11 @@ We're going to install fclones with the help of a script that will place fclones
 
 Big thanks to johnwinger for creating the unRAID fclones installer!
 
-#### How to Run fclones
+##### How to Run fclones
 
-Run the following fclones bash script:
+Use the following fclones bash script:
 
 **[fclones.sh](https://gist.github.com/BaukeZwart/b570ce6b6165c4f0b64c5b98d9d3af1e){:target="_blank" rel="noopener noreferrer"}** - *Read the instructions inside the script*
-
-Use the following guide to learn how to use it: [How to run the unRAID mover for qBittorrent with the Mover Tuning](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/#option-1-mover-tuning){:target="_blank" rel="noopener noreferrer"}
 
 Big thanks to BZ for creating the fclones.sh!
 
