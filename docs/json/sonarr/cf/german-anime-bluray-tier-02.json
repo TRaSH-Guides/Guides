@@ -1,47 +1,11 @@
 {
-  "trash_id": "83b336a90d90d6b35ca673b007f80661",
+  "trash_id": "9359e91ae245ff20a6747bd08191e24d",
   "trash_scores": {
-      "default": 2650
+    "default": 2650
   },
   "name": "German Anime Bluray Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
-    {
-      "name": "VECTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(VECTOR)$"
-      }
-    },
-    {
-      "name": "MULTiPLEX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MULTiPLEX)$"
-      }
-    },
-    {
-      "name": "SiXTYNiNE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SiXTYNiNE)$"
-      }
-    },
-    {
-      "name": "Oergel",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Oergel)$"
-      }
-    },
     {
       "name": "ABJ",
       "implementation": "ReleaseGroupSpecification",
@@ -49,6 +13,24 @@
       "required": false,
       "fields": {
         "value": "^(ABJ)$"
+      }
+    },
+    {
+      "name": "DRiFTKiNG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DRiFTKiNG|DK)\\b"
+      }
+    },
+    {
+      "name": "VECTOR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VECTOR)$"
       }
     },
     {

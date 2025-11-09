@@ -1,5 +1,5 @@
 {
-  "trash_id": "bda67c2c0aae257308a4723d92475b86",
+  "trash_id": "7d7ad6fbd52cf0cc3764516ade32fa32",
   "trash_scores": {
     "default": 1800
   },
@@ -7,7 +7,7 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "RobertDeNiro",
+      "name": "PLACEHOLDER1",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
@@ -16,48 +16,12 @@
       }
     },
     {
-      "name": "BALENCiAGA",
+      "name": "PLACEHOLDER2",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(BALENCiAGA)$"
-      }
-    },
-    {
-      "name": "HQC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HQC)$"
-      }
-    },
-    {
-      "name": "HDSource",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HDSource)$"
-      }
-    },
-    {
-      "name": "iNCEPTION",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iNCEPTION)$"
-      }
-    },
-    {
-      "name": "RDR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RDR)$"
       }
     },
     {
