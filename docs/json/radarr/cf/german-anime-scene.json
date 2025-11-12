@@ -1,0 +1,28 @@
+{
+  "trash_id": "90cfd463ac844e4911ee277ddd566d87",
+  "trash_scores": {
+    "default": 1700
+  },
+  "name": "German Anime Scene",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "ONiGiRi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ONiGiRi)$"
+      }
+    },
+    {
+      "name": "STARS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(STARS)$"
+      }
+    }
+  ]
+}

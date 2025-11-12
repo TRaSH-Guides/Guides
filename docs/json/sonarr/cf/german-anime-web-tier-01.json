@@ -43,21 +43,21 @@
       }
     },
     {
-      "name": "snk",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(snk|shw)\\b"
-      }
-    },
-    {
       "name": "WeebPinn",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(WeebPinn)$"
+      }
+    },
+    {
+      "name": "snk",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(snk|shw)\\b"
       }
     },
     {

@@ -1,0 +1,46 @@
+{
+  "trash_id": "97572e721cc2dc21ee696d716dede779",
+  "trash_scores": {
+    "default": 1800
+  },
+  "name": "German Anime Web Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "PLACEHOLDER1",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(RobertDeNiro)$"
+      }
+    },
+    {
+      "name": "PLACEHOLDER2",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(BALENCiAGA)$"
+      }
+    },
+    {
+      "name": "WebDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WebRip",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}

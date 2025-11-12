@@ -1,0 +1,19 @@
+{
+  "trash_id": "ee425f921dd740621523343bffe82fa3",
+  "trash_scores": {
+    "default": 5000
+  },
+  "name": "German Anime Subbed",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "German Subbed",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?:[Gg][Ee][Rr]|[Gg]erman)[\\. \\-]?(?:[Ee]ng|[Ee]nglish)?[\\. \\-]?(?:[Ss]ub|[Ss]ubbed)"
+      }
+    }
+  ]
+}

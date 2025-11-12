@@ -25,21 +25,21 @@
       }
     },
     {
-      "name": "GP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GP)$"
-      }
-    },
-    {
       "name": "FumoFriday",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(FumoFriday)$"
+      }
+    },
+    {
+      "name": "GP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GP)$"
       }
     },
     {
