@@ -1,9 +1,9 @@
 {
-  "trash_id": "TODO",
+  "trash_id": "b2ff1353b447d4ca6acc3a83a52cda59",
   "trash_scores": {
     "default": -35000
   },
-  "name": "Not German or English",
+  "name": "Not German, Japanese, Korean, Chinese or English",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {

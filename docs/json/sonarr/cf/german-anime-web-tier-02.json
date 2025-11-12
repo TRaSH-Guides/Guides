@@ -25,21 +25,21 @@
       }
     },
     {
-      "name": "MELD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MELD)$"
-      }
-    },
-    {
       "name": "VECTOR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(VECTOR)$"
+      }
+    },
+    {
+      "name": "MELD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MELD)$"
       }
     },
     {
