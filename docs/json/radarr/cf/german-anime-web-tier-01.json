@@ -61,6 +61,51 @@
       }
     },
     {
+      "name": "Tanuki",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Tanuki)$"
+      }
+    },
+    {
+      "name": "Ainz",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Ainz)$"
+      }
+    },
+    {
+      "name": "HiSHiRO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiSHiRO)$"
+      }
+    },
+    {
+      "name": "Pudding-sama",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Pudding-sama)$"
+      }
+    },
+    {
+      "name": "RTemp",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RTemp)$"
+      }
+    },
+    {
       "name": "WebDL",
       "implementation": "SourceSpecification",
       "negate": false,
