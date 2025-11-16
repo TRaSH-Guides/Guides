@@ -1,3 +1,9 @@
+# 2025-11-16 00:28
+- [fix(downloaders): updated mover-tuning-start and mover-tuning-end script to v20251112](https://github.com/TRaSH-Guides/Guides/pull/2539)
+- [feat(sonarr-anime): add KHFR to french anime fansub](https://github.com/TRaSH-Guides/Guides/pull/2534)
+- [feat(hardlinks): Added the unRaid All-in-One Script as recommended for fclones](https://github.com/TRaSH-Guides/Guides/pull/2532)
+- [feat(downloaders): Removed qBt theme links recommend qui or vue](https://github.com/TRaSH-Guides/Guides/pull/2533)
+
 # 2025-11-09 00:28
 - [feat(downloaders): How to use the unRaid qBit-Mover with the Mover Tuning plugin](https://github.com/TRaSH-Guides/Guides/pull/2526)
 - [feat(guide): Remove WEBDL exclusion from Dynamic Generate HDR custom format](https://github.com/TRaSH-Guides/Guides/pull/2531)
