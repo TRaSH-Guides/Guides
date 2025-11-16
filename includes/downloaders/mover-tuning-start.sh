@@ -3,7 +3,7 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Updated: 20251102
+# Updated: 20251112
 # =======================================
 
 # Get the directory where the script is located
@@ -15,6 +15,9 @@ source "$SCRIPT_DIR/mover-tuning.cfg"
 readonly VENV_PATH="${QBIT_MOVER_PATH}.venv"
 readonly MOVER_SCRIPT="${QBIT_MOVER_PATH}mover.py"
 readonly MOVER_URL="https://raw.githubusercontent.com/StuffAnThings/qbit_manage/develop/scripts/mover.py"
+
+# Notification delay in seconds (helps ensure all notifications appear in Unraid)
+NOTIFICATION_DELAY=2
 
 # ================================
 # UTILITY FUNCTIONS
@@ -32,7 +35,12 @@ notify() {
     local subject="$1"
     local description="$2"
     local notify_cmd="/usr/local/emhttp/plugins/dynamix/scripts/notify"
-    [[ -x "$notify_cmd" ]] && "$notify_cmd" -s "$subject" -d "$description"
+
+    if [[ -x "$notify_cmd" ]]; then
+        "$notify_cmd" -s "$subject" -d "$description"
+        # Add delay after each notification to prevent dropping
+        sleep "$NOTIFICATION_DELAY"
+    fi
 }
 
 check_command() {

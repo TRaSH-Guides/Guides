@@ -3,7 +3,7 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Updated: 20251102
+# Updated: 20251112
 # =====================================
 
 # Get the directory where the script is located
@@ -11,6 +11,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Source the config from the same directory
 source "$SCRIPT_DIR/mover-tuning.cfg"
+
+# Notification delay in seconds (helps ensure all notifications appear in Unraid)
+NOTIFICATION_DELAY=2
 
 # ================================
 # UTILITY FUNCTIONS
@@ -31,6 +34,8 @@ notify() {
 
     if [[ -x "$notify_cmd" ]]; then
         "$notify_cmd" -s "$subject" -d "$description"
+        # Add delay after each notification to prevent dropping
+        sleep "$NOTIFICATION_DELAY"
     fi
 }
 
@@ -271,7 +276,6 @@ process_qbit_instance() {
         --host "$host" \
         --user "$user" \
         --password "$password" \
-        --cache-mount "$CACHE_MOUNT" \
         --days_from "$DAYS_FROM" \
         --days_to "$DAYS_TO"; then
         log "✓ Successfully resumed torrents for $name"

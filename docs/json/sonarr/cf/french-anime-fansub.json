@@ -106,6 +106,15 @@
       "fields": {
         "value": "\\b(Yangire[ .-]?Raws)\\b"
       }
+    },
+    {
+      "name": "Kaoru Hana FR (KHFR)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KHFR)\\b"
+      }
     }
   ]
 }
