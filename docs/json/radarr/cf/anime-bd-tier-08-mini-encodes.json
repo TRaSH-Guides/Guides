@@ -113,15 +113,6 @@
       "fields": {
         "value": "\\b(Shirσ)\\b"
       }
-    },
-    {
-      "name": "YURASAKA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[YURASUKA\\]|-YURASUKA\\b"
-      }
     }
   ]
 }
