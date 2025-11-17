@@ -101,7 +101,7 @@ Click on the browse button and browse to the location where the files are access
 
 The final result will look something like this:
 
-![!rpm-final-results]
+![!rpm-final-results](images/rpm-final-results.png)
 
 After these changes, the file should be able to be imported by Radarr.
 
