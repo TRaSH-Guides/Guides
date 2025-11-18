@@ -41,7 +41,7 @@ notify() {
     local subject="$1"
     local description="$2"
     local notify_cmd="/usr/local/emhttp/plugins/dynamix/scripts/notify"
-    
+
     if [[ -x "$notify_cmd" ]]; then
         "$notify_cmd" -s "$subject" -d "$description"
         # Add delay after each notification to prevent dropping
@@ -327,7 +327,7 @@ main() {
 
     # Check for script updates
     check_script_version
-    
+
     # Check for config updates
     check_config_version
 
