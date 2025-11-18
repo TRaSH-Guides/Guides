@@ -16,12 +16,12 @@
       }
     },
     {
-      "name": "PLACEHOLDER2",
+      "name": "HiSHiRO",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(HQC)$"
+        "value": "^(HiSHiRO)$"
       }
     },
     {
