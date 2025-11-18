@@ -93,7 +93,7 @@ check_script_version() {
         # Simple version comparison (works for semantic versioning)
         if printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1 | grep -q "^$SCRIPT_VERSION$"; then
             log "⚠ New version available: $latest_version"
-            notify "mover-tuning-end.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for for the latest version"
+            notify "mover-tuning-end.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
             return 0
         fi
     fi
