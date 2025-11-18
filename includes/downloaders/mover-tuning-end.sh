@@ -339,7 +339,6 @@ process_qbit_instance() {
         --host "$host" \
         --user "$user" \
         --password "$password" \
-        --cache-mount "$CACHE_MOUNT" \
         --days_from "$DAYS_FROM" \
         --days_to "$DAYS_TO"; then
         log "✓ Successfully resumed torrents for $name"
