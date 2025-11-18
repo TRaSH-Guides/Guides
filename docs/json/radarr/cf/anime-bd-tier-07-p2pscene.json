@@ -43,6 +43,15 @@
       }
     },
     {
+      "name": "Almighty",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Almighty\\]|-Almighty\\b"
+      }
+    },
+    {
       "name": "Asakura",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
