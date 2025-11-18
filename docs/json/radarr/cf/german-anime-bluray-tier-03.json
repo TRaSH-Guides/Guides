@@ -7,12 +7,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "PLACEHOLDER1",
+      "name": "W33BSHiT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(RobertDeNiro)$"
+        "value": "^(W33BSHiT)$"
       }
     },
     {
