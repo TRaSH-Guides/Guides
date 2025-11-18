@@ -25,6 +25,15 @@
       }
     },
     {
+      "name": "Waechter",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Waechter)$"
+      }
+    },
+    {
       "name": "WebDL",
       "implementation": "SourceSpecification",
       "negate": false,

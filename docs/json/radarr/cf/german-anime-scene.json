@@ -23,6 +23,42 @@
       "fields": {
         "value": "^(STARS)$"
       }
+    },
+    {
+      "name": "PHM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PHM)$"
+      }
+    },
+    {
+      "name": "SiXTYNiNE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SiXTYNiNE)$"
+      }
+    },
+    {
+      "name": "GSG9",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GSG9)$"
+      }
+    },
+    {
+      "name": "SoW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SoW)$"
+      }
     }
   ]
 }
