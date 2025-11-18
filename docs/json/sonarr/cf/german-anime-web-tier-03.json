@@ -7,21 +7,21 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "PLACEHOLDER1",
+      "name": "Fuuko",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(RobertDeNiro)$"
+        "value": "^(Fuuko)$"
       }
     },
     {
-      "name": "PLACEHOLDER2",
+      "name": "W33BSHiT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(BALENCiAGA)$"
+        "value": "^(W33BSHiT)$"
       }
     },
     {
