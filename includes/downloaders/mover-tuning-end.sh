@@ -3,7 +3,8 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Updated: 20251112
+# Version: 1.0.0
+# Updated: 20251119
 # =====================================
 
 # Get the directory where the script is located
@@ -11,6 +12,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Source the config from the same directory
 source "$SCRIPT_DIR/mover-tuning.cfg"
+
+# Script version and update check URLs
+readonly SCRIPT_VERSION="1.0.0"
+readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Notification delay in seconds (helps ensure all notifications appear in Unraid)
 NOTIFICATION_DELAY=2
@@ -40,6 +45,64 @@ notify() {
 }
 
 # ================================
+# VERSION CHECK FUNCTION
+# ================================
+check_script_version() {
+    log "Checking for script updates..."
+
+    # Check if version check is enabled
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
+        log "Version check disabled"
+        return 0
+    fi
+
+    # Check for curl or wget
+    local fetch_cmd
+    if command -v curl &> /dev/null; then
+        fetch_cmd="curl -s"
+    elif command -v wget &> /dev/null; then
+        fetch_cmd="wget -qO-"
+    else
+        log "⚠ Cannot check version: curl or wget not found (continuing anyway)"
+        return 0
+    fi
+
+    # Fetch the latest version from the raw script URL
+    local remote_content
+    remote_content=$($fetch_cmd "$SCRIPT_RAW_URL" 2>/dev/null) || true
+
+    if [[ -z "$remote_content" ]]; then
+        log "⚠ Could not fetch latest version from GitHub (continuing anyway)"
+        return 0
+    fi
+
+    # Extract version from the remote script
+    local latest_version
+    latest_version=$(echo "$remote_content" | grep -m1 "^readonly SCRIPT_VERSION=" | sed 's/readonly SCRIPT_VERSION="\(.*\)"/\1/' 2>/dev/null) || true
+
+    if [[ -z "$latest_version" ]]; then
+        log "⚠ Could not parse version from remote script (continuing anyway)"
+        return 0
+    fi
+
+    log "Current version: $SCRIPT_VERSION"
+    log "Latest version: $latest_version"
+
+    # Compare versions
+    if [[ "$SCRIPT_VERSION" != "$latest_version" ]]; then
+        # Simple version comparison (works for semantic versioning)
+        if printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1 | grep -q "^$SCRIPT_VERSION$" 2>/dev/null || true; then
+            log "⚠ New version available: $latest_version"
+            notify "mover-tuning-end.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
+        fi
+    else
+        log "✓ Script is up to date"
+    fi
+
+    return 0
+}
+
+# ================================
 # AUTO-INSTALLER FUNCTIONS
 # ================================
 install_fclones_binary() {
@@ -54,7 +117,7 @@ install_fclones_binary() {
     # Current installed version
     local CURRENT_VERSION=""
     if [[ -x "$FCLONES_BIN" ]]; then
-        CURRENT_VERSION=$($FCLONES_BIN --version 2>/dev/null | awk '{print $2}')
+        CURRENT_VERSION=$($FCLONES_BIN --version 2>/dev/null | awk '{print $2}') || true
         log "✓ Found fclones version $CURRENT_VERSION"
     else
         log "✗ fclones not found"
@@ -67,15 +130,15 @@ install_fclones_binary() {
     elif command -v wget >/dev/null 2>&1; then
         GITHUB_API_CMD="wget -qO- https://api.github.com/repos/pkolaczk/fclones/releases/latest"
     else
-        log "✗ Neither curl nor wget is available"
-        return 1
+        log "✗ Neither curl nor wget is available (continuing anyway)"
+        return 0
     fi
 
     # Fetch latest release from GitHub
     local LATEST_VERSION
-    LATEST_VERSION=$($GITHUB_API_CMD | grep -Po '"tag_name": "\K.*?(?=")')
+    LATEST_VERSION=$($GITHUB_API_CMD 2>/dev/null | grep -Po '"tag_name": "\K.*?(?=")') || true
     if [[ -z "$LATEST_VERSION" ]]; then
-        log "⚠ Could not fetch latest release, using default version $DEFAULT_VERSION"
+        log "⚠ Could not fetch latest release, using default version $DEFAULT_VERSION (continuing anyway)"
         LATEST_VERSION="$DEFAULT_VERSION"
     else
         log "Latest fclones release: $LATEST_VERSION"
@@ -92,33 +155,36 @@ install_fclones_binary() {
         local VERSION_NO_V="${LATEST_VERSION#v}"
         local DOWNLOAD_URL="https://github.com/pkolaczk/fclones/releases/download/$LATEST_VERSION/fclones-$VERSION_NO_V-linux-glibc-x86_64.tar.gz"
 
-        wget -O "$TMP_DIR/fclones.tar.gz" "$DOWNLOAD_URL"
-        if [[ $? -ne 0 ]]; then
-            log "✗ Failed to download fclones from $DOWNLOAD_URL"
+        if ! wget -O "$TMP_DIR/fclones.tar.gz" "$DOWNLOAD_URL" 2>/dev/null; then
+            log "✗ Failed to download fclones from $DOWNLOAD_URL (continuing anyway)"
             rm -rf "$TMP_DIR"
-            return 1
+            return 0
         fi
 
-        tar -xzf "$TMP_DIR/fclones.tar.gz" -C "$TMP_DIR"
-        mkdir -p "$BOOT_DIR"
-        cp "$TMP_DIR/usr/bin/fclones" "$BOOT_DIR/fclones"
-        chmod +x "$BOOT_DIR/fclones"
+        if ! tar -xzf "$TMP_DIR/fclones.tar.gz" -C "$TMP_DIR" 2>/dev/null; then
+            log "✗ Failed to extract fclones archive (continuing anyway)"
+            rm -rf "$TMP_DIR"
+            return 0
+        fi
+
+        mkdir -p "$BOOT_DIR" || true
+        cp "$TMP_DIR/usr/bin/fclones" "$BOOT_DIR/fclones" 2>/dev/null || true
+        chmod +x "$BOOT_DIR/fclones" 2>/dev/null || true
 
         # Copy to /usr/local/bin immediately
-        cp "$BOOT_DIR/fclones" /usr/local/bin/fclones
-        chmod +x /usr/local/bin/fclones
+        cp "$BOOT_DIR/fclones" /usr/local/bin/fclones 2>/dev/null || true
+        chmod +x /usr/local/bin/fclones 2>/dev/null || true
 
         # Add boot-time copy and PATH setup if not already in /boot/config/go
-        if ! grep -q "fclones boot-time setup" "$GO_FILE"; then
-            if [ ! -w "$GO_FILE" ]; then
-                log "✗ Cannot write to $GO_FILE. Please check permissions."
-                rm -rf "$TMP_DIR"
-                return 1
+        if ! grep -q "fclones boot-time setup" "$GO_FILE" 2>/dev/null; then
+            if [ -w "$GO_FILE" ]; then
+                echo "" >> "$GO_FILE"
+                echo "# fclones boot-time setup" >> "$GO_FILE"
+                echo "export PATH=/usr/local/bin:\$PATH" >> "$GO_FILE"
+                echo "cp $BOOT_DIR/fclones /usr/local/bin/fclones" >> "$GO_FILE"
+            else
+                log "⚠ Cannot write to $GO_FILE. Please check permissions. (continuing anyway)"
             fi
-            echo "" >> "$GO_FILE"
-            echo "# fclones boot-time setup" >> "$GO_FILE"
-            echo "export PATH=/usr/local/bin:\$PATH" >> "$GO_FILE"
-            echo "cp $BOOT_DIR/fclones /usr/local/bin/fclones" >> "$GO_FILE"
         fi
 
         rm -rf "$TMP_DIR"
@@ -141,15 +207,15 @@ install_fclones_script() {
 
     # Download script
     if command -v curl &> /dev/null; then
-        curl -fsSL "$raw_script_url" -o "$script_path" || {
+        if ! curl -fsSL "$raw_script_url" -o "$script_path" 2>/dev/null; then
             log "✗ Failed to download fclones.sh script"
             return 1
-        }
+        fi
     elif command -v wget &> /dev/null; then
-        wget -q "$raw_script_url" -O "$script_path" || {
+        if ! wget -q "$raw_script_url" -O "$script_path" 2>/dev/null; then
             log "✗ Failed to download fclones.sh script"
             return 1
-        }
+        fi
     else
         log "✗ Neither curl nor wget is available"
         return 1
@@ -180,7 +246,7 @@ check_and_install_fclones() {
     else
         # Check if update is needed
         if ! install_fclones_binary; then
-            log "⚠ Failed to check/update fclones binary"
+            log "⚠ Failed to check/update fclones binary (continuing anyway)"
         fi
     fi
 
@@ -299,6 +365,9 @@ main() {
     log "Starting torrent resume process"
     log "Age range: $DAYS_FROM-$DAYS_TO days (from $date_str)"
     log "========================================"
+
+    # Check for script updates
+    check_script_version
 
     # Validate configuration
     validate_config || exit 1
