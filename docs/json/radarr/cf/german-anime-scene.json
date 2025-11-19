@@ -34,15 +34,6 @@
       }
     },
     {
-      "name": "SiXTYNiNE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SiXTYNiNE)$"
-      }
-    },
-    {
       "name": "GSG9",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

@@ -32,15 +32,6 @@
       "fields": {
         "value": "^(PHM)$"
       }
-    },
-    {
-      "name": "SiXTYNiNE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SiXTYNiNE)$"
-      }
     }
   ]
 }
