@@ -3,7 +3,8 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Updated: 20251112
+# Version: 1.0.0
+# Updated: 20251118
 # =====================================
 
 # Get the directory where the script is located
@@ -11,6 +12,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Source the config from the same directory
 source "$SCRIPT_DIR/mover-tuning.cfg"
+
+# Script version and update check URLs
+readonly SCRIPT_VERSION="1.0.0"
+readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Notification delay in seconds (helps ensure all notifications appear in Unraid)
 NOTIFICATION_DELAY=2
@@ -37,6 +42,64 @@ notify() {
         # Add delay after each notification to prevent dropping
         sleep "$NOTIFICATION_DELAY"
     fi
+}
+
+# ================================
+# VERSION CHECK FUNCTION
+# ================================
+check_script_version() {
+    log "Checking for script updates..."
+
+    # Check if version check is enabled
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
+        log "Version check disabled"
+        return 0
+    fi
+
+    # Check for curl or wget
+    local fetch_cmd
+    if command -v curl &> /dev/null; then
+        fetch_cmd="curl -s"
+    elif command -v wget &> /dev/null; then
+        fetch_cmd="wget -qO-"
+    else
+        log "⚠ Cannot check version: curl or wget not found"
+        return 0
+    fi
+
+    # Fetch the latest version from the raw script URL
+    local remote_content
+    remote_content=$($fetch_cmd "$SCRIPT_RAW_URL" 2>/dev/null)
+
+    if [[ -z "$remote_content" ]]; then
+        log "⚠ Could not fetch latest version from GitHub"
+        return 0
+    fi
+
+    # Extract version from the remote script
+    local latest_version
+    latest_version=$(echo "$remote_content" | grep -m1 "^readonly SCRIPT_VERSION=" | sed 's/readonly SCRIPT_VERSION="\(.*\)"/\1/')
+
+    if [[ -z "$latest_version" ]]; then
+        log "⚠ Could not parse version from remote script"
+        return 0
+    fi
+
+    log "Current version: $SCRIPT_VERSION"
+    log "Latest version: $latest_version"
+
+    # Compare versions
+    if [[ "$SCRIPT_VERSION" != "$latest_version" ]]; then
+        # Simple version comparison (works for semantic versioning)
+        if printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1 | grep -q "^$SCRIPT_VERSION$"; then
+            log "⚠ New version available: $latest_version"
+            notify "mover-tuning-end.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
+            return 0
+        fi
+    fi
+
+    log "✓ Script is up to date"
+    return 0
 }
 
 # ================================
@@ -299,6 +362,9 @@ main() {
     log "Starting torrent resume process"
     log "Age range: $DAYS_FROM-$DAYS_TO days (from $date_str)"
     log "========================================"
+
+    # Check for script updates
+    check_script_version
 
     # Validate configuration
     validate_config || exit 1
