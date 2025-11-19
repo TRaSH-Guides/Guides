@@ -34,6 +34,33 @@
       }
     },
     {
+      "name": "DMPD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DMPD)$"
+      }
+    },
+    {
+      "name": "OHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OHD)$"
+      }
+    },
+    {
+      "name": "SAUERKRAUT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SAUERKRAUT)$"
+      }
+    },
+    {
       "name": "GSG9",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
