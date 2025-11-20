@@ -25,6 +25,60 @@
       }
     },
     {
+      "name": "SUBARU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SUBARU)$"
+      }
+    },
+    {
+      "name": "ATAX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ATAX)$"
+      }
+    },
+    {
+      "name": "HDC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDC)$"
+      }
+    },
+    {
+      "name": "Mindus",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Mindus)$"
+      }
+    },
+    {
+      "name": "WAREZCX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WAREZCX)$"
+      }
+    },
+    {
+      "name": "SD7",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SD7)$"
+      }
+    },
+    {
       "name": "Not Remux",
       "implementation": "QualityModifierSpecification",
       "negate": true,
