@@ -34,15 +34,6 @@
       }
     },
     {
-      "name": "MELD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MELD)$"
-      }
-    },
-    {
       "name": "ZeroTwo",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -61,12 +52,12 @@
       }
     },
     {
-      "name": "AST4u",
+      "name": "SiXTYNiNE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(AST4u)$"
+        "value": "^(SiXTYNiNE)$"
       }
     },
     {
@@ -79,12 +70,21 @@
       }
     },
     {
-      "name": "SiXTYNiNE",
+      "name": "AST4u",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(SiXTYNiNE)$"
+        "value": "^(AST4u)$"
+      }
+    },
+    {
+      "name": "MELD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MELD)$"
       }
     },
     {

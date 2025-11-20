@@ -7,24 +7,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "W33BSHiT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(W33BSHiT)$"
-      }
-    },
-    {
-      "name": "HiSHiRO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HiSHiRO)$"
-      }
-    },
-    {
       "name": "SUBARU",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -67,6 +49,24 @@
       "required": false,
       "fields": {
         "value": "^(WAREZCX)$"
+      }
+    },
+    {
+      "name": "W33BSHiT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W33BSHiT)$"
+      }
+    },
+    {
+      "name": "HiSHiRO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiSHiRO)$"
       }
     },
     {
