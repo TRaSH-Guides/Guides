@@ -59,6 +59,42 @@
       "fields": {
         "value": "^(SAUERKRAUT)$"
       }
+    },
+    {
+      "name": "3MINA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(3MINA)$"
+      }
+    },
+    {
+      "name": "FWB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FWB)$"
+      }
+    },
+    {
+      "name": "BiGiNT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BiGiNT)$"
+      }
+    },
+    {
+      "name": "MRW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MRW)$"
+      }
     }
   ]
 }

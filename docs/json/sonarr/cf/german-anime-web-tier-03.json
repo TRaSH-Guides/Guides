@@ -34,6 +34,69 @@
       }
     },
     {
+      "name": "SUBARU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SUBARU)$"
+      }
+    },
+    {
+      "name": "ATAX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ATAX)$"
+      }
+    },
+    {
+      "name": "HDC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDC)$"
+      }
+    },
+    {
+      "name": "Mindus",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Mindus)$"
+      }
+    },
+    {
+      "name": "WAREZCX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WAREZCX)$"
+      }
+    },
+    {
+      "name": "Otaku",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Otaku)$"
+      }
+    },
+    {
+      "name": "4Baka",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(4Baka)$"
+      }
+    },
+    {
       "name": "WebDL",
       "implementation": "SourceSpecification",
       "negate": false,

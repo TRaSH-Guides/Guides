@@ -61,6 +61,24 @@
       }
     },
     {
+      "name": "Ainz",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Ainz)$"
+      }
+    },
+    {
+      "name": "TvR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TvR)$"
+      }
+    },
+    {
       "name": "Fuuko",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
