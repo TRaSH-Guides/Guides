@@ -7,33 +7,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Fuuko",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Fuuko)$"
-      }
-    },
-    {
-      "name": "W33BSHiT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(W33BSHiT)$"
-      }
-    },
-    {
-      "name": "Waechter",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Waechter)$"
-      }
-    },
-    {
       "name": "SUBARU",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -76,6 +49,33 @@
       "required": false,
       "fields": {
         "value": "^(WAREZCX)$"
+      }
+    },
+    {
+      "name": "W33BSHiT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W33BSHiT)$"
+      }
+    },
+    {
+      "name": "Fuuko",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Fuuko)$"
+      }
+    },
+    {
+      "name": "Waechter",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Waechter)$"
       }
     },
     {
