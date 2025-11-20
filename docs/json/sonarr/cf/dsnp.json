@@ -4,7 +4,8 @@
     "default": 75,
     "anime-sonarr": 5,
     "french-anime-multi": 5,
-    "french-anime-vostfr": 5
+    "french-anime-vostfr": 5,
+    "german-anime": 5
   },
   "name": "DSNP",
   "includeCustomFormatWhenRenaming": true,

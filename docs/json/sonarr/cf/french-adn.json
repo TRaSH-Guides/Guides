@@ -4,7 +4,8 @@
     "default": 7,
     "french-anime-multi": 7,
     "french-anime-vostfr": 7,
-    "anime-sonarr": 1
+    "anime-sonarr": 1,
+    "german-anime": 1
   },
   "name": "ADN",
   "includeCustomFormatWhenRenaming": true,
