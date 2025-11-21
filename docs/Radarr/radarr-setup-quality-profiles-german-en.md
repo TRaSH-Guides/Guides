@@ -286,6 +286,48 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 ---
 
+### Anime HD Bluray + WEB
+
+If you prefer High-Quality HD Encodes for Anime (720p/1080p)
+
+??? abstract "Adapt the Quality Settings to Anime - [Click to show/hide]"
+    Please have a look here: [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="_blank" rel="noopener noreferrer"}.
+
+!!! abstract "Recommended merging of qualities"
+
+    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+
+    - Bluray-1080p
+    - WEBDL-1080p
+    - WEBRip-1080p
+    - Bluray-720p
+    - WEBDL-720p
+    - WEBRip-720p
+
+{! include-markdown "../../includes/german-guide/radarr-german-anime-audio-version-en.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-anime-hd-bluray-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-german-anime-misc-required.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-german-anime-unwanted-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-german-anime-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+
+---
+
 ### Audio Formats and HDR Formats
 
 TRaSH provides great guides and explanations about them at the following links:
