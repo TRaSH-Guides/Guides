@@ -160,9 +160,9 @@ We've made 3 guides related to this.
 | [German Anime Bluray Tier 02](#german-anime-bluray-tier-02)    |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)           | [FastSUB](#fastsub)  |
 | [German Anime Bluray Tier 03](#german-anime-bluray-tier-03)    |                                                       | [FR Anime FanSub](#fr-anime-fansub)             |                      |
 | [German Anime Web Tier 01](#german-anime-web-tier-01)       |                                                       | [FR Scene Groups](#fr-scene-groups)             |                      |
-| [German Anime Web Tier 02](##german-anime-web-tier-02)      |                                                       | [FR LQ](#fr-lq)                                 |                      |
-| [German Anime Web Tier 03](##german-anime-web-tier-03)      |                                                       |                                 |                      |
-| [German Anime Scene](##german-anime-scene)            |                                                       |                                 |                      |
+| [German Anime Web Tier 02](#german-anime-web-tier-02)      |                                                       | [FR LQ](#fr-lq)                                 |                      |
+| [German Anime Web Tier 03](#german-anime-web-tier-03)      |                                                       |                                 |                      |
+| [German Anime Scene](#german-anime-scene)            |                                                       |                                 |                      |
 
 ---
 
