@@ -4,18 +4,18 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 # =====================================
 # Script: qBittorrent Cache Mover - End
 # Version: 1.0.0
-# Updated: 20251119
+# Updated: 20251121
 # =====================================
+
+# Script version and update check URLs
+readonly SCRIPT_VERSION="1.0.0"
+readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Get the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Source the config from the same directory
 source "$SCRIPT_DIR/mover-tuning.cfg"
-
-# Script version and update check URLs
-readonly SCRIPT_VERSION="1.0.0"
-readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Notification delay in seconds (helps ensure all notifications appear in Unraid)
 NOTIFICATION_DELAY=2

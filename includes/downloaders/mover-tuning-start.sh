@@ -4,8 +4,13 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 # =======================================
 # Script: qBittorrent Cache Mover - Start
 # Version: 1.0.0
-# Updated: 20251119
+# Updated: 20251121
 # =======================================
+
+# Script version and update check URLs
+readonly SCRIPT_VERSION="1.0.0"
+readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
+readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
 # Get the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -16,11 +21,6 @@ source "$SCRIPT_DIR/mover-tuning.cfg"
 readonly VENV_PATH="${QBIT_MOVER_PATH}.venv"
 readonly MOVER_SCRIPT="${QBIT_MOVER_PATH}mover.py"
 readonly MOVER_URL="https://raw.githubusercontent.com/StuffAnThings/qbit_manage/develop/scripts/mover.py"
-
-# Script version and update check URLs
-readonly SCRIPT_VERSION="1.0.0"
-readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
-readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
 # Notification delay in seconds (helps ensure all notifications appear in Unraid)
 NOTIFICATION_DELAY=2
