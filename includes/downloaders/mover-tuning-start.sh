@@ -3,8 +3,14 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Updated: 20251112
+# Version: 1.0.0
+# Updated: 20251121
 # =======================================
+
+# Script version and update check URLs
+readonly SCRIPT_VERSION="1.0.0"
+readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
+readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
 # Get the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -49,6 +55,122 @@ check_command() {
 
 set_ownership() {
     chown -R nobody:users "$1" 2>/dev/null || log "⚠ Warning: Could not set ownership for $1"
+}
+
+# ================================
+# VERSION CHECK FUNCTION
+# ================================
+check_script_version() {
+    log "Checking for script updates..."
+
+    # Check if version check is enabled
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
+        log "Version check disabled"
+        return 0
+    fi
+
+    # Check for curl or wget
+    local fetch_cmd
+    if command -v curl &> /dev/null; then
+        fetch_cmd="curl -s"
+    elif command -v wget &> /dev/null; then
+        fetch_cmd="wget -qO-"
+    else
+        log "⚠ Cannot check version: curl or wget not found (continuing anyway)"
+        return 0
+    fi
+
+    # Fetch the latest version from the raw script URL
+    local remote_content
+    remote_content=$($fetch_cmd "$SCRIPT_RAW_URL" 2>/dev/null) || true
+
+    if [[ -z "$remote_content" ]]; then
+        log "⚠ Could not fetch latest version from GitHub (continuing anyway)"
+        return 0
+    fi
+
+    # Extract version from the remote script
+    local latest_version
+    latest_version=$(echo "$remote_content" | grep -m1 "^readonly SCRIPT_VERSION=" | sed 's/readonly SCRIPT_VERSION="\(.*\)"/\1/' 2>/dev/null) || true
+
+    if [[ -z "$latest_version" ]]; then
+        log "⚠ Could not parse version from remote script (continuing anyway)"
+        return 0
+    fi
+
+    log "Current version: $SCRIPT_VERSION"
+    log "Latest version: $latest_version"
+
+    # Compare versions
+    if [[ "$SCRIPT_VERSION" != "$latest_version" ]]; then
+        # Simple version comparison (works for semantic versioning)
+        if printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1 | grep -q "^$SCRIPT_VERSION$" 2>/dev/null || true; then
+            log "⚠ New version available: $latest_version"
+            notify "mover-tuning-start.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
+        fi
+    else
+        log "✓ Script is up to date"
+    fi
+
+    return 0
+}
+
+check_config_version() {
+    log "Checking for config file updates..."
+
+    # Check if version check is enabled
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
+        log "Config version check disabled"
+        return 0
+    fi
+
+    # Check for curl or wget
+    local fetch_cmd
+    if command -v curl &> /dev/null; then
+        fetch_cmd="curl -s"
+    elif command -v wget &> /dev/null; then
+        fetch_cmd="wget -qO-"
+    else
+        log "⚠ Cannot check config version: curl or wget not found (continuing anyway)"
+        return 0
+    fi
+
+    # Fetch the latest config from GitHub
+    local remote_config
+    remote_config=$($fetch_cmd "$CONFIG_RAW_URL" 2>/dev/null) || true
+
+    if [[ -z "$remote_config" ]]; then
+        log "⚠ Could not fetch latest config from GitHub (continuing anyway)"
+        return 0
+    fi
+
+    # Extract version from the remote config
+    local remote_config_version
+    remote_config_version=$(echo "$remote_config" | grep -m1 "^readonly CONFIG_VERSION=" | sed 's/readonly CONFIG_VERSION="\([^"]*\)".*/\1/' 2>/dev/null) || true
+
+    if [[ -z "$remote_config_version" ]]; then
+        log "⚠ Could not parse version from remote config (continuing anyway)"
+        return 0
+    fi
+
+    # Get current config version (handle case where it might not be set)
+    local current_config_version="${CONFIG_VERSION:-unknown}"
+
+    log "Current config version: $current_config_version"
+    log "Latest config version: $remote_config_version"
+
+    # Compare versions
+    if [[ "$current_config_version" != "$remote_config_version" ]]; then
+        # Simple version comparison (works for semantic versioning)
+        if printf '%s\n' "$remote_config_version" "$current_config_version" | sort -V | head -n1 | grep -q "^$current_config_version$" 2>/dev/null || true; then
+            log "⚠ New config version available: $remote_config_version"
+            notify "mover-tuning.cfg Update" "Config version <b>$remote_config_version</b> available<br>Current version: <b>$current_config_version</b><br><br>📖 Visit the TRaSH-Guides for the latest version"
+        fi
+    else
+        log "✓ Config is up to date"
+    fi
+
+    return 0
 }
 
 # ================================
@@ -202,6 +324,12 @@ main() {
     log "qBittorrent Cache Mover Started"
     log "Date range: $DAYS_FROM-$DAYS_TO days (from $date_from)"
     log "========================================"
+
+    # Check for script updates
+    check_script_version
+
+    # Check for config updates
+    check_config_version
 
     # Run auto installer if enabled
     [[ "$ENABLE_AUTO_INSTALLER" == true ]] && run_auto_installer
