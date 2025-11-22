@@ -121,6 +121,30 @@ chmod +x /mnt/user/appdata/qbt-mover/mover-tuning-start.sh
 chmod +x /mnt/user/appdata/qbt-mover/mover-tuning-end.sh
 ```
 
+#### Fixing Run Errors
+
+After editing the scripts, make sure they use LF line endings (Unix format). If you edited the files on Windows, they may have CRLF line endings, which can cause errors.
+
+Run the following command to convert all `.sh` files to the correct format:
+
+```bash
+for file in *.sh; do [ -f "$file" ] && sed -i 's/\r$//' "$file" && echo "Converted $file"; done
+```
+
+**How to use this command:**
+
+1. Open the unRAID terminal
+2. Navigate to the directory containing your mover-tuning scripts:
+
+    ```bash
+    cd /mnt/user/appdata/qbt-mover/
+    ```
+
+3. Paste the command above
+4. Press ++enter++
+
+This converts all `.sh` files from CRLF (Windows line endings) to LF (Unix line endings) in the current directory.
+
 ---
 
 ### Mover Tuning Settings
