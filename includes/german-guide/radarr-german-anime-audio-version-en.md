@@ -7,7 +7,7 @@
     | [{{ radarr['cf']['language-german-dl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#language-german-dl)                      | {{ radarr['cf']['language-german-dl']['trash_scores']['german-anime'] }}            | {{ radarr['cf']['language-german-dl']['trash_id'] }}           |
     | [{{ radarr['cf']['language-german-dl-undefined']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#language-german-dl-undefined)  | {{ radarr['cf']['language-german-dl-undefined']['trash_scores']['default'] }} | {{ radarr['cf']['language-german-dl-undefined']['trash_id'] }} |
     | [{{ radarr['cf']['language-not-german-japanese-or-english']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#language-not-german-japanese-or-english) | {{ radarr['cf']['language-not-german-japanese-or-english']['trash_scores']['default'] }}  | {{ radarr['cf']['language-not-german-japanese-or-english']['trash_id'] }}  |
-    | [{{ radarr['cf']['german-anime-subbed']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-anime-subbed) | {{ radarr['cf']['german-anime-subbed']['trash_scores']['default'] }}  | {{ radarr['cf']['german-anime-subbed']['trash_id'] }}  |
+    | [{{ radarr['cf']['german-anime-subbed']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#language-german-anime-subbed) | {{ radarr['cf']['german-anime-subbed']['trash_scores']['default'] }}  | {{ radarr['cf']['german-anime-subbed']['trash_id'] }}  |
 
     ---
 
