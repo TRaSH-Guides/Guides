@@ -12,7 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(PsO)$"
+        "value": "^(PsO)$"
       }
     },
     {
@@ -21,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(Cancer58)$"
+        "value": "^(Cancer58)$"
       }
     },
     {
@@ -30,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(Tylor\\.D)$"
+        "value": "^(Tylor\\.D)$"
       }
     },
     {
@@ -39,7 +39,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(1XBET)$"
+        "value": "^(1XBET)$"
       }
     },
     {
@@ -48,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(2dead)$"
+        "value": "^(2dead)$"
       }
     },
     {
@@ -57,7 +57,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(HELD)$"
+        "value": "^(HELD)$"
       }
     },
     {
@@ -66,7 +66,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(kala)$"
+        "value": "^(kala)$"
       }
     },
     {
@@ -75,7 +75,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(POE)$"
+        "value": "^(POE)$"
       }
     },
     {
@@ -84,7 +84,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(SHOWE)$"
+        "value": "^(SHOWE)$"
       }
     },
     {
@@ -93,7 +93,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(SHOWEHD)$"
+        "value": "^(SHOWEHD)$"
       }
     },
     {
@@ -102,7 +102,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(ORCA88)$"
+        "value": "^(ORCA88)$"
       }
     },
     {
@@ -111,7 +111,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(LuRCH)$"
+        "value": "^(LuRCH)$"
       }
     },
     {
@@ -120,7 +120,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(N2D2)$"
+        "value": "^(N2D2)$"
       }
     },
     {
@@ -129,7 +129,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(GETB8)$"
+        "value": "^(GETB8)$"
       }
     },
     {
@@ -138,7 +138,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TFARC)$"
+        "value": "^(TFARC)$"
       }
     },
     {
@@ -147,7 +147,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(Kristallprinz)$"
+        "value": "^(Kristallprinz)$"
       }
     },
     {
@@ -156,7 +156,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(LAW)$"
+        "value": "^(LAW)$"
       }
     },
     {
@@ -165,7 +165,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(CTFOH)$"
+        "value": "^(CTFOH)$"
       }
     },
     {
@@ -174,7 +174,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(Pendeti)$"
+        "value": "^(Pendeti)$"
       }
     },
     {
@@ -183,7 +183,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(OJ)$"
+        "value": "^(OJ)$"
       }
     },
     {
@@ -192,7 +192,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(PS)$"
+        "value": "^(PS)$"
       }
     },
     {
@@ -201,7 +201,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(FSX)$"
+        "value": "^(FSX)$"
       }
     },
     {
@@ -210,7 +210,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(EMVY)$"
+        "value": "^(EMVY)$"
       }
     },
     {
@@ -219,7 +219,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(ZaidaNulled)$"
+        "value": "^(ZaidaNulled)$"
       }
     },
     {
@@ -228,7 +228,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(MEGA)$"
+        "value": "^(MEGA)$"
       }
     },
     {
@@ -237,7 +237,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(MBA)$"
+        "value": "^(MBA)$"
       }
     },
     {
@@ -246,7 +246,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(FORMBA)$"
+        "value": "^(FORMBA)$"
       }
     },
     {
@@ -255,7 +255,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(PaZ)$"
+        "value": "^(PaZ)$"
       }
     },
     {
@@ -264,7 +264,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(Whistler)$"
+        "value": "^(Whistler)$"
       }
     },
     {
@@ -273,7 +273,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(omikron)$"
+        "value": "^(omikron)$"
       }
     },
     {
@@ -282,7 +282,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(WOTT)$"
+        "value": "^(WOTT)$"
       }
     },
     {
@@ -291,7 +291,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(SunDry)$"
+        "value": "^(SunDry)$"
       }
     },
     {
@@ -300,7 +300,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(PL)$"
+        "value": "^(PL)$"
       }
     },
     {
@@ -309,7 +309,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TVARCHiV)$"
+        "value": "^(TVARCHiV)$"
       }
     },
     {
@@ -318,7 +318,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(P73)$"
+        "value": "^(P73)$"
       }
     },
     {
@@ -327,7 +327,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(LizardSquad)$"
+        "value": "^(LizardSquad)$"
       }
     },
     {
