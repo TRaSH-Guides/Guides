@@ -1,8 +1,7 @@
 {
   "trash_id": "7f9b93f82b7e996391525f2be1d891e0",
   "trash_scores": {
-    "default": -10000,
-    "german-anime": -35000
+    "default": -10000
   },
   "name": "FastSUB",
   "includeCustomFormatWhenRenaming": false,
