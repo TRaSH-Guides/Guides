@@ -32,7 +32,7 @@
     - **{{ radarr['cf']['lq-release-title']['name'] }}:** A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.
     - **{{ radarr['cf']['german-lq']['name'] }}:** A collection of known Low Quality German groups that are often banned from the the top trackers because the lack of quality or other reasons.
     - **{{ radarr['cf']['german-lq-release-title']['name'] }}:** A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.
-    - **{{ radarr['cf']['german-microsized']['name'] }}:** A collection of German groups producing low quality micro-sized releases.
+    - **{{ radarr['cf']['german-microsized']['name'] }}:** A collection of German groups producing low quality micro-sized releases. However, if lower quality for Anime in favor of storage space is acceptable to you, you can also set this to 0.
     - :warning: **{{ radarr['cf']['x265-hd']['name'] }}:** This blocks/ignores 720/1080p (HD) releases that are encoded in x265. However as there are certain german groups (ZeroTwo, VECTOR, ...) which produce high bitrate 1080p x265 encodes we recommend setting the score of this custom format to 0.
     - **{{ radarr['cf']['extras']['name'] }}:** Blocks releases that only contain extras
     - **{{ radarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
