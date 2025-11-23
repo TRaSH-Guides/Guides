@@ -1,3 +1,7 @@
+# 2025-11-23 00:30
+- [feat(downloaders): Add update check and notifications for the mover-tuner scripts](https://github.com/TRaSH-Guides/Guides/pull/2547)
+- [fix(radarr): fix image link](https://github.com/TRaSH-Guides/Guides/pull/2543)
+
 # 2025-11-16 00:28
 - [fix(downloaders): updated mover-tuning-start and mover-tuning-end script to v20251112](https://github.com/TRaSH-Guides/Guides/pull/2539)
 - [feat(sonarr-anime): add KHFR to french anime fansub](https://github.com/TRaSH-Guides/Guides/pull/2534)
