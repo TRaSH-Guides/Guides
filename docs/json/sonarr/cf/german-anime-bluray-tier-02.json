@@ -61,6 +61,15 @@
       }
     },
     {
+      "name": "AST4u",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AST4u)$"
+      }
+    },
+    {
       "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,

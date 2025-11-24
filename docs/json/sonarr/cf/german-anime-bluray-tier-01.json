@@ -16,21 +16,21 @@
       }
     },
     {
-      "name": "CNY",
+      "name": "Pudding-sama",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(CNY)$"
+        "value": "^(Pudding-sama)$"
       }
     },
     {
-      "name": "FumoFriday",
+      "name": "RTemp",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(FumoFriday)$"
+        "value": "^(RTemp)$"
       }
     },
     {
@@ -40,15 +40,6 @@
       "required": false,
       "fields": {
         "value": "^(GP)$"
-      }
-    },
-    {
-      "name": "WeebPinn",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WeebPinn)$"
       }
     },
     {
@@ -88,21 +79,30 @@
       }
     },
     {
-      "name": "AST4u",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(AST4u)$"
-      }
-    },
-    {
       "name": "AO",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(AO)$"
+      }
+    },
+    {
+      "name": "CNY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CNY)$"
+      }
+    },
+    {
+      "name": "FumoFriday",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FumoFriday)$"
       }
     },
     {

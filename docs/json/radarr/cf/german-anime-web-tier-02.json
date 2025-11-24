@@ -16,15 +16,6 @@
       }
     },
     {
-      "name": "DRiFTKiNG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(DRiFTKiNG|DK)\\b"
-      }
-    },
-    {
       "name": "VECTOR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

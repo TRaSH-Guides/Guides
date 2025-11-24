@@ -61,21 +61,12 @@
       }
     },
     {
-      "name": "HiSHiRO",
+      "name": "4Baka",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(HiSHiRO)$"
-      }
-    },
-    {
-      "name": "SD7",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SD7)$"
+        "value": "^(4Baka)$"
       }
     },
     {
