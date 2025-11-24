@@ -11,7 +11,7 @@
     | [{{ sonarr['cf']['bglobal']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#b-global)  |                 0                                        | {{ sonarr['cf']['bglobal']['trash_id'] }}   |
     | [{{ sonarr['cf']['bilibili']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#bilibili) |                 0                                        | {{ sonarr['cf']['bilibili']['trash_id'] }}   |
     | [{{ sonarr['cf']['cr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#cr)         |  {{ sonarr['cf']['cr']['trash_scores']['german-anime'] }}    | {{ sonarr['cf']['cr']['trash_id'] }}   |
-    | [{{ sonarr['cf']['dsnp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dsnp)     |  {{ sonarr['cf']['dsnp']['trash_scores']['default'] }}       | {{ sonarr['cf']['dsnp']['trash_id'] }}   |
+    | [{{ sonarr['cf']['dsnp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dsnp)     |  {{ sonarr['cf']['dsnp']['trash_scores']['german-anime'] }}  | {{ sonarr['cf']['dsnp']['trash_id'] }}   |
     | [{{ sonarr['cf']['funi']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#funi)     |  {{ sonarr['cf']['funi']['trash_scores']['german-anime'] }}  | {{ sonarr['cf']['funi']['trash_id'] }}   |
     | [{{ sonarr['cf']['hbo']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hbo)       |  {{ sonarr['cf']['hbo']['trash_scores']['german-anime'] }}   | {{ sonarr['cf']['hbo']['trash_id'] }}   |
     | [{{ sonarr['cf']['hmax']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hmax)     |  {{ sonarr['cf']['hmax']['trash_scores']['german-anime'] }}  | {{ sonarr['cf']['hmax']['trash_id'] }}   |
