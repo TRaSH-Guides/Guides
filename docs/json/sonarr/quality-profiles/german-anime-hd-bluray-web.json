@@ -103,15 +103,20 @@
     "10bit": "b2550eb333d27b75833e25b8c2557b38",
     "Anime Dual Audio": "418f50b10f1907201b6cfdf881f467b7",
     "VOSTFR": "07a32f77690263bb9fda1842db7e273f",
-    "CR": "3e0b26604165f463f3e8e192261e7284",
-    "DSNP": "89358767a60cc28783cdc3d0be9388a4",
-    "NF": "d34870697c9db575f17700212167be23",
-    "AMZN": "d660701077794679fd59e8bdf4ce3a29",
-    "VRV": "44a8ee6403071dd7b8a3a8dd3fe8cb20",
-    "FUNi": "1284d18e693de8efe0fe7d6b3e0b9170",
     "ABEMA": "a370d974bc7b80374de1d9ba7519760b",
     "ADN": "d54cd2bf1326287275b56bccedb72ee2",
+    "AMZN": "d660701077794679fd59e8bdf4ce3a29",
+    "ATV": "d9e511921c8cedc7282e291b0209cdc5",
+    "ATVP": "f67c9ca88f463a48346062e8ad07713f",
     "B-Global": "7dd31f3dee6d2ef8eeaa156e23c3857e",
-    "Bilibili": "4c67ff059210182b59cdd41697b8cb08"
+    "Bilibili": "4c67ff059210182b59cdd41697b8cb08",
+    "CR": "3e0b26604165f463f3e8e192261e7284",
+    "DSNP": "89358767a60cc28783cdc3d0be9388a4",
+    "FUNi": "1284d18e693de8efe0fe7d6b3e0b9170",
+    "HBO": "7a235133c87f7da4c8cccceca7e3c7a6",
+    "HMAX": "a880d6abc21e7c16884f3ae393f84179",
+    "MAX": "81d1fbf600e2540cee87f3a23f9d3c1c",
+    "NF": "d34870697c9db575f17700212167be23",
+    "VRV": "44a8ee6403071dd7b8a3a8dd3fe8cb20"
   }
 }
