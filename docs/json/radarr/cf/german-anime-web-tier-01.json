@@ -34,15 +34,6 @@
       }
     },
     {
-      "name": "GP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GP)$"
-      }
-    },
-    {
       "name": "snk",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

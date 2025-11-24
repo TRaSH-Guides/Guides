@@ -52,12 +52,12 @@
       }
     },
     {
-      "name": "AST4u",
+      "name": "PHM",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(AST4u)$"
+        "value": "^(PHM)$"
       }
     },
     {

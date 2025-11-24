@@ -25,15 +25,6 @@
       }
     },
     {
-      "name": "PHM",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PHM)$"
-      }
-    },
-    {
       "name": "DMPD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

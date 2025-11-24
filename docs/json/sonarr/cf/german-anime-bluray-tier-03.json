@@ -52,6 +52,15 @@
       }
     },
     {
+      "name": "4Baka",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(4Baka)$"
+      }
+    },
+    {
       "name": "W33BSHiT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -61,12 +70,12 @@
       }
     },
     {
-      "name": "4Baka",
+      "name": "AST4u",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(4Baka)$"
+        "value": "^(AST4u)$"
       }
     },
     {
