@@ -8,7 +8,7 @@ jobs:
   editorconfig-checker:
     runs-on: ubuntu-latest
     container:
-      image: mstruebing/editorconfig-checker:v3.5.0@sha256:e866d1c87417e1e4f16f7630bdc0cd1ed6e961e90d5b750816964dca39387a21
+      image: mstruebing/editorconfig-checker:v3.6.0@sha256:3fee6fe35c9ec21367b92ca50b3bea856ffc8a7a186044c329ac8bb23b33284a
       options: --user 0:0
     steps:
       - name: Checkout
