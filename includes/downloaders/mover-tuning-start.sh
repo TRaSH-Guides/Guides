@@ -4,7 +4,7 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 # =======================================
 # Script: qBittorrent Cache Mover - Start
 # Version: 1.1.0
-# Updated: 20251126
+# Updated: 20251128
 # =======================================
 
 # Script version and update check URLs
@@ -91,19 +91,23 @@ get_instance_details() {
     format=$(detect_config_format)
     
     if [[ "$format" == "array" ]]; then
-        # Array format: return details from arrays
-        local name="${NAMES[$index]:-qBit-Instance-$((index + 1))}"
-        local host="${HOSTS[$index]}"
-        local user="${USERS[$index]}"
-        local password="${PASSWORDS[$index]}"
-        
-        echo "$name|$host|$user|$password"
+        # Array format: set global variables
+        INSTANCE_NAME="${NAMES[$index]:-qBit-Instance-$((index + 1))}"
+        INSTANCE_HOST="${HOSTS[$index]}"
+        INSTANCE_USER="${USERS[$index]}"
+        INSTANCE_PASSWORD="${PASSWORDS[$index]}"
     else
         # Legacy format: map index to old variables
         if [[ $index -eq 0 ]]; then
-            echo "${QBIT_NAME_1}|${QBIT_HOST_1}|${QBIT_USER_1}|${QBIT_PASS_1}"
+            INSTANCE_NAME="${QBIT_NAME_1}"
+            INSTANCE_HOST="${QBIT_HOST_1}"
+            INSTANCE_USER="${QBIT_USER_1}"
+            INSTANCE_PASSWORD="${QBIT_PASS_1}"
         elif [[ $index -eq 1 ]]; then
-            echo "${QBIT_NAME_2}|${QBIT_HOST_2}|${QBIT_USER_2}|${QBIT_PASS_2}"
+            INSTANCE_NAME="${QBIT_NAME_2}"
+            INSTANCE_HOST="${QBIT_HOST_2}"
+            INSTANCE_USER="${QBIT_USER_2}"
+            INSTANCE_PASSWORD="${QBIT_PASS_2}"
         else
             error "Invalid instance index: $index"
         fi
@@ -158,7 +162,10 @@ check_script_version() {
     if [[ "$SCRIPT_VERSION" != "$latest_version" ]]; then
         # Simple version comparison (works for semantic versioning)
         # Sort both versions and check if SCRIPT_VERSION comes first (is older)
-        if printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1 | grep -q "^$SCRIPT_VERSION$" 2>/dev/null; then
+        local oldest_version
+        oldest_version=$(printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1)
+        
+        if [[ "$oldest_version" == "$SCRIPT_VERSION" ]]; then
             # SCRIPT_VERSION is older, so there's a newer version available
             log "⚠ New version available: $latest_version"
             notify "mover-tuning-start.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
@@ -221,7 +228,10 @@ check_config_version() {
     if [[ "$current_config_version" != "$remote_config_version" ]]; then
         # Simple version comparison (works for semantic versioning)
         # Sort both versions and check if current_config_version comes first (is older)
-        if printf '%s\n' "$remote_config_version" "$current_config_version" | sort -V | head -n1 | grep -q "^$current_config_version$" 2>/dev/null; then
+        local oldest_version
+        oldest_version=$(printf '%s\n' "$remote_config_version" "$current_config_version" | sort -V | head -n1)
+        
+        if [[ "$oldest_version" == "$current_config_version" ]]; then
             # current_config_version is older, so there's a newer version available
             log "⚠ New config version available: $remote_config_version"
             notify "mover-tuning.cfg Update" "Config version <b>$remote_config_version</b> available<br>Current version: <b>$current_config_version</b><br><br>📖 Visit the TRaSH-Guides for the latest version"
@@ -443,12 +453,9 @@ main() {
     instance_count=$(get_instance_count)
     
     for ((i=0; i<instance_count; i++)); do
-        local instance_details
-        instance_details=$(get_instance_details "$i")
+        get_instance_details "$i"
         
-        IFS='|' read -r name host user password <<< "$instance_details"
-        
-        process_qbit_instance "$name" "$host" "$user" "$password" || ((failed_instances++))
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" || ((failed_instances++))
     done
 
     # Summary
