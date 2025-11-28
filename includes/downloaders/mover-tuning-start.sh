@@ -72,7 +72,7 @@ detect_config_format() {
 get_instance_count() {
     local format
     format=$(detect_config_format)
-    
+
     if [[ "$format" == "array" ]]; then
         echo "${#HOSTS[@]}"
     else
@@ -89,7 +89,7 @@ get_instance_details() {
     local index="$1"
     local format
     format=$(detect_config_format)
-    
+
     if [[ "$format" == "array" ]]; then
         # Array format: set global variables
         INSTANCE_NAME="${NAMES[$index]:-qBit-Instance-$((index + 1))}"
@@ -164,7 +164,7 @@ check_script_version() {
         # Sort both versions and check if SCRIPT_VERSION comes first (is older)
         local oldest_version
         oldest_version=$(printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1)
-        
+
         if [[ "$oldest_version" == "$SCRIPT_VERSION" ]]; then
             # SCRIPT_VERSION is older, so there's a newer version available
             log "⚠ New version available: $latest_version"
@@ -230,7 +230,7 @@ check_config_version() {
         # Sort both versions and check if current_config_version comes first (is older)
         local oldest_version
         oldest_version=$(printf '%s\n' "$remote_config_version" "$current_config_version" | sort -V | head -n1)
-        
+
         if [[ "$oldest_version" == "$current_config_version" ]]; then
             # current_config_version is older, so there's a newer version available
             log "⚠ New config version available: $remote_config_version"
@@ -345,29 +345,29 @@ validate_config() {
     [[ "$DAYS_FROM" -ge 2 ]] || error "DAYS_FROM must be at least 2"
     [[ "$DAYS_TO" -ge "$DAYS_FROM" ]] || error "DAYS_TO must be >= DAYS_FROM"
     [[ -d "$CACHE_MOUNT" ]] || error "Cache mount does not exist: $CACHE_MOUNT"
-    
+
     # Validate instance configuration
     local format
     format=$(detect_config_format)
-    
+
     if [[ "$format" == "array" ]]; then
         # Validate array-based config
         [[ ${#HOSTS[@]} -gt 0 ]] || error "HOSTS array is empty"
         [[ ${#USERS[@]} -eq ${#HOSTS[@]} ]] || error "USERS array length doesn't match HOSTS"
         [[ ${#PASSWORDS[@]} -eq ${#HOSTS[@]} ]] || error "PASSWORDS array length doesn't match HOSTS"
-        
+
         # NAMES array is optional, but if present should match
         if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
             [[ ${#NAMES[@]} -eq ${#HOSTS[@]} ]] || error "NAMES array length doesn't match HOSTS"
         fi
-        
+
         log "✓ Using array-based configuration (${#HOSTS[@]} instance(s))"
     else
         # Validate legacy config
         [[ -n "${QBIT_HOST_1:-}" ]] || error "QBIT_HOST_1 is not set"
         [[ -n "${QBIT_USER_1:-}" ]] || error "QBIT_USER_1 is not set"
         [[ -n "${QBIT_PASS_1:-}" ]] || error "QBIT_PASS_1 is not set"
-        
+
         log "✓ Using legacy configuration"
     fi
 }
@@ -451,10 +451,10 @@ main() {
     # Process all instances
     local instance_count
     instance_count=$(get_instance_count)
-    
+
     for ((i=0; i<instance_count; i++)); do
         get_instance_details "$i"
-        
+
         process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" || ((failed_instances++))
     done
 
