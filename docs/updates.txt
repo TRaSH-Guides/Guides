@@ -1,3 +1,6 @@
+# 2025-11-30 00:29
+- [fix(radarr-german): add anchors to german-lq regex](https://github.com/TRaSH-Guides/Guides/pull/2542)
+
 # 2025-11-23 00:30
 - [feat(downloaders): Add update check and notifications for the mover-tuner scripts](https://github.com/TRaSH-Guides/Guides/pull/2547)
 - [fix(radarr): fix image link](https://github.com/TRaSH-Guides/Guides/pull/2543)
