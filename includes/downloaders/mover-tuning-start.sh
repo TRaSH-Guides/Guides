@@ -4,7 +4,7 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 # =======================================
 # Script: qBittorrent Cache Mover - Start
 # Version: 1.1.0
-# Updated: 20251128
+# Updated: 20251201
 # =======================================
 
 # Script version and update check URLs
@@ -352,13 +352,27 @@ validate_config() {
 
     if [[ "$format" == "array" ]]; then
         # Validate array-based config
-        [[ ${#HOSTS[@]} -gt 0 ]] || error "HOSTS array is empty"
-        [[ ${#USERS[@]} -eq ${#HOSTS[@]} ]] || error "USERS array length doesn't match HOSTS"
-        [[ ${#PASSWORDS[@]} -eq ${#HOSTS[@]} ]] || error "PASSWORDS array length doesn't match HOSTS"
+        if [[ ${#HOSTS[@]} -eq 0 ]]; then
+            notify "Configuration Error" "HOSTS array is empty"
+            error "HOSTS array is empty"
+        fi
+
+        if [[ ${#USERS[@]} -ne ${#HOSTS[@]} ]]; then
+            notify "Configuration Error" "USERS array length (${#USERS[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+            error "USERS array length doesn't match HOSTS"
+        fi
+
+        if [[ ${#PASSWORDS[@]} -ne ${#HOSTS[@]} ]]; then
+            notify "Configuration Error" "PASSWORDS array length (${#PASSWORDS[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+            error "PASSWORDS array length doesn't match HOSTS"
+        fi
 
         # NAMES array is optional, but if present should match
         if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
-            [[ ${#NAMES[@]} -eq ${#HOSTS[@]} ]] || error "NAMES array length doesn't match HOSTS"
+            if [[ ${#NAMES[@]} -ne ${#HOSTS[@]} ]]; then
+                notify "Configuration Error" "NAMES array length (${#NAMES[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+                error "NAMES array length doesn't match HOSTS"
+            fi
         fi
 
         log "✓ Using array-based configuration (${#HOSTS[@]} instance(s))"

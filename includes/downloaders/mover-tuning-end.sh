@@ -4,7 +4,7 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 # =====================================
 # Script: qBittorrent Cache Mover - End
 # Version: 1.1.0
-# Updated: 20251128
+# Updated: 20251201
 # =====================================
 
 # Script version and update check URLs
