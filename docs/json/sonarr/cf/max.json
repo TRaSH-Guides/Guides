@@ -1,7 +1,8 @@
 {
   "trash_id": "81d1fbf600e2540cee87f3a23f9d3c1c",
   "trash_scores": {
-    "default": 75
+    "default": 75,
+    "german-anime": 0
   },
   "trash_regex": "https://regex101.com/r/fa649l/1",
   "name": "MAX",

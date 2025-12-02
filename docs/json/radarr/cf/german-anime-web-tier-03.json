@@ -1,0 +1,118 @@
+{
+  "trash_id": "97572e721cc2dc21ee696d716dede779",
+  "trash_scores": {
+    "default": 1800
+  },
+  "name": "German Anime Web Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "SUBARU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SUBARU)$"
+      }
+    },
+    {
+      "name": "ATAX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ATAX)$"
+      }
+    },
+    {
+      "name": "HDC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDC)$"
+      }
+    },
+    {
+      "name": "Mindus",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Mindus)$"
+      }
+    },
+    {
+      "name": "WAREZCX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WAREZCX)$"
+      }
+    },
+    {
+      "name": "W33BSHiT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W33BSHiT)$"
+      }
+    },
+    {
+      "name": "Fuuko",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Fuuko)$"
+      }
+    },
+    {
+      "name": "Waechter",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Waechter)$"
+      }
+    },
+    {
+      "name": "Otaku",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Otaku)$"
+      }
+    },
+    {
+      "name": "4Baka",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(4Baka)$"
+      }
+    },
+    {
+      "name": "WebDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WebRip",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
