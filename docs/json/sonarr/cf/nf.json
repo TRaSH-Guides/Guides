@@ -4,8 +4,7 @@
     "default": 75,
     "anime-sonarr": 4,
     "french-anime-multi": 4,
-    "french-anime-vostfr": 4,
-    "german-anime": 0
+    "french-anime-vostfr": 4
   },
   "name": "NF",
   "includeCustomFormatWhenRenaming": true,

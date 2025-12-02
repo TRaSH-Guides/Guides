@@ -3,8 +3,7 @@
   "trash_scores": {
     "default": -10000,
     "anime-sonarr": -10000,
-    "german": -35000,
-    "german-anime": -35000
+    "german": -35000
   },
   "name": "AV1",
   "includeCustomFormatWhenRenaming": false,
