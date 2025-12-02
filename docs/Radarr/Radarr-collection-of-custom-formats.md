@@ -111,9 +111,9 @@ We've made 3 guides related to this.
 | [Dutch Groups](#dutch-groups)                         | [Language: Not Original (Original Only)](#language-not-original)   |
 | [FreeLeech](#freeleech)                               | [Language: Original + French](#language-original-plus-french)      |
 | [HFR](#hfr)                                           | [Language: Not German or English](#language-not-german-or-english) |
-| [Internal](#internal)                                 | [Language: Not German, Japanese or English](#language-not-german-japanese-or-english)          |
-| [MPEG2](#mpeg2)                                       | [Language: Not German, Japanese, Korean, Chinese or English](#language-not-german-japanese-korean-chinese-or-english)                                                                       |
-| [Multi](#multi)                                       | [Language: German Anime Subbed](#language-german-anime-subbed)                 |
+| [Internal](#internal)                                 |                                                                    |
+| [MPEG2](#mpeg2)                                       |                                                                    |
+| [Multi](#multi)                                       |                                                                    |
 | [No-RlsGroup](#no-rlsgroup)                           |                                                                    |
 | [Obfuscated](#obfuscated)                             |                                                                    |
 | [Repack/Proper](#repackproper)                        |                                                                    |
@@ -154,13 +154,11 @@ We've made 3 guides related to this.
 | [German Web Tier 02](#german-web-tier-02)       |                                                       | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
 | [German Web Tier 03](#german-web-tier-03)       |                                                       | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
 | [German Scene](#german-scene)                   |                                                       | [FR Anime Tier 01](#fr-anime-tier-01)           | [VOSTFR](#vostfr)    |
-| [German Anime Bluray Tier 01](#german-anime-bluray-tier-01)    |                                                       | [FR Anime Tier 02](#fr-anime-tier-02)           | [FanSUB](#fansub)    |
-| [German Anime Bluray Tier 02](#german-anime-bluray-tier-02)    |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)           | [FastSUB](#fastsub)  |
-| [German Anime Bluray Tier 03](#german-anime-bluray-tier-03)    |                                                       | [FR Anime FanSub](#fr-anime-fansub)             |                      |
-| [German Anime Web Tier 01](#german-anime-web-tier-01)       |                                                       | [FR Scene Groups](#fr-scene-groups)             |                      |
-| [German Anime Web Tier 02](#german-anime-web-tier-02)      |                                                       | [FR LQ](#fr-lq)                                 |                      |
-| [German Anime Web Tier 03](#german-anime-web-tier-03)      |                                                       |                                 |                      |
-| [German Anime Scene](#german-anime-scene)            |                                                       |                                 |                      |
+|                                                 |                                                       | [FR Anime Tier 02](#fr-anime-tier-02)           | [FanSUB](#fansub)    |
+|                                                 |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)           | [FastSUB](#fastsub)  |
+|                                                 |                                                       | [FR Anime FanSub](#fr-anime-fansub)             |                      |
+|                                                 |                                                       | [FR Scene Groups](#fr-scene-groups)             |                      |
+|                                                 |                                                       | [FR LQ](#fr-lq)                                 |                      |
 
 ---
 
@@ -3192,118 +3190,6 @@ We've made 3 guides related to this.
 
 ---
 
-### German Anime Bluray Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Bluray Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Bluray Tier 03
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Web Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Web Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Web Tier 03
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Scene
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-scene.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-scene.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
 ## German Miscellaneous
 
 ---
@@ -3520,22 +3406,6 @@ We've made 3 guides related to this.
 
 ---
 
-### Language: German Anime Subbed
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-subbed.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-subbed.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
 ### Language: Not German or English
 
 ??? question "Description - [Click to show/hide]"
@@ -3546,38 +3416,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-or-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Not German, Japanese or English
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-or-english.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-japanese-or-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Not German, Japanese, Korean, Chinese or English
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-korean-chinese-or-english.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-japanese-korean-chinese-or-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

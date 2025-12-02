@@ -401,15 +401,6 @@
       "fields": {
         "value": "^(VideoStar)$"
       }
-    },
-    {
-      "name": "SD7",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SD7)$"
-      }
     }
   ]
 }
