@@ -1,7 +1,8 @@
 {
   "trash_id": "7a235133c87f7da4c8cccceca7e3c7a6",
   "trash_scores": {
-    "default": 75
+    "default": 75,
+    "german-anime": 0
   },
   "name": "HBO",
   "includeCustomFormatWhenRenaming": true,
