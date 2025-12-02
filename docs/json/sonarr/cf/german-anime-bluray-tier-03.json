@@ -1,0 +1,100 @@
+{
+  "trash_id": "4713f52901c85b44724ec7ff7bef0aba",
+  "trash_scores": {
+    "default": 2300
+  },
+  "name": "German Anime Bluray Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "SUBARU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SUBARU)$"
+      }
+    },
+    {
+      "name": "ATAX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ATAX)$"
+      }
+    },
+    {
+      "name": "HDC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDC)$"
+      }
+    },
+    {
+      "name": "Mindus",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Mindus)$"
+      }
+    },
+    {
+      "name": "WAREZCX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WAREZCX)$"
+      }
+    },
+    {
+      "name": "4Baka",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(4Baka)$"
+      }
+    },
+    {
+      "name": "W33BSHiT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W33BSHiT)$"
+      }
+    },
+    {
+      "name": "AST4u",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AST4u)$"
+      }
+    },
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 6
+      }
+    },
+    {
+      "name": "Not REMUX",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    }
+  ]
+}

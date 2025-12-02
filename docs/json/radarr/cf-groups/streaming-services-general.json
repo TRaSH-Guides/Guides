@@ -92,7 +92,8 @@
   ],
   "quality_profiles": {
     "exclude": {
-      "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38"
+      "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38",
+      "[German] Anime HD Bluray + WEB": "bf3cc2e99ad9a804a9b0d0e538e1fbba"
     }
   }
 }
