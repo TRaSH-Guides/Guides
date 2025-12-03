@@ -43,15 +43,6 @@
       }
     },
     {
-      "name": "WAREZCX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WAREZCX)$"
-      }
-    },
-    {
       "name": "4Baka",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
