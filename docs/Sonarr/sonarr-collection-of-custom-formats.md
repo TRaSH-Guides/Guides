@@ -1571,7 +1571,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### PLAY
 
-<sub>Google PlayOKU</sub>
+<sub>Google Play</sub>
 
 ??? question "Description - [Click to show/hide]"
 
