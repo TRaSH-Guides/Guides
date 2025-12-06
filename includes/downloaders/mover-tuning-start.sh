@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Version: 1.0.0
-# Updated: 20251121
+# Version: 1.1.0
+# Updated: 20251201
 # =======================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.0.0"
+readonly SCRIPT_VERSION="1.1.0"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
 readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
@@ -58,6 +58,63 @@ set_ownership() {
 }
 
 # ================================
+# CONFIG FORMAT DETECTION
+# ================================
+detect_config_format() {
+    # Check if array-based config is used
+    if [[ -v HOSTS[@] ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
+        echo "array"
+    else
+        echo "legacy"
+    fi
+}
+
+get_instance_count() {
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        echo "${#HOSTS[@]}"
+    else
+        # Legacy format: count based on ENABLE_QBIT_2
+        if [[ "${ENABLE_QBIT_2:-false}" == true ]]; then
+            echo "2"
+        else
+            echo "1"
+        fi
+    fi
+}
+
+get_instance_details() {
+    local index="$1"
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        # Array format: set global variables
+        INSTANCE_NAME="${NAMES[$index]:-qBit-Instance-$((index + 1))}"
+        INSTANCE_HOST="${HOSTS[$index]}"
+        INSTANCE_USER="${USERS[$index]}"
+        INSTANCE_PASSWORD="${PASSWORDS[$index]}"
+    else
+        # Legacy format: map index to old variables
+        if [[ $index -eq 0 ]]; then
+            INSTANCE_NAME="${QBIT_NAME_1}"
+            INSTANCE_HOST="${QBIT_HOST_1}"
+            INSTANCE_USER="${QBIT_USER_1}"
+            INSTANCE_PASSWORD="${QBIT_PASS_1}"
+        elif [[ $index -eq 1 ]]; then
+            INSTANCE_NAME="${QBIT_NAME_2}"
+            INSTANCE_HOST="${QBIT_HOST_2}"
+            INSTANCE_USER="${QBIT_USER_2}"
+            INSTANCE_PASSWORD="${QBIT_PASS_2}"
+        else
+            error "Invalid instance index: $index"
+        fi
+    fi
+}
+
+# ================================
 # VERSION CHECK FUNCTION
 # ================================
 check_script_version() {
@@ -104,9 +161,17 @@ check_script_version() {
     # Compare versions
     if [[ "$SCRIPT_VERSION" != "$latest_version" ]]; then
         # Simple version comparison (works for semantic versioning)
-        if printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1 | grep -q "^$SCRIPT_VERSION$" 2>/dev/null || true; then
+        # Sort both versions and check if SCRIPT_VERSION comes first (is older)
+        local oldest_version
+        oldest_version=$(printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1)
+
+        if [[ "$oldest_version" == "$SCRIPT_VERSION" ]]; then
+            # SCRIPT_VERSION is older, so there's a newer version available
             log "⚠ New version available: $latest_version"
             notify "mover-tuning-start.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
+        else
+            # latest_version is older, local version is newer
+            log "✓ Local version ($SCRIPT_VERSION) is newer than remote ($latest_version)"
         fi
     else
         log "✓ Script is up to date"
@@ -162,9 +227,17 @@ check_config_version() {
     # Compare versions
     if [[ "$current_config_version" != "$remote_config_version" ]]; then
         # Simple version comparison (works for semantic versioning)
-        if printf '%s\n' "$remote_config_version" "$current_config_version" | sort -V | head -n1 | grep -q "^$current_config_version$" 2>/dev/null || true; then
+        # Sort both versions and check if current_config_version comes first (is older)
+        local oldest_version
+        oldest_version=$(printf '%s\n' "$remote_config_version" "$current_config_version" | sort -V | head -n1)
+
+        if [[ "$oldest_version" == "$current_config_version" ]]; then
+            # current_config_version is older, so there's a newer version available
             log "⚠ New config version available: $remote_config_version"
             notify "mover-tuning.cfg Update" "Config version <b>$remote_config_version</b> available<br>Current version: <b>$current_config_version</b><br><br>📖 Visit the TRaSH-Guides for the latest version"
+        else
+            # remote_config_version is older, local version is newer
+            log "✓ Local config version ($current_config_version) is newer than remote ($remote_config_version)"
         fi
     else
         log "✓ Config is up to date"
@@ -272,6 +345,45 @@ validate_config() {
     [[ "$DAYS_FROM" -ge 2 ]] || error "DAYS_FROM must be at least 2"
     [[ "$DAYS_TO" -ge "$DAYS_FROM" ]] || error "DAYS_TO must be >= DAYS_FROM"
     [[ -d "$CACHE_MOUNT" ]] || error "Cache mount does not exist: $CACHE_MOUNT"
+
+    # Validate instance configuration
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        # Validate array-based config
+        if [[ ${#HOSTS[@]} -eq 0 ]]; then
+            notify "Configuration Error" "HOSTS array is empty"
+            error "HOSTS array is empty"
+        fi
+
+        if [[ ${#USERS[@]} -ne ${#HOSTS[@]} ]]; then
+            notify "Configuration Error" "USERS array length (${#USERS[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+            error "USERS array length doesn't match HOSTS"
+        fi
+
+        if [[ ${#PASSWORDS[@]} -ne ${#HOSTS[@]} ]]; then
+            notify "Configuration Error" "PASSWORDS array length (${#PASSWORDS[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+            error "PASSWORDS array length doesn't match HOSTS"
+        fi
+
+        # NAMES array is optional, but if present should match
+        if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
+            if [[ ${#NAMES[@]} -ne ${#HOSTS[@]} ]]; then
+                notify "Configuration Error" "NAMES array length (${#NAMES[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+                error "NAMES array length doesn't match HOSTS"
+            fi
+        fi
+
+        log "✓ Using array-based configuration (${#HOSTS[@]} instance(s))"
+    else
+        # Validate legacy config
+        [[ -n "${QBIT_HOST_1:-}" ]] || error "QBIT_HOST_1 is not set"
+        [[ -n "${QBIT_USER_1:-}" ]] || error "QBIT_USER_1 is not set"
+        [[ -n "${QBIT_PASS_1:-}" ]] || error "QBIT_PASS_1 is not set"
+
+        log "✓ Using legacy configuration"
+    fi
 }
 
 # ================================
@@ -350,12 +462,15 @@ main() {
         fi
     fi
 
-    # Process instances
-    process_qbit_instance "$QBIT_NAME_1" "$QBIT_HOST_1" "$QBIT_USER_1" "$QBIT_PASS_1" || ((failed_instances++))
+    # Process all instances
+    local instance_count
+    instance_count=$(get_instance_count)
 
-    if [[ "$ENABLE_QBIT_2" == true ]]; then
-        process_qbit_instance "$QBIT_NAME_2" "$QBIT_HOST_2" "$QBIT_USER_2" "$QBIT_PASS_2" || ((failed_instances++))
-    fi
+    for ((i=0; i<instance_count; i++)); do
+        get_instance_details "$i"
+
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" || ((failed_instances++))
+    done
 
     # Summary
     log "========================================"
