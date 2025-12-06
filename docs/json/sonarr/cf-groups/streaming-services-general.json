@@ -75,6 +75,11 @@
       "required": true
     },
     {
+      "name": "PLAY",
+      "trash_id": "6eb71887a8db6e783dd398446eb0e65d",
+      "required": true
+    },
+    {
       "name": "ROKU",
       "trash_id": "da393fd4e2c0cce7c9dc2669c43e0593",
       "required": true

@@ -79,6 +79,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [Netflix](#nf)             |                           |                          |                          |
 | [Paramount+](#pmtp)        |                           |                          |                          |
 | [Peacock TV](#pcok)        |                           |                          |                          |
+| [Google Play](#play)       |                           |                          |                          |
 | [ROKU](#roku)              |                           |                          |                          |
 | [SHOWTIME](#sho)           |                           |                          |                          |
 | [Stan](#stan)              |                           |                          |                          |
@@ -1562,6 +1563,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcok.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### PLAY
+
+<sub>Google Play</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/play.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/play.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

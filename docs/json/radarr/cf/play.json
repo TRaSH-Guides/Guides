@@ -1,0 +1,43 @@
+{
+  "trash_id": "350e9170619683a55cb9191d0b1ababa",
+  "name": "PLAY",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "PLAY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Play)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    },
+    {
+      "name": "PLAY Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(Play)\\b|\\b(Play)\\]"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
