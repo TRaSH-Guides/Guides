@@ -610,9 +610,9 @@
       <b><a href="https://github.com/jalmansor" style="color: #ffa500;">jalmansor</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/2633890?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="JackGameer">
+      <img src="https://avatars.githubusercontent.com/u/2633890?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="jackt0">
       <br>
-      <b><a href="https://github.com/JackGameer" style="color: #ffa500;">JackGameer</a></b>
+      <b><a href="https://github.com/jackt0" style="color: #ffa500;">jackt0</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/48860738?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="washedszn">
