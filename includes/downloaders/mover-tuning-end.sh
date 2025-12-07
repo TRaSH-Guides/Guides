@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Version: 1.0.0
-# Updated: 20251121
+# Version: 1.1.0
+# Updated: 20251201
 # =====================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.0.0"
+readonly SCRIPT_VERSION="1.1.0"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Get the directory where the script is located
@@ -41,6 +41,63 @@ notify() {
         "$notify_cmd" -s "$subject" -d "$description"
         # Add delay after each notification to prevent dropping
         sleep "$NOTIFICATION_DELAY"
+    fi
+}
+
+# ================================
+# CONFIG FORMAT DETECTION
+# ================================
+detect_config_format() {
+    # Check if array-based config is used
+    if [[ -v HOSTS[@] ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
+        echo "array"
+    else
+        echo "legacy"
+    fi
+}
+
+get_instance_count() {
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        echo "${#HOSTS[@]}"
+    else
+        # Legacy format: count based on ENABLE_QBIT_2
+        if [[ "${ENABLE_QBIT_2:-false}" == true ]]; then
+            echo "2"
+        else
+            echo "1"
+        fi
+    fi
+}
+
+get_instance_details() {
+    local index="$1"
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        # Array format: set global variables
+        INSTANCE_NAME="${NAMES[$index]:-qBit-Instance-$((index + 1))}"
+        INSTANCE_HOST="${HOSTS[$index]}"
+        INSTANCE_USER="${USERS[$index]}"
+        INSTANCE_PASSWORD="${PASSWORDS[$index]}"
+    else
+        # Legacy format: map index to old variables
+        if [[ $index -eq 0 ]]; then
+            INSTANCE_NAME="${QBIT_NAME_1}"
+            INSTANCE_HOST="${QBIT_HOST_1}"
+            INSTANCE_USER="${QBIT_USER_1}"
+            INSTANCE_PASSWORD="${QBIT_PASS_1}"
+        elif [[ $index -eq 1 ]]; then
+            INSTANCE_NAME="${QBIT_NAME_2}"
+            INSTANCE_HOST="${QBIT_HOST_2}"
+            INSTANCE_USER="${QBIT_USER_2}"
+            INSTANCE_PASSWORD="${QBIT_PASS_2}"
+        else
+            error "Invalid instance index: $index"
+        fi
     fi
 }
 
@@ -91,9 +148,17 @@ check_script_version() {
     # Compare versions
     if [[ "$SCRIPT_VERSION" != "$latest_version" ]]; then
         # Simple version comparison (works for semantic versioning)
-        if printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1 | grep -q "^$SCRIPT_VERSION$" 2>/dev/null || true; then
+        # Sort both versions and check if SCRIPT_VERSION comes first (is older)
+        local oldest_version
+        oldest_version=$(printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1)
+
+        if [[ "$oldest_version" == "$SCRIPT_VERSION" ]]; then
+            # SCRIPT_VERSION is older, so there's a newer version available
             log "⚠ New version available: $latest_version"
             notify "mover-tuning-end.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
+        else
+            # latest_version is older, local version is newer
+            log "✓ Local version ($SCRIPT_VERSION) is newer than remote ($latest_version)"
         fi
     else
         log "✓ Script is up to date"
@@ -297,6 +362,31 @@ validate_config() {
     [[ -d "$CACHE_MOUNT" ]] || error "Cache mount not found: $CACHE_MOUNT"
     [[ -f "${QBIT_MOVER_PATH}mover.py" ]] || error "mover.py not found: ${QBIT_MOVER_PATH}mover.py"
 
+    # Validate instance configuration
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        # Validate array-based config
+        [[ ${#HOSTS[@]} -gt 0 ]] || error "HOSTS array is empty"
+        [[ ${#USERS[@]} -eq ${#HOSTS[@]} ]] || error "USERS array length doesn't match HOSTS"
+        [[ ${#PASSWORDS[@]} -eq ${#HOSTS[@]} ]] || error "PASSWORDS array length doesn't match HOSTS"
+
+        # NAMES array is optional, but if present should match
+        if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
+            [[ ${#NAMES[@]} -eq ${#HOSTS[@]} ]] || error "NAMES array length doesn't match HOSTS"
+        fi
+
+        log "✓ Using array-based configuration (${#HOSTS[@]} instance(s))"
+    else
+        # Validate legacy config
+        [[ -n "${QBIT_HOST_1:-}" ]] || error "QBIT_HOST_1 is not set"
+        [[ -n "${QBIT_USER_1:-}" ]] || error "QBIT_USER_1 is not set"
+        [[ -n "${QBIT_PASS_1:-}" ]] || error "QBIT_PASS_1 is not set"
+
+        log "✓ Using legacy configuration"
+    fi
+
     # Validate duplicate finder if enabled
     if [[ "$ENABLE_DUPLICATE_FINDER" == true ]]; then
         if [[ "$ENABLE_AUTO_INSTALLER" == true ]]; then
@@ -372,18 +462,15 @@ main() {
     # Validate configuration
     validate_config || exit 1
 
-    # Process primary instance
-    process_qbit_instance "$QBIT_NAME_1" "$QBIT_HOST_1" "$QBIT_USER_1" "$QBIT_PASS_1" || \
-        ((failed_instances++))
+    # Process all instances
+    local instance_count
+    instance_count=$(get_instance_count)
 
-    # Process secondary instance if enabled
-    if [[ "$ENABLE_QBIT_2" == true ]]; then
-        log "Processing secondary instance..."
-        process_qbit_instance "$QBIT_NAME_2" "$QBIT_HOST_2" "$QBIT_USER_2" "$QBIT_PASS_2" || \
-            ((failed_instances++))
-    else
-        log "Secondary instance disabled"
-    fi
+    for ((i=0; i<instance_count; i++)); do
+        get_instance_details "$i"
+
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" || ((failed_instances++))
+    done
 
     # Run duplicate finder if enabled
     if [[ "$ENABLE_DUPLICATE_FINDER" == true ]]; then
