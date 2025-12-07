@@ -88,6 +88,7 @@ We've made 3 guides related to this.
 | [Netflix](#nf)             |                          |                          |
 | [Peacock TV](#pcok)        |                          |                          |
 | [Paramount+](#pmtp)        |                          |                          |
+| [Google Play](#play)       |                          |                          |
 | [ROKU](#roku)              |                          |                          |
 | [Stan](#stan)              |                          |                          |
 
@@ -1844,6 +1845,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### PLAY
+
+<sub>Google Play</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/play.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/play.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
