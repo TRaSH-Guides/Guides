@@ -99,15 +99,6 @@
       }
     },
     {
-      "name": "RAWR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RAWR)$"
-      }
-    },
-    {
       "name": "SbR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
