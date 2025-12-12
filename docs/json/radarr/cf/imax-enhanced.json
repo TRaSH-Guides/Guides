@@ -5,7 +5,7 @@
   },
   "trash_regex": "https://regex101.com/r/e7ugxU/1",
   "name": "IMAX Enhanced",
-  "includeCustomFormatWhenRenaming": true,
+  "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "IMAX Enhanced",
