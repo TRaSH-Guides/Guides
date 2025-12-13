@@ -71,6 +71,15 @@
       }
     },
     {
+      "name": "VisionXpert",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VisionXpert)$"
+      }
+    },
+    {
       "name": "HDR10+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
