@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Standard",
+    "profiles": {
+      "hd-bluray-web": "d1d67249d3890e49bc12e275d989a7e9",
+      "remux-web-1080p": "9ca12ea80aa55ef916e3751f4b874151",
+      "remux-2160p-combined": "d1d310673359205736b4b84acd5ea8c8",
+      "remux-2160p-alternative": "dd3cd75deb9645bae838d1c5da6388d5",
+      "remux-web-2160p": "fd161a61e3ab826d3a22d53f935696dd",
+      "uhd-bluray-web": "64fb5f9858489bdac2af690e27c8f42f"
+    }
+  },
+  {
+    "name": "Anime",
+    "profiles": {
+      "anime-remux-1080p": "722b624f9af1e492284c4bc842153a38"
+    }
+  },
+  {
+    "name": "French",
+    "profiles": {
+      "french-multi-vo-hd-bluray-web": "2572ce3ea4eef1c19d59e0e20ed1cea7",
+      "french-multi-vo-hd-remux-web": "c6460a102b312200c095a2d0982e0461",
+      "french-multi-vo-uhd-bluray-web": "92ead7022d13a7858d54e328e6a2f8f9",
+      "french-multi-vo-uhd-remux-web": "1fef28c8c919f31cd86283b1baf527d4"
+    }
+  },
+  {
+    "name": "German",
+    "profiles": {
+      "german-hd-bluray-web": "2b90e905c99490edc7c7a5787443748b",
+      "german-hd-remux-web": "c13c33fdd2c306266b34cb9946de5919",
+      "german-uhd-bluray-web": "27cc3d153c0a799fd139ef1ff4c4cc42",
+      "german-uhd-bluray-web-alternative": "425da1ba30711b55d2eb371437ec98d7",
+      "german-uhd-remux-web": "79faa9943cef2f510b997b1f2a9f3ea6"
+    }
+  },
+  {
+    "name": "SQP",
+    "profiles": {
+      "sqp-1-1080p": "0896c29d74de619df168d23b98104b22",
+      "sqp-1-2160p": "5128baeb2b081b72126bc8482b2a86a0",
+      "sqp-1-web-1080p": "90a3370d2d30cbaf08d9c23b856a12c8",
+      "sqp-1-web-2160p": "e91c9adaca0231493f4af0d571b907f9",
+      "sqp-2": "c3933358ba2356bafc41524f81471069",
+      "sqp-3": "2cf36c1f0106ffac993be003ade51865",
+      "sqp-3-audio": "0ada8e60cc3ddf2733b65de10f4a6c72",
+      "sqp-4": "013f89e6da27519fe56cf482702a2db9",
+      "sqp-5": "a7bb1539fd147256b21b1098f3dc2016"
+    }
+  }
+]

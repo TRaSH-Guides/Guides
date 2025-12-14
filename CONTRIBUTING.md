@@ -30,6 +30,7 @@ Here you will find guidelines for contributing to [TRaSH Guides](https://trash-g
     - [cf-groups](#cf-groups)
         - [Group Specific settings](#group-specific-settings)
         - [Group Custom Format specific settings](#group-custom-format-specific-settings)
+    - [quality-profile-groups](#quality-profile-groups)
 - [Recommendations](#recommendations)
     - [Preview Docs Locally](#preview-docs-locally)
     - [Preview after Pull Request](#preview-after-pull-request)
@@ -307,6 +308,34 @@ The cf-group.json exists of two properties.
     - `default": "true"` - [**OPTIONAL**] If you want the CF to be enabled by default.
 - `quality_profiles`
     - `exclude` - Add the Quality Profiles you want to exclude from this group, using the quality-profiles `name` and `trash_id`.
+
+### quality-profile-groups
+
+Quality profile groups organize quality profiles into logical categories for easier discovery and selection.
+
+- Radarr: `docs/json/radarr/quality-profile-groups/groups.json`
+- Sonarr: `docs/json/sonarr/quality-profile-groups/groups.json`
+
+The `groups.json` file contains an array of groups. The order of groups determines display order, and profiles within each group are sorted alphabetically by their name.
+
+```json
+[
+    {
+        "name": "Standard",
+        "profiles": ["trash_id_1", "trash_id_2"]
+    },
+    {
+        "name": "Anime",
+        "profiles": ["trash_id_3"]
+    }
+]
+```
+
+- `name` - Display name for the profile group
+- `profiles` - Array of quality profile `trash_id` values belonging to this group
+
+> [!IMPORTANT]
+> All `trash_id` values in the `profiles` array must correspond to existing quality profiles in the `quality-profiles` directory. Each quality profile should belong to exactly one group.
 
 ---
 

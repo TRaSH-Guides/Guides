@@ -6,14 +6,16 @@
       "qualities": ["docs/json/radarr/quality-size"],
       "naming": ["docs/json/radarr/naming"],
       "quality_profiles": ["docs/json/radarr/quality-profiles"],
-      "custom_format_groups": ["docs/json/radarr/cf-groups"]
+      "custom_format_groups": ["docs/json/radarr/cf-groups"],
+      "quality_profile_groups": ["docs/json/radarr/quality-profile-groups"]
     },
     "sonarr": {
       "custom_formats": ["docs/json/sonarr/cf"],
       "qualities": ["docs/json/sonarr/quality-size"],
       "naming": ["docs/json/sonarr/naming"],
       "quality_profiles": ["docs/json/sonarr/quality-profiles"],
-      "custom_format_groups": ["docs/json/sonarr/cf-groups"]
+      "custom_format_groups": ["docs/json/sonarr/cf-groups"],
+      "quality_profile_groups": ["docs/json/sonarr/quality-profile-groups"]
     }
   }
 }
