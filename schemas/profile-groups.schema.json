@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/TRaSH-/Guides/master/schemas/profile-groups.schema.json",
+  "title": "Quality Profile Groups Schema",
+  "description": "Schema for grouping quality profiles into logical categories. Order of groups determines display order.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "profiles"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Display name for the profile group"
+      },
+      "profiles": {
+        "type": "array",
+        "description": "List of quality profile trash_ids that belong to this group",
+        "items": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{32}$"
+        },
+        "minItems": 1,
+        "uniqueItems": true
+      }
+    }
+  },
+  "minItems": 1
+}
