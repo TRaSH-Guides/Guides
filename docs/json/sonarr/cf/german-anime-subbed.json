@@ -10,7 +10,7 @@
       "name": "German Subbed",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
         "value": "(German|Ger)([\\.\\-_ ]?([A-Z][a-z]{2}|English|Multi))*[\\.\\-_ ]?Sub"
       }
