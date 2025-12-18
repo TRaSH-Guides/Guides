@@ -162,6 +162,15 @@
       }
     },
     {
+      "name": "RAWR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RAWR)$"
+      }
+    },
+    {
       "name": "SiC",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

@@ -1,3 +1,9 @@
+# 2025-12-14 00:30
+- [feat(guide-sync): add profile groups](https://github.com/TRaSH-Guides/Guides/pull/2561)
+- [feat(radarr): Add RlsGrp `VisionXpert` to `Generated Dynamic HDR`](https://github.com/TRaSH-Guides/Guides/pull/2567)
+- [feat(starr): Move RlsGrp RAWR from WEB Tier 02 to WEB Tier 01](https://github.com/TRaSH-Guides/Guides/pull/2565)
+- [feat(radarr): Removed include Custom Format When Renaming For IMAX Enhanced](https://github.com/TRaSH-Guides/Guides/pull/2562)
+
 # 2025-12-07 00:30
 - [feat(starr): Add Streaming Service PLAY](https://github.com/TRaSH-Guides/Guides/pull/2558)
 - [feat(downloaders): Add support for unlimited numbers of qBt instances in the mover-tuner scripts](https://github.com/TRaSH-Guides/Guides/pull/2556)

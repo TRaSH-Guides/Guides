@@ -144,6 +144,15 @@
       }
     },
     {
+      "name": "RAWR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RAWR)$"
+      }
+    },
+    {
       "name": "RTN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
