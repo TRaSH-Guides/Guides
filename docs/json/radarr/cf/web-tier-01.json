@@ -63,6 +63,15 @@
       }
     },
     {
+      "name": "BYNDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BYNDR)$"
+      }
+    },
+    {
       "name": "CMRG",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

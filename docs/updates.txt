@@ -1,3 +1,6 @@
+# 2025-12-21 00:30
+- [feat(radarr): Move RlsGrp BYNDR to WEB Tier 01](https://github.com/TRaSH-Guides/Guides/pull/2573)
+
 # 2025-12-14 00:30
 - [feat(guide-sync): add profile groups](https://github.com/TRaSH-Guides/Guides/pull/2561)
 - [feat(radarr): Add RlsGrp `VisionXpert` to `Generated Dynamic HDR`](https://github.com/TRaSH-Guides/Guides/pull/2567)
