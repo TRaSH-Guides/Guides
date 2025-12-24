@@ -125,10 +125,10 @@ chmod +x /mnt/user/appdata/qbt-mover/mover-tuning-end.sh
 
 After editing the scripts, make sure they use LF line endings (Unix format). If you edited the files on Windows, they may have CRLF line endings, which can cause errors.
 
-Run the following command to convert all `.sh` and `.cfg` files to the correct format:
+Run the following command to convert line endings in all .sh and .cfg files from Windows format (CRLF) to Unix format (LF), and make the scripts executable:
 
 ```bash
-for file in *.sh *.cfg; do [ -f "$file" ] && sed -i 's/\r$//' "$file" && echo "Converted $file"; done
+for file in *.sh *.cfg *.py; do [ -f "$file" ] && sed -i 's/\r$//' "$file" && echo "Converted $file"; done && chmod +x *.sh *.py 2>/dev/null
 ```
 
 **How to use this command:**
