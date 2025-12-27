@@ -140,20 +140,20 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-| German Source Groups                            | German Miscellaneous                                  | French Source Groups                          | French Audio Version |
-| ----------------------------------------------- | ----------------------------------------------------- | --------------------------------------------- | -------------------- |
-| [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                               | [FR Remux Tier 01](#fr-remux-tier-01)         | [VFF](#vff)          |
+| German Source Groups                            | German Miscellaneous                                  | French Source Groups                          | French Audio Version | 
+| ----------------------------------------------- | ----------------------------------------------------- | --------------------------------------------- | -------------------- | 
+| [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                               | [FR Remux Tier 01](#fr-remux-tier-01)         | [VFF](#vff)          | 
 | [German Remux Tier 02](#german-remux-tier-02)   | [German LQ (Release Title)](#german-lq-release-title) | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) | [VOF](#vof)          |
-| [German Bluray Tier 01](#german-bluray-tier-01) | [German Microsized](#german-microsized)               | [FR WEB Tier 01](#fr-web-tier-01)             | [VFI](#vfi)          |
-| [German Bluray Tier 02](#german-bluray-tier-02) | [German 1080p Booster](#german-1080p-booster)         | [FR WEB Tier 02](#fr-web-tier-02)             | [VF2](#vf2)          |
-| [German Bluray Tier 03](#german-bluray-tier-03) | [German 2160p Booster](#german-2160p-booster)         | [FR WEB Tier 03](#fr-web-tier-03)             | [VFQ](#vfq)          |
-| [German Web Tier 01](#german-web-tier-01)       |                                                       | [FR Anime Tier 01](#fr-anime-tier-01)         | [VOQ](#voq)          |
-| [German Web Tier 02](#german-web-tier-02)       |                                                       | [FR Anime Tier 02](#fr-anime-tier-02)         | [VQ](#vq)            |
-| [German Web Tier 03](#german-web-tier-03)       |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)         | [VFB](#vfb)          |
-| [German Scene](#german-scene)                   |                                                       | [FR Anime FanSub](#fr-anime-fansub)           | [VOSTFR](#vostfr)    |
-|                                                 |                                                       | [FR Scene Groups](#fr-scene-groups)           | [FanSUB](#fansub)    |
-|                                                 |                                                       | [FR LQ](#fr-lq)                               | [FastSUB](#fastsub)  |
-|                                                 |                                                       |                                               | [FastSUB](#fastsub)  |
+| [German Bluray Tier 01](#german-bluray-tier-01) | [German Microsized](#german-microsized)               | [FR WEB Tier 01](#fr-web-tier-01)             | [VFI](#vfi)          | 
+| [German Bluray Tier 02](#german-bluray-tier-02) | [German 1080p Booster](#german-1080p-booster)         | [FR WEB Tier 02](#fr-web-tier-02)             | [VF2](#vf2)          | 
+| [German Bluray Tier 03](#german-bluray-tier-03) | [German 2160p Booster](#german-2160p-booster)         | [FR WEB Tier 03](#fr-web-tier-03)             | [VFQ](#vfq)          | 
+| [German Web Tier 01](#german-web-tier-01)       |                                                       | [FR Anime Tier 01](#fr-anime-tier-01)         | [VOQ](#voq)          | 
+| [German Web Tier 02](#german-web-tier-02)       |                                                       | [FR Anime Tier 02](#fr-anime-tier-02)         | [VQ](#vq)            | 
+| [German Web Tier 03](#german-web-tier-03)       |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)         | [VFB](#vfb)          | 
+| [German Scene](#german-scene)                   |                                                       | [FR Anime FanSub](#fr-anime-fansub)           | [VOSTFR](#vostfr)    | 
+|                                                 |                                                       | [FR Scene Groups](#fr-scene-groups)           | [FanSUB](#fansub)    | 
+|                                                 |                                                       | [FR LQ](#fr-lq)                               | [FastSUB](#fastsub)  | 
+|                                                 |                                                       |                                               | [FastSUB](#fastsub)  | 
 
 ## Audio Formats
 
@@ -3087,244 +3087,244 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-## German Source Groups
-
----
-
-### German Remux Tier 01
-
+## German Source Groups 
+ 
+--- 
+ 
+### German Remux Tier 01 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-remux-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-remux-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Remux Tier 02
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-remux-tier-01.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Remux Tier 02 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-remux-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-remux-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Bluray Tier 01
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-remux-tier-02.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Bluray Tier 01 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Bluray Tier 02
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-01.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Bluray Tier 02 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Bluray Tier 03
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-02.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Bluray Tier 03 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Web Tier 01
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-03.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Web Tier 01 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-web-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Web Tier 02
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-01.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Web Tier 02 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-web-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Web Tier 03
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-02.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Web Tier 03 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-web-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Scene
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-03.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Scene 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-scene.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-scene.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-## German Miscellaneous
-
----
-
-### German LQ
-
-<sub>German Low-Quality Releases = German LQ</sub>
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-scene.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+## German Miscellaneous 
+ 
+--- 
+ 
+### German LQ 
+ 
+<sub>German Low-Quality Releases = German LQ</sub> 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-lq.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-lq.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German LQ (Release Title)
-
-<sub>Low-Quality Releases = LQ</sub>
-
-??? question "German LQ (Release Title)- [Click to show/hide]"
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-lq.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German LQ (Release Title) 
+ 
+<sub>Low-Quality Releases = LQ</sub> 
+ 
+??? question "German LQ (Release Title)- [Click to show/hide]" 
+ 
     {! include-markdown "../../includes/cf-descriptions/german-lq-release-title.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-lq-release-title.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Microsized
-
-<sub>German Microsized Releases = German Microsized</sub>
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-lq-release-title.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German Microsized 
+ 
+<sub>German Microsized Releases = German Microsized</sub> 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-microsized.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-microsized.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German 1080p Booster
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-microsized.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German 1080p Booster 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-1080p-booster.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-1080p-booster.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German 2160p Booster
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-1080p-booster.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### German 2160p Booster 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/german-2160p-booster.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-2160p-booster.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-2160p-booster.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
 ## Language Profiles
 
 ---
@@ -3416,51 +3416,51 @@ Special thanks to everyone who has helped in the creation and testing of these C
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: German DL (undefined)
-
+ 
+--- 
+ 
+### Language: German DL (undefined) 
+ 
 ??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-german-dl-undefined.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: German
-
+ 
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !} 
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-german-dl-undefined.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### Language: German 
+ 
 ??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-german.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-german.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Not German or English
-
+ 
+    {! include-markdown "../../includes/cf-descriptions/language-german.md" !} 
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-german.json' %]][[% endfilter %]] 
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
+ 
+--- 
+ 
+### Language: Not German or English 
+ 
 ??? question "Description - [Click to show/hide]"
-
+ 
     {! include-markdown "../../includes/cf-descriptions/language-not-german-or-english.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
+ 
+??? example "JSON - [Click to show/hide]" 
+ 
+    ```json 
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-german-or-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
+    ``` 
+ 
+<sub><sup>[TOP](#index)</sup></sub> 
