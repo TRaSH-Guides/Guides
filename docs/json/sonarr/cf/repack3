@@ -1,12 +1,11 @@
 {
-  "trash_id": "5caaaa1c08c1742aa4342d8c4cc463f2",
+  "trash_id": "44e7c4de10ae50265753082e5dc76047",
   "trash_scores": {
     "default": 7,
-    "anime-radarr": 3,
+    "anime-sonarr": 3,
     "french-anime-multi": 3,
     "french-anime-vostfr": 3
   },
-  "trash_regex": "https://regex101.com/r/7YIkWD/1",
   "name": "Repack3",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
