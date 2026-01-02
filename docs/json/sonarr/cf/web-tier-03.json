@@ -9,6 +9,15 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "Dooky",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Dooky)$"
+      }
+    },
+    {
       "name": "DRACULA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -18,12 +27,12 @@
       }
     },
     {
-      "name": "Dooky",
+      "name": "HHWEB",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(Dooky)$"
+        "value": "^(HHWEB)$"
       }
     },
     {
