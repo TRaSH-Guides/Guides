@@ -25,7 +25,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b((?:repack|proper)[23]|REAL\\.(?:REAL\\.)?(?:PROPER|REPACK))\\b"
+        "value": "\\b(?:(?:repack|proper)[23])\\b|\\bREAL\\.(?:REAL\\.)?(?:PROPER|REPACK)\\b"
       }
     }
   ]
