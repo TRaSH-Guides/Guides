@@ -199,6 +199,15 @@
       }
     },
     {
+      "name": "TURG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TURG)$"
+      }
+    },
+    {
       "name": "vnlls",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
