@@ -1,3 +1,8 @@
+# 2026-01-04 02:04
+- [feat(starr): Add RlsGrp `TURG` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2579)
+- [feat(starr): Enable `includeCustomFormatWhenRenaming` Repack 2/3 and add negate to prevent double scoring](https://github.com/TRaSH-Guides/Guides/pull/2577)
+- [feat(starr): Add RlsGrp `HHWEB` to WEB Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2578)
+
 # 2025-12-28 00:31
 - [fix(downloaders): Update Fixing Run Errors script](https://github.com/TRaSH-Guides/Guides/pull/2574)
 
