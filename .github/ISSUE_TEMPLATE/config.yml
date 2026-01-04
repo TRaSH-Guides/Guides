@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: Guides
     url: https://trash-guides.info/
-    about: Guides mainly for the Starr Apps (Sonarr/Radarr) and everything related to them.
+    about: TRaSH-Guides offers detailed documentation that answers common questions and provides the best settings for your entire media server setup
   - name: Discord Support
     url: https://trash-guides.info/discord
     about: If you have any questions about the guide or need assistance, please join our Discord server.
