@@ -539,6 +539,15 @@
       }
     },
     {
+      "name": "Mesc",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Mesc)$"
+      }
+    },
+    {
       "name": "mHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
