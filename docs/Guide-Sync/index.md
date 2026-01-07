@@ -62,7 +62,7 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 
 ### Recyclarr
 
-[Info](/Recyclarr/){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/wiki/){:target="\_blank" rel="noopener noreferrer"}
+[Info](/Recyclarr/){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/guide/){:target="\_blank" rel="noopener noreferrer"}
 
 Recyclarr is a command line application utilizing configuration files to sync the guides to Radarr &
 Sonarr.
