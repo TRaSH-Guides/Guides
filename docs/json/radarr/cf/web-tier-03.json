@@ -45,6 +45,15 @@
       }
     },
     {
+      "name": "HHWEB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HHWEB)$"
+      }
+    },
+    {
       "name": "NINJACENTRAL",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

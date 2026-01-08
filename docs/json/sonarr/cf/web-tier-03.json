@@ -9,12 +9,21 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "DRACULA",
-      "implementation": "ReleaseGroupSpecification",
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(DRACULA)$"
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
       }
     },
     {
@@ -24,6 +33,24 @@
       "required": false,
       "fields": {
         "value": "^(Dooky)$"
+      }
+    },
+    {
+      "name": "DRACULA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DRACULA)$"
+      }
+    },
+    {
+      "name": "HHWEB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HHWEB)$"
       }
     },
     {
@@ -69,24 +96,6 @@
       "required": false,
       "fields": {
         "value": "^(ViSiON)$"
-      }
-    },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
       }
     }
   ]
