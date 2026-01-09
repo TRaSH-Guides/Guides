@@ -2,6 +2,7 @@
   "trash_id": "9ca12ea80aa55ef916e3751f4b874151",
   "name": "Remux + WEB 1080p",
   "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Remux: 1080p",
+  "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles/#remux-web-1080p",
   "group": 1,
   "upgradeAllowed": true,
   "cutoff": "Remux-1080p",
