@@ -85,9 +85,9 @@
       <b><a href="https://github.com/SeiyaGame" style="color: #ffa500;">SeiyaGame</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/140897249?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="kantjer01">
+      <img src="https://avatars.githubusercontent.com/u/140897249?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="BZ00001">
       <br>
-      <b><a href="https://github.com/kantjer01" style="color: #ffa500;">kantjer01</a></b>
+      <b><a href="https://github.com/BZ00001" style="color: #ffa500;">BZ00001</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/6703012?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="quorn23">
