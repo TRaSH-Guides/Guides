@@ -6,11 +6,12 @@
     "french-anime-multi": 3,
     "french-anime-vostfr": 3
   },
+  "trash_regex": "https://regex101.com/r/7YIkWD/1",
   "name": "Repack3",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "Repack/Proper 3 or Real Real Proper/Repack",
+      "name": "Repack/Proper 3 or REAL.REAL.PROPER/REPACK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
