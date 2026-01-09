@@ -2,6 +2,7 @@
   "trash_id": "d1d67249d3890e49bc12e275d989a7e9",
   "name": "HD Bluray + WEB",
   "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p",
+  "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles/#hd-bluray-web",
   "group": 1,
   "upgradeAllowed": true,
   "cutoff": "Bluray-1080p",

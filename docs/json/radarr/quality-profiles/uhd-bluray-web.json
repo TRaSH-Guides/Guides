@@ -2,6 +2,7 @@
   "trash_id": "64fb5f9858489bdac2af690e27c8f42f",
   "name": "UHD Bluray + WEB",
   "trash_description": "Quality Profile that covers:<br>- WEBDL: 2160p<br>- Bluray: 2160p",
+  "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles/#uhd-bluray-web",
   "group": 1,
   "upgradeAllowed": true,
   "cutoff": "Bluray-2160p",
