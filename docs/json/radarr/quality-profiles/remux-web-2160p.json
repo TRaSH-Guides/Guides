@@ -2,6 +2,7 @@
   "trash_id": "fd161a61e3ab826d3a22d53f935696dd",
   "name": "Remux + WEB 2160p",
   "trash_description": "Quality Profile that covers:<br>- WEBDL: 2160p<br>- Remux: 2160p",
+  "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles/#remux-web-2160p",
   "group": 1,
   "upgradeAllowed": true,
   "cutoff": "Remux-2160p",
