@@ -2,6 +2,7 @@
   "trash_id": "27cc3d153c0a799fd139ef1ff4c4cc42",
   "name": "[German] UHD Bluray + WEB",
   "trash_description": "German Quality Profile that covers:<br>- WEBDL: 2160p<br>- Bluray: 2160p",
+  "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles-german-en/#uhd-bluray-web",
   "group": 11,
   "trash_score_set": "german",
   "upgradeAllowed": true,

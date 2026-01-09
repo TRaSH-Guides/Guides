@@ -2,6 +2,7 @@
   "trash_id": "dd3cd75deb9645bae838d1c5da6388d5",
   "name": "Remux 2160p (Alternative)",
   "trash_description": "Quality Profile that covers:<br>- SDTV, DVD<br>- HDTV: 720p, 1080p<br>- WEBDL: 480p, 720, 1080p, 2160p<br>- Bluray: 480p, 576p, 720p, 1080p, 2160p<br>- Remux: 1080p, 2160p",
+  "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles/#remux-web-2160p",
   "group": 2,
   "upgradeAllowed": true,
   "cutoff": "Remux-2160p",

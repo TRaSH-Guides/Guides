@@ -2,6 +2,7 @@
   "trash_id": "3b0fa37fddaaefc931b75f2889d4b4f5",
   "name": "[German] UHD Bluray + WEB",
   "trash_description": "German Quality Profile that covers:<br>- WEBDL: 2160p<br>- Bluray: 2160p",
+  "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-german-en/#uhd-bluray-web-2160p",
   "group": 11,
   "trash_score_set": "german",
   "upgradeAllowed": true,

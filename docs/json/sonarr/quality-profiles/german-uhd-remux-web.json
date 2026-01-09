@@ -2,6 +2,7 @@
   "trash_id": "08cececf1840290f6fd490b7d79e8642",
   "name": "[German] UHD Remux + WEB",
   "trash_description": "German Quality Profile that covers:<br>- WEBDL: 2160p<br>- Remux: 2160p",
+  "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-german-en/#uhd-remux-web-2160p",
   "group": 11,
   "trash_score_set": "german",
   "upgradeAllowed": true,

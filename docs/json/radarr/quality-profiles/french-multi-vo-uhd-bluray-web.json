@@ -2,6 +2,7 @@
   "trash_id": "92ead7022d13a7858d54e328e6a2f8f9",
   "name": "[French MULTi.VO] UHD Bluray + WEB",
   "trash_description": "French Quality Profile that covers:<br>- WEBDL: 1080p, 2160p<br>- Bluray: 2160p<br>- Remux: 1080p",
+  "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#uhd-bluray-web-2160p",
   "group": "21",
   "trash_score_set": "french-multi-vo",
   "upgradeAllowed": true,

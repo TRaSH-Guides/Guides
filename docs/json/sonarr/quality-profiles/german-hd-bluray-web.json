@@ -2,6 +2,7 @@
   "trash_id": "dca7e5e9e99c703bcbdaaa471dd40e98",
   "name": "[German] HD Bluray + WEB",
   "trash_description": "German Quality Profile that covers:<br>- WEBDL: 720p, 1080p<br>- Bluray: 720p, 1080p",
+  "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-german-en/#hd-bluray-web",
   "group": 11,
   "trash_score_set": "german",
   "upgradeAllowed": true,
