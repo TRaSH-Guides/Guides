@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041-->
 ??? tip "Don't have a Usenet provider or looking for a new one?"
-    Frugal Usenet are offering TRaSH-Guides users two exclusive plans:
+    Frugal Usenet is offering TRaSH-Guides users two exclusive plans:
 
     **Plan 1: Yearly Unlimited Subscription - $40/year** - *(billed yearly until canceled)*
 
