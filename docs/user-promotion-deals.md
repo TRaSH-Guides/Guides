@@ -40,7 +40,7 @@ Frugal Usenet is offering TRaSH-Guides users two exclusive plans:
 
 VPN services that support port forwarding.
 
-### Torguard
+### TorGuard
 
 Get 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN Pro, and Anonymous Proxy Premium.
 
