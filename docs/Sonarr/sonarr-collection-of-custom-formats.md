@@ -120,6 +120,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [Season Packs](#season-pack)        |                                                                    |
 | [VC-1](#vc-1)                       |                                                                    |
 | [VP9](#vp9)                         |                                                                    |
+| [WiTH AD](#with-ad)                 |                                                                    |
 | [x264](#x264)                       |                                                                    |
 | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                                                                    |
 | [x265](#x265)                       |                                                                    |
@@ -1175,6 +1176,22 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hfr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### WiTH AD
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/with-ad.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/with-ad.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
