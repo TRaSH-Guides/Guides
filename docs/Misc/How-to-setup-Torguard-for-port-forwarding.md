@@ -1,6 +1,6 @@
 # Setup TorGuard for port forwarding
 
-These are our supported and recommended settings to setup port forwarding with TorGuard
+These are our supported and recommended settings to set up port forwarding with TorGuard
 
 To 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN Pro, and Anonymous Proxy Premium.
 
