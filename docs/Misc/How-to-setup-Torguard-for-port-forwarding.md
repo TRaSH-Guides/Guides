@@ -2,7 +2,7 @@
 
 These are our supported and recommended settings to set up port forwarding with TorGuard
 
-To 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN Pro, and Anonymous Proxy Premium.
+Get 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN Pro, and Anonymous Proxy Premium.
 
 Use this [link](/user-promotion-deals/#torguard){:target="_blank" rel="noopener noreferrer"} for more info.
 
