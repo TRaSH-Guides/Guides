@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/TRaSH-/Guides/master/schemas/quality-profile.schema.json",
+  "title": "TRaSH Guides Quality Profile",
+  "description": "Schema for Radarr/Sonarr quality profile definitions used by TRaSH Guides. Quality profiles define which video qualities are acceptable and how Custom Formats influence upgrade decisions.",
+  "type": "object",
+  "properties": {
+    "trash_id": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{32}$",
+      "description": "Unique 32-character hexadecimal identifier (hash) for this quality profile. Generated from the profile name."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name for the quality profile. Foreign language profiles should be prefixed with [Language] (e.g., '[German] HD Bluray + WEB'). Anime profiles should be prefixed with [Anime]."
+    },
+    "trash_description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable description of what quality sources this profile covers. Supports limited HTML: <b>, </b>, <br>, and <a href> tags."
+    },
+    "trash_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the TRaSH Guides documentation page for this quality profile."
+    },
+    "trash_score_set": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier for a non-default Custom Format score set. Used when this profile requires different CF scores than the default. Examples: 'german', 'french-multi-vo', 'anime-radarr', 'sqp-1-2160p'. Omit if using default scores."
+    },
+    "group": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Sort order grouping for organizing related profiles. Ranges: 1-9 (English/International), 11-19 (German), 21-29 (French), 81-89 (Anime), 91-99 (Restricted/SQP)."
+    },
+    "upgradeAllowed": {
+      "type": "boolean",
+      "description": "Whether Radarr/Sonarr should upgrade existing files when better quality releases become available. When true, upgrades occur until the cutoff quality is reached."
+    },
+    "cutoff": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The quality level at which upgrades stop (Upgrade Until). Must match a quality name from the items array. Once this quality is obtained, no further quality-based upgrades occur (Custom Format upgrades may still happen)."
+    },
+    "minFormatScore": {
+      "type": "integer",
+      "description": "Minimum Custom Format Score required for a release to be downloaded. Releases scoring below this threshold are rejected. Use 0 to accept any release meeting quality requirements."
+    },
+    "cutoffFormatScore": {
+      "type": "integer",
+      "description": "Upgrade Until Custom Format Score. Once a release with this CF score is obtained, no further upgrades occur. Typically set to 10000 to allow continuous upgrades to higher-scoring releases."
+    },
+    "minUpgradeFormatScore": {
+      "type": "integer",
+      "description": "Minimum Custom Format Score Increment required for an upgrade. A new release must score at least this many points higher than the current file to trigger an upgrade."
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Preferred language for releases. Radarr only. Common values: 'Original', 'English', 'German', etc."
+    },
+    "items": {
+      "type": "array",
+      "description": "List of quality sources in priority order. The highest priority quality should be at the bottom of the list. Qualities can be individual or grouped (merged) together.",
+      "items": {
+        "type": "object",
+        "description": "A quality source entry. Can be a single quality or a group of merged qualities that are treated as equivalent.",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Quality source name. For single qualities, use the Radarr/Sonarr quality name (e.g., 'Bluray-1080p', 'WEBDL-2160p'). For merged groups, use a descriptive name (e.g., 'WEB 1080p')."
+          },
+          "allowed": {
+            "type": "boolean",
+            "description": "Whether this quality source is enabled for download. Set to true for qualities you want, false for those to exclude."
+          },
+          "items": {
+            "type": "array",
+            "description": "For merged quality groups only. List of individual quality names to combine into a single tier. When merged, these qualities are treated as equivalent and Custom Formats determine preference.",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Individual quality name to include in this merged group (e.g., 'WEBDL-1080p', 'WEBRip-1080p')."
+            },
+            "minItems": 1
+          }
+        },
+        "required": ["name", "allowed"],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "formatItems": {
+      "type": "object",
+      "description": "Mandatory Custom Formats for this quality profile. Maps CF display names to their trash_id hashes. These are the base CFs that sync tools will always include; additional CFs may be added via cf-groups.",
+      "patternProperties": {
+        "^.+$": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{32}$",
+          "description": "32-character hexadecimal trash_id of the Custom Format."
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    }
+  },
+  "required": [
+    "trash_id",
+    "name",
+    "group",
+    "upgradeAllowed",
+    "cutoff",
+    "minFormatScore",
+    "cutoffFormatScore",
+    "minUpgradeFormatScore",
+    "items",
+    "formatItems"
+  ],
+  "additionalProperties": false
+}
