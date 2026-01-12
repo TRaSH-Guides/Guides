@@ -11,7 +11,7 @@
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "Repack/Proper 3 or Real Real Proper/Repack",
+      "name": "Repack/Proper 3 or REAL.REAL.PROPER/REPACK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
