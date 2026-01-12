@@ -87,6 +87,8 @@ Directory with post-processing and other scripts.
 
 ### News-Servers
 
+--8<-- "includes/downloaders/usp.md"
+
 `Settings` => `NEWS-SERVERS`
 
 ![!newsservers](images/newsservers.png)
@@ -191,6 +193,8 @@ Server retention time.
 !!! success ""
 
     **Suggested:** Check your news server what their retention is.
+
+--8<-- "includes/downloaders/usp.md"
 
 ---
 

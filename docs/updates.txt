@@ -1,3 +1,12 @@
+# 2026-01-11 02:03
+- [feat(guide): Add User Promotion Deals](https://github.com/TRaSH-Guides/Guides/pull/2589)
+- [fix(hardlinks): Add a "fast" way to create folder structure to the Docker guide](https://github.com/TRaSH-Guides/Guides/pull/2586)
+- [fix(guide-sync): update Recyclarr URL to new Recyclarr URL](https://github.com/TRaSH-Guides/Guides/pull/2585)
+- [fix(starr): Cleaned up and improved readability of the regex for Repack1,2,3](https://github.com/TRaSH-Guides/Guides/pull/2581)
+- [feat(guide-sync): Add trash_url to quality profile JSON files](https://github.com/TRaSH-Guides/Guides/pull/2587)
+- [feat(radarr): add RlsGrp `Mesc` to `LQ`](https://github.com/TRaSH-Guides/Guides/pull/2582)
+- [fix(starr): Add negate for REAL PROPER|REPACK to the` Repack/Proper` to prevent double scoring](https://github.com/TRaSH-Guides/Guides/pull/2580)
+
 # 2026-01-04 02:04
 - [feat(starr): Add RlsGrp `TURG` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2579)
 - [feat(starr): Enable `includeCustomFormatWhenRenaming` Repack 2/3 and add negate to prevent double scoring](https://github.com/TRaSH-Guides/Guides/pull/2577)
