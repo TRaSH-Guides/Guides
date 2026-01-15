@@ -77,7 +77,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TANOSHii)\\b"
+        "value": "\\b(-TANOSHii)\\b"
       }
     },
     {
