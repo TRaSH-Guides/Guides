@@ -2306,7 +2306,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Anime BD Tier 01 (Top SeaDex Muxers)
+### Anime BD Tier 01
 
 ??? question "Description - [Click to show/hide]"
 
@@ -2322,7 +2322,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Anime BD Tier 02 (SeaDex Muxers)
+### Anime BD Tier 02
 
 ??? question "Description - [Click to show/hide]"
 
@@ -2338,7 +2338,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Anime BD Tier 03 (SeaDex Muxers)
+### Anime BD Tier 03
 
 ??? question "Description - [Click to show/hide]"
 
@@ -2354,7 +2354,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Anime BD Tier 04 (SeaDex Muxers)
+### Anime BD Tier 04
 
 ??? question "Description - [Click to show/hide]"
 
@@ -2370,7 +2370,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Anime BD Tier 05 (Remuxes)
+### Anime BD Tier 05
 
 ??? question "Description - [Click to show/hide]"
 
@@ -2386,7 +2386,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Anime BD Tier 06 (FanSubs)
+### Anime BD Tier 06
 
 ??? question "Description - [Click to show/hide]"
 
@@ -2402,7 +2402,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Anime BD Tier 07 (P2P/Scene)
+### Anime BD Tier 07
 
 ??? question "Description - [Click to show/hide]"
 
@@ -2418,7 +2418,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Anime BD Tier 08 (Mini Encodes)
+### Anime BD Tier 08
 
 ??? question "Description - [Click to show/hide]"
 
