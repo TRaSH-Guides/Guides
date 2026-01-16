@@ -151,6 +151,15 @@
       }
     },
     {
+      "name": "Mehul",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Mehul\\]|-Mehul\\b"
+      }
+    },
+    {
       "name": "MTBB",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
