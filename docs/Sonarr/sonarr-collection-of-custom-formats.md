@@ -128,14 +128,14 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 | Anime Source Groups                                                         | Anime Source Groups                                                   | Anime Misc | Anime Optional                        |
 | --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------- | ------------------------------------- |
-| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01)                   | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)  | [Uncensored](#uncensored)             |
-| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02)                       | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)  | [10bit](#10bit)                       |
-| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03)                       | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)  | [Anime Dual Audio](#anime-dual-audio) |
-| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04)                       | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)  | [Dubs Only](#dubs-only)               |
-| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05)                             | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)  |                                       |
-| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06)                             | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             |            |                                       |
-| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07)                           | [Anime Raws](#anime-raws)                                             |            |                                       |
-| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08)                        | [Anime LQ Groups](#anime-lq-groups)                                   |            |                                       |
+| [Anime BD Tier 01)](#anime-bd-tier-01)                                      | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)  | [Uncensored](#uncensored)             |
+| [Anime BD Tier 02)](#anime-bd-tier-02)                                      | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)  | [10bit](#10bit)                       |
+| [Anime BD Tier 03)](#anime-bd-tier-03)                                      | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)  | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 04)](#anime-bd-tier-04)                                      | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)  | [Dubs Only](#dubs-only)               |
+| [Anime BD Tier 05)](#anime-bd-tier-05)                                      | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)  |                                       |
+| [Anime BD Tier 06)](#anime-bd-tier-06)                                      | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             |            |                                       |
+| [Anime BD Tier 07)](#anime-bd-tier-07)                                      | [Anime Raws](#anime-raws)                                             |            |                                       |
+| [Anime BD Tier 08)](#anime-bd-tier-08)                                      | [Anime LQ Groups](#anime-lq-groups)                                   |            |                                       |
 
 ---
 
