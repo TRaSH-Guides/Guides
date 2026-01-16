@@ -178,6 +178,15 @@
       }
     },
     {
+      "name": "Kawatare",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Kawatare\\]|-Kawatare\\b"
+      }
+    },
+    {
       "name": "KH",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
