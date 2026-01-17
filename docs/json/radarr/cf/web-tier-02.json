@@ -3,7 +3,8 @@
   "trash_scores": {
     "default": 1650,
     "anime-radarr": 250,
-    "french-multi-vf": 0
+    "french-multi-vf": 0,
+    "sqp-4-ma-hybrid": 40
   },
   "name": "WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,

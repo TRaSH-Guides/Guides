@@ -1,7 +1,8 @@
 {
   "trash_id": "eecf3a857724171f968a66cb5719e152",
   "trash_scores": {
-    "default": 800
+    "default": 800,
+    "sqp-4-ma-hybrid": 0
   },
   "trash_regex": "https://regex101.com/r/e7ugxU/1",
   "name": "IMAX",

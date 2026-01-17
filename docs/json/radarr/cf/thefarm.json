@@ -1,7 +1,8 @@
 {
   "trash_id": "d66d26d37c32b0137cd26f42abaa7c2e",
   "trash_scores": {
-    "default": 231
+    "default": 231,
+    "sqp-4-ma-hybrid": 10
   },
   "name": "TheFarm",
   "includeCustomFormatWhenRenaming": false,
