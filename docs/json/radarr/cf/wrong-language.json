@@ -1,0 +1,20 @@
+{
+  "trash_id": "2051402ee9ca81162017d98cbe1dff2c",
+  "name": "Wrong Language",
+  "trash_scores": {
+    "default": -10000
+  },
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Wrong Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": -2,
+        "exceptLanguage": false
+      }
+    }
+  ]
+}

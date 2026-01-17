@@ -4,7 +4,8 @@
     "default": 5,
     "anime-radarr": 1,
     "french-anime-multi": 1,
-    "french-anime-vostfr": 1
+    "french-anime-vostfr": 1,
+    "sqp-4-ma-hybrid": 1
   },
   "trash_regex": "https://regex101.com/r/S91wR8/2",
   "name": "Repack/Proper",
