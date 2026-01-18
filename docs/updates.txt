@@ -1,3 +1,9 @@
+# 2026-01-18 02:02
+- [feat(radarr): Added and updated a few CF for testing a new profile](https://github.com/TRaSH-Guides/Guides/pull/2596)
+- [fix(starr-french): Avoid false positive with Tanoshii in the release title](https://github.com/TRaSH-Guides/Guides/pull/2594)
+- [chore(guide-sync): Add JSON schema for quality profiles](https://github.com/TRaSH-Guides/Guides/pull/2588)
+- [fix(guide): Updated URL for Putty](https://github.com/TRaSH-Guides/Guides/pull/2591)
+
 # 2026-01-11 02:03
 - [feat(guide): Add User Promotion Deals](https://github.com/TRaSH-Guides/Guides/pull/2589)
 - [fix(hardlinks): Add a "fast" way to create folder structure to the Docker guide](https://github.com/TRaSH-Guides/Guides/pull/2586)
