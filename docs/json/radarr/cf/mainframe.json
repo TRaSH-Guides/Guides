@@ -1,0 +1,28 @@
+{
+  "trash_id": "8016f2f66e751dea613e6b5b94bf633c",
+  "trash_scores": {
+    "sqp-4-ma-hybrid": 2980
+  },
+  "name": "MainFrame",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "MainFrame",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "^(MainFrame)$"
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    }
+  ]
+}

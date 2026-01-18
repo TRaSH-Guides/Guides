@@ -5,7 +5,8 @@
     "sqp-1-1080p": 135,
     "sqp-1-web-1080p": 135,
     "sqp-1-2160p": 135,
-    "sqp-1-web-2160p": 135
+    "sqp-1-web-2160p": 135,
+    "sqp-4-ma-hybrid": 410
   },
   "name": "DD+ ATMOS",
   "includeCustomFormatWhenRenaming": false,

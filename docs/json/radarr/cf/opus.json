@@ -1,7 +1,8 @@
 {
   "trash_id": "a061e2e700f81932daf888599f8a8273",
   "trash_scores": {
-    "default": 250
+    "default": 250,
+    "sqp-4-ma-hybrid": 0
   },
   "trash_regex": "https://regex101.com/r/SsIWo3/1",
   "name": "Opus",
