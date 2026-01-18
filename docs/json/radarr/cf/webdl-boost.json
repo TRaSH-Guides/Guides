@@ -1,0 +1,28 @@
+{
+  "trash_id": "8df7fe4569063d39319f07e69707285a",
+  "trash_scores": {
+    "sqp-4-ma-hybrid": 2970
+  },
+  "name": "WEBDL Boost",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
