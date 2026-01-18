@@ -3,8 +3,8 @@
   "trash_scores": {
     "default": 9000
   },
-  "name": "German Anime Subbed",
-  "includeCustomFormatWhenRenaming": false,
+  "name": "German Subbed",
+  "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
       "name": "German Subbed",
