@@ -118,6 +118,15 @@
       }
     },
     {
+      "name": "MGE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MGE\\b.*)$"
+      }
+    },
+    {
       "name": "N3G4N",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -187,6 +196,15 @@
       "required": false,
       "fields": {
         "value": "^(Tars)$"
+      }
+    },
+    {
+      "name": "TM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TM\\b)$"
       }
     },
     {
