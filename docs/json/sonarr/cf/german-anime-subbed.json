@@ -3,8 +3,8 @@
   "trash_scores": {
     "default": 9000
   },
-  "name": "German Anime Subbed",
-  "includeCustomFormatWhenRenaming": false,
+  "name": "German Subbed",
+  "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
       "name": "German Subbed",
@@ -12,7 +12,16 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(German|Ger)([\\.\\-_ ]?([A-Z][a-z]{2}|English|Multi))*[\\.\\-_ ]?Sub"
+        "value": "\\b(German|Ger)(?:(?!Dub)[a-zA-Z\\.\\-_ ])*?(?:Sub(?:bed|s)?|OmU)(?:\\b|(?=_))"
+      }
+    },
+    {
+      "name": "Not German",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 4
       }
     },
     {
@@ -21,7 +30,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(German|Ger)(?:[\\.\\-_ ])?(?:DL|ML|LD|Syn(?:chro)?)\\b|\\b(Ger|German)[a-zA-Z]*Dub(?:bed)?\\b"
+        "value": "\\b(German|Ger)(?:[\\.\\-_]+(?:[a-zA-Z0-9]+[\\.\\-_]+){0,3})?(?:DL|ML)\\b|\\b(Ger|German)[a-zA-Z\\.\\-_]*[a-zA-Z][a-zA-Z\\.\\-_]*Dub(?:bed)?\\b"
       }
     }
   ]
