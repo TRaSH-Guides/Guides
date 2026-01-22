@@ -16,6 +16,15 @@
       }
     },
     {
+      "name": "Not German",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
       "name": "Not German Dubbed",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
