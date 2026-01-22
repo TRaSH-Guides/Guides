@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(German|Ger)([\\.\\-_ ]?([A-Z][a-z]{2}|English|Multi))*[\\.\\-_ ]?Sub"
+        "value": "\\b(German|Ger)(?:(?!Dub)[a-zA-Z\\.\\-_ ])*?(?:Sub(?:bed|s)?|OmU)(?:\\b|(?=_))"
       }
     },
     {
