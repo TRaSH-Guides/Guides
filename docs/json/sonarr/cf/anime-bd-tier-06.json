@@ -88,6 +88,15 @@
       }
     },
     {
+      "name": "GetItTwisted",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GetItTwisted)\\b"
+      }
+    },
+    {
       "name": "GSK_kun",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
