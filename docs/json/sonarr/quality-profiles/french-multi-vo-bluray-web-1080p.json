@@ -3,6 +3,7 @@
   "trash_id": "4c48f506c1116a3a57ae33f12346bd15",
   "name": "[French MULTi.VO] HD Bluray + WEB (1080p)",
   "trash_description": "French Quality Profile that covers:<br>- WEBDL: 720p, 1080p<br>- Bluray 720p, 1080p",
+  "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-en/#hd-bluray-web-1080p",
   "group": "21",
   "trash_score_set": "french-multi-vo",
   "upgradeAllowed": true,
@@ -84,8 +85,8 @@
     "Extras": "fbcb31d8dabd2a319072b84fc0b7249c",
     "AV1": "15a05bc7c1a36e2b57fd628f8977e2fc",
     "Repack/Proper": "ec8fa7296b64e8cd390a1600981f3923",
-    "Repack v2": "eb3d5cc0a2be0db205fb823640db6a3c",
-    "Repack v3": "44e7c4de10ae50265753082e5dc76047",
+    "Repack2": "eb3d5cc0a2be0db205fb823640db6a3c",
+    "Repack3": "44e7c4de10ae50265753082e5dc76047",
     "AUViO": "b0d6195c23ae254932da00512db7e8a8",
     "MyCanal": "f27d46a831e6b16fa3fee2c4e5d10984",
     "SALTO": "0455d6519a550dbf648c97b56e7231d2"

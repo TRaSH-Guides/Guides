@@ -4,7 +4,7 @@
     | Custom Format                                                                             |                         Score                          | Trash ID                                |
     | ----------------------------------------------------------------------------------------- | :----------------------------------------------------: | --------------------------------------- |
     | [{{ radarr['cf']['amzn']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#amzn)   |                           0                            | {{ radarr['cf']['amzn']['trash_id'] }}  |
-    | [{{ radarr['cf']['atv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atv)   |                           0                            | {{ radarr['cf']['atv']['trash_id'] }}  |
+    | [{{ radarr['cf']['atv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atv)     |                           0                            | {{ radarr['cf']['atv']['trash_id'] }}   |
     | [{{ radarr['cf']['atvp']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atvp)   |                           0                            | {{ radarr['cf']['atvp']['trash_id'] }}  |
     | [{{ radarr['cf']['bcore']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bcore) | {{ radarr['cf']['bcore']['trash_scores']['default'] }} | {{ radarr['cf']['bcore']['trash_id'] }} |
     | [{{ radarr['cf']['crit']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#crit)   | {{ radarr['cf']['crit']['trash_scores']['default'] }}  | {{ radarr['cf']['crit']['trash_id'] }}  |
@@ -18,6 +18,7 @@
     | [{{ radarr['cf']['nf']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#nf)       |                           0                            | {{ radarr['cf']['nf']['trash_id'] }}    |
     | [{{ radarr['cf']['pmtp']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pmtp)   |                           0                            | {{ radarr['cf']['pmtp']['trash_id'] }}  |
     | [{{ radarr['cf']['pcok']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pcok)   |                           0                            | {{ radarr['cf']['pcok']['trash_id'] }}  |
+    | [{{ radarr['cf']['play']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#play)   |                           0                            | {{ radarr['cf']['play']['trash_id'] }}  |
     | [{{ radarr['cf']['roku']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#roku)   |                           0                            | {{ radarr['cf']['roku']['trash_id'] }}  |
     | [{{ radarr['cf']['stan']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#stan)   |                           0                            | {{ radarr['cf']['stan']['trash_id'] }}  |
 

@@ -21,7 +21,25 @@
     For example `/<path_to_data>/data`, or even `/data`.
 
 {! include-markdown "../../../includes/file-and-folder-structure/folder-structure.md" !}
+<!-- markdownlint-disable MD001-->
+### Fastest way to create the needed subfolders
 
+The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTY](https://putty.software/){:target="\_blank" rel="noopener noreferrer"}.
+These options will automatically create the required subfolders for your media library as well as your preferred download client(s).
+If you use both torrents and Usenet, use both commands.
+
+#### If you use Usenet
+
+```bash
+mkdir -p /data/{usenet/{incomplete,complete}/{tv,movies,music},media/{tv,movies,music}}
+```
+
+#### If you use torrents
+
+```bash
+mkdir -p /data/{torrents/{tv,movies,music},media/{tv,movies,music}}
+```
+<!-- markdownlint-enable MD001-->
 {! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
 
 {! include-markdown "../../../includes/file-and-folder-structure/breakdown-folder-structure-docker.md" !}

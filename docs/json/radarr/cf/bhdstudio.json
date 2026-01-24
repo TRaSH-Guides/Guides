@@ -3,7 +3,8 @@
   "trash_scores": {
     "default": 1000,
     "sqp-1-web-1080p": 550,
-    "sqp-1-web-2160p": 550
+    "sqp-1-web-2160p": 550,
+    "sqp-4-ma-hybrid": 2980
   },
   "name": "BHDStudio",
   "includeCustomFormatWhenRenaming": false,

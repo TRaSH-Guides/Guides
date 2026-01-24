@@ -3,8 +3,14 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Updated: 20251102
+# Version: 1.1.0
+# Updated: 20251201
 # =======================================
+
+# Script version and update check URLs
+readonly SCRIPT_VERSION="1.1.0"
+readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
+readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
 # Get the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -15,6 +21,9 @@ source "$SCRIPT_DIR/mover-tuning.cfg"
 readonly VENV_PATH="${QBIT_MOVER_PATH}.venv"
 readonly MOVER_SCRIPT="${QBIT_MOVER_PATH}mover.py"
 readonly MOVER_URL="https://raw.githubusercontent.com/StuffAnThings/qbit_manage/develop/scripts/mover.py"
+
+# Notification delay in seconds (helps ensure all notifications appear in Unraid)
+NOTIFICATION_DELAY=2
 
 # ================================
 # UTILITY FUNCTIONS
@@ -32,7 +41,12 @@ notify() {
     local subject="$1"
     local description="$2"
     local notify_cmd="/usr/local/emhttp/plugins/dynamix/scripts/notify"
-    [[ -x "$notify_cmd" ]] && "$notify_cmd" -s "$subject" -d "$description"
+
+    if [[ -x "$notify_cmd" ]]; then
+        "$notify_cmd" -s "$subject" -d "$description"
+        # Add delay after each notification to prevent dropping
+        sleep "$NOTIFICATION_DELAY"
+    fi
 }
 
 check_command() {
@@ -41,6 +55,195 @@ check_command() {
 
 set_ownership() {
     chown -R nobody:users "$1" 2>/dev/null || log "⚠ Warning: Could not set ownership for $1"
+}
+
+# ================================
+# CONFIG FORMAT DETECTION
+# ================================
+detect_config_format() {
+    # Check if array-based config is used
+    if [[ -v HOSTS[@] ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
+        echo "array"
+    else
+        echo "legacy"
+    fi
+}
+
+get_instance_count() {
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        echo "${#HOSTS[@]}"
+    else
+        # Legacy format: count based on ENABLE_QBIT_2
+        if [[ "${ENABLE_QBIT_2:-false}" == true ]]; then
+            echo "2"
+        else
+            echo "1"
+        fi
+    fi
+}
+
+get_instance_details() {
+    local index="$1"
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        # Array format: set global variables
+        INSTANCE_NAME="${NAMES[$index]:-qBit-Instance-$((index + 1))}"
+        INSTANCE_HOST="${HOSTS[$index]}"
+        INSTANCE_USER="${USERS[$index]}"
+        INSTANCE_PASSWORD="${PASSWORDS[$index]}"
+    else
+        # Legacy format: map index to old variables
+        if [[ $index -eq 0 ]]; then
+            INSTANCE_NAME="${QBIT_NAME_1}"
+            INSTANCE_HOST="${QBIT_HOST_1}"
+            INSTANCE_USER="${QBIT_USER_1}"
+            INSTANCE_PASSWORD="${QBIT_PASS_1}"
+        elif [[ $index -eq 1 ]]; then
+            INSTANCE_NAME="${QBIT_NAME_2}"
+            INSTANCE_HOST="${QBIT_HOST_2}"
+            INSTANCE_USER="${QBIT_USER_2}"
+            INSTANCE_PASSWORD="${QBIT_PASS_2}"
+        else
+            error "Invalid instance index: $index"
+        fi
+    fi
+}
+
+# ================================
+# VERSION CHECK FUNCTION
+# ================================
+check_script_version() {
+    log "Checking for script updates..."
+
+    # Check if version check is enabled
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
+        log "Version check disabled"
+        return 0
+    fi
+
+    # Check for curl or wget
+    local fetch_cmd
+    if command -v curl &> /dev/null; then
+        fetch_cmd="curl -s"
+    elif command -v wget &> /dev/null; then
+        fetch_cmd="wget -qO-"
+    else
+        log "⚠ Cannot check version: curl or wget not found (continuing anyway)"
+        return 0
+    fi
+
+    # Fetch the latest version from the raw script URL
+    local remote_content
+    remote_content=$($fetch_cmd "$SCRIPT_RAW_URL" 2>/dev/null) || true
+
+    if [[ -z "$remote_content" ]]; then
+        log "⚠ Could not fetch latest version from GitHub (continuing anyway)"
+        return 0
+    fi
+
+    # Extract version from the remote script
+    local latest_version
+    latest_version=$(echo "$remote_content" | grep -m1 "^readonly SCRIPT_VERSION=" | sed 's/readonly SCRIPT_VERSION="\(.*\)"/\1/' 2>/dev/null) || true
+
+    if [[ -z "$latest_version" ]]; then
+        log "⚠ Could not parse version from remote script (continuing anyway)"
+        return 0
+    fi
+
+    log "Current version: $SCRIPT_VERSION"
+    log "Latest version: $latest_version"
+
+    # Compare versions
+    if [[ "$SCRIPT_VERSION" != "$latest_version" ]]; then
+        # Simple version comparison (works for semantic versioning)
+        # Sort both versions and check if SCRIPT_VERSION comes first (is older)
+        local oldest_version
+        oldest_version=$(printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1)
+
+        if [[ "$oldest_version" == "$SCRIPT_VERSION" ]]; then
+            # SCRIPT_VERSION is older, so there's a newer version available
+            log "⚠ New version available: $latest_version"
+            notify "mover-tuning-start.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
+        else
+            # latest_version is older, local version is newer
+            log "✓ Local version ($SCRIPT_VERSION) is newer than remote ($latest_version)"
+        fi
+    else
+        log "✓ Script is up to date"
+    fi
+
+    return 0
+}
+
+check_config_version() {
+    log "Checking for config file updates..."
+
+    # Check if version check is enabled
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
+        log "Config version check disabled"
+        return 0
+    fi
+
+    # Check for curl or wget
+    local fetch_cmd
+    if command -v curl &> /dev/null; then
+        fetch_cmd="curl -s"
+    elif command -v wget &> /dev/null; then
+        fetch_cmd="wget -qO-"
+    else
+        log "⚠ Cannot check config version: curl or wget not found (continuing anyway)"
+        return 0
+    fi
+
+    # Fetch the latest config from GitHub
+    local remote_config
+    remote_config=$($fetch_cmd "$CONFIG_RAW_URL" 2>/dev/null) || true
+
+    if [[ -z "$remote_config" ]]; then
+        log "⚠ Could not fetch latest config from GitHub (continuing anyway)"
+        return 0
+    fi
+
+    # Extract version from the remote config
+    local remote_config_version
+    remote_config_version=$(echo "$remote_config" | grep -m1 "^readonly CONFIG_VERSION=" | sed 's/readonly CONFIG_VERSION="\([^"]*\)".*/\1/' 2>/dev/null) || true
+
+    if [[ -z "$remote_config_version" ]]; then
+        log "⚠ Could not parse version from remote config (continuing anyway)"
+        return 0
+    fi
+
+    # Get current config version (handle case where it might not be set)
+    local current_config_version="${CONFIG_VERSION:-unknown}"
+
+    log "Current config version: $current_config_version"
+    log "Latest config version: $remote_config_version"
+
+    # Compare versions
+    if [[ "$current_config_version" != "$remote_config_version" ]]; then
+        # Simple version comparison (works for semantic versioning)
+        # Sort both versions and check if current_config_version comes first (is older)
+        local oldest_version
+        oldest_version=$(printf '%s\n' "$remote_config_version" "$current_config_version" | sort -V | head -n1)
+
+        if [[ "$oldest_version" == "$current_config_version" ]]; then
+            # current_config_version is older, so there's a newer version available
+            log "⚠ New config version available: $remote_config_version"
+            notify "mover-tuning.cfg Update" "Config version <b>$remote_config_version</b> available<br>Current version: <b>$current_config_version</b><br><br>📖 Visit the TRaSH-Guides for the latest version"
+        else
+            # remote_config_version is older, local version is newer
+            log "✓ Local config version ($current_config_version) is newer than remote ($remote_config_version)"
+        fi
+    else
+        log "✓ Config is up to date"
+    fi
+
+    return 0
 }
 
 # ================================
@@ -142,6 +345,45 @@ validate_config() {
     [[ "$DAYS_FROM" -ge 2 ]] || error "DAYS_FROM must be at least 2"
     [[ "$DAYS_TO" -ge "$DAYS_FROM" ]] || error "DAYS_TO must be >= DAYS_FROM"
     [[ -d "$CACHE_MOUNT" ]] || error "Cache mount does not exist: $CACHE_MOUNT"
+
+    # Validate instance configuration
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        # Validate array-based config
+        if [[ ${#HOSTS[@]} -eq 0 ]]; then
+            notify "Configuration Error" "HOSTS array is empty"
+            error "HOSTS array is empty"
+        fi
+
+        if [[ ${#USERS[@]} -ne ${#HOSTS[@]} ]]; then
+            notify "Configuration Error" "USERS array length (${#USERS[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+            error "USERS array length doesn't match HOSTS"
+        fi
+
+        if [[ ${#PASSWORDS[@]} -ne ${#HOSTS[@]} ]]; then
+            notify "Configuration Error" "PASSWORDS array length (${#PASSWORDS[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+            error "PASSWORDS array length doesn't match HOSTS"
+        fi
+
+        # NAMES array is optional, but if present should match
+        if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
+            if [[ ${#NAMES[@]} -ne ${#HOSTS[@]} ]]; then
+                notify "Configuration Error" "NAMES array length (${#NAMES[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+                error "NAMES array length doesn't match HOSTS"
+            fi
+        fi
+
+        log "✓ Using array-based configuration (${#HOSTS[@]} instance(s))"
+    else
+        # Validate legacy config
+        [[ -n "${QBIT_HOST_1:-}" ]] || error "QBIT_HOST_1 is not set"
+        [[ -n "${QBIT_USER_1:-}" ]] || error "QBIT_USER_1 is not set"
+        [[ -n "${QBIT_PASS_1:-}" ]] || error "QBIT_PASS_1 is not set"
+
+        log "✓ Using legacy configuration"
+    fi
 }
 
 # ================================
@@ -195,6 +437,12 @@ main() {
     log "Date range: $DAYS_FROM-$DAYS_TO days (from $date_from)"
     log "========================================"
 
+    # Check for script updates
+    check_script_version
+
+    # Check for config updates
+    check_config_version
+
     # Run auto installer if enabled
     [[ "$ENABLE_AUTO_INSTALLER" == true ]] && run_auto_installer
 
@@ -214,12 +462,15 @@ main() {
         fi
     fi
 
-    # Process instances
-    process_qbit_instance "$QBIT_NAME_1" "$QBIT_HOST_1" "$QBIT_USER_1" "$QBIT_PASS_1" || ((failed_instances++))
+    # Process all instances
+    local instance_count
+    instance_count=$(get_instance_count)
 
-    if [[ "$ENABLE_QBIT_2" == true ]]; then
-        process_qbit_instance "$QBIT_NAME_2" "$QBIT_HOST_2" "$QBIT_USER_2" "$QBIT_PASS_2" || ((failed_instances++))
-    fi
+    for ((i=0; i<instance_count; i++)); do
+        get_instance_details "$i"
+
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" || ((failed_instances++))
+    done
 
     # Summary
     log "========================================"

@@ -1,0 +1,23 @@
+{
+  "trash_id": "44e7c4de10ae50265753082e5dc76047",
+  "trash_scores": {
+    "default": 7,
+    "anime-sonarr": 3,
+    "french-anime-multi": 3,
+    "french-anime-vostfr": 3
+  },
+  "trash_regex": "https://regex101.com/r/7YIkWD/1",
+  "name": "Repack3",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Repack/Proper 3 or REAL.REAL.PROPER/REPACK",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b((repack|proper)3)\\b|\\b(REAL\\.REAL\\.(PROPER|REPACK))\\b"
+      }
+    }
+  ]
+}

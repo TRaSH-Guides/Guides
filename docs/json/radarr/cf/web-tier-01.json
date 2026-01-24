@@ -3,6 +3,9 @@
   "trash_scores": {
     "default": 1700,
     "french-multi-vf": 0
+    "anime-radarr": 350,
+    "french-multi-vf": 0,
+    "sqp-4-ma-hybrid": 50
   },
   "name": "WEB Tier 01",
   "includeCustomFormatWhenRenaming": false,
@@ -59,6 +62,15 @@
       "required": false,
       "fields": {
         "value": "^(BLUTONiUM)$"
+      }
+    },
+    {
+      "name": "BYNDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BYNDR)$"
       }
     },
     {
@@ -158,6 +170,15 @@
       "required": false,
       "fields": {
         "value": "^(NTG)$"
+      }
+    },
+    {
+      "name": "RAWR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RAWR)$"
       }
     },
     {

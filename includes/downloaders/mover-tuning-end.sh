@@ -3,14 +3,22 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Updated: 20251102
+# Version: 1.1.0
+# Updated: 20251201
 # =====================================
+
+# Script version and update check URLs
+readonly SCRIPT_VERSION="1.1.0"
+readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Get the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Source the config from the same directory
 source "$SCRIPT_DIR/mover-tuning.cfg"
+
+# Notification delay in seconds (helps ensure all notifications appear in Unraid)
+NOTIFICATION_DELAY=2
 
 # ================================
 # UTILITY FUNCTIONS
@@ -31,7 +39,132 @@ notify() {
 
     if [[ -x "$notify_cmd" ]]; then
         "$notify_cmd" -s "$subject" -d "$description"
+        # Add delay after each notification to prevent dropping
+        sleep "$NOTIFICATION_DELAY"
     fi
+}
+
+# ================================
+# CONFIG FORMAT DETECTION
+# ================================
+detect_config_format() {
+    # Check if array-based config is used
+    if [[ -v HOSTS[@] ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
+        echo "array"
+    else
+        echo "legacy"
+    fi
+}
+
+get_instance_count() {
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        echo "${#HOSTS[@]}"
+    else
+        # Legacy format: count based on ENABLE_QBIT_2
+        if [[ "${ENABLE_QBIT_2:-false}" == true ]]; then
+            echo "2"
+        else
+            echo "1"
+        fi
+    fi
+}
+
+get_instance_details() {
+    local index="$1"
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        # Array format: set global variables
+        INSTANCE_NAME="${NAMES[$index]:-qBit-Instance-$((index + 1))}"
+        INSTANCE_HOST="${HOSTS[$index]}"
+        INSTANCE_USER="${USERS[$index]}"
+        INSTANCE_PASSWORD="${PASSWORDS[$index]}"
+    else
+        # Legacy format: map index to old variables
+        if [[ $index -eq 0 ]]; then
+            INSTANCE_NAME="${QBIT_NAME_1}"
+            INSTANCE_HOST="${QBIT_HOST_1}"
+            INSTANCE_USER="${QBIT_USER_1}"
+            INSTANCE_PASSWORD="${QBIT_PASS_1}"
+        elif [[ $index -eq 1 ]]; then
+            INSTANCE_NAME="${QBIT_NAME_2}"
+            INSTANCE_HOST="${QBIT_HOST_2}"
+            INSTANCE_USER="${QBIT_USER_2}"
+            INSTANCE_PASSWORD="${QBIT_PASS_2}"
+        else
+            error "Invalid instance index: $index"
+        fi
+    fi
+}
+
+# ================================
+# VERSION CHECK FUNCTION
+# ================================
+check_script_version() {
+    log "Checking for script updates..."
+
+    # Check if version check is enabled
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
+        log "Version check disabled"
+        return 0
+    fi
+
+    # Check for curl or wget
+    local fetch_cmd
+    if command -v curl &> /dev/null; then
+        fetch_cmd="curl -s"
+    elif command -v wget &> /dev/null; then
+        fetch_cmd="wget -qO-"
+    else
+        log "⚠ Cannot check version: curl or wget not found (continuing anyway)"
+        return 0
+    fi
+
+    # Fetch the latest version from the raw script URL
+    local remote_content
+    remote_content=$($fetch_cmd "$SCRIPT_RAW_URL" 2>/dev/null) || true
+
+    if [[ -z "$remote_content" ]]; then
+        log "⚠ Could not fetch latest version from GitHub (continuing anyway)"
+        return 0
+    fi
+
+    # Extract version from the remote script
+    local latest_version
+    latest_version=$(echo "$remote_content" | grep -m1 "^readonly SCRIPT_VERSION=" | sed 's/readonly SCRIPT_VERSION="\(.*\)"/\1/' 2>/dev/null) || true
+
+    if [[ -z "$latest_version" ]]; then
+        log "⚠ Could not parse version from remote script (continuing anyway)"
+        return 0
+    fi
+
+    log "Current version: $SCRIPT_VERSION"
+    log "Latest version: $latest_version"
+
+    # Compare versions
+    if [[ "$SCRIPT_VERSION" != "$latest_version" ]]; then
+        # Simple version comparison (works for semantic versioning)
+        # Sort both versions and check if SCRIPT_VERSION comes first (is older)
+        local oldest_version
+        oldest_version=$(printf '%s\n' "$latest_version" "$SCRIPT_VERSION" | sort -V | head -n1)
+
+        if [[ "$oldest_version" == "$SCRIPT_VERSION" ]]; then
+            # SCRIPT_VERSION is older, so there's a newer version available
+            log "⚠ New version available: $latest_version"
+            notify "mover-tuning-end.sh Update" "Version $latest_version available (current: $SCRIPT_VERSION)<br><br>📖 Visit the TRaSH-Guides for the latest version"
+        else
+            # latest_version is older, local version is newer
+            log "✓ Local version ($SCRIPT_VERSION) is newer than remote ($latest_version)"
+        fi
+    else
+        log "✓ Script is up to date"
+    fi
+
+    return 0
 }
 
 # ================================
@@ -49,7 +182,7 @@ install_fclones_binary() {
     # Current installed version
     local CURRENT_VERSION=""
     if [[ -x "$FCLONES_BIN" ]]; then
-        CURRENT_VERSION=$($FCLONES_BIN --version 2>/dev/null | awk '{print $2}')
+        CURRENT_VERSION=$($FCLONES_BIN --version 2>/dev/null | awk '{print $2}') || true
         log "✓ Found fclones version $CURRENT_VERSION"
     else
         log "✗ fclones not found"
@@ -62,15 +195,15 @@ install_fclones_binary() {
     elif command -v wget >/dev/null 2>&1; then
         GITHUB_API_CMD="wget -qO- https://api.github.com/repos/pkolaczk/fclones/releases/latest"
     else
-        log "✗ Neither curl nor wget is available"
-        return 1
+        log "✗ Neither curl nor wget is available (continuing anyway)"
+        return 0
     fi
 
     # Fetch latest release from GitHub
     local LATEST_VERSION
-    LATEST_VERSION=$($GITHUB_API_CMD | grep -Po '"tag_name": "\K.*?(?=")')
+    LATEST_VERSION=$($GITHUB_API_CMD 2>/dev/null | grep -Po '"tag_name": "\K.*?(?=")') || true
     if [[ -z "$LATEST_VERSION" ]]; then
-        log "⚠ Could not fetch latest release, using default version $DEFAULT_VERSION"
+        log "⚠ Could not fetch latest release, using default version $DEFAULT_VERSION (continuing anyway)"
         LATEST_VERSION="$DEFAULT_VERSION"
     else
         log "Latest fclones release: $LATEST_VERSION"
@@ -87,33 +220,36 @@ install_fclones_binary() {
         local VERSION_NO_V="${LATEST_VERSION#v}"
         local DOWNLOAD_URL="https://github.com/pkolaczk/fclones/releases/download/$LATEST_VERSION/fclones-$VERSION_NO_V-linux-glibc-x86_64.tar.gz"
 
-        wget -O "$TMP_DIR/fclones.tar.gz" "$DOWNLOAD_URL"
-        if [[ $? -ne 0 ]]; then
-            log "✗ Failed to download fclones from $DOWNLOAD_URL"
+        if ! wget -O "$TMP_DIR/fclones.tar.gz" "$DOWNLOAD_URL" 2>/dev/null; then
+            log "✗ Failed to download fclones from $DOWNLOAD_URL (continuing anyway)"
             rm -rf "$TMP_DIR"
-            return 1
+            return 0
         fi
 
-        tar -xzf "$TMP_DIR/fclones.tar.gz" -C "$TMP_DIR"
-        mkdir -p "$BOOT_DIR"
-        cp "$TMP_DIR/usr/bin/fclones" "$BOOT_DIR/fclones"
-        chmod +x "$BOOT_DIR/fclones"
+        if ! tar -xzf "$TMP_DIR/fclones.tar.gz" -C "$TMP_DIR" 2>/dev/null; then
+            log "✗ Failed to extract fclones archive (continuing anyway)"
+            rm -rf "$TMP_DIR"
+            return 0
+        fi
+
+        mkdir -p "$BOOT_DIR" || true
+        cp "$TMP_DIR/usr/bin/fclones" "$BOOT_DIR/fclones" 2>/dev/null || true
+        chmod +x "$BOOT_DIR/fclones" 2>/dev/null || true
 
         # Copy to /usr/local/bin immediately
-        cp "$BOOT_DIR/fclones" /usr/local/bin/fclones
-        chmod +x /usr/local/bin/fclones
+        cp "$BOOT_DIR/fclones" /usr/local/bin/fclones 2>/dev/null || true
+        chmod +x /usr/local/bin/fclones 2>/dev/null || true
 
         # Add boot-time copy and PATH setup if not already in /boot/config/go
-        if ! grep -q "fclones boot-time setup" "$GO_FILE"; then
-            if [ ! -w "$GO_FILE" ]; then
-                log "✗ Cannot write to $GO_FILE. Please check permissions."
-                rm -rf "$TMP_DIR"
-                return 1
+        if ! grep -q "fclones boot-time setup" "$GO_FILE" 2>/dev/null; then
+            if [ -w "$GO_FILE" ]; then
+                echo "" >> "$GO_FILE"
+                echo "# fclones boot-time setup" >> "$GO_FILE"
+                echo "export PATH=/usr/local/bin:\$PATH" >> "$GO_FILE"
+                echo "cp $BOOT_DIR/fclones /usr/local/bin/fclones" >> "$GO_FILE"
+            else
+                log "⚠ Cannot write to $GO_FILE. Please check permissions. (continuing anyway)"
             fi
-            echo "" >> "$GO_FILE"
-            echo "# fclones boot-time setup" >> "$GO_FILE"
-            echo "export PATH=/usr/local/bin:\$PATH" >> "$GO_FILE"
-            echo "cp $BOOT_DIR/fclones /usr/local/bin/fclones" >> "$GO_FILE"
         fi
 
         rm -rf "$TMP_DIR"
@@ -136,15 +272,15 @@ install_fclones_script() {
 
     # Download script
     if command -v curl &> /dev/null; then
-        curl -fsSL "$raw_script_url" -o "$script_path" || {
+        if ! curl -fsSL "$raw_script_url" -o "$script_path" 2>/dev/null; then
             log "✗ Failed to download fclones.sh script"
             return 1
-        }
+        fi
     elif command -v wget &> /dev/null; then
-        wget -q "$raw_script_url" -O "$script_path" || {
+        if ! wget -q "$raw_script_url" -O "$script_path" 2>/dev/null; then
             log "✗ Failed to download fclones.sh script"
             return 1
-        }
+        fi
     else
         log "✗ Neither curl nor wget is available"
         return 1
@@ -175,7 +311,7 @@ check_and_install_fclones() {
     else
         # Check if update is needed
         if ! install_fclones_binary; then
-            log "⚠ Failed to check/update fclones binary"
+            log "⚠ Failed to check/update fclones binary (continuing anyway)"
         fi
     fi
 
@@ -226,6 +362,31 @@ validate_config() {
     [[ -d "$CACHE_MOUNT" ]] || error "Cache mount not found: $CACHE_MOUNT"
     [[ -f "${QBIT_MOVER_PATH}mover.py" ]] || error "mover.py not found: ${QBIT_MOVER_PATH}mover.py"
 
+    # Validate instance configuration
+    local format
+    format=$(detect_config_format)
+
+    if [[ "$format" == "array" ]]; then
+        # Validate array-based config
+        [[ ${#HOSTS[@]} -gt 0 ]] || error "HOSTS array is empty"
+        [[ ${#USERS[@]} -eq ${#HOSTS[@]} ]] || error "USERS array length doesn't match HOSTS"
+        [[ ${#PASSWORDS[@]} -eq ${#HOSTS[@]} ]] || error "PASSWORDS array length doesn't match HOSTS"
+
+        # NAMES array is optional, but if present should match
+        if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
+            [[ ${#NAMES[@]} -eq ${#HOSTS[@]} ]] || error "NAMES array length doesn't match HOSTS"
+        fi
+
+        log "✓ Using array-based configuration (${#HOSTS[@]} instance(s))"
+    else
+        # Validate legacy config
+        [[ -n "${QBIT_HOST_1:-}" ]] || error "QBIT_HOST_1 is not set"
+        [[ -n "${QBIT_USER_1:-}" ]] || error "QBIT_USER_1 is not set"
+        [[ -n "${QBIT_PASS_1:-}" ]] || error "QBIT_PASS_1 is not set"
+
+        log "✓ Using legacy configuration"
+    fi
+
     # Validate duplicate finder if enabled
     if [[ "$ENABLE_DUPLICATE_FINDER" == true ]]; then
         if [[ "$ENABLE_AUTO_INSTALLER" == true ]]; then
@@ -271,7 +432,6 @@ process_qbit_instance() {
         --host "$host" \
         --user "$user" \
         --password "$password" \
-        --cache-mount "$CACHE_MOUNT" \
         --days_from "$DAYS_FROM" \
         --days_to "$DAYS_TO"; then
         log "✓ Successfully resumed torrents for $name"
@@ -296,21 +456,21 @@ main() {
     log "Age range: $DAYS_FROM-$DAYS_TO days (from $date_str)"
     log "========================================"
 
+    # Check for script updates
+    check_script_version
+
     # Validate configuration
     validate_config || exit 1
 
-    # Process primary instance
-    process_qbit_instance "$QBIT_NAME_1" "$QBIT_HOST_1" "$QBIT_USER_1" "$QBIT_PASS_1" || \
-        ((failed_instances++))
+    # Process all instances
+    local instance_count
+    instance_count=$(get_instance_count)
 
-    # Process secondary instance if enabled
-    if [[ "$ENABLE_QBIT_2" == true ]]; then
-        log "Processing secondary instance..."
-        process_qbit_instance "$QBIT_NAME_2" "$QBIT_HOST_2" "$QBIT_USER_2" "$QBIT_PASS_2" || \
-            ((failed_instances++))
-    else
-        log "Secondary instance disabled"
-    fi
+    for ((i=0; i<instance_count; i++)); do
+        get_instance_details "$i"
+
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" || ((failed_instances++))
+    done
 
     # Run duplicate finder if enabled
     if [[ "$ENABLE_DUPLICATE_FINDER" == true ]]; then

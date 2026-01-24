@@ -287,15 +287,6 @@
       }
     },
     {
-      "name": "RAWR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RAWR)$"
-      }
-    },
-    {
       "name": "ROCCaT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

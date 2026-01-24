@@ -3,6 +3,9 @@
   "trash_scores": {
     "default": 1600,
     "french-multi-vf": 0
+    "anime-radarr": 150,
+    "french-multi-vf": 0,
+    "sqp-4-ma-hybrid": 30
   },
   "name": "WEB Tier 03",
   "includeCustomFormatWhenRenaming": false,
@@ -41,6 +44,15 @@
       "required": false,
       "fields": {
         "value": "^(GNOMiSSiON)$"
+      }
+    },
+    {
+      "name": "HHWEB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HHWEB)$"
       }
     },
     {

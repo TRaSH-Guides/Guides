@@ -118,6 +118,15 @@
       }
     },
     {
+      "name": "MGE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MGE\\b.*)$"
+      }
+    },
+    {
       "name": "N3G4N",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -190,12 +199,30 @@
       }
     },
     {
+      "name": "TM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TM\\b)$"
+      }
+    },
+    {
       "name": "tokar86a",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(tokar86a)$"
+      }
+    },
+    {
+      "name": "TURG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TURG)$"
       }
     },
     {

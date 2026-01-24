@@ -3,6 +3,9 @@
   "trash_scores": {
     "default": 1650,
     "french-multi-vf": 0
+    "anime-radarr": 250,
+    "french-multi-vf": 0,
+    "sqp-4-ma-hybrid": 40
   },
   "name": "WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,
@@ -23,15 +26,6 @@
       "required": false,
       "fields": {
         "value": 8
-      }
-    },
-    {
-      "name": "BYNDR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BYNDR)$"
       }
     },
     {
@@ -95,15 +89,6 @@
       "required": false,
       "fields": {
         "value": "^(playWEB)$"
-      }
-    },
-    {
-      "name": "RAWR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RAWR)$"
       }
     },
     {

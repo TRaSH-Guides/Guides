@@ -4,38 +4,31 @@
     "default": 6,
     "anime-radarr": 2,
     "french-anime-multi": 2,
-    "french-anime-vostfr": 2
+    "french-anime-vostfr": 2,
+    "sqp-4-ma-hybrid": 2
   },
   "trash_regex": "https://regex101.com/r/kQ4oeP/1",
   "name": "Repack2",
-  "includeCustomFormatWhenRenaming": false,
+  "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "Repack2",
+      "name": "Repack/Proper 2 or REAL.PROPER/REPACK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
-        "value": "\\b(Repack2)\\b"
+        "value": "\\b((repack|proper)2)\\b|\\b(REAL\\.(PROPER|REPACK))\\b"
       }
     },
     {
-      "name": "Proper2",
+      "name": "Not Repack/Proper 3",
       "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
+      "negate": true,
+      "required": true,
       "fields": {
-        "value": "\\b(Proper2)\\b"
-      }
-    },
-    {
-      "name": "RealProperRepack",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(REAL\\.(PROPER|REPACK))\\b"
+        "value": "\\b((repack|proper)3)\\b|\\bREAL\\.(REAL\\.)(PROPER|REPACK)\\b"
       }
     }
   ]
 }
+

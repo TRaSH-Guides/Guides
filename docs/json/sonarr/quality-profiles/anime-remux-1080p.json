@@ -2,6 +2,7 @@
   "trash_id": "20e0fc959f1f1704bed501f23bdae76f",
   "name": "[Anime] Remux-1080p",
   "trash_description": "Anime Quality Profile that covers:<br>- SDTV, DVD<br>- HDTV 720p, 1080p<br>- WEBDL: 480p, 720, 1080p<br>- Bluray 480p, 576p, 720p, 1080p<br>- Remux 1080p",
+  "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-anime/#quality-profile",
   "group": 81,
   "trash_score_set": "anime-sonarr",
   "upgradeAllowed": true,

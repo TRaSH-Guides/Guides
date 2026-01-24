@@ -79,6 +79,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [Netflix](#nf)             |                           |                          |                          |
 | [Paramount+](#pmtp)        |                           |                          |                          |
 | [Peacock TV](#pcok)        |                           |                          |                          |
+| [Google Play](#play)       |                           |                          |                          |
 | [ROKU](#roku)              |                           |                          |                          |
 | [SHOWTIME](#sho)           |                           |                          |                          |
 | [Stan](#stan)              |                           |                          |                          |
@@ -112,8 +113,8 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [No-RlsGroup](#no-rlsgroup)         |                                                                    |
 | [Obfuscated](#obfuscated)           |                                                                    |
 | [Repack/Proper](#repackproper)      |                                                                    |
-| [Repack v2](#repack-v2)             |                                                                    |
-| [Repack v3](#repack-v3)             |                                                                    |
+| [Repack2](#repack2)                 |                                                                    |
+| [Repack3](#repack3)                 |                                                                    |
 | [Retags](#retags)                   |                                                                    |
 | [Scene](#scene)                     |                                                                    |
 | [Season Packs](#season-pack)        |                                                                    |
@@ -860,24 +861,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### Repack v2
+### Repack2
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-v2.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack2.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### Repack v3
+### Repack3
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-v3.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack3.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1562,6 +1563,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcok.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### PLAY
+
+<sub>Google Play</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/play.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/play.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
