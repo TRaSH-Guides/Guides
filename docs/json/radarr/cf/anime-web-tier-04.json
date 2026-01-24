@@ -106,6 +106,15 @@
       }
     },
     {
+      "name": "SubsPlus+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SubsPlus\\+?)\\b"
+      }
+    },
+    {
       "name": "URANIME",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
