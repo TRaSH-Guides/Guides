@@ -25,84 +25,12 @@
       }
     },
     {
-      "name": "BlueLobster",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BlueLobster)\\b"
-      }
-    },
-    {
       "name": "Erai-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(Erai-raws)\\b"
-      }
-    },
-    {
-      "name": "GST",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(GST)\\b"
-      }
-    },
-    {
-      "name": "HorribleRips",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(HorribleRips)\\b"
-      }
-    },
-    {
-      "name": "HorribleSubs",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(HorribleSubs)\\b"
-      }
-    },
-    {
-      "name": "KAN3D2M",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(KAN3D2M)\\b"
-      }
-    },
-    {
-      "name": "KiyoshiStar",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(KS|KiyoshiStar)\\b"
-      }
-    },
-    {
-      "name": "Lia",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Lia\\]|-Lia\\b"
-      }
-    },
-    {
-      "name": "NanDesuKa",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(NanDesuKa)\\b"
       }
     },
     {
@@ -115,12 +43,12 @@
       }
     },
     {
-      "name": "URANIME",
+      "name": "ToonsHub",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(URANIME)\\b"
+        "value": "\\b(ToonsHub)\\b"
       }
     },
     {
@@ -130,15 +58,6 @@
       "required": false,
       "fields": {
         "value": "\\b(VARYG)\\b"
-      }
-    },
-    {
-      "name": "ZigZag",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[ZigZag\\]|-ZigZab\b"
       }
     }
   ]
