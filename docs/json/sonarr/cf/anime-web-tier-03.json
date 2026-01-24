@@ -61,15 +61,6 @@
       }
     },
     {
-      "name": "SubsPlus+",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(SubsPlus\\+?)\\b"
-      }
-    },
-    {
       "name": "ZR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
