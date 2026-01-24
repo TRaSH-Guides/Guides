@@ -6,8 +6,6 @@ _aka How to set up Custom Formats (Anime)_<br><br>
 
     This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
 
-It's recommended to run two Radarr instances. One for Anime Movies and one for Normal Movies, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
-
 The aim of this guide is to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="\_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
 The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"}
 
@@ -136,7 +134,7 @@ After this has been done your profile should look as seen below. This is an exam
 
 ??? question "Should I run a single instance or dual instances?"
 
-    It's recommended to run two Radarr instances (one for Anime and one for regular movies) as mentioned at the top of this guide. This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign movies accordingly.
+    It's recommended to run two Radarr instances (one for Anime and one for regular movies). This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign movies accordingly.
 
 ---
 
