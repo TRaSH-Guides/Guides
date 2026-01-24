@@ -25,12 +25,30 @@
       }
     },
     {
-      "name": "SubsPlease",
+      "name": "AnoZu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SubsPlease)\\b"
+        "value": "\\b(AnoZu)\\b"
+      }
+    },
+    {
+      "name": "Dooky",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Dooky)\\b"
+      }
+    },
+    {
+      "name": "Kitsune",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Kitsune\\]|-Kitsune\\b"
       }
     },
     {
