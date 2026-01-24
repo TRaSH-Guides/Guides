@@ -34,15 +34,6 @@
       }
     },
     {
-      "name": "BluDragon",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BluDragon)\\b"
-      }
-    },
-    {
       "name": "Bunny-Apocalypse",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
