@@ -110,6 +110,36 @@ After this has been done your profile should look as seen below. This is an exam
 
 ![!cfa-complete](images/cfa-complete.png)
 
+---
+
+## FAQ
+
+??? question "Is this guide meant for backfilling my library?"
+
+    No. This guide is designed to grab the best available releases going forward, not for backfilling an existing library. Backfilling would require manual intervention and searching to find older releases.
+
+??? question "Why are there no English subtitles available for some anime?"
+
+    Not all anime releases include English subtitles. If you want to filter for only releases with English subtitles, or if you prefer raw (no subs) releases, you can configure this in Prowlarr.
+
+    Go to `Indexers` => Select your anime indexer => and look for the `Anime English-Translated` category option.
+
+    ![!indexer-anime-english-translated](/Prowlarr/images/indexer-anime-english-translated.png)
+
+??? question "How do I configure this for no Remuxes?"
+
+    If you don't want Remuxes, you can simply remove `Bluray-1080p Remux` from your quality profile or uncheck it in the qualities list. The guide will then prefer the highest-scoring encodes instead.
+
+??? question "How do I set up a WEB-only profile?"
+
+    If you only want WEB releases (no Bluray encodes or Remuxes), create a quality profile that only includes `WEBDL-1080p`, `WEBRip-1080p`, `WEBDL-720p`, and `WEBRip-720p`. The Anime Web Tier custom formats will still score these releases appropriately.
+
+??? question "Should I run a single instance or dual instances?"
+
+    It's recommended to run two Radarr instances (one for Anime and one for regular movies) as mentioned at the top of this guide. This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign movies accordingly.
+
+---
+
 ### Acknowledgements
 
 Most of my information and knowledge came from:
