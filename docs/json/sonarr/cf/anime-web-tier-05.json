@@ -34,39 +34,75 @@
       }
     },
     {
-      "name": "9volt",
+      "name": "BlueLobster",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(9volt)\\b"
+        "value": "\\b(BlueLobster)\\b"
       }
     },
     {
-      "name": "GJM",
+      "name": "GST",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GJM)\\b"
+        "value": "\\b(GST)\\b"
       }
     },
     {
-      "name": "Kaleido",
+      "name": "HorribleRips",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Kaleido)\\b"
+        "value": "\\b(HorribleRips)\\b"
       }
     },
     {
-      "name": "Kantai",
+      "name": "HorribleSubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Kantai\\]|-Kantai\\b"
+        "value": "\\b(HorribleSubs)\\b"
+      }
+    },
+    {
+      "name": "KAN3D2M",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KAN3D2M)\\b"
+      }
+    },
+    {
+      "name": "KiyoshiStar",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KS|KiyoshiStar)\\b"
+      }
+    },
+    {
+      "name": "Lia",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Lia\\]|-Lia\\b"
+      }
+    },
+    {
+      "name": "NanDesuKa",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NanDesuKa)\\b"
       }
     },
     {
@@ -85,6 +121,33 @@
       "required": false,
       "fields": {
         "value": "\\b(Some-Stuffs)\\b"
+      }
+    },
+    {
+      "name": "SubsPlease",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SubsPlease)\\b"
+      }
+    },
+    {
+      "name": "URANIME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(URANIME)\\b"
+      }
+    },
+    {
+      "name": "ZigZag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[ZigZag\\]|-ZigZab\b"
       }
     }
   ]
