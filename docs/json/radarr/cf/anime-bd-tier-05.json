@@ -25,15 +25,6 @@
       }
     },
     {
-      "name": "Beatrice",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Beatrice\\]|-Beatrice(?!-raws)\\b"
-      }
-    },
-    {
       "name": "Animorphs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -67,6 +58,24 @@
       "required": false,
       "fields": {
         "value": "\\b(Baws|McBalls)\\b"
+      }
+    },
+    {
+      "name": "Beatrice",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Beatrice\\]|-Beatrice(?!-raws)\\b"
+      }
+    },
+    {
+      "name": "B00BA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(B00BA)\\b"
       }
     },
     {
@@ -238,6 +247,24 @@
       "required": false,
       "fields": {
         "value": "\\[Thighs\\]|-Thighs\\b"
+      }
+    },
+    {
+      "name": "TTGA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TTGA)\\b"
+      }
+    },
+    {
+      "name": "UltraRemux",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(UltraRemux)\\b"
       }
     },
     {

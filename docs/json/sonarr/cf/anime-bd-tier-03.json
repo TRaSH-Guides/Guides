@@ -61,12 +61,12 @@
       }
     },
     {
-      "name": "ChucksMix",
+      "name": "ChucksMux",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ChucksMix)\\b"
+        "value": "\\b(ChucksMux)\\b"
       }
     },
     {

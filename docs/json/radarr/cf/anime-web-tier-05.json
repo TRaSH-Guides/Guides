@@ -97,6 +97,15 @@
       }
     },
     {
+      "name": "PlayWeb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PlayWeb)\\b"
+      }
+    },
+    {
       "name": "SobsPlease",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

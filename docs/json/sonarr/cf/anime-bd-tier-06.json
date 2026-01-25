@@ -160,7 +160,7 @@
       }
     },
     {
-      "name": "YURASAKA",
+      "name": "YURASUKA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
