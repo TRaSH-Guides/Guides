@@ -43,15 +43,6 @@
       }
     },
     {
-      "name": "SubsPlus+",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(SubsPlus\\+?)\\b"
-      }
-    },
-    {
       "name": "ToonsHub",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
