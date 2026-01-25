@@ -1,22 +1,13 @@
 {
-  "trash_id": "545a76b14ddc349b8b185a6344e28b04",
+  "trash_id": "22d953bbe897857b517928f3652b8dd3",
   "trash_scores": {
-    "default": 1000
+    "default": 200
   },
-  "name": "Anime BD Tier 05 (Remuxes)",
+  "name": "Anime Web Tier 05",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Bluray",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 6
-      }
-    },
-    {
-      "name": "Bluray Remux",
+      "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
@@ -25,93 +16,129 @@
       }
     },
     {
-      "name": "DVD",
+      "name": "WEBRIP",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 5
+        "value": 8
       }
     },
     {
-      "name": "BluDragon",
+      "name": "BlueLobster",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BluDragon)\\b"
+        "value": "\\b(BlueLobster)\\b"
       }
     },
     {
-      "name": "D4C",
+      "name": "GST",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(D4C)\\b"
+        "value": "\\b(GST)\\b"
       }
     },
     {
-      "name": "E.N.D",
+      "name": "HorribleRips",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(E[.-]N[.-]D)\\b"
+        "value": "\\b(HorribleRips)\\b"
       }
     },
     {
-      "name": "PMR",
+      "name": "HorribleSubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)"
+        "value": "\\b(HorribleSubs)\\b"
       }
     },
     {
-      "name": "Raizel",
+      "name": "KAN3D2M",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Raizel)\\b"
+        "value": "\\b(KAN3D2M)\\b"
       }
     },
     {
-      "name": "REVO",
+      "name": "KiyoshiStar",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(REVO)\\b"
+        "value": "\\b(KS|KiyoshiStar)\\b"
       }
     },
     {
-      "name": "SRLS",
+      "name": "Lia",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SRLS)\\b"
+        "value": "\\[Lia\\]|-Lia\\b"
       }
     },
     {
-      "name": "TTGA",
+      "name": "NanDesuKa",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TTGA)\\b"
+        "value": "\\b(NanDesuKa)\\b"
       }
     },
     {
-      "name": "VULCAN",
+      "name": "SobsPlease",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(VULCAN)\\b"
+        "value": "\\b(SobsPlease)\\b"
+      }
+    },
+    {
+      "name": "Some-Stuffs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Some-Stuffs)\\b"
+      }
+    },
+    {
+      "name": "SubsPlease",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SubsPlease)\\b"
+      }
+    },
+    {
+      "name": "URANIME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(URANIME)\\b"
+      }
+    },
+    {
+      "name": "ZigZag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[ZigZag\\]|-ZigZab\b"
       }
     }
   ]

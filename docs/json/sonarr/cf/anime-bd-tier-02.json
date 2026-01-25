@@ -1,13 +1,22 @@
 {
-  "trash_id": "8167cffba4febfb9a6988ef24f274e7e",
+  "trash_id": "ed7f1e315e000aef424a58517fa48727",
   "trash_scores": {
-    "default": 600
+    "default": 1300
   },
-  "name": "Anime Web Tier 01 (Muxers)",
+  "name": "Anime BD Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 6
+      }
+    },
+    {
+      "name": "Bluray Remux",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
@@ -16,12 +25,21 @@
       }
     },
     {
-      "name": "WEBRIP",
+      "name": "DVD",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 8
+        "value": 5
+      }
+    },
+    {
+      "name": "Aergia",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Aergia\\]|-Aergia(?!-raws)\\b"
       }
     },
     {
@@ -43,12 +61,75 @@
       }
     },
     {
-      "name": "Baws",
+      "name": "B00BA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Baws)\\b"
+        "value": "\\b(B00BA)\\b"
+      }
+    },
+    {
+      "name": "FateSucks",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FateSucks)\\b"
+      }
+    },
+    {
+      "name": "hydes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(hydes)\\b"
+      }
+    },
+    {
+      "name": "hchcsen",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(hchcsen)\\b"
+      }
+    },
+    {
+      "name": "JOHNTiTOR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(JOHNTiTOR)\\b"
+      }
+    },
+    {
+      "name": "JySzE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(JySzE)\\b"
+      }
+    },
+    {
+      "name": "koala",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[koala\\]|-koala\\b"
+      }
+    },
+    {
+      "name": "Kulot",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Kulot)\\b"
       }
     },
     {
@@ -61,66 +142,57 @@
       }
     },
     {
-      "name": "LYS1TH3A",
+      "name": "Lulu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(LYS1TH3A)\\b"
+        "value": "\\[Lulu\\]|-Lulu\\b"
       }
     },
     {
-      "name": "McBalls",
+      "name": "Meakes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(McBalls)\\b"
+        "value": "\\b(Meakes)\\b"
       }
     },
     {
-      "name": "sam",
+      "name": "Orphan",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[sam\\]|-sam\\b"
+        "value": "\\[Orphan\\]|-Orphan\\b"
       }
     },
     {
-      "name": "SCY",
+      "name": "PMR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SCY)\\b"
+        "value": "^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)"
       }
     },
     {
-      "name": "Setsugen",
+      "name": "TTGA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Setsugen)\\b"
+        "value": "\\b(TTGA)\\b"
       }
     },
     {
-      "name": "smol",
+      "name": "UltraRemux",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[smol\\]|-smol\\b"
-      }
-    },
-    {
-      "name": "SoM",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[SoM\\]|-SoM\\b"
+        "value": "\\b(UltraRemux)\\b"
       }
     },
     {
@@ -133,12 +205,21 @@
       }
     },
     {
-      "name": "Z4ST1N",
+      "name": "WAP",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Z4ST1N)\\b"
+        "value": "\\b(WAP)\\b"
+      }
+    },
+    {
+      "name": "YURI",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[YURI\\]|-YURI\\b"
       }
     },
     {

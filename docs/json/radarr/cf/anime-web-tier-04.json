@@ -1,9 +1,9 @@
 {
-  "trash_id": "a786fbc0eae05afe3bb51aee3c83a9d4",
+  "trash_id": "9edaeee9ea3bcd585da9b7c0ac3fc54f",
   "trash_scores": {
-    "default": 100
+    "default": 300
   },
-  "name": "Anime Web Tier 06 (FanSubs)",
+  "name": "Anime Web Tier 04",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -25,66 +25,39 @@
       }
     },
     {
-      "name": "Asenshi",
+      "name": "Erai-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Asenshi)\\b"
+        "value": "\\b(Erai-raws)\\b"
       }
     },
     {
-      "name": "Chihiro",
+      "name": "SubsPlus+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Chihiro\\]|-Chihiro\\b"
+        "value": "\\b(SubsPlus\\+?)\\b"
       }
     },
     {
-      "name": "Commie",
+      "name": "ToonsHub",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Commie)\\b"
+        "value": "\\b(ToonsHub)\\b"
       }
     },
     {
-      "name": "DameDesuYo",
+      "name": "VARYG",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DameDesuYo)\\b"
-      }
-    },
-    {
-      "name": "Doki",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Doki\\]|-Doki\\b"
-      }
-    },
-    {
-      "name": "KawaSubs",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(KawaSubs)\\b"
-      }
-    },
-    {
-      "name": "Tsundere",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Tsundere\\]|-Tsundere(?!-)\\b"
+        "value": "\\b(VARYG)\\b"
       }
     }
   ]

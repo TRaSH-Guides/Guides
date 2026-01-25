@@ -1,135 +1,162 @@
 {
-  "trash_id": "9edaeee9ea3bcd585da9b7c0ac3fc54f",
+  "trash_id": "9dce189b960fddf47891b7484ee886ca",
   "trash_scores": {
-    "default": 300
+    "default": 900
   },
-  "name": "Anime Web Tier 04 (Official Subs)",
+  "name": "Anime BD Tier 06",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
+      "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 7
+        "value": 9
       }
     },
     {
-      "name": "WEBRIP",
+      "name": "DVD",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 8
+        "value": 5
       }
     },
     {
-      "name": "BlueLobster",
+      "name": "ANE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BlueLobster)\\b"
+        "value": "\\[ANE\\]|-ANE$"
       }
     },
     {
-      "name": "Erai-Raws",
+      "name": "Bunny-Apocalypse",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Erai-raws)\\b"
+        "value": "\\b(Bunny-Apocalypse)\\b"
       }
     },
     {
-      "name": "GST",
+      "name": "CyC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GST)\\b"
+        "value": "\\b(CyC)\\b"
       }
     },
     {
-      "name": "HorribleRips",
+      "name": "Datte13",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HorribleRips)\\b"
+        "value": "\\b(Datte13)\\b"
       }
     },
     {
-      "name": "HorribleSubs",
+      "name": "EJF",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HorribleSubs)\\b"
+        "value": "\\b(EJF)\\b"
       }
     },
     {
-      "name": "KAN3D2M",
+      "name": "GetItTwisted",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KAN3D2M)\\b"
+        "value": "\\b(GetItTwisted)\\b"
       }
     },
     {
-      "name": "KiyoshiStar",
+      "name": "GSK_kun",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KS|KiyoshiStar)\\b"
+        "value": "\\b(GSK[._-]kun)\\b"
       }
     },
     {
-      "name": "Lia",
+      "name": "iKaos",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Lia\\]|-Lia\\b"
+        "value": "\\b(iKaos)\\b"
       }
     },
     {
-      "name": "NanDesuKa",
+      "name": "karios",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NanDesuKa)\\b"
+        "value": "\\b(karios)\\b"
       }
     },
     {
-      "name": "URANIME",
+      "name": "Pookie",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(URANIME)\\b"
+        "value": "\\b(Pookie)\\b"
       }
     },
     {
-      "name": "VARYG",
+      "name": "RASETSU",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(VARYG)\\b"
+        "value": "\\b(RASETSU)\\b"
       }
     },
     {
-      "name": "ZigZag",
+      "name": "Starbez",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[ZigZag\\]|-ZigZab\b"
+        "value": "\\b(Starbez)\\b"
+      }
+    },
+    {
+      "name": "Tsundere",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Tsundere\\]|-Tsundere(?!-)\\b"
+      }
+    },
+    {
+      "name": "Yoghurt",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Yoghurt)\\b"
+      }
+    },
+    {
+      "name": "YURASAKA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[YURASUKA\\]|-YURASUKA\\b"
       }
     }
   ]

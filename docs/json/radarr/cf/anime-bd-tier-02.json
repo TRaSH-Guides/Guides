@@ -1,207 +1,225 @@
 {
-  "trash_id": "19180499de5ef2b84b6ec59aae444696",
+  "trash_id": "66926c8fa9312bc74ab71bf69aae4f4a",
   "trash_scores": {
-    "default": 500
+    "default": 1300
   },
-  "name": "Anime Web Tier 02 (Top FanSubs)",
+  "name": "Anime BD Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
+      "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 9
       }
     },
     {
-      "name": "WEBRIP",
+      "name": "DVD",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
+        "value": 5
       }
     },
     {
-      "name": "WEB",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 1
-      }
-    },
-    {
-      "name": "0x539",
+      "name": "Aergia",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(0x539)\\b"
+        "value": "\\[Aergia\\]|-Aergia(?!-raws)\\b"
       }
     },
     {
-      "name": "Asakura",
+      "name": "Arg0",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Asakura\\]|-Asakura\\b"
+        "value": "\\b(Arg0)\\b"
       }
     },
     {
-      "name": "Cyan",
+      "name": "Arid",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Cyan\\]|-Cyan\\b"
+        "value": "\\[Arid\\]|-Arid\\b"
       }
     },
     {
-      "name": "Cytox",
+      "name": "B00BA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Cytox)\\b"
+        "value": "\\b(B00BA)\\b"
       }
     },
     {
-      "name": "Dae",
+      "name": "FateSucks",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Dae\\]|-Dae\\b"
+        "value": "\\b(FateSucks)\\b"
       }
     },
     {
-      "name": "Foxtrot",
+      "name": "hydes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Foxtrot\\]|-Foxtrot\\b"
+        "value": "\\b(hydes)\\b"
       }
     },
     {
-      "name": "Gao",
+      "name": "hchcsen",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Gao\\]|-Gao\\b"
+        "value": "\\b(hchcsen)\\b"
       }
     },
     {
-      "name": "GSK_kun",
+      "name": "JOHNTiTOR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GSK[._-]kun)\\b"
+        "value": "\\b(JOHNTiTOR)\\b"
       }
     },
     {
-      "name": "Half-Baked",
+      "name": "JySzE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Half-Baked)\\b"
+        "value": "\\b(JySzE)\\b"
       }
     },
     {
-      "name": "HatSubs",
+      "name": "koala",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HatSubs)\\b"
+        "value": "\\[koala\\]|-koala\\b"
       }
     },
     {
-      "name": "MALD",
+      "name": "Kulot",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MALD)\\b"
+        "value": "\\b(Kulot)\\b"
       }
     },
     {
-      "name": "MTBB",
+      "name": "LostYears",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MTBB)\\b"
+        "value": "\\b(LostYears)\\b"
       }
     },
     {
-      "name": "Not-Vodes",
+      "name": "Lulu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Not-Vodes\\]|-Not-Vodes\\b"
+        "value": "\\[Lulu\\]|-Lulu\\b"
       }
     },
     {
-      "name": "Okay-Subs",
+      "name": "Meakes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Okay-Subs)\\b"
+        "value": "\\b(Meakes)\\b"
       }
     },
     {
-      "name": "Pizza",
+      "name": "Orphan",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Pizza\\]|-Pizza\\b"
+        "value": "\\[Orphan\\]|-Orphan\\b"
       }
     },
     {
-      "name": "Reza",
+      "name": "PMR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Reza)\\b"
+        "value": "^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)"
       }
     },
     {
-      "name": "Slyfox",
+      "name": "TTGA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Slyfox)\\b"
+        "value": "\\b(TTGA)\\b"
       }
     },
     {
-      "name": "SoLCE",
+      "name": "UltraRemux",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SoLCE)\\b"
+        "value": "\\b(UltraRemux)\\b"
       }
     },
     {
-      "name": "Tenshi",
+      "name": "Vodes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[tenshi\\]|-tenshi$"
+        "value": "\\[Vodes\\]|(?<!Not)-Vodes\\b"
+      }
+    },
+    {
+      "name": "WAP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(WAP)\\b"
+      }
+    },
+    {
+      "name": "YURI",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[YURI\\]|-YURI\\b"
+      }
+    },
+    {
+      "name": "ZeroBuild",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZeroBuild)\\b"
       }
     }
   ]

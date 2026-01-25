@@ -1,9 +1,9 @@
 {
-  "trash_id": "ca864ed93c7b431150cc6748dc34875d",
+  "trash_id": "6115ccd6640b978234cc47f2c1f2cadc",
   "trash_scores": {
-    "default": 1000
+    "default": 700
   },
-  "name": "Anime BD Tier 05 (Remuxes)",
+  "name": "Anime BD Tier 08",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -25,84 +25,93 @@
       }
     },
     {
-      "name": "BluDragon",
+      "name": "AkihitoSubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BluDragon)\\b"
+        "value": "\\b(AkihitoSubs)\\b"
       }
     },
     {
-      "name": "D4C",
+      "name": "Arukoru",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(D4C)\\b"
+        "value": "\\b(Arukoru)\\b"
       }
     },
     {
-      "name": "E.N.D",
+      "name": "EDGE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(E[.-]N[.-]D)\\b"
+        "value": "\\[EDGE\\]|-EDGE\\b"
       }
     },
     {
-      "name": "PMR",
+      "name": "EMBER",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)"
+        "value": "\\[EMBER\\]|-EMBER\\b"
       }
     },
     {
-      "name": "Raizel",
+      "name": "GHOST",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Raizel)\\b"
+        "value": "\\[GHOST\\]|-GHOST\\b"
       }
     },
     {
-      "name": "REVO",
+      "name": "Judas",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(REVO)\\b"
+        "value": "\\[Judas\\]|-Judas"
       }
     },
     {
-      "name": "SRLS",
+      "name": "naiyas",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SRLS)\\b"
+        "value": "\\[naiyas\\]|-naiyas\\b"
       }
     },
     {
-      "name": "TTGA",
+      "name": "Nep_Blanc",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TTGA)\\b"
+        "value": "\\b(Nep[ ._-]Blanc)\\b"
       }
     },
     {
-      "name": "VULCAN",
+      "name": "Prof",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[VULCAN\\]|-VULCAN\\b"
+        "value": "\\[Prof\\]|-Prof\\b"
+      }
+    },
+    {
+      "name": "Shirσ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Shirσ)\\b"
       }
     }
   ]

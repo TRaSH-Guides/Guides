@@ -1,9 +1,9 @@
 {
-  "trash_id": "22d953bbe897857b517928f3652b8dd3",
+  "trash_id": "c27f2ae6a4e82373b0f1da094e2489ad",
   "trash_scores": {
-    "default": 200
+    "default": 400
   },
-  "name": "Anime Web Tier 05 (FanSubs)",
+  "name": "Anime Web Tier 03",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -12,7 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 7
+        "value": 3
       }
     },
     {
@@ -21,61 +21,52 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 8
+        "value": 4
       }
     },
     {
-      "name": "9volt",
+      "name": "WEB",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    },
+    {
+      "name": "AnoZu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(9volt)\\b"
+        "value": "\\b(AnoZu)\\b"
       }
     },
     {
-      "name": "GJM",
+      "name": "Dooky",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GJM)\\b"
+        "value": "\\b(Dooky)\\b"
       }
     },
     {
-      "name": "Kaleido",
+      "name": "Kitsune",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Kaleido)\\b"
+        "value": "\\[Kitsune\\]|-Kitsune\\b"
       }
     },
     {
-      "name": "Kantai",
+      "name": "ZR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Kantai\\]|-Kantai\\b"
-      }
-    },
-    {
-      "name": "SobsPlease",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(SobsPlease)\\b"
-      }
-    },
-    {
-      "name": "Some-Stuffs",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Some-Stuffs)\\b"
+        "value": "\\b(ZR)\\b"
       }
     }
   ]

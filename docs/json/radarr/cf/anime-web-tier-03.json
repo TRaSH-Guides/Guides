@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": 400
   },
-  "name": "Anime Web Tier 03 (Official Subs)",
+  "name": "Anime Web Tier 03",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -25,21 +25,30 @@
       }
     },
     {
-      "name": "SubsPlease",
+      "name": "AnoZu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SubsPlease)\\b"
+        "value": "\\b(AnoZu)\\b"
       }
     },
     {
-      "name": "SubsPlus+",
+      "name": "Dooky",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SubsPlus\\+?)\\b"
+        "value": "\\b(Dooky)\\b"
+      }
+    },
+    {
+      "name": "Kitsune",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Kitsune\\]|-Kitsune\\b"
       }
     },
     {

@@ -1,22 +1,13 @@
 {
-  "trash_id": "0329044e3d9137b08502a9f84a7e58db",
+  "trash_id": "8526c54e36b4962d340fce52ef030e76",
   "trash_scores": {
-    "default": 800
+    "default": 500
   },
-  "name": "Anime BD Tier 07 (P2P/Scene)",
+  "name": "Anime Web Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Bluray",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 6
-      }
-    },
-    {
-      "name": "Bluray Remux",
+      "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
@@ -25,174 +16,183 @@
       }
     },
     {
-      "name": "DVD",
+      "name": "WEBRIP",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 5
+        "value": 8
       }
     },
     {
-      "name": "A-L",
+      "name": "0x539",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(A-L)\\b"
+        "value": "\\b(0x539)\\b"
       }
     },
     {
-      "name": "ANiHLS",
+      "name": "Asakura",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ANiHLS)\\b"
+        "value": "\\[Asakura\\]|-Asakura\\b"
       }
     },
     {
-      "name": "CBM",
+      "name": "Cyan",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CBM)\\b"
+        "value": "\\[Cyan\\]|-Cyan\\b"
       }
     },
     {
-      "name": "DHD",
+      "name": "Cytox",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DHD)\\b"
+        "value": "\\b(Cytox)\\b"
       }
     },
     {
-      "name": "DragsterPS",
+      "name": "Dae",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DragsterPS)\\b"
+        "value": "\\[Dae\\]|-Dae\\b"
       }
     },
     {
-      "name": "HAiKU",
+      "name": "Foxtrot",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HAiKU)\\b"
+        "value": "\\[Foxtrot\\]|-Foxtrot\\b"
       }
     },
     {
-      "name": "Hark0N",
+      "name": "Gao",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Hark0N)\\b"
+        "value": "\\[Gao\\]|-Gao\\b"
       }
     },
     {
-      "name": "iAHD",
+      "name": "GSK_kun",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iAHD)\\b"
+        "value": "\\b(GSK[._-]kun)\\b"
       }
     },
     {
-      "name": "inid4c",
+      "name": "Half-Baked",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(inid4c)\\b"
+        "value": "\\b(Half-Baked)\\b"
       }
     },
     {
-      "name": "KiyoshiStar",
+      "name": "HatSubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KS|KiyoshiStar)\\b"
+        "value": "\\b(HatSubs)\\b"
       }
     },
     {
-      "name": "MCR",
+      "name": "MALD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MCR)\\b"
+        "value": "\\b(MALD)\\b"
       }
     },
     {
-      "name": "NPC",
+      "name": "MTBB",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[NPC\\]|-NPC\\b"
+        "value": "\\b(MTBB)\\b"
       }
     },
     {
-      "name": "RedBlade",
+      "name": "Not-Vodes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RedBlade)\\b"
+        "value": "\\[Not-Vodes\\]|-Not-Vodes\\b"
       }
     },
     {
-      "name": "RH",
+      "name": "Okay-Subs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RH)\\b"
+        "value": "\\b(Okay-Subs)\\b"
       }
     },
     {
-      "name": "SEV",
+      "name": "Pizza",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SEV)\\b"
+        "value": "\\[Pizza\\]|-Pizza\\b"
       }
     },
     {
-      "name": "STRiFE",
+      "name": "Reza",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[STRiFE\\]|-STRiFE\\b"
+        "value": "\\b(Reza)\\b"
       }
     },
     {
-      "name": "TENEIGHTY",
+      "name": "Slyfox",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TENEIGHTY)\\b"
+        "value": "\\b(Slyfox)\\b"
       }
     },
     {
-      "name": "WaLMaRT",
+      "name": "SoLCE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(WaLMaRT)\\b"
+        "value": "\\b(SoLCE)\\b"
+      }
+    },
+    {
+      "name": "Tenshi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[tenshi\\]|-tenshi$"
       }
     }
   ]

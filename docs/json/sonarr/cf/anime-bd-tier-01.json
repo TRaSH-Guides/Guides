@@ -1,144 +1,126 @@
 {
-  "trash_id": "4fd5528a3a8024e6b49f9c67053ea5f3",
+  "trash_id": "949c16fe0a8147f50ba82cc2df9411c9",
   "trash_scores": {
-    "default": 300
+    "default": 1400
   },
-  "name": "Anime Web Tier 04 (Official Subs)",
+  "name": "Anime BD Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
+      "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 6
       }
     },
     {
-      "name": "WEBRIP",
+      "name": "Bluray Remux",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
+        "value": 7
       }
     },
     {
-      "name": "WEB",
+      "name": "DVD",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 1
+        "value": 5
       }
     },
     {
-      "name": "BlueLobster",
+      "name": "DemiHuman",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BlueLobster)\\b"
+        "value": "\\b(DemiHuman)\\b"
       }
     },
     {
-      "name": "Erai-Raws",
+      "name": "FLE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Erai-raws)\\b"
+        "value": "\\b(FLE)\\b"
       }
     },
     {
-      "name": "GST",
+      "name": "Flugel",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GST)\\b"
+        "value": "\\b(Flugel)\\b"
       }
     },
     {
-      "name": "HorribleRips",
+      "name": "LYS1TH3A",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HorribleRips)\\b"
+        "value": "\\b(LYS1TH3A)\\b"
       }
     },
     {
-      "name": "HorribleSubs",
+      "name": "Moxie",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HorribleSubs)\\b"
+        "value": "\\[Moxie\\]|-Moxie\\b"
       }
     },
     {
-      "name": "KAN3D2M",
+      "name": "NAN0",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KAN3D2M)\\b"
+        "value": "(?<=remux).*\\b(NAN0)\\b"
       }
     },
     {
-      "name": "KiyoshiStar",
+      "name": "sam",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KS|KiyoshiStar)\\b"
+        "value": "\\[sam\\]|-sam\\b"
       }
     },
     {
-      "name": "Lia",
+      "name": "smol",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Lia\\]|-Lia\\b"
+        "value": "\\[smol\\]|-smol\\b"
       }
     },
     {
-      "name": "NanDesuKa",
+      "name": "SoM",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NanDesuKa)\\b"
+        "value": "\\[SoM\\]|-SoM\\b"
       }
     },
     {
-      "name": "URANIME",
+      "name": "ZR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(URANIME)\\b"
-      }
-    },
-    {
-      "name": "VARYG",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(VARYG)\\b"
-      }
-    },
-    {
-      "name": "ZigZag",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[ZigZag\\]|-ZigZab\b"
+        "value": "\\b(ZR)\\b|-ZR-"
       }
     }
   ]
