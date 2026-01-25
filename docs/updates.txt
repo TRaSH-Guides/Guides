@@ -1,3 +1,7 @@
+# 2026-01-25 02:06
+- [feat(radarr): Add RlsGrp `MGE` and `TM` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2598)
+- [feat(radarr): Updated a few CF for testing a new profile](https://github.com/TRaSH-Guides/Guides/pull/2597)
+
 # 2026-01-18 02:02
 - [feat(radarr): Added and updated a few CF for testing a new profile](https://github.com/TRaSH-Guides/Guides/pull/2596)
 - [fix(starr-french): Avoid false positive with Tanoshii in the release title](https://github.com/TRaSH-Guides/Guides/pull/2594)
