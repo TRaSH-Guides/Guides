@@ -139,8 +139,8 @@ We've made 3 guides related to this.
 | [Anime BD Tier 04](#anime-bd-tier-04)  | [Anime Web Tier 04](#anime-web-tier-04) | [v3](#v3) | [Dubs Only](#dubs-only)               |
 | [Anime BD Tier 05](#anime-bd-tier-05)  | [Anime Web Tier 05](#anime-web-tier-05) | [v4](#v4) |                                       |
 | [Anime BD Tier 06](#anime-bd-tier-06)  | [Anime Web Tier 06](#anime-web-tier-06) |           |                                       |
-| [Anime BD Tier 07)](#anime-bd-tier-07) | [Anime Raws](#anime-raws)               |           |                                       |
-| [Anime BD Tier 08)](#anime-bd-tier-08) | [Anime LQ Groups](#anime-lq-groups)     |           |                                       |
+| [Anime BD Tier 07](#anime-bd-tier-07)  | [Anime Raws](#anime-raws)               |           |                                       |
+| [Anime BD Tier 08](#anime-bd-tier-08)  | [Anime LQ Groups](#anime-lq-groups)     |           |                                       |
 
 ---
 
