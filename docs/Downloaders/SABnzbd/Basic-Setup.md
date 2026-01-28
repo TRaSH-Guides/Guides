@@ -50,6 +50,8 @@ The default is empty, we picked history because it is easy. It'll end up in the 
 
 ## Servers
 
+--8<-- "includes/downloaders/usp.md"
+
 [SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/servers){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings` => `Servers` => `Add Server`

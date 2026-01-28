@@ -1,7 +1,8 @@
 {
   "trash_id": "eecf3a857724171f968a66cb5719e152",
   "trash_scores": {
-    "default": 800
+    "default": 800,
+    "sqp-4-ma-hybrid": 0
   },
   "trash_regex": "https://regex101.com/r/e7ugxU/1",
   "name": "IMAX",
@@ -22,7 +23,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b((DSNP|Disney\\+|BC|B?CORE)(?=[ ._-]web[ ._-]?(dl|rip)\\b)))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)"
+        "value": "^(?=.*\\b((DSNP|BC|B?CORE)\\b|Disney\\+)(?=.*\\bWEB[ ._-]?(DL|Rip)\\b))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)"
       }
     }
   ]

@@ -1,16 +1,10 @@
 # Setup TorGuard for port forwarding
 
-These are our supported and recommended settings.
+These are our supported and recommended settings to set up port forwarding with TorGuard
 
-If you want to support me, please use this [referral link](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"} and enter the following discount code:
+Get 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN Pro, and Anonymous Proxy Premium.
 
-Get 50% Off ALL Plans (Anonymous VPN, Anonymous VPN Pro, Anonymous VPN Premium)
-
-```none
-TRaSH-Guides-2024
-```
-
-[![torguard-FreeTrial-270x90](images/torguard/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"}
+Use this [link](/user-promotion-deals/#torguard){:target="_blank" rel="noopener noreferrer"} for more info.
 
 !!! bug "As of 13 March 2022, Torguard Settles Piracy Lawsuit has agreed to use commercially reasonable efforts to block BitTorrent traffic on its servers in the US using firewall technology. :bangbang:<br><br>I talked to several people, and they can still use Torguard for Torrents, perhaps because the connection is encrypted. Others just selected a server in another country.<br>- [Source Torguard](https://torguard.net/blog/why-torguard-is-blocking-bittorrent-on-us-servers/){:target="_blank" rel="noopener noreferrer"}.<br>- [Source Torrentfreak](https://torrentfreak.com/torguard-settles-piracy-lawsuit-and-agrees-to-block-torrent-traffic-on-u-s-servers-220314/){:target="_blank" rel="noopener noreferrer"}."
 

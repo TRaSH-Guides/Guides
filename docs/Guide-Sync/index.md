@@ -54,7 +54,7 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 
     Big thanks to IBRACORP, who created a great video that covers the basics.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DCxU3Vzaz6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YTpaw_qGG5E?si=TvBmIW53qniFB8XH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     Also check out other videos from IBRACORP  [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
 
@@ -62,7 +62,7 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 
 ### Recyclarr
 
-[Info](/Recyclarr/){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/wiki/){:target="\_blank" rel="noopener noreferrer"}
+[Info](/Recyclarr/){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/guide/){:target="\_blank" rel="noopener noreferrer"}
 
 Recyclarr is a command line application utilizing configuration files to sync the guides to Radarr &
 Sonarr.

@@ -1,7 +1,8 @@
 {
   "trash_id": "6ba9033150e7896bdc9ec4b44f2b230f",
   "trash_scores": {
-    "default": 500
+    "default": 500,
+    "sqp-4-ma-hybrid": 0
   },
   "name": "MP3",
   "includeCustomFormatWhenRenaming": false,

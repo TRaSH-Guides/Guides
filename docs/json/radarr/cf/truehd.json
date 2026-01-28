@@ -5,7 +5,8 @@
     "sqp-1-1080p": -10000,
     "sqp-1-web-1080p": -10000,
     "sqp-1-2160p": -10000,
-    "sqp-1-web-2160p": -10000
+    "sqp-1-web-2160p": -10000,
+    "sqp-4-ma-hybrid": 2000
   },
   "name": "TrueHD",
   "includeCustomFormatWhenRenaming": false,

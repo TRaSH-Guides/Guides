@@ -1,0 +1,172 @@
+{
+  "trash_id": "25d2afecab632b1582eaf03b63055f72",
+  "trash_scores": {
+    "default": 900
+  },
+  "name": "Anime BD Tier 06",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 6
+      }
+    },
+    {
+      "name": "Bluray Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "DVD",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "ANE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[ANE\\]|-ANE$"
+      }
+    },
+    {
+      "name": "Bunny-Apocalypse",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Bunny-Apocalypse)\\b"
+      }
+    },
+    {
+      "name": "CyC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CyC)\\b"
+      }
+    },
+    {
+      "name": "Datte13",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Datte13)\\b"
+      }
+    },
+    {
+      "name": "EJF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(EJF)\\b"
+      }
+    },
+    {
+      "name": "GetItTwisted",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GetItTwisted)\\b"
+      }
+    },
+    {
+      "name": "GSK_kun",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GSK[._-]kun)\\b"
+      }
+    },
+    {
+      "name": "iKaos",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(iKaos)\\b"
+      }
+    },
+    {
+      "name": "karios",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(karios)\\b"
+      }
+    },
+    {
+      "name": "Pookie",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Pookie)\\b"
+      }
+    },
+    {
+      "name": "RASETSU",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RASETSU)\\b"
+      }
+    },
+    {
+      "name": "Starbez",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Starbez)\\b"
+      }
+    },
+    {
+      "name": "Tsundere",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Tsundere\\]|-Tsundere(?!-)\\b"
+      }
+    },
+    {
+      "name": "Yoghurt",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Yoghurt)\\b"
+      }
+    },
+    {
+      "name": "YURASUKA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[YURASUKA\\]|-YURASUKA\\b"
+      }
+    }
+  ]
+}

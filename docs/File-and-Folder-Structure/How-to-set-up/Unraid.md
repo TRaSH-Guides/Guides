@@ -75,7 +75,7 @@ You will need to create these subfolders yourself. You can do this in any way yo
 
 ### Fastest way to create the needed subfolders
 
-The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTy](https://www.putty.org/){:target="\_blank" rel="noopener noreferrer"} or use the terminal from the dashboard.
+The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTY](https://putty.software/){:target="\_blank" rel="noopener noreferrer"} or use the terminal from the dashboard.
 These options will automatically create the required subfolders for your media library as well as your preferred download client(s).
 If you use both torrents and Usenet, use both commands.
 

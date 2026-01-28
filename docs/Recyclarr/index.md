@@ -4,7 +4,7 @@ Recyclarr is a command-line application that will automatically synchronize reco
 
 !!! info "Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your setup scheduler."
 
-For Installation and setup Guide please check the official [Recyclarr Wiki](https://recyclarr.dev/wiki/getting-started){:target="\_blank" rel="noopener noreferrer"}
+For Installation and setup Guide please check the official [Recyclarr Wiki](https://recyclarr.dev/guide/getting-started/){:target="\_blank" rel="noopener noreferrer"}
 
 For any questions or support questions please join the discord support channel.
 
@@ -14,4 +14,4 @@ For any questions or support questions please join the discord support channel.
 
 ### Collection of configs
 
-- [Recyclarr - collection of configs](/Recyclarr/recyclarr-configs){:target="\_blank" rel="noopener noreferrer"}
+- [Recyclarr - collection of configs](https://recyclarr.dev/guide/guide-configs/){:target="\_blank" rel="noopener noreferrer"}

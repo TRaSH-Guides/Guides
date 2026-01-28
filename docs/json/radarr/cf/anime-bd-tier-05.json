@@ -1,0 +1,298 @@
+{
+  "trash_id": "ca864ed93c7b431150cc6748dc34875d",
+  "trash_scores": {
+    "default": 1000
+  },
+  "name": "Anime BD Tier 05",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 9
+      }
+    },
+    {
+      "name": "DVD",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Animorphs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Animorphs)\\b"
+      }
+    },
+    {
+      "name": "AOmundson",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(AOmundson)\\b"
+      }
+    },
+    {
+      "name": "ASC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ASC)\\b"
+      }
+    },
+    {
+      "name": "Baws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Baws|McBalls)\\b"
+      }
+    },
+    {
+      "name": "Beatrice",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Beatrice\\]|-Beatrice(?!-raws)\\b"
+      }
+    },
+    {
+      "name": "B00BA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(B00BA)\\b"
+      }
+    },
+    {
+      "name": "Cait-Sidhe",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Cait-Sidhe)\\b"
+      }
+    },
+    {
+      "name": "CsS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CsS)\\b"
+      }
+    },
+    {
+      "name": "CTR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CTR)\\b"
+      }
+    },
+    {
+      "name": "D4C",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(D4C)\\b"
+      }
+    },
+    {
+      "name": "deanzel",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(deanzel)\\b"
+      }
+    },
+    {
+      "name": "Drag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Drag\\]|-Drag\\b"
+      }
+    },
+    {
+      "name": "eldon",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(eldon)\\b"
+      }
+    },
+    {
+      "name": "Freehold",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Freehold)\\b"
+      }
+    },
+    {
+      "name": "GHS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GHS)\\b"
+      }
+    },
+    {
+      "name": "Hark0N",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Hark0N)\\b"
+      }
+    },
+    {
+      "name": "Holomux",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Holomux)\\b"
+      }
+    },
+    {
+      "name": "Judgement",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Judgment\\]|-Judgment\\b"
+      }
+    },
+    {
+      "name": "MC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MC)\\b"
+      }
+    },
+    {
+      "name": "mottoj",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(mottoj)\\b"
+      }
+    },
+    {
+      "name": "NH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NH)\\b"
+      }
+    },
+    {
+      "name": "NTRM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NTRM)\\b"
+      }
+    },
+    {
+      "name": "o7",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(o7)\\b"
+      }
+    },
+    {
+      "name": "QM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(QM)\\b"
+      }
+    },
+    {
+      "name": "Thighs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Thighs\\]|-Thighs\\b"
+      }
+    },
+    {
+      "name": "TTGA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TTGA)\\b"
+      }
+    },
+    {
+      "name": "UltraRemux",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(UltraRemux)\\b"
+      }
+    },
+    {
+      "name": "WBDP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(WBDP)\\b"
+      }
+    },
+    {
+      "name": "WSE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(WSE)\\b"
+      }
+    },
+    {
+      "name": "Yuki",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Yuki\\]|-Yuki\\b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "trash_id": "1ef101b3a82646b40e0cab7fc92cd896",
+  "trash_scores": {
+    "default": 800
+  },
+  "name": "Anime BD Tier 07",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 9
+      }
+    },
+    {
+      "name": "DVD",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "9volt",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(9volt)\\b"
+      }
+    },
+    {
+      "name": "AC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[AC\\]|-AC$"
+      }
+    },
+    {
+      "name": "Almighty",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Almighty\\]|-Almighty\\b"
+      }
+    },
+    {
+      "name": "Asakura",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Asakura\\]|-Asakura\\b"
+      }
+    },
+    {
+      "name": "Asenshi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Asenshi)\\b"
+      }
+    },
+    {
+      "name": "BlurayDesuYo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BlurayDesuYo)\\b"
+      }
+    },
+    {
+      "name": "Bolshevik",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Bolshevik\\]|-Bolshevik\\b"
+      }
+    },
+    {
+      "name": "Brrrrrrr",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Brrrrrrr)\\b"
+      }
+    },
+    {
+      "name": "Chihiro",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Chihiro\\]|-Chihiro\\b"
+      }
+    },
+    {
+      "name": "Commie",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Commie)\\b"
+      }
+    },
+    {
+      "name": "Crow",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Crow\\]|-Crow\\b"
+      }
+    },
+    {
+      "name": "Dae",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Dae)\\b"
+      }
+    },
+    {
+      "name": "Dekinai",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Dekinai\\]|-Dekinai\\b"
+      }
+    },
+    {
+      "name": "Dragon-Releases",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Dragon-Releases)\\b"
+      }
+    },
+    {
+      "name": "DragsterPS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DragsterPS)\\b"
+      }
+    },
+    {
+      "name": "Exiled-Destiny",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Exiled-Destiny|E-D)\\b"
+      }
+    },
+    {
+      "name": "FFF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FFF)\\b"
+      }
+    },
+    {
+      "name": "Final8",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Final8)\\b"
+      }
+    },
+    {
+      "name": "Geonope",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Geonope)\\b"
+      }
+    },
+    {
+      "name": "GJM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GJM)\\b"
+      }
+    },
+    {
+      "name": "iAHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(iAHD)\\b"
+      }
+    },
+    {
+      "name": "inid4c",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(inid4c)\\b"
+      }
+    },
+    {
+      "name": "Koten_Gars",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Koten[ ._-]Gars)\\b"
+      }
+    },
+    {
+      "name": "kuchikirukia",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(kuchikirukia)\\b"
+      }
+    },
+    {
+      "name": "LCE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LCE)\\b"
+      }
+    },
+    {
+      "name": "NTW",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NTW)\\b"
+      }
+    },
+    {
+      "name": "orz",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(orz)\\b"
+      }
+    },
+    {
+      "name": "RAI",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RAI)\\b"
+      }
+    },
+    {
+      "name": "REVO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(REVO)\\b"
+      }
+    },
+    {
+      "name": "SCP-2223",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SCP-2223)\\b"
+      }
+    },
+    {
+      "name": "Senjou",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Senjou\\]|-Senjou\\b"
+      }
+    },
+    {
+      "name": "SEV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SEV)\\b"
+      }
+    },
+    {
+      "name": "THORA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(THORA)\\b"
+      }
+    },
+    {
+      "name": "Vivid",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Vivid\\]|-Vivid\\b"
+      }
+    }
+  ]
+}
