@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Version: 1.2.0
-# Updated: 20260128
+# Version: 1.2.1
+# Updated: 20260129
 # =======================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.2.0"
+readonly SCRIPT_VERSION="1.2.1"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
 readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
@@ -121,7 +121,7 @@ check_script_version() {
     log "Checking for script updates..."
 
     # Check if version check is enabled
-    if [[ "${ENABLE_VERSION_CHECK:-true}" != true ]]; then
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
         log "Version check disabled"
         return 0
     fi
@@ -184,7 +184,7 @@ check_config_version() {
     log "Checking for config file updates..."
 
     # Check if version check is enabled
-    if [[ "${ENABLE_VERSION_CHECK:-true}" != true ]]; then
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
         log "Config version check disabled"
         return 0
     fi
@@ -250,7 +250,7 @@ check_mover_version() {
     log "Checking for mover.py updates..."
 
     # Check if version check is enabled
-    if [[ "${ENABLE_VERSION_CHECK:-true}" != true ]]; then
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
         log "Mover version check disabled"
         return 0
     fi
@@ -287,14 +287,14 @@ check_mover_version() {
         return 0
     fi
 
-    # Calculate hashes
+    # Calculate hashes (strip carriage returns to handle line ending differences)
     local local_hash remote_hash
     if command -v sha256sum &> /dev/null; then
-        local_hash=$(sha256sum "$MOVER_SCRIPT" | awk '{print $1}')
-        remote_hash=$(printf '%s' "$remote_mover" | sha256sum | awk '{print $1}')
+        local_hash=$(tr -d '\r' < "$MOVER_SCRIPT" | sha256sum | awk '{print $1}')
+        remote_hash=$(tr -d '\r' <<< "$remote_mover" | sha256sum | awk '{print $1}')
     else
-        local_hash=$(md5sum "$MOVER_SCRIPT" | awk '{print $1}')
-        remote_hash=$(printf '%s' "$remote_mover" | md5sum | awk '{print $1}')
+        local_hash=$(tr -d '\r' < "$MOVER_SCRIPT" | md5sum | awk '{print $1}')
+        remote_hash=$(tr -d '\r' <<< "$remote_mover" | md5sum | awk '{print $1}')
     fi
 
     # Compare hashes
