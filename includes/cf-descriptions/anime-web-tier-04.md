@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**Anime Web Tier 04 (Official Subs)**<br>
+**Anime Web Tier 04**<br>
 
 Official sub groups.
 <!-- markdownlint-enable MD041-->

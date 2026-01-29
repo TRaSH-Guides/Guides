@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**Anime Web Tier 05 (FanSubs)**<br>
+**Anime Web Tier 05**<br>
 
 FanSub groups that are consistent.
 <!-- markdownlint-enable MD041-->
