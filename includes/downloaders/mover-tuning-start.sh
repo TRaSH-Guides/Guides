@@ -287,19 +287,41 @@ check_mover_version() {
         return 0
     fi
 
-    # Calculate hashes (strip carriage returns to handle line ending differences)
-    local local_hash remote_hash
+    # Calculate hashes (normalize line endings and trailing newlines)
+    # Strip \r and trailing newlines to ensure consistent comparison
+    local local_hash remote_hash local_content remote_content
+    
+    # Read and normalize local file
+    local_content=$(tr -d '\r' < "$MOVER_SCRIPT")
+    # Remove trailing newlines by using parameter expansion
+    local_content="${local_content%$'\n'}"
+    
+    # Normalize remote content
+    remote_content=$(printf '%s' "$remote_mover" | tr -d '\r')
+    remote_content="${remote_content%$'\n'}"
+    
     if command -v sha256sum &> /dev/null; then
-        local_hash=$(tr -d '\r' < "$MOVER_SCRIPT" | sha256sum | awk '{print $1}')
-        remote_hash=$(tr -d '\r' <<< "$remote_mover" | sha256sum | awk '{print $1}')
+        local_hash=$(printf '%s' "$local_content" | sha256sum | awk '{print $1}')
+        remote_hash=$(printf '%s' "$remote_content" | sha256sum | awk '{print $1}')
     else
-        local_hash=$(tr -d '\r' < "$MOVER_SCRIPT" | md5sum | awk '{print $1}')
-        remote_hash=$(tr -d '\r' <<< "$remote_mover" | md5sum | awk '{print $1}')
+        local_hash=$(printf '%s' "$local_content" | md5sum | awk '{print $1}')
+        remote_hash=$(printf '%s' "$remote_content" | md5sum | awk '{print $1}')
     fi
+
+    log "Local hash:  $local_hash"
+    log "Remote hash: $remote_hash"
 
     # Compare hashes
     if [[ "$local_hash" != "$remote_hash" ]]; then
         log "⚠ mover.py differs from GitHub version"
+        
+        # Additional diagnostics
+        local local_size remote_size
+        local_size=$(wc -c < "$MOVER_SCRIPT")
+        remote_size=$(printf '%s' "$remote_mover" | wc -c)
+        log "Local size:  $local_size bytes"
+        log "Remote size: $remote_size bytes"
+        
         notify "mover.py Update" "A newer version of mover.py is available on GitHub<br><br>📖 Delete mover.py and re-run script to update"
     else
         log "✓ mover.py is up to date"
