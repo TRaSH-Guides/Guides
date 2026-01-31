@@ -118,6 +118,15 @@
       "fields": {
         "value": "^(TAT)$"
       }
+    },
+    {
+      "name": "TFA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TFA)$"
+      }
     }
   ]
 }

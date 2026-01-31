@@ -102,6 +102,15 @@
       }
     },
     {
+      "name": "TFA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TFA)$"
+      }
+    },
+    {
       "name": "TkHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
