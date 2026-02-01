@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Version: 1.1.0
-# Updated: 20251201
+# Version: 1.2.1
+# Updated: 20260129
 # =======================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.1.0"
+readonly SCRIPT_VERSION="1.2.1"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
 readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
@@ -246,6 +246,90 @@ check_config_version() {
     return 0
 }
 
+check_mover_version() {
+    log "Checking for mover.py updates..."
+
+    # Check if version check is enabled
+    if [[ "${ENABLE_VERSION_CHECK:-true}" != "true" ]]; then
+        log "Mover version check disabled"
+        return 0
+    fi
+
+    # Check if mover.py exists locally
+    if [[ ! -f "$MOVER_SCRIPT" ]]; then
+        log "⚠ mover.py not found locally, skipping version check"
+        return 0
+    fi
+
+    # Check for required commands
+    if ! command -v md5sum &> /dev/null && ! command -v sha256sum &> /dev/null; then
+        log "⚠ Cannot check mover.py: md5sum or sha256sum not found (continuing anyway)"
+        return 0
+    fi
+
+    # Check for curl or wget
+    local fetch_cmd
+    if command -v curl &> /dev/null; then
+        fetch_cmd="curl -s"
+    elif command -v wget &> /dev/null; then
+        fetch_cmd="wget -qO-"
+    else
+        log "⚠ Cannot check mover version: curl or wget not found (continuing anyway)"
+        return 0
+    fi
+
+    # Fetch the latest mover.py from GitHub
+    local remote_mover
+    remote_mover=$($fetch_cmd "$MOVER_URL" 2>/dev/null) || true
+
+    if [[ -z "$remote_mover" ]]; then
+        log "⚠ Could not fetch latest mover.py from GitHub (continuing anyway)"
+        return 0
+    fi
+
+    # Calculate hashes (normalize line endings and trailing newlines)
+    # Strip \r and trailing newlines to ensure consistent comparison
+    local local_hash remote_hash local_content remote_content
+
+    # Read and normalize local file
+    local_content=$(tr -d '\r' < "$MOVER_SCRIPT")
+    # Remove trailing newlines by using parameter expansion
+    local_content="${local_content%$'\n'}"
+
+    # Normalize remote content
+    remote_content=$(printf '%s' "$remote_mover" | tr -d '\r')
+    remote_content="${remote_content%$'\n'}"
+
+    if command -v sha256sum &> /dev/null; then
+        local_hash=$(printf '%s' "$local_content" | sha256sum | awk '{print $1}')
+        remote_hash=$(printf '%s' "$remote_content" | sha256sum | awk '{print $1}')
+    else
+        local_hash=$(printf '%s' "$local_content" | md5sum | awk '{print $1}')
+        remote_hash=$(printf '%s' "$remote_content" | md5sum | awk '{print $1}')
+    fi
+
+    log "Local hash:  $local_hash"
+    log "Remote hash: $remote_hash"
+
+    # Compare hashes
+    if [[ "$local_hash" != "$remote_hash" ]]; then
+        log "⚠ mover.py differs from GitHub version"
+
+        # Additional diagnostics
+        local local_size remote_size
+        local_size=$(wc -c < "$MOVER_SCRIPT")
+        remote_size=$(printf '%s' "$remote_mover" | wc -c)
+        log "Local size:  $local_size bytes"
+        log "Remote size: $remote_size bytes"
+
+        notify "mover.py Update" "A newer version of mover.py is available on GitHub<br><br>📖 Delete mover.py and re-run script to update"
+    else
+        log "✓ mover.py is up to date"
+    fi
+
+    return 0
+}
+
 # ================================
 # AUTO INSTALLER FUNCTION
 # ================================
@@ -442,6 +526,9 @@ main() {
 
     # Check for config updates
     check_config_version
+
+    # Check for mover.py updates
+    check_mover_version
 
     # Run auto installer if enabled
     [[ "$ENABLE_AUTO_INSTALLER" == true ]] && run_auto_installer

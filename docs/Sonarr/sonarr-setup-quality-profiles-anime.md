@@ -12,8 +12,6 @@ _aka How to set up Custom Formats (Anime)_<br><br>
 
     This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
 
-It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
-
 This guide aims to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="\_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
 The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"}
 
@@ -169,6 +167,44 @@ Make sure `Upgrades Allowed` is ticked then set the `Upgrade Until` section to `
 After this has been done your profile should look as seen below. This is an example of the Default Scoring setup.
 
 ![!cfa-complete](images/cfa-complete.png)
+
+---
+
+## FAQ
+
+??? question "Is this guide meant for backfilling my library?"
+
+    No. This guide is designed to grab the best available releases going forward, not for backfilling an existing library. Backfilling would require manual intervention and searching to find older releases.
+
+??? question "Why is Sonarr search running slow for anime?"
+
+    Sonarr searches for anime using both absolute episode numbers and season/episode numbers. This dual search method can cause slower search times compared to regular TV shows, especially on indexers with large anime databases.
+
+??? question "Why are there no English subtitles available for some anime?"
+
+    Not all anime releases include English subtitles. If you want to filter for only releases with English subtitles, or if you prefer raw (no subs) releases, you can configure this in Prowlarr.
+
+    Go to `Indexers` => Select your anime indexer => and look for the `Anime English-Translated` category option.
+
+    ![!indexer-anime-english-translated](/Prowlarr/images/indexer-anime-english-translated.png)
+
+??? question "How do I configure this for no Remuxes?"
+
+    If you don't want Remuxes, you can simply remove `Bluray-1080p Remux` from your quality profile or uncheck it in the qualities list. The guide will then prefer the highest-scoring encodes instead.
+
+??? question "How do I set up a WEB-only profile?"
+
+    If you only want WEB releases (no Bluray encodes or Remuxes), create a quality profile that only includes `WEBDL-1080p`, `WEBRip-1080p`, `WEBDL-720p`, and `WEBRip-720p`. The Anime Web Tier custom formats will still score these releases appropriately.
+
+??? question "Why are some raw releases showing up as Dual Audio?"
+
+    Some groups like ToonsHub and VARYG release raw anime (no English audio/subs) but their naming conventions can cause them to be incorrectly detected as Dual Audio. If you encounter this, you may need to use the `Uncensored` custom format to help differentiate these releases.
+
+??? question "Should I run a single instance or dual instances?"
+
+    It's recommended to run two Sonarr instances (one for Anime and one for regular TV shows). This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign series accordingly.
+
+---
 
 ### Acknowledgements
 
