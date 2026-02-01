@@ -1,3 +1,12 @@
+# 2026-02-01 02:37
+- [feat(downloaders): Make mover.py version check more robust](https://github.com/TRaSH-Guides/Guides/pull/2611)
+- [fix(starr-anime): correct tier names and descriptions for anime web sections](https://github.com/TRaSH-Guides/Guides/pull/2610)
+- [fix(starr-anime): inconsistent naming](https://github.com/TRaSH-Guides/Guides/pull/2605)
+- [feat(downloaders): Add mover.py version check to the mover-tuning-start script](https://github.com/TRaSH-Guides/Guides/pull/2608)
+- [feat(radarr): Improved matching of the `IMAX-Enhanced` CF after rename](https://github.com/TRaSH-Guides/Guides/pull/2602)
+- [feat(starr-anime): Anime Tier adjustments after revamp](https://github.com/TRaSH-Guides/Guides/pull/2604)
+- [feat(starr-anime): Major overhaul to Anime Guide](https://github.com/TRaSH-Guides/Guides/pull/2541)
+
 # 2026-01-25 02:06
 - [feat(radarr): Add RlsGrp `MGE` and `TM` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2598)
 - [feat(radarr): Updated a few CF for testing a new profile](https://github.com/TRaSH-Guides/Guides/pull/2597)
