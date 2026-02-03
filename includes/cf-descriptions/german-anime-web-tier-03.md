@@ -1,7 +1,10 @@
 <!-- markdownlint-disable MD041-->
 **German Anime Web Tier 03**<br>
 
-- WiP
-- Groups that haven't released much or are not well recognized. (yet)
-- Groups that retired and don't have the best quality by today's standards.
+- **Source:** WEB-DLs or WEBRip from less reliable providers or inconsistent releases from groups lacking commitment.
+- **Video:** Functional, but often lacks consistency across different episodes/seasons. Encoding artifacts only visible upon close inspection.
+- **QC & Features:**
+  - **Subtitles:** SRT/ASS included.
+  - **Chapters:** Missing entirely.
+  - **Tags:** Messy or incomplete tags and filenames.
 <!-- markdownlint-enable MD041-->
