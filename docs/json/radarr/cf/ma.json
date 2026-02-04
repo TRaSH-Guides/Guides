@@ -4,7 +4,7 @@
     "default": 20,
     "sqp-4-ma-hybrid": 70
   },
-  "trash_regex": "https://regex101.com/r/B0AMvg/latest",
+  "trash_regex": "https://regex101.com/r/k6okQj/1",
   "name": "MA",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -14,7 +14,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<!dts[ .-]?hd[ .-]?)\\bma\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
+        "value": "(?<!dts[ .-]?hd[ .-]?)\\b(ma|ykw)\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
       }
     }
   ]
