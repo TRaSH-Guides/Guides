@@ -1,5 +1,6 @@
 {
   "trash_id": "e0ec9672be6cac914ffad34a6b077209",
+  "trash_regex": "https://regex101.com/r/ptwLDS/1",
   "name": "iT",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -18,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[(iT)\\b|\\b(iT)\\]"
+        "value": "\\[(iT)(?![+])\\b|\\b(?<![+])(iT)\\]"
       }
     },
     {
