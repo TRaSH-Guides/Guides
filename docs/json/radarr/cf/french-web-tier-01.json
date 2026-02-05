@@ -147,6 +147,15 @@
       }
     },
     {
+      "name": "THESYNDiCATE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(THESYNDiCATE)$"
+      }
+    },
+    {
       "name": "TiNA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
