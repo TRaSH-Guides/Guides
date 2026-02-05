@@ -307,7 +307,7 @@ The cf-group.json exists of two properties.
     - `required` - [true|false] See the above note for a description
     - `default": "true"` - [**OPTIONAL**] If you want the CF to be enabled by default.
 - `quality_profiles`
-    - `exclude` - Add the Quality Profiles you want to exclude from this group, using the quality-profiles `name` and `trash_id`.
+    - `include` - Quality profiles that receive this CF group, using the profile `name` and `trash_id`.
 
 ### quality-profile-groups
 
