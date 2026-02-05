@@ -111,15 +111,6 @@
       }
     },
     {
-      "name": "TFA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TFA)$"
-      }
-    },
-    {
       "name": "TiNA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
