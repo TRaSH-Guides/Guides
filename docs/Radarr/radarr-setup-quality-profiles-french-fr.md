@@ -91,6 +91,8 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 {! include-markdown "../../includes/french-guide/radarr-french-audio-version-fr.md" !}
 
+{! include-markdown "../../includes/french-guide/radarr-french-audio-description-fr.md" !}
+
 ---
 
 ### HD Bluray + WEB (1080p)
