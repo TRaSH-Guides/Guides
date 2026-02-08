@@ -1,3 +1,8 @@
+# 2026-02-08 02:44
+- [chore(guide): Update PayPal QR Images](https://github.com/TRaSH-Guides/Guides/pull/2617)
+- [feat(radarr): Added `YKW` to be matched as `MA` release](https://github.com/TRaSH-Guides/Guides/pull/2616)
+- [fix(radarr-anime): Broken links on the french anime radarr guide](https://github.com/TRaSH-Guides/Guides/pull/2615)
+
 # 2026-02-01 02:37
 - [feat(downloaders): Make mover.py version check more robust](https://github.com/TRaSH-Guides/Guides/pull/2611)
 - [fix(starr-anime): correct tier names and descriptions for anime web sections](https://github.com/TRaSH-Guides/Guides/pull/2610)
