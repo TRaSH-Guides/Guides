@@ -12,48 +12,41 @@
   "minUpgradeFormatScore": 1,
   "language": "Any",
   "items": [
-    { "name": "Unknown", "allowed": false },
-    { "name": "WORKPRINT", "allowed": false },
-    { "name": "CAM", "allowed": false },
-    { "name": "TELESYNC", "allowed": false },
-    { "name": "TELECINE", "allowed": false },
-    { "name": "REGIONAL", "allowed": false },
-    { "name": "DVDSCR", "allowed": false },
-    { "name": "SDTV", "allowed": false },
-    { "name": "DVD", "allowed": false },
-    { "name": "DVD-R", "allowed": false },
-    {
-      "name": "WEB 480p",
-      "allowed": false,
-      "items": ["WEBDL-480p", "WEBRip-480p"]
-    },
-    { "name": "Bluray-480p", "allowed": false },
-    { "name": "Bluray-576p", "allowed": false },
-    { "name": "HDTV-720p", "allowed": false },
-    { "name": "HDTV-1080p", "allowed": false },
-    { "name": "Remux-1080p", "allowed": false },
-    { "name": "HDTV-2160p", "allowed": false },
-    {
-      "name": "WEB 2160p",
-      "allowed": false,
-      "items": ["WEBDL-2160p", "WEBRip-2160p"]
-    },
-    { "name": "Bluray-2160p", "allowed": false },
-    { "name": "Remux-2160p", "allowed": false },
-    { "name": "BR-DISK", "allowed": false },
-    { "name": "Raw-HD", "allowed": false },
     {
       "name": "Merged QPs",
       "allowed": true,
-      "items": [
-        "WEBRip-720p",
-        "WEBDL-720p",
-        "Bluray-720p",
-        "WEBDL-1080p",
-        "WEBRip-1080p",
-        "Bluray-1080p"
-      ]
-    }
+      "items": ["Bluray-1080p", "WEBRip-1080p", "WEBDL-1080p", "Bluray-720p", "WEBDL-720p", "WEBRip-720p"]
+    },
+    { "name": "Raw-HD", "allowed": false },
+    { "name": "BR-DISK", "allowed": false },
+    { "name": "Remux-2160p", "allowed": false },
+    { "name": "Bluray-2160p", "allowed": false },
+    {
+      "name": "WEB 2160p",
+      "allowed": false,
+      "items": ["WEBRip-2160p", "WEBDL-2160p"]
+    },
+    { "name": "HDTV-2160p", "allowed": false },
+    { "name": "Remux-1080p", "allowed": false },
+    { "name": "HDTV-1080p", "allowed": false },
+    { "name": "HDTV-720p", "allowed": false },
+    { "name": "Bluray-576p", "allowed": false },
+    { "name": "Bluray-480p", "allowed": false },
+    {
+      "name": "WEB 480p",
+      "allowed": false,
+      "items": ["WEBRip-480p", "WEBDL-480p"]
+    },
+    { "name": "DVD-R", "allowed": false },
+    { "name": "DVD", "allowed": false },
+    { "name": "SDTV", "allowed": false },
+    { "name": "DVDSCR", "allowed": false },
+    { "name": "REGIONAL", "allowed": false },
+    { "name": "TELECINE", "allowed": false },
+    { "name": "TELESYNC", "allowed": false },
+    { "name": "CAM", "allowed": false },
+    { "name": "WORKPRINT", "allowed": false },
+    { "name": "Unknown", "allowed": false }
   ],
   "formatItems": {
     "German 1080p Booster": "3bc8df3a71baaac60a31ef696ea72d36",

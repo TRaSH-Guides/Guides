@@ -10,40 +10,40 @@
   "cutoffFormatScore": 10000,
   "minUpgradeFormatScore": 1,
   "items": [
-    { "name": "Unknown", "allowed": false },
-    { "name": "Raw-HD", "allowed": false },
-    { "name": "Bluray-1080p Remux", "allowed": false },
-    { "name": "HDTV-2160p", "allowed": false },
-    {
-      "name": "WEB 2160p",
-      "allowed": false,
-      "items": ["WEBDL-2160p", "WEBRip-2160p"]
-    },
-    { "name": "Bluray-2160p", "allowed": false },
-    { "name": "Bluray-2160p Remux", "allowed": false },
-    { "name": "SDTV", "allowed": true },
-    { "name": "DVD", "allowed": true },
-    { "name": "Bluray-480p", "allowed": true },
-    {
-      "name": "WEB 480p",
-      "allowed": true,
-      "items": ["WEBDL-480p", "WEBRip-480p"]
-    },
-    { "name": "Bluray-576p", "allowed": true },
-    { "name": "HDTV-720p", "allowed": true },
-    { "name": "Bluray-720p", "allowed": true },
-    {
-      "name": "WEB 720p",
-      "allowed": true,
-      "items": ["WEBDL-720p", "WEBRip-720p"]
-    },
-    { "name": "HDTV-1080p", "allowed": true },
-    { "name": "Bluray-1080p", "allowed": true },
     {
       "name": "WEB 1080p",
       "allowed": true,
-      "items": ["WEBDL-1080p", "WEBRip-1080p"]
-    }
+      "items": ["WEBRip-1080p", "WEBDL-1080p"]
+    },
+    { "name": "Bluray-1080p", "allowed": true },
+    { "name": "HDTV-1080p", "allowed": true },
+    {
+      "name": "WEB 720p",
+      "allowed": true,
+      "items": ["WEBRip-720p", "WEBDL-720p"]
+    },
+    { "name": "Bluray-720p", "allowed": true },
+    { "name": "HDTV-720p", "allowed": true },
+    { "name": "Bluray-576p", "allowed": true },
+    {
+      "name": "WEB 480p",
+      "allowed": true,
+      "items": ["WEBRip-480p", "WEBDL-480p"]
+    },
+    { "name": "Bluray-480p", "allowed": true },
+    { "name": "DVD", "allowed": true },
+    { "name": "SDTV", "allowed": true },
+    { "name": "Bluray-2160p Remux", "allowed": false },
+    { "name": "Bluray-2160p", "allowed": false },
+    {
+      "name": "WEB 2160p",
+      "allowed": false,
+      "items": ["WEBRip-2160p", "WEBDL-2160p"]
+    },
+    { "name": "HDTV-2160p", "allowed": false },
+    { "name": "Bluray-1080p Remux", "allowed": false },
+    { "name": "Raw-HD", "allowed": false },
+    { "name": "Unknown", "allowed": false }
   ],
   "formatItems": {
     "BR-DISK": "85c61753df5da1fb2aab6f2a47426b09",
