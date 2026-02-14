@@ -1,7 +1,8 @@
 {
   "trash_id": "d9e511921c8cedc7282e291b0209cdc5",
   "trash_scores": {
-    "default": 75
+    "default": 75,
+    "german-anime": 0
   },
   "name": "ATV",
   "includeCustomFormatWhenRenaming": true,

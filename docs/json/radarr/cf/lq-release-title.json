@@ -2,7 +2,8 @@
   "trash_id": "e204b80c87be9497a8a6eaff48f72905",
   "trash_scores": {
     "default": -10000,
-    "german": -35000
+    "german": -35000,
+    "german-anime": -35000
   },
   "trash_regex": "https://regex101.com/r/8TIqc2/latest",
   "name": "LQ (Release Title)",
