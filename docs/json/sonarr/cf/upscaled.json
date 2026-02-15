@@ -59,7 +59,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<=\\b\\d{3,4}p\\b).*\\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b"
+        "value": "(?<=\\b\\d{3,4}p\\b).*\\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b"
       }
     }
   ]
