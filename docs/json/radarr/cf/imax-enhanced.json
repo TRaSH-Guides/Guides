@@ -3,7 +3,7 @@
   "trash_regex": "https://regex101.com/r/y4MaGg/1",
   "trash_scores": {
     "default": 800,
-    "sqp-4-ma-hybrid": 65
+    "sqp-4-ma-hybrid": 345
   },
   "name": "IMAX Enhanced",
   "includeCustomFormatWhenRenaming": false,

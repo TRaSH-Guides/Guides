@@ -6,7 +6,7 @@
     "sqp-1-web-1080p": 0,
     "sqp-1-2160p": 0,
     "sqp-1-web-2160p": 0,
-    "sqp-4-ma-hybrid": 180
+    "sqp-4-ma-hybrid": 100
   },
   "name": "AAC",
   "includeCustomFormatWhenRenaming": false,

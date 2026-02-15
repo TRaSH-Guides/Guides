@@ -1,7 +1,8 @@
 {
   "trash_id": "b337d6812e06c200ec9a2d3cfa9d20a7",
   "trash_scores": {
-    "default": 1000
+    "default": 1000,
+    "sqp-4-ma-hybrid": 100
   },
   "name": "DV Boost",
   "includeCustomFormatWhenRenaming": false,

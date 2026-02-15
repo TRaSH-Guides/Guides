@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": -10000,
     "german": -35000,
-    "sqp-4-ma-hybrid": -1500
+    "sqp-4-ma-hybrid": -360
   },
   "name": "SDR",
   "includeCustomFormatWhenRenaming": false,
