@@ -90,6 +90,8 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 {! include-markdown "../../includes/french-guide/sonarr-french-audio-version-en.md" !}
 
+{! include-markdown "../../includes/french-guide/sonarr-french-audio-description-en.md" !}
+
 ---
 
 ### HD Bluray + WEB (1080p)
