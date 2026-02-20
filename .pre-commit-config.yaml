@@ -22,25 +22,25 @@ repos:
 
       - id: check-jsonschema
         name: Validate Radarr Quality Profiles
-        files: ^docs/json/radarr/quality-profiles/[^/]+$
+        files: ^docs/json/radarr/quality-profiles/[^/]+\.json$
         types: [json]
         args: ["-v", "--schemafile", "schemas/quality-profile.schema.json"]
 
       - id: check-jsonschema
         name: Validate Sonarr Quality Profiles
-        files: ^docs/json/sonarr/quality-profiles/[^/]+$
+        files: ^docs/json/sonarr/quality-profiles/[^/]+\.json$
         types: [json]
         args: ["-v", "--schemafile", "schemas/quality-profile.schema.json"]
 
       - id: check-jsonschema
         name: Validate Radarr Quality Profile Groups
-        files: ^docs/json/radarr/quality-profile-groups/[^/]+$
+        files: ^docs/json/radarr/quality-profile-groups/[^/]+\.json$
         types: [json]
         args: ["-v", "--schemafile", "schemas/profile-groups.schema.json"]
 
       - id: check-jsonschema
         name: Validate Sonarr Quality Profile Groups
-        files: ^docs/json/sonarr/quality-profile-groups/[^/]+$
+        files: ^docs/json/sonarr/quality-profile-groups/[^/]+\.json$
         types: [json]
         args: ["-v", "--schemafile", "schemas/profile-groups.schema.json"]
 
