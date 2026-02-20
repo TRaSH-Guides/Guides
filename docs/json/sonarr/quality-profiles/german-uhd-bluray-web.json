@@ -11,43 +11,39 @@
   "cutoffFormatScore": 35000,
   "minUpgradeFormatScore": 1,
   "items": [
-    { "name": "Unknown", "allowed": false },
-    { "name": "SDTV", "allowed": false },
-    {
-      "name": "WEB 480p",
-      "allowed": false,
-      "items": ["WEBDL-480p", "WEBRip-480p"]
-    },
-    { "name": "DVD", "allowed": false },
-    { "name": "Bluray-480p", "allowed": false },
-    { "name": "Bluray-576p", "allowed": false },
-    { "name": "HDTV-720p", "allowed": false },
-    { "name": "HDTV-1080p", "allowed": false },
-    { "name": "Raw-HD", "allowed": false },
-    {
-      "name": "WEB 720p",
-      "allowed": false,
-      "items": ["WEBDL-720p", "WEBRip-720p"]
-    },
-    { "name": "Bluray-720p", "allowed": false },
-    {
-      "name": "WEB 1080p",
-      "allowed": false,
-      "items": ["WEBDL-1080p", "WEBRip-1080p"]
-    },
-    { "name": "Bluray-1080p", "allowed": false },
-    { "name": "Bluray-1080p Remux", "allowed": false },
-    { "name": "HDTV-2160p", "allowed": false },
-    { "name": "Bluray-2160p Remux", "allowed": false },
     {
       "name": "Merged QPs",
       "allowed": true,
-      "items": [
-        "WEBRip-2160p",
-        "WEBDL-2160p",
-        "Bluray-2160p"
-      ]
-    }
+      "items": ["Bluray-2160p", "WEBDL-2160p", "WEBRip-2160p"]
+    },
+    { "name": "Bluray-2160p Remux", "allowed": false },
+    { "name": "HDTV-2160p", "allowed": false },
+    { "name": "Bluray-1080p Remux", "allowed": false },
+    { "name": "Bluray-1080p", "allowed": false },
+    {
+      "name": "WEB 1080p",
+      "allowed": false,
+      "items": ["WEBRip-1080p", "WEBDL-1080p"]
+    },
+    { "name": "Bluray-720p", "allowed": false },
+    {
+      "name": "WEB 720p",
+      "allowed": false,
+      "items": ["WEBRip-720p", "WEBDL-720p"]
+    },
+    { "name": "Raw-HD", "allowed": false },
+    { "name": "HDTV-1080p", "allowed": false },
+    { "name": "HDTV-720p", "allowed": false },
+    { "name": "Bluray-576p", "allowed": false },
+    { "name": "Bluray-480p", "allowed": false },
+    { "name": "DVD", "allowed": false },
+    {
+      "name": "WEB 480p",
+      "allowed": false,
+      "items": ["WEBRip-480p", "WEBDL-480p"]
+    },
+    { "name": "SDTV", "allowed": false },
+    { "name": "Unknown", "allowed": false }
   ],
   "formatItems": {
     "German 1080p Booster": "9aa0ca0d2d66b6f6ee51fc630f46cf6f",
