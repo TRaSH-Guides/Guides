@@ -3,7 +3,7 @@
   "name": "[French MULTi.VO] HD Remux (1080p)",
   "trash_description": "French Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray 1080p<br>- Remux: 1080p",
   "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#hd-remux-1080p",
-  "group": "21",
+  "group": 21,
   "trash_score_set": "french-multi-vo",
   "upgradeAllowed": true,
   "cutoff": "Remux-1080p",

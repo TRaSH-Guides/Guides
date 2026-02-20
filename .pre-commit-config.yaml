@@ -20,6 +20,30 @@ repos:
         types: [json]
         args: ["-v", "--schemafile", "schemas/sonarr-cf.schema.json"]
 
+      - id: check-jsonschema
+        name: Validate Radarr Quality Profiles
+        files: ^docs/json/radarr/quality-profiles/[^/]+$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/quality-profile.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Sonarr Quality Profiles
+        files: ^docs/json/sonarr/quality-profiles/[^/]+$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/quality-profile.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Radarr Quality Profile Groups
+        files: ^docs/json/radarr/quality-profile-groups/[^/]+$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/profile-groups.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Sonarr Quality Profile Groups
+        files: ^docs/json/sonarr/quality-profile-groups/[^/]+$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/profile-groups.schema.json"]
+
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
     hooks:
