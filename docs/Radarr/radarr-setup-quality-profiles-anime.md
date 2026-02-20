@@ -58,7 +58,7 @@ The scoring that has been set is the recommended scoring, however some of the CF
 
 `Anime Raws` and `Dubs Only` are negatively scored, however if you prefer these attributes you can give them a positive score.
 
-Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the `[Anime] Remux-1080p` profile that was setup before.
+Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the `[Anime] Remux-1080p` profile that was set up before.
 
 ![!cf-settings-profiles](images/cfa-settings-profiles.png)
 
@@ -74,7 +74,7 @@ If you prefer `Dual Audio` releases you have a few options depending on your pre
 
 If you want to prefer `Dual Audio` within the same tier give the `CF` a score of `10`, if you want it to be preferred a tier above give the `CF` a score of `101`, and if you want to prefer it over any tiers give the `CF` a score of `2000`.
 
-If you must have `Dual Audio` releases set the `Minimum Custom Format Score` to 2000 in the `[Anime] Remux-1080p` profile that you setup earlier.
+If you must have `Dual Audio` releases set the `Minimum Custom Format Score` to 2000 in the `[Anime] Remux-1080p` profile that you set up earlier.
 
 Using this scoring you will still benefit from the tiers if a better release group does a `Dual Audio` release.
 
