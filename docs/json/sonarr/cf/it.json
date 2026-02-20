@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": 75
   },
+  "trash_regex": "https://regex101.com/r/ptwLDS/1",
   "name": "iT",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -21,7 +22,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[(iT)\\b|\\b(iT)\\]"
+        "value": "\\[(iT)(?![+])\\b|\\b(?<![+])(iT)\\]"
       }
     },
     {

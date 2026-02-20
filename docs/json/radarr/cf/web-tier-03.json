@@ -28,6 +28,15 @@
       }
     },
     {
+      "name": "BLOOM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BLOOM)$"
+      }
+    },
+    {
       "name": "Dooky",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
