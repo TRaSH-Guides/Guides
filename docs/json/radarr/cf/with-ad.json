@@ -1,0 +1,17 @@
+{
+  "trash_id": "127bdbadcf3e4463a8c707759fbaad75",
+  "trash_regex": "https://regex101.com/r/GCIcFI",
+  "name": "WiTH.AD",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Audio Description",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b((FRENCH|MULTi|WiTH)[ .-]AD)\\b"
+      }
+    }
+  ]
+}

@@ -124,6 +124,7 @@ We've made 3 guides related to this.
 | [Scene](#scene)                                       |                                                                                                                       |
 | [VC-1](#vc-1)                                         |                                                                                                                       |
 | [VP9](#vp9)                                           |                                                                                                                       |
+| [WiTH AD](#with-ad)                                   |                                                                                                                       |
 | [x264](#x264)                                         |                                                                                                                       |
 | [x265 (no HDR/DV)](#x265-no-hdrdv)                    |                                                                                                                       |
 | [x265](#x265)                                         |                                                                                                                       |
@@ -1375,6 +1376,22 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/multi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### WiTH AD
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/with-ad.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-ad.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
