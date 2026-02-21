@@ -1,6 +1,6 @@
 # Guide Sync
 
-Here you will find officially supported third-party party Guide Sync Tools. These tools follow the Guide guidelines.
+Here you will find officially supported third-party Guide Sync Tools. These tools follow the Guide guidelines.
 
 !!! Info
     If you are the author of another TRaSH Guides sync tool and would like to be added to this list, you must also be active in our Guide Discord server for support questions. This means we can work with you if we need to make Guide changes that affect third-party sync tools.<br>If you want to be added here, please open a new post in our [#suggestions](https://discord.com/channels/492590071455940612/1021029470389403818){:target="\_blank" rel="noopener noreferrer"} section of our Discord to make a request.
@@ -55,7 +55,7 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YTpaw_qGG5E?si=TvBmIW53qniFB8XH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    Also check out other videos from IBRACORP  [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
+    Also check out other videos from IBRACORP [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -66,9 +66,9 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 Recyclarr is a command line application utilizing configuration files to sync the guides to Radarr &
 Sonarr.
 
-## Configarr
+### Configarr
 
-[Github](https://github.com/raydak-labs/configarr){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://configarr.raydak.de){:target="\_blank" rel="noopener noreferrer"}
+[GitHub](https://github.com/raydak-labs/configarr){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://configarr.raydak.de){:target="\_blank" rel="noopener noreferrer"}
 
 Configarr is a synchronization tool primarily designed to run as a scheduled job (e.g., Cron) within containerized environments like Docker or Kubernetes.
 Configarr is compatible with the Recyclarr templates until v7.4.0.
