@@ -13,7 +13,6 @@ These are third-party applications that sync several sections of the guide with 
 | ---------------------------------------------------------------------------------- | :----------------: | :----------------: | :----------------: |
 | GUI (graphical user interface)                                                     | :white_check_mark: |                    |                    |
 | Custom Formats                                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Interactive Flowchart (choose the correct Custom Formats for your Quality Profile) |                    |                    |                    |
 | Predefined config files available (editable to personal preferences)               |                    | :white_check_mark: | :white_check_mark: |
 | Predefined profiles sync (with several personal selectable options)                | :white_check_mark: |                    |                    |
 | Clear all Custom Formats                                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: |
