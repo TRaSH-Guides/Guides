@@ -15,14 +15,16 @@
         "description": "Display name for the profile group"
       },
       "profiles": {
-        "type": "array",
-        "description": "List of quality profile trash_ids that belong to this group",
-        "items": {
-          "type": "string",
-          "pattern": "^[a-fA-F0-9]{32}$"
+        "type": "object",
+        "description": "Map of quality profile slugs to their trash_id hashes",
+        "patternProperties": {
+          "^.+$": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{32}$"
+          }
         },
-        "minItems": 1,
-        "uniqueItems": true
+        "additionalProperties": false,
+        "minProperties": 1
       }
     }
   },

@@ -20,6 +20,30 @@ repos:
         types: [json]
         args: ["-v", "--schemafile", "schemas/sonarr-cf.schema.json"]
 
+      - id: check-jsonschema
+        name: Validate Radarr CF Groups
+        files: ^docs/json/radarr/cf-groups/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/cf-groups.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Sonarr CF Groups
+        files: ^docs/json/sonarr/cf-groups/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/cf-groups.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Radarr Naming
+        files: ^docs/json/radarr/naming/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/radarr-naming.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Sonarr Naming
+        files: ^docs/json/sonarr/naming/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/sonarr-naming.schema.json"]
+
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
     hooks:
