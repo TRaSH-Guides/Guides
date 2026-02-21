@@ -1,0 +1,170 @@
+{
+  "trash_id": "",
+  "name": "[French MULTi.VF] HD Bluray + WEB",
+  "trash_description": "French Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray 720p, 1080p",
+  "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#hd-bluray-web-1080p",
+  "group": 21,
+  "trash_score_set": "french-multi-vf",
+  "upgradeAllowed": true,
+  "cutoff": "Bluray|WEB 1080p",
+  "minFormatScore": 0,
+  "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
+  "language": "French",
+  "items": [
+    {
+      "name": "Bluray|WEB 1080p",
+      "allowed": true,
+      "items": [
+        "Bluray-1080p",
+        "WEBRip-1080p",
+        "WEBDL-1080p"
+      ]
+    },
+    {
+      "name": "Bluray-720p",
+      "allowed": true
+    },
+    {
+      "name": "Raw-HD",
+      "allowed": false
+    },
+    {
+      "name": "BR-DISK",
+      "allowed": false
+    },
+    {
+      "name": "Remux-2160p",
+      "allowed": false
+    },
+    {
+      "name": "Bluray-2160p",
+      "allowed": false
+    },
+    {
+      "name": "WEB 2160p",
+      "allowed": false,
+      "items": [
+        "WEBRip-2160p",
+        "WEBDL-2160p"
+      ]
+    },
+    {
+      "name": "HDTV-2160p",
+      "allowed": false
+    },
+    {
+      "name": "Remux-1080p",
+      "allowed": false
+    },
+    {
+      "name": "HDTV-1080p",
+      "allowed": false
+    },
+    {
+      "name": "WEB 720p",
+      "allowed": false,
+      "items": [
+        "WEBRip-720p",
+        "WEBDL-720p"
+      ]
+    },
+    {
+      "name": "HDTV-720p",
+      "allowed": false
+    },
+    {
+      "name": "Bluray-576p",
+      "allowed": false
+    },
+    {
+      "name": "Bluray-480p",
+      "allowed": false
+    },
+    {
+      "name": "WEB 480p",
+      "allowed": false,
+      "items": [
+        "WEBRip-480p",
+        "WEBDL-480p"
+      ]
+    },
+    {
+      "name": "DVD-R",
+      "allowed": false
+    },
+    {
+      "name": "DVD",
+      "allowed": false
+    },
+    {
+      "name": "SDTV",
+      "allowed": false
+    },
+    {
+      "name": "DVDSCR",
+      "allowed": false
+    },
+    {
+      "name": "REGIONAL",
+      "allowed": false
+    },
+    {
+      "name": "TELECINE",
+      "allowed": false
+    },
+    {
+      "name": "TELESYNC",
+      "allowed": false
+    },
+    {
+      "name": "CAM",
+      "allowed": false
+    },
+    {
+      "name": "WORKPRINT",
+      "allowed": false
+    },
+    {
+      "name": "Unknown",
+      "allowed": false
+    }
+  ],
+  "formatItems": {
+    "VFF": "404c08fd0bd67f39b4d8e5709319094e",
+    "VOF": "4cafa20d5584f6ba1871d1b8941aa3cb",
+    "VFI": "52772f1cad6b5d26c2551f79bc538a50",
+    "VF2": "29b5f7b1a5f20f64228786c3ab1bdc7d",
+    "VFQ": "b6ace47331a1d3b77942fc18156f6df6",
+    "VOQ": "f7caa1942be5cc547c266bd3dbc2cda9",
+    "VQ": "95aa50f71a01c82354a7a2b385f1c4d8",
+    "VFB": "b3fb499641d7b3c2006be1d9eb014cb3",
+    "Language: Not Original": "d6e9318c875905d6cfb5bee961afcea9",
+    "Language: Not French": "533f782474f0819643c2ec0c1eeeb0ac",
+    "Language: Original + French": "0542a48746585dc4444bbbb8a6bdf6ea",
+    "MULTi": "4b900e171accbfb172729b63323ea8ca",
+    "FR HD Bluray Tier 01": "5322da05b19d857acc1e75be3edf47b3",
+    "FR HD Bluray Tier 02": "57f34251344be2e283fc30e00e458be6",
+    "FR WEB Tier 01": "9790a618cec1aeac8ce75601a17ea40d",
+    "FR WEB Tier 02": "3c83a765f84239716bd5fd2d7af188f9",
+    "FR Scene Groups": "0d94489c0d5828cd3bf9409d309fb32b",
+    "FR LQ": "48f031e76111f17ea94898f4cdc34fdc",
+    "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
+    "HD Bluray Tier 02": "c20c8647f2746a1f4c4262b0fbbeeeae",
+    "HD Bluray Tier 03": "5608c71bcebba0a5e666223bae8c9227",
+    "WEB Tier 01": "c20f169ef63c5f40c2def54abaf4438e",
+    "WEB Tier 02": "403816d65392c79236dcb6dd591aeda4",
+    "WEB Tier 03": "af94e0fe497124d1f9ce732069ec8c3b",
+    "Repack/Proper": "e7718d7a3ce595f289bfee26adc178f5",
+    "Repack2": "ae43b294509409a6a13919dedd4764c4",
+    "Repack3": "5caaaa1c08c1742aa4342d8c4cc463f2",
+    "BR-DISK": "ed38b889b31be83fda192888e2286d83",
+    "LQ": "90a6f9a284dff5103f6346090e6280c8",
+    "LQ (Release Title)": "e204b80c87be9497a8a6eaff48f72905",
+    "3D": "b8cd450cbfa689c0259a01d9e29ba3d6",
+    "Upscaled": "bfd8eb01832d646a0a89c4deb46f8564",
+    "Extras": "0a3f082873eb454bde444150b70253cc",
+    "Sing-Along Versions": "712d74cd88bceb883ee32f773656b1f5",
+    "AV1": "cae4ca30163749b891686f95532519bd"
+  }
+}
