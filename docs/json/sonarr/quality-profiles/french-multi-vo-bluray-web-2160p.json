@@ -4,7 +4,7 @@
   "name": "[French MULTi.VO] UHD Bluray + WEB (2160p)",
   "trash_description": "French Quality Profile that covers:<br>- WEBDL: 1080p, 2160p<br>- Bluray 1080p, 2160p",
   "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-en/#uhd-bluray-web-2160p",
-  "group": "21",
+  "group": 21,
   "trash_score_set": "french-multi-vo",
   "upgradeAllowed": true,
   "cutoff": "Bluray|WEB 2160p",
