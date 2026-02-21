@@ -50,13 +50,13 @@ repos:
       - id: yamllint
         name: YAML Lint
         types: [yaml]
-        args: ["-c", "yamllint.yml"]
+        args: ["-c", ".yamllint.yml"]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.47.0
     hooks:
-      - id: markdownlint
-        name: Markdown Lint
+      - id: markdownlint-fix
+        name: Markdown Lint (autofix)
         types: [markdown]
         args: ["-c", ".markdownlint.yaml"]
 
