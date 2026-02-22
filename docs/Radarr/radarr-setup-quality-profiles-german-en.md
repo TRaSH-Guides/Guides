@@ -316,7 +316,7 @@ If you prefer High-Quality HD Encodes for Anime (720p/1080p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-anime-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-anime-streaming-services-en.md" !}
 
 **The following Custom Formats are optional:**
 

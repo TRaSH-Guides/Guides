@@ -295,7 +295,7 @@ If you prefer High-Quality HD Encodes for Anime (720p/1080p)
 
 {! include-markdown "../../includes/german-guide/sonarr-german-anime-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-anime-streaming-services-en.md" !}
 
 **The following Custom Formats are optional:**
 
