@@ -1,0 +1,91 @@
+{
+  "trash_id": "aa9661d31c293c4951967f2e4a4f232b",
+  "trash_scores": {
+    "default": 2300
+  },
+  "name": "German Anime Bluray Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "SUBARU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SUBARU)$"
+      }
+    },
+    {
+      "name": "ATAX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ATAX)$"
+      }
+    },
+    {
+      "name": "HDC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDC)$"
+      }
+    },
+    {
+      "name": "Mindus",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Mindus)$"
+      }
+    },
+    {
+      "name": "WAREZCX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WAREZCX)$"
+      }
+    },
+    {
+      "name": "4Baka",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(4Baka)$"
+      }
+    },
+    {
+      "name": "W33BSHiT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W33BSHiT)$"
+      }
+    },
+    {
+      "name": "AST4u",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AST4u)$"
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    }
+  ]
+}
