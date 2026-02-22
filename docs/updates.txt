@@ -1,3 +1,15 @@
+# 2026-02-22 02:27
+- [style(guide-sync): improve Guide Sync page](https://github.com/TRaSH-Guides/Guides/pull/2613)
+- [feat(starr): wire existing quality-profile and profile-groups schemas into pre-commit](https://github.com/TRaSH-Guides/Guides/pull/2629)
+- [feat(starr): add JSON schemas for cf-groups and naming files](https://github.com/TRaSH-Guides/Guides/pull/2628)
+- [fix(starr-anime): rename profile references to [Anime] Remux-1080p](https://github.com/TRaSH-Guides/Guides/pull/2627)
+- [refactor(guide-sync): migrate CF groups to include semantics and invert quality order](https://github.com/TRaSH-Guides/Guides/pull/2590)
+- [feat(starr): Add RlsGrp `BLOOM` to `WEB Tier 03`](https://github.com/TRaSH-Guides/Guides/pull/2626)
+- [fix(starr): iT CF matching italian language code](https://github.com/TRaSH-Guides/Guides/pull/2540)
+- [feat(starr-french): add Audio Description (AD) CF](https://github.com/TRaSH-Guides/Guides/pull/2569)
+- [fix(starr): update Upscaled CF](https://github.com/TRaSH-Guides/Guides/pull/2620)
+- [feat(radarr): updated scores for a test profile](https://github.com/TRaSH-Guides/Guides/pull/2621)
+
 # 2026-02-08 02:44
 - [chore(guide): Update PayPal QR Images](https://github.com/TRaSH-Guides/Guides/pull/2617)
 - [feat(radarr): Added `YKW` to be matched as `MA` release](https://github.com/TRaSH-Guides/Guides/pull/2616)
