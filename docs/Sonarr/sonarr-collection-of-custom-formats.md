@@ -99,32 +99,32 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-| Miscellaneous                       | Language profiles                                                  |
-| ----------------------------------- | ------------------------------------------------------------------ |
-| [720p](#720p)                       | [Language: German](#language-german)                               |
-| [1080p](#1080p)                     | [Language: German DL](#language-german-dl)                         |
-| [2160p](#2160p)                     | [Language: German DL (undefined)](#language-german-dl-undefined)   |
-| [Bad Dual Groups](#bad-dual-groups) | [Language: Not English (English Only)](#language-not-english)      |
-| [FreeLeech](#freeleech)             | [Language: Not French (French Only)](#language-not-french)         |
-| [HFR](#hfr)                         | [Language: Not Original (Original Only)](#language-not-original)   |
-| [Internal](#internal)               | [Language: Original + French](#language-original-plus-french)      |
-| [MPEG2](#mpeg2)                     | [Language: Not German or English](#language-not-german-or-english) |
-| [Multi](#multi)                     | [Language: Not German, Japanese or English](#language-not-german-japanese-or-english)                                                                    |
-| [No-RlsGroup](#no-rlsgroup)         | [Language: Not German, Japanese, Korean, Chinese or English](#language-not-german-japanese-korean-chinese-or-english)                                                     |
-| [Obfuscated](#obfuscated)           | [Language: German Anime Subbed](#language-german-anime-subbed)   |
-| [Repack/Proper](#repackproper)      |                                                                    |
-| [Repack2](#repack2)                 |                                                                    |
-| [Repack3](#repack3)                 |                                                                    |
-| [Retags](#retags)                   |                                                                    |
-| [Scene](#scene)                     |                                                                    |
-| [Season Packs](#season-pack)        |                                                                    |
-| [VC-1](#vc-1)                       |                                                                    |
-| [VP9](#vp9)                         |                                                                    |
-| [WiTH AD](#with-ad)                 |                                                                    |
-| [x264](#x264)                       |                                                                    |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)  |                                                                    |
-| [x265](#x265)                       |                                                                    |
-| [x266](#x266)                       |                                                                    |
+| Miscellaneous                       | Language profiles                                                                                                     |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| [720p](#720p)                       | [Language: German](#language-german)                                                                                  |
+| [1080p](#1080p)                     | [Language: German DL](#language-german-dl)                                                                            |
+| [2160p](#2160p)                     | [Language: German DL (undefined)](#language-german-dl-undefined)                                                      |
+| [Bad Dual Groups](#bad-dual-groups) | [Language: Not English (English Only)](#language-not-english)                                                         |
+| [FreeLeech](#freeleech)             | [Language: Not French (French Only)](#language-not-french)                                                            |
+| [HFR](#hfr)                         | [Language: Not Original (Original Only)](#language-not-original)                                                      |
+| [Internal](#internal)               | [Language: Original + French](#language-original-plus-french)                                                         |
+| [MPEG2](#mpeg2)                     | [Language: Not German or English](#language-not-german-or-english)                                                    |
+| [Multi](#multi)                     | [Language: Not German, Japanese or English](#language-not-german-japanese-or-english)                                 |
+| [No-RlsGroup](#no-rlsgroup)         | [Language: Not German, Japanese, Korean, Chinese or English](#language-not-german-japanese-korean-chinese-or-english) |
+| [Obfuscated](#obfuscated)           | [Language: German Anime Subbed](#language-german-anime-subbed)                                                        |
+| [Repack/Proper](#repackproper)      |                                                                                                                       |
+| [Repack2](#repack2)                 |                                                                                                                       |
+| [Repack3](#repack3)                 |                                                                                                                       |
+| [Retags](#retags)                   |                                                                                                                       |
+| [Scene](#scene)                     |                                                                                                                       |
+| [Season Packs](#season-pack)        |                                                                                                                       |
+| [VC-1](#vc-1)                       |                                                                                                                       |
+| [VP9](#vp9)                         |                                                                                                                       |
+| [WiTH AD](#with-ad)                 |                                                                                                                       |
+| [x264](#x264)                       |                                                                                                                       |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)  |                                                                                                                       |
+| [x265](#x265)                       |                                                                                                                       |
+| [x266](#x266)                       |                                                                                                                       |
 
 ---
 
@@ -141,24 +141,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-| German Source Groups                            | German Miscellaneous                                  | French Source Groups                          | French Audio Version |
-| ----------------------------------------------- | ----------------------------------------------------- | --------------------------------------------- | -------------------- |
-| [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                               | [FR Remux Tier 01](#fr-remux-tier-01)         | [VFF](#vff)          |
-| [German Remux Tier 02](#german-remux-tier-02)   | [German LQ (Release Title)](#german-lq-release-title) | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) | [VOF](#vof)          |
-| [German Bluray Tier 01](#german-bluray-tier-01) | [German Microsized](#german-microsized)               | [FR WEB Tier 01](#fr-web-tier-01)             | [VFI](#vfi)          |
-| [German Bluray Tier 02](#german-bluray-tier-02) | [German 1080p Booster](#german-1080p-booster)         | [FR WEB Tier 02](#fr-web-tier-02)             | [VF2](#vf2)          |
-| [German Bluray Tier 03](#german-bluray-tier-03) | [German 2160p Booster](#german-2160p-booster)         | [FR WEB Tier 03](#fr-web-tier-03)             | [VFQ](#vfq)          |
-| [German Web Tier 01](#german-web-tier-01)       |                                                       | [FR Anime Tier 01](#fr-anime-tier-01)         | [VOQ](#voq)          |
-| [German Web Tier 02](#german-web-tier-02)       |                                                       | [FR Anime Tier 02](#fr-anime-tier-02)         | [VQ](#vq)            |
-| [German Web Tier 03](#german-web-tier-03)       |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)         | [VFB](#vfb)          |
-| [German Scene](#german-scene)                   |                                                       | [FR Anime FanSub](#fr-anime-fansub)           | [VOSTFR](#vostfr)    |
-| [German Anime Bluray Tier 01](#german-anime-bluray-tier-01)    |                                                       | [FR Scene Groups](#fr-scene-groups)           | [FanSUB](#fansub)    |
-| [German Anime Bluray Tier 02](#german-anime-bluray-tier-02)    |                                                       | [FR LQ](#fr-lq)                               | [FastSUB](#fastsub)   |
-| [German Anime Bluray Tier 03](#german-anime-bluray-tier-03)    |                                                       |                                               |   |
-| [German Anime Web Tier 01](#german-anime-web-tier-01)       |                                                       |                                               |   |
-| [German Anime Web Tier 02](#german-anime-web-tier-02)       |                                                       |                                               |   |
-| [German Anime Web Tier 03](#german-anime-web-tier-03)       |                                                       |                                               |   |
-| [German Anime Scene](#german-anime-scene)       |                                                       |                                               |   |
+| German Source Groups                                        | German Miscellaneous                                  | French Source Groups                          | French Audio Version |
+| ----------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------- | -------------------- |
+| [German Remux Tier 01](#german-remux-tier-01)               | [German LQ](#german-lq)                               | [FR Remux Tier 01](#fr-remux-tier-01)         | [VFF](#vff)          |
+| [German Remux Tier 02](#german-remux-tier-02)               | [German LQ (Release Title)](#german-lq-release-title) | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) | [VOF](#vof)          |
+| [German Bluray Tier 01](#german-bluray-tier-01)             | [German Microsized](#german-microsized)               | [FR WEB Tier 01](#fr-web-tier-01)             | [VFI](#vfi)          |
+| [German Bluray Tier 02](#german-bluray-tier-02)             | [German 1080p Booster](#german-1080p-booster)         | [FR WEB Tier 02](#fr-web-tier-02)             | [VF2](#vf2)          |
+| [German Bluray Tier 03](#german-bluray-tier-03)             | [German 2160p Booster](#german-2160p-booster)         | [FR WEB Tier 03](#fr-web-tier-03)             | [VFQ](#vfq)          |
+| [German Web Tier 01](#german-web-tier-01)                   |                                                       | [FR Anime Tier 01](#fr-anime-tier-01)         | [VOQ](#voq)          |
+| [German Web Tier 02](#german-web-tier-02)                   |                                                       | [FR Anime Tier 02](#fr-anime-tier-02)         | [VQ](#vq)            |
+| [German Web Tier 03](#german-web-tier-03)                   |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)         | [VFB](#vfb)          |
+| [German Scene](#german-scene)                               |                                                       | [FR Anime FanSub](#fr-anime-fansub)           | [VOSTFR](#vostfr)    |
+| [German Anime Bluray Tier 01](#german-anime-bluray-tier-01) |                                                       | [FR Scene Groups](#fr-scene-groups)           | [FanSUB](#fansub)    |
+| [German Anime Bluray Tier 02](#german-anime-bluray-tier-02) |                                                       | [FR LQ](#fr-lq)                               | [FastSUB](#fastsub)  |
+| [German Anime Bluray Tier 03](#german-anime-bluray-tier-03) |                                                       |                                               |                      |
+| [German Anime Web Tier 01](#german-anime-web-tier-01)       |                                                       |                                               |                      |
+| [German Anime Web Tier 02](#german-anime-web-tier-02)       |                                                       |                                               |                      |
+| [German Anime Web Tier 03](#german-anime-web-tier-03)       |                                                       |                                               |                      |
+| [German Anime Scene](#german-anime-scene)                   |                                                       |                                               |                      |
 
 ---
 
