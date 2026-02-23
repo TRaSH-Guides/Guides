@@ -212,22 +212,24 @@ validate_configuration() {
 	# Validate folder groups - THIS IS THE CRITICAL CHECK BEFORE other validation
 	if [[ ${#folders[@]} -eq 0 ]]; then
 		log_msg INFO ""
-		log_msg ERROR "No search folders configured!"
+		log_msg ERROR "No search folder groups configured!"
 		log_msg INFO ""
-		log_msg INFO "Please edit the script and configure at least one folder."
+		log_msg INFO "Please edit mover-tuning.cfg and configure at least one folder group."
 		log_msg INFO "Examples:"
-		log_msg INFO ' folders["Series"]="/mnt/user/data/torrents/tv/ /mnt/user/data/media/tv/"'
+		log_msg INFO ' readonly PATH_SEPARATOR="|"'
+		log_msg INFO ' folders["Series"]="/mnt/user/data/torrents/tv/|/mnt/user/data/media/tv/"'
 		log_msg INFO ' folders["Series"]="/mnt/user/data/torrents/tv/"'
-		log_msg INFO ' folders["Series"]="/mnt/user/data/torrents/tv/ /mnt/user/data/media/tv/ /mnt/user/data/torrents/cross-seed/"'
+		log_msg INFO ' folders["Series"]="/mnt/user/data/torrents/tv/|/mnt/user/data/media/tv/|/mnt/user/data/torrents/series_linkdir/"'
+		log_msg INFO ""
+		log_msg INFO "Legacy format (space-separated) is still supported when PATH_SEPARATOR is not set."
 		log_msg INFO ""
 
 		# Send error notification
-		send_notification "warning" "fclones - Configuration Error" "⚠️ <b>No search path groups configured!</b><br><br>Please edit the fclones script and configure at least one folder group in the configuration section.<br><br>Example:<br><code>folders[\"Series\"]=\"/mnt/user/data/torrents/tv/ /mnt/user/data/media/tv/\"</code><br><br>Script execution was aborted."
+		send_notification "warning" "fclones - Configuration Error" \
+			"⚠️ <b>No search folder groups configured!</b><br><br>Please edit <b>mover-tuning.cfg</b> and configure at least one folder group.<br><br>Example:<br><code>folders[\"Series\"]=\"/mnt/user/data/torrents/tv/|/mnt/user/data/media/tv/\"</code><br><br>Script execution was aborted."
 
-		# Log the error to stderr as well for visibility in the console
 		log_msg ERROR "No folder groups configured"
-
-		((errors++)) # Could possibly also exit immediately here with exit 1
+		((errors++))
 	fi
 
 	# Validate EFFECTIVE_PATH_SEPARATOR is not empty (if set)
@@ -481,6 +483,9 @@ export USER="${USER:-root}"
 for group_name in "${!folders[@]}"; do
 	((processed_groups++))
 
+	unset seen_files
+	declare -A seen_files
+
 	# Split configured dirs for the group into an array based on the EFFECTIVE_PATH_SEPARATOR (default to space if not set)
 	raw_value="${folders[$group_name]}"
 	if [[ "$EFFECTIVE_PATH_SEPARATOR" == " " ]]; then
@@ -577,7 +582,6 @@ for group_name in "${!folders[@]}"; do
 
 	space_saved_this_group=0
 	linked_files=()
-	declare -A seen_files # Use associative array to track unique filenames
 	current_group_files=()
 
 	while IFS= read -r line; do
