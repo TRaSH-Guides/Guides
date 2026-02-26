@@ -3503,9 +3503,10 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 ---
 
 <!-- markdownlint-disable MD011 MD022 MD055 MD056 -->
+{%- macro cf_slug(name) -%}{{ name | lower | replace('+', 'plus') | replace('(', '') | replace(')', '') | replace('/', '') | replace('.', '') | replace(' ', '-') | replace('--', '-') }}{%- endmacro -%}
 {% set ns = namespace(current_category='') -%}
 {% for key, group in sonarr['cf-groups']|dictsort -%}
-{% if 'sqp' not in key -%}
+{% if not (key.startswith('sqp-') or key.endswith('-sqp')) -%}
 {% set category = group['name'].split(']')[0][1:] -%}
 {% if category != ns.current_category -%}
 {% set ns.current_category = category -%}
@@ -3529,19 +3530,21 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 | Custom Format | Trash ID | Required |
 | --- | --- | :---: |
 {% for cf in group['custom_formats'] -%}
-{% set cf_slug = cf['name'] | lower | replace('+', 'plus') | replace('(', '') | replace(')', '') | replace('/', '') | replace('.', '') | replace(' ', '-') | replace('--', '-') -%}
-| [{{ cf['name'] }}](#{{ cf_slug }}) | `{{ cf['trash_id'] }}` | {% if cf['required'] %}:white_check_mark:{% else %}:x:{% endif %} |
+| [{{ cf['name'] }}](#{{ cf_slug(cf['name']) }}) | `{{ cf['trash_id'] }}` | {% if cf['required'] %}:white_check_mark:{% else %}:x:{% endif %} |
 {% endfor %}
 
+{% if group.get('quality_profiles', {}).get('include', {}) -%}
 ??? abstract "Applicable Quality Profiles - [Click to show/hide]"
 
     | Quality Profile | Trash ID |
     | --- | --- |
-    {%- for pname, pid in group['quality_profiles']['include']|dictsort %}
-    {%- if 'sqp' not in pname|lower %}
+    {%- for pname, pid in group.get('quality_profiles', {}).get('include', {})|dictsort %}
+    {%- if '[sqp]' not in pname|lower %}
     | {{ pname }} | `{{ pid }}` |
     {%- endif %}
     {%- endfor %}
+
+{% endif -%}
 
 ??? example "JSON - [Click to show/hide]"
 
