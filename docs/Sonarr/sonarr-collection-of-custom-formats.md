@@ -3545,13 +3545,6 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
     {%- endfor %}
 
 {% endif -%}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf-groups/{{ key }}.json' %]][[% endfilter %]]
-    ```
-
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
