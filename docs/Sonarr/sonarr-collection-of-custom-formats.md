@@ -3502,6 +3502,7 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 
 ---
 
+<!-- markdownlint-disable MD011 MD022 MD055 MD056 -->
 {% set ns = namespace(current_category='') -%}
 {% for key, group in sonarr['cf-groups']|dictsort -%}
 {% if 'sqp' not in key -%}
@@ -3554,3 +3555,4 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 
 {% endif -%}
 {% endfor -%}
+<!-- markdownlint-enable MD011 MD022 MD055 MD056 -->
