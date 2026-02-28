@@ -265,6 +265,46 @@ If you prefer 2160p Remuxes (Bluray-2160p Remux)
 
 ---
 
+### Anime HD Bluray + WEB
+
+If you prefer High-Quality HD Encodes for Anime (720p/1080p)
+
+??? abstract "Adapt the Quality Settings to Anime - [Click to show/hide]"
+    Please have a look here: [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="_blank" rel="noopener noreferrer"}.
+
+!!! abstract "Recommended merging of qualities"
+
+    We recommend to [merge the following qualities](/Sonarr/Tips/Merge-quality/):
+
+    - Bluray-1080p
+    - WEBDL-1080p
+    - WEBRip-1080p
+    - Bluray-720p
+    - WEBDL-720p
+    - WEBRip-720p
+
+{! include-markdown "../../includes/german-guide/sonarr-german-anime-audio-version-en.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-anime-hd-bluray-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-german-anime-misc-required.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-german-anime-unwanted-en.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-german-anime-streaming-services-en.md" !}
+
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-german-anime-misc-optional.md" !}
+
+---
+
 ### HDR Formats
 
 TRaSH provides great guides and explanations about them at the following link:

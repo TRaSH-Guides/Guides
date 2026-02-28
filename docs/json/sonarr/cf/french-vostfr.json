@@ -7,7 +7,8 @@
     "french-anime-vostfr": 101,
     "french-multi-vf": 0,
     "french-multi-vo": 0,
-    "french-vostfr": 1000
+    "french-vostfr": 1000,
+    "german-anime": -35000
   },
   "trash_regex": "https://regex101.com/r/sWCfAN/1",
   "name": "VOSTFR",

@@ -4,7 +4,8 @@
     "default": 75,
     "anime-sonarr": 3,
     "french-anime-multi": 3,
-    "french-anime-vostfr": 3
+    "french-anime-vostfr": 3,
+    "german-anime": 0
   },
   "name": "AMZN",
   "includeCustomFormatWhenRenaming": true,
