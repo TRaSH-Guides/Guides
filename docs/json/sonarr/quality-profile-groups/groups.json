@@ -19,7 +19,11 @@
     "name": "French",
     "profiles": {
       "french-multi-vo-bluray-web-1080p": "4c48f506c1116a3a57ae33f12346bd15",
-      "french-multi-vo-bluray-web-2160p": "6fa7364373e8f06206871d9c20a4fb3e"
+      "french-multi-vo-bluray-web-2160p": "6fa7364373e8f06206871d9c20a4fb3e",
+      "french-multi-vf-bluray-web-1080p": "58e8dc75731040612dd6f4ac0676bfd7",
+      "french-multi-vf-bluray-web-2160p": "68c8b82ad2b7ea1941fce71eb56421c3",
+      "french-vostfr-bluray-web-1080p": "b34c968f58433a38e0e690d42a1dc37e",
+      "french-vostfr-bluray-web-2160p": "d6252dce6af535107ed4b03e68052ae8"
     }
   },
   {
