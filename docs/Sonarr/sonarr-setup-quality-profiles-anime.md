@@ -85,7 +85,7 @@ If you are only running a single instance of Sonarr you can instead use [Sonarr 
 
 ## Quality Profile
 
-We need to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities - see [here](/Sonarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} for an example.
+We need to create a new profile called `[Anime] Remux-1080p` due to the way anime can be named we will need to merge a few qualities - see [here](/Sonarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} for an example.
 
 We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p`, and `HDTV-720p` into the same group as `WEBDL-720p` and `WEBRip-720p` so that the scoring will work correctly.
 
@@ -118,7 +118,7 @@ The scoring that has been set is the recommended scoring, however, some of the C
 
 `Anime Raws` and `Dubs Only` are negatively scored, however, if you prefer these attributes you can give them a positive score.
 
-Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the `Remux-1080p - Anime` profile that was set up before.
+Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the `[Anime] Remux-1080p` profile that was set up before.
 
 ![!cf-settings-profiles](images/cfa-settings-profiles.png)
 
@@ -134,7 +134,7 @@ If you prefer `Dual Audio` releases you have a few options depending on your pre
 
 If you want to prefer `Dual Audio` within the same tier give the `CF` a score of `10`, if you want it to be preferred a tier above give the `CF` a score of `101`, and if you want to prefer it over any tiers give the `CF` a score of `2000`.
 
-If you must have `Dual Audio` releases set the `Minimum Custom Format Score` to 2000 in the `Remux-1080p - Anime` profile that you setup earlier.
+If you must have `Dual Audio` releases set the `Minimum Custom Format Score` to 2000 in the `[Anime] Remux-1080p` profile that you set up earlier.
 
 Using this scoring you will still benefit from the tiers if a better release group does a `Dual Audio` release.
 
@@ -160,7 +160,7 @@ Below is an example of the scoring set to prefer `Uncensored` a tier above.
 
 ### Finishing up
 
-Once you have set your preferred scoring you will need to make one more change to your `Remux-1080p - Anime` profile.
+Once you have set your preferred scoring you will need to make one more change to your `[Anime] Remux-1080p` profile.
 
 Make sure `Upgrades Allowed` is ticked then set the `Upgrade Until` section to `Bluray-1080p` and the `Upgrade Until Custom Format Score` to `10000`
 

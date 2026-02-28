@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "season": {
+      "type": "object",
+      "patternProperties": {
+        "^.+$": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "series": {
+      "type": "object",
+      "patternProperties": {
+        "^.+$": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "episodes": {
+      "type": "object",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "patternProperties": {
+            "^.+$": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    }
+  },
+  "required": ["season", "series", "episodes"],
+  "additionalProperties": false
+}

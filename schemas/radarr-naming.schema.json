@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "folder": {
+      "type": "object",
+      "patternProperties": {
+        "^.+$": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "file": {
+      "type": "object",
+      "patternProperties": {
+        "^.+$": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    }
+  },
+  "required": ["folder", "file"],
+  "additionalProperties": false
+}

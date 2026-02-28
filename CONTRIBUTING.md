@@ -307,7 +307,7 @@ The cf-group.json exists of two properties.
     - `required` - [true|false] See the above note for a description
     - `default": "true"` - [**OPTIONAL**] If you want the CF to be enabled by default.
 - `quality_profiles`
-    - `exclude` - Add the Quality Profiles you want to exclude from this group, using the quality-profiles `name` and `trash_id`.
+    - `include` - Quality profiles that receive this CF group, using the profile `name` and `trash_id`.
 
 ### quality-profile-groups
 
@@ -340,6 +340,19 @@ The `groups.json` file contains an array of groups. The order of groups determin
 ---
 
 ## Recommendations
+
+### Pre-commit (autofix)
+
+This repo uses [pre-commit](https://pre-commit.com/) to automatically fix common issues (markdown formatting, table alignment, YAML lint, etc.) before you commit.
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+Once installed, pre-commit runs automatically on `git commit` and will auto-fix what it can. If files are modified by the hooks, simply `git add` the changes and commit again.
+
+### VS Code
 
 Use [VSCode](https://code.visualstudio.com/) for editing. VS Code should recommend extensions to you
 based on the `.vscode/extensions.json` file, you should install all of them.

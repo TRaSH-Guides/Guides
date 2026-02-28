@@ -1,7 +1,8 @@
 {
   "trash_id": "caa37d0df9c348912df1fb1d88f9273a",
   "trash_scores": {
-    "default": 100
+    "default": 100,
+    "sqp-4-ma-hybrid": 1
   },
   "trash_regex": "https://regex101.com/r/hCAQEO/4",
   "name": "HDR10+ Boost",

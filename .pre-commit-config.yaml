@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.36.1
+    rev: 0.37.0
     hooks:
       - id: check-jsonschema
         name: Validate Guide only Custom Formats
@@ -20,19 +20,43 @@ repos:
         types: [json]
         args: ["-v", "--schemafile", "schemas/sonarr-cf.schema.json"]
 
+      - id: check-jsonschema
+        name: Validate Radarr CF Groups
+        files: ^docs/json/radarr/cf-groups/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/cf-groups.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Sonarr CF Groups
+        files: ^docs/json/sonarr/cf-groups/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/cf-groups.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Radarr Naming
+        files: ^docs/json/radarr/naming/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/radarr-naming.schema.json"]
+
+      - id: check-jsonschema
+        name: Validate Sonarr Naming
+        files: ^docs/json/sonarr/naming/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/sonarr-naming.schema.json"]
+
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
     hooks:
       - id: yamllint
         name: YAML Lint
         types: [yaml]
-        args: ["-c", "yamllint.yml"]
+        args: ["-c", ".yamllint.yml"]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.47.0
     hooks:
-      - id: markdownlint
-        name: Markdown Lint
+      - id: markdownlint-fix
+        name: Markdown Lint (autofix)
         types: [markdown]
         args: ["-c", ".markdownlint.yaml"]
 

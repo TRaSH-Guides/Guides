@@ -5,6 +5,10 @@
   "description": "Schema for Radarr/Sonarr quality profile definitions used by TRaSH Guides. Quality profiles define which video qualities are acceptable and how Custom Formats influence upgrade decisions.",
   "type": "object",
   "properties": {
+    "visible": {
+      "type": "string",
+      "description": "Visibility setting for this profile. Use 'private' to hide from public listings."
+    },
     "trash_id": {
       "type": "string",
       "pattern": "^[a-fA-F0-9]{32}$",
