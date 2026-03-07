@@ -1,0 +1,109 @@
+{
+  "trash_id": "90cfd463ac844e4911ee277ddd566d87",
+  "trash_scores": {
+    "default": 1700
+  },
+  "name": "German Anime Scene",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "ONiGiRi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ONiGiRi)$"
+      }
+    },
+    {
+      "name": "STARS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(STARS)$"
+      }
+    },
+    {
+      "name": "DMPD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DMPD)$"
+      }
+    },
+    {
+      "name": "OHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OHD)$"
+      }
+    },
+    {
+      "name": "SAUERKRAUT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SAUERKRAUT)$"
+      }
+    },
+    {
+      "name": "3MINA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(3MINA)$"
+      }
+    },
+    {
+      "name": "FWB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FWB)$"
+      }
+    },
+    {
+      "name": "BiGiNT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BiGiNT)$"
+      }
+    },
+    {
+      "name": "MRW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MRW)$"
+      }
+    },
+    {
+      "name": "GSG9",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GSG9)$"
+      }
+    },
+    {
+      "name": "SoW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SoW)$"
+      }
+    }
+  ]
+}
