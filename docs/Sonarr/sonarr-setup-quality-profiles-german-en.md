@@ -2,7 +2,7 @@
 
 *aka How to setup Custom Formats to get German Audio if available*<br><br>
 
-!!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious) and [PCJones](https://github.com/PCJones)"
+!!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious), [PCJones](https://github.com/PCJones) and [LaurenceBarnes](https://github.com/LaurenceBarnes)"
 
 There isn't a *best* way to set up Custom Formats to get German (or German+English dual) audio. It depends on your setup (hardware devices) and personal preferences.
 
