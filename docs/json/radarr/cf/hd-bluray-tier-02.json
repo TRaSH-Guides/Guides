@@ -6,7 +6,8 @@
     "sqp-1-web-1080p": 1050,
     "sqp-1-2160p": 1050,
     "sqp-1-web-2160p": 1050,
-    "french-multi-vf": 0
+    "french-multi-vf": 0,
+    "german-anime": 1000
   },
   "name": "HD Bluray Tier 02",
   "includeCustomFormatWhenRenaming": false,
