@@ -157,6 +157,8 @@ theme:
   custom_dir: overrides
   features:
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.tabs
     - navigation.top
     - content.code.copy
