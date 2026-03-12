@@ -165,6 +165,9 @@ theme:
     - content.action.edit
     - content.action.view
     - content.tooltips
+    - search.suggest
+    - search.highlight
+    - toc.follow
   language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
