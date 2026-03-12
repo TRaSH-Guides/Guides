@@ -62,7 +62,7 @@ markdown_extensions:
         kwds:
           case: lower
   - toc:
-      permalink: ""
+      permalink: true
 #      toc_depth: 5
 
 plugins:
