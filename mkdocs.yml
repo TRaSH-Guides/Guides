@@ -54,7 +54,6 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.snippets
-  - pymdownx.tabbed
   - pymdownx.tilde
   - pymdownx.superfences
   - pymdownx.tabbed:
