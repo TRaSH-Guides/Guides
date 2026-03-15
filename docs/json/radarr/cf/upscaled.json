@@ -28,6 +28,15 @@
       }
     },
     {
+      "name": "GuyZo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GuyZo|BR-GuyZo)\\b"
+      }
+    },
+    {
       "name": "Regrade",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
