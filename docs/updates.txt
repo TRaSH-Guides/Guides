@@ -1,3 +1,15 @@
+# 2026-03-15 02:38
+- [fix(starr-german): Align custom format naming](https://github.com/TRaSH-Guides/Guides/pull/2646)
+- [fix(guide-sync): Sonarr WEB 1080p/2160p Alternative Quality Profile JSON Quality Ordering](https://github.com/TRaSH-Guides/Guides/pull/2651)
+- [feat(starr-german): German Anime Guide](https://github.com/TRaSH-Guides/Guides/pull/2619)
+
+# 2026-03-08 02:25
+- [feat(radarr): update Custom Format `Special Edition`](https://github.com/TRaSH-Guides/Guides/pull/2640)
+
+# 2026-03-01 02:33
+- [feat(starr-french): Add VF and VOSTFR quality profiles for Radarr and Sonarr](https://github.com/TRaSH-Guides/Guides/pull/2634)
+- [feat(guide): Add custom format group informational tables](https://github.com/TRaSH-Guides/Guides/pull/2638)
+
 # 2026-02-22 02:27
 - [style(guide-sync): improve Guide Sync page](https://github.com/TRaSH-Guides/Guides/pull/2613)
 - [feat(starr): wire existing quality-profile and profile-groups schemas into pre-commit](https://github.com/TRaSH-Guides/Guides/pull/2629)
