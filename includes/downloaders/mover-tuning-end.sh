@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Version: 1.1.0
-# Updated: 20251201
+# Version: 1.3.0
+# Updated: 20260314
 # =====================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.1.0"
+readonly SCRIPT_VERSION="1.3.0"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Get the directory where the script is located
@@ -352,8 +352,11 @@ validate_config() {
     fi
 
     # Check docker if needed
-    if [[ "$ENABLE_QBIT_MANAGE" == true ]] && ! command -v docker &> /dev/null; then
-        error "docker is required when ENABLE_QBIT_MANAGE=true"
+    if [[ "$ENABLE_DOCKER_MANAGEMENT" == true ]]; then
+        command -v docker &> /dev/null || error "docker is required when ENABLE_DOCKER_MANAGEMENT=true"
+        if [[ ${#DOCKER_CONTAINERS[@]} -eq 0 ]]; then
+            error "DOCKER_CONTAINERS array is empty but ENABLE_DOCKER_MANAGEMENT=true"
+        fi
     fi
 
     # Validate paths and values
@@ -484,15 +487,17 @@ main() {
         fi
     fi
 
-    # Start qBit-Manage if enabled
-    if [[ "$ENABLE_QBIT_MANAGE" == true ]]; then
-        log "Starting qBit-Manage container..."
-        if docker start "$QBIT_MANAGE_CONTAINER" &> /dev/null; then
-            log "✓ qBit-Manage started"
-            notify "qBit-Manage" "Started @ $(date +%H:%M:%S)"
-        else
-            log "⚠ Failed to start qBit-Manage"
-        fi
+    # Start Docker containers if enabled
+    if [[ "$ENABLE_DOCKER_MANAGEMENT" == true ]]; then
+        for container in "${DOCKER_CONTAINERS[@]}"; do
+            log "Starting container: $container..."
+            if docker start "$container" &> /dev/null; then
+                log "✓ Started $container"
+                notify "$container" "Started @ $(date +%H:%M:%S)"
+            else
+                log "⚠ Failed to start $container"
+            fi
+        done
     fi
 
     # Summary
