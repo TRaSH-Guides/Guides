@@ -26,7 +26,11 @@
       "french-multi-vf-hd-bluray-web": "500ecc23572575511fd81893777d1e06",
       "french-multi-vf-hd-remux-web": "6b93fe45f357e9a94228e5d4658e9bb5",
       "french-multi-vf-uhd-bluray-web": "e64b266178c7f70e208f493f00e0e50a",
-      "french-multi-vf-uhd-remux-web": "595bb95c6b6970468880069dce23e1d2"
+      "french-multi-vf-uhd-remux-web": "595bb95c6b6970468880069dce23e1d2",
+      "french-vostfr-hd-bluray-web": "1addc08c4232bc2617684d517df15f75",
+      "french-vostfr-hd-remux-web": "d98f20924b001e9f6b9595d5440abc87",
+      "french-vostfr-uhd-bluray-web": "525bf0513e2ac22fe116e8d7bec0a6b5",
+      "french-vostfr-uhd-remux-web": "9b32fc61d8ec83ed131f50f1db80505a"
     }
   },
   {
@@ -36,7 +40,8 @@
       "german-hd-remux-web": "c13c33fdd2c306266b34cb9946de5919",
       "german-uhd-bluray-web": "27cc3d153c0a799fd139ef1ff4c4cc42",
       "german-uhd-bluray-web-alternative": "425da1ba30711b55d2eb371437ec98d7",
-      "german-uhd-remux-web": "79faa9943cef2f510b997b1f2a9f3ea6"
+      "german-uhd-remux-web": "79faa9943cef2f510b997b1f2a9f3ea6",
+      "german-anime-hd-bluray-web": "bf3cc2e99ad9a804a9b0d0e538e1fbba"
     }
   },
   {
