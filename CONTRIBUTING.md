@@ -217,11 +217,14 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 
 - Radarr: `docs/json/radarr/quality-profiles`
     - `docs/json/radarr/cf-groups`
+    - `docs/json/radarr/quality-profile-groups/groups.json`
 - Sonarr: `docs/json/sonarr/quality-profiles`
-    - `docs/json/Sonarr/cf-groups`
+    - `docs/json/sonarr/cf-groups`
+    - `docs/json/sonarr/quality-profile-groups/groups.json`
 
 - `docs/json/xxxarr/quality-profiles` = The base quality profile with all the mandatory Custom Formats.
 - `docs/json/xxxarr/cf-groups` = The optional/User choices that wouldn't break the Quality Profile.
+- `docs/json/xxxarr/quality-profile-groups` = The `groups.json` file contains an array of groups. The order of groups determines display order, and profiles within each group are sorted alphabetically by their name.
 
 ### quality-profiles
 
