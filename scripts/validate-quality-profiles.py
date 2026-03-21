@@ -2,11 +2,11 @@
 """Validate quality profile consistency per CONTRIBUTING.md rules.
 
 Checks:
-  1. Every profile file has a matching entry in groups.json (slug + trash_id)
-  2. Every groups.json entry has a corresponding profile file
-  3. No duplicate trash_ids across profile files
-  4. cf-groups quality_profiles.include entries reference valid profiles
-  5. Filenames follow naming conventions (lowercase, dashes only)
+    1. Every profile file has a matching entry in groups.json (slug + trash_id)
+    2. Every groups.json entry has a corresponding profile file
+    3. No duplicate trash_ids across profile files
+    4. cf-groups quality_profiles.include entries reference valid profiles
+    5. Filenames follow naming conventions (lowercase, dashes only)
 
 Exit code 0 on success, 1 on any failure.
 """
