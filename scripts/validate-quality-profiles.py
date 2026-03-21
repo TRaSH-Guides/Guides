@@ -59,10 +59,15 @@ def validate_app(app: str) -> list[str]:
                 " (must be lowercase alphanumeric with dashes)"
             )
 
-    # Check duplicate trash_ids across profiles
+    # Check duplicate trash_ids across profiles and ensure presence
     seen_ids: dict[str, str] = {}  # trash_id -> slug
     for slug, data in profile_files.items():
-        tid = data.get("trash_id", "")
+        tid = data.get("trash_id")
+        if not tid:
+            errors.append(
+                f"[{app}] Profile '{slug}.json' missing required field 'trash_id'"
+            )
+            continue
         if tid in seen_ids:
             errors.append(
                 f"[{app}] Duplicate trash_id '{tid}' in profiles:"
@@ -109,12 +114,19 @@ def validate_app(app: str) -> list[str]:
                 " has no corresponding file in quality-profiles/"
             )
 
-    # Build profile name -> trash_id lookup from profile files
+    # Build profile name -> trash_id lookup, detect duplicate names
     name_to_tid: dict[str, str] = {}
-    for data in profile_files.values():
+    for slug, data in profile_files.items():
         name = data.get("name", "")
         tid = data.get("trash_id", "")
-        if name and tid:
+        if not name or not tid:
+            continue
+        if name in name_to_tid:
+            errors.append(
+                f"[{app}] Duplicate profile name '{name}' in '{slug}.json'"
+                f" (already defined with trash_id '{name_to_tid[name]}')"
+            )
+        else:
             name_to_tid[name] = tid
 
     # Check cf-groups quality_profiles.include references
@@ -127,7 +139,20 @@ def validate_app(app: str) -> list[str]:
             cfg_data = load_json(cfg_path)
             if cfg_data is None:
                 continue
-            include = (cfg_data.get("quality_profiles") or {}).get("include", {})
+            qp = cfg_data.get("quality_profiles")
+            if qp is not None and not isinstance(qp, dict):
+                errors.append(
+                    f"[{app}] cf-groups/{cfg_path.name} has malformed"
+                    " 'quality_profiles' (expected object)"
+                )
+                continue
+            include = (qp or {}).get("include", {})
+            if include and not isinstance(include, dict):
+                errors.append(
+                    f"[{app}] cf-groups/{cfg_path.name} has malformed"
+                    " 'quality_profiles.include' (expected object)"
+                )
+                continue
             for profile_name, ref_tid in include.items():
                 if profile_name in skip_names:
                     continue
