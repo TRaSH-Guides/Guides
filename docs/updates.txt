@@ -1,3 +1,13 @@
+# 2026-03-22 02:30
+- [feat(guide-sync): Add the Sonarr German Anime profile to the groups.json](https://github.com/TRaSH-Guides/Guides/pull/2661)
+- [feat(guide-sync): Add the German Anime profile to the `groups.json`, update `CONTRIBUTING.md` to state that updating the `groups.json` is mandatory](https://github.com/TRaSH-Guides/Guides/pull/2659)
+- [fix(pr-naming-check): update regex to include 'deps' in title validation](https://github.com/TRaSH-Guides/Guides/pull/)
+- [feat(starr-anime): Include Repacks and Negates in the anime version CFs](https://github.com/TRaSH-Guides/Guides/pull/2655)
+- [feat(mkdocs): add navigation, search, and code highlighting improvements](https://github.com/TRaSH-Guides/Guides/pull/2649)
+- [chore(gha): update pr naming check to allow mkdocs](https://github.com/TRaSH-Guides/Guides/pull/2654)
+- [fix(hardlinks): avoid duplicate group scans and improve fclones validation](https://github.com/TRaSH-Guides/Guides/pull/2635)
+- [feat(radarr): Add RlsGrp `GuyZo` to `Upscaled` + `Generated Dynamic HDR`](https://github.com/TRaSH-Guides/Guides/pull/2653)
+
 # 2026-03-15 02:38
 - [fix(starr-german): Align custom format naming](https://github.com/TRaSH-Guides/Guides/pull/2646)
 - [fix(guide-sync): Sonarr WEB 1080p/2160p Alternative Quality Profile JSON Quality Ordering](https://github.com/TRaSH-Guides/Guides/pull/2651)
