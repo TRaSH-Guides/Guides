@@ -44,6 +44,16 @@ repos:
         types: [json]
         args: ["-v", "--schemafile", "schemas/sonarr-naming.schema.json"]
 
+  - repo: local
+    hooks:
+      - id: validate-quality-profiles
+        name: Validate Quality Profiles
+        entry: python scripts/validate-quality-profiles.py
+        language: python
+        pass_filenames: false
+        files: >-
+          ^docs/json/(radarr|sonarr)/(quality-profiles|quality-profile-groups|cf-groups)/
+
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
     hooks:
