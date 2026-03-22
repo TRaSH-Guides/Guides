@@ -6,3 +6,5 @@ site/
 /docs/Notifiarr/Integrations/_TEMPLATE.md
 /includes/flowcharts/.$radarr-flowchart.drawio.bkp
 .DS_Store
+sync.ffs_db
+sync.ffs_lock
