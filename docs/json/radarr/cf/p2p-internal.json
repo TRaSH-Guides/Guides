@@ -1,0 +1,19 @@
+{
+  "name": "P2P Internal",
+  "includeCustomFormatWhenRenaming": false,
+  "trash_id": "80f51de4636a294e31552e90d2e1decb",
+  "trash_scores": {
+    "default": 1
+  },
+  "specifications": [
+    {
+      "name": "Internal",
+      "implementation": "IndexerFlagSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 32
+      }
+    }
+  ]
+}
