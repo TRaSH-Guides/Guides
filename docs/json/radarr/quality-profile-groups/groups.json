@@ -41,8 +41,7 @@
       "german-hd-remux-web": "c13c33fdd2c306266b34cb9946de5919",
       "german-uhd-bluray-web": "27cc3d153c0a799fd139ef1ff4c4cc42",
       "german-uhd-bluray-web-alternative": "425da1ba30711b55d2eb371437ec98d7",
-      "german-uhd-remux-web": "79faa9943cef2f510b997b1f2a9f3ea6",
-      "german-anime-hd-bluray-web": "bf3cc2e99ad9a804a9b0d0e538e1fbba"
+      "german-uhd-remux-web": "79faa9943cef2f510b997b1f2a9f3ea6"
     }
   },
   {
@@ -56,6 +55,7 @@
       "sqp-3": "2cf36c1f0106ffac993be003ade51865",
       "sqp-3-audio": "0ada8e60cc3ddf2733b65de10f4a6c72",
       "sqp-4": "013f89e6da27519fe56cf482702a2db9",
+      "sqp-4-ma-hybrid": "7526db7ac0a1f764793fb181864d0222",
       "sqp-5": "a7bb1539fd147256b21b1098f3dc2016"
     }
   }

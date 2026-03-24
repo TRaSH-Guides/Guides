@@ -1,0 +1,32 @@
+{
+  "name": "[SQP-4 (MA Hybrid) Optional] Release Groups",
+  "trash_id": "f638e33c933bf0a8067559247953a270",
+  "trash_description": "Collection of optional Release Groups for SQP-4 (MA Hybrid), check written guide for extra information",
+  "custom_formats": [
+    {
+      "name": "FLUX",
+      "trash_id": "e098247bc6652dd88c76644b275260ed",
+      "required": false
+    },
+    {
+      "name": "SIC",
+      "trash_id": "8cd3ac70db7ac318cf9a0e01333940a4",
+      "required": false
+    },
+    {
+      "name": "126811",
+      "trash_id": "9681750c690210f0936faed781bb7f06",
+      "required": false
+    },
+    {
+      "name": "Mainframe",
+      "trash_id": "8016f2f66e751dea613e6b5b94bf633c",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "include": {
+      "[SQP] SQP-4 (MA Hybrid)": "7526db7ac0a1f764793fb181864d0222"
+    }
+  }
+}
