@@ -34,6 +34,11 @@
       "required": false
     },
     {
+      "name": "P2P Internal",
+      "trash_id": "09654d13ce1f0453496546dfd875b2a5",
+      "required": false
+    },
+    {
       "name": "Retags",
       "trash_id": "06d66ab109d4d2eddb2794d21526d140",
       "required": false

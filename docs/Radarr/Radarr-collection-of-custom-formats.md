@@ -117,6 +117,7 @@ We've made 3 guides related to this.
 | [Multi](#multi)                                       | [Language: German Anime Subbed](#language-german-anime-subbed)                                                        |
 | [No-RlsGroup](#no-rlsgroup)                           |                                                                                                                       |
 | [Obfuscated](#obfuscated)                             |                                                                                                                       |
+| [P2P Internal](#p2p-internal)                         |                                                                                                                       |
 | [Repack/Proper](#repackproper)                        |                                                                                                                       |
 | [Repack2](#repack2)                                   |                                                                                                                       |
 | [Repack3](#repack3)                                   |                                                                                                                       |
@@ -1114,6 +1115,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/obfuscated.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+---
+
+### P2P Internal
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/p2p-internal.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/p2p-internal.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
