@@ -38,7 +38,7 @@
     { "name": "BR-DISK", "allowed": false },
     { "name": "Remux-2160p", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
-    { "name": "Remux-1080p", "allowed": true },
+    { "name": "Remux-1080p", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
     { "name": "HDTV-720p", "allowed": false },
     { "name": "DVD-R", "allowed": false },
