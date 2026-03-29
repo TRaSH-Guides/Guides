@@ -1,3 +1,12 @@
+# 2026-03-29 02:40
+- [chore(guide-sync): Disabled the wrong quality source in the new profile SQP-4 (MA Hybrid)](https://github.com/TRaSH-Guides/Guides/pull/2669)
+- [feat(guide-sync): Added new profile SQP-4 (MA Hybrid)](https://github.com/TRaSH-Guides/Guides/pull/2667)
+- [fix(guide-sync): The streaming service `VRV` had the same hash as the `VDL` streaming services](https://github.com/TRaSH-Guides/Guides/pull/2663)
+- [feat(starr): NEW Custom Format `P2P Internal`](https://github.com/TRaSH-Guides/Guides/pull/2666)
+- [fix(guide-sync): Duplicate object key in the groups.json](https://github.com/TRaSH-Guides/Guides/pull/2665)
+- [feat(radarr): Updated several CFs for a future quality profile](https://github.com/TRaSH-Guides/Guides/pull/2664)
+- [chore(ci): enforce quality profile consistency per CONTRIBUTING.md](https://github.com/TRaSH-Guides/Guides/pull/2660)
+
 # 2026-03-22 02:30
 - [feat(guide-sync): Add the Sonarr German Anime profile to the groups.json](https://github.com/TRaSH-Guides/Guides/pull/2661)
 - [feat(guide-sync): Add the German Anime profile to the `groups.json`, update `CONTRIBUTING.md` to state that updating the `groups.json` is mandatory](https://github.com/TRaSH-Guides/Guides/pull/2659)
