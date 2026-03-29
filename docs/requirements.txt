@@ -7,3 +7,4 @@ mkdocs-minify-plugin==0.8.0
 mkdocs-redirects==1.2.3
 mkdocs-include-markdown-plugin==7.2.1
 mkdocs-markdownextradata-plugin==0.2.6
+pygments<2.20
