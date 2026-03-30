@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/TRaSH-/Guides/master/schemas/conflicts.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "custom_formats": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["trash_id"],
+          "properties": {
+            "trash_id": { "type": "string" },
+            "name": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
