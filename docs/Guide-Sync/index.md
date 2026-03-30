@@ -7,37 +7,64 @@ Here you will find officially supported third-party Guide Sync Tools. These tool
 
 These are third-party applications that sync several sections of the guide with your Sonarr/Radarr (or multiple).
 
-## Radarr Features
+## Features
 
-| Radarr Features                                                                    |     Notifiarr      |     Recyclarr      |     Configarr      |
-| ---------------------------------------------------------------------------------- | :----------------: | :----------------: | :----------------: |
-| GUI (graphical user interface)                                                     | :white_check_mark: |                    |                    |
-| Custom Formats                                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Predefined config files available (editable to personal preferences)               |                    | :white_check_mark: | :white_check_mark: |
-| Predefined profiles sync (with several personal selectable options)                | :white_check_mark: |                    |                    |
-| Clear all Custom Formats                                                           | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Scores                                                                             | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Quality Settings (File Size)                                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Naming Scheme                                                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Quality Profiles                                                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+Both Radarr and Sonarr share the same feature set across all three tools.
 
-## Sonarr Features
+### Definitions
 
-| Sonarr Features                                                      |     Notifiarr      |     Recyclarr      |     Configarr      |
-| -------------------------------------------------------------------- | :----------------: | :----------------: | :----------------: |
-| GUI (graphical user interface)                                       | :white_check_mark: |                    |                    |
-| Custom Formats                                                       | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Predefined config files available (editable to personal preferences) |                    | :white_check_mark: | :white_check_mark: |
-| Predefined profiles sync (with several personal selectable options)  | :white_check_mark: |                    |                    |
-| Clear all Custom Formats                                             | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Scores                                                               | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Quality Settings (File Size)                                         | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Naming Scheme                                                        | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Quality Profiles                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+- **Custom Formats**: Sync individual custom format definitions from the TRaSH Guides.
+- **Custom Format Groups**: Sync a curated bundle of related custom formats together.
+- **Quality Profiles**: Sync guide-provided quality profile configurations, including qualities, groups, upgrade settings, and associated custom format scores.
+- **Quality Definitions (file sizes)**: Sync recommended min/max file size limits per quality level.
+- **Naming Scheme**: Sync file and folder naming patterns from the guides.
+- **User-defined Custom Formats**: Author your own custom format specifications that don't exist in the TRaSH Guides. You can also add TRaSH custom formats that aren't part of a synced profile.
+- **User-defined Quality Profiles**: Build a quality profile from scratch rather than starting from a guide template.
+- **Score multiplier**: Apply a multiplier to all TRaSH scores in a profile (e.g. 0.5x to halve them) rather than overriding each one individually.
+- **Profile cloning**: Copy an existing profile to a new name or another instance.
+- **Profile renaming**: Change the display name of a synced profile.
+
+### TRaSH-Guide sync
+
+Syncing content from the TRaSH Guides to your Sonarr/Radarr instances.
+
+| Feature                                  |     Notifiarr      |     Recyclarr      |     Configarr      |
+| ---------------------------------------- | :----------------: | :----------------: | :----------------: |
+| Custom Formats                           | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Custom Format Groups                     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Quality Profiles                         | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Quality Definitions (file sizes)         | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Naming Scheme                            | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
+### Customization
+
+Going beyond the guides with your own settings.
+
+| Feature                                  |     Notifiarr      |     Recyclarr      |     Configarr      |
+| ---------------------------------------- | :----------------: | :----------------: | :----------------: |
+| User-defined Custom Formats              | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| User-defined Quality Profiles            |       (1)          | :white_check_mark: | :white_check_mark: |
+| Override/modify scores                   | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Score multiplier                         | :white_check_mark: |  :material-minus:  |  :material-minus:  |
+| Profile cloning                          | :white_check_mark: |  :material-minus:  | :white_check_mark: |
+| Profile renaming                         | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Clear all Custom Formats                 | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
+1. Profiles are based on guide templates with customizable settings; cannot create a profile from scratch.
+
+### Setup and operation
+
+| Feature                                  |     Notifiarr      |     Recyclarr      |     Configarr      |
+| ---------------------------------------- | :----------------: | :----------------: | :----------------: |
+| GUI (graphical user interface)           | :white_check_mark: |  :material-minus:  |  :material-minus:  |
+| Predefined config files/templates        |  :material-minus:  | :white_check_mark: | :white_check_mark: |
+| Multi-instance support                   | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Notifications                            | :white_check_mark: | :white_check_mark: |  :material-minus:  |
+| Whisparr/Readarr/Lidarr support          |  :material-minus:  |  :material-minus:  | :white_check_mark: |
 
 ---
 
-### Notifiarr
+## Notifiarr
 
 [Notifiarr](https://notifiarr.com){:target="\_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/pages/faq/faq/#q-what-are-the-user-level-differences){:target="\_blank" rel="noopener noreferrer"})
 
@@ -47,7 +74,7 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 
 [Instructions](https://notifiarr.wiki/pages/integrations/trash/){:target="\_blank" rel="noopener noreferrer"}
 
-#### Video Tutorial
+### Video Tutorial
 
 !!! tip ""
 
@@ -59,14 +86,14 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 
 ---
 
-### Recyclarr
+## Recyclarr
 
 [Info](/Recyclarr/){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/guide/){:target="\_blank" rel="noopener noreferrer"}
 
 Recyclarr is a command line application utilizing configuration files to sync the guides to Radarr &
 Sonarr.
 
-### Configarr
+## Configarr
 
 [GitHub](https://github.com/raydak-labs/configarr){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://configarr.raydak.de){:target="\_blank" rel="noopener noreferrer"}
 
