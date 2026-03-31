@@ -4,7 +4,7 @@
 Checks:
     1. Global trash_id uniqueness across CF files, cf-groups, and quality profiles
     2. cf-groups entries reference valid CFs (trash_id exists, name matches)
-    3. CF filenames follow naming conventions (lowercase, dashes only)
+    3. CF and cf-groups filenames follow naming conventions (lowercase, dashes only)
 
 Exit code 0 on success, 1 on any failure.
 """
@@ -54,6 +54,15 @@ def validate_app(app: str) -> list[str]:
                 errors.append(
                     f"[{app}] CF filename '{f.name}' violates naming convention"
                     " (must be lowercase alphanumeric with dashes)"
+                )
+
+    # --- Check 3: cf-groups filename conventions ---
+    if cf_groups_dir.is_dir():
+        for f in sorted(cf_groups_dir.glob("*.json")):
+            if not FILENAME_RE.match(f.stem):
+                errors.append(
+                    f"[{app}] cf-groups filename '{f.name}' violates naming"
+                    " convention (must be lowercase alphanumeric with dashes)"
                 )
 
     # --- Collect all trash_ids for global uniqueness (Check 1) ---
