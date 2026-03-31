@@ -2,7 +2,7 @@
 """Validate custom format consistency per CONTRIBUTING.md rules.
 
 Checks:
-    1. Global trash_id uniqueness across CF files, cf-groups, and quality profiles
+    1. Per-app trash_id uniqueness across CF files, cf-groups, and quality profiles
     2. cf-groups entries reference valid CFs (trash_id exists, name matches)
     3. CF and cf-groups filenames follow naming conventions (lowercase, dashes only)
 
@@ -19,13 +19,17 @@ BASE = Path("docs/json")
 FILENAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
-def load_json(path: Path, errors: list[str]) -> dict | list | None:
+def load_json(path: Path, errors: list[str]) -> dict | None:
     try:
         with open(path) as f:
-            return json.load(f)
+            data = json.load(f)
     except (json.JSONDecodeError, OSError) as e:
         errors.append(f"Failed to parse {path}: {e}")
         return None
+    if not isinstance(data, dict):
+        errors.append(f"Expected JSON object in {path}, got {type(data).__name__}")
+        return None
+    return data
 
 
 def validate_app(app: str) -> list[str]:
@@ -36,7 +40,9 @@ def validate_app(app: str) -> list[str]:
     profiles_dir = BASE / app / "quality-profiles"
 
     # --- Load all CF files ---
+    # Track first occurrence for name matching; all_ids tracks every location
     cf_by_tid: dict[str, tuple[str, str]] = {}  # trash_id -> (filename, name)
+    all_ids: dict[str, list[str]] = {}  # trash_id -> list of locations
     if cf_dir.is_dir():
         for f in sorted(cf_dir.glob("*.json")):
             data = load_json(f, errors)
@@ -45,7 +51,9 @@ def validate_app(app: str) -> list[str]:
             tid = data.get("trash_id", "")
             name = data.get("name", "")
             if tid:
-                cf_by_tid[tid] = (f.name, name)
+                all_ids.setdefault(tid, []).append(f"cf/{f.name}")
+                if tid not in cf_by_tid:
+                    cf_by_tid[tid] = (f.name, name)
 
     # --- Check 3: CF filename conventions ---
     if cf_dir.is_dir():
@@ -64,15 +72,6 @@ def validate_app(app: str) -> list[str]:
                     f"[{app}] cf-groups filename '{f.name}' violates naming"
                     " convention (must be lowercase alphanumeric with dashes)"
                 )
-
-    # --- Collect all trash_ids for global uniqueness (Check 1) ---
-    # Format: trash_id -> list of locations
-    all_ids: dict[str, list[str]] = {}
-
-    # CFs
-    for tid, (filename, _) in cf_by_tid.items():
-        loc = f"cf/{filename}"
-        all_ids.setdefault(tid, []).append(loc)
 
     # cf-groups (group-level trash_ids)
     cf_groups_data: dict[str, dict] = {}  # filename -> data
