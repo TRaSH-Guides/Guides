@@ -8,6 +8,7 @@ Checks:
     4. cf-groups quality_profiles.include entries reference valid profiles
     5. Filenames follow naming conventions (lowercase, dashes only)
     6. Profile formatItems reference valid CFs (trash_id exists, name matches)
+    7. Each profile belongs to exactly one group in groups.json
 
 Exit code 0 on success, 1 on any failure.
 """
@@ -100,11 +101,21 @@ def validate_app(app: str) -> list[str]:
         errors.append(f"[{app}] Failed to parse groups.json")
         return errors
 
-    # Build groups lookup: slug -> trash_id
+    # Build groups lookup: slug -> trash_id, check single-group membership
     groups_lookup: dict[str, str] = {}
+    slug_to_groups: dict[str, list[str]] = {}
     for group in groups_data:
+        group_name = group.get("name", "")
         for slug, tid in group.get("profiles", {}).items():
             groups_lookup[slug] = tid
+            slug_to_groups.setdefault(slug, []).append(group_name)
+
+    for slug, group_names in slug_to_groups.items():
+        if len(group_names) > 1:
+            names = ", ".join(f"'{n}'" for n in group_names)
+            errors.append(
+                f"[{app}] Profile '{slug}' belongs to multiple groups: {names}"
+            )
 
     # Check: every profile file has an entry in groups.json
     for slug, data in profile_files.items():
