@@ -7,6 +7,7 @@ Checks:
     3. No duplicate trash_ids across profile files
     4. cf-groups quality_profiles.include entries reference valid profiles
     5. Filenames follow naming conventions (lowercase, dashes only)
+    6. Profile formatItems reference valid CFs (trash_id exists, name matches)
 
 Exit code 0 on success, 1 on any failure.
 """
@@ -33,9 +34,22 @@ def load_json(path: Path) -> dict | list | None:
 def validate_app(app: str) -> list[str]:
     errors: list[str] = []
 
+    cf_dir = BASE / app / "cf"
     profiles_dir = BASE / app / "quality-profiles"
     groups_file = BASE / app / "quality-profile-groups" / "groups.json"
     cf_groups_dir = BASE / app / "cf-groups"
+
+    # Load CF files for formatItems validation
+    cf_by_tid: dict[str, tuple[str, str]] = {}  # trash_id -> (filename, name)
+    if cf_dir.is_dir():
+        for f in sorted(cf_dir.glob("*.json")):
+            data = load_json(f)
+            if data is None:
+                continue
+            tid = data.get("trash_id", "")
+            name = data.get("name", "")
+            if tid:
+                cf_by_tid[tid] = (f.name, name)
 
     # Load profile files
     profile_files: dict[str, dict] = {}  # slug -> data
@@ -167,6 +181,23 @@ def validate_app(app: str) -> list[str]:
                         f" profile '{profile_name}' with trash_id '{ref_tid}'"
                         f" but profile has '{name_to_tid[profile_name]}'"
                     )
+
+    # Check profile formatItems reference valid CFs
+    for slug, data in profile_files.items():
+        for fi_name, fi_tid in data.get("formatItems", {}).items():
+            if fi_tid not in cf_by_tid:
+                errors.append(
+                    f"[{app}] Profile '{slug}.json' formatItems references"
+                    f" trash_id '{fi_tid}' ({fi_name}) which doesn't exist"
+                    f" in {app} CFs"
+                )
+                continue
+            cf_filename, cf_name = cf_by_tid[fi_tid]
+            if fi_name != cf_name:
+                errors.append(
+                    f"[{app}] Profile '{slug}.json' formatItems name mismatch:"
+                    f" '{fi_name}' but cf/{cf_filename} has '{cf_name}'"
+                )
 
     return errors
 
