@@ -4,9 +4,11 @@ on:
   push:
     paths:
       - .github/workflows/quality-profile-validation.yml
+      - docs/json/radarr/cf/*.json
       - docs/json/radarr/quality-profiles/**
       - docs/json/radarr/quality-profile-groups/**
       - docs/json/radarr/cf-groups/**
+      - docs/json/sonarr/cf/*.json
       - docs/json/sonarr/quality-profiles/**
       - docs/json/sonarr/quality-profile-groups/**
       - docs/json/sonarr/cf-groups/**
@@ -14,9 +16,11 @@ on:
   pull_request:
     paths:
       - .github/workflows/quality-profile-validation.yml
+      - docs/json/radarr/cf/*.json
       - docs/json/radarr/quality-profiles/**
       - docs/json/radarr/quality-profile-groups/**
       - docs/json/radarr/cf-groups/**
+      - docs/json/sonarr/cf/*.json
       - docs/json/sonarr/quality-profiles/**
       - docs/json/sonarr/quality-profile-groups/**
       - docs/json/sonarr/cf-groups/**
