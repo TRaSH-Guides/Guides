@@ -114,7 +114,7 @@ def validate_app(app: str) -> list[str]:
         if len(group_names) > 1:
             names = ", ".join(f"'{n}'" for n in group_names)
             errors.append(
-                f"[{app}] Profile '{slug}' belongs to multiple groups: {names}"
+                f"[{app}] Profile '{slug}.json' belongs to multiple groups: {names}"
             )
 
     # Check: every profile file has an entry in groups.json
