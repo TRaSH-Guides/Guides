@@ -46,6 +46,14 @@ repos:
 
   - repo: local
     hooks:
+      - id: validate-custom-formats
+        name: Validate Custom Formats
+        entry: python scripts/validate-custom-formats.py
+        language: python
+        pass_filenames: false
+        files: >-
+          ^docs/json/(radarr|sonarr)/(cf|cf-groups|quality-profiles)/
+
       - id: validate-quality-profiles
         name: Validate Quality Profiles
         entry: python scripts/validate-quality-profiles.py

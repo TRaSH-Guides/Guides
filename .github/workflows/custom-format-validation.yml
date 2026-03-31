@@ -40,3 +40,6 @@ jobs:
 
       - name: Validate Sonarr Custom Formats
         run: check-jsonschema -v --schemafile schemas/sonarr-cf.schema.json docs/json/sonarr/cf/*.json
+
+      - name: Validate custom format consistency
+        run: python scripts/validate-custom-formats.py
