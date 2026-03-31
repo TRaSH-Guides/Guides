@@ -6,7 +6,6 @@
     "german-anime": -35000
   },
   "trash_regex": "https://regex101.com/r/8TIqc2/latest",
-  "trash_regex2": "https://regex101.com/r/ugw8mD/1",
   "name": "LQ (Release Title)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
