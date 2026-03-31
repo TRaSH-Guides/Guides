@@ -19,12 +19,12 @@ BASE = Path("docs/json")
 FILENAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
-def load_json(path: Path) -> dict | list | None:
+def load_json(path: Path, errors: list[str]) -> dict | list | None:
     try:
         with open(path) as f:
             return json.load(f)
     except (json.JSONDecodeError, OSError) as e:
-        print(f"ERROR: Failed to read {path}: {e}")
+        errors.append(f"Failed to parse {path}: {e}")
         return None
 
 
@@ -39,9 +39,8 @@ def validate_app(app: str) -> list[str]:
     cf_by_tid: dict[str, tuple[str, str]] = {}  # trash_id -> (filename, name)
     if cf_dir.is_dir():
         for f in sorted(cf_dir.glob("*.json")):
-            data = load_json(f)
+            data = load_json(f, errors)
             if data is None:
-                errors.append(f"[{app}] Failed to parse CF: {f.name}")
                 continue
             tid = data.get("trash_id", "")
             name = data.get("name", "")
@@ -70,7 +69,7 @@ def validate_app(app: str) -> list[str]:
     cf_groups_data: dict[str, dict] = {}  # filename -> data
     if cf_groups_dir.is_dir():
         for f in sorted(cf_groups_dir.glob("*.json")):
-            data = load_json(f)
+            data = load_json(f, errors)
             if data is None:
                 continue
             cf_groups_data[f.name] = data
@@ -81,7 +80,7 @@ def validate_app(app: str) -> list[str]:
     # Quality profiles
     if profiles_dir.is_dir():
         for f in sorted(profiles_dir.glob("*.json")):
-            data = load_json(f)
+            data = load_json(f, errors)
             if data is None:
                 continue
             tid = data.get("trash_id", "")
