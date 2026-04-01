@@ -1,11 +1,11 @@
 {
   "name": "[Streaming Services] Anime",
-  "trash_id": "60f6d50cbd3cfc3e9a8c00e3a30c3114",
+  "trash_id": "f993ad37540147e4d00e66503545d81b",
   "trash_description": "Collection of Anime Streaming Services for Radarr",
   "custom_formats": [
     {
       "name": "VRV",
-      "trash_id": "44a8ee6403071dd7b8a3a8dd3fe8cb20",
+      "trash_id": "60f6d50cbd3cfc3e9a8c00e3a30c3114",
       "required": true
     }
   ],
