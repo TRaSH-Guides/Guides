@@ -64,6 +64,15 @@
       }
     },
     {
+      "name": "HHWEB (No MA)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?!.*\\bMA\\b.*\\bWEB-?DL\\b).*\\b(HHWEB)\\b"
+      }
+    },
+    {
       "name": "jennaortega",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
