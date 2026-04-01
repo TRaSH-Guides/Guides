@@ -31,7 +31,7 @@ First, you need to set up Radarr to show all the naming options:
 
 === "Standard"
 
-    ```none
+    ```bash
     {{ radarr['naming']['radarr-naming']['file']['standard'] }}
     ```
 
@@ -40,8 +40,6 @@ First, you need to set up Radarr to show all the naming options:
 === "Plex"
 
     This naming scheme is designed to work with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="\_blank" rel="noopener noreferrer"}.
-
-    !!! danger "If you use the `{edition-{Edition Tags}}` part of the recommended file name, Plex will recognize the movie edition and add it to the Plex interface - for example, Director's Cut.<br><br>However, this means that if you have two copies of a movie with different editions in a single merged library - for example, a 1080p Director's Cut and a 2160p Theatrical Edition - these will appear as two separate items in Plex.<br><br>If you want a movie to appear only once per library when you keep more than one copy of a movie, replace: `{edition-{Edition Tags}}` with `{Edition Tags}`."
 
     === "Plex (IMDb)"
 
@@ -55,7 +53,7 @@ First, you need to set up Radarr to show all the naming options:
 
     === "Plex (TMDb)"
 
-        ```none
+        ```bash
         {{ radarr['naming']['radarr-naming']['file']['plex-tmdb'] }}
         ```
 
@@ -78,6 +76,26 @@ First, you need to set up Radarr to show all the naming options:
         ```
 
         <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
+
+    !!! danger "If you use the `{edition-{Edition Tags}}` part of the recommended file name, Plex will recognize the movie edition and add it to the Plex interface - for example, Director's Cut.<br><br>However, this means that if you have two copies of a movie with different editions in a single merged library - for example, a 1080p Director's Cut and a 2160p Theatrical Edition - these will appear as two separate items in Plex.<br><br>If you want a movie to appear only once per library when you keep more than one copy of a movie, replace: `{edition-{Edition Tags}}` with `{Edition Tags}`."
+
+    === "Plex Edition Alternative (IMDb)"
+
+        --8<-- "includes/radarr/tmdb-imdb-info.md"
+
+        ```bash
+        {{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-imdb'] }}
+        ```
+
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+
+    === "Plex Edition Alternative (TMDb)"
+
+        ```bash
+        {{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-tmdb'] }}
+        ```
+
+        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
 === "Emby"
 
