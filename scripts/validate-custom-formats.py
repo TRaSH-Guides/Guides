@@ -99,9 +99,7 @@ def validate_app(app: str) -> list[str]:
     for tid, locations in all_ids.items():
         if len(locations) > 1:
             locs = " and ".join(locations)
-            errors.append(
-                f"[{app}] Duplicate trash_id '{tid}' in {locs}"
-            )
+            errors.append(f"[{app}] Duplicate trash_id '{tid}' in {locs}")
 
     # --- Check 2: cf-groups entries reference valid CFs ---
     for filename, data in cf_groups_data.items():
