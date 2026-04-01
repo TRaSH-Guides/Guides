@@ -60,7 +60,7 @@ repos:
         language: python
         pass_filenames: false
         files: >-
-          ^docs/json/(radarr|sonarr)/(quality-profiles|quality-profile-groups|cf-groups)/
+          ^docs/json/(radarr|sonarr)/(cf|quality-profiles|quality-profile-groups|cf-groups)/
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
