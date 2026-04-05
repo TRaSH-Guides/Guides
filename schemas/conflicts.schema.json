@@ -8,17 +8,20 @@
     "custom_formats": {
       "type": "array",
       "items": {
-        "type": "array",
-        "minItems": 2,
-        "items": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["trash_id"],
-          "properties": {
-            "trash_id": { "type": "string" },
-            "name": { "type": "string" }
+        "type": "object",
+        "minProperties": 2,
+        "patternProperties": {
+          "^[a-f0-9]{32}$": {
+            "type": "object",
+            "required": ["name"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "desc": { "type": "string" }
+            }
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   }
