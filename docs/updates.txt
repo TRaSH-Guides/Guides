@@ -1,3 +1,14 @@
+# 2026-04-05 02:42
+- [fix(radarr): correct wrong trash ids](https://github.com/TRaSH-Guides/Guides/pull/2691)
+- [feat(guide-sync): Add naming scheme for Alternative Plex Edition naming](https://github.com/TRaSH-Guides/Guides/pull/2662)
+- [feat(radarr): Black and White editions custom format improvement](https://github.com/TRaSH-Guides/Guides/pull/2676)
+- [feat(radarr): Add none MA WEBDL from the RlsGrp `HHWEB` to the `LQ (Release Title)` Custom Format](https://github.com/TRaSH-Guides/Guides/pull/2682)
+- [feat(guide-sync): add quality profile consistency checks](https://github.com/TRaSH-Guides/Guides/pull/2689)
+- [feat(guide-sync): add custom format validation script](https://github.com/TRaSH-Guides/Guides/pull/2690)
+- [fix(starr): correct formatItems name casing to match source CFs](https://github.com/TRaSH-Guides/Guides/pull/2688)
+- [fix(starr): correct CF name casing in cf-groups to match source CFs](https://github.com/TRaSH-Guides/Guides/pull/2683)
+- [feat(guide-sync): overhaul feature comparison table](https://github.com/TRaSH-Guides/Guides/pull/2678)
+
 # 2026-03-29 02:40
 - [chore(guide-sync): Disabled the wrong quality source in the new profile SQP-4 (MA Hybrid)](https://github.com/TRaSH-Guides/Guides/pull/2669)
 - [feat(guide-sync): Added new profile SQP-4 (MA Hybrid)](https://github.com/TRaSH-Guides/Guides/pull/2667)
