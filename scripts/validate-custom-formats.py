@@ -5,6 +5,7 @@ Checks:
     1. Per-app trash_id uniqueness across CF files, cf-groups, and quality profiles
     2. cf-groups entries reference valid CFs (trash_id exists, name matches)
     3. CF and cf-groups filenames follow naming conventions (lowercase, dashes only)
+    4. conflicts.json entries reference valid CFs (trash_id exists, name matches)
 
 Exit code 0 on success, 1 on any failure.
 """
@@ -37,6 +38,7 @@ def validate_app(app: str) -> list[str]:
 
     cf_dir = BASE / app / "cf"
     cf_groups_dir = BASE / app / "cf-groups"
+    conflicts_file = BASE / app / "conflicts.json"
     profiles_dir = BASE / app / "quality-profiles"
 
     # --- Load all CF files ---
@@ -127,6 +129,34 @@ def validate_app(app: str) -> list[str]:
                     f"[{app}] cf-groups/{filename} name mismatch:"
                     f" '{entry_name}' but cf/{cf_filename} has '{cf_name}'"
                 )
+
+    # --- Check 4: conflicts.json entries reference valid CFs ---
+    if conflicts_file.is_file():
+        conflicts_data = load_json(conflicts_file, errors)
+        if conflicts_data is not None:
+            for group in conflicts_data.get("custom_formats", []):
+                for tid, entry in group.items():
+                    if tid == "$schema":
+                        continue
+                    if not isinstance(entry, dict):
+                        continue
+                    entry_name = entry.get("name", "")
+
+                    if tid not in cf_by_tid:
+                        errors.append(
+                            f"[{app}] conflicts.json references trash_id"
+                            f" '{tid}' ({entry_name}) which doesn't exist"
+                            f" in {app} CFs"
+                        )
+                        continue
+
+                    cf_filename, cf_name = cf_by_tid[tid]
+                    if entry_name != cf_name:
+                        errors.append(
+                            f"[{app}] conflicts.json name mismatch:"
+                            f" '{entry_name}' but cf/{cf_filename}"
+                            f" has '{cf_name}'"
+                        )
 
     return errors
 
