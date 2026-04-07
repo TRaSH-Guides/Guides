@@ -136,8 +136,6 @@ def validate_app(app: str) -> list[str]:
         if conflicts_data is not None:
             for group in conflicts_data.get("custom_formats", []):
                 for tid, entry in group.items():
-                    if tid == "$schema":
-                        continue
                     if not isinstance(entry, dict):
                         continue
                     entry_name = entry.get("name", "")
