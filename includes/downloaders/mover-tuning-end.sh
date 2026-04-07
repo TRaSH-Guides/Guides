@@ -247,6 +247,7 @@ install_fclones_binary() {
                 echo "# fclones boot-time setup" >> "$GO_FILE"
                 echo "export PATH=/usr/local/bin:\$PATH" >> "$GO_FILE"
                 echo "cp $BOOT_DIR/fclones /usr/local/bin/fclones" >> "$GO_FILE"
+                echo "chmod +x /usr/local/bin/fclones" >> "$GO_FILE"
             else
                 log "⚠ Cannot write to $GO_FILE. Please check permissions. (continuing anyway)"
             fi
