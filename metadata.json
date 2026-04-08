@@ -7,7 +7,8 @@
       "naming": ["docs/json/radarr/naming"],
       "quality_profiles": ["docs/json/radarr/quality-profiles"],
       "custom_format_groups": ["docs/json/radarr/cf-groups"],
-      "quality_profile_groups": ["docs/json/radarr/quality-profile-groups"]
+      "quality_profile_groups": ["docs/json/radarr/quality-profile-groups"],
+      "conflicts": ["docs/json/radarr/conflicts.json"]
     },
     "sonarr": {
       "custom_formats": ["docs/json/sonarr/cf"],
@@ -15,7 +16,8 @@
       "naming": ["docs/json/sonarr/naming"],
       "quality_profiles": ["docs/json/sonarr/quality-profiles"],
       "custom_format_groups": ["docs/json/sonarr/cf-groups"],
-      "quality_profile_groups": ["docs/json/sonarr/quality-profile-groups"]
+      "quality_profile_groups": ["docs/json/sonarr/quality-profile-groups"],
+      "conflicts": ["docs/json/sonarr/conflicts.json"]
     }
   }
 }
