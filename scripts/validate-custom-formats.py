@@ -134,9 +134,19 @@ def validate_app(app: str) -> list[str]:
     if conflicts_file.is_file():
         conflicts_data = load_json(conflicts_file, errors)
         if conflicts_data is not None:
-            for group in conflicts_data.get("custom_formats", []):
+            for group_idx, group in enumerate(conflicts_data.get("custom_formats", [])):
+                if not isinstance(group, dict):
+                    errors.append(
+                        f"[{app}] conflicts.json: conflict group"
+                        f" {group_idx} is not an object"
+                    )
+                    continue
                 for tid, entry in group.items():
                     if not isinstance(entry, dict):
+                        errors.append(
+                            f"[{app}] conflicts.json: entry for"
+                            f" trash_id '{tid}' is not an object"
+                        )
                         continue
                     entry_name = entry.get("name", "")
 
