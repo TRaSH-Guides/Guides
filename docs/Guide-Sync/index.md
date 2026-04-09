@@ -105,7 +105,7 @@ It enables the use of all Custom Formats and Quality Profiles defined in TRaSH-G
 
 Main features are:
 
-- Support all of TRaSH-Guide provided JSON structures (CustomFormats, QualityProfiles, Naming)
+- Supports all TRaSH Guide–provided JSON structures (Custom Formats, Quality Profiles, Naming).
 - Customizability: Create and adjust everything as you need for your setup, like your own CustomFormats, different QualityProfiles, ...
 - Container focus for best support in Docker and Kubernetes environments
 - more in the Configarr docs
