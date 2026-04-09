@@ -7,6 +7,8 @@ on:
       - docs/json/guide-only/*.json
       - docs/json/radarr/cf/*.json
       - docs/json/sonarr/cf/*.json
+      - docs/json/radarr/conflicts.json
+      - docs/json/sonarr/conflicts.json
       - schemas/**/*.json
   pull_request:
     paths:
@@ -14,6 +16,8 @@ on:
       - docs/json/guide-only/*.json
       - docs/json/radarr/cf/*.json
       - docs/json/sonarr/cf/*.json
+      - docs/json/radarr/conflicts.json
+      - docs/json/sonarr/conflicts.json
       - schemas/**/*.json
 
 jobs:
@@ -40,6 +44,12 @@ jobs:
 
       - name: Validate Sonarr Custom Formats
         run: check-jsonschema -v --schemafile schemas/sonarr-cf.schema.json docs/json/sonarr/cf/*.json
+
+      - name: Validate Conflicts
+        run: |
+          for f in docs/json/radarr/conflicts.json docs/json/sonarr/conflicts.json; do
+            [ -f "$f" ] && check-jsonschema -v --schemafile schemas/conflicts.schema.json "$f"
+          done
 
       - name: Validate custom format consistency
         run: python scripts/validate-custom-formats.py

@@ -44,6 +44,12 @@ repos:
         types: [json]
         args: ["-v", "--schemafile", "schemas/sonarr-naming.schema.json"]
 
+      - id: check-jsonschema
+        name: Validate Conflicts
+        files: ^docs/json/(radarr|sonarr)/conflicts\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/conflicts.schema.json"]
+
   - repo: local
     hooks:
       - id: validate-custom-formats
@@ -52,7 +58,7 @@ repos:
         language: python
         pass_filenames: false
         files: >-
-          ^docs/json/(radarr|sonarr)/(cf|cf-groups|quality-profiles)/
+          ^docs/json/(radarr|sonarr)/(cf|cf-groups|quality-profiles)/|^docs/json/(radarr|sonarr)/conflicts\.json$
 
       - id: validate-quality-profiles
         name: Validate Quality Profiles
