@@ -9,7 +9,7 @@ These are third-party applications that sync several sections of the guide with 
 
 ## Features
 
-Both Radarr and Sonarr share the same feature set across all three tools.
+Both Radarr and Sonarr share the same feature set across all the officially supported third-party Guide Sync Tools.
 
 ### Definitions
 
@@ -20,7 +20,7 @@ Both Radarr and Sonarr share the same feature set across all three tools.
 - **Naming Scheme**: Sync file and folder naming patterns from the guides.
 - **User-defined Custom Formats**: Author your own custom format specifications that don't exist in the TRaSH Guides. You can also add TRaSH custom formats that aren't part of a synced profile.
 - **User-defined Quality Profiles**: Build a quality profile from scratch rather than starting from a guide template.
-- **Score multiplier**: Apply a multiplier to all TRaSH scores in a profile (e.g. 0.5x to halve them) rather than overriding each one individually.
+- **Score multiplier**: Apply a multiplier to all TRaSH scores in a profile (e.g., 0.5x to halve them) rather than overriding each one individually.
 - **Profile cloning**: Copy an existing profile to a new name or another instance.
 - **Profile renaming**: Change the display name of a synced profile.
 
@@ -28,39 +28,39 @@ Both Radarr and Sonarr share the same feature set across all three tools.
 
 Syncing content from the TRaSH Guides to your Sonarr/Radarr instances.
 
-| Feature                                  |     Notifiarr      |     Recyclarr      |     Configarr      |
-| ---------------------------------------- | :----------------: | :----------------: | :----------------: |
-| Custom Formats                           | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Custom Format Groups                     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Quality Profiles                         | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Quality Definitions (file sizes)         | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Naming Scheme                            | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Feature                          |     Notifiarr      |     Recyclarr      |     Configarr      |      Clonarr       |
+|----------------------------------|:------------------:|:------------------:|:------------------:|:------------------:|
+| Custom Formats                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Custom Format Groups             | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Quality Profiles                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Quality Definitions (file sizes) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Naming Scheme                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
 ### Customization
 
 Going beyond the guides with your own settings.
 
-| Feature                                  |     Notifiarr      |     Recyclarr      |     Configarr      |
-| ---------------------------------------- | :----------------: | :----------------: | :----------------: |
-| User-defined Custom Formats              | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| User-defined Quality Profiles            |       (1)          | :white_check_mark: | :white_check_mark: |
-| Override/modify scores                   | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Score multiplier                         | :white_check_mark: |  :material-minus:  |  :material-minus:  |
-| Profile cloning                          | :white_check_mark: |  :material-minus:  | :white_check_mark: |
-| Profile renaming                         | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Clear all Custom Formats                 | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Feature                       |     Notifiarr      |     Recyclarr      |     Configarr      |      Clonarr       |
+|-------------------------------|:------------------:|:------------------:|:------------------:|:------------------:|
+| User-defined Custom Formats   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| User-defined Quality Profiles |        (1)         | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Override/modify scores        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Score multiplier              | :white_check_mark: |  :material-minus:  |  :material-minus:  |  :material-minus:  |
+| Profile cloning               | :white_check_mark: |  :material-minus:  | :white_check_mark: | :white_check_mark: |
+| Profile renaming              | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Clear all Custom Formats      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
 1. Profiles are based on guide templates with customizable settings; cannot create a profile from scratch.
 
 ### Setup and operation
 
-| Feature                                  |     Notifiarr      |     Recyclarr      |     Configarr      |
-| ---------------------------------------- | :----------------: | :----------------: | :----------------: |
-| GUI (graphical user interface)           | :white_check_mark: |  :material-minus:  |  :material-minus:  |
-| Predefined config files/templates        |  :material-minus:  | :white_check_mark: | :white_check_mark: |
-| Multi-instance support                   | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Notifications                            | :white_check_mark: | :white_check_mark: |  :material-minus:  |
-| Whisparr/Readarr/Lidarr support          |  :material-minus:  |  :material-minus:  | :white_check_mark: |
+| Feature                           |     Notifiarr      |     Recyclarr      |     Configarr      |      Clonarr       |
+|-----------------------------------|:------------------:|:------------------:|:------------------:|:------------------:|
+| GUI (graphical user interface)    | :white_check_mark: |  :material-minus:  |  :material-minus:  | :white_check_mark: |
+| Predefined config files/templates |  :material-minus:  | :white_check_mark: | :white_check_mark: |  :material-minus:  |
+| Multi-instance support            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Notifications                     | :white_check_mark: | :white_check_mark: |  :material-minus:  | :white_check_mark: |
+| Whisparr/Readarr/Lidarr support   |  :material-minus:  |  :material-minus:  | :white_check_mark: |  :material-minus:  |
 
 ---
 
@@ -78,7 +78,7 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 
 !!! tip ""
 
-    Big thanks to IBRACORP, who created a great video that covers the basics.
+    Big thanks to IBRACORP for creating a great video that covers the basics.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YTpaw_qGG5E?start=270" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -90,22 +90,43 @@ Once set up, it is fully automated and checks for updates to custom formats and 
 
 [Info](/Recyclarr/){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/guide/){:target="\_blank" rel="noopener noreferrer"}
 
-Recyclarr is a command line application utilizing configuration files to sync the guides to Radarr &
+Recyclarr is a command-line application utilizing configuration files to sync the guides to Radarr &
 Sonarr.
+
+---
 
 ## Configarr
 
 [GitHub](https://github.com/raydak-labs/configarr){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://configarr.raydak.de){:target="\_blank" rel="noopener noreferrer"}
 
-Configarr is a synchronization tool primarily designed to run as a scheduled job (e.g., Cron) within containerized environments like Docker or Kubernetes.
+Configarr is a synchronization tool primarily designed to run as a scheduled job (e.g., Cron) in containerized environments such as Docker or Kubernetes.
 Configarr is compatible with the Recyclarr templates until v7.4.0.
 It enables the use of all Custom Formats and Quality Profiles defined in TRaSH-Guides while also allowing users to create new Custom Formats tailored to their specific setup.
 
 Main features are:
 
-- Support all of TRaSH-Guide provided JSON structures (CustomFormats, QualityProfiles, Naming)
-- Customizability: Create and adjust everything as you need for your setup like own CustomFormats, different QualityProfiles, ...
+- Supports all TRaSH Guide–provided JSON structures (Custom Formats, Quality Profiles, Naming).
+- Customizability: Create and adjust everything as you need for your setup, like your own CustomFormats, different QualityProfiles, ...
 - Container focus for best support in Docker and Kubernetes environments
 - more in the Configarr docs
+
+---
+
+## Clonarr
+
+![GitHub Release](https://img.shields.io/github/v/release/ProphetSe7en/clonarr?label=latest) ![GitHub last commit](https://img.shields.io/github/last-commit/ProphetSe7en/clonarr/main?label=last%20commit)
+
+[GitHub](https://github.com/ProphetSe7en/clonarr){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://github.com/ProphetSe7en/clonarr/blob/main/docs/GETTING-STARTED.md){:target="\_blank" rel="noopener noreferrer"}
+
+TRaSH Guides sync tool for Radarr and Sonarr featuring a built-in web UI. Easily browse, customize, and sync Custom Formats, Quality Profiles, Scores, and Quality Sizes — no YAML configs, no CLI, just a browser.
+
+Designed as an alternative to config-driven tools like Recyclarr, with a visual interface for creating, testing, and deploying TRaSH profiles.
+
+![Clonarr Preview](https://raw.githubusercontent.com/ProphetSe7en/clonarr/refs/heads/main/docs/images/clonarr-preview.gif)
+
+For questions, help, or bug reports:
+
+- **Discord:** [`#prophetse7en-apps`](https://discordapp.com/channels/492590071455940612/1486391669384417300) on the [TRaSH Guides Discord](https://trash-guides.info/discord) (under Community Apps)
+- **GitHub:** [prophetse7en/clonarr/issues](https://github.com/prophetse7en/clonarr/issues)
 
 --8<-- "includes/support.md"
