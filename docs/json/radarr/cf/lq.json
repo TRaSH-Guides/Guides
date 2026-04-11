@@ -684,6 +684,15 @@
       }
     },
     {
+      "name": "R&H",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(R&H)$"
+      }
+    },
+    {
       "name": "RARBG",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
