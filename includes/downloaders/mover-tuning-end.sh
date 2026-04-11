@@ -8,7 +8,7 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 # =====================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.3.0"
+readonly SCRIPT_VERSION="1.3.1"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Get the directory where the script is located
