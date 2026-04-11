@@ -240,24 +240,24 @@ install_fclones_binary() {
         cp "$BOOT_DIR/fclones" /usr/local/bin/fclones 2>/dev/null || true
         chmod +x /usr/local/bin/fclones 2>/dev/null || true
 
-		# Add boot-time copy and PATH setup if not already in /boot/config/go
-		if [ -w "$GO_FILE" ]; then
-			if grep -q "^# fclones boot-time setup$" "$GO_FILE" 2>/dev/null; then
-				# Upgrade legacy boot-time setup from cp to guarded install -m 755
-				sed -i -E \
-					"s|^[[:space:]]*cp[[:space:]]+.*fclones[[:space:]]+/usr/local/bin/fclones[[:space:]]*$|[ -f \"$BOOT_DIR/fclones\" ] \&\& install -m 755 \"$BOOT_DIR/fclones\" \"$FCLONES_BIN\"|" \
-					"$GO_FILE"
-			else
-				{
-					echo ""
-					echo "# fclones boot-time setup"
-					echo 'export PATH=/usr/local/bin:$PATH'
-					echo "[ -f \"$BOOT_DIR/fclones\" ] && install -m 755 \"$BOOT_DIR/fclones\" \"$FCLONES_BIN\""
-				} >> "$GO_FILE"
-			fi
-		else
-			log "⚠ Cannot write to $GO_FILE. Please check permissions. (continuing anyway)"
-		fi
+        # Add boot-time copy and PATH setup if not already in /boot/config/go
+        if [ -w "$GO_FILE" ]; then
+            if grep -q "^# fclones boot-time setup$" "$GO_FILE" 2>/dev/null; then
+                # Upgrade legacy boot-time setup from cp to guarded install -m 755
+                sed -i -E \
+                    "s|^[[:space:]]*cp[[:space:]]+.*fclones[[:space:]]+/usr/local/bin/fclones[[:space:]]*$|[ -f \"$BOOT_DIR/fclones\" ] \&\& install -m 755 \"$BOOT_DIR/fclones\" \"$FCLONES_BIN\"|" \
+                    "$GO_FILE"
+            else
+                {
+                    echo ""
+                    echo "# fclones boot-time setup"
+                    echo 'export PATH=/usr/local/bin:$PATH'
+                    echo "[ -f \"$BOOT_DIR/fclones\" ] && install -m 755 \"$BOOT_DIR/fclones\" \"$FCLONES_BIN\""
+                } >> "$GO_FILE"
+            fi
+        else
+            log "⚠ Cannot write to $GO_FILE. Please check permissions. (continuing anyway)"
+        fi
 
         rm -rf "$TMP_DIR"
         log "✓ fclones $VERSION_NO_V installed successfully"
