@@ -3,8 +3,8 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Version: 1.3.0
-# Updated: 20260314
+# Version: 1.3.1
+# Updated: 20260411
 # =====================================
 
 # Script version and update check URLs
@@ -241,15 +241,22 @@ install_fclones_binary() {
         chmod +x /usr/local/bin/fclones 2>/dev/null || true
 
         # Add boot-time copy and PATH setup if not already in /boot/config/go
-        if ! grep -q "fclones boot-time setup" "$GO_FILE" 2>/dev/null; then
-            if [ -w "$GO_FILE" ]; then
-                echo "" >> "$GO_FILE"
-                echo "# fclones boot-time setup" >> "$GO_FILE"
-                echo "export PATH=/usr/local/bin:\$PATH" >> "$GO_FILE"
-                echo "cp $BOOT_DIR/fclones /usr/local/bin/fclones" >> "$GO_FILE"
+        if [ -w "$GO_FILE" ]; then
+            if grep -q "^# fclones boot-time setup$" "$GO_FILE" 2>/dev/null; then
+                # Upgrade legacy boot-time setup from cp to guarded install -m 755
+                sed -i -E \
+                    "s|^[[:space:]]*cp[[:space:]]+.*fclones[[:space:]]+/usr/local/bin/fclones[[:space:]]*$|[ -f \"$BOOT_DIR/fclones\" ] \&\& install -m 755 \"$BOOT_DIR/fclones\" \"$FCLONES_BIN\"|" \
+                    "$GO_FILE"
             else
-                log "⚠ Cannot write to $GO_FILE. Please check permissions. (continuing anyway)"
+                {
+                    echo ""
+                    echo "# fclones boot-time setup"
+                    echo 'export PATH=/usr/local/bin:$PATH'
+                    echo "[ -f \"$BOOT_DIR/fclones\" ] && install -m 755 \"$BOOT_DIR/fclones\" \"$FCLONES_BIN\""
+                } >> "$GO_FILE"
             fi
+        else
+            log "⚠ Cannot write to $GO_FILE. Please check permissions. (continuing anyway)"
         fi
 
         rm -rf "$TMP_DIR"
