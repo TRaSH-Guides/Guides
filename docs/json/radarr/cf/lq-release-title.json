@@ -127,6 +127,15 @@
       }
     },
     {
+      "name": "UnKn0wn (NoRemux)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<!\\b(remux).*?)\\b(unkn0wn)\\b"
+      }
+    },
+    {
       "name": "Will1869",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
