@@ -51,10 +51,13 @@ markdown_extensions:
   - pymdownx.extra
   - pymdownx.highlight:
       guess_lang: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.snippets
-  - pymdownx.tabbed
   - pymdownx.tilde
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -157,12 +160,17 @@ theme:
   custom_dir: overrides
   features:
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.tabs
     - navigation.top
     - content.code.copy
     - content.action.edit
     - content.action.view
     - content.tooltips
+    - search.suggest
+    - search.highlight
+    - toc.follow
   language: en
   palette:
     - media: "(prefers-color-scheme: dark)"

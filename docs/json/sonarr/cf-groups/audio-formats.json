@@ -4,7 +4,7 @@
   "trash_description": "Audio Formats, something you see mainly with Remuxes and UHD HQ Encodes. Add this only if you choose a Quality Profile that covers Remuxes and HQ UHD Encodes.",
   "custom_formats": [
     {
-      "name": "TrueHD Atmos",
+      "name": "TrueHD ATMOS",
       "trash_id": "0d7824bb924701997f874e7ff7d4844a",
       "required": true
     },

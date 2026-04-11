@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Version: 1.2.1
-# Updated: 20260129
+# Version: 1.3.0
+# Updated: 20260314
 # =======================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.2.1"
+readonly SCRIPT_VERSION="1.3.0"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
 readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
@@ -421,8 +421,11 @@ validate_config() {
     done
 
     # Validate docker if needed
-    if [[ "$ENABLE_QBIT_MANAGE" == true ]]; then
-        check_command docker || error "docker is required when ENABLE_QBIT_MANAGE=true"
+    if [[ "$ENABLE_DOCKER_MANAGEMENT" == true ]]; then
+        check_command docker || error "docker is required when ENABLE_DOCKER_MANAGEMENT=true"
+        if [[ ${#DOCKER_CONTAINERS[@]} -eq 0 ]]; then
+            error "DOCKER_CONTAINERS array is empty but ENABLE_DOCKER_MANAGEMENT=true"
+        fi
     fi
 
     # Validate settings
@@ -537,15 +540,21 @@ main() {
     validate_config
     [[ -f "$MOVER_SCRIPT" ]] || error "mover.py not found at: $MOVER_SCRIPT"
 
-    # Stop qBit-Manage if enabled
-    if [[ "$ENABLE_QBIT_MANAGE" == true ]]; then
-        log "Stopping $QBIT_MANAGE_CONTAINER..."
-        if docker stop "$QBIT_MANAGE_CONTAINER" &> /dev/null; then
-            log "✓ Stopped qBit-Manage"
-            notify "qBit-Manage" "Stopped @ $(date +%H:%M:%S)"
-            sleep "$QBIT_MANAGE_WAIT"
-        else
-            log "⚠ Warning: Failed to stop $QBIT_MANAGE_CONTAINER"
+    # Stop Docker containers if enabled
+    if [[ "$ENABLE_DOCKER_MANAGEMENT" == true ]]; then
+        local stop_failed=0
+        for container in "${DOCKER_CONTAINERS[@]}"; do
+            log "Stopping container: $container..."
+            if docker stop "$container" &> /dev/null; then
+                log "✓ Stopped $container"
+                notify "$container" "Stopped @ $(date +%H:%M:%S)"
+            else
+                log "⚠ Warning: Failed to stop $container"
+                ((stop_failed++)) || true
+            fi
+        done
+        if [[ $stop_failed -eq 0 ]]; then
+            sleep "$DOCKER_WAIT"
         fi
     fi
 

@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/conflicts.schema.json",
+  "custom_formats": [
+    {
+      "9c38ebb7384dada637be8899efa68e6f": {
+        "name": "SDR",
+        "desc": ""
+      },
+      "25c12f78430a3a23413652cbd1d48d77": {
+        "name": "SDR (no WEBDL)",
+        "desc": ""
+      }
+    },
+    {
+      "dc98083864ea246d05a42df0d05f81cc": {
+        "name": "x265 (HD)",
+        "desc": ""
+      },
+      "839bea857ed2c0a8e084f3cbdbd65ecb": {
+        "name": "x265 (no HDR/DV)",
+        "desc": ""
+      }
+    }
+  ]
+}

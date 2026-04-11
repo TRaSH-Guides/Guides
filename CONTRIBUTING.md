@@ -31,6 +31,7 @@ Here you will find guidelines for contributing to [TRaSH Guides](https://trash-g
         - [Group Specific settings](#group-specific-settings)
         - [Group Custom Format specific settings](#group-custom-format-specific-settings)
     - [quality-profile-groups](#quality-profile-groups)
+    - [conflicts](#conflicts)
 - [Recommendations](#recommendations)
     - [Preview Docs Locally](#preview-docs-locally)
     - [Preview after Pull Request](#preview-after-pull-request)
@@ -217,11 +218,17 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 
 - Radarr: `docs/json/radarr/quality-profiles`
     - `docs/json/radarr/cf-groups`
+    - `docs/json/radarr/quality-profile-groups/groups.json`
+    - `docs/json/radarr/conflicts.json`
 - Sonarr: `docs/json/sonarr/quality-profiles`
-    - `docs/json/Sonarr/cf-groups`
+    - `docs/json/sonarr/cf-groups`
+    - `docs/json/sonarr/quality-profile-groups/groups.json`
+    - `docs/json/sonarr/conflicts.json`
 
 - `docs/json/xxxarr/quality-profiles` = The base quality profile with all the mandatory Custom Formats.
 - `docs/json/xxxarr/cf-groups` = The optional/User choices that wouldn't break the Quality Profile.
+- `docs/json/xxxarr/quality-profile-groups` = The `groups.json` file contains an array of groups. The order of groups determines display order, and profiles within each group are sorted alphabetically by their name.
+- `docs/json/xxxarr/conflicts.json` = Declares mutually exclusive Custom Formats so sync tools can warn users about conflicting selections.
 
 ### quality-profiles
 
@@ -336,6 +343,38 @@ The `groups.json` file contains an array of groups. The order of groups determin
 
 > [!IMPORTANT]
 > All `trash_id` values in the `profiles` array must correspond to existing quality profiles in the `quality-profiles` directory. Each quality profile should belong to exactly one group.
+
+### conflicts
+
+The conflicts file declares Custom Formats that are mutually exclusive. Sync tools read this to warn users when they pick CFs that don't make sense together (for example, two SDR variants in the same profile).
+
+- Radarr: `docs/json/radarr/conflicts.json`
+- Sonarr: `docs/json/sonarr/conflicts.json`
+
+Each file has a `custom_formats` array, and each entry in that array is one conflict group. Inside a group, the `trash_id` is the object key and the value holds `name` and `desc`:
+
+```json
+{
+    "custom_formats": [
+        {
+            "9c38ebb7384dada637be8899efa68e6f": {
+                "name": "SDR",
+                "desc": ""
+            },
+            "25c12f78430a3a23413652cbd1d48d77": {
+                "name": "SDR (no WEBDL)",
+                "desc": ""
+            }
+        }
+    ]
+}
+```
+
+- All CFs within a group are mutually exclusive with each other. A group must have at least 2 entries.
+- `name` is a human-readable comment. It has no functional effect; keep it in sync with the real CF name so you can tell at a glance which `trash_id` is which.
+- `desc` is an optional free-text field for longer maintainer notes. No formatting rules.
+- The schema (`schemas/conflicts.schema.json`) validates that keys are 32-character hex strings.
+- When you add a new CF that conflicts with an existing one, add or update the conflict group in the relevant `conflicts.json` file.
 
 ---
 

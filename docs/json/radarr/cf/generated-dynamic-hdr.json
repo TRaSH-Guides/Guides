@@ -36,6 +36,15 @@
       }
     },
     {
+      "name": "GuyZo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GuyZo|BR-GuyZo)$"
+      }
+    },
+    {
       "name": "SasukeducK",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

@@ -1,0 +1,43 @@
+name: Validate Quality Profiles
+
+on:
+  push:
+    paths:
+      - .github/workflows/quality-profile-validation.yml
+      - docs/json/radarr/cf/*.json
+      - docs/json/radarr/quality-profiles/**
+      - docs/json/radarr/quality-profile-groups/**
+      - docs/json/radarr/cf-groups/**
+      - docs/json/sonarr/cf/*.json
+      - docs/json/sonarr/quality-profiles/**
+      - docs/json/sonarr/quality-profile-groups/**
+      - docs/json/sonarr/cf-groups/**
+      - scripts/validate-quality-profiles.py
+  pull_request:
+    paths:
+      - .github/workflows/quality-profile-validation.yml
+      - docs/json/radarr/cf/*.json
+      - docs/json/radarr/quality-profiles/**
+      - docs/json/radarr/quality-profile-groups/**
+      - docs/json/radarr/cf-groups/**
+      - docs/json/sonarr/cf/*.json
+      - docs/json/sonarr/quality-profiles/**
+      - docs/json/sonarr/quality-profile-groups/**
+      - docs/json/sonarr/cf-groups/**
+      - scripts/validate-quality-profiles.py
+
+jobs:
+  validate-quality-profiles:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Setup python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.x"
+
+      - name: Validate quality profiles
+        run: python scripts/validate-quality-profiles.py
