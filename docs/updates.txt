@@ -1,3 +1,13 @@
+# 2026-04-12 02:48
+- [fix(downloaders): add updated version number](https://github.com/TRaSH-Guides/Guides/pull/2703)
+- [feat(starr): Add RlsGrp `R&H` to `LQ`](https://github.com/TRaSH-Guides/Guides/pull/2701)
+- [feat(radarr): Add RlsGrp `Unkn0wn` if it's not a Remux to `LQ (Release Title)` ](https://github.com/TRaSH-Guides/Guides/pull/2700)
+- [fix(downloaders): ensure fclones remains executable after reboot on unRAID](https://github.com/TRaSH-Guides/Guides/pull/2696)
+- [feat(guide-sync): Add Clonarr as an officially supported third-party Guide Sync Tool](https://github.com/TRaSH-Guides/Guides/pull/2698)
+- [fix(starr-french): Add missing French MULTi.VF and VOSTR quality profiles in custom format groups.](https://github.com/TRaSH-Guides/Guides/pull/2697)
+- [feat(guide-sync): add conflicts.json validation](https://github.com/TRaSH-Guides/Guides/pull/2695)
+- [feat(starr): Add machine-readable conflict declarations for mutually exclusive CFs](https://github.com/TRaSH-Guides/Guides/pull/2681)
+
 # 2026-04-05 02:42
 - [fix(radarr): correct wrong trash ids](https://github.com/TRaSH-Guides/Guides/pull/2691)
 - [feat(guide-sync): Add naming scheme for Alternative Plex Edition naming](https://github.com/TRaSH-Guides/Guides/pull/2662)
