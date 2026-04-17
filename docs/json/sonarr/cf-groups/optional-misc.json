@@ -1,7 +1,7 @@
 {
   "name": "[Optional] Miscellaneous",
   "trash_id": "f4a0410a1df109a66d6e47dcadcce014",
-  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.",
+  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.<br>PLEASE DON'T USE THE ADD ALL OPTION FOR THIS GROUP!!!",
   "custom_formats": [
     {
       "name": "Bad Dual Groups",
@@ -56,6 +56,21 @@
     {
       "name": "VP9",
       "trash_id": "90501962793d580d011511155c97e4e5",
+      "required": false
+    },
+    {
+      "name": "WiTH AD",
+      "trash_id": "44ccbcbc74506f208973e1463b11705f",
+      "required": false
+    },
+    {
+      "name": "WiTH ASL",
+      "trash_id": "c196536ea8122397c5854040d01f2aa7",
+      "required": false
+    },
+    {
+      "name": "WiTH BSL",
+      "trash_id": "0aef382c4ed4c5eb5d40109dfd351b72",
       "required": false
     },
     {
