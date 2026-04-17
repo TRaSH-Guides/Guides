@@ -125,9 +125,9 @@ We've made 3 guides related to this.
 | [Scene](#scene)                                       |                                                                                                                       |
 | [VC-1](#vc-1)                                         |                                                                                                                       |
 | [VP9](#vp9)                                           |                                                                                                                       |
-| [WiTH AD](#with-ad)                                    |                                                                                                                       |
-| [WiTH ASL](#with-asl)                                  |                                                                                                                       |
-| [WiTH BSL](#with-bsl)                                  |                                                                                                                       |
+| [WiTH AD](#with-ad)                                   |                                                                                                                       |
+| [WiTH ASL](#with-asl)                                 |                                                                                                                       |
+| [WiTH BSL](#with-bsl)                                 |                                                                                                                       |
 | [x264](#x264)                                         |                                                                                                                       |
 | [x265 (no HDR/DV)](#x265-no-hdrdv)                    |                                                                                                                       |
 | [x265](#x265)                                         |                                                                                                                       |
