@@ -122,6 +122,8 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [VC-1](#vc-1)                       |                                                                                                                       |
 | [VP9](#vp9)                         |                                                                                                                       |
 | [WiTH AD](#with-ad)                 |                                                                                                                       |
+| [WiTH ASL](#with-asl)               |                                                                                                                       |
+| [WiTH BSL](#with-bsl)               |                                                                                                                       |
 | [x264](#x264)                       |                                                                                                                       |
 | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                                                                                                                       |
 | [x265](#x265)                       |                                                                                                                       |
@@ -1223,6 +1225,38 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/with-ad.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### WiTH ASL
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/with-asl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/with-asl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### WiTH BSL
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/with-bsl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/with-bsl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
