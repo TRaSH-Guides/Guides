@@ -121,9 +121,9 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [Season Packs](#season-pack)        |                                                                                                                       |
 | [VC-1](#vc-1)                       |                                                                                                                       |
 | [VP9](#vp9)                         |                                                                                                                       |
-| [WiTH.AD](#with-ad)                 |                                                                                                                       |
-| [WiTH.ASL](#with-asl)               |                                                                                                                       |
-| [WiTH.BSL](#with-bsl)               |                                                                                                                       |
+| [WiTH AD](#with-ad)                  |                                                                                                                       |
+| [WiTH ASL](#with-asl)                |                                                                                                                       |
+| [WiTH BSL](#with-bsl)                |                                                                                                                       |
 | [x264](#x264)                       |                                                                                                                       |
 | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                                                                                                                       |
 | [x265](#x265)                       |                                                                                                                       |
@@ -1215,7 +1215,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### WiTH.AD
+### WiTH AD
 
 ??? question "Description - [Click to show/hide]"
 
@@ -1231,7 +1231,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### WiTH.ASL
+### WiTH ASL
 
 ??? question "Description - [Click to show/hide]"
 
@@ -1247,7 +1247,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-### WiTH.BSL
+### WiTH BSL
 
 ??? question "Description - [Click to show/hide]"
 

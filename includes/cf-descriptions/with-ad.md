@@ -9,5 +9,5 @@
 
 Audio description (AD), also referred to as a video description, described video, or visual description, is a form of narration used to provide information surrounding key visual elements in a media work (such as a film or television program, or theatrical performance) for the benefit of blind and visually impaired consumers.
 
-Some releases are now available with Audio Description, those are flagged `WiTH.AD` or just `AD`, and should not be confused with advertisements, as they are not.
+Some releases are now available with Audio Description, those are flagged `WiTH AD` or just `AD`, and should not be confused with advertisements, as they are not.
 <!-- markdownlint-enable MD036 MD041-->

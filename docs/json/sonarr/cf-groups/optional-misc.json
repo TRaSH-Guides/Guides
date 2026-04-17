@@ -59,17 +59,17 @@
       "required": false
     },
     {
-      "name": "WiTH.AD",
+      "name": "WiTH AD",
       "trash_id": "44ccbcbc74506f208973e1463b11705f",
       "required": false
     },
     {
-      "name": "WiTH.ASL",
+      "name": "WiTH ASL",
       "trash_id": "c196536ea8122397c5854040d01f2aa7",
       "required": false
     },
     {
-      "name": "WiTH.BSL",
+      "name": "WiTH BSL",
       "trash_id": "0aef382c4ed4c5eb5d40109dfd351b72",
       "required": false
     },
