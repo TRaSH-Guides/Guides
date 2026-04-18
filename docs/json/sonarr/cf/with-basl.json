@@ -1,6 +1,11 @@
 {
   "trash_id": "b40dc2e630723745aab9f1b94f4aab74",
   "trash_regex": "https://regex101.com/r/iCyLwn/1",
+  "trash_scores": {
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000
+  },
   "name": "WiTH BASL",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [

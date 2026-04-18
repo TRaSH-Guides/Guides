@@ -1,6 +1,11 @@
 {
   "trash_id": "c196536ea8122397c5854040d01f2aa7",
   "trash_regex": "https://regex101.com/r/DuHsnc/1",
+  "trash_scores": {
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000
+  },
   "name": "WiTH ASL",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
