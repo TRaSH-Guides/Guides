@@ -64,21 +64,6 @@
       "required": false
     },
     {
-      "name": "WiTH AD",
-      "trash_id": "127bdbadcf3e4463a8c707759fbaad75",
-      "required": false
-    },
-    {
-      "name": "WiTH ASL",
-      "trash_id": "09c60ba54fadb511c6986a7edec4da4b",
-      "required": false
-    },
-    {
-      "name": "WiTH BSL",
-      "trash_id": "e205c5ba6be76b472903f4aec97fdb4b",
-      "required": false
-    },
-    {
       "name": "x265",
       "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
       "required": false
