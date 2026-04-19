@@ -102,34 +102,33 @@ We've made 3 guides related to this.
 
 ---
 
-| Miscellaneous                                         | Language profiles                                                                                                     |
-|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [720p](#720p)                                         | [Language: German](#language-german)                                                                                  |
-| [1080p](#1080p)                                       | [Language: German DL](#language-german-dl)                                                                            |
-| [2160p](#2160p)                                       | [Language: German DL (undefined)](#language-german-dl-undefined)                                                      |
-| [Bad Dual Groups](#bad-dual-groups)                   | [Language: Not English (English Only)](#language-not-english)                                                         |
-| [Black and White Editions](#black-and-white-editions) | [Language: Not French (French Only)](#language-not-french)                                                            |
-| [Dutch Groups](#dutch-groups)                         | [Language: Not Original (Original Only)](#language-not-original)                                                      |
-| [FreeLeech](#freeleech)                               | [Language: Original + French](#language-original-plus-french)                                                         |
-| [HFR](#hfr)                                           | [Language: Not German or English](#language-not-german-or-english)                                                    |
-| [Internal](#internal)                                 | [Language: Not German, Japanese or English](#language-not-german-japanese-or-english)                                 |
-| [MPEG2](#mpeg2)                                       | [Language: Not German, Japanese, Korean, Chinese or English](#language-not-german-japanese-korean-chinese-or-english) |
-| [Multi](#multi)                                       | [Language: German Anime Subbed](#language-german-anime-subbed)                                                        |
-| [No-RlsGroup](#no-rlsgroup)                           |                                                                                                                       |
-| [Obfuscated](#obfuscated)                             |                                                                                                                       |
-| [P2P Internal](#p2p-internal)                         |                                                                                                                       |
-| [Repack/Proper](#repackproper)                        |                                                                                                                       |
-| [Repack2](#repack2)                                   |                                                                                                                       |
-| [Repack3](#repack3)                                   |                                                                                                                       |
-| [Retags](#retags)                                     |                                                                                                                       |
-| [Scene](#scene)                                       |                                                                                                                       |
-| [VC-1](#vc-1)                                         |                                                                                                                       |
-| [VP9](#vp9)                                           |                                                                                                                       |
-| [WiTH AD](#with-ad)                                   |                                                                                                                       |
-| [x264](#x264)                                         |                                                                                                                       |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)                    |                                                                                                                       |
-| [x265](#x265)                                         |                                                                                                                       |
-| [x266](#x266)                                         |                                                                                                                       |
+| Miscellaneous                                         | Language profiles                                                                                                     | Accessibility (Optional) |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------------|
+| [720p](#720p)                                         | [Language: German](#language-german)                                                                                  | [WiTH AD](#with-ad)      |
+| [1080p](#1080p)                                       | [Language: German DL](#language-german-dl)                                                                            | [WiTH ASL](#with-asl)    |
+| [2160p](#2160p)                                       | [Language: German DL (undefined)](#language-german-dl-undefined)                                                      | [WiTH BASL](#with-basl)  |
+| [Bad Dual Groups](#bad-dual-groups)                   | [Language: Not English (English Only)](#language-not-english)                                                         | [WiTH BSL](#with-bsl)    |
+| [Black and White Editions](#black-and-white-editions) | [Language: Not French (French Only)](#language-not-french)                                                            |                          |
+| [Dutch Groups](#dutch-groups)                         | [Language: Not Original (Original Only)](#language-not-original)                                                      |                          |
+| [FreeLeech](#freeleech)                               | [Language: Original + French](#language-original-plus-french)                                                         |                          |
+| [HFR](#hfr)                                           | [Language: Not German or English](#language-not-german-or-english)                                                    |                          |
+| [Internal](#internal)                                 | [Language: Not German, Japanese or English](#language-not-german-japanese-or-english)                                 |                          |
+| [MPEG2](#mpeg2)                                       | [Language: Not German, Japanese, Korean, Chinese or English](#language-not-german-japanese-korean-chinese-or-english) |                          |
+| [Multi](#multi)                                       | [Language: German Anime Subbed](#language-german-anime-subbed)                                                        |                          |
+| [No-RlsGroup](#no-rlsgroup)                           |                                                                                                                       |                          |
+| [Obfuscated](#obfuscated)                             |                                                                                                                       |                          |
+| [P2P Internal](#p2p-internal)                         |                                                                                                                       |                          |
+| [Repack/Proper](#repackproper)                        |                                                                                                                       |                          |
+| [Repack2](#repack2)                                   |                                                                                                                       |                          |
+| [Repack3](#repack3)                                   |                                                                                                                       |                          |
+| [Retags](#retags)                                     |                                                                                                                       |                          |
+| [Scene](#scene)                                       |                                                                                                                       |                          |
+| [VC-1](#vc-1)                                         |                                                                                                                       |                          |
+| [VP9](#vp9)                                           |                                                                                                                       |                          |
+| [x264](#x264)                                         |                                                                                                                       |                          |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)                    |                                                                                                                       |                          |
+| [x265](#x265)                                         |                                                                                                                       |                          |
+| [x266](#x266)                                         |                                                                                                                       |                          |
 
 ---
 
@@ -1407,7 +1406,13 @@ We've made 3 guides related to this.
 
 ---
 
+## Accessibility (Optional)
+
+---
+
 ### WiTH AD
+
+<sub>Audio Description</sub>
 
 ??? question "Description - [Click to show/hide]"
 
@@ -1417,6 +1422,60 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-ad.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### WiTH ASL
+
+<sub>American Sign Language</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/with-asl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-asl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### WiTH BASL
+
+<sub>Black American Sign Language</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/with-basl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-basl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### WiTH BSL
+
+<sub>British Sign Language</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/with-bsl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-bsl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

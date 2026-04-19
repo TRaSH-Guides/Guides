@@ -1,0 +1,22 @@
+{
+  "trash_id": "41e4baea7b10ddefc6609d52f742dacd",
+  "trash_regex": "https://regex101.com/r/iCyLwn/1",
+  "trash_scores": {
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000
+  },
+  "name": "WiTH BASL",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Black American Sign Language",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(BASL)\\b"
+      }
+    }
+  ]
+}

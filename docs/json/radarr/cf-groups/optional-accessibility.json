@@ -1,81 +1,26 @@
 {
-  "name": "[Optional] Miscellaneous",
-  "trash_id": "9337080378236ce4c0b183e35790d2a7",
+  "name": "[Optional] Accessibility",
+  "trash_id": "bc3c13e52f2971319bc1748ffa3d1078",
   "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.<br>PLEASE DON'T USE THE ADD ALL OPTION FOR THIS GROUP!!!",
   "custom_formats": [
     {
-      "name": "Bad Dual Groups",
-      "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "name": "WiTH AD",
+      "trash_id": "127bdbadcf3e4463a8c707759fbaad75",
       "required": false
     },
     {
-      "name": "Black and White Editions",
-      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+      "name": "WiTH ASL",
+      "trash_id": "09c60ba54fadb511c6986a7edec4da4b",
       "required": false
     },
     {
-      "name": "DV (Disk)",
-      "trash_id": "f700d29429c023a5734505e77daeaea7",
+      "name": "WiTH BASL",
+      "trash_id": "41e4baea7b10ddefc6609d52f742dacd",
       "required": false
     },
     {
-      "name": "HFR",
-      "trash_id": "73613461ac2cea99d52c4cd6e177ab82",
-      "required": false
-    },
-    {
-      "name": "MULTi",
-      "trash_id": "4b900e171accbfb172729b63323ea8ca",
-      "required": false
-    },
-    {
-      "name": "No-RlsGroup",
-      "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
-      "required": false
-    },
-    {
-      "name": "Obfuscated",
-      "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
-      "required": false
-    },
-    {
-      "name": "P2P Internal",
-      "trash_id": "80f51de4636a294e31552e90d2e1decb",
-      "required": false
-    },
-    {
-      "name": "Retags",
-      "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
-      "required": false
-    },
-    {
-      "name": "Scene",
-      "trash_id": "f537cf427b64c38c8e36298f657e4828",
-      "required": false
-    },
-    {
-      "name": "VC-1",
-      "trash_id": "11cd1db7165d6a7ad9a83bc97b8b1060",
-      "required": false
-    },
-    {
-      "name": "VP9",
-      "trash_id": "ae4cfaa9283a4f2150ac3da08e388723",
-      "required": false
-    },
-    {
-      "name": "x264",
-      "trash_id": "2899d84dc9372de3408e6d8cc18e9666",
-      "required": false
-    },
-    {
-      "name": "x265",
-      "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
-      "required": false
-    },
-    {
-      "name": "x266",
-      "trash_id": "390455c22a9cac81a738f6cbad705c3c",
+      "name": "WiTH BSL",
+      "trash_id": "e205c5ba6be76b472903f4aec97fdb4b",
       "required": false
     }
   ],
@@ -108,7 +53,13 @@
       "[SQP] SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
       "[SQP] SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
       "[SQP] SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
-      "[SQP] SQP-1 WEB (2160p)": "e91c9adaca0231493f4af0d571b907f9"
+      "[SQP] SQP-1 WEB (2160p)": "e91c9adaca0231493f4af0d571b907f9",
+      "[SQP] SQP-2": "c3933358ba2356bafc41524f81471069",
+      "[SQP] SQP-3": "2cf36c1f0106ffac993be003ade51865",
+      "[SQP] SQP-3 (Audio)": "0ada8e60cc3ddf2733b65de10f4a6c72",
+      "[SQP] SQP-4": "013f89e6da27519fe56cf482702a2db9",
+      "[SQP] SQP-4 (MA Hybrid)": "7526db7ac0a1f764793fb181864d0222",
+      "[SQP] SQP-5": "a7bb1539fd147256b21b1098f3dc2016"
     }
   }
 }

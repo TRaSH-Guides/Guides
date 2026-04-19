@@ -1,7 +1,7 @@
 {
   "trash_id": "127bdbadcf3e4463a8c707759fbaad75",
-  "trash_regex": "https://regex101.com/r/GCIcFI",
-  "name": "WiTH.AD",
+  "trash_regex": "https://regex101.com/r/YWHIIr/1",
+  "name": "WiTH AD",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b((FRENCH|MULTi|WiTH)[ .-]AD)\\b"
+        "value": "\\b((FRENCH|MULTi|WiTH|((BA?|A)SL[ ._-]and))[ ._-](AD|Audio[ ._-]Description))\\b"
       }
     }
   ]
