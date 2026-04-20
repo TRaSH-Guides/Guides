@@ -3714,7 +3714,7 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 
 ---
 
-<!-- markdownlint-disable MD011 MD022 MD055 MD056 -->
+<!-- markdownlint-disable MD011 MD022 MD052 MD055 MD056 -->
 {%- macro cf_slug(name) -%}{{ name | lower | replace('+', 'plus') | replace('(', '') | replace(')', '') | replace('/', '') | replace('.', '') | replace(' ', '-') | replace('--', '-') }}{%- endmacro -%}
 {% set ns = namespace(current_category='') -%}
 {% for key, group in radarr['cf-groups']|dictsort -%}
@@ -3763,4 +3763,4 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 
 {% endif -%}
 {% endfor -%}
-<!-- markdownlint-enable MD011 MD022 MD055 MD056 -->
+<!-- markdownlint-enable MD011 MD022 MD052 MD055 MD056 -->
