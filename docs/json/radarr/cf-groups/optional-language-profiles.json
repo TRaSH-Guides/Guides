@@ -1,0 +1,72 @@
+{
+  "name": "[Optional] Language Profiles",
+  "trash_id": "13856622cf7a6c9925d3a83f8812d679",
+  "trash_description": "Language Profiles included in one of the guides.",
+  "custom_formats": [
+    {
+      "name": "Language: German",
+      "trash_id": "86bc3115eb4e9873ac96904a4a68e19e",
+      "required": false
+    },
+    {
+      "name": "Language: German Anime Subbed",
+      "trash_id": "ee425f921dd740621523343bffe82fa3",
+      "required": false
+    },
+    {
+      "name": "Language: German DL",
+      "trash_id": "f845be10da4f442654c13e1f2c3d6cd5",
+      "required": false
+    },
+    {
+      "name": "Language: German DL (undefined)",
+      "trash_id": "6aad77771dabe9d3e9d7be86f310b867",
+      "required": false
+    },
+    {
+      "name": "Language: Not English",
+      "trash_id": "0dc8aec3bd1c47cd6c40c46ecd27e846",
+      "required": false
+    },
+    {
+      "name": "Language: Not French",
+      "trash_id": "533f782474f0819643c2ec0c1eeeb0ac",
+      "required": false
+    },
+    {
+      "name": "Language: Not German or English",
+      "trash_id": "4eadb75fb23d09dfc0a8e3f687e72287",
+      "required": false
+    },
+    {
+      "name": "Language: Not German, Japanese or English",
+      "trash_id": "532c4a41c94ae0f77c745ae478883c44",
+      "required": false
+    },
+    {
+      "name": "Language: Not German, Japanese, Korean, Chinese or English",
+      "trash_id": "9a8f58fae5df94783c214c0ed63f589c",
+      "required": false
+    },
+    {
+      "name": "Language: Not Original",
+      "trash_id": "d6e9318c875905d6cfb5bee961afcea9",
+      "required": false
+    },
+    {
+      "name": "Language: Original Plus French",
+      "trash_id": "0542a48746585dc4444bbbb8a6bdf6ea",
+      "required": false
+    },
+    {
+      "name": "Wrong Language",
+      "trash_id": "2051402ee9ca81162017d98cbe1dff2c",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "include": {
+      "Radarr Dummy Profile": "889948bca62f8016edbaa62e173b02c3"
+    }
+  }
+}
