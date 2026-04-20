@@ -1,5 +1,5 @@
 {
-  "name": "[Required] Golden Rule UHD",
+  "name": "[Optional] Golden Rule UHD",
   "trash_id": "ff204bbcecdd487d1cefcefdbf0c278d",
   "trash_description": "- x265 (HD): This blocks 720/1080p (HD) releases that are encoded in x265<br>- x265 (no HDR/DV): This blocks 720/1080p (HD) releases that are encoded in x265, But it will allow 720/1080p x265 releases if they have HDR and/or DV.<br><br><b>Please ensure you only score or enable one of them in your Quality Profile!!!</b>",
   "default": "true",
