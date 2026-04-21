@@ -1,0 +1,90 @@
+{
+    "name": "[Release Groups] Anime",
+    "trash_id": "f206572b1147d0221bb1c96765b349e8",
+    "trash_description": "A collection of Anime release groups.",
+    "custom_formats": [
+        {
+            "name": "Anime BD Tier 01",
+            "trash_id": "949c16fe0a8147f50ba82cc2df9411c9",
+            "required": false
+        },
+        {
+            "name": "Anime BD Tier 02",
+            "trash_id": "ed7f1e315e000aef424a58517fa48727",
+            "required": false
+        },
+        {
+            "name": "Anime BD Tier 03",
+            "trash_id": "096e406c92baa713da4a72d88030b815",
+            "required": false
+        },
+        {
+            "name": "Anime BD Tier 04",
+            "trash_id": "30feba9da3030c5ed1e0f7d610bcadc4",
+            "required": false
+        },
+        {
+            "name": "Anime BD Tier 05",
+            "trash_id": "545a76b14ddc349b8b185a6344e28b04",
+            "required": false
+        },
+        {
+            "name": "Anime BD Tier 06",
+            "trash_id": "25d2afecab632b1582eaf03b63055f72",
+            "required": false
+        },
+        {
+            "name": "Anime BD Tier 07",
+            "trash_id": "0329044e3d9137b08502a9f84a7e58db",
+            "required": false
+        },
+        {
+            "name": "Anime BD Tier 08",
+            "trash_id": "c81bbfb47fed3d5a3ad027d077f889de",
+            "required": false
+        },
+        {
+            "name": "Anime LQ Groups",
+            "trash_id": "e3515e519f3b1360cbfc17651944354c",
+            "required": false
+        },
+        {
+            "name": "Anime Raws",
+            "trash_id": "b4a1b3d705159cdca36d71e57ca86871",
+            "required": false
+        },
+        {
+            "name": "Anime Web Tier 01",
+            "trash_id": "e0014372773c8f0e1bef8824f00c7dc4",
+            "required": false
+        },
+        {
+            "name": "Anime Web Tier 02",
+            "trash_id": "19180499de5ef2b84b6ec59aae444696",
+            "required": false
+        },
+        {
+            "name": "Anime Web Tier 03",
+            "trash_id": "c27f2ae6a4e82373b0f1da094e2489ad",
+            "required": false
+        },
+        {
+            "name": "Anime Web Tier 04",
+            "trash_id": "4fd5528a3a8024e6b49f9c67053ea5f3",
+            "required": false
+        },
+        {
+            "name": "Anime Web Tier 05",
+            "trash_id": "29c2a13d091144f63307e4a8ce963a39",
+            "required": false
+        },
+        {
+            "name": "Anime Web Tier 06",
+            "trash_id": "dc262f88d74c651b12e9d90b39f6c753",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {}
+    }
+}
