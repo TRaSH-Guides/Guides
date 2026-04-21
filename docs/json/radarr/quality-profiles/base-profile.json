@@ -1,0 +1,62 @@
+{
+  "trash_id": "92e9a65a52ae48478fb8e9f34238d823",
+  "name": "Base Profile",
+  "trash_description": "This is a base profile that we use for testing",
+  "group": 99,
+  "upgradeAllowed": true,
+  "cutoff": "Remux-2160p",
+  "minFormatScore": 0,
+  "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
+  "language": "Original",
+  "items": [
+    { "name": "Raw-HD", "allowed": false },
+    { "name": "BR-DISK", "allowed": false },
+    { "name": "Remux-2160p", "allowed": true },
+    { "name": "Bluray-2160p", "allowed": true },
+    {
+      "name": "WEBDL-2160p | WEBRip-2160p",
+      "allowed": true,
+      "items": ["WEBDL-2160p", "WEBRip-2160p"]
+    },
+    { "name": "HDTV-2160p", "allowed": true },
+    { "name": "Remux-1080p", "allowed": true },
+    { "name": "Bluray-1080p", "allowed": true },
+    {
+      "name": "WEBDL-1080p | WEBRip-1080p",
+      "allowed": true,
+      "items": ["WEBDL-1080p", "WEBRip-1080p"]
+    },
+    { "name": "HDTV-1080p", "allowed": true },
+    { "name": "Bluray-720p", "allowed": true },
+    {
+      "name": "WEBDL-720p | WEBRip-720p",
+      "allowed": true,
+      "items": ["WEBDL-720p", "WEBRip-720p"]
+    },
+    { "name": "HDTV-720p", "allowed": true },
+    { "name": "Bluray-576p", "allowed": true },
+    { "name": "Bluray-480p", "allowed": true },
+    {
+      "name": "WEBDL-480p | WEBRip-480p",
+      "allowed": true,
+      "items": ["WEBDL-480p", "WEBRip-480p"]
+    },
+    { "name": "DVD-R", "allowed": false },
+    { "name": "DVD", "allowed": false },
+    { "name": "SDTV", "allowed": false },
+    { "name": "DVDSCR", "allowed": false },
+    { "name": "REGIONAL", "allowed": false },
+    { "name": "TELECINE", "allowed": false },
+    { "name": "TELESYNC", "allowed": false },
+    { "name": "CAM", "allowed": false },
+    { "name": "WORKPRINT", "allowed": false },
+    { "name": "Unknown", "allowed": false }
+  ],
+  "formatItems": {
+    "BR-DISK": "ed38b889b31be83fda192888e2286d83",
+    "LQ": "90a6f9a284dff5103f6346090e6280c8",
+    "LQ (Release Title)": "e204b80c87be9497a8a6eaff48f72905",
+    "Extras": "0a3f082873eb454bde444150b70253cc"
+  }
+}
