@@ -1,0 +1,54 @@
+{
+  "trash_id": "e58cf4e090184db3b3d7c79c1a9e9b4a",
+  "name": "Base Profile",
+  "trash_description": "This is a base profile that we use for testing",
+  "group": 99,
+  "upgradeAllowed": true,
+  "cutoff": "Bluray-2160p Remux",
+  "minFormatScore": 0,
+  "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
+  "items": [
+    { "name": "Bluray-2160p Remux", "allowed": true },
+    { "name": "Bluray-2160p", "allowed": true },
+    {
+      "name": "WEBDL-2160p | WEBRip-2160p",
+      "allowed": true,
+      "items": ["WEBDL-2160p", "WEBRip-2160p"]
+    },
+    { "name": "HDTV-2160p", "allowed": true },
+    { "name": "Bluray-1080p Remux", "allowed": true },
+    { "name": "Bluray-1080p", "allowed": true },
+    {
+      "name": "WEBDL-1080p | WEBRip-1080p",
+      "allowed": true,
+      "items": ["WEBDL-1080p", "WEBRip-1080p"]
+    },
+    { "name": "Bluray-720p", "allowed": true },
+    {
+      "name": "WEBDL-720p | WEBRip-720p",
+      "allowed": true,
+      "items": ["WEBDL-720p", "WEBRip-720p"]
+    },
+    { "name": "Raw-HD", "allowed": false },
+    { "name": "HDTV-1080p", "allowed": true },
+    { "name": "HDTV-720p", "allowed": true },
+    { "name": "Bluray-576p", "allowed": true },
+    { "name": "Bluray-480p", "allowed": true },
+    { "name": "DVD", "allowed": false },
+    {
+      "name": "WEBDL-480p | WEBRip-480p",
+      "allowed": true,
+      "items": ["WEBDL-480p", "WEBRip-480p"]
+    },
+    { "name": "SDTV", "allowed": true },
+    { "name": "Unknown", "allowed": false }
+  ],
+  "formatItems": {
+    "BR-DISK": "85c61753df5da1fb2aab6f2a47426b09",
+    "LQ": "9c11cd3f07101cdba90a2d81cf0e56b4",
+    "LQ (Release Title)": "e2315f990da2e2cbfc9fa5b7a6fcfe48",
+    "Extras": "fbcb31d8dabd2a319072b84fc0b7249c",
+    "BR-DISK (BTN)": "6f808933a71bd9666531610cb8c059cc"
+  }
+}
