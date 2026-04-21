@@ -58,5 +58,11 @@
       "sqp-4-ma-hybrid": "7526db7ac0a1f764793fb181864d0222",
       "sqp-5": "a7bb1539fd147256b21b1098f3dc2016"
     }
+  },
+  {
+    "name": "TEST",
+    "profiles": {
+      "base-profile": "92e9a65a52ae48478fb8e9f34238d823"
+    }
   }
 ]
