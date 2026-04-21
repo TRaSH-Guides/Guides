@@ -1,67 +1,62 @@
 {
-  "name": "[Optional] Language Profiles",
-  "trash_id": "4e6a392ed76cc909f2902ba5b3aa9c8f",
-  "trash_description": "Language Profiles included in one of the guides.",
-  "custom_formats": [
-    {
-      "name": "Language: German",
-      "trash_id": "8a9fcdbb445f2add0505926df3bb7b8a",
-      "required": false
-    },
-    {
-      "name": "Language: German Anime Subbed",
-      "trash_id": "21d4ae0976f7a4c251884d26fc46183c",
-      "required": false
-    },
-    {
-      "name": "Language: German DL",
-      "trash_id": "ed51973a811f51985f14e2f6f290e47a",
-      "required": false
-    },
-    {
-      "name": "Language: German DL (undefined)",
-      "trash_id": "c5dd0fd675f85487ad5bdf97159180bd",
-      "required": false
-    },
-    {
-      "name": "Language: Not English",
-      "trash_id": "69aa1e159f97d860440b04cd6d590c4f",
-      "required": false
-    },
-    {
-      "name": "Language: Not French",
-      "trash_id": "322fca6f8f3694acc1401ddb530fd33d",
-      "required": false
-    },
-    {
-      "name": "Language: Not German or English",
-      "trash_id": "133589380b89f8f8394320901529bac1",
-      "required": false
-    },
-    {
-      "name": "Language: Not German, Japanese or English",
-      "trash_id": "51ba9721e1d951e9ffccb3d939831941",
-      "required": false
-    },
-    {
-      "name": "Language: Not German, Japanese, Korean, Chinese or English",
-      "trash_id": "1d1481d01b60a0274d81685b3ccbf7d0",
-      "required": false
-    },
-    {
-      "name": "Language: Not Original",
-      "trash_id": "ae575f95ab639ba5d15f663bf019e3e8",
-      "required": false
-    },
-    {
-      "name": "Language: Original Plus French",
-      "trash_id": "10e77b96ae4770a7de645a91a53ce29a",
-      "required": false
+    "name": "[Optional] Language Profiles",
+    "trash_id": "4e6a392ed76cc909f2902ba5b3aa9c8f",
+    "trash_description": "Language Profiles included in one of the guides.",
+    "custom_formats": [
+        {
+            "name": "German",
+            "trash_id": "8a9fcdbb445f2add0505926df3bb7b8a",
+            "required": false
+        },
+        {
+            "name": "German DL",
+            "trash_id": "ed51973a811f51985f14e2f6f290e47a",
+            "required": false
+        },
+        {
+            "name": "German DL (undefined)",
+            "trash_id": "c5dd0fd675f85487ad5bdf97159180bd",
+            "required": false
+        },
+        {
+            "name": "Language: Not English",
+            "trash_id": "69aa1e159f97d860440b04cd6d590c4f",
+            "required": false
+        },
+        {
+            "name": "Language: Not French",
+            "trash_id": "322fca6f8f3694acc1401ddb530fd33d",
+            "required": false
+        },
+        {
+            "name": "Language: Not Original",
+            "trash_id": "ae575f95ab639ba5d15f663bf019e3e8",
+            "required": false
+        },
+        {
+            "name": "Language: Original + French",
+            "trash_id": "10e77b96ae4770a7de645a91a53ce29a",
+            "required": false
+        },
+        {
+            "name": "Not German or English",
+            "trash_id": "133589380b89f8f8394320901529bac1",
+            "required": false
+        },
+        {
+            "name": "Not German, Japanese or English",
+            "trash_id": "51ba9721e1d951e9ffccb3d939831941",
+            "required": false
+        },
+        {
+            "name": "Not German, Japanese, Korean, Chinese or English",
+            "trash_id": "1d1481d01b60a0274d81685b3ccbf7d0",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
     }
-  ],
-  "quality_profiles": {
-    "include": {
-      "Radarr Dummy Profile": "889948bca62f8016edbaa62e173b02c3"
-    }
-  }
 }

@@ -83,8 +83,10 @@
             "trash_id": "dc262f88d74c651b12e9d90b39f6c753",
             "required": false
         }
-    ],
-    "quality_profiles": {
-        "include": {}
+  ],
+  "quality_profiles": {
+    "include": {
+      "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
     }
+  }
 }

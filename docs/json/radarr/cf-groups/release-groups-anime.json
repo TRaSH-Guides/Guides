@@ -88,8 +88,10 @@
             "trash_id": "a786fbc0eae05afe3bb51aee3c83a9d4",
             "required": false
         }
-    ],
-    "quality_profiles": {
-        "include": {}
+  ],
+  "quality_profiles": {
+    "include": {
+      "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
     }
+  }
 }

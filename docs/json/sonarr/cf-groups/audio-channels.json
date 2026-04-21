@@ -41,7 +41,7 @@
   ],
   "quality_profiles": {
     "include": {
-      "Sonarr Dummy Profile": "70c692169d883370f972435b13423d62"
+      "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
     }
   }
 }
