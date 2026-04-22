@@ -1,0 +1,52 @@
+{
+    "name": "[Release Groups] HQ",
+    "trash_id": "b4a4353e3b3e6789dbef07677ff23686",
+    "trash_description": "A collection of English/International release groups.",
+    "custom_formats": [
+        {
+            "name": "Remux Tier 01",
+            "trash_id": "9965a052eb87b0d10313b1cea89eb451",
+            "required": false
+        },
+        {
+            "name": "Remux Tier 02",
+            "trash_id": "8a1d0c3d7497e741736761a1da866a2e",
+            "required": false
+        },
+        {
+            "name": "HD Bluray Tier 01",
+            "trash_id": "d6819cba26b1a6508138d25fb5e32293",
+            "required": false
+        },
+        {
+            "name": "HD Bluray Tier 02",
+            "trash_id": "c2216b7b8aa545dc1ce8388c618f8d57",
+            "required": false
+        },
+        {
+            "name": "WEB Tier 01",
+            "trash_id": "e6258996055b9fbab7e9cb2f75819294",
+            "required": false
+        },
+        {
+            "name": "WEB Tier 02",
+            "trash_id": "58790d4e2fdcd9733aa7ae68ba2bb503",
+            "required": false
+        },
+        {
+            "name": "WEB Tier 03",
+            "trash_id": "d84935abd3f8556dcd51d4f27e22d0a6",
+            "required": false
+        },
+        {
+            "name": "WEB Scene",
+            "trash_id": "d0c516558625b04b363fa6c5c2c7cfd4",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "name": "[Unwanted] Unwanted Formats",
+    "trash_id": "f6354c5d43781afd60c5f8175e2a343c",
+    "trash_description": "A collection of unwanted release groups, versions, or sources.",
+    "custom_formats": [
+        {
+            "name": "3D",
+            "trash_id": "b8cd450cbfa689c0259a01d9e29ba3d6",
+            "required": false
+        },
+        {
+            "name": "AV1",
+            "trash_id": "cae4ca30163749b891686f95532519bd",
+            "required": false
+        },
+        {
+            "name": "Bad Dual Groups",
+            "trash_id": "b6832f586342ef70d9c128d40c07b872",
+            "required": false
+        },
+        {
+            "name": "Black and White Editions",
+            "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+            "required": false
+        },
+        {
+            "name": "BR-DISK",
+            "trash_id": "ed38b889b31be83fda192888e2286d83",
+            "required": false
+        },
+        {
+            "name": "Extras",
+            "trash_id": "0a3f082873eb454bde444150b70253cc",
+            "required": false
+        },
+        {
+            "name": "Generated Dynamic HDR",
+            "trash_id": "e6886871085226c3da1830830146846c",
+            "required": false
+        },
+        {
+            "name": "LQ",
+            "trash_id": "90a6f9a284dff5103f6346090e6280c8",
+            "required": false
+        },
+        {
+            "name": "LQ (Release Title)",
+            "trash_id": "e204b80c87be9497a8a6eaff48f72905",
+            "required": false
+        },
+        {
+            "name": "Sing-Along Versions",
+            "trash_id": "712d74cd88bceb883ee32f773656b1f5",
+            "required": false
+        },
+        {
+            "name": "Upscaled",
+            "trash_id": "bfd8eb01832d646a0a89c4deb46f8564",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
+    }
+}

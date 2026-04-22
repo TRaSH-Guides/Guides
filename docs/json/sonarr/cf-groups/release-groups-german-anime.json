@@ -1,0 +1,47 @@
+{
+    "name": "[Release Groups] German Anime",
+    "trash_id": "e74d3b09f7b7d0b8b0e9edb4d58ae5bb",
+    "trash_description": "A collection of German anime release groups.",
+    "custom_formats": [
+        {
+            "name": "German Anime Bluray Tier 01",
+            "trash_id": "955cbe14c274da55564e50234ca555ff",
+            "required": false
+        },
+        {
+            "name": "German Anime Bluray Tier 02",
+            "trash_id": "9359e91ae245ff20a6747bd08191e24d",
+            "required": false
+        },
+        {
+            "name": "German Anime Bluray Tier 03",
+            "trash_id": "4713f52901c85b44724ec7ff7bef0aba",
+            "required": false
+        },
+        {
+            "name": "German Anime Web Tier 01",
+            "trash_id": "89bb526ec04af08433dee41e929fc965",
+            "required": false
+        },
+        {
+            "name": "German Anime Web Tier 02",
+            "trash_id": "da3e14f96e3b487d6a7267f417d4885b",
+            "required": false
+        },
+        {
+            "name": "German Anime Web Tier 03",
+            "trash_id": "7d7ad6fbd52cf0cc3764516ade32fa32",
+            "required": false
+        },
+        {
+            "name": "German Anime Scene",
+            "trash_id": "bf40cabd88c0025b03ad511d300d7394",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

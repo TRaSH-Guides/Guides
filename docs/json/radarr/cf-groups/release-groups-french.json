@@ -1,68 +1,73 @@
 {
-  "name": "[Release Groups] French",
-  "trash_id": "12a919c8a5e2342db6e9c0b4e3c0756e",
-  "trash_description": "A collection of French release groups.",
-  "custom_formats": [
-    {
-      "name": "FR Remux Tier 01",
-      "trash_id": "5583260016e0b9f683f53af41fb42e4a",
-      "required": false
-    },
-    {
-      "name": "FR Remux Tier 02",
-      "trash_id": "9019d81307e68cd4a7eb06a567e833b8",
-      "required": false
-    },
-    {
-      "name": "FR UHD Bluray Tier 01",
-      "trash_id": "64f8f12bbf7472a6ccf838bfd6b5e3e8",
-      "required": false
-    },
-    {
-      "name": "FR UHD Bluray Tier 02",
-      "trash_id": "0dcf0c8a386d82e3f2d424189af14065",
-      "required": false
-    },
-    {
-      "name": "FR HD Bluray Tier 01",
-      "trash_id": "5322da05b19d857acc1e75be3edf47b3",
-      "required": false
-    },
-    {
-      "name": "FR HD Bluray Tier 02",
-      "trash_id": "57f34251344be2e283fc30e00e458be6",
-      "required": false
-    },
-    {
-      "name": "FR WEB Tier 01",
-      "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
-      "required": false
-    },
-    {
-      "name": "FR WEB Tier 02",
-      "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
-      "required": false
-    },
-    {
-      "name": "FR Scene Groups",
-      "trash_id": "0d94489c0d5828cd3bf9409d309fb32b",
-      "required": false
+    "name": "[Release Groups] French",
+    "trash_id": "12a919c8a5e2342db6e9c0b4e3c0756e",
+    "trash_description": "A collection of French release groups.",
+    "custom_formats": [
+        {
+            "name": "FR HD Bluray Tier 01",
+            "trash_id": "5322da05b19d857acc1e75be3edf47b3",
+            "required": false
+        },
+        {
+            "name": "FR HD Bluray Tier 02",
+            "trash_id": "57f34251344be2e283fc30e00e458be6",
+            "required": false
+        },
+        {
+            "name": "FR LQ",
+            "trash_id": "48f031e76111f17ea94898f4cdc34fdc",
+            "required": false
+        },
+        {
+            "name": "FR Remux Tier 01",
+            "trash_id": "5583260016e0b9f683f53af41fb42e4a",
+            "required": false
+        },
+        {
+            "name": "FR Remux Tier 02",
+            "trash_id": "9019d81307e68cd4a7eb06a567e833b8",
+            "required": false
+        },
+        {
+            "name": "FR Scene Groups",
+            "trash_id": "0d94489c0d5828cd3bf9409d309fb32b",
+            "required": false
+        },
+        {
+            "name": "FR UHD Bluray Tier 01",
+            "trash_id": "64f8f12bbf7472a6ccf838bfd6b5e3e8",
+            "required": false
+        },
+        {
+            "name": "FR UHD Bluray Tier 02",
+            "trash_id": "0dcf0c8a386d82e3f2d424189af14065",
+            "required": false
+        },
+        {
+            "name": "FR WEB Tier 01",
+            "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
+            "required": false
+        },
+        {
+            "name": "FR WEB Tier 02",
+            "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "[French MULTi.VF] HD Bluray + WEB": "500ecc23572575511fd81893777d1e06",
+            "[French MULTi.VF] HD Remux (1080p)": "6b93fe45f357e9a94228e5d4658e9bb5",
+            "[French MULTi.VF] UHD Bluray + WEB": "e64b266178c7f70e208f493f00e0e50a",
+            "[French MULTi.VF] UHD Remux (2160p)": "595bb95c6b6970468880069dce23e1d2",
+            "[French MULTi.VO] HD Bluray + WEB": "2572ce3ea4eef1c19d59e0e20ed1cea7",
+            "[French MULTi.VO] HD Remux (1080p)": "c6460a102b312200c095a2d0982e0461",
+            "[French MULTi.VO] UHD Bluray + WEB": "92ead7022d13a7858d54e328e6a2f8f9",
+            "[French MULTi.VO] UHD Remux (2160p)": "1fef28c8c919f31cd86283b1baf527d4",
+            "[French VOSTFR] HD Bluray + WEB": "1addc08c4232bc2617684d517df15f75",
+            "[French VOSTFR] HD Remux (1080p)": "d98f20924b001e9f6b9595d5440abc87",
+            "[French VOSTFR] UHD Bluray + WEB": "525bf0513e2ac22fe116e8d7bec0a6b5",
+            "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a"
+        }
     }
-  ],
-  "quality_profiles": {
-    "include": {
-      "[French MULTi.VO] HD Bluray + WEB": "2572ce3ea4eef1c19d59e0e20ed1cea7",
-      "[French MULTi.VO] HD Remux (1080p)": "c6460a102b312200c095a2d0982e0461",
-      "[French MULTi.VO] UHD Bluray + WEB": "92ead7022d13a7858d54e328e6a2f8f9",
-      "[French MULTi.VO] UHD Remux (2160p)": "1fef28c8c919f31cd86283b1baf527d4",
-      "[French MULTi.VF] HD Bluray + WEB": "500ecc23572575511fd81893777d1e06",
-      "[French MULTi.VF] HD Remux (1080p)": "6b93fe45f357e9a94228e5d4658e9bb5",
-      "[French MULTi.VF] UHD Bluray + WEB": "e64b266178c7f70e208f493f00e0e50a",
-      "[French MULTi.VF] UHD Remux (2160p)": "595bb95c6b6970468880069dce23e1d2",
-      "[French VOSTFR] HD Bluray + WEB": "1addc08c4232bc2617684d517df15f75",
-      "[French VOSTFR] HD Remux (1080p)": "d98f20924b001e9f6b9595d5440abc87",
-      "[French VOSTFR] UHD Bluray + WEB": "525bf0513e2ac22fe116e8d7bec0a6b5",
-      "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a"
-    }
-  }
 }

@@ -1,0 +1,30 @@
+{
+    "name": "[Miscellaneous] Repack/Proper",
+    "trash_id": "22256473b656e195eabc2798e326fbb7",
+    "trash_description": "Repacks/Proper (Required)",
+    "custom_formats": [
+        {
+            "name": "Repack/Proper",
+            "trash_id": "ec8fa7296b64e8cd390a1600981f3923",
+            "required": true,
+            "default": true
+        },
+        {
+            "name": "Repack2",
+            "trash_id": "eb3d5cc0a2be0db205fb823640db6a3c",
+            "required": true,
+            "default": true
+        },
+        {
+            "name": "Repack3",
+            "trash_id": "44e7c4de10ae50265753082e5dc76047",
+            "required": true,
+            "default": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

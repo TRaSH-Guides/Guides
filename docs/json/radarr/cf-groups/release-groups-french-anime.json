@@ -1,0 +1,32 @@
+{
+    "name": "[Release Groups] French Anime",
+    "trash_id": "24c8342b620f7a229448ac2f51720e69",
+    "trash_description": "A collection of French anime release groups.",
+    "custom_formats": [
+        {
+            "name": "FR Anime FanSub",
+            "trash_id": "eb1e434d8e46cb3f728c79f8e4400bfd",
+            "required": false
+        },
+        {
+            "name": "FR Anime Tier 01",
+            "trash_id": "03520acbc5e46ce326be984534792d28",
+            "required": false
+        },
+        {
+            "name": "FR Anime Tier 02",
+            "trash_id": "20393e1196752dc37b25b80dfd2f8f57",
+            "required": false
+        },
+        {
+            "name": "FR Anime Tier 03",
+            "trash_id": "9d2a63eda874b34e06e7a8cbea7ea639",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
+    }
+}

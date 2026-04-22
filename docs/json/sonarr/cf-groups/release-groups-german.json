@@ -1,0 +1,57 @@
+{
+    "name": "[Release Groups] German",
+    "trash_id": "cae54a0be4f9773169e82e129dd1fcfb",
+    "trash_description": "A collection of German release groups.",
+    "custom_formats": [
+        {
+            "name": "German Remux Tier 01",
+            "trash_id": "da0f005f9c3edf34fc26e18dce8c6573",
+            "required": false
+        },
+        {
+            "name": "German Remux Tier 02",
+            "trash_id": "6bc5ccd80a03e7abb8f556eecd174b73",
+            "required": false
+        },
+        {
+            "name": "German Bluray Tier 01",
+            "trash_id": "7940b2fb0278f27cf4f70187f2be95d6",
+            "required": false
+        },
+        {
+            "name": "German Bluray Tier 02",
+            "trash_id": "83b336a90d90d6b35ca673b007f80661",
+            "required": false
+        },
+        {
+            "name": "German Bluray Tier 03",
+            "trash_id": "d8f8e1539827967e0e564833e6c08d33",
+            "required": false
+        },
+        {
+            "name": "German Web Tier 01",
+            "trash_id": "68be37323132b35cf333c81a2ac8fc16",
+            "required": false
+        },
+        {
+            "name": "German Web Tier 02",
+            "trash_id": "f51b96a50b0e6196cb69724b7833d837",
+            "required": false
+        },
+        {
+            "name": "German Web Tier 03",
+            "trash_id": "bda67c2c0aae257308a4723d92475b86",
+            "required": false
+        },
+        {
+            "name": "German Scene",
+            "trash_id": "c2eec878fa1989599c226ce4c287d6a7",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "[Optional ] German Miscellaneous",
+    "trash_id": "a73a7a2ff5ccc5ea2c7a45741ae73022",
+    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions found in the guide.<br>PLEASE DO NOT USE THE ADD ALL OPTION FOR THIS GROUP!!!",
+    "custom_formats": [
+        {
+            "name": "German 1080p Booster",
+            "trash_id": "3bc8df3a71baaac60a31ef696ea72d36",
+            "required": false
+        },
+        {
+            "name": "German 2160p Booster",
+            "trash_id": "cc7b1e64e2513a6a271090cdfafaeb55",
+            "required": false
+        },
+        {
+            "name": "German LQ",
+            "trash_id": "263943bc5d99550c68aad0c4278ba1c7",
+            "required": false
+        },
+        {
+            "name": "German LQ (release title)",
+            "trash_id": "a826ee9e46607bc61795c85a6f2b1279",
+            "required": false
+        },
+        {
+            "name": "German Microsized",
+            "trash_id": "03c430f326f10a27a9739b8bc83c30e4",
+            "required": false
+        },
+        {
+            "name": "Line/Mic Dubbed",
+            "trash_id": "c465ccc73923871b3eb1802042331306",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
+    }
+}
