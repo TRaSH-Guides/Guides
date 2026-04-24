@@ -1,0 +1,72 @@
+{
+    "name": "[Optional] Miscellaneous SQP",
+    "trash_id": "c4492eebd0c2ddc14c2c91623aa7f95d",
+    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions in the guide before adding all of them.",
+    "custom_formats": [
+        {
+            "name": "DV (Disk)",
+            "trash_id": "f700d29429c023a5734505e77daeaea7",
+            "required": false
+        },
+        {
+            "name": "FreeLeech",
+            "trash_id": "0d91270a7255a1e388fa85e959f359d8",
+            "required": false
+        },
+        {
+            "name": "HFR",
+            "trash_id": "73613461ac2cea99d52c4cd6e177ab82",
+            "required": false
+        },
+        {
+            "name": "INTERNAL",
+            "trash_id": "182fa1c42a2468f8488e6dcf75a81b81",
+            "required": false
+        },
+        {
+            "name": "MPEG2",
+            "trash_id": "ff86c4326018682f817830ced463332b",
+            "required": false
+        },
+        {
+            "name": "MULTi",
+            "trash_id": "4b900e171accbfb172729b63323ea8ca",
+            "required": false
+        },
+        {
+            "name": "P2P Internal",
+            "trash_id": "80f51de4636a294e31552e90d2e1decb",
+            "required": false
+        },
+        {
+            "name": "VC-1",
+            "trash_id": "11cd1db7165d6a7ad9a83bc97b8b1060",
+            "required": false
+        },
+        {
+            "name": "VP9",
+            "trash_id": "ae4cfaa9283a4f2150ac3da08e388723",
+            "required": false
+        },
+        {
+            "name": "x265",
+            "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
+            "required": false
+        },
+        {
+            "name": "x266",
+            "trash_id": "390455c22a9cac81a738f6cbad705c3c",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "[SQP] SQP-2": "c3933358ba2356bafc41524f81471069",
+            "[SQP] SQP-3": "2cf36c1f0106ffac993be003ade51865",
+            "[SQP] SQP-3 (Audio)": "0ada8e60cc3ddf2733b65de10f4a6c72",
+            "[SQP] SQP-4": "013f89e6da27519fe56cf482702a2db9",
+            "[SQP] SQP-4 (MA Hybrid)": "7526db7ac0a1f764793fb181864d0222",
+            "[SQP] SQP-5": "a7bb1539fd147256b21b1098f3dc2016"
+        }
+    }
+}

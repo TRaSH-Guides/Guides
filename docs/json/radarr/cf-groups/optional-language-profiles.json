@@ -19,6 +19,11 @@
             "required": false
         },
         {
+            "name": "German Subbed",
+            "trash_id": "ee425f921dd740621523343bffe82fa3",
+            "required": false
+        },
+        {
             "name": "Language: Not English",
             "trash_id": "0dc8aec3bd1c47cd6c40c46ecd27e846",
             "required": false

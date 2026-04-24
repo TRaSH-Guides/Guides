@@ -1,7 +1,7 @@
 {
     "name": "[Optional] Language Profiles",
-    "trash_id": "4e6a392ed76cc909f2902ba5b3aa9c8f",
-    "trash_description": "Language Profiles included in one of the guides.",
+    "trash_id": "74aff4168620ed49dcc67e92b2c2a5b4",
+    "trash_description": "Language Profiles that are included in one of the guides.",
     "custom_formats": [
         {
             "name": "German",
@@ -16,6 +16,11 @@
         {
             "name": "German DL (undefined)",
             "trash_id": "c5dd0fd675f85487ad5bdf97159180bd",
+            "required": false
+        },
+        {
+            "name": "German Subbed",
+            "trash_id": "21d4ae0976f7a4c251884d26fc46183c",
             "required": false
         },
         {

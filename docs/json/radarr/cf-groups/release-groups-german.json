@@ -1,62 +1,62 @@
 {
-  "name": "[Release Groups] German",
-  "trash_id": "bc85e56ee3bd0f01467866d5f1261543",
-  "trash_description": "A collection of German release groups.",
-  "custom_formats": [
-    {
-      "name": "German Remux Tier 01",
-      "trash_id": "8608a2ed20c636b8a62de108e9147713",
-      "required": false
-    },
-    {
-      "name": "German Remux Tier 02",
-      "trash_id": "f9cf598d55ce532d63596b060a6db9ee",
-      "required": false
-    },
-    {
-      "name": "German Bluray Tier 01",
-      "trash_id": "54795711b78ea87e56127928c423689b",
-      "required": false
-    },
-    {
-      "name": "German Bluray Tier 02",
-      "trash_id": "1bfc773c53283d47c68e535811da30b7",
-      "required": false
-    },
-    {
-      "name": "German Bluray Tier 03",
-      "trash_id": "aee01d40cd1bf4bcded81ee62f0f3659",
-      "required": false
-    },
-    {
-      "name": "German Web Tier 01",
-      "trash_id": "a2ab25194f463f057a5559c03c84a3df",
-      "required": false
-    },
-    {
-      "name": "German Web Tier 02",
-      "trash_id": "08d120d5a003ec4954b5b255c0691d79",
-      "required": false
-    },
-    {
-      "name": "German Web Tier 03",
-      "trash_id": "439f9d71becaed589058ec949e037ff3",
-      "required": false
-    },
-    {
-      "name": "German Scene",
-      "trash_id": "2d136d4e33082fe573d06b1f237c40dd",
-      "required": false
+    "name": "[Release Groups] German",
+    "trash_id": "bc85e56ee3bd0f01467866d5f1261543",
+    "trash_description": "A collection of German release groups.",
+    "custom_formats": [
+        {
+            "name": "German Remux Tier 01",
+            "trash_id": "8608a2ed20c636b8a62de108e9147713",
+            "required": false
+        },
+        {
+            "name": "German Remux Tier 02",
+            "trash_id": "f9cf598d55ce532d63596b060a6db9ee",
+            "required": false
+        },
+        {
+            "name": "German Bluray Tier 01",
+            "trash_id": "54795711b78ea87e56127928c423689b",
+            "required": false
+        },
+        {
+            "name": "German Bluray Tier 02",
+            "trash_id": "1bfc773c53283d47c68e535811da30b7",
+            "required": false
+        },
+        {
+            "name": "German Bluray Tier 03",
+            "trash_id": "aee01d40cd1bf4bcded81ee62f0f3659",
+            "required": false
+        },
+        {
+            "name": "German Web Tier 01",
+            "trash_id": "a2ab25194f463f057a5559c03c84a3df",
+            "required": false
+        },
+        {
+            "name": "German Web Tier 02",
+            "trash_id": "08d120d5a003ec4954b5b255c0691d79",
+            "required": false
+        },
+        {
+            "name": "German Web Tier 03",
+            "trash_id": "439f9d71becaed589058ec949e037ff3",
+            "required": false
+        },
+        {
+            "name": "German Scene",
+            "trash_id": "2d136d4e33082fe573d06b1f237c40dd",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "[German] Anime HD Bluray + WEB": "bf3cc2e99ad9a804a9b0d0e538e1fbba",
+            "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+            "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
+            "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
+            "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+            "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7"
+        }
     }
-  ],
-  "quality_profiles": {
-    "include": {
-      "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
-      "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
-      "[German] Anime HD Bluray + WEB": "bf3cc2e99ad9a804a9b0d0e538e1fbba",
-      "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
-      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
-      "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7"
-    }
-  }
 }

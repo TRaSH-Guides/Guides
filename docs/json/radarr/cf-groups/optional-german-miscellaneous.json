@@ -1,7 +1,7 @@
 {
-    "name": "[Optional ] German Miscellaneous",
-    "trash_id": "a73a7a2ff5ccc5ea2c7a45741ae73022",
-    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions found in the guide.<br>PLEASE DO NOT USE THE ADD ALL OPTION FOR THIS GROUP!!!",
+    "name": "[Optional] German Miscellaneous",
+    "trash_id": "9dc92ec4b41b7f38c8e7ecaf7d9dd9bc",
+    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions in the guide before adding all of them.",
     "custom_formats": [
         {
             "name": "German 1080p Booster",
@@ -26,6 +26,11 @@
         {
             "name": "German Microsized",
             "trash_id": "03c430f326f10a27a9739b8bc83c30e4",
+            "required": false
+        },
+        {
+            "name": "German Subbed",
+            "trash_id": "ee425f921dd740621523343bffe82fa3",
             "required": false
         },
         {

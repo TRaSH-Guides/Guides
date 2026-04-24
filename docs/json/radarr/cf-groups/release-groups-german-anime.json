@@ -19,11 +19,6 @@
             "required": false
         },
         {
-            "name": "German Anime Scene",
-            "trash_id": "90cfd463ac844e4911ee277ddd566d87",
-            "required": false
-        },
-        {
             "name": "German Anime Web Tier 01",
             "trash_id": "c9215ef384f238e89a2f07f9cfd71978",
             "required": false
@@ -36,6 +31,11 @@
         {
             "name": "German Anime Web Tier 03",
             "trash_id": "97572e721cc2dc21ee696d716dede779",
+            "required": false
+        },
+        {
+            "name": "German Anime Scene",
+            "trash_id": "90cfd463ac844e4911ee277ddd566d87",
             "required": false
         }
     ],

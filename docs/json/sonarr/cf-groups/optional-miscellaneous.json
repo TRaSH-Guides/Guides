@@ -1,0 +1,99 @@
+{
+    "name": "[Optional] Miscellaneous",
+    "trash_id": "f4a0410a1df109a66d6e47dcadcce014",
+    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions in the guide before adding all of them.",
+    "custom_formats": [
+        {
+            "name": "DV (Disk)",
+            "trash_id": "ef4963043b0987f8485bc9106f16db38",
+            "required": false
+        },
+        {
+            "name": "FreeLeech",
+            "trash_id": "d7c747094a7c65f4c2de083c24899e8b",
+            "required": false
+        },
+        {
+            "name": "HFR",
+            "trash_id": "1bd69272e23c5e6c5b1d6c8a36fce95e",
+            "required": false
+        },
+        {
+            "name": "INTERNAL",
+            "trash_id": "5ab46ff851b76c337e13e81a4353875f",
+            "required": false
+        },
+        {
+            "name": "MPEG2",
+            "trash_id": "4aee45b0868229c4fbd8bad3e315f1d0",
+            "required": false
+        },
+        {
+            "name": "MULTi",
+            "trash_id": "7ba05c6e0e14e793538174c679126996",
+            "required": false
+        },
+        {
+            "name": "Multi-Episode",
+            "trash_id": "4a20cfb76b5f92a8ca22b894b32e71be",
+            "required": false
+        },
+        {
+            "name": "P2P Internal",
+            "trash_id": "09654d13ce1f0453496546dfd875b2a5",
+            "required": false
+        },
+        {
+            "name": "Single Episode",
+            "trash_id": "e0c1a67f23908a55b6ae9834e8ed6727",
+            "required": false
+        },
+        {
+            "name": "VC-1",
+            "trash_id": "7470a681e6205243983c4410ee4c920f",
+            "required": false
+        },
+        {
+            "name": "VP9",
+            "trash_id": "90501962793d580d011511155c97e4e5",
+            "required": false
+        },
+        {
+            "name": "x264",
+            "trash_id": "cddfb4e32db826151d97352b8e37c648",
+            "required": false
+        },
+        {
+            "name": "x265",
+            "trash_id": "c9eafd50846d299b862ca9bb6ea91950",
+            "required": false
+        },
+        {
+            "name": "x266",
+            "trash_id": "041d90b435ebd773271cea047a457a6a",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+            "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+            "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+            "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+            "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+            "[German] Anime HD Bluray + WEB": "6fe5937e1dcc2269e23b49eb46dfe6d6",
+            "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+            "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
+            "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
+            "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642",
+            "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
+            "[French MULTi.VF] HD Bluray + WEB (1080p)": "58e8dc75731040612dd6f4ac0676bfd7",
+            "[French MULTi.VF] UHD Bluray + WEB (2160p)": "68c8b82ad2b7ea1941fce71eb56421c3",
+            "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
+            "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
+            "[French VOSTFR] HD Bluray + WEB (1080p)": "b34c968f58433a38e0e690d42a1dc37e",
+            "[French VOSTFR] UHD Bluray + WEB (2160p)": "d6252dce6af535107ed4b03e68052ae8",
+            "[Anime] Remux-1080p": "20e0fc959f1f1704bed501f23bdae76f"
+    }
+  }
+}

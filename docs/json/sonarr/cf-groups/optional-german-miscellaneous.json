@@ -1,7 +1,7 @@
 {
     "name": "[Optional ] German Miscellaneous",
     "trash_id": "6864ab50c239311053c21501896feb90",
-    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions found in the guide.<br>PLEASE DO NOT USE THE ADD ALL OPTION FOR THIS GROUP!!!",
+    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions in the guide before adding all of them.",
     "custom_formats": [
         {
             "name": "German 1080p Booster",

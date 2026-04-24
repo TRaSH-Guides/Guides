@@ -4,21 +4,6 @@
     "trash_description": "A collection of French release groups.",
     "custom_formats": [
         {
-            "name": "FR HD Bluray Tier 01",
-            "trash_id": "5322da05b19d857acc1e75be3edf47b3",
-            "required": false
-        },
-        {
-            "name": "FR HD Bluray Tier 02",
-            "trash_id": "57f34251344be2e283fc30e00e458be6",
-            "required": false
-        },
-        {
-            "name": "FR LQ",
-            "trash_id": "48f031e76111f17ea94898f4cdc34fdc",
-            "required": false
-        },
-        {
             "name": "FR Remux Tier 01",
             "trash_id": "5583260016e0b9f683f53af41fb42e4a",
             "required": false
@@ -26,11 +11,6 @@
         {
             "name": "FR Remux Tier 02",
             "trash_id": "9019d81307e68cd4a7eb06a567e833b8",
-            "required": false
-        },
-        {
-            "name": "FR Scene Groups",
-            "trash_id": "0d94489c0d5828cd3bf9409d309fb32b",
             "required": false
         },
         {
@@ -44,6 +24,16 @@
             "required": false
         },
         {
+            "name": "FR HD Bluray Tier 01",
+            "trash_id": "5322da05b19d857acc1e75be3edf47b3",
+            "required": false
+        },
+        {
+            "name": "FR HD Bluray Tier 02",
+            "trash_id": "57f34251344be2e283fc30e00e458be6",
+            "required": false
+        },
+        {
             "name": "FR WEB Tier 01",
             "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
             "required": false
@@ -51,6 +41,16 @@
         {
             "name": "FR WEB Tier 02",
             "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
+            "required": false
+        },
+        {
+            "name": "FR Scene Groups",
+            "trash_id": "0d94489c0d5828cd3bf9409d309fb32b",
+            "required": false
+        },
+        {
+            "name": "FR LQ",
+            "trash_id": "48f031e76111f17ea94898f4cdc34fdc",
             "required": false
         }
     ],

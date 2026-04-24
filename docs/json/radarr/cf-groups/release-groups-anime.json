@@ -49,16 +49,6 @@
             "required": false
         },
         {
-            "name": "Anime LQ Groups",
-            "trash_id": "b0fdc5897f68c9a68c70c25169f77447",
-            "required": false
-        },
-        {
-            "name": "Anime Raws",
-            "trash_id": "06b6542a47037d1e33b15aa3677c2365",
-            "required": false
-        },
-        {
             "name": "Anime Web Tier 01",
             "trash_id": "8167cffba4febfb9a6988ef24f274e7e",
             "required": false
@@ -87,11 +77,21 @@
             "name": "Anime Web Tier 06",
             "trash_id": "a786fbc0eae05afe3bb51aee3c83a9d4",
             "required": false
+        },
+        {
+            "name": "Anime LQ Groups",
+            "trash_id": "b0fdc5897f68c9a68c70c25169f77447",
+            "required": false
+        },
+        {
+            "name": "Anime Raws",
+            "trash_id": "06b6542a47037d1e33b15aa3677c2365",
+            "required": false
         }
-  ],
-  "quality_profiles": {
-    "include": {
-      "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
     }
-  }
 }

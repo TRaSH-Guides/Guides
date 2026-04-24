@@ -1,7 +1,7 @@
 {
     "name": "[Optional] Anime Optional",
     "trash_id": "4d3dc16c3ab3adc640afb8d6e3dc2266",
-    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions found in the guide.<br>PLEASE DO NOT USE THE ADD ALL OPTION FOR THIS GROUP!!!",
+    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions in the guide before adding all of them.",
     "custom_formats": [
         {
             "name": "10bit",
