@@ -2,6 +2,7 @@
     "name": "[Unwanted] Unwanted Formats",
     "trash_id": "59c3af66780d08332fdc64e68297098f",
     "trash_description": "A list of unwanted release groups, versions, or sources: make sure to read the individual descriptions in the guide before adding any of them.",
+    "default": "true",
     "custom_formats": [
         {
             "name": "AV1",

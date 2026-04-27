@@ -2,6 +2,7 @@
     "name": "[Unwanted] Unwanted Formats",
     "trash_id": "a3ac6af01d78e4f21fcb75f601ac96df",
     "trash_description": "A list of unwanted release groups, versions, or sources: make sure to read the individual descriptions in the guide before adding any of them.",
+    "default": "true",
     "custom_formats": [
         {
             "name": "3D",

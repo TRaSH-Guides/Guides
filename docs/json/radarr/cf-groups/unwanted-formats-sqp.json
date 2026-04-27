@@ -2,6 +2,7 @@
     "name": "[Unwanted] Unwanted Formats SQP",
     "trash_id": "15b1cf0b6f1a1493856a4355907affee",
     "trash_description": "A list of unwanted versions, or sources: make sure to read the individual descriptions in the guide before adding any of them.",
+    "default": "true",
     "custom_formats": [
         {
             "name": "Bad Dual Groups",
