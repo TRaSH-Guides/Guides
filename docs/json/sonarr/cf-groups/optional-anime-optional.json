@@ -1,0 +1,32 @@
+{
+    "name": "[Optional] Anime Optional",
+    "trash_id": "4d3dc16c3ab3adc640afb8d6e3dc2266",
+    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions in the guide before adding all of them.",
+    "custom_formats": [
+        {
+            "name": "10bit",
+            "trash_id": "b2550eb333d27b75833e25b8c2557b38",
+            "required": false
+        },
+        {
+            "name": "Anime Dual Audio",
+            "trash_id": "418f50b10f1907201b6cfdf881f467b7",
+            "required": false
+        },
+        {
+            "name": "Dubs Only",
+            "trash_id": "9c14d194486c4014d422adc64092d794",
+            "required": false
+        },
+        {
+            "name": "Uncensored",
+            "trash_id": "026d5aadd1a6b4e550b134cb6c72b3ca",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "[Optional] Resolutions",
+    "trash_id": "b8d2590979210b996913900e4c894825",
+    "trash_description": "Optional Custom Formats that cover different resolutions.",
+    "custom_formats": [
+        {
+            "name": "720p",
+            "trash_id": "c99279ee27a154c2f20d1d505cc99e25",
+            "required": false
+        },
+        {
+            "name": "1080p",
+            "trash_id": "290078c8b266272a5cc8e251b5e2eb0b",
+            "required": false
+        },
+        {
+            "name": "2160p",
+            "trash_id": "1bef6c151fa35093015b0bfef18279e5",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

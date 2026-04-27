@@ -1,0 +1,47 @@
+{
+  "name": "[Audio] Audio Channels",
+  "trash_id": "71660f8c0900b2de202181efb0ca1c88",
+  "trash_description": "Audio Channels, use Audio Formats determine the quality — not Audio Channels.",
+  "custom_formats": [
+    {
+      "name": "1.0 Mono",
+      "trash_id": "b124be9b146540f8e62f98fe32e49a2a",
+      "required": false
+    },
+    {
+      "name": "2.0 Stereo",
+      "trash_id": "89dac1be53d5268a7e10a19d3c896826",
+      "required": false
+    },
+    {
+      "name": "3.0 Sound",
+      "trash_id": "205125755c411c3b8622ca3175d27b37",
+      "required": false
+    },
+    {
+      "name": "4.0 Sound",
+      "trash_id": "373b58bd188fc00c817bd8c7470ea285",
+      "required": false
+    },
+    {
+      "name": "5.1 Surround",
+      "trash_id": "77ff61788dfe1097194fd8743d7b4524",
+      "required": false
+    },
+    {
+      "name": "6.1 Surround",
+      "trash_id": "6fd7b090c3f7317502ab3b63cc7f51e3",
+      "required": false
+    },
+    {
+      "name": "7.1 Surround",
+      "trash_id": "e77382bcfeba57cb83744c9c5449b401",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "include": {
+      "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+    }
+  }
+}

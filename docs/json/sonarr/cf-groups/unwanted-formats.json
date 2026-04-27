@@ -1,0 +1,79 @@
+{
+    "name": "[Unwanted] Unwanted Formats",
+    "trash_id": "59c3af66780d08332fdc64e68297098f",
+    "trash_description": "A list of unwanted release groups, versions, or sources: make sure to read the individual descriptions in the guide before adding any of them.",
+    "custom_formats": [
+        {
+            "name": "AV1",
+            "trash_id": "15a05bc7c1a36e2b57fd628f8977e2fc",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Bad Dual Groups",
+            "trash_id": "32b367365729d530ca1c124a0b180c64",
+            "required": false
+        },
+        {
+            "name": "BR-DISK",
+            "trash_id": "85c61753df5da1fb2aab6f2a47426b09",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "BR-DISK (BTN)",
+            "trash_id": "6f808933a71bd9666531610cb8c059cc",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Extras",
+            "trash_id": "fbcb31d8dabd2a319072b84fc0b7249c",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "LQ",
+            "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "LQ (Release Title)",
+            "trash_id": "e2315f990da2e2cbfc9fa5b7a6fcfe48",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "No-RlsGroup",
+            "trash_id": "82d40da2bc6923f41e14394075dd4b03",
+            "required": false
+        },
+        {
+            "name": "Obfuscated",
+            "trash_id": "e1a997ddb54e3ecbfe06341ad323c458",
+            "required": false
+        },
+        {
+            "name": "Retags",
+            "trash_id": "06d66ab109d4d2eddb2794d21526d140",
+            "required": false
+        },
+        {
+            "name": "Scene",
+            "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
+            "required": false
+        },
+        {
+            "name": "Upscaled",
+            "trash_id": "23297a736ca77c0fc8e70f8edd7ee56c",
+            "required": false,
+            "default": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

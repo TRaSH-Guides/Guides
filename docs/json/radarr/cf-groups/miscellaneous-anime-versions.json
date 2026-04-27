@@ -1,0 +1,42 @@
+{
+    "name": "[Miscellaneous] Anime Versions",
+    "trash_id": "6ebc4bfba9721581d3e9e8994456e6f7",
+    "trash_description": "Anime Versions/Repacks (Required)",
+    "custom_formats": [
+        {
+            "name": "v0",
+            "trash_id": "c259005cbaeb5ab44c06eddb4751e70c",
+            "required": true,
+            "default": true
+        },
+        {
+            "name": "v1",
+            "trash_id": "5f400539421b8fcf71d51e6384434573",
+            "required": true,
+            "default": true
+        },
+        {
+            "name": "v2",
+            "trash_id": "3df5e6dfef4b09bb6002f732bed5b774",
+            "required": true,
+            "default": true
+        },
+        {
+            "name": "v3",
+            "trash_id": "db92c27ba606996b146b57fbe6d09186",
+            "required": true,
+            "default": true
+        },
+        {
+            "name": "v4",
+            "trash_id": "d4e5e842fad129a3c097bdb2d20d31a0",
+            "required": true,
+            "default": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
+    }
+}

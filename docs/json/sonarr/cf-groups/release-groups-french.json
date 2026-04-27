@@ -1,0 +1,47 @@
+{
+    "name": "[Release Groups] French",
+    "trash_id": "9fa0bf3c8f8f00154431c3323a29eef2",
+    "trash_description": "A collection of French release groups.",
+    "custom_formats": [
+        {
+            "name": "FR Remux Tier 01",
+            "trash_id": "b8e91cc8fb2bd96468fab74730c30d18",
+            "required": false
+        },
+        {
+            "name": "FR HD Bluray Tier 01",
+            "trash_id": "d844321db5e126d2e7e46152f0706532",
+            "required": false
+        },
+        {
+            "name": "FR WEB Tier 01",
+            "trash_id": "ddb8eaa9c85a549c50034d280539d54d",
+            "required": false
+        },
+        {
+            "name": "FR WEB Tier 02",
+            "trash_id": "a4c51febd4d8b2a0db10a3c974f21d92",
+            "required": false
+        },
+        {
+            "name": "FR WEB Tier 03",
+            "trash_id": "dbfc0a4b5cb4cbd693311c4482ae9683",
+            "required": false
+        },
+        {
+            "name": "FR Scene Groups",
+            "trash_id": "2f3422339d185eb227a324644a2fbfca",
+            "required": false
+        },
+        {
+            "name": "FR LQ",
+            "trash_id": "3ba797e5dc13af4b8d9bb25e83d90de2",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

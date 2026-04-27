@@ -1,0 +1,101 @@
+{
+    "name": "[Optional] Miscellaneous",
+    "trash_id": "9337080378236ce4c0b183e35790d2a7",
+    "trash_description": "Optional Custom Formats: be sure to read the individual descriptions in the guide before adding all of them.",
+    "custom_formats": [
+        {
+            "name": "DV (Disk)",
+            "trash_id": "f700d29429c023a5734505e77daeaea7",
+            "required": false
+        },
+        {
+            "name": "FreeLeech",
+            "trash_id": "0d91270a7255a1e388fa85e959f359d8",
+            "required": false
+        },
+        {
+            "name": "HFR",
+            "trash_id": "73613461ac2cea99d52c4cd6e177ab82",
+            "required": false
+        },
+        {
+            "name": "INTERNAL",
+            "trash_id": "182fa1c42a2468f8488e6dcf75a81b81",
+            "required": false
+        },
+        {
+            "name": "MPEG2",
+            "trash_id": "ff86c4326018682f817830ced463332b",
+            "required": false
+        },
+        {
+            "name": "MULTi",
+            "trash_id": "4b900e171accbfb172729b63323ea8ca",
+            "required": false
+        },
+        {
+            "name": "P2P Internal",
+            "trash_id": "80f51de4636a294e31552e90d2e1decb",
+            "required": false
+        },
+        {
+            "name": "VC-1",
+            "trash_id": "11cd1db7165d6a7ad9a83bc97b8b1060",
+            "required": false
+        },
+        {
+            "name": "VP9",
+            "trash_id": "ae4cfaa9283a4f2150ac3da08e388723",
+            "required": false
+        },
+        {
+            "name": "x264",
+            "trash_id": "2899d84dc9372de3408e6d8cc18e9666",
+            "required": false
+        },
+        {
+            "name": "x265",
+            "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
+            "required": false
+        },
+        {
+            "name": "x266",
+            "trash_id": "390455c22a9cac81a738f6cbad705c3c",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+            "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+            "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
+            "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
+            "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
+            "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
+            "[German] Anime HD Bluray + WEB": "bf3cc2e99ad9a804a9b0d0e538e1fbba",
+            "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+            "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
+            "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
+            "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+            "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+            "[French MULTi.VF] HD Bluray + WEB": "500ecc23572575511fd81893777d1e06",
+            "[French MULTi.VF] HD Remux (1080p)": "6b93fe45f357e9a94228e5d4658e9bb5",
+            "[French MULTi.VF] UHD Bluray + WEB": "e64b266178c7f70e208f493f00e0e50a",
+            "[French MULTi.VF] UHD Remux (2160p)": "595bb95c6b6970468880069dce23e1d2",
+            "[French MULTi.VO] HD Bluray + WEB": "2572ce3ea4eef1c19d59e0e20ed1cea7",
+            "[French MULTi.VO] HD Remux (1080p)": "c6460a102b312200c095a2d0982e0461",
+            "[French MULTi.VO] UHD Bluray + WEB": "92ead7022d13a7858d54e328e6a2f8f9",
+            "[French MULTi.VO] UHD Remux (2160p)": "1fef28c8c919f31cd86283b1baf527d4",
+            "[French VOSTFR] HD Bluray + WEB": "1addc08c4232bc2617684d517df15f75",
+            "[French VOSTFR] HD Remux (1080p)": "d98f20924b001e9f6b9595d5440abc87",
+            "[French VOSTFR] UHD Bluray + WEB": "525bf0513e2ac22fe116e8d7bec0a6b5",
+            "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a",
+            "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38",
+            "[SQP] SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+            "[SQP] SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
+            "[SQP] SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
+            "[SQP] SQP-1 WEB (2160p)": "e91c9adaca0231493f4af0d571b907f9",
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
+    }
+}

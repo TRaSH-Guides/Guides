@@ -1,0 +1,22 @@
+{
+    "name": "[Optional] Series Versions",
+    "trash_id": "a4a95b9f7bdf10dcb005e765155e4d24",
+    "trash_description": "Optional Series Versions, make sure to read the individual descriptions that you can find in the guide.",
+    "custom_formats": [
+        {
+            "name": "Hybrid",
+            "trash_id": "3a4127d8aa781b44120d907f2cd62627",
+            "required": false
+        },
+        {
+            "name": "Remaster",
+            "trash_id": "b735f09d3c025cbb7d75a5d38325b73b",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

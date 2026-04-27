@@ -1,0 +1,34 @@
+{
+    "name": "[Optional] Season Packs",
+    "trash_id": "d920fd959d220306888f40b6f38e1578",
+    "trash_description": "Add this Custom Format if you prefer season packs, this will upgrade your already downloaded single episodes.",
+    "custom_formats": [
+        {
+            "name": "Season Pack",
+            "trash_id": "3bc5f395426614e155e585a2f056cdf1",
+            "required": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+            "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+            "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+            "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+            "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+            "[German] Anime HD Bluray + WEB": "6fe5937e1dcc2269e23b49eb46dfe6d6",
+            "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+            "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
+            "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
+            "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642",
+            "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
+            "[French MULTi.VF] HD Bluray + WEB (1080p)": "58e8dc75731040612dd6f4ac0676bfd7",
+            "[French MULTi.VF] UHD Bluray + WEB (2160p)": "68c8b82ad2b7ea1941fce71eb56421c3",
+            "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
+            "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
+            "[French VOSTFR] HD Bluray + WEB (1080p)": "b34c968f58433a38e0e690d42a1dc37e",
+            "[French VOSTFR] UHD Bluray + WEB (2160p)": "d6252dce6af535107ed4b03e68052ae8",
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "[Streaming Services] HD/UHD boost",
+    "trash_id": "85fae4a2294965b75710ef2989c850eb",
+    "trash_description": "The UHD Streaming Boost and HD Streaming Boost custom formats increase the scores of streaming services' UHD or HD releases (or both), when those services are known to have better quality compared to other streaming services.\n\nThese two custom formats must be included in your profile for streaming service releases to be scored correctly.",
+    "default": "true",
+    "custom_formats": [
+        {
+            "name": "HD Streaming Boost",
+            "trash_id": "218e93e5702f44a68ad9e3c6ba87d2f0",
+            "required": true,
+            "default": true
+        },
+        {
+            "name": "UHD Streaming Boost",
+            "trash_id": "43b3cf48cb385cd3eac608ee6bca7f09",
+            "required": true,
+            "default": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+            "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+            "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+            "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+            "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

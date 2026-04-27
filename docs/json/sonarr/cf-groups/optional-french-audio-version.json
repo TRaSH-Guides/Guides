@@ -1,0 +1,67 @@
+{
+    "name": "[Optional] French Audio Version",
+    "trash_id": "6a554241c0a7121dfa220dcb22066d0f",
+    "trash_description": "French Audio Version",
+    "custom_formats": [
+        {
+            "name": "FanSUB",
+            "trash_id": "84f0acbda9c0c9de783894fb66df25aa",
+            "required": false
+        },
+        {
+            "name": "FastSUB",
+            "trash_id": "ea0bb4b6ba388992fad1092703b5ff7b",
+            "required": false
+        },
+        {
+            "name": "VF2",
+            "trash_id": "34789ec3caa819f087e23bbf9999daf7",
+            "required": false
+        },
+        {
+            "name": "VFB",
+            "trash_id": "0ce1e39a4676c6692ce47935278dac76",
+            "required": false
+        },
+        {
+            "name": "VFF",
+            "trash_id": "2c29a39a4fdfd6d258799bc4c09731b9",
+            "required": false
+        },
+        {
+            "name": "VFI",
+            "trash_id": "b6816a0e1d4b64bf3550ad3b74b009b6",
+            "required": false
+        },
+        {
+            "name": "VFQ",
+            "trash_id": "7a7f4e4f58bd1058440236d033a90b67",
+            "required": false
+        },
+        {
+            "name": "VOF",
+            "trash_id": "7ae924ee9b2f39df3283c6c0beb8a2aa",
+            "required": false
+        },
+        {
+            "name": "VOQ",
+            "trash_id": "802dd70b856c423a9b0cb7f34ac42be1",
+            "required": false
+        },
+        {
+            "name": "VOSTFR",
+            "trash_id": "07a32f77690263bb9fda1842db7e273f",
+            "required": false
+        },
+        {
+            "name": "VQ",
+            "trash_id": "82085412d9a53ba8d8e46fc624eb701d",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
+    }
+}

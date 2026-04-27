@@ -1,25 +1,26 @@
 {
-  "name": "[HDR Formats] DV (w/o HDR fallback)",
-  "trash_id": "d776a1ea912a117d66d83b880ff2055d",
-  "trash_description": "If NOT every device accessing your media server supports Dolby Vision, add the DV (w/o HDR fallback) custom format to ensure maximum compatibility with your setup. This prevents playback issues on devices that don't fully support Dolby Vision.",
-  "custom_formats": [
-    {
-      "name": "DV (w/o HDR fallback)",
-      "trash_id": "9b27ab6498ec0f31a3353992e19434ca",
-      "required": true
+    "name": "[HDR Formats] DV (w/o HDR fallback)",
+    "trash_id": "d776a1ea912a117d66d83b880ff2055d",
+    "trash_description": "If NOT every device accessing your media server supports Dolby Vision, add the DV (w/o HDR fallback) custom format to ensure maximum compatibility with your setup. This prevents playback issues on devices that don't fully support Dolby Vision.",
+    "custom_formats": [
+        {
+            "name": "DV (w/o HDR fallback)",
+            "trash_id": "9b27ab6498ec0f31a3353992e19434ca",
+            "required": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+            "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+            "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+            "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
+            "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642",
+            "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
+            "[French MULTi.VF] UHD Bluray + WEB (2160p)": "68c8b82ad2b7ea1941fce71eb56421c3",
+            "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
+            "[French VOSTFR] UHD Bluray + WEB (2160p)": "d6252dce6af535107ed4b03e68052ae8",
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
     }
-  ],
-  "quality_profiles": {
-    "include": {
-      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
-      "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
-      "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
-      "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
-      "[French MULTi.VF] UHD Bluray + WEB (2160p)": "68c8b82ad2b7ea1941fce71eb56421c3",
-      "[French VOSTFR] UHD Bluray + WEB (2160p)": "d6252dce6af535107ed4b03e68052ae8",
-      "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
-      "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
-      "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642"
-    }
-  }
 }
