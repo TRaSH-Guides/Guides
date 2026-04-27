@@ -93,7 +93,8 @@
             "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
             "[French VOSTFR] HD Bluray + WEB (1080p)": "b34c968f58433a38e0e690d42a1dc37e",
             "[French VOSTFR] UHD Bluray + WEB (2160p)": "d6252dce6af535107ed4b03e68052ae8",
-            "[Anime] Remux-1080p": "20e0fc959f1f1704bed501f23bdae76f"
+            "[Anime] Remux-1080p": "20e0fc959f1f1704bed501f23bdae76f",
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
     }
-  }
 }

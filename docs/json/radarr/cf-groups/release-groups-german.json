@@ -56,7 +56,8 @@
             "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
             "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
             "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
-            "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7"
+            "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
         }
     }
 }

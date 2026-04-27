@@ -1,52 +1,12 @@
 {
-    "name": "[Streaming Services] Anime",
-    "trash_id": "f54985e5e96747cef58731f1cf4c9181",
-    "trash_description": "Collection of Anime Streaming Services for Sonarr",
+    "name": "[Optional] Season Packs",
+    "trash_id": "d920fd959d220306888f40b6f38e1578",
+    "trash_description": "Add this Custom Format if you prefer season packs, this will upgrade your already downloaded single episodes.",
     "custom_formats": [
         {
-            "name": "ABEMA",
-            "trash_id": "a370d974bc7b80374de1d9ba7519760b",
-            "required": false
-        },
-        {
-            "name": "ADN",
-            "trash_id": "d54cd2bf1326287275b56bccedb72ee2",
-            "required": false
-        },
-        {
-            "name": "B-Global",
-            "trash_id": "7dd31f3dee6d2ef8eeaa156e23c3857e",
-            "required": false
-        },
-        {
-            "name": "Bilibili",
-            "trash_id": "4c67ff059210182b59cdd41697b8cb08",
-            "required": false
-        },
-        {
-            "name": "CR",
-            "trash_id": "3e0b26604165f463f3e8e192261e7284",
-            "required": false
-        },
-        {
-            "name": "FUNi",
-            "trash_id": "1284d18e693de8efe0fe7d6b3e0b9170",
-            "required": false
-        },
-        {
-            "name": "HIDIVE",
-            "trash_id": "570b03b3145a25011bf073274a407259",
-            "required": false
-        },
-        {
-            "name": "VRV",
-            "trash_id": "44a8ee6403071dd7b8a3a8dd3fe8cb20",
-            "required": false
-        },
-        {
-            "name": "WKN",
-            "trash_id": "e5e6405d439dcd1af90962538acd4fe0",
-            "required": false
+            "name": "Season Pack",
+            "trash_id": "3bc5f395426614e155e585a2f056cdf1",
+            "required": true
         }
     ],
     "quality_profiles": {
@@ -68,7 +28,6 @@
             "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
             "[French VOSTFR] HD Bluray + WEB (1080p)": "b34c968f58433a38e0e690d42a1dc37e",
             "[French VOSTFR] UHD Bluray + WEB (2160p)": "d6252dce6af535107ed4b03e68052ae8",
-            "[Anime] Remux-1080p": "20e0fc959f1f1704bed501f23bdae76f",
             "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
         }
     }

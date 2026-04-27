@@ -67,7 +67,8 @@
             "[French VOSTFR] HD Bluray + WEB": "1addc08c4232bc2617684d517df15f75",
             "[French VOSTFR] HD Remux (1080p)": "d98f20924b001e9f6b9595d5440abc87",
             "[French VOSTFR] UHD Bluray + WEB": "525bf0513e2ac22fe116e8d7bec0a6b5",
-            "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a"
+            "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a",
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
         }
     }
 }

@@ -1,123 +1,126 @@
 {
-  "name": "[Streaming Services] General",
-  "trash_id": "abe720fab2d27682adc2a735136cec02",
-  "trash_description": "Collection of General Streaming Services for Sonarr",
-  "default": "true",
-  "custom_formats": [
-    {
-      "name": "AMZN",
-      "trash_id": "d660701077794679fd59e8bdf4ce3a29",
-      "required": true
-    },
-    {
-      "name": "ATV",
-      "trash_id": "d9e511921c8cedc7282e291b0209cdc5",
-      "required": true
-    },
-    {
-      "name": "ATVP",
-      "trash_id": "f67c9ca88f463a48346062e8ad07713f",
-      "required": true
-    },
-    {
-      "name": "CC",
-      "trash_id": "77a7b25585c18af08f60b1547bb9b4fb",
-      "required": true
-    },
-    {
-      "name": "DCU",
-      "trash_id": "36b72f59f4ea20aad9316f475f2d9fbb",
-      "required": true
-    },
-    {
-      "name": "DSNP",
-      "trash_id": "89358767a60cc28783cdc3d0be9388a4",
-      "required": true
-    },
-    {
-      "name": "HBO",
-      "trash_id": "7a235133c87f7da4c8cccceca7e3c7a6",
-      "required": true
-    },
-    {
-      "name": "HMAX",
-      "trash_id": "a880d6abc21e7c16884f3ae393f84179",
-      "required": true
-    },
-    {
-      "name": "HULU",
-      "trash_id": "f6cce30f1733d5c8194222a7507909bb",
-      "required": true
-    },
-    {
-      "name": "iT",
-      "trash_id": "0ac24a2a68a9700bcb7eeca8e5cd644c",
-      "required": true
-    },
-    {
-      "name": "MAX",
-      "trash_id": "81d1fbf600e2540cee87f3a23f9d3c1c",
-      "required": true
-    },
-    {
-      "name": "NF",
-      "trash_id": "d34870697c9db575f17700212167be23",
-      "required": true
-    },
-    {
-      "name": "PCOK",
-      "trash_id": "1656adc6d7bb2c8cca6acfb6592db421",
-      "required": true
-    },
-    {
-      "name": "PMTP",
-      "trash_id": "c67a75ae4a1715f2bb4d492755ba4195",
-      "required": true
-    },
-    {
-      "name": "PLAY",
-      "trash_id": "6eb71887a8db6e783dd398446eb0e65d",
-      "required": true
-    },
-    {
-      "name": "ROKU",
-      "trash_id": "da393fd4e2c0cce7c9dc2669c43e0593",
-      "required": true
-    },
-    {
-      "name": "SHO",
-      "trash_id": "ae58039e1319178e6be73caab5c42166",
-      "required": true
-    },
-    {
-      "name": "STAN",
-      "trash_id": "1efe8da11bfd74fbbcd4d8117ddb9213",
-      "required": true
-    },
-    {
-      "name": "SYFY",
-      "trash_id": "9623c5c9cac8e939c1b9aedd32f640bf",
-      "required": true
+    "name": "[Streaming Services] General",
+    "trash_id": "abe720fab2d27682adc2a735136cec02",
+    "trash_description": "Collection of General Streaming Services for Sonarr",
+    "default": "true",
+    "custom_formats": [
+        {
+            "name": "AMZN",
+            "trash_id": "d660701077794679fd59e8bdf4ce3a29",
+            "required": true
+        },
+        {
+            "name": "ATV",
+            "trash_id": "d9e511921c8cedc7282e291b0209cdc5",
+            "required": true
+        },
+        {
+            "name": "ATVP",
+            "trash_id": "f67c9ca88f463a48346062e8ad07713f",
+            "required": true
+        },
+        {
+            "name": "CC",
+            "trash_id": "77a7b25585c18af08f60b1547bb9b4fb",
+            "required": true
+        },
+        {
+            "name": "DCU",
+            "trash_id": "36b72f59f4ea20aad9316f475f2d9fbb",
+            "required": true
+        },
+        {
+            "name": "DSNP",
+            "trash_id": "89358767a60cc28783cdc3d0be9388a4",
+            "required": true
+        },
+        {
+            "name": "HBO",
+            "trash_id": "7a235133c87f7da4c8cccceca7e3c7a6",
+            "required": true
+        },
+        {
+            "name": "HMAX",
+            "trash_id": "a880d6abc21e7c16884f3ae393f84179",
+            "required": true
+        },
+        {
+            "name": "HULU",
+            "trash_id": "f6cce30f1733d5c8194222a7507909bb",
+            "required": true
+        },
+        {
+            "name": "iT",
+            "trash_id": "0ac24a2a68a9700bcb7eeca8e5cd644c",
+            "required": true
+        },
+        {
+            "name": "MAX",
+            "trash_id": "81d1fbf600e2540cee87f3a23f9d3c1c",
+            "required": true
+        },
+        {
+            "name": "NF",
+            "trash_id": "d34870697c9db575f17700212167be23",
+            "required": true
+        },
+        {
+            "name": "PCOK",
+            "trash_id": "1656adc6d7bb2c8cca6acfb6592db421",
+            "required": true
+        },
+        {
+            "name": "PMTP",
+            "trash_id": "c67a75ae4a1715f2bb4d492755ba4195",
+            "required": true
+        },
+        {
+            "name": "PLAY",
+            "trash_id": "6eb71887a8db6e783dd398446eb0e65d",
+            "required": true
+        },
+        {
+            "name": "ROKU",
+            "trash_id": "da393fd4e2c0cce7c9dc2669c43e0593",
+            "required": true
+        },
+        {
+            "name": "SHO",
+            "trash_id": "ae58039e1319178e6be73caab5c42166",
+            "required": true
+        },
+        {
+            "name": "STAN",
+            "trash_id": "1efe8da11bfd74fbbcd4d8117ddb9213",
+            "required": true
+        },
+        {
+            "name": "SYFY",
+            "trash_id": "9623c5c9cac8e939c1b9aedd32f640bf",
+            "required": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+            "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+            "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+            "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+            "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+            "[German] Anime HD Bluray + WEB": "6fe5937e1dcc2269e23b49eb46dfe6d6",
+            "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+            "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
+            "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
+            "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642",
+            "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
+            "[French MULTi.VF] HD Bluray + WEB (1080p)": "58e8dc75731040612dd6f4ac0676bfd7",
+            "[French MULTi.VF] UHD Bluray + WEB (2160p)": "68c8b82ad2b7ea1941fce71eb56421c3",
+            "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
+            "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
+            "[French VOSTFR] HD Bluray + WEB (1080p)": "b34c968f58433a38e0e690d42a1dc37e",
+            "[French VOSTFR] UHD Bluray + WEB (2160p)": "d6252dce6af535107ed4b03e68052ae8",
+            "[Anime] Remux-1080p": "20e0fc959f1f1704bed501f23bdae76f",
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
+        }
     }
-  ],
-  "quality_profiles": {
-    "include": {
-      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
-      "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
-      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
-      "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
-      "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
-      "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
-      "[French MULTi.VO] UHD Bluray + WEB (2160p)": "6fa7364373e8f06206871d9c20a4fb3e",
-      "[French MULTi.VF] HD Bluray + WEB (1080p)": "58e8dc75731040612dd6f4ac0676bfd7",
-      "[French MULTi.VF] UHD Bluray + WEB (2160p)": "68c8b82ad2b7ea1941fce71eb56421c3",
-      "[French VOSTFR] HD Bluray + WEB (1080p)": "b34c968f58433a38e0e690d42a1dc37e",
-      "[French VOSTFR] UHD Bluray + WEB (2160p)": "d6252dce6af535107ed4b03e68052ae8",
-      "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
-      "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
-      "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
-      "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
-      "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642"
-    }
-  }
 }

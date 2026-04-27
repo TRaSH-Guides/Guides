@@ -59,7 +59,8 @@
       "[SQP] SQP-3 (Audio)": "0ada8e60cc3ddf2733b65de10f4a6c72",
       "[SQP] SQP-4": "013f89e6da27519fe56cf482702a2db9",
       "[SQP] SQP-4 (MA Hybrid)": "7526db7ac0a1f764793fb181864d0222",
-      "[SQP] SQP-5": "a7bb1539fd147256b21b1098f3dc2016"
+      "[SQP] SQP-5": "a7bb1539fd147256b21b1098f3dc2016",
+      "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
     }
   }
 }

@@ -23,7 +23,8 @@
             "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
             "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
             "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
-            "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7"
+            "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
         }
     }
 }

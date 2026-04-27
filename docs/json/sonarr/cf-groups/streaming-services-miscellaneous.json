@@ -1,51 +1,46 @@
 {
-    "name": "[Streaming Services] Anime",
-    "trash_id": "f54985e5e96747cef58731f1cf4c9181",
-    "trash_description": "Collection of Anime Streaming Services for Sonarr",
+    "name": "[Streaming Services] Miscellaneous",
+    "trash_id": "7832db22b71ab669458c17a2850d6913",
+    "trash_description": "Collection of Miscellaneous Streaming Services for Sonarr",
     "custom_formats": [
         {
-            "name": "ABEMA",
-            "trash_id": "a370d974bc7b80374de1d9ba7519760b",
+            "name": "AUBC",
+            "trash_id": "e6e299075e22ac8f541f722254c8350a",
             "required": false
         },
         {
-            "name": "ADN",
-            "trash_id": "d54cd2bf1326287275b56bccedb72ee2",
+            "name": "CBC",
+            "trash_id": "defb0b4c8b3f6a15927c0f14c6e69c94",
             "required": false
         },
         {
-            "name": "B-Global",
-            "trash_id": "7dd31f3dee6d2ef8eeaa156e23c3857e",
+            "name": "CRAV",
+            "trash_id": "4e9a630db98d5391aec1368a0256e2fe",
             "required": false
         },
         {
-            "name": "Bilibili",
-            "trash_id": "4c67ff059210182b59cdd41697b8cb08",
+            "name": "DSCP",
+            "trash_id": "dc5f2bb0e0262155b5fedd0f6c5d2b55",
             "required": false
         },
         {
-            "name": "CR",
-            "trash_id": "3e0b26604165f463f3e8e192261e7284",
+            "name": "OViD",
+            "trash_id": "fb1a91cdc0f26f7ca0696e0e95274645",
             "required": false
         },
         {
-            "name": "FUNi",
-            "trash_id": "1284d18e693de8efe0fe7d6b3e0b9170",
+            "name": "STRP",
+            "trash_id": "fe4062eac43d4ea75955f8ae48adcf1e",
             "required": false
         },
         {
-            "name": "HIDIVE",
-            "trash_id": "570b03b3145a25011bf073274a407259",
+            "name": "RED",
+            "trash_id": "c30d2958827d1867c73318a5a2957eb1",
             "required": false
         },
         {
-            "name": "VRV",
-            "trash_id": "44a8ee6403071dd7b8a3a8dd3fe8cb20",
-            "required": false
-        },
-        {
-            "name": "WKN",
-            "trash_id": "e5e6405d439dcd1af90962538acd4fe0",
+            "name": "QIBI",
+            "trash_id": "3ac5d84fce98bab1b531393e9c82f467",
             "required": false
         }
     ],

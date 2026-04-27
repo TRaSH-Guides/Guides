@@ -1,104 +1,105 @@
 {
-  "name": "[Audio] Audio Formats",
-  "trash_id": "9d5acd8f1da78dfbae788182f7605200",
-  "trash_description": "Audio Formats, something you see mainly with Remuxes and UHD HQ Encodes. Add this only if you choose a Quality Profile that covers Remuxes and HQ UHD Encodes.",
-  "default": "true",
-  "custom_formats": [
-    {
-      "name": "TrueHD ATMOS",
-      "trash_id": "496f355514737f7d83bf7aa4d24f8169",
-      "required": true
-    },
-    {
-      "name": "DTS X",
-      "trash_id": "2f22d89048b01681dde8afe203bf2e95",
-      "required": true
-    },
-    {
-      "name": "ATMOS (undefined)",
-      "trash_id": "417804f7f2c4308c1f4c5d380d4c4475",
-      "required": true
-    },
-    {
-      "name": "DD+ ATMOS",
-      "trash_id": "1af239278386be2919e1bcee0bde047e",
-      "required": true
-    },
-    {
-      "name": "TrueHD",
-      "trash_id": "3cafb66171b47f226146a0770576870f",
-      "required": true
-    },
-    {
-      "name": "DTS-HD MA",
-      "trash_id": "dcf3ec6938fa32445f590a4da84256cd",
-      "required": true
-    },
-    {
-      "name": "FLAC",
-      "trash_id": "a570d4a0e56a2874b64e5bfa55202a1b",
-      "required": true
-    },
-    {
-      "name": "PCM",
-      "trash_id": "e7c2fcae07cbada050a0af3357491d7b",
-      "required": true
-    },
-    {
-      "name": "DTS-HD HRA",
-      "trash_id": "8e109e50e0a0b83a5098b056e13bf6db",
-      "required": true
-    },
-    {
-      "name": "DD+",
-      "trash_id": "185f1dd7264c4562b9022d963ac37424",
-      "required": true
-    },
-    {
-      "name": "DTS-ES",
-      "trash_id": "f9f847ac70a0af62ea4a08280b859636",
-      "required": true
-    },
-    {
-      "name": "DTS",
-      "trash_id": "1c1a4c5e823891c75bc50380a6866f73",
-      "required": true
-    },
-    {
-      "name": "AAC",
-      "trash_id": "240770601cc226190c367ef59aba7463",
-      "required": true
-    },
-    {
-      "name": "DD",
-      "trash_id": "c2998bd0d90ed5621d8df281e839436e",
-      "required": true
+    "name": "[Audio] Audio Formats",
+    "trash_id": "9d5acd8f1da78dfbae788182f7605200",
+    "trash_description": "Audio Formats, something you see mainly with Remuxes and UHD HQ Encodes. Add this only if you choose a Quality Profile that covers Remuxes and HQ UHD Encodes.",
+    "default": "true",
+    "custom_formats": [
+        {
+            "name": "TrueHD ATMOS",
+            "trash_id": "496f355514737f7d83bf7aa4d24f8169",
+            "required": true
+        },
+        {
+            "name": "DTS X",
+            "trash_id": "2f22d89048b01681dde8afe203bf2e95",
+            "required": true
+        },
+        {
+            "name": "ATMOS (undefined)",
+            "trash_id": "417804f7f2c4308c1f4c5d380d4c4475",
+            "required": true
+        },
+        {
+            "name": "DD+ ATMOS",
+            "trash_id": "1af239278386be2919e1bcee0bde047e",
+            "required": true
+        },
+        {
+            "name": "TrueHD",
+            "trash_id": "3cafb66171b47f226146a0770576870f",
+            "required": true
+        },
+        {
+            "name": "DTS-HD MA",
+            "trash_id": "dcf3ec6938fa32445f590a4da84256cd",
+            "required": true
+        },
+        {
+            "name": "FLAC",
+            "trash_id": "a570d4a0e56a2874b64e5bfa55202a1b",
+            "required": true
+        },
+        {
+            "name": "PCM",
+            "trash_id": "e7c2fcae07cbada050a0af3357491d7b",
+            "required": true
+        },
+        {
+            "name": "DTS-HD HRA",
+            "trash_id": "8e109e50e0a0b83a5098b056e13bf6db",
+            "required": true
+        },
+        {
+            "name": "DD+",
+            "trash_id": "185f1dd7264c4562b9022d963ac37424",
+            "required": true
+        },
+        {
+            "name": "DTS-ES",
+            "trash_id": "f9f847ac70a0af62ea4a08280b859636",
+            "required": true
+        },
+        {
+            "name": "DTS",
+            "trash_id": "1c1a4c5e823891c75bc50380a6866f73",
+            "required": true
+        },
+        {
+            "name": "AAC",
+            "trash_id": "240770601cc226190c367ef59aba7463",
+            "required": true
+        },
+        {
+            "name": "DD",
+            "trash_id": "c2998bd0d90ed5621d8df281e839436e",
+            "required": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+            "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
+            "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
+            "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
+            "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
+            "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
+            "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
+            "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+            "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+            "[French MULTi.VF] HD Remux (1080p)": "6b93fe45f357e9a94228e5d4658e9bb5",
+            "[French MULTi.VF] UHD Bluray + WEB": "e64b266178c7f70e208f493f00e0e50a",
+            "[French MULTi.VF] UHD Remux (2160p)": "595bb95c6b6970468880069dce23e1d2",
+            "[French MULTi.VO] HD Remux (1080p)": "c6460a102b312200c095a2d0982e0461",
+            "[French MULTi.VO] UHD Bluray + WEB": "92ead7022d13a7858d54e328e6a2f8f9",
+            "[French MULTi.VO] UHD Remux (2160p)": "1fef28c8c919f31cd86283b1baf527d4",
+            "[French VOSTFR] HD Remux (1080p)": "d98f20924b001e9f6b9595d5440abc87",
+            "[French VOSTFR] UHD Bluray + WEB": "525bf0513e2ac22fe116e8d7bec0a6b5",
+            "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a",
+            "[SQP] SQP-2": "c3933358ba2356bafc41524f81471069",
+            "[SQP] SQP-3": "2cf36c1f0106ffac993be003ade51865",
+            "[SQP] SQP-4": "013f89e6da27519fe56cf482702a2db9",
+            "[SQP] SQP-5": "a7bb1539fd147256b21b1098f3dc2016",
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
     }
-  ],
-  "quality_profiles": {
-    "include": {
-      "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
-      "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
-      "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
-      "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
-      "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
-      "[French MULTi.VO] HD Remux (1080p)": "c6460a102b312200c095a2d0982e0461",
-      "[French MULTi.VO] UHD Bluray + WEB": "92ead7022d13a7858d54e328e6a2f8f9",
-      "[French MULTi.VO] UHD Remux (2160p)": "1fef28c8c919f31cd86283b1baf527d4",
-      "[French MULTi.VF] HD Remux (1080p)": "6b93fe45f357e9a94228e5d4658e9bb5",
-      "[French MULTi.VF] UHD Bluray + WEB": "e64b266178c7f70e208f493f00e0e50a",
-      "[French MULTi.VF] UHD Remux (2160p)": "595bb95c6b6970468880069dce23e1d2",
-      "[French VOSTFR] HD Remux (1080p)": "d98f20924b001e9f6b9595d5440abc87",
-      "[French VOSTFR] UHD Bluray + WEB": "525bf0513e2ac22fe116e8d7bec0a6b5",
-      "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a",
-      "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
-      "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
-      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
-      "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
-      "[SQP] SQP-2": "c3933358ba2356bafc41524f81471069",
-      "[SQP] SQP-3": "2cf36c1f0106ffac993be003ade51865",
-      "[SQP] SQP-4": "013f89e6da27519fe56cf482702a2db9",
-      "[SQP] SQP-5": "a7bb1539fd147256b21b1098f3dc2016"
-    }
-  }
 }
