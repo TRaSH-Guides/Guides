@@ -126,7 +126,9 @@ Designed as an alternative to config-driven tools like Recyclarr, with a visual 
 
 For questions, help, or bug reports:
 
-- **Discord:** [`#prophetse7en-apps`](https://discordapp.com/channels/492590071455940612/1486391669384417300) on the [TRaSH Guides Discord](https://trash-guides.info/discord) (under Community Apps)
+- **Discord:** [`#clonarr`](https://discord.com/channels/492590071455940612/1495685561552207913) on the [TRaSH Guides Discord](https://trash-guides.info/discord) (under Community Apps)
 - **GitHub:** [prophetse7en/clonarr/issues](https://github.com/prophetse7en/clonarr/issues)
+
+---
 
 --8<-- "includes/support.md"

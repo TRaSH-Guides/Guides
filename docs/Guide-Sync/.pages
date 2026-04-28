@@ -1,2 +1,4 @@
 nav:
   - Home: index.md
+  - Radarr - Custom Format Groups: radarr-cf-groups.md
+  - Sonarr - Custom Format Groups: sonarr-cf-groups.md
