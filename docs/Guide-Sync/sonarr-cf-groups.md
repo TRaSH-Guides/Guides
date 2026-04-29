@@ -8,8 +8,8 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 
 ---
 
-<!-- markdownlint-disable MD011 MD022 MD051 MD052 MD055 MD056 -->
-{%- macro cf_slug(name) -%}{{ name | lower | replace('+', 'plus') | replace('(', '') | replace(')', '') | replace('/', '') | replace('.', '') | replace(' ', '-') | replace('--', '-') }}{%- endmacro -%}
+<!-- markdownlint-disable MD011 MD022 MD052 MD055 MD056 -->
+{%- macro cf_slug(name) -%}{{ name | lower | replace('+', 'plus') | replace('(', '') | replace(')', '') | replace('/', '') | replace('.', '') | replace(':', '') | replace(',', '') | replace(' ', '-') | replace('--', '-') }}{%- endmacro -%}
 {% set ns = namespace(current_category='') -%}
 {% for key, group in sonarr['cf-groups']|dictsort -%}
 {% if not (key.startswith('sqp-') or key.endswith('-sqp')) -%}
@@ -36,7 +36,7 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 | Custom Format | Trash ID | Required |
 | --- | --- | :---: |
 {% for cf in group['custom_formats'] -%}
-| [{{ cf['name'] }}](#{{ cf_slug(cf['name']) }}) | `{{ cf['trash_id'] }}` | {% if cf['required'] %}:white_check_mark:{% else %}:x:{% endif %} |
+| [{{ cf['name'] }}](../Sonarr/sonarr-collection-of-custom-formats.md#{{ cf_slug(cf['name']) }}) | `{{ cf['trash_id'] }}` | {% if cf['required'] %}:white_check_mark:{% else %}:x:{% endif %} |
 {% endfor %}
 
 {% if group.get('quality_profiles', {}).get('include', {}) -%}
@@ -52,10 +52,8 @@ Custom Format Groups are logical groupings of custom formats used by sync tools 
 
 {% endif -%}
 
-<sub><sup>[TOP](#index)</sup></sub>
-
 ---
 
 {% endif -%}
 {% endfor -%}
-<!-- markdownlint-enable MD011 MD022 MD051 MD052 MD055 MD056 -->
+<!-- markdownlint-enable MD011 MD022 MD052 MD055 MD056 -->

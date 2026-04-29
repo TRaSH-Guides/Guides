@@ -4,22 +4,22 @@
     "trash_description": "Language Profiles included in one of the guides.",
     "custom_formats": [
         {
-            "name": "German",
+            "name": "Language: German",
             "trash_id": "86bc3115eb4e9873ac96904a4a68e19e",
             "required": false
         },
         {
-            "name": "German DL",
+            "name": "Language: German DL",
             "trash_id": "f845be10da4f442654c13e1f2c3d6cd5",
             "required": false
         },
         {
-            "name": "German DL (undefined)",
+            "name": "Language: German DL (undefined)",
             "trash_id": "6aad77771dabe9d3e9d7be86f310b867",
             "required": false
         },
         {
-            "name": "German Subbed",
+            "name": "Language: German Anime Subbed",
             "trash_id": "ee425f921dd740621523343bffe82fa3",
             "required": false
         },
@@ -44,17 +44,17 @@
             "required": false
         },
         {
-            "name": "Not German or English",
+            "name": "Language: Not German or English",
             "trash_id": "4eadb75fb23d09dfc0a8e3f687e72287",
             "required": false
         },
         {
-            "name": "Not German, Japanese or English",
+            "name": "Language: Not German, Japanese or English",
             "trash_id": "532c4a41c94ae0f77c745ae478883c44",
             "required": false
         },
         {
-            "name": "Not German, Japanese, Korean, Chinese or English",
+            "name": "Language: Not German, Japanese, Korean, Chinese or English",
             "trash_id": "9a8f58fae5df94783c214c0ed63f589c",
             "required": false
         },
