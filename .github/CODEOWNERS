@@ -1,0 +1,22 @@
+# Sync tool maintainers must review changes to specifications, schemas,
+# metadata, validation scripts, and structural contracts that sync tools
+# depend on.
+#
+# Preferred: create a @TRaSH-Guides/sync-tool-maintainers team and replace
+# the individual usernames below.
+#
+# @TRaSH-Guides/sync-tool-maintainers
+
+# JSON schemas define the structure sync tools parse
+/schemas/ @rcdailey @austinwbest @ProphetSe7en @BlackDark
+
+# Metadata tells sync tools where to find data
+/metadata.json @rcdailey @austinwbest @ProphetSe7en @BlackDark
+/metadata.schema.json @rcdailey @austinwbest @ProphetSe7en @BlackDark
+
+# Validation scripts enforce constraints on the data
+/scripts/ @rcdailey @austinwbest @ProphetSe7en @BlackDark
+
+# Pre-commit config wires schemas and validators into CI
+/.pre-commit-config.yaml @rcdailey @austinwbest @ProphetSe7en @BlackDark
+
