@@ -1,7 +1,7 @@
 {
-    "name": "[Unwanted] Unwanted Formats",
-    "trash_id": "a3ac6af01d78e4f21fcb75f601ac96df",
-    "trash_description": "A list of unwanted release groups, versions, or sources: make sure to read the individual descriptions in the guide before adding any of them.",
+    "name": "[Unwanted] Unwanted Formats German",
+    "trash_id": "0ca61b4b233178d07113082a7acff72d",
+    "trash_description": "A list of unwanted versions, or sources: make sure to read the individual descriptions in the guide before adding any of them.",
     "default": "true",
     "custom_formats": [
         {
@@ -17,16 +17,9 @@
             "default": true
         },
         {
-            "name": "Bad Dual Groups",
-            "trash_id": "b6832f586342ef70d9c128d40c07b872",
-            "required": false,
-            "default": true
-        },
-        {
             "name": "Black and White Editions",
             "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
-            "required": false,
-            "default": true
+            "required": false
         },
         {
             "name": "BR-DISK",
@@ -37,12 +30,6 @@
         {
             "name": "Extras",
             "trash_id": "0a3f082873eb454bde444150b70253cc",
-            "required": false,
-            "default": true
-        },
-        {
-            "name": "Generated Dynamic HDR",
-            "trash_id": "e6886871085226c3da1830830146846c",
             "required": false,
             "default": true
         },
@@ -74,31 +61,24 @@
             "required": false
         },
         {
-            "name": "Scene",
-            "trash_id": "f537cf427b64c38c8e36298f657e4828",
-            "required": false
-        },
-        {
             "name": "Sing-Along Versions",
             "trash_id": "712d74cd88bceb883ee32f773656b1f5",
-            "required": false,
-            "default": true
+            "required": false
         },
         {
             "name": "Upscaled",
             "trash_id": "bfd8eb01832d646a0a89c4deb46f8564",
-            "required": false,
-            "default": true
+            "required": false
         }
     ],
     "quality_profiles": {
         "include": {
-            "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
-            "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
-            "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
-            "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
-            "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
-            "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
+            "[German] Anime HD Bluray + WEB": "bf3cc2e99ad9a804a9b0d0e538e1fbba",
+            "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+            "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
+            "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
+            "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+            "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
             "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
         }
     }
