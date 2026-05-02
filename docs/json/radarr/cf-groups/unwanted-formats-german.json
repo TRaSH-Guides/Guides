@@ -17,11 +17,6 @@
             "default": true
         },
         {
-            "name": "Bad Dual Groups",
-            "trash_id": "b6832f586342ef70d9c128d40c07b872",
-            "required": false
-        },
-        {
             "name": "Black and White Editions",
             "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
             "required": false
@@ -37,11 +32,6 @@
             "trash_id": "0a3f082873eb454bde444150b70253cc",
             "required": false,
             "default": true
-        },
-        {
-            "name": "Generated Dynamic HDR",
-            "trash_id": "e6886871085226c3da1830830146846c",
-            "required": false
         },
         {
             "name": "LQ",
@@ -68,11 +58,6 @@
         {
             "name": "Retags",
             "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
-            "required": false
-        },
-        {
-            "name": "Scene",
-            "trash_id": "f537cf427b64c38c8e36298f657e4828",
             "required": false
         },
         {

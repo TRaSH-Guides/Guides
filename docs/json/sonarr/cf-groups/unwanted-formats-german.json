@@ -2,17 +2,13 @@
     "name": "[Unwanted] Unwanted Formats German",
     "trash_id": "6f0872eebfc95b1f93474b7ac866ced0",
     "trash_description": "A list of unwanted versions, or sources: make sure to read the individual descriptions in the guide before adding any of them.",
+    "default": "true",
     "custom_formats": [
         {
             "name": "AV1",
             "trash_id": "15a05bc7c1a36e2b57fd628f8977e2fc",
             "required": false,
             "default": true
-        },
-        {
-            "name": "Bad Dual Groups",
-            "trash_id": "32b367365729d530ca1c124a0b180c64",
-            "required": false
         },
         {
             "name": "BR-DISK",
@@ -56,11 +52,6 @@
         {
             "name": "Retags",
             "trash_id": "06d66ab109d4d2eddb2794d21526d140",
-            "required": false
-        },
-        {
-            "name": "Scene",
-            "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
             "required": false
         },
         {
