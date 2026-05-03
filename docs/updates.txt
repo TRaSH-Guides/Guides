@@ -1,3 +1,9 @@
+# 2026-05-03 03:28
+- [fix(guide-sync): Created a dedicated German Unwanted Group](https://github.com/TRaSH-Guides/Guides/pull/2719)
+- [feat(guide-sync): Enabled the unwanted cf-group by default](https://github.com/TRaSH-Guides/Guides/pull/2715)
+- [fix(guide-sync): enabled the unwanted cf-group for the supported third-party Guide Sync Tools](https://github.com/TRaSH-Guides/Guides/pull/2714)
+- [feat(guide-sync): Added multiple CF-Groups for the third-party apps](https://github.com/TRaSH-Guides/Guides/pull/2711)
+
 # 2026-04-26 02:56
 - [fix(guide-sync): Duplicate entry in groups for the with-xxx CF](https://github.com/TRaSH-Guides/Guides/pull/2713)
 - [feat(starr): Add new Custom Format `WiTH.ASL`, `WiTH.BSL`, and update `WiTH.AD`](https://github.com/TRaSH-Guides/Guides/pull/2707)
