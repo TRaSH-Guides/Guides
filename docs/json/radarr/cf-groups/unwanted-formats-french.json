@@ -1,0 +1,97 @@
+{
+    "name": "[Unwanted] Unwanted Formats French",
+    "trash_id": "59f7ab9ff64d0026b011b985b1cc8670",
+    "trash_description": "A list of unwanted versions, or sources: make sure to read the individual descriptions in the guide before adding any of them.",
+    "default": "true",
+    "custom_formats": [
+        {
+            "name": "3D",
+            "trash_id": "b8cd450cbfa689c0259a01d9e29ba3d6",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "AV1",
+            "trash_id": "cae4ca30163749b891686f95532519bd",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "BR-DISK",
+            "trash_id": "ed38b889b31be83fda192888e2286d83",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Extras",
+            "trash_id": "0a3f082873eb454bde444150b70253cc",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "FR LQ",
+            "trash_id": "48f031e76111f17ea94898f4cdc34fdc",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "LQ",
+            "trash_id": "90a6f9a284dff5103f6346090e6280c8",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "LQ (Release Title)",
+            "trash_id": "e204b80c87be9497a8a6eaff48f72905",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Bad Dual Groups",
+            "trash_id": "b6832f586342ef70d9c128d40c07b872",
+            "required": false
+        },
+        {
+            "name": "Black and White Editions",
+            "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+            "required": false
+        },
+        {
+            "name": "No-RlsGroup",
+            "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
+            "required": false
+        },
+        {
+            "name": "Obfuscated",
+            "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
+            "required": false
+        },
+        {
+            "name": "Retags",
+            "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
+            "required": false
+        },
+        {
+            "name": "Scene",
+            "trash_id": "f537cf427b64c38c8e36298f657e4828",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "[French MULTi.VO] HD Bluray + WEB": "2572ce3ea4eef1c19d59e0e20ed1cea7",
+            "[French MULTi.VO] HD Remux (1080p)": "c6460a102b312200c095a2d0982e0461",
+            "[French MULTi.VO] UHD Bluray + WEB": "92ead7022d13a7858d54e328e6a2f8f9",
+            "[French MULTi.VO] UHD Remux (2160p)": "1fef28c8c919f31cd86283b1baf527d4",
+            "[French MULTi.VF] HD Bluray + WEB": "500ecc23572575511fd81893777d1e06",
+            "[French MULTi.VF] HD Remux (1080p)": "6b93fe45f357e9a94228e5d4658e9bb5",
+            "[French MULTi.VF] UHD Bluray + WEB": "e64b266178c7f70e208f493f00e0e50a",
+            "[French MULTi.VF] UHD Remux (2160p)": "595bb95c6b6970468880069dce23e1d2",
+            "[French VOSTFR] HD Bluray + WEB": "1addc08c4232bc2617684d517df15f75",
+            "[French VOSTFR] HD Remux (1080p)": "d98f20924b001e9f6b9595d5440abc87",
+            "[French VOSTFR] UHD Bluray + WEB": "525bf0513e2ac22fe116e8d7bec0a6b5",
+            "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a",
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
+    }
+}

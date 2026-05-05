@@ -74,7 +74,6 @@
     "FR WEB Tier 01": "9790a618cec1aeac8ce75601a17ea40d",
     "FR WEB Tier 02": "3c83a765f84239716bd5fd2d7af188f9",
     "FR Scene Groups": "0d94489c0d5828cd3bf9409d309fb32b",
-    "FR LQ": "48f031e76111f17ea94898f4cdc34fdc",
     "Remux Tier 01": "3a3ff47579026e76d6504ebea39390de",
     "Remux Tier 02": "9f98181fe5a3fbeb0cc29340da2a468a",
     "Remux Tier 03": "8baaf0b3142bf4d94c42a724f034e27a",
@@ -87,13 +86,7 @@
     "Repack/Proper": "e7718d7a3ce595f289bfee26adc178f5",
     "Repack2": "ae43b294509409a6a13919dedd4764c4",
     "Repack3": "5caaaa1c08c1742aa4342d8c4cc463f2",
-    "BR-DISK": "ed38b889b31be83fda192888e2286d83",
-    "LQ": "90a6f9a284dff5103f6346090e6280c8",
-    "LQ (Release Title)": "e204b80c87be9497a8a6eaff48f72905",
-    "3D": "b8cd450cbfa689c0259a01d9e29ba3d6",
     "Upscaled": "bfd8eb01832d646a0a89c4deb46f8564",
-    "Extras": "0a3f082873eb454bde444150b70253cc",
-    "Sing-Along Versions": "712d74cd88bceb883ee32f773656b1f5",
-    "AV1": "cae4ca30163749b891686f95532519bd"
+    "Sing-Along Versions": "712d74cd88bceb883ee32f773656b1f5"
   }
 }
