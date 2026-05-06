@@ -73,6 +73,15 @@
       }
     },
     {
+      "name": "EniaHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(EniaHD)$"
+      }
+    },
+    {
       "name": "EXTREME",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
