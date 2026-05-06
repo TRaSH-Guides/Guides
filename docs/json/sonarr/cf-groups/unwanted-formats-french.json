@@ -41,11 +41,6 @@
             "default": true
         },
         {
-            "name": "Bad Dual Groups",
-            "trash_id": "32b367365729d530ca1c124a0b180c64",
-            "required": false
-        },
-        {
             "name": "No-RlsGroup",
             "trash_id": "82d40da2bc6923f41e14394075dd4b03",
             "required": false
@@ -58,11 +53,6 @@
         {
             "name": "Retags",
             "trash_id": "06d66ab109d4d2eddb2794d21526d140",
-            "required": false
-        },
-        {
-            "name": "Scene",
-            "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
             "required": false
         }
     ],
