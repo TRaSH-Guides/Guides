@@ -17,6 +17,11 @@
             "default": true
         },
         {
+            "name": "BR-DISK (BTN)",
+            "trash_id": "6f808933a71bd9666531610cb8c059cc",
+            "required": false
+        },
+        {
             "name": "Extras",
             "trash_id": "fbcb31d8dabd2a319072b84fc0b7249c",
             "required": false,
@@ -54,6 +59,12 @@
             "name": "Retags",
             "trash_id": "06d66ab109d4d2eddb2794d21526d140",
             "required": false
+        },
+        {
+            "name": "Upscaled",
+            "trash_id": "23297a736ca77c0fc8e70f8edd7ee56c",
+            "required": false,
+            "default": true
         }
     ],
     "quality_profiles": {
