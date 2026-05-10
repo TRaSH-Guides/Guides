@@ -33,8 +33,8 @@ We've made 3 guides related to this.
 
 ---
 
-| Audio Formats                         | Audio Channels               | HDR Formats                      | HDR Optional                                 |
-| ------------------------------------- | ---------------------------- | -------------------------------- | -------------------------------------------- |
+| Audio Formats                         | Audio Channels               | HDR Formats                      | HDR Formats (Optional)                       |
+|---------------------------------------|------------------------------|----------------------------------|----------------------------------------------|
 | [TrueHD ATMOS](#truehd-atmos)         | [1.0 Mono](#10-mono)         | [HDR](#hdr)                      | [DV (Disk)](#dv-disk)                        |
 | [DTS X](#dts-x)                       | [2.0 Stereo](#20-stereo)     | [DV Boost](#dv-boost)            | [DV (w/o HDR fallback)](#dv-wo-hdr-fallback) |
 | [ATMOS (undefined)](#atmos-undefined) | [3.0 Sound](#30-sound)       | [HDR10+ Boost](#hdr10plus-boost) | [SDR](#sdr)                                  |
@@ -54,31 +54,15 @@ We've made 3 guides related to this.
 
 ---
 
-| Movie Versions                                | Unwanted                                        | HQ Release Groups                         |
-| --------------------------------------------- | ----------------------------------------------- | ----------------------------------------- |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)                                       | [Remux Tier 01](#remux-tier-01)           |
-| [Criterion Collection](#criterion-collection) | [AV1](#av1)                                     | [Remux Tier 02](#remux-tier-02)           |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                             | [Remux Tier 03](#remux-tier-03)           |
-| [IMAX Enhanced](#imax-enhanced)               | [Extras](#extras)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
-| [IMAX](#imax)                                 | [Generated Dynamic HDR](#generated-dynamic-hdr) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
-| [Masters of Cinema](#masters-of-cinema)       | [LQ](#lq)                                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
-| [Open Matte](#open-matte)                     | [LQ (Release Title)](#lq-release-title)         | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
-| [Remaster](#remaster)                         | [Sing-Along Versions](#sing-along-versions)     | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
-| [Special Edition](#special-edition)           | [Upscaled](#upscaled)                           | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
-| [Theatrical Cut](#theatrical-cut)             | [x265 (HD)](#x265-hd)                           | [WEB Tier 01](#web-tier-01)               |
-| [Vinegar Syndrome](#vinegar-syndrome)         |                                                 | [WEB Tier 02](#web-tier-02)               |
-|                                               |                                                 | [WEB Tier 03](#web-tier-03)               |
-
----
-
-| General Streaming Services | Asian Streaming Services | Dutch Streaming Services |
-| -------------------------- | ------------------------ | ------------------------ |
-| [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
-| [Apple TV](#atv)           | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| Streaming Services General | Streaming Services Asian | Streaming Services Dutch |
+|----------------------------|--------------------------|--------------------------|
+| [Amazon](#amzn)            | [Disney+ Hotstar](#htsr) | [Pathe Thuis](#pathe)    |
+| [Apple TV](#atv)           | [FOD](#fod)              | [Videoland](#vdl)        |
 | [Apple TV+](#atvp)         | [TVer](#tver)            |                          |
 | [Bravia Core](#bcore)      | [TVING](#tving)          |                          |
 | [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
 | [Disney+](#dsnp)           | [VIU](#viu)              |                          |
+| [Google Play](#play)       |                          |                          |
 | [HBO](#hbo)                |                          |                          |
 | [HBO Max](#hmax)           |                          |                          |
 | [Hulu](#hulu)              |                          |                          |
@@ -86,83 +70,114 @@ We've made 3 guides related to this.
 | [Max](#max)                |                          |                          |
 | [Movies Anywhere](#ma)     |                          |                          |
 | [Netflix](#nf)             |                          |                          |
-| [Peacock TV](#pcok)        |                          |                          |
 | [Paramount+](#pmtp)        |                          |                          |
-| [Google Play](#play)       |                          |                          |
+| [Peacock TV](#pcok)        |                          |                          |
 | [ROKU](#roku)              |                          |                          |
 | [Stan](#stan)              |                          |                          |
 
-| UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
-| --------------------- | ----------------------- | ------------------------ |
-| [BBC iPlayer](#ip)    | [AUBC](#aubc)           | [VRV](#vrv)              |
-| [ITVX](#itvx)         | [CBC](#cbc)             |                          |
-| [MY5](#my5)           | [Crave](#crav)          |                          |
-| [NOW](#now)           | [OViD](#ovid)           |                          |
-|                       | [Star+](#strp)          |                          |
+| Streaming Services Misc | Streaming Services UK | Streaming Services Anime |
+|-------------------------|-----------------------|--------------------------|
+| [AUBC](#aubc)           | [BBC iPlayer](#ip)    | [VRV](#vrv)              |
+| [CBC](#cbc)             | [ITVX](#itvx)         |                          |
+| [Crave](#crav)          | [MY5](#my5)           |                          |
+| [OViD](#ovid)           | [NOW](#now)           |                          |
+| [Star+](#strp)          |                       |                          |
 
 ---
 
-| Miscellaneous                                         | Language profiles                                                                                                     | Accessibility (Optional) |
-|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [720p](#720p)                                         | [Language: German](#language-german)                                                                                  | [WiTH AD](#with-ad)      |
-| [1080p](#1080p)                                       | [Language: German DL](#language-german-dl)                                                                            | [WiTH ASL](#with-asl)    |
-| [2160p](#2160p)                                       | [Language: German DL (undefined)](#language-german-dl-undefined)                                                      | [WiTH BASL](#with-basl)  |
-| [Bad Dual Groups](#bad-dual-groups)                   | [Language: Not English (English Only)](#language-not-english)                                                         | [WiTH BSL](#with-bsl)    |
-| [Black and White Editions](#black-and-white-editions) | [Language: Not French (French Only)](#language-not-french)                                                            |                          |
-| [Dutch Groups](#dutch-groups)                         | [Language: Not Original (Original Only)](#language-not-original)                                                      |                          |
-| [FreeLeech](#freeleech)                               | [Language: Original + French](#language-original-plus-french)                                                         |                          |
-| [HFR](#hfr)                                           | [Language: Not German or English](#language-not-german-or-english)                                                    |                          |
-| [Internal](#internal)                                 | [Language: Not German, Japanese or English](#language-not-german-japanese-or-english)                                 |                          |
-| [MPEG2](#mpeg2)                                       | [Language: Not German, Japanese, Korean, Chinese or English](#language-not-german-japanese-korean-chinese-or-english) |                          |
-| [Multi](#multi)                                       | [Language: German Anime Subbed](#language-german-anime-subbed)                                                        |                          |
-| [No-RlsGroup](#no-rlsgroup)                           |                                                                                                                       |                          |
-| [Obfuscated](#obfuscated)                             |                                                                                                                       |                          |
-| [P2P Internal](#p2p-internal)                         |                                                                                                                       |                          |
-| [Repack/Proper](#repackproper)                        |                                                                                                                       |                          |
-| [Repack2](#repack2)                                   |                                                                                                                       |                          |
-| [Repack3](#repack3)                                   |                                                                                                                       |                          |
-| [Retags](#retags)                                     |                                                                                                                       |                          |
-| [Scene](#scene)                                       |                                                                                                                       |                          |
-| [VC-1](#vc-1)                                         |                                                                                                                       |                          |
-| [VP9](#vp9)                                           |                                                                                                                       |                          |
-| [x264](#x264)                                         |                                                                                                                       |                          |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)                    |                                                                                                                       |                          |
-| [x265](#x265)                                         |                                                                                                                       |                          |
-| [x266](#x266)                                         |                                                                                                                       |                          |
+| Movie Versions (Optional)                     | Unwanted Formats                                      | HQ Release Groups                         |
+|-----------------------------------------------|-------------------------------------------------------|-------------------------------------------|
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)                                             | [Remux Tier 01](#remux-tier-01)           |
+| [Criterion Collection](#criterion-collection) | [AV1](#av1)                                           | [Remux Tier 02](#remux-tier-02)           |
+| [Hybrid](#hybrid)                             | [Bad Dual Groups](#bad-dual-groups)                   | [Remux Tier 03](#remux-tier-03)           |
+| [IMAX](#imax)                                 | [Black and White Editions](#black-and-white-editions) | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
+| [IMAX Enhanced](#imax-enhanced)               | [BR-DISK](#br-disk)                                   | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
+| [Masters of Cinema](#masters-of-cinema)       | [Extras](#extras)                                     | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
+| [Open Matte](#open-matte)                     | [Generated Dynamic HDR](#generated-dynamic-hdr)       | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
+| [Remaster](#remaster)                         | [Line/Mic Dubbed](#linemic-dubbed)                    | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
+| [Special Edition](#special-edition)           | [LQ](#lq)                                             | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
+| [Theatrical Cut](#theatrical-cut)             | [LQ (Release Title)](#lq-release-title)               | [WEB Tier 01](#web-tier-01)               |
+| [Vinegar Syndrome](#vinegar-syndrome)         | [No-RlsGroup](#no-rlsgroup)                           | [WEB Tier 02](#web-tier-02)               |
+|                                               | [Obfuscated](#obfuscated)                             | [WEB Tier 03](#web-tier-03)               |
+|                                               | [Retags](#retags)                                     |                                           |
+|                                               | [Scene](#scene)                                       |                                           |
+|                                               | [Sing-Along Versions](#sing-along-versions)           |                                           |
+|                                               | [Upscaled](#upscaled)                                 |                                           |
 
 ---
 
-| Anime                                  | Anime                                   | Anime     | Anime Optional                        |
-| -------------------------------------- | --------------------------------------- | --------- | ------------------------------------- |
-| [Anime BD Tier 01](#anime-bd-tier-01)  | [Anime Web Tier 01](#anime-web-tier-01) | [v0](#v0) | [Uncensored](#uncensored)             |
-| [Anime BD Tier 02](#anime-bd-tier-02)  | [Anime Web Tier 02](#anime-web-tier-02) | [v1](#v1) | [10bit](#10bit)                       |
-| [Anime BD Tier 03](#anime-bd-tier-03)  | [Anime Web Tier 03](#anime-web-tier-03) | [v2](#v2) | [Anime Dual Audio](#anime-dual-audio) |
-| [Anime BD Tier 04](#anime-bd-tier-04)  | [Anime Web Tier 04](#anime-web-tier-04) | [v3](#v3) | [Dubs Only](#dubs-only)               |
-| [Anime BD Tier 05](#anime-bd-tier-05)  | [Anime Web Tier 05](#anime-web-tier-05) | [v4](#v4) |                                       |
-| [Anime BD Tier 06](#anime-bd-tier-06)  | [Anime Web Tier 06](#anime-web-tier-06) |           |                                       |
-| [Anime BD Tier 07](#anime-bd-tier-07)  | [Anime Raws](#anime-raws)               |           |                                       |
-| [Anime BD Tier 08](#anime-bd-tier-08)  | [Anime LQ Groups](#anime-lq-groups)     |           |                                       |
+| Repacks/Proper (Required)      | Golden Rule (Optional)             | Miscellaneous (Optional)      | Resolution (Optional) |
+|--------------------------------|------------------------------------|-------------------------------|-----------------------|
+| [Repack/Proper](#repackproper) | [x265 (no HDR/DV)](#x265-no-hdrdv) | [FreeLeech](#freeleech)       | [720p](#720p)         |
+| [Repack2](#repack2)            | [x265 (HD)](#x265-hd)              | [HFR](#hfr)                   | [1080p](#1080p)       |
+| [Repack3](#repack3)            |                                    | [Internal](#internal)         | [2160p](#2160p)       |
+|                                |                                    | [MPEG2](#mpeg2)               |                       |
+|                                |                                    | [Multi](#multi)               |                       |
+|                                |                                    | [P2P Internal](#p2p-internal) |                       |
+|                                |                                    | [VC-1](#vc-1)                 |                       |
+|                                |                                    | [VP9](#vp9)                   |                       |
+|                                |                                    | [x264](#x264)                 |                       |
+|                                |                                    | [x265](#x265)                 |                       |
+|                                |                                    | [x266](#x266)                 |                       |
 
 ---
 
-| German Source Groups                                        | German Miscellaneous                                  | French Source Groups                            | French Audio Version |
-| ----------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- | -------------------- |
-| [German Remux Tier 01](#german-remux-tier-01)               | [German LQ](#german-lq)                               | [FR Remux Tier 01](#fr-remux-tier-01)           | [VFF](#vff)          |
-| [German Remux Tier 02](#german-remux-tier-02)               | [German LQ (Release Title)](#german-lq-release-title) | [FR Remux Tier 02](#fr-remux-tier-02)           | [VOF](#vof)          |
-| [German Bluray Tier 01](#german-bluray-tier-01)             | [German Microsized](#german-microsized)               | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) | [VFI](#vfi)          |
-| [German Bluray Tier 02](#german-bluray-tier-02)             | [German 1080p Booster](#german-1080p-booster)         | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) | [VF2](#vf2)          |
-| [German Bluray Tier 03](#german-bluray-tier-03)             | [German 2160p Booster](#german-2160p-booster)         | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   | [VFQ](#vfq)          |
-| [German Web Tier 01](#german-web-tier-01)                   | [Line/Mic Dubbed](#linemic-dubbed)                    | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
-| [German Web Tier 02](#german-web-tier-02)                   |                                                       | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
-| [German Web Tier 03](#german-web-tier-03)                   |                                                       | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
-| [German Scene](#german-scene)                               |                                                       | [FR Anime Tier 01](#fr-anime-tier-01)           | [VOSTFR](#vostfr)    |
-| [German Anime Bluray Tier 01](#german-anime-bluray-tier-01) |                                                       | [FR Anime Tier 02](#fr-anime-tier-02)           | [FanSUB](#fansub)    |
-| [German Anime Bluray Tier 02](#german-anime-bluray-tier-02) |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)           | [FastSUB](#fastsub)  |
-| [German Anime Bluray Tier 03](#german-anime-bluray-tier-03) |                                                       | [FR Anime FanSub](#fr-anime-fansub)             |                      |
-| [German Anime Web Tier 01](#german-anime-web-tier-01)       |                                                       | [FR Scene Groups](#fr-scene-groups)             |                      |
-| [German Anime Web Tier 02](#german-anime-web-tier-02)       |                                                       | [FR LQ](#fr-lq)                                 |                      |
-| [German Anime Web Tier 03](#german-anime-web-tier-03)       |                                                       |                                                 |                      |
-| [German Anime Scene](#german-anime-scene)                   |                                                       |                                                 |                      |
+| Language profiles (Optional)                                                                       | Accessibility (Optional) |
+|----------------------------------------------------------------------------------------------------|--------------------------|
+| [German](#german)                                                                                  | [WiTH AD](#with-ad)      |
+| [German DL](#german-dl)                                                                            | [WiTH ASL](#with-asl)    |
+| [German DL (undefined)](#german-dl-undefined)                                                      | [WiTH BASL](#with-basl)  |
+| [Language: Not English (English Only)](#language-not-english)                                      | [WiTH BSL](#with-bsl)    |
+| [Language: Not French (French Only)](#language-not-french)                                         |                          |
+| [Language: Not Original (Original Only)](#language-not-original)                                   |                          |
+| [Language: Original + French](#language-original-plus-french)                                      |                          |
+| [Not German or English](#not-german-or-english)                                                    |                          |
+| [Not German, Japanese or English](#not-german-japanese-or-english)                                 |                          |
+| [Not German, Japanese, Korean, Chinese or English](#not-german-japanese-korean-chinese-or-english) |                          |
+| [Wrong Language](#wrong-language)                                                                  |                          |
+
+---
+
+| Anime Release Groups                  | Anime Release Groups                    | Anime Versions | Anime Optional                        |
+|---------------------------------------|-----------------------------------------|----------------|---------------------------------------|
+| [Anime BD Tier 01](#anime-bd-tier-01) | [Anime Web Tier 01](#anime-web-tier-01) | [v0](#v0)      | [10bit](#10bit)                       |
+| [Anime BD Tier 02](#anime-bd-tier-02) | [Anime Web Tier 02](#anime-web-tier-02) | [v1](#v1)      | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 03](#anime-bd-tier-03) | [Anime Web Tier 03](#anime-web-tier-03) | [v2](#v2)      | [Dubs Only](#dubs-only)               |
+| [Anime BD Tier 04](#anime-bd-tier-04) | [Anime Web Tier 04](#anime-web-tier-04) | [v3](#v3)      | [Uncensored](#uncensored)             |
+| [Anime BD Tier 05](#anime-bd-tier-05) | [Anime Web Tier 05](#anime-web-tier-05) | [v4](#v4)      |                                       |
+| [Anime BD Tier 06](#anime-bd-tier-06) | [Anime Web Tier 06](#anime-web-tier-06) |                |                                       |
+| [Anime BD Tier 07](#anime-bd-tier-07) | [Anime Raws](#anime-raws)               |                |                                       |
+| [Anime BD Tier 08](#anime-bd-tier-08) | [Anime LQ Groups](#anime-lq-groups)     |                |                                       |
+
+---
+
+| German Release Groups                           | German Anime Release Groups                                 | German Miscellaneous                          | German Unwanted                                       |
+|-------------------------------------------------|-------------------------------------------------------------|-----------------------------------------------|-------------------------------------------------------|
+| [German Remux Tier 01](#german-remux-tier-01)   | [German Anime Bluray Tier 01](#german-anime-bluray-tier-01) | [German 1080p Booster](#german-1080p-booster) | [German LQ](#german-lq)                               |
+| [German Remux Tier 02](#german-remux-tier-02)   | [German Anime Bluray Tier 02](#german-anime-bluray-tier-02) | [German 2160p Booster](#german-2160p-booster) | [German LQ (Release Title)](#german-lq-release-title) |
+| [German Bluray Tier 01](#german-bluray-tier-01) | [German Anime Bluray Tier 03](#german-anime-bluray-tier-03) | [German Subbed](#german-subbed)               | [German Microsized](#german-microsized)               |
+| [German Bluray Tier 02](#german-bluray-tier-02) | [German Anime Web Tier 01](#german-anime-web-tier-01)       |                                               |                                                       |
+| [German Bluray Tier 03](#german-bluray-tier-03) | [German Anime Web Tier 02](#german-anime-web-tier-02)       |                                               |                                                       |
+| [German Web Tier 01](#german-web-tier-01)       | [German Anime Web Tier 03](#german-anime-web-tier-03)       |                                               |                                                       |
+| [German Web Tier 02](#german-web-tier-02)       | [German Anime Scene](#german-anime-scene)                   |                                               |                                                       |
+| [German Web Tier 03](#german-web-tier-03)       |                                                             |                                               |                                                       |
+| [German Scene](#german-scene)                   |                                                             |                                               |                                                       |
+
+---
+
+| French Release Groups                           | French Anime Release Groups             | French Audio Version |
+|-------------------------------------------------|-----------------------------------------|----------------------|
+| [FR Remux Tier 01](#fr-remux-tier-01)           | [FR Anime Tier 01](#fr-anime-tier-01)   | [VFF](#vff)          |
+| [FR Remux Tier 02](#fr-remux-tier-02)           | [FR Anime Tier 02](#fr-anime-tier-02)   | [VOF](#vof)          |
+| [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) | [FR Anime Tier 03](#fr-anime-tier-03)   | [VFI](#vfi)          |
+| [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) | [FR Anime FanSub](#fr-anime-fansub)     | [VF2](#vf2)          |
+| [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |                                         | [VFQ](#vfq)          |
+| [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |                                         | [VOQ](#voq)          |
+| [FR WEB Tier 01](#fr-web-tier-01)               |                                         | [VQ](#vq)            |
+| [FR WEB Tier 02](#fr-web-tier-02)               |                                         | [VFB](#vfb)          |
+| [FR Scene Groups](#fr-scene-groups)             |                                         | [VOSTFR](#vostfr)    |
+| [FR LQ](#fr-lq)                                 |                                         | [FanSUB](#fansub)    |
+|                                                 |                                         | [FastSUB](#fastsub)  |
 
 ---
 
@@ -648,39 +663,679 @@ We've made 3 guides related to this.
 
 ---
 
+## Streaming Services
+
+---
+
+### Streaming Services General
+
+#### AMZN
+
+<sub>Amazon Prime Video</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/amzn.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/amzn.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### ATV
+
+<sub>Apple TV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/atv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### ATVP
+
+<sub>Apple TV+</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/atvp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atvp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### BCORE
+
+<sub>Bravia Core</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/bcore.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bcore.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### CRiT
+
+<sub>Criterion Channel</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/crit.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crit.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### DSNP
+
+<sub>Disney+</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dsnp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### PLAY
+
+<sub>Google Play</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/play.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/play.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### HBO
+
+<sub>HBO</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hbo.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### HMAX
+
+<sub>HBO Max</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hmax.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### Hulu
+
+<sub>Hulu</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### IT
+
+<sub>iT = iTunes</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/it.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/it.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### Max
+
+<sub>Max (streaming service)</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/max.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### MA
+
+<sub>Movies Anywhere</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ma.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### NF
+
+<sub>Netflix</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/nf.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/nf.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### PMTP
+
+<sub>Paramount+</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### PCOK
+
+<sub>Peacock TV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pcok.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### ROKU
+
+<sub>ROKU</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/roku.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/roku.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### STAN
+
+<sub>Stan</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/stan.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/stan.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Asian Streaming Services
+
+---
+
+#### HTSR
+
+<sub>Disney+ Hotstar</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/htsr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/htsr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### FOD
+
+<sub>FOD = Fuji Television On Demand</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fod.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### TVer
+
+<sub>TVer</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/tver.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tver.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### TVING
+
+<sub>TVING</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/tving.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tving.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### U-NEXT
+
+<sub>U-NEXT</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/u-next.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/u-next.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### VIU
+
+<sub>VIU</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/viu.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/viu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Dutch Streaming Services
+
+---
+
+#### Pathe
+
+<sub>Pathé Thuis</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pathe.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### VDL
+
+<sub>Videoland</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Misc Streaming Services
+
+---
+
+#### AUBC
+
+<sub>Australian Broadcasting Corporation</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/aubc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/aubc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### CBC
+
+<sub>CBC</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cbc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cbc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### Crav
+
+<sub>Crave</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### OViD
+
+<sub>OViD</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### STRP
+
+<sub>Star+</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/strp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/strp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### UK Streaming Services
+
+---
+
+#### iP
+
+<sub>BBC iPlayer aka iP</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ip.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ip.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### ITVX
+
+<sub>ITVX aka ITV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/itvx.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/itvx.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### MY5
+
+<sub>MY5 aka Channel 5</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/my5.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/my5.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### NOW
+
+<sub>NOW</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/now.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/now.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Anime Streaming Services
+
+---
+
+#### VRV
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vrv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ## Movie Versions
-
----
-
-### Hybrid
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hybrid.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hybrid.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Remaster
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/remaster.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remaster.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -716,64 +1371,16 @@ We've made 3 guides related to this.
 
 ---
 
-### Masters of Cinema
+### Hybrid
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/masters-of-cinema.md" !}
+    {! include-markdown "../../includes/cf-descriptions/hybrid.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/masters-of-cinema.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Vinegar Syndrome
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/vinegar-syndrome.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vinegar-syndrome.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Theatrical Cut
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/theatrical-cut.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/theatrical-cut.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Special Edition
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/special-edition.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/special-edition.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hybrid.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -812,6 +1419,22 @@ We've made 3 guides related to this.
 
 ---
 
+### Masters of Cinema
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/masters-of-cinema.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/masters-of-cinema.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ### Open Matte
 
 ??? question "Description - [Click to show/hide]"
@@ -828,7 +1451,87 @@ We've made 3 guides related to this.
 
 ---
 
-## Unwanted
+### Remaster
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/remaster.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remaster.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Special Edition
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/special-edition.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/special-edition.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Theatrical Cut
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/theatrical-cut.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/theatrical-cut.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Vinegar Syndrome
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vinegar-syndrome.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vinegar-syndrome.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## Unwanted Formats
+
+---
+
+### 3D
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/3d.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/3d.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -842,6 +1545,38 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/av1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Bad Dual Groups
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/bad-dual-groups.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Black and White Editions
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/black-and-white-editions.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/black-and-white-editions.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -864,6 +1599,22 @@ We've made 3 guides related to this.
 
 ---
 
+### Extras
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/extras.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/extras.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ### Generated Dynamic HDR
 
 ??? question "Description - [Click to show/hide]"
@@ -874,6 +1625,22 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/generated-dynamic-hdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Line/Mic Dubbed
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/line-mic-dubbed.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/line-mic-dubbed.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -916,172 +1683,6 @@ We've made 3 guides related to this.
 
 ---
 
-### Sing-Along Versions
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/sing-along-versions.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sing-along-versions.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### 3D
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/3d.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/3d.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### x265 (HD)
-
-<sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/x265-hd-radarr.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-hd.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Upscaled
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/upscaled.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/upscaled.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Extras
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/extras.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/extras.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-## Miscellaneous
-
----
-
-### 720p
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/720p.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/720p.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### 1080p
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/1080p.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/1080p.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### 2160p
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/2160p.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/2160p.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Bad Dual Groups
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/bad-dual-groups.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Black and White Editions
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/black-and-white-editions.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/black-and-white-editions.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
 ### No-RlsGroup
 
 ??? question "Description - [Click to show/hide]"
@@ -1108,24 +1709,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/obfuscated.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
----
-
-### P2P Internal
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/p2p-internal.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/p2p-internal.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1164,312 +1747,32 @@ We've made 3 guides related to this.
 
 ---
 
-### x265 (no HDR/DV)
+### Sing-Along Versions
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/x265-no-hdrdv-radarr.md" !}
+    {! include-markdown "../../includes/cf-descriptions/sing-along-versions.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sing-along-versions.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### VC-1
+### Upscaled
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/vc-1.md" !}
+    {! include-markdown "../../includes/cf-descriptions/upscaled.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vc-1.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### VP9
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/vp9.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vp9.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Internal
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/internal.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/internal.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Line/Mic Dubbed
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/line-mic-dubbed.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/line-mic-dubbed.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### HFR
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hfr.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hfr.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Repack/Proper
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack-proper.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Repack2
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack2.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Repack3
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack3.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### x264
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/x264.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x264.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### x265
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/x265.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### x266
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/x266.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x266.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FreeLeech
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/freeleech.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/freeleech.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Dutch Groups
-
-??? question "Description - [Click to show/hide]"
-
-    If you prefer movies with also a Dutch audio track.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dutch-groups.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### MPEG2
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/mpeg2.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Multi
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/multi.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-## Accessibility (Optional)
-
----
-
-### WiTH AD
-
-<sub>Audio Description</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/with-ad.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-ad.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### WiTH ASL
-
-<sub>American Sign Language</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/with-asl.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-asl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### WiTH BASL
-
-<sub>Black American Sign Language</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/with-basl.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-basl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### WiTH BSL
-
-<sub>British Sign Language</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/with-bsl.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-bsl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/upscaled.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1672,679 +1975,579 @@ We've made 3 guides related to this.
 
 ---
 
-## Streaming Services
+## Repacks/Proper (Required)
 
 ---
 
-### General Streaming Services
-
-#### AMZN
-
-<sub>Amazon Prime Video</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/amzn.md" !}
+### Repack/Proper
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/amzn.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack-proper.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### ATV
-
-<sub>Apple TV</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/atv.md" !}
+### Repack2
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atv.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack2.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### ATVP
-
-<sub>Apple TV+</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/atvp.md" !}
+### Repack3
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atvp.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack3.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### BCORE
+## Golden Rule (Optional)
 
-<sub>Bravia Core</sub>
+??? question "Why block 720/1080p encodes in x265? - [Click to show/hide]"
+
+    --8<-- "includes/docker/x265.md"
+
+---
+
+### x265 (no HDR/DV)
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/bcore.md" !}
+    {! include-markdown "../../includes/cf-descriptions/x265-no-hdrdv-radarr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bcore.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### CRiT
+### x265 (HD)
 
-<sub>Criterion Channel</sub>
+<sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/crit.md" !}
+    {! include-markdown "../../includes/cf-descriptions/x265-hd-radarr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crit.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-hd.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### DSNP
+## Miscellaneous (Optional)
 
-<sub>Disney+</sub>
+---
+
+### FreeLeech
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
+    {! include-markdown "../../includes/cf-descriptions/freeleech.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dsnp.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/freeleech.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### HBO
-
-<sub>HBO</sub>
+### HFR
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
+    {! include-markdown "../../includes/cf-descriptions/hfr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hbo.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hfr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### HMAX
-
-<sub>HBO Max</sub>
+### Internal
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+    {! include-markdown "../../includes/cf-descriptions/internal.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hmax.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/internal.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### Hulu
-
-<sub>Hulu</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
+### MPEG2
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/mpeg2.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### IT
-
-<sub>iT = iTunes</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/it.md" !}
+### Multi
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/it.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/multi.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### Max
-
-<sub>Max (streaming service)</sub>
+### P2P Internal
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+    {! include-markdown "../../includes/cf-descriptions/p2p-internal.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/max.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/p2p-internal.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### MA
-
-<sub>Movies Anywhere</sub>
+### VC-1
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/ma.md" !}
+    {! include-markdown "../../includes/cf-descriptions/vc-1.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vc-1.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### NF
-
-<sub>Netflix</sub>
+### VP9
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/nf.md" !}
+    {! include-markdown "../../includes/cf-descriptions/vp9.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/nf.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vp9.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### PCOK
-
-<sub>Peacock TV</sub>
+### x264
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
+    {! include-markdown "../../includes/cf-descriptions/x264.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pcok.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x264.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### PMTP
-
-<sub>Paramount+</sub>
+### x265
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
+    {! include-markdown "../../includes/cf-descriptions/x265.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### PLAY
-
-<sub>Google Play</sub>
+### x266
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/play.md" !}
+    {! include-markdown "../../includes/cf-descriptions/x266.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/play.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x266.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### ROKU
+## Resolution (Optional)
 
-<sub>ROKU</sub>
+---
+
+### 720p
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/roku.md" !}
+    {! include-markdown "../../includes/cf-descriptions/720p.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/roku.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/720p.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### STAN
-
-<sub>Stan</sub>
+### 1080p
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/stan.md" !}
+    {! include-markdown "../../includes/cf-descriptions/1080p.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/stan.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/1080p.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### Asian Streaming Services
-
----
-
-#### FOD
-
-<sub>FOD = Fuji Television On Demand</sub>
+### 2160p
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
+    {! include-markdown "../../includes/cf-descriptions/2160p.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fod.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/2160p.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### HTSR
+## Language Profiles
 
-<sub>Disney+ Hotstar</sub>
+---
+
+### German
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/htsr.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-german.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/htsr.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### TVer
+### German DL
 
-<sub>TVer</sub>
+<sub>Language: German + Original</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/tver.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tver.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german-dl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### TVING
-
-<sub>TVING</sub>
+### German DL (undefined)
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/tving.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tving.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german-dl-undefined.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### U-NEXT
+### Language: Not English
 
-<sub>U-NEXT</sub>
+<sub>Language: English Only</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/u-next.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/u-next.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### VIU
+### Language: Not French
 
-<sub>VIU</sub>
+<sub>Language: French Only</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/viu.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/viu.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-french.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### Dutch Streaming Services
+### Language: Not Original
 
----
-
-#### Pathe
-
-<sub>Pathé Thuis</sub>
+<sub>Language: Original Only</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/pathe.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-original.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### VDL
+### Language: Original Plus French
 
-<sub>Videoland</sub>
+<sub>Language: Original + French</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-original-plus-french.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vdl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-plus-french.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### UK Streaming Services
-
----
-
-#### iP
-
-<sub>BBC iPlayer aka iP</sub>
+### Not German or English
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/ip.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-not-german-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ip.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-or-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### ITVX
-
-<sub>ITVX aka ITV</sub>
+### Not German, Japanese or English
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/itvx.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/itvx.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-japanese-or-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### MY5
-
-<sub>MY5 aka Channel 5</sub>
+### Not German, Japanese, Korean, Chinese or English
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/my5.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-korean-chinese-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/my5.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-japanese-korean-chinese-or-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### NOW
-
-<sub>NOW</sub>
+### Wrong Language
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/now.md" !}
+    {! include-markdown "../../includes/cf-descriptions/wrong-language.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/now.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/wrong-language.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### Misc Streaming Services
+## Accessibility (Optional)
 
 ---
 
-#### AUBC
+### WiTH AD
 
-<sub>Australian Broadcasting Corporation</sub>
+<sub>Audio Description</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/aubc.md" !}
+    {! include-markdown "../../includes/cf-descriptions/with-ad.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/aubc.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-ad.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### CBC
+### WiTH ASL
 
-<sub>CBC</sub>
+<sub>American Sign Language</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/cbc.md" !}
+    {! include-markdown "../../includes/cf-descriptions/with-asl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cbc.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-asl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### Crav
+### WiTH BASL
 
-<sub>Crave</sub>
+<sub>Black American Sign Language</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
+    {! include-markdown "../../includes/cf-descriptions/with-basl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-basl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### OViD
+### WiTH BSL
 
-<sub>OViD</sub>
+<sub>British Sign Language</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
+    {! include-markdown "../../includes/cf-descriptions/with-bsl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-bsl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-#### STRP
-
-<sub>Star+</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/strp.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/strp.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Anime Streaming Services
-
----
-
-#### VRV
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/vrv.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-## Anime
+## Anime Release Groups
 
 ---
 
@@ -2604,19 +2807,7 @@ We've made 3 guides related to this.
 
 ---
 
-### Uncensored
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/uncensored.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uncensored.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
+## Anime Versions
 
 ---
 
@@ -2700,6 +2891,10 @@ We've made 3 guides related to this.
 
 ---
 
+## Anime Optional
+
+---
+
 ### 10bit
 
 ??? question "Description - [Click to show/hide]"
@@ -2742,6 +2937,626 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dubs-only.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Uncensored
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/uncensored.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uncensored.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## German Release Groups
+
+---
+
+### German Remux Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-remux-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-remux-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Remux Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-remux-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-remux-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Bluray Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Bluray Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Bluray Tier 03
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-03.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Web Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-web-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Web Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-web-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Web Tier 03
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-web-tier-03.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Scene
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-scene.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## German Anime Release Groups
+
+---
+
+### German Anime Bluray Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Anime Bluray Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Anime Bluray Tier 03
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-03.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Anime Web Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Anime Web Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Anime Web Tier 03
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-03.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Anime Scene
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-anime-scene.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## German Miscellaneous
+
+---
+
+### German 1080p Booster
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-1080p-booster.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-1080p-booster.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German 2160p Booster
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-2160p-booster.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-2160p-booster.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German LQ
+
+<sub>German Low-Quality Releases = German LQ</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-lq.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German LQ (Release Title)
+
+<sub>Low-Quality Releases = LQ</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-lq-release-title.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq-release-title.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Microsized
+
+<sub>German Microsized Releases = German Microsized</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-microsized.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-microsized.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Subbed
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/german-subbed.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-subbed.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## French Release Groups
+
+---
+
+### FR Remux Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-remux-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-remux-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Remux Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-remux-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-remux-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR UHD Bluray Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-uhd-bluray-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-uhd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR UHD Bluray Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-uhd-bluray-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-uhd-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR HD Bluray Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-hd-bluray-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR HD Bluray Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-hd-bluray-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hd-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR WEB Tier 01
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-web-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR WEB Tier 02
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-web-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Scene Groups
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-scene.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR LQ
+
+<sub>French Low-Quality Releases = FR LQ</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-lq.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## French Anime Release Groups
+
+---
+
+### FR Anime Tier 01
+
+??? question "FR Anime Tier 01 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-01.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime Tier 02
+
+??? question "FR Anime Tier 02 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-02.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime Tier 03
+
+??? question "FR Anime Tier 03 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-03.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime FanSub
+
+??? question "FR Anime FanSub - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-anime-fansub.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -2928,772 +3743,4 @@ We've made 3 guides related to this.
 
 ---
 
-## French HQ Source Groups
-
----
-
-### FR Remux Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-remux-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-remux-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR Remux Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-remux-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-remux-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR UHD Bluray Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-uhd-bluray-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-uhd-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR UHD Bluray Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-uhd-bluray-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-uhd-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR HD Bluray Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-hd-bluray-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hd-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR HD Bluray Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-hd-bluray-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hd-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR WEB Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-web-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR WEB Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-web-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR Anime Tier 01
-
-??? question "FR Anime Tier 01 - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR Anime Tier 02
-
-??? question "FR Anime Tier 02 - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR Anime Tier 03
-
-??? question "FR Anime Tier 03 - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR Anime FanSub
-
-??? question "FR Anime FanSub - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-anime-fansub.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR Scene Groups
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-scene.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-scene.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### FR LQ
-
-<sub>French Low-Quality Releases = FR LQ</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-lq.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-lq.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-## German Source Groups
-
----
-
-### German Remux Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-remux-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-remux-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Remux Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-remux-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-remux-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Bluray Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Bluray Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Bluray Tier 03
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Web Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-web-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Web Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-web-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Web Tier 03
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-web-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Scene
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-scene.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Bluray Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Bluray Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Bluray Tier 03
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Web Tier 01
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-01.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Web Tier 02
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-02.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-02.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Web Tier 03
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-03.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-03.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Anime Scene
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-scene.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-scene.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-## German Miscellaneous
-
----
-
-### German LQ
-
-<sub>German Low-Quality Releases = German LQ</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-lq.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German LQ (Release Title)
-
-<sub>Low-Quality Releases = LQ</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-lq-release-title.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq-release-title.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Microsized
-
-<sub>German Microsized Releases = German Microsized</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-microsized.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-microsized.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German 1080p Booster
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-1080p-booster.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-1080p-booster.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German 2160p Booster
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-2160p-booster.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-2160p-booster.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-## Language Profiles
-
----
-
-### Language: Not French
-
-<sub>Language: French Only</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-french.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Not Original
-
-<sub>Language: Original Only</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-original.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Original Plus French
-
-<sub>Language: Original + French</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-original-plus-french.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-plus-french.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Not English
-
-<sub>Language: English Only</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: German DL
-
-<sub>Language: German + Original</sub>
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german-dl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: German DL (undefined)
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german-dl-undefined.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: German
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-german.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: German Anime Subbed
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/german-anime-subbed.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-subbed.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Not German or English
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-or-english.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-or-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Not German, Japanese or English
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-or-english.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-japanese-or-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Language: Not German, Japanese, Korean, Chinese or English
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-korean-chinese-or-english.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-japanese-korean-chinese-or-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
+<!-- END OF THE COLLECTION LIST -->
