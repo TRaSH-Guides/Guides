@@ -1,3 +1,8 @@
+# 2026-05-10 03:31
+- [fix(guide-sync): Created a dedicated French Unwanted Group](https://github.com/TRaSH-Guides/Guides/pull/2721)
+- [feat(starr): Add RlsGrp `EniaHD` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2708)
+- [fix(guide-sync): Add missing VOSTFR custom format in French VOSTFR quality profiles](https://github.com/TRaSH-Guides/Guides/pull/2704)
+
 # 2026-05-03 03:28
 - [fix(guide-sync): Created a dedicated German Unwanted Group](https://github.com/TRaSH-Guides/Guides/pull/2719)
 - [feat(guide-sync): Enabled the unwanted cf-group by default](https://github.com/TRaSH-Guides/Guides/pull/2715)
