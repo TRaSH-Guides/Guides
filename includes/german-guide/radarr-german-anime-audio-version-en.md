@@ -1,13 +1,13 @@
 <!-- markdownlint-disable MD041-->
 ??? abstract "German Anime Audio - [Click to show/hide]"
 
-    | Custom Format                                                                                                                                        | Score                                                                                    | Trash ID                                                                  |
-    |------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+    | Custom Format                                                                                                                               | Score                                                                           | Trash ID                                                         |
+    |---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------|
     | [{{ radarr['cf']['german']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german)                                                 | {{ radarr['cf']['german']['trash_scores']['default'] }}                         | {{ radarr['cf']['german']['trash_id'] }}                         |
     | [{{ radarr['cf']['german-dl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-dl)                                           | {{ radarr['cf']['german-dl']['trash_scores']['german-anime'] }}                 | {{ radarr['cf']['german-dl']['trash_id'] }}                      |
     | [{{ radarr['cf']['german-dl-undefined']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-dl-undefined)                       | {{ radarr['cf']['german-dl-undefined']['trash_scores']['default'] }}            | {{ radarr['cf']['german-dl-undefined']['trash_id'] }}            |
     | [{{ radarr['cf']['not-german-japanese-or-english']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#not-german-japanese-or-english) | {{ radarr['cf']['not-german-japanese-or-english']['trash_scores']['default'] }} | {{ radarr['cf']['not-german-japanese-or-english']['trash_id'] }} |
-    | [{{ radarr['cf']['german-subbed']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-subbed)                                            | {{ radarr['cf']['german-subbed']['trash_scores']['default'] }}                           | {{ radarr['cf']['german-subbed']['trash_id'] }}                           |
+    | [{{ radarr['cf']['german-subbed']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-subbed)                                   | {{ radarr['cf']['german-subbed']['trash_scores']['default'] }}                  | {{ radarr['cf']['german-subbed']['trash_id'] }}                  |
 
     ---
 

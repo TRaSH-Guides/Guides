@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD041-->
 ??? abstract "German Audio - [Click to show/hide]"
 
-    | Custom Format                                                                                                                            | Score                                                                         | Trash ID                                                       |
-    | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------- |
-    | [{{ radarr['cf']['german']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german)                            | {{ radarr['cf']['german']['trash_scores']['default'] }}              | {{ radarr['cf']['german']['trash_id'] }}              |
-    | [{{ radarr['cf']['german-dl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-dl)                      | {{ radarr['cf']['german-dl']['trash_scores']['german'] }}            | {{ radarr['cf']['german-dl']['trash_id'] }}           |
-    | [{{ radarr['cf']['german-dl-undefined']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-dl-undefined)  | {{ radarr['cf']['german-dl-undefined']['trash_scores']['default'] }} | {{ radarr['cf']['german-dl-undefined']['trash_id'] }} |
-    | [{{ radarr['cf']['not-german-or-english']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#not-german-or-english) | {{ radarr['cf']['not-german-or-english']['trash_scores']['default'] }}  | {{ radarr['cf']['not-german-or-english']['trash_id'] }}  |
+    | Custom Format                                                                                                             | Score                                                                  | Trash ID                                                |
+    |---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------|
+    | [{{ radarr['cf']['german']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german)                               | {{ radarr['cf']['german']['trash_scores']['default'] }}                | {{ radarr['cf']['german']['trash_id'] }}                |
+    | [{{ radarr['cf']['german-dl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-dl)                         | {{ radarr['cf']['german-dl']['trash_scores']['german'] }}              | {{ radarr['cf']['german-dl']['trash_id'] }}             |
+    | [{{ radarr['cf']['german-dl-undefined']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-dl-undefined)     | {{ radarr['cf']['german-dl-undefined']['trash_scores']['default'] }}   | {{ radarr['cf']['german-dl-undefined']['trash_id'] }}   |
+    | [{{ radarr['cf']['not-german-or-english']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#not-german-or-english) | {{ radarr['cf']['not-german-or-english']['trash_scores']['default'] }} | {{ radarr['cf']['not-german-or-english']['trash_id'] }} |
 
     ---
 
