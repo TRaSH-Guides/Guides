@@ -1,0 +1,37 @@
+{
+  "trash_id": "3873e64f7ff1df7805598c15821e011b",
+  "trash_scores": {
+    "default": 1600
+  },
+  "name": "Asian HQ Tier 2",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "PandaMoon",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PandaMoon)$"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

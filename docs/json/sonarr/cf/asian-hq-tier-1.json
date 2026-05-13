@@ -1,0 +1,163 @@
+{
+  "trash_id": "a69163b534969846c60b6b294e8ed7b3",
+  "trash_scores": {
+    "default": 1650
+  },
+  "name": "Asian HQ Tier 1",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "ANDY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ANDY)$"
+      }
+    },
+    {
+      "name": "Archie",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Archie)$"
+      }
+    },
+    {
+      "name": "ECLiPSE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ECLiPSE)$"
+      }
+    },
+    {
+      "name": "HBO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HBO)$"
+      }
+    },
+    {
+      "name": "HeavenlyOppa",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HeavenlyOppa)$"
+      }
+    },
+    {
+      "name": "iTsOK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iTsOK)$"
+      }
+    },
+    {
+      "name": "JKCT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(JKCT)$"
+      }
+    },
+    {
+      "name": "LoveBug",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LoveBug)$"
+      }
+    },
+    {
+      "name": "MARK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MARK)$"
+      }
+    },
+    {
+      "name": "MMR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MMR)$"
+      }
+    },
+    {
+      "name": "MrHulk",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MrHulk)$"
+      }
+    },
+    {
+      "name": "Phanteam",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Phanteam)$"
+      }
+    },
+    {
+      "name": "SH3LBY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SH3LBY)$"
+      }
+    },
+    {
+      "name": "SYNFM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SYNFM)$"
+      }
+    },
+    {
+      "name": "Wendy",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Wendy)$"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

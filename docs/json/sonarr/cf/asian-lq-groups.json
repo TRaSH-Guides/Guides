@@ -1,0 +1,73 @@
+{
+  "trash_id": "9a836f109fc47f7c459703c1dbafeeec",
+  "trash_scores": {
+    "default": -10000
+  },
+  "name": "Asian LQ Groups",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "AppleTor",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AppleTor)$"
+      }
+    },
+    {
+      "name": "Luvmichelle",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Luvmichelle)$"
+      }
+    },
+    {
+      "name": "MagicStar",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MagicStar)$"
+      }
+    },
+    {
+      "name": "NEXT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(NEXT)$"
+      }
+    },
+    {
+      "name": "Taengoo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Taengoo)$"
+      }
+    },
+    {
+      "name": "unco",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(unco)$"
+      }
+    },
+    {
+      "name": "unco@AvistaZ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(unco@AvistaZ)$"
+      }
+    }
+  ]
+}
