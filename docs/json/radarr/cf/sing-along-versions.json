@@ -1,7 +1,9 @@
 {
   "trash_id": "712d74cd88bceb883ee32f773656b1f5",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000
   },
   "trash_regex": "https://regex101.com/r/U9NMJU/1",
   "name": "Sing-Along Versions",
