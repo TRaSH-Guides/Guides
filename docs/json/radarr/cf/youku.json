@@ -1,0 +1,37 @@
+{
+  "trash_id": "02d24b392bdb901822d95c96e9fa30f1",
+  "trash_scores": {
+    "default": 30
+  },
+  "name": "YOUKU",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "YOUKU",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(YOUKU)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

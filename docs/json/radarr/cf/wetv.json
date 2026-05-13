@@ -1,0 +1,37 @@
+{
+    "trash_id": "e0ae51a2508ab62ffb1af027f3717486",
+    "trash_scores": {
+      "default": 30
+    },
+    "name": "WETV",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+      {
+        "name": "WETV",
+        "implementation": "ReleaseTitleSpecification",
+        "negate": false,
+        "required": true,
+        "fields": {
+          "value": "\\b(WETV)\\b"
+        }
+      },
+      {
+        "name": "WEBDL",
+        "implementation": "SourceSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 3
+        }
+      },
+      {
+        "name": "WEBRIP",
+        "implementation": "SourceSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 4
+        }
+      }
+    ]
+  }

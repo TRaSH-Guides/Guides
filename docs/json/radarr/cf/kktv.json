@@ -1,0 +1,37 @@
+{
+    "trash_id": "e048c45be447e3248ac2200161993078",
+    "trash_scores": {
+      "default": 10
+    },
+    "name": "KKTV",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+      {
+        "name": "KKTV",
+        "implementation": "ReleaseTitleSpecification",
+        "negate": false,
+        "required": true,
+        "fields": {
+          "value": "\\b(KKTV)\\b"
+        }
+      },
+      {
+        "name": "WEBDL",
+        "implementation": "SourceSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 3
+        }
+      },
+      {
+        "name": "WEBRIP",
+        "implementation": "SourceSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 4
+        }
+      }
+    ]
+  }

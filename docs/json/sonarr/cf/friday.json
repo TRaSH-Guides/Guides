@@ -1,0 +1,37 @@
+{
+    "trash_id": "e261d9c9c2d177c9664f24f81da8135a",
+    "trash_scores": {
+      "default": 10
+    },
+    "name": "friDay",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+      {
+        "name": "friDay",
+        "implementation": "ReleaseTitleSpecification",
+        "negate": false,
+        "required": true,
+        "fields": {
+          "value": "\\b(friDay)\\b"
+        }
+      },
+      {
+        "name": "WEBDL",
+        "implementation": "SourceSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 3
+        }
+      },
+      {
+        "name": "WEBRIP",
+        "implementation": "SourceSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 4
+        }
+      }
+    ]
+  }

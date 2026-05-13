@@ -1,0 +1,37 @@
+{
+  "trash_id": "932d0a3499cc4c529fb86e3adf1326d9",
+  "trash_scores": {
+    "default": 49
+  },
+  "name": "Viki",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Viki",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(Viki)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

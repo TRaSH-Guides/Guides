@@ -1,0 +1,37 @@
+{
+    "trash_id": "35c398e07fa34a626c39d998c4a2d9f1",
+    "trash_scores": {
+      "default": 40
+    },
+    "name": "MyTVSuper",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+      {
+        "name": "MyTVSuper",
+        "implementation": "ReleaseTitleSpecification",
+        "negate": false,
+        "required": true,
+        "fields": {
+          "value": "\\b(MyTVSuper)\\b"
+        }
+      },
+      {
+        "name": "WEBDL",
+        "implementation": "SourceSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 3
+        }
+      },
+      {
+        "name": "WEBRIP",
+        "implementation": "SourceSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 4
+        }
+      }
+    ]
+  }
