@@ -1,37 +1,37 @@
 {
-    "trash_id": "50421fc8b3734d2863561714d343e449",
-    "trash_scores": {
-      "default": 20
-    },
-    "name": "WAVVE",
-    "includeCustomFormatWhenRenaming": true,
-    "specifications": [
-      {
-        "name": "WAVVE",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": true,
-        "fields": {
-          "value": "\\b(WAVVE)\\b"
-        }
-      },
-      {
-        "name": "WEBDL",
-        "implementation": "SourceSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": 3
-        }
-      },
-      {
-        "name": "WEBRIP",
-        "implementation": "SourceSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": 4
-        }
+  "trash_id": "50421fc8b3734d2863561714d343e449",
+  "trash_scores": {
+    "default": 20
+  },
+  "name": "WAVVE",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "WAVVE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(WAVVE)\\b"
       }
-    ]
-  }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
