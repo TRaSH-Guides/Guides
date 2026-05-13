@@ -1,0 +1,36 @@
+{
+    "name": "[Release Groups] Asian",
+    "trash_id": "aecad82b748b0fc492742ecb7a87994e",
+    "trash_description": "A list of Asian release groups.<br>Tiers are organized based on whether they include internal English subtitles.<br>LQ Groups either do not provide subtitles or are groups that cause issues during importing.",
+    "custom_formats": [
+        {
+            "name": "Asian HQ Tier 1",
+            "trash_id": "6eb46ee61aa3c40c7657a85d781c5c29",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Asian HQ Tier 2",
+            "trash_id": "3873e64f7ff1df7805598c15821e011b",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Asian HQ Tier 3",
+            "trash_id": "a5c447e62bf5172c6b199ae7fce2e133",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Asian LQ Groups",
+            "trash_id": "55dba64d34ccc522c69f5d143bd7d42c",
+            "required": false,
+            "default": true
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
+    }
+}
