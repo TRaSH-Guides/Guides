@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD041-->
+<!-- markdownlint-disable MD036 MD041-->
 **x265 (no HDR/DV)**<br>
 
 This blocks most 720/1080p (HD) releases that are encoded in x265, **But it will allow 720/1080p x265 releases if they have HDR and/or DV**
@@ -7,9 +7,5 @@ This blocks most 720/1080p (HD) releases that are encoded in x265, **But it will
 
 In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}`
 
-??? question "Why block 720/1080p encodes in x265? - [Click to show/hide]"
-
-    --8<-- "includes/docker/x265.md"
-
 {! include-markdown "../../includes/cf-descriptions/x265-no-hdrdv-sonarr-warning.md" !}
-<!-- markdownlint-enable MD041-->
+<!-- markdownlint-enable MD036 MD041-->
