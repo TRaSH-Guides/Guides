@@ -28,6 +28,24 @@
             "default": true
         },
         {
+            "name": "German LQ",
+            "trash_id": "a6a6c33d057406aaad978a6902823c35",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "German LQ (release title)",
+            "trash_id": "d80c9f7cd2aad50271f1bd4e53125778",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "German Microsized",
+            "trash_id": "237eda4ef550a97da2c9d87b437e500b",
+            "required": false,
+            "default": true
+        },
+        {
             "name": "LQ",
             "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
             "required": false,
@@ -57,7 +75,8 @@
         {
             "name": "Upscaled",
             "trash_id": "23297a736ca77c0fc8e70f8edd7ee56c",
-            "required": false
+            "required": false,
+            "default": true
         }
     ],
     "quality_profiles": {
@@ -67,7 +86,8 @@
             "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
             "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
             "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642",
-            "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852"
+            "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
+            "Base Profile": "e58cf4e090184db3b3d7c79c1a9e9b4a"
         }
     }
 }

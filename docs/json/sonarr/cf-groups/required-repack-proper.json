@@ -1,7 +1,8 @@
 {
-    "name": "[Miscellaneous] Repack/Proper",
+    "name": "[Required] Repack/Proper",
     "trash_id": "22256473b656e195eabc2798e326fbb7",
     "trash_description": "Repacks/Proper (Required)",
+    "default": "false",
     "custom_formats": [
         {
             "name": "Repack/Proper",

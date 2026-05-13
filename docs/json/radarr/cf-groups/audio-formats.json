@@ -73,6 +73,16 @@
             "name": "DD",
             "trash_id": "c2998bd0d90ed5621d8df281e839436e",
             "required": true
+        },
+        {
+            "name": "MP3",
+            "trash_id": "6ba9033150e7896bdc9ec4b44f2b230f",
+            "required": false
+        },
+        {
+            "name": "Opus",
+            "trash_id": "a061e2e700f81932daf888599f8a8273",
+            "required": false
         }
     ],
     "quality_profiles": {

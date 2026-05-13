@@ -47,6 +47,12 @@
             "default": true
         },
         {
+            "name": "Line/Mic Dubbed",
+            "trash_id": "c465ccc73923871b3eb1802042331306",
+            "required": false,
+            "default": true
+        },
+        {
             "name": "LQ",
             "trash_id": "90a6f9a284dff5103f6346090e6280c8",
             "required": false,
