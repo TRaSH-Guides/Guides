@@ -54,7 +54,5 @@
     { "name": "Unknown", "allowed": false }
   ],
   "formatItems": {
-    "BR-DISK": "ed38b889b31be83fda192888e2286d83",
-    "Extras": "0a3f082873eb454bde444150b70253cc"
   }
 }
