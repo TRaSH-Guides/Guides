@@ -2,7 +2,7 @@
     "name": "[Required] Anime Versions",
     "trash_id": "6ebc4bfba9721581d3e9e8994456e6f7",
     "trash_description": "Anime Versions/Repacks (Required)",
-    "default": "false",
+    "default": "true",
     "custom_formats": [
         {
             "name": "v0",
