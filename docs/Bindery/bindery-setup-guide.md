@@ -125,4 +125,4 @@ Once an author is added, Bindery polls for new releases and grabs them automatic
 : Hit **Test** before saving — Bindery won't sync the indexer list without a successful connectivity check.
 
 **Books found but not importing**
-: Check the Activity log (**Activity → History**) for the specific failure reason. Common causes: path mismatch (see path consistency warning above), quality below profile minimum, or duplicate already in library.
+: Check the Activity log (**Activity → History**) for the specific failure reason. Common causes: path mismatch (see path consistency warning above), quality below profile minimum, or a duplicate already in the library.
