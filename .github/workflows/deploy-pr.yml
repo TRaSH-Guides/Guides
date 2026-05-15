@@ -16,12 +16,11 @@ permissions:
   actions: read
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     if: github.event.repository.fork == false
     outputs:
-      url: ${{ steps.cloudflare.outputs.deployment-url }}
-      branch_url: ${{ steps.cloudflare.outputs.pages-deployment-alias-url }}
+      should_deploy: ${{ steps.pr_info.outputs.should_deploy }}
       pr_number: ${{ steps.pr_info.outputs.pr_number }}
       pr_sha: ${{ steps.pr_info.outputs.pr_sha }}
     steps:
@@ -33,19 +32,27 @@ jobs:
           name: pr_info
           path: ${{ github.workspace }}/pr_info
 
-      - name: Display structure of downloaded files
-        run: tree ${{ github.workspace }}
-
       - name: Read PR info
         id: pr_info
         run: |
-          echo "pr_number=$(cat ${{ github.workspace }}/pr_info/PR_NUMBER)" >> $GITHUB_OUTPUT
-          echo "pr_sha=$(cat ${{ github.workspace }}/pr_info/PR_SHA)" >> $GITHUB_OUTPUT
+          {
+            echo "pr_number=$(cat "${{ github.workspace }}/pr_info/PR_NUMBER")"
+            echo "pr_sha=$(cat "${{ github.workspace }}/pr_info/PR_SHA")"
+            echo "should_deploy=$(cat "${{ github.workspace }}/pr_info/SHOULD_DEPLOY")"
+          } >> "$GITHUB_OUTPUT"
 
+  build:
+    needs: check
+    if: needs.check.outputs.should_deploy == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.cloudflare.outputs.deployment-url }}
+      branch_url: ${{ steps.cloudflare.outputs.pages-deployment-alias-url }}
+    steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          ref: ${{ steps.pr_info.outputs.pr_sha }}
+          ref: ${{ needs.check.outputs.pr_sha }}
           fetch-depth: 0
           sparse-checkout: |
             docs
@@ -61,7 +68,7 @@ jobs:
       - name: Get pip cache directory
         id: pip-cache
         run: |
-          echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+          echo "dir=$(pip cache dir)" >> "$GITHUB_OUTPUT"
 
       - name: Cache dependencies
         uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
@@ -88,13 +95,13 @@ jobs:
           command: >
             pages deploy site
             --project-name=trash-guides
-            --branch=pr-${{ steps.pr_info.outputs.pr_number }}
-            --commit-hash=${{ steps.pr_info.outputs.pr_sha }}
+            --branch=pr-${{ needs.check.outputs.pr_number }}
+            --commit-hash=${{ needs.check.outputs.pr_sha }}
 
   comment:
-    needs: build
+    needs: [check, build]
     runs-on: ubuntu-latest
-    if: always() && github.event.repository.fork == false
+    if: always() && needs.check.outputs.should_deploy == 'true'
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -113,10 +120,10 @@ jobs:
             STATUS_MESSAGE="Build failed!"
           fi
 
-          COMMENT_BODY="Deploying with ⚡ Cloudflare Pages<br><table><tr><td><strong>Latest commit:</strong></td><td><code>${{ needs.build.outputs.pr_sha }}</code></td></tr><tr><td><strong>Status:</strong></td><td>&nbsp;$STATUS_EMOJI&nbsp; $STATUS_MESSAGE</td></tr><tr><td><strong>Preview URL:</strong></td><td><a href='$PREVIEW_URL'>$PREVIEW_URL</a></td></tr><tr><td><strong>Branch Preview URL:</strong></td><td><a href='$BRANCH_PREVIEW_URL'>$BRANCH_PREVIEW_URL</a></td></tr></table>"
+          COMMENT_BODY="Deploying with ⚡ Cloudflare Pages<br><table><tr><td><strong>Latest commit:</strong></td><td><code>${{ needs.check.outputs.pr_sha }}</code></td></tr><tr><td><strong>Status:</strong></td><td>&nbsp;$STATUS_EMOJI&nbsp; $STATUS_MESSAGE</td></tr><tr><td><strong>Preview URL:</strong></td><td><a href='$PREVIEW_URL'>$PREVIEW_URL</a></td></tr><tr><td><strong>Branch Preview URL:</strong></td><td><a href='$BRANCH_PREVIEW_URL'>$BRANCH_PREVIEW_URL</a></td></tr></table>"
 
           ESCAPED_BODY=$(echo "$COMMENT_BODY" | jq -aRs .)
-          COMMENTS_URL="https://api.github.com/repos/${{ github.repository }}/issues/${{ needs.build.outputs.pr_number }}/comments"
+          COMMENTS_URL="https://api.github.com/repos/${{ github.repository }}/issues/${{ needs.check.outputs.pr_number }}/comments"
 
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
               -H "Accept: application/vnd.github+json" \

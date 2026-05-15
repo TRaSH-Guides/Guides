@@ -16,11 +16,24 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.fork == false
     steps:
+      - name: Filter rendered content changes
+        id: filter
+        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d # v4.0.1
+        with:
+          filters: |
+            rendered:
+              - 'docs/**'
+              - 'images/**'
+              - 'includes/**'
+              - 'overrides/**'
+              - 'mkdocs.yml'
+
       - name: Save PR info
         run: |
           mkdir -p ./pr_info
           echo ${{ github.event.pull_request.number }} > ./pr_info/PR_NUMBER
           echo ${{ github.event.pull_request.head.sha }} > ./pr_info/PR_SHA
+          echo ${{ steps.filter.outputs.rendered }} > ./pr_info/SHOULD_DEPLOY
 
       - name: Upload PR info
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
