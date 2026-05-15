@@ -14,13 +14,12 @@ services:
       - /path/to/config:/config
       - /path/to/books:/books
       - /path/to/downloads:/downloads
+    user: "1000:1000"
     environment:
-      - PUID=1000
-      - PGID=1000
       - TZ=America/New_York
 ```
 
-Set `PUID`/`PGID` to match the user that owns your library and download directories (`id -u` / `id -g`). Mismatched UID is the most common cause of permission errors on import.
+Set `user` to the UID:GID that owns your library and download directories (`id -u`:`id -g`). Mismatched UID is the most common cause of permission errors on import.
 
 !!! warning "Path consistency"
     The path Bindery sees inside the container must match the path the download client sees. If qBittorrent maps downloads to `/downloads` and Bindery maps them to `/data/downloads`, import will fail. Use the same bind-mount path in both containers, or configure a path remap under **Settings → Download Clients → Remote Path Mappings**.
@@ -117,7 +116,7 @@ Once an author is added, Bindery polls for new releases and grabs them automatic
 ## Common issues
 
 **Import fails with permission denied**
-: UID/GID mismatch. Verify `PUID`/`PGID` match the owner of `/books` and `/downloads` on the host.
+: UID/GID mismatch. Verify the `user:` directive in your Compose file matches the owner of `/books` and `/downloads` on the host (`id -u`:`id -g`).
 
 **Download client test fails when using container names**
 : The containers need to be on the same Docker network. Add a shared `networks` entry to your Compose file.
