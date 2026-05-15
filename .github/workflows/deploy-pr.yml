@@ -35,10 +35,14 @@ jobs:
       - name: Read PR info
         id: pr_info
         run: |
+          # SHOULD_DEPLOY is absent from artifacts produced by the
+          # pre-path-filter trigger workflow; default to false so a
+          # legacy artifact skips the deploy instead of failing cat.
+          should_deploy=$(cat "${{ github.workspace }}/pr_info/SHOULD_DEPLOY" 2>/dev/null || true)
           {
             echo "pr_number=$(cat "${{ github.workspace }}/pr_info/PR_NUMBER")"
             echo "pr_sha=$(cat "${{ github.workspace }}/pr_info/PR_SHA")"
-            echo "should_deploy=$(cat "${{ github.workspace }}/pr_info/SHOULD_DEPLOY")"
+            echo "should_deploy=${should_deploy:-false}"
           } >> "$GITHUB_OUTPUT"
 
   build:
