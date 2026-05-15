@@ -66,7 +66,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 7
       }
     },
     {
@@ -75,7 +75,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
+        "value": 8
       }
     }
   ]
