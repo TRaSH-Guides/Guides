@@ -1,26 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Radarr QualitySource: 1=CAM, 2=TELESYNC, 3=TELECINE, 4=WORKPRINT, 5=DVD, 6=TV, 7=WEBDL, 8=WEBRIP, 9=BLURAY",
   "allOf": [
-    { "$ref": "../base-cf.schema.json#/defs/baseSpecification" },
+    { "$ref": "source-spec.json" },
     {
       "properties": {
-        "implementation": {
-          "const": "SourceSpecification"
-        },
         "fields": {
-          "type": "object",
           "properties": {
             "value": {
-              "description": "Radarr QualitySource: 1=CAM, 2=TELESYNC, 3=TELECINE, 4=WORKPRINT, 5=DVD, 6=TV, 7=WEBDL, 8=WEBRIP, 9=BLURAY",
-              "type": "integer",
               "enum": [1, 2, 3, 4, 5, 6, 7, 8, 9]
             }
-          },
-          "required": ["value"],
-          "additionalProperties": false
+          }
         }
-      },
-      "required": ["implementation", "fields"]
+      }
     }
   ]
 }

@@ -1,15 +1,34 @@
 #!/usr/bin/env python3
 """Validate SourceSpecification value semantics per app.
 
-Radarr and Sonarr both accept integer values 1-9 for SourceSpecification,
-but the underlying enums differ. A CF authored for Sonarr that uses Radarr's
-WEBDL value (7) will silently match the wrong source in Sonarr (BlurayRaw),
-and vice versa. JSON Schema can't catch this because both ranges overlap;
-the only signal is which folder the CF lives in.
+Radarr's QualitySource enum spans 1-9; Sonarr's spans 1-7. The per-app
+JSON schemas (schemas/specs/{radarr,sonarr}-source-spec.json) enforce the
+integer range. This script adds a second layer of enforcement: for spec
+*names* that have an unambiguous expected value per app, it confirms the
+value matches. Example: a spec named "WEBDL" must be value 7 under
+radarr/cf/ and value 3 under sonarr/cf/. When the wrong value happens to
+match the other app's encoding, the error includes a hint pointing at
+the likely copy-paste source.
 
-This script enforces the mapping for spec names that have an unambiguous
-expected value per app. Specs whose names don't match a known label are
-ignored (the schema's 1-9 enum still applies to those).
+The mapping tables below were verified against:
+  Radarr/Radarr  src/NzbDrone.Core/Qualities/QualitySource.cs
+  Sonarr/Sonarr  src/NzbDrone.Core/Qualities/QualitySource.cs
+
+Known limitations (intentional):
+
+  The `name` field on a SourceSpecification is editorial -- maintainers
+  choose it as a human label, not the C# enum identifier. A few labels
+  in this repo are intentionally ambiguous:
+
+    - Sonarr CFs often use name="WEB" with value=1 (Sonarr's
+      Television source) to catch indexers that misclassify streaming
+      content as TV-sourced. "WEB" is therefore NOT in the Sonarr
+      table; the schema's 1-7 enum is the only check that applies.
+
+  Only labels with a single, unambiguous expected value per app are
+  enforced. If a future label becomes ambiguous (the maintainer reuses
+  it for a different value), drop it from the table here rather than
+  adding exceptions per file.
 
 Exit code 0 on success, 1 on any failure.
 """

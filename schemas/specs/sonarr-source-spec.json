@@ -1,26 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Sonarr QualitySource: 1=Television, 2=TelevisionRaw, 3=Web (WEBDL), 4=WebRip, 5=DVD, 6=Bluray, 7=BlurayRaw (Remux)",
   "allOf": [
-    { "$ref": "../base-cf.schema.json#/defs/baseSpecification" },
+    { "$ref": "source-spec.json" },
     {
       "properties": {
-        "implementation": {
-          "const": "SourceSpecification"
-        },
         "fields": {
-          "type": "object",
           "properties": {
             "value": {
-              "description": "Sonarr QualitySource: 1=Television, 2=TelevisionRaw, 3=Web (WEBDL), 4=WebRip, 5=DVD, 6=Bluray, 7=BlurayRaw (Remux)",
-              "type": "integer",
               "enum": [1, 2, 3, 4, 5, 6, 7]
             }
-          },
-          "required": ["value"],
-          "additionalProperties": false
+          }
         }
-      },
-      "required": ["implementation", "fields"]
+      }
     }
   ]
 }
