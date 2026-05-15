@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Base SourceSpecification: general structural compliance shared by Radarr and Sonarr. Per-app variants (radarr-source-spec.json, sonarr-source-spec.json) extend this with the appropriate QualitySource enum.",
+  "description": "Generic SourceSpecification: structural compliance plus the union of valid QualitySource values across Radarr (1..9) and Sonarr (1..7). Used directly by guide-only CFs (which are app-agnostic). Per-app variants (radarr-source-spec.json, sonarr-source-spec.json) compose this and tighten the enum to that app's range.",
   "allOf": [
     { "$ref": "../base-cf.schema.json#/defs/baseSpecification" },
     {
@@ -12,7 +12,8 @@
           "type": "object",
           "properties": {
             "value": {
-              "type": "integer"
+              "type": "integer",
+              "enum": [1, 2, 3, 4, 5, 6, 7, 8, 9]
             }
           },
           "required": ["value"],
