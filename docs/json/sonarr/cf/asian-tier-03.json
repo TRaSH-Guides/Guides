@@ -1,72 +1,81 @@
 {
-  "trash_id": "9a836f109fc47f7c459703c1dbafeeec",
+  "trash_id": "0183b666f79529efb85df21b7a2cf913",
   "trash_scores": {
-    "default": -10000
+    "default": 100
   },
-  "name": "Asian LQ Groups",
+  "name": "Asian Tier 03",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "AppleTor",
+      "name": "ADWeb",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(AppleTor)$"
+        "value": "^(ADWeb)$"
       }
     },
     {
-      "name": "Luvmichelle",
+      "name": "CHDWEB",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(Luvmichelle)$"
+        "value": "^(CHDWEB)$"
       }
     },
     {
-      "name": "MagicStar",
+      "name": "HDCTV",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(MagicStar)$"
+        "value": "^(HDCTV)$"
       }
     },
     {
-      "name": "NEXT",
+      "name": "HHWEB",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(NEXT)$"
+        "value": "^(HHWEB)$"
       }
     },
     {
-      "name": "Taengoo",
+      "name": "OurTV",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(Taengoo)$"
+        "value": "^(OurTV)$"
       }
     },
     {
-      "name": "unco",
+      "name": "SHiNE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(unco)$"
+        "value": "^(SHiNE)$"
       }
     },
     {
-      "name": "unco@AvistaZ",
-      "implementation": "ReleaseGroupSpecification",
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(unco@AvistaZ)$"
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
       }
     }
   ]

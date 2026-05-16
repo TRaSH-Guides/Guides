@@ -1,9 +1,9 @@
 {
-  "trash_id": "a69163b534969846c60b6b294e8ed7b3",
+  "trash_id": "6eb46ee61aa3c40c7657a85d781c5c29",
   "trash_scores": {
     "default": 1650
   },
-  "name": "Asian HQ Tier 1",
+  "name": "Asian Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -147,7 +147,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 7
       }
     },
     {
@@ -156,7 +156,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
+        "value": 8
       }
     }
   ]
