@@ -1113,7 +1113,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### FOD
 
-<sub>FOD = Fuji Television On Demand</sub>
+<sub>Fuji Television On Demand aka Fuji TV On Demand</sub>
 
 ??? question "Description - [Click to show/hide]"
 
