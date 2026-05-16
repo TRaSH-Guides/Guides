@@ -4,6 +4,11 @@
     "trash_description": "Collection of Anime Streaming Services for Radarr",
     "custom_formats": [
         {
+            "name": "FUNi",
+            "trash_id": "88c93b568b6079fa087077a788b1b7a3",
+            "required": true
+        },
+        {
             "name": "VRV",
             "trash_id": "60f6d50cbd3cfc3e9a8c00e3a30c3114",
             "required": true
