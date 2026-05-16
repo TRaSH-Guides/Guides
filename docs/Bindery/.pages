@@ -1,0 +1,4 @@
+nav:
+  - Home: index.md
+  - Setup Guide: bindery-setup-guide.md
+  - Recommended Naming Scheme: bindery-recommended-naming-scheme.md
