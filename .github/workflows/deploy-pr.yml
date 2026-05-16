@@ -60,6 +60,7 @@ jobs:
         with:
           python-version: 3.x
           cache: pip
+          cache-dependency-path: docs/requirements.txt
 
       - name: Install dependencies
         run: pip install -r docs/requirements.txt
@@ -101,6 +102,7 @@ jobs:
           BUILD_STATUS: ${{ needs.build.result }}
           PR_SHA: ${{ needs.build.outputs.pr_sha }}
           PR_NUMBER: ${{ needs.build.outputs.pr_number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ "$BUILD_STATUS" == "success" ]; then
             STATUS_EMOJI="✅"
@@ -115,7 +117,7 @@ jobs:
           ESCAPED_BODY=$(echo "$COMMENT_BODY" | jq -aRs .)
           COMMENTS_URL="https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${PR_NUMBER}/comments"
 
-          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          curl -H "Authorization: token ${GITHUB_TOKEN}" \
               -H "Accept: application/vnd.github+json" \
               -X POST \
               -d "{\"body\": $ESCAPED_BODY }" \
