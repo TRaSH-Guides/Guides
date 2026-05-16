@@ -50,27 +50,27 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-| Streaming Services General | Streaming Services Asian | Streaming Services Dutch |
-|----------------------------|--------------------------|--------------------------|
-| [Amazon](#amzn)            | [Disney+ Hotstar](#htsr) | [NLZiet](#nlz)           |
-| [Apple TV](#atv)           | [FOD](#fod)              | [Videoland](#vdl)        |
-| [Apple TV+](#atvp)         | [TVING](#tving)          |                          |
-| [Comedy Central](#cc)      | [TVer](#tver)            |                          |
-| [DC Universe](#dcu)        | [U-NEXT](#u-next)        |                          |
-| [Disney+](#dsnp)           | [VIU](#viu)              |                          |
-| [Google Play](#play)       |                          |                          |
-| [HBO](#hbo)                |                          |                          |
-| [HBO Max](#hmax)           |                          |                          |
-| [Hulu](#hulu)              |                          |                          |
-| [iTunes](#it)              |                          |                          |
-| [Max](#max)                |                          |                          |
-| [Netflix](#nf)             |                          |                          |
-| [Paramount+](#pmtp)        |                          |                          |
-| [Peacock TV](#pcok)        |                          |                          |
-| [ROKU](#roku)              |                          |                          |
-| [SHOWTIME](#sho)           |                          |                          |
-| [Stan](#stan)              |                          |                          |
-| [Syfy](#syfy)              |                          |                          |
+| Streaming Services General | Streaming Services Asian  | Streaming Services Dutch |
+|----------------------------|---------------------------|--------------------------|
+| [Amazon](#amzn)            | [Coupang Play](#cpng)     | [NLZiet](#nlz)           |
+| [Apple TV](#atv)           | [Disney+ Hotstar](#htsr)  | [Videoland](#vdl)        |
+| [Apple TV+](#atvp)         | [DMM-TV](#dmm-tv)         |                          |
+| [Comedy Central](#cc)      | [friDay Video](#friday)   |                          |
+| [DC Universe](#dcu)        | [Fuji-TV On Demand](#fod) |                          |
+| [Disney+](#dsnp)           | [Hami Video](#hami)       |                          |
+| [Google Play](#play)       | [iQIYI](#iqiy)            |                          |
+| [HBO](#hbo)                | [KKTV](#kktv)             |                          |
+| [HBO Max](#hmax)           | [KOCOWA](#kcw)            |                          |
+| [Hulu](#hulu)              | [LINE TV](#linetv)        |                          |
+| [iTunes](#it)              | [myTV SUPER](#mytvsuper)  |                          |
+| [Max](#max)                | [TVING](#tving)           |                          |
+| [Netflix](#nf)             | [TVer](#tver)             |                          |
+| [Paramount+](#pmtp)        | [U-NEXT](#u-next)         |                          |
+| [Peacock TV](#pcok)        | [Viki](#viki)             |                          |
+| [ROKU](#roku)              | [VIU](#viu)               |                          |
+| [SHOWTIME](#sho)           | [Wavve](#wavve)           |                          |
+| [Stan](#stan)              | [WeTV](#wetv)             |                          |
+| [Syfy](#syfy)              | [Youku](#youku)           |                          |
 
 | Streaming Services Misc | Streaming Services UK | Streaming Services Optional                 |
 |-------------------------|-----------------------|---------------------------------------------|
@@ -1039,6 +1039,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
+#### CPNG
+
+<sub>Coupang Play</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cpng.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cpng.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 #### HTSR
 
 <sub>Disney+ Hotstar</sub>
@@ -1057,6 +1075,42 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
+#### DMM-TV
+
+<sub>DMM TV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dmm-tv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dmm-tv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### friDay
+
+<sub>friDay Video</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/friday.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/friday.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 #### FOD
 
 <sub>FOD = Fuji Television On Demand</sub>
@@ -1069,6 +1123,114 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fod.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### Hami
+
+<sub>Hami Video</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hami.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hami.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### iQIY
+
+<sub>iQIYI</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/iqiy.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/iqiy.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### KKTV
+
+<sub>KKTV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/kktv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/kktv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### KCW
+
+<sub>KOCOWA</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/kcw.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/kcw.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### LINETV
+
+<sub>LINE TV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/linetv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/linetv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### myTVSUPER
+
+<sub>myTV SUPER</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/mytvsuper.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mytvsuper.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1129,6 +1291,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
+#### Viki
+
+<sub>Rakuten Viki</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/viki.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/viki.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 #### VIU
 
 <sub>VIU</sub>
@@ -1141,6 +1321,60 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/viu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### Wavve
+
+<sub>Wavve</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/wavve.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/wavve.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### WeTV
+
+<sub>WeTV</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/wetv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/wetv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### Youku
+
+<sub>Youku</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/youku.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/youku.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1681,7 +1915,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### WKN
 
-<sub>WKN = Wakanim</sub>
+<sub>Wakanim</sub>
 
 ??? question "Description - [Click to show/hide]"
 
@@ -3829,6 +4063,66 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fastsub.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## Asian Release Groups
+<!-- markdownlint-disable MD052-->
+{{ sonarr['cf-groups']['release-groups-asian']['trash_description'] }}
+<!-- markdownlint-enable MD052-->
+---
+
+### Asian Tier 01
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/asian-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Asian Tier 02
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/asian-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Asian Tier 03
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/asian-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Asian LQ
+
+<sub>Asian Low-Quality Releases = Asian LQ</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/asian-lq.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/asian-lq.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
