@@ -14,28 +14,8 @@
             "required": false
         },
         {
-            "name": "German LQ",
-            "trash_id": "263943bc5d99550c68aad0c4278ba1c7",
-            "required": false
-        },
-        {
-            "name": "German LQ (release title)",
-            "trash_id": "a826ee9e46607bc61795c85a6f2b1279",
-            "required": false
-        },
-        {
-            "name": "German Microsized",
-            "trash_id": "03c430f326f10a27a9739b8bc83c30e4",
-            "required": false
-        },
-        {
             "name": "German Subbed",
             "trash_id": "ee425f921dd740621523343bffe82fa3",
-            "required": false
-        },
-        {
-            "name": "Line/Mic Dubbed",
-            "trash_id": "c465ccc73923871b3eb1802042331306",
             "required": false
         }
     ],

@@ -4,7 +4,8 @@
     "default": -10000,
     "french-multi-vf": 0,
     "french-multi-vo": 0,
-    "german": 0
+    "german": 0,
+    "german-anime": 0
   },
   "trash_regex": "https://regex101.com/r/BoIGFA/1",
   "name": "Scene",

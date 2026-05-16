@@ -1,7 +1,9 @@
 {
   "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000
   },
   "name": "Black and White Editions",
   "includeCustomFormatWhenRenaming": false,

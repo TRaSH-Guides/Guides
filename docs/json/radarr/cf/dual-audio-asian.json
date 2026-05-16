@@ -1,0 +1,58 @@
+{
+  "trash_id": "67084559197ea10b6022e2650c594866",
+  "trash_scores": {
+    "default": 10
+  },
+  "name": "Dual Audio Asian",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Dual Audio",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO)"
+      }
+    },
+    {
+      "name": "Not Single Language Only",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\[(JA|ZH|KO)\\]"
+      }
+    },
+    {
+      "name": "Japanese Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "Chinese Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 10,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "Korean Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 21,
+        "exceptLanguage": false
+      }
+    }
+  ]
+}

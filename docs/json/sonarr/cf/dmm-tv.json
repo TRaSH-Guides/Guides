@@ -1,0 +1,37 @@
+{
+  "trash_id": "940e98773ac068f2088688f95a88ea66",
+  "trash_scores": {
+    "default": 10
+  },
+  "name": "DMM-TV",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "DMM-TV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(DMM-TV)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "name": "[Optional] SDR",
+  "name": "[HDR Formats] SDR",
   "trash_id": "47f0d69750de9e16855915fa73bb7b08",
   "trash_description": "A group of custom formats that affect which SDR releases, if any, are grabbed in UHD-enabled profiles. Please read the descriptions on the Collection of Custom Formats page for more details.<br><br>- SDR: This will prevent grabbing UHD/4k releases without HDR Formats.<br>- SDR (no WEBDL): This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.<br><br><b>Please ensure you only score or enable one of them in your Quality Profile!!!</b>",
   "custom_formats": [

@@ -5,6 +5,12 @@
     "default": "true",
     "custom_formats": [
         {
+            "name": "10bit",
+            "trash_id": "a5d148168c4506b55cf53984107c396e",
+            "required": false,
+            "default": true
+        },
+        {
             "name": "Bad Dual Groups",
             "trash_id": "b6832f586342ef70d9c128d40c07b872",
             "required": false,
@@ -17,8 +23,20 @@
             "default": true
         },
         {
+            "name": "Extras",
+            "trash_id": "0a3f082873eb454bde444150b70253cc",
+            "required": false,
+            "default": true
+        },
+        {
             "name": "Generated Dynamic HDR",
             "trash_id": "e6886871085226c3da1830830146846c",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Line/Mic Dubbed",
+            "trash_id": "c465ccc73923871b3eb1802042331306",
             "required": false,
             "default": true
         },
@@ -41,6 +59,12 @@
             "name": "Scene",
             "trash_id": "f537cf427b64c38c8e36298f657e4828",
             "required": false
+        },
+        {
+            "name": "Sing-Along Versions",
+            "trash_id": "712d74cd88bceb883ee32f773656b1f5",
+            "required": false,
+            "default": true
         },
         {
             "name": "Upscaled",

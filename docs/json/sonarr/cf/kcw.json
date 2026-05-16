@@ -1,0 +1,37 @@
+{
+  "trash_id": "8620e171f1a67cff092e86e65bb29c76",
+  "trash_scores": {
+    "default": 30
+  },
+  "name": "KCW",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "KCW",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(KCW|KOCOWA)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

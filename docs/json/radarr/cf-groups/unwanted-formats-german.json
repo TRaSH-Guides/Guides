@@ -19,7 +19,8 @@
         {
             "name": "Black and White Editions",
             "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
-            "required": false
+            "required": false,
+            "default": true
         },
         {
             "name": "BR-DISK",
@@ -30,6 +31,30 @@
         {
             "name": "Extras",
             "trash_id": "0a3f082873eb454bde444150b70253cc",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "German LQ",
+            "trash_id": "263943bc5d99550c68aad0c4278ba1c7",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "German LQ (release title)",
+            "trash_id": "a826ee9e46607bc61795c85a6f2b1279",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "German Microsized",
+            "trash_id": "03c430f326f10a27a9739b8bc83c30e4",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "Line/Mic Dubbed",
+            "trash_id": "c465ccc73923871b3eb1802042331306",
             "required": false,
             "default": true
         },
@@ -63,12 +88,14 @@
         {
             "name": "Sing-Along Versions",
             "trash_id": "712d74cd88bceb883ee32f773656b1f5",
-            "required": false
+            "required": false,
+            "default": true
         },
         {
             "name": "Upscaled",
             "trash_id": "bfd8eb01832d646a0a89c4deb46f8564",
-            "required": false
+            "required": false,
+            "default": true
         }
     ],
     "quality_profiles": {

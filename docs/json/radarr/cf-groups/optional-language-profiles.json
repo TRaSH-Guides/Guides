@@ -19,11 +19,6 @@
             "required": false
         },
         {
-            "name": "German Subbed",
-            "trash_id": "ee425f921dd740621523343bffe82fa3",
-            "required": false
-        },
-        {
             "name": "Language: Not English",
             "trash_id": "0dc8aec3bd1c47cd6c40c46ecd27e846",
             "required": false
@@ -66,6 +61,13 @@
     ],
     "quality_profiles": {
         "include": {
+            "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+            "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+            "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
+            "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
+            "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
+            "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
+            "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38",
             "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
         }
     }

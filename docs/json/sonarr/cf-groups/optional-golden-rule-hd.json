@@ -1,33 +1,31 @@
 {
-  "name": "[Optional] Golden Rule HD",
-  "trash_id": "158188097a58d7687dee647e04af0da3",
-  "default": "true",
-  "trash_description": "- x265 (HD): This blocks 720/1080p (HD) releases that are encoded in x265<br>- x265 (no HDR/DV): This blocks 720/1080p (HD) releases that are encoded in x265, But it will allow 720/1080p x265 releases if they have HDR and/or DV.<br><br><b>Please ensure you only score or enable one of them in your Quality Profile!!!</b>",
-  "custom_formats": [
-    {
-      "name": "x265 (HD)",
-      "trash_id": "47435ece6b99a0b477caf360e79ba0bb",
-      "required": false,
-      "default": true
-    },
-    {
-      "name": "x265 (no HDR/DV)",
-      "trash_id": "9b64dff695c2115facf1b6ea59c9bd07",
-      "required": false
+    "name": "[Optional] Golden Rule HD",
+    "trash_id": "158188097a58d7687dee647e04af0da3",
+    "trash_description": "- x265 (HD): This blocks 720/1080p (HD) releases that are encoded in x265<br>- x265 (no HDR/DV): This blocks 720/1080p (HD) releases that are encoded in x265, But it will allow 720/1080p x265 releases if they have HDR and/or DV.<br><br><b>Please ensure you only score or enable one of them in your Quality Profile!!!</b>",
+    "default": "true",
+    "custom_formats": [
+        {
+            "name": "x265 (HD)",
+            "trash_id": "47435ece6b99a0b477caf360e79ba0bb",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "x265 (no HDR/DV)",
+            "trash_id": "9b64dff695c2115facf1b6ea59c9bd07",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+            "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+            "[German] Anime HD Bluray + WEB": "6fe5937e1dcc2269e23b49eb46dfe6d6",
+            "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+            "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
+            "[French MULTi.VF] HD Bluray + WEB (1080p)": "58e8dc75731040612dd6f4ac0676bfd7",
+            "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
+            "[French VOSTFR] HD Bluray + WEB (1080p)": "b34c968f58433a38e0e690d42a1dc37e"
+        }
     }
-  ],
-  "quality_profiles": {
-    "include": {
-      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
-      "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
-      "[French MULTi.VO] HD Bluray + WEB (1080p)": "4c48f506c1116a3a57ae33f12346bd15",
-      "[French MULTi.VF] HD Bluray + WEB (1080p)": "58e8dc75731040612dd6f4ac0676bfd7",
-      "[French VOSTFR] HD Bluray + WEB (1080p)": "b34c968f58433a38e0e690d42a1dc37e",
-      "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
-      "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
-      "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
-      "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
-      "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642"
-    }
-  }
 }
