@@ -11,7 +11,8 @@ jobs:
   update_contributors:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      # PAT is required to push commits back to the repository.
+      - name: Checkout code # zizmor: ignore[artipacked]
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           token: ${{ secrets.PAT }}

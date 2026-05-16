@@ -8,8 +8,8 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
+  pull-requests: read
 
 jobs:
   build:
@@ -29,11 +29,15 @@ jobs:
               - 'mkdocs.yml'
 
       - name: Save PR info
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_SHA: ${{ github.event.pull_request.head.sha }}
+          SHOULD_DEPLOY: ${{ steps.filter.outputs.rendered }}
         run: |
           mkdir -p ./pr_info
-          echo ${{ github.event.pull_request.number }} > ./pr_info/PR_NUMBER
-          echo ${{ github.event.pull_request.head.sha }} > ./pr_info/PR_SHA
-          echo ${{ steps.filter.outputs.rendered }} > ./pr_info/SHOULD_DEPLOY
+          echo "$PR_NUMBER" > ./pr_info/PR_NUMBER
+          echo "$PR_SHA" > ./pr_info/PR_SHA
+          echo "$SHOULD_DEPLOY" > ./pr_info/SHOULD_DEPLOY
 
       - name: Upload PR info
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1

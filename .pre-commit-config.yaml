@@ -89,3 +89,8 @@ repos:
     hooks:
       - id: editorconfig-checker
         name: EditorConfig Lint
+
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.25.0
+    hooks:
+      - id: zizmor
