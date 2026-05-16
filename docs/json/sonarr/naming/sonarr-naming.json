@@ -3,25 +3,25 @@
     "default": "Season {season:00}"
   },
   "series": {
-    "default": "{Series TitleYear}",
-    "plex-imdb": "{Series TitleYear} {imdb-{ImdbId}}",
-    "plex-tvdb": "{Series TitleYear} {tvdb-{TvdbId}}",
-    "emby-imdb": "{Series TitleYear} [imdb-{ImdbId}]",
-    "emby-tvdb": "{Series TitleYear} [tvdb-{TvdbId}]",
-    "jellyfin-tvdb": "{Series TitleYear} [tvdbid-{TvdbId}]"
+    "default": "{Series CleanTitleWithoutYear} ({Series Year})",
+    "plex-imdb": "{Series CleanTitleWithoutYear} ({Series Year}) {imdb-{ImdbId}}",
+    "plex-tvdb": "{Series CleanTitleWithoutYear} ({Series Year}) {tvdb-{TvdbId}}",
+    "emby-imdb": "{Series CleanTitleWithoutYear} ({Series Year}) [imdb-{ImdbId}]",
+    "emby-tvdb": "{Series CleanTitleWithoutYear} ({Series Year}) [tvdb-{TvdbId}]",
+    "jellyfin-tvdb": "{Series CleanTitleWithoutYear} ({Series Year}) [tvdbid-{TvdbId}]"
   },
   "episodes": {
     "standard": {
-      "default": "{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}",
+      "default": "{Series CleanTitleWithoutYear} ({Series Year}) - S{season:00}E{episode:00} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}",
       "original": "{Original Title}",
       "p2p-scene": "{Series.CleanTitleYear}.S{season:00}E{episode:00}{.Episode.CleanTitle}{.Custom.Formats}{.Quality.Full}{.Mediainfo.AudioCodec}{.Mediainfo.AudioChannels}{.MediaInfo.VideoDynamicRangeType}{.Mediainfo.VideoCodec}{-Release Group}"
     },
     "daily": {
-      "default": "{Series TitleYear} - {Air-Date} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}",
+      "default": "{Series CleanTitleWithoutYear} ({Series Year}) - {Air-Date} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}",
       "original": "{Original Title}"
     },
     "anime": {
-      "default": "{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoDynamicRangeType]}[{Mediainfo VideoCodec }{MediaInfo VideoBitDepth}bit]{-Release Group}"
+      "default": "{Series CleanTitleWithoutYear} ({Series Year}) - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoDynamicRangeType]}[{Mediainfo VideoCodec }{MediaInfo VideoBitDepth}bit]{-Release Group}"
     }
   }
 }
