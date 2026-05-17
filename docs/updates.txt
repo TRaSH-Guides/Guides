@@ -1,3 +1,8 @@
+# 2026-05-17 03:39
+- [feat(guide-sync): Reorganized The CF Groups](https://github.com/TRaSH-Guides/Guides/pull/2733)
+- [feat(guide): Reorganized The Custom Format Collection Page](https://github.com/TRaSH-Guides/Guides/pull/2727)
+- [feat(guide): Update French VFQ CFs](https://github.com/TRaSH-Guides/Guides/pull/2730)
+
 # 2026-05-10 03:31
 - [fix(guide-sync): Created a dedicated French Unwanted Group](https://github.com/TRaSH-Guides/Guides/pull/2721)
 - [feat(starr): Add RlsGrp `EniaHD` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2708)
