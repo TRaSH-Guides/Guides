@@ -169,7 +169,7 @@ The best settings depend on many factors.
 
     !!! success ""
 
-        **Suggested: `For a home connection that you use with others its best practice to set the upload/download rate to about 70-80% of your maximum upload/download speed.`**
+        **Suggested: `For a home connection that you use with others it's best practice to set the upload/download rate to about 70-80% of your maximum upload/download speed.`**
 
 ### Alternative Rate Limits
 
