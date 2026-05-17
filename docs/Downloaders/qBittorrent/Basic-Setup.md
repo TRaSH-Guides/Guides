@@ -97,7 +97,7 @@ Add the following to your Excluded file names.
 *.r[0-9]*
 ```
 
-<sub><sup>This tip has been provided by Asinine.</sup></sub
+<sub><sup>This tip has been provided by Asinine.</sup></sub>
 
 ---
 
