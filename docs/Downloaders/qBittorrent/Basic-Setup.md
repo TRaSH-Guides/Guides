@@ -84,7 +84,7 @@
 
 ### Excluded file names
 
-![Saving Management](images/qb-options-exclude-file-names.png)
+![Excluded file names](images/qb-options-exclude-file-names.png)
 
 If you're limited to trackers that allow packed torrents, such as RARed files, and want to avoid wasting bandwidth or ratio by downloading torrents that contain them, add the following to your Excluded file names.
 
