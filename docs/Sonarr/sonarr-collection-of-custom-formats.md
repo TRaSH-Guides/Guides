@@ -685,6 +685,22 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
+### HLG
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hlg.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ## Streaming Services
 
 ---
