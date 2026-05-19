@@ -11,6 +11,20 @@
       "remux-web-2160p": "76a5053bdb2d1e4a8f16a69a37d46c12",
       "remux-2160p-combined": "911df0e05a395c19d8b3efc76a7467c1",
       "remux-2160p-alternative": "361717d531db5a6002e0f547ace46551"
+    },
+    "profile_overrides": {
+      "web-1080p": {
+        "profile_name": "WEB-1080p",
+        "exclude_groups": ["release-groups-hq"],
+        "add_groups": ["required-repack-proper", "release-groups-asian"],
+        "force_optional": ["optional-golden-rule-hd", "optional-golden-rule-uhd"]
+      },
+      "web-2160p": {
+        "profile_name": "WEB-2160p",
+        "exclude_groups": ["release-groups-hq"],
+        "add_groups": ["required-repack-proper", "release-groups-asian"],
+        "force_optional": ["optional-golden-rule-hd", "optional-golden-rule-uhd"]
+      }
     }
   },
   {

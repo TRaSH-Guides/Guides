@@ -84,21 +84,9 @@ If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
 {! include-markdown "../../includes/cf/radarr-cf-hd-bluray-web-scoring.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
-
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+[[ render_profile_cfs('radarr', 'HD Bluray + WEB') ]]
 
 Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
 
@@ -112,15 +100,7 @@ The reason why we didn't select the WEB-DL 720p is that you will hardly find any
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
-    - When the Bluray-1080p is released it will upgrade to the Bluray-1080p.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
-
-    So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
-
-    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+{! include-markdown "../../includes/cf/workflow-mermaid-hd-bluray-web.md" !}
 
 ---
 
@@ -132,27 +112,9 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
-
 {! include-markdown "../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
-
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+[[ render_profile_cfs('radarr', 'UHD Bluray + WEB') ]]
 
 Use the following main settings in your profile.
 
@@ -162,17 +124,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    **Depending on what's released first and available the following Workflow Logic will be used:**
-
-    - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
-    - When the Bluray-2160p is released it will upgrade to the Bluray-2160p.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
-
-    So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
-
-    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+{! include-markdown "../../includes/cf/workflow-mermaid-uhd-bluray-web.md" !}
 
 ---
 
@@ -184,23 +136,9 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
 {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
-
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+[[ render_profile_cfs('radarr', 'Remux + WEB 1080p') ]]
 
 Use the following main settings in your profile.
 
@@ -212,15 +150,7 @@ The reason why we didn't select the WEB-DL 720p is that you will hardly find any
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
-    - When the REMUX-1080p is released it will upgrade to the REMUX-1080p.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
-
-    So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
-
-    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+{! include-markdown "../../includes/cf/workflow-mermaid-remux-web-1080p.md" !}
 
 ---
 
@@ -232,27 +162,9 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
-
 {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
-
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+[[ render_profile_cfs('radarr', 'Remux + WEB 2160p') ]]
 
 Use the following main settings in your profile.
 
@@ -262,15 +174,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
-    - When the REMUX-2160p is released it will upgrade to the REMUX-2160p.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
-
-    So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
-
-    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+{! include-markdown "../../includes/cf/workflow-mermaid-remux-web-2160p.md" !}
 
 ---
 
