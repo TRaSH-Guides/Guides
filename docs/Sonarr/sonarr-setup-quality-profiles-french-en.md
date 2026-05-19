@@ -107,19 +107,11 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+[[ render_profile_cfs('sonarr', '[French MULTi.VO] HD Bluray + WEB (1080p)') ]]
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-en.md" !}
 
@@ -140,23 +132,11 @@ Note: The `Audio Formats` Custom Formats aren't used in the profile, as WEB-DL d
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+[[ render_profile_cfs('sonarr', '[French MULTi.VO] UHD Bluray + WEB (2160p)') ]]
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-en.md" !}
 

@@ -59,6 +59,28 @@
                 "type": "array",
                 "items": { "type": "string", "minLength": 1 },
                 "description": "cf-group filename slugs to render under the 'optional' header regardless of their top-level `default` flag."
+              },
+              "include_cfs": {
+                "type": "object",
+                "description": "Per-cf-group whitelist. Keys are cf-group filename slugs; values are arrays of CF filename slugs to include from that group (all other CFs in the group are dropped). Useful for profile-specific tier subsets of `release-groups-hq`.",
+                "patternProperties": {
+                  "^.+$": {
+                    "type": "array",
+                    "items": { "type": "string", "minLength": 1 }
+                  }
+                },
+                "additionalProperties": false
+              },
+              "exclude_cfs": {
+                "type": "object",
+                "description": "Per-cf-group blacklist. Keys are cf-group filename slugs; values are arrays of CF filename slugs to drop from that group.",
+                "patternProperties": {
+                  "^.+$": {
+                    "type": "array",
+                    "items": { "type": "string", "minLength": 1 }
+                  }
+                },
+                "additionalProperties": false
               }
             }
           }

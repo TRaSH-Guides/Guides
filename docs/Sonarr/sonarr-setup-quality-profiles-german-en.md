@@ -138,17 +138,13 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 {! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-hd-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
 
 {! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+[[ render_profile_cfs('sonarr', '[German] HD Bluray + WEB') ]]
 
-**The following Custom Formats are optional:**
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
@@ -168,17 +164,13 @@ If you prefer 1080p Remuxes (Bluray-1080p Remux)
 
 {! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
 
 {! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+[[ render_profile_cfs('sonarr', '[German] HD Remux + WEB') ]]
 
-**The following Custom Formats are optional:**
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
@@ -209,19 +201,13 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 {! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-uhd-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-en.md" !}
 
 {! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+[[ render_profile_cfs('sonarr', '[German] UHD Bluray + WEB') ]]
 
-**The following Custom Formats are optional:**
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
@@ -245,19 +231,13 @@ If you prefer 2160p Remuxes (Bluray-2160p Remux)
 
 {! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-en.md" !}
 
 {! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+[[ render_profile_cfs('sonarr', '[German] UHD Remux + WEB') ]]
 
-**The following Custom Formats are optional:**
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
@@ -285,10 +265,6 @@ If you prefer High-Quality HD Encodes for Anime (720p/1080p)
 
 {! include-markdown "../../includes/german-guide/sonarr-german-anime-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-anime-hd-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/sonarr-german-anime-misc-required.md" !}
 
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
@@ -297,7 +273,9 @@ If you prefer High-Quality HD Encodes for Anime (720p/1080p)
 
 {! include-markdown "../../includes/german-guide/sonarr-german-anime-streaming-services-en.md" !}
 
-**The following Custom Formats are optional:**
+[[ render_profile_cfs('sonarr', '[German] Anime HD Bluray + WEB') ]]
+
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 

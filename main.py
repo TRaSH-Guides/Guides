@@ -55,7 +55,9 @@ def _resolve_score(cf: dict[str, Any], score_set: str) -> str:
 
 def _render_table(app: str, group: dict[str, Any], cf_index: dict[str, str],
                   cfs_by_slug: dict[str, dict[str, Any]],
-                  score_set: str) -> list[str]:
+                  score_set: str,
+                  include_slugs: set[str] | None = None,
+                  exclude_slugs: set[str] | None = None) -> list[str]:
     lines = [
         "    | Custom Format | Score | Trash ID |",
         "    | --- | :---: | --- |",
@@ -63,9 +65,11 @@ def _render_table(app: str, group: dict[str, Any], cf_index: dict[str, str],
     for entry in group.get("custom_formats", []):
         tid = entry.get("trash_id", "")
         slug = cf_index.get(tid)
+        if include_slugs is not None and slug not in include_slugs:
+            continue
+        if exclude_slugs and slug in exclude_slugs:
+            continue
         if not slug:
-            # Unresolvable CF reference — render the bare name so the build
-            # fails loud rather than silently dropping it.
             lines.append(
                 f"    | {entry.get('name', '?')} | ? | `{tid}` (unresolved) |"
             )
@@ -81,10 +85,13 @@ def _render_table(app: str, group: dict[str, Any], cf_index: dict[str, str],
 def _render_group(app: str, slug: str, group: dict[str, Any],
                   cf_index: dict[str, str],
                   cfs_by_slug: dict[str, dict[str, Any]],
-                  score_set: str) -> str:
+                  score_set: str,
+                  include_slugs: set[str] | None = None,
+                  exclude_slugs: set[str] | None = None) -> str:
     title = group.get("name", slug)
     body = [f'??? abstract "{title} - [Click to show/hide]"', ""]
-    body.extend(_render_table(app, group, cf_index, cfs_by_slug, score_set))
+    body.extend(_render_table(app, group, cf_index, cfs_by_slug, score_set,
+                              include_slugs, exclude_slugs))
     body.append("")
     return "\n".join(body)
 
@@ -178,12 +185,18 @@ def define_env(env):
                            exclude_groups: list[str] | None = None,
                            add_groups: list[str] | None = None,
                            force_required: list[str] | None = None,
-                           force_optional: list[str] | None = None) -> str:
+                           force_optional: list[str] | None = None,
+                           only: str | None = None,
+                           emit_headers: bool = True) -> str:
         """Render required + optional CF tables for `profile_name` in `app`.
 
         Filters `docs/json/{app}/cf-groups/*.json` by `quality_profiles.include`.
         Per-call overrides supplement the data-driven overrides from
         `quality-profile-groups/groups.json` `profile_overrides`.
+
+        - `only="required"` / `only="optional"` renders just one bucket.
+        - `emit_headers=False` suppresses the bold section labels when the
+          caller (e.g. the German guide) manages headers itself.
         """
         if app not in cf_groups:
             return f"<!-- render_profile_cfs: unknown app '{app}' -->"
@@ -193,6 +206,8 @@ def define_env(env):
         add = set(data_overrides.get("add_groups") or [])
         force_req = set(data_overrides.get("force_required") or [])
         force_opt = set(data_overrides.get("force_optional") or [])
+        include_cfs = {k: set(v) for k, v in (data_overrides.get("include_cfs") or {}).items()}
+        exclude_cfs = {k: set(v) for k, v in (data_overrides.get("exclude_cfs") or {}).items()}
         if exclude_groups:
             exclude.update(exclude_groups)
         if add_groups:
@@ -210,15 +225,21 @@ def define_env(env):
         optional: list[str] = []
         for slug, group in groups:
             bucket = _bucket(group, slug, force_req, force_opt)
-            rendered = _render_group(app, slug, group, cf_index[app], cfs[app], score_set)
+            rendered = _render_group(
+                app, slug, group, cf_index[app], cfs[app], score_set,
+                include_slugs=include_cfs.get(slug),
+                exclude_slugs=exclude_cfs.get(slug),
+            )
             (required if bucket == "required" else optional).append(rendered)
 
         chunks: list[str] = []
-        if required:
-            chunks.append("**The following Custom Formats are required:**\n")
+        if required and only != "optional":
+            if emit_headers:
+                chunks.append("**The following Custom Formats are required:**\n")
             chunks.extend(required)
-        if optional:
-            chunks.append("**The following Custom Formats are optional:**\n")
+        if optional and only != "required":
+            if emit_headers:
+                chunks.append("**The following Custom Formats are optional:**\n")
             chunks.extend(optional)
         if not chunks:
             return (
