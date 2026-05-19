@@ -84,8 +84,6 @@ If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-{! include-markdown "../../includes/cf/radarr-cf-hd-bluray-web-scoring.md" !}
-
 [[ render_profile_cfs('radarr', 'HD Bluray + WEB') ]]
 
 Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
@@ -112,8 +110,6 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-{! include-markdown "../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md" !}
-
 [[ render_profile_cfs('radarr', 'UHD Bluray + WEB') ]]
 
 Use the following main settings in your profile.
@@ -135,8 +131,6 @@ If you prefer 1080p Remuxes (Remux-1080p)
 - _Size: 20-40 GB for a Remux-1080p depending on the running time._
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
-
-{! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
 [[ render_profile_cfs('radarr', 'Remux + WEB 1080p') ]]
 
@@ -161,8 +155,6 @@ If you prefer 2160p Remuxes (Remux-2160p)
 - _Size: 40-100 GB for a Remux-2160p depending on the running time._
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
-
-{! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
 [[ render_profile_cfs('radarr', 'Remux + WEB 2160p') ]]
 

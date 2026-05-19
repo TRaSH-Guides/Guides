@@ -81,8 +81,6 @@ If you prefer 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
-
 [[ render_profile_cfs('sonarr', 'WEB-1080p') ]]
 
 Note: The `Audio Formats` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
@@ -112,8 +110,6 @@ Use the following main settings in your profile.
 If you prefer 2160p WEBDL (WEB-2160p)
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
 
 [[ render_profile_cfs('sonarr', 'WEB-2160p') ]]
 
