@@ -112,21 +112,11 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
 {! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+[[ render_profile_cfs('radarr', '[French MULTi.VO] HD Bluray + WEB') ]]
 
 Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
 
@@ -152,23 +142,11 @@ Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB prof
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+[[ render_profile_cfs('radarr', '[French MULTi.VO] HD Remux (1080p)') ]]
 
 ---
 
@@ -191,27 +169,11 @@ Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB prof
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
 {! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+[[ render_profile_cfs('radarr', '[French MULTi.VO] UHD Bluray + WEB') ]]
 
 ---
 
@@ -238,23 +200,9 @@ Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB prof
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+[[ render_profile_cfs('radarr', '[French MULTi.VO] UHD Remux (2160p)') ]]
 
 ---
 
