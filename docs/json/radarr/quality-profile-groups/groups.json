@@ -11,6 +11,32 @@
       "web-1080p": "e8c5acb741363a0dbda67d3978f4912f",
       "web-2160p": "0537bd27bcf8da604f30a862343b1742",
       "web-2160p-combined": "05fbf054ac8ad0303335026cc2632f1a"
+    },
+    "profile_overrides": {
+      "hd-bluray-web": {
+        "profile_name": "HD Bluray + WEB",
+        "exclude_groups": ["release-groups-hq"],
+        "add_groups": ["required-repack-proper", "release-groups-asian"],
+        "force_optional": ["optional-golden-rule-hd", "optional-golden-rule-uhd"]
+      },
+      "uhd-bluray-web": {
+        "profile_name": "UHD Bluray + WEB",
+        "exclude_groups": ["release-groups-hq"],
+        "add_groups": ["required-repack-proper", "release-groups-asian"],
+        "force_optional": ["audio-formats", "optional-golden-rule-hd", "optional-golden-rule-uhd"]
+      },
+      "remux-web-1080p": {
+        "profile_name": "Remux + WEB 1080p",
+        "exclude_groups": ["release-groups-hq"],
+        "add_groups": ["required-repack-proper", "release-groups-asian"],
+        "force_optional": ["audio-formats", "optional-golden-rule-hd", "optional-golden-rule-uhd"]
+      },
+      "remux-web-2160p": {
+        "profile_name": "Remux + WEB 2160p",
+        "exclude_groups": ["release-groups-hq"],
+        "add_groups": ["required-repack-proper", "release-groups-asian"],
+        "force_optional": ["audio-formats", "optional-golden-rule-hd", "optional-golden-rule-uhd"]
+      }
     }
   },
   {
