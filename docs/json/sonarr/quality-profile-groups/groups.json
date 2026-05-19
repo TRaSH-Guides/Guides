@@ -7,6 +7,20 @@
       "web-2160p-combined": "c4cadd6b35b95f62c3d47a408e53e2f7",
       "web-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
       "web-2160p-alternative": "dfa5eaae7894077ad6449169b6eb03e0"
+    },
+    "profile_overrides": {
+      "web-1080p": {
+        "profile_name": "WEB-1080p",
+        "exclude_groups": ["release-groups-hq"],
+        "add_groups": ["required-repack-proper", "release-groups-asian"],
+        "force_optional": ["optional-golden-rule-hd", "optional-golden-rule-uhd"]
+      },
+      "web-2160p": {
+        "profile_name": "WEB-2160p",
+        "exclude_groups": ["release-groups-hq"],
+        "add_groups": ["required-repack-proper", "release-groups-asian"],
+        "force_optional": ["optional-golden-rule-hd", "optional-golden-rule-uhd"]
+      }
     }
   },
   {
