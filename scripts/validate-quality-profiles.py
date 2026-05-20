@@ -240,8 +240,10 @@ def validate_app(app: str) -> list[str]:
                         f" '{override_name}' does not match"
                         f" quality-profiles/{slug}.json name '{expected}'"
                     )
-            for field in ("exclude_groups", "add_groups",
-                          "force_required", "force_optional"):
+            for field in (
+                "exclude_groups", "add_groups",
+                "force_required", "force_optional",
+            ):
                 for cf_group_slug in override.get(field) or []:
                     if cf_group_slug not in cf_group_slugs:
                         errors.append(

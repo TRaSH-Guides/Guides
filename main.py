@@ -53,11 +53,15 @@ def _resolve_score(cf: dict[str, Any], score_set: str) -> str:
     return "0"
 
 
-def _render_table(app: str, group: dict[str, Any], cf_index: dict[str, str],
-                  cfs_by_slug: dict[str, dict[str, Any]],
-                  score_set: str,
-                  include_slugs: set[str] | None = None,
-                  exclude_slugs: set[str] | None = None) -> list[str]:
+def _render_table(
+    app: str,
+    group: dict[str, Any],
+    cf_index: dict[str, str],
+    cfs_by_slug: dict[str, dict[str, Any]],
+    score_set: str,
+    include_slugs: set[str] | None = None,
+    exclude_slugs: set[str] | None = None,
+) -> list[str]:
     lines = [
         "    | Custom Format | Score | Trash ID |",
         "    | --- | :---: | --- |",
@@ -82,22 +86,34 @@ def _render_table(app: str, group: dict[str, Any], cf_index: dict[str, str],
     return lines
 
 
-def _render_group(app: str, slug: str, group: dict[str, Any],
-                  cf_index: dict[str, str],
-                  cfs_by_slug: dict[str, dict[str, Any]],
-                  score_set: str,
-                  include_slugs: set[str] | None = None,
-                  exclude_slugs: set[str] | None = None) -> str:
+def _render_group(
+    app: str,
+    slug: str,
+    group: dict[str, Any],
+    cf_index: dict[str, str],
+    cfs_by_slug: dict[str, dict[str, Any]],
+    score_set: str,
+    include_slugs: set[str] | None = None,
+    exclude_slugs: set[str] | None = None,
+) -> str:
     title = group.get("name", slug)
     body = [f'??? abstract "{title} - [Click to show/hide]"', ""]
-    body.extend(_render_table(app, group, cf_index, cfs_by_slug, score_set,
-                              include_slugs, exclude_slugs))
+    body.extend(
+        _render_table(
+            app, group, cf_index, cfs_by_slug, score_set,
+            include_slugs, exclude_slugs,
+        )
+    )
     body.append("")
     return "\n".join(body)
 
 
-def _bucket(group: dict[str, Any], slug: str,
-            force_required: set[str], force_optional: set[str]) -> str:
+def _bucket(
+    group: dict[str, Any],
+    slug: str,
+    force_required: set[str],
+    force_optional: set[str],
+) -> str:
     if slug in force_required:
         return "required"
     if slug in force_optional:
@@ -105,16 +121,20 @@ def _bucket(group: dict[str, Any], slug: str,
     return "required" if group.get("default") == "true" else "optional"
 
 
-def _profile_score_set(profiles_by_name: dict[str, dict[str, Any]],
-                       profile_name: str) -> str:
+def _profile_score_set(
+    profiles_by_name: dict[str, dict[str, Any]],
+    profile_name: str,
+) -> str:
     profile = profiles_by_name.get(profile_name) or {}
     return profile.get("trash_score_set") or "default"
 
 
-def _collect_groups(cf_groups: dict[str, dict[str, Any]],
-                    profile_name: str,
-                    exclude: set[str],
-                    add: set[str]) -> list[tuple[str, dict[str, Any]]]:
+def _collect_groups(
+    cf_groups: dict[str, dict[str, Any]],
+    profile_name: str,
+    exclude: set[str],
+    add: set[str],
+) -> list[tuple[str, dict[str, Any]]]:
     out: list[tuple[str, dict[str, Any]]] = []
     seen: set[str] = set()
     for slug, group in cf_groups.items():
@@ -133,8 +153,10 @@ def _collect_groups(cf_groups: dict[str, dict[str, Any]],
     return out
 
 
-def _read_overrides(profile_groups: list[dict[str, Any]],
-                    profile_name: str) -> dict[str, Any]:
+def _read_overrides(
+    profile_groups: list[dict[str, Any]],
+    profile_name: str,
+) -> dict[str, Any]:
     """Find profile_overrides for `profile_name` by trash_id lookup."""
     for group in profile_groups:
         overrides_map = group.get("profile_overrides") or {}
@@ -181,13 +203,16 @@ def define_env(env):
             profile_groups_raw[app] = []
 
     @env.macro
-    def render_profile_cfs(app: str, profile_name: str,
-                           exclude_groups: list[str] | None = None,
-                           add_groups: list[str] | None = None,
-                           force_required: list[str] | None = None,
-                           force_optional: list[str] | None = None,
-                           only: str | None = None,
-                           emit_headers: bool = True) -> str:
+    def render_profile_cfs(
+        app: str,
+        profile_name: str,
+        exclude_groups: list[str] | None = None,
+        add_groups: list[str] | None = None,
+        force_required: list[str] | None = None,
+        force_optional: list[str] | None = None,
+        only: str | None = None,
+        emit_headers: bool = True,
+    ) -> str:
         """Render required + optional CF tables for `profile_name` in `app`.
 
         Filters `docs/json/{app}/cf-groups/*.json` by `quality_profiles.include`.
@@ -196,7 +221,7 @@ def define_env(env):
 
         - `only="required"` / `only="optional"` renders just one bucket.
         - `emit_headers=False` suppresses the bold section labels when the
-          caller (e.g. the German guide) manages headers itself.
+            caller (e.g. the German guide) manages headers itself.
         """
         if app not in cf_groups:
             return f"<!-- render_profile_cfs: unknown app '{app}' -->"
