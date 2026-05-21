@@ -49,9 +49,10 @@ jobs:
         if: env.NEW_COMMITS == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
+          PAT: ${{ secrets.PAT }}
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           git diff
           git commit -am "chore(changelog): Update updates.txt" || exit 0
-          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master
+          git push "https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master

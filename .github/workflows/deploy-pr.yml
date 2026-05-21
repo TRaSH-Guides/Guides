@@ -34,13 +34,13 @@ jobs:
           path: ${{ github.workspace }}/pr_info
 
       - name: Display structure of downloaded files
-        run: tree ${{ github.workspace }}
+        run: tree "$GITHUB_WORKSPACE"
 
       - name: Read PR info
         id: pr_info
         run: |
-          echo "pr_number=$(cat ${{ github.workspace }}/pr_info/PR_NUMBER)" >> $GITHUB_OUTPUT
-          echo "pr_sha=$(cat ${{ github.workspace }}/pr_info/PR_SHA)" >> $GITHUB_OUTPUT
+          echo "pr_number=$(cat "$GITHUB_WORKSPACE/pr_info/PR_NUMBER")" >> "$GITHUB_OUTPUT"
+          echo "pr_sha=$(cat "$GITHUB_WORKSPACE/pr_info/PR_SHA")" >> "$GITHUB_OUTPUT"
 
       - name: Checkout
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
@@ -87,13 +87,8 @@ jobs:
     runs-on: ubuntu-latest
     if: always() && github.event.repository.fork == false
     permissions:
-      contents: read
       pull-requests: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
-        with:
-          persist-credentials: false
 
       - name: Comment PR
         env:
@@ -121,4 +116,4 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               -X POST \
               -d "{\"body\": $ESCAPED_BODY }" \
-              $COMMENTS_URL
+              "$COMMENTS_URL"

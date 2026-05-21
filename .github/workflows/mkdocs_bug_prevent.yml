@@ -19,10 +19,13 @@ jobs:
 
       - name: Find JSON Files Changed in Commit
         id: find_json_files
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
         run: |
           # Get the list of JSON files changed in the commit
-          JSON_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.json$' || true)
-          echo "json_files=$JSON_FILES" >> $GITHUB_ENV
+          JSON_FILES=$(git diff --name-only "$BEFORE_SHA" "$CURRENT_SHA" | grep '\.json$' || true)
+          echo "json_files=$JSON_FILES" >> "$GITHUB_ENV"
 
       - name: Check JSON Files for MkDocs Macro Issues
         run: |
