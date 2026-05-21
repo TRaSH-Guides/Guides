@@ -2,19 +2,20 @@ name: Label Conflicts
 
 on:
   push:
-  pull_request:
+    branches: [master]
+  # pull_request_target is safe here; this workflow never checks out PR code.
+  pull_request_target:
+    types: [synchronize]
 
 jobs:
   triage:
     runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
     permissions:
       pull-requests: write
     steps:
       - name: Label merge conflicts
-        uses: mschilde/auto-label-merge-conflicts@3fdaf1c8b3f8e5b0f88753d9cb3c9c779370b3ef # v2.0
-        if: github.event.repository.fork == false
+        uses: eps1lon/actions-label-merge-conflict@1df065ebe6e3310545d4f4c4e862e43bdca146f0 # v3.0.3
         with:
-          CONFLICT_LABEL_NAME: "Status: Conflicted"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_RETRIES: 5
-          WAIT_MS: 5000
+          dirtyLabel: "Status: Conflicted"
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
