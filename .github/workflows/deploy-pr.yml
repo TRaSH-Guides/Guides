@@ -102,14 +102,8 @@ jobs:
     runs-on: ubuntu-latest
     if: always() && needs.check.outputs.should_deploy == 'true'
     permissions:
-      contents: read
       pull-requests: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-        with:
-          persist-credentials: false
-
       - name: Comment PR
         env:
           PREVIEW_URL: ${{ needs.build.outputs.url }}
@@ -136,4 +130,4 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               -X POST \
               -d "{\"body\": $ESCAPED_BODY }" \
-              $COMMENTS_URL
+              "$COMMENTS_URL"
