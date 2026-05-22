@@ -664,6 +664,22 @@ We've made 3 guides related to this.
 
 ---
 
+### HLG
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hlg.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ## Streaming Services
 
 ---
