@@ -32,7 +32,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
       },
       "uhd-bluray-web": {
         "profile_name": "UHD Bluray + WEB",
@@ -45,7 +48,8 @@
           "release-groups-hq"
         ],
         "force_optional": [
-          "audio-formats"
+          "audio-formats",
+          "optional-golden-rule-uhd"
         ],
         "include_cfs": {
           "release-groups-hq": [
@@ -69,7 +73,8 @@
           "release-groups-hq"
         ],
         "force_optional": [
-          "audio-formats"
+          "audio-formats",
+          "optional-golden-rule-hd"
         ],
         "include_cfs": {
           "release-groups-hq": [
@@ -93,7 +98,8 @@
           "release-groups-hq"
         ],
         "force_optional": [
-          "audio-formats"
+          "audio-formats",
+          "optional-golden-rule-uhd"
         ],
         "include_cfs": {
           "release-groups-hq": [
@@ -165,6 +171,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-multi-vo-hd-remux-web": {
@@ -175,6 +184,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-multi-vo-uhd-bluray-web": {
@@ -185,6 +197,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       },
       "french-multi-vo-uhd-remux-web": {
@@ -195,6 +210,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       },
       "french-multi-vf-hd-bluray-web": {
@@ -205,6 +223,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-multi-vf-hd-remux-web": {
@@ -215,6 +236,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-multi-vf-uhd-bluray-web": {
@@ -225,6 +249,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       },
       "french-multi-vf-uhd-remux-web": {
@@ -235,6 +262,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       },
       "french-vostfr-hd-bluray-web": {
@@ -245,6 +275,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-vostfr-hd-remux-web": {
@@ -255,6 +288,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-vostfr-uhd-bluray-web": {
@@ -265,6 +301,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       },
       "french-vostfr-uhd-remux-web": {
@@ -275,6 +314,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       }
     }
@@ -301,6 +343,9 @@
         "force_required": [
           "release-groups-german-anime",
           "release-groups-anime"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "german-hd-bluray-web": {
@@ -323,7 +368,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
       },
       "german-hd-remux-web": {
         "profile_name": "[German] HD Remux + WEB",
@@ -345,7 +393,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
       },
       "german-uhd-bluray-web": {
         "profile_name": "[German] UHD Bluray + WEB",
@@ -367,7 +418,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
       },
       "german-uhd-bluray-web-alternative": {
         "profile_name": "[German] UHD Bluray + WEB (Alternative)",
@@ -389,7 +443,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
       },
       "german-uhd-remux-web": {
         "profile_name": "[German] Remux + WEB 2160p",
@@ -411,7 +468,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
       }
     }
   },
