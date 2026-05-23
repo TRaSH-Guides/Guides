@@ -30,7 +30,10 @@
             "web-tier-03",
             "web-scene"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
       },
       "web-2160p": {
         "profile_name": "WEB-2160p",
@@ -49,7 +52,10 @@
             "web-tier-03",
             "web-scene"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
       }
     }
   },
@@ -96,6 +102,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-multi-vo-bluray-web-2160p": {
@@ -106,6 +115,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       },
       "french-multi-vf-bluray-web-1080p": {
@@ -116,6 +128,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-multi-vf-bluray-web-2160p": {
@@ -126,6 +141,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       },
       "french-vostfr-bluray-web-1080p": {
@@ -136,6 +154,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "french-vostfr-bluray-web-2160p": {
@@ -146,6 +167,9 @@
         ],
         "force_required": [
           "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
         ]
       }
     }
@@ -172,6 +196,9 @@
         "force_required": [
           "release-groups-german-anime",
           "release-groups-anime"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
         ]
       },
       "german-hd-bluray-web": {
@@ -193,7 +220,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
       },
       "german-hd-remux-web": {
         "profile_name": "[German] HD Remux + WEB",
@@ -214,7 +244,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
       },
       "german-uhd-bluray-web": {
         "profile_name": "[German] UHD Bluray + WEB",
@@ -235,7 +268,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
       },
       "german-uhd-bluray-web-alternative": {
         "profile_name": "[German] UHD Bluray + WEB (Alternative)",
@@ -256,7 +292,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
       },
       "german-uhd-remux-web": {
         "profile_name": "[German] UHD Remux + WEB",
@@ -277,7 +316,10 @@
             "web-tier-02",
             "web-tier-03"
           ]
-        }
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
       }
     }
   },
