@@ -66,6 +66,15 @@
       }
     },
     {
+      "name": "CYPHER",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CYPHER)$"
+      }
+    },
+    {
       "name": "EniaHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -135,6 +144,15 @@
       "required": false,
       "fields": {
         "value": "^(MGE\\b.*)$"
+      }
+    },
+    {
+      "name": "MLH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MLH)$"
       }
     },
     {
@@ -261,6 +279,15 @@
       "required": false,
       "fields": {
         "value": "^(WTV)$"
+      }
+    },
+    {
+      "name": "XiQUEXiQUE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(XiQUEXiQUE)$"
       }
     },
     {
