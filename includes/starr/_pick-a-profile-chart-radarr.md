@@ -30,9 +30,9 @@ flowchart TD
     SQP_TIER -->|MA-hybrid Remux variant| P_SQP_4M(["[SQP] SQP-4 (MA Hybrid)"])
     SQP_TIER -->|Hardlinked-store optimised| P_SQP_5(["[SQP] SQP-5"])
 
-    ANIME[Anime movies?] -.-> ANIME_LINK[/See the Anime guide<br/>for [Anime] Remux-1080p/]
-    DE[German movies?] -.-> DE_LINK[/See the German guide<br/>for [German] profiles/]
-    FR[French movies?] -.-> FR_LINK[/See the French guide<br/>for [French] profiles/]
+    ANIME[Anime movies?] -.-> ANIME_LINK[/"See the Anime guide<br/>for [Anime] Remux-1080p"/]
+    DE[German movies?] -.-> DE_LINK[/"See the German guide<br/>for [German] profiles"/]
+    FR[French movies?] -.-> FR_LINK[/"See the French guide<br/>for [French] profiles"/]
 
     classDef leaf fill:#1f2937,stroke:#4051B5,stroke-width:2px,color:#fff,font-weight:bold;
     classDef decision fill:#fef3c7,stroke:#ca8a04,color:#000;
