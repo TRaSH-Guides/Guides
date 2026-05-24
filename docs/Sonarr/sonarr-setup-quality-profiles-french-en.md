@@ -82,6 +82,8 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 {! include-markdown "../../includes/french-guide/french-guide-language-profiles-en.md" !}
 
+{! include-markdown "../../includes/starr/how-to-pick-a-profile-flowchart-sonarr-french.md" !}
+
 ---
 
 ### French Audio Versions
