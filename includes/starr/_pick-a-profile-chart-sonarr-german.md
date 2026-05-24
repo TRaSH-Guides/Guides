@@ -2,7 +2,7 @@
 ```mermaid
 %%{init: {"flowchart": {"useMaxWidth": false, "htmlLabels": true, "curve": "basis"}, "themeVariables": {"fontSize": "14px"}}}%%
 flowchart TD
-    START([Start: pick a [German] Sonarr profile]) --> KIND{Content kind?}
+    START(["Start: pick a [German] Sonarr profile"]) --> KIND{Content kind?}
     KIND -->|German live-action TV| RES{Display + player<br/>resolution?}
     KIND -->|German anime TV| P_ANIME(["[German] Anime HD Bluray + WEB"])
 
