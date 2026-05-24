@@ -13,9 +13,9 @@ flowchart TD
     UHD_KIND -->|Yes - upgrade chain<br/>from 1080p| P_WEB_2160_COMB([WEB-2160p Combined])
     UHD_KIND -->|Yes - older / HDTV sources too| P_WEB_2160_ALT([WEB-2160p Alternative])
 
-    ANIME[Anime shows?] -.-> ANIME_LINK[/See the Anime guide<br/>for [Anime] Remux-1080p/]
-    DE[German TV?] -.-> DE_LINK[/See the German guide<br/>for [German] profiles/]
-    FR[French TV?] -.-> FR_LINK[/See the French guide<br/>for [French] profiles/]
+    ANIME[Anime shows?] -.-> ANIME_LINK[/"See the Anime guide<br/>for [Anime] Remux-1080p"/]
+    DE[German TV?] -.-> DE_LINK[/"See the German guide<br/>for [German] profiles"/]
+    FR[French TV?] -.-> FR_LINK[/"See the French guide<br/>for [French] profiles"/]
 
     classDef leaf fill:#1f2937,stroke:#4051B5,stroke-width:2px,color:#fff,font-weight:bold;
     classDef decision fill:#fef3c7,stroke:#ca8a04,color:#000;
