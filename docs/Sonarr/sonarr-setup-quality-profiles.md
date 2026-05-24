@@ -69,6 +69,8 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 {! include-markdown "../../includes/starr/which-quality-profile-should-you-choose.md" !}
 
+{! include-markdown "../../includes/starr/how-to-pick-a-profile-flowchart-sonarr.md" !}
+
 ---
 
 ## TRaSH Quality Profiles
