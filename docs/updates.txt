@@ -1,3 +1,10 @@
+# 2026-05-24 03:50
+- [feat(starr): Change the default score for the CF `WiTH AD` to `-10k`](https://github.com/TRaSH-Guides/Guides/pull/2744)
+- [feat(starr): Recover the HLG CFs with a score of -10k](https://github.com/TRaSH-Guides/Guides/pull/2742)
+- [feat(starr-anime): resort German anime guides.](https://github.com/TRaSH-Guides/Guides/pull/2747)
+- [fix(gha): switch to eps1lon action and fix fork PR failures](https://github.com/TRaSH-Guides/Guides/pull/2748)
+- [fix(starr): Asian Streaming Services CF `friDay` and `iQIY` to Avoid False Positives](https://github.com/TRaSH-Guides/Guides/pull/2746)
+
 # 2026-05-17 03:39
 - [feat(guide-sync): Reorganized The CF Groups](https://github.com/TRaSH-Guides/Guides/pull/2733)
 - [feat(guide): Reorganized The Custom Format Collection Page](https://github.com/TRaSH-Guides/Guides/pull/2727)
