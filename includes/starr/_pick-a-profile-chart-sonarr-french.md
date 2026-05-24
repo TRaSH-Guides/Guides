@@ -2,7 +2,7 @@
 ```mermaid
 %%{init: {"flowchart": {"useMaxWidth": false, "htmlLabels": true, "curve": "basis"}, "themeVariables": {"fontSize": "14px"}}}%%
 flowchart TD
-    START([Start: pick a [French] Sonarr profile]) --> VAR{Audio variant?}
+    START(["Start: pick a [French] Sonarr profile"]) --> VAR{Audio variant?}
 
     VAR -->|MULTi.VO<br/>original audio + French| VO_RES{Target resolution?}
     VAR -->|MULTi.VF<br/>French audio only| VF_RES{Target resolution?}
