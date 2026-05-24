@@ -12,9 +12,9 @@ hide:
     .md-typeset .mermaid svg { max-width: none; height: auto; min-width: 100%; }
 </style>
 
-# Sonarr: pick a profile (full-size flowchart)
+# Radarr: pick a [French] profile (full-size flowchart)
 
-Standalone, full-width version of the decision tree from [the main Sonarr
-quality-profile setup guide](sonarr-setup-quality-profiles.md#which-quality-profile-should-you-choose).
+Standalone, full-width version of the French-profile decision tree from
+[the French Radarr setup guide](radarr-setup-quality-profiles-french-en.md).
 
-{! include-markdown "../../includes/starr/_pick-a-profile-chart-sonarr.md" !}
+{! include-markdown "../../includes/starr/_pick-a-profile-chart-radarr-french.md" !}
