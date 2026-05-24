@@ -98,6 +98,8 @@ To help with this, there is a handy service called [Umlautadaptarr](https://gith
 
 ## Quality profiles
 
+{! include-markdown "../../includes/starr/how-to-pick-a-profile-flowchart-radarr-german.md" !}
+
 ### German audio
 
 Depending on what's released first and available, the following Workflow Logic will be used:
