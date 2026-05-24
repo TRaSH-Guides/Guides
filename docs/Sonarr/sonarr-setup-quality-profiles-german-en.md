@@ -91,6 +91,8 @@ Sonarr also addresses this issue in their own [Wiki](https://wiki.servarr.com/so
 
 ## Quality profiles
 
+{! include-markdown "../../includes/starr/how-to-pick-a-profile-flowchart-sonarr-german.md" !}
+
 ### German audio
 
 Depending on what's released first and available, the following Workflow Logic will be used:
