@@ -32,6 +32,11 @@ Here you will find guidelines for contributing to [TRaSH Guides](https://trash-g
         - [Group Custom Format specific settings](#group-custom-format-specific-settings)
     - [quality-profile-groups](#quality-profile-groups)
     - [conflicts](#conflicts)
+- [Quality-profile guide autopopulation](#quality-profile-guide-autopopulation)
+    - [Authoring contract](#authoring-contract)
+    - [Per-profile overrides](#per-profile-overrides)
+    - [Adding a new cf-group](#adding-a-new-cf-group)
+    - ["Pick a profile" decision flowcharts](#pick-a-profile-decision-flowcharts)
 - [Recommendations](#recommendations)
     - [Preview Docs Locally](#preview-docs-locally)
     - [Preview after Pull Request](#preview-after-pull-request)
@@ -375,6 +380,97 @@ Each file has a `custom_formats` array, and each entry in that array is one conf
 - `desc` is an optional free-text field for longer maintainer notes. No formatting rules.
 - The schema (`schemas/conflicts.schema.json`) validates that keys are 32-character hex strings.
 - When you add a new CF that conflicts with an existing one, add or update the conflict group in the relevant `conflicts.json` file.
+
+---
+
+## Quality-profile guide autopopulation
+
+The per-profile required/optional CF tables shown on every `radarr-setup-quality-profiles*.md` (and Sonarr equivalent) are **generated at build time by a Jinja macro** that reads the cf-groups JSON data directly. This means a new cf-group added under `docs/json/{app}/cf-groups/` automatically surfaces on every quality-profile guide page whose profile name appears in that cf-group's `quality_profiles.include` map — no markdown edit needed.
+
+### Authoring contract
+
+The macro is `render_profile_cfs(app, profile_name, ...)`, defined in `main.py` at the repo root and exposed by the [`mkdocs-macros-plugin`](https://mkdocs-macros-plugin.readthedocs.io/). Call sites look like:
+
+```jinja
+[[ render_profile_cfs('radarr', 'Remux + WEB 2160p') ]]
+```
+
+`profile_name` must match the exact `name` field of the target `docs/json/{app}/quality-profiles/<slug>.json` file. Typos are caught by `scripts/validate-quality-profiles.py` at pre-commit time.
+
+For each cf-group whose `quality_profiles.include` contains `profile_name`, the macro emits:
+
+```markdown
+??? abstract "<group.name> - [Click to show/hide]"
+
+    | Custom Format | Score | Trash ID |
+    | --- | :---: | --- |
+    | [<cf.name>](/<App>/<App>-collection-of-custom-formats/#<cf-slug>) | <score> | <trash_id> |
+    ...
+```
+
+Each CF row's `<score>` comes from `cf.trash_scores[<profile's trash_score_set>]`, falling back to `cf.trash_scores.default`, and finally `0` for informational CFs with no `trash_scores`. Required vs optional bucketing is driven by the cf-group's top-level `default` flag (`"true"` → required, anything else → optional), unless an override flips it (see below).
+
+### Per-profile overrides
+
+The data layer (`cf-groups/*.json`, `cf/*.json`) is the canonical source of truth for **sync-tool consumers** (Recyclarr, Notifiarr, Trash-Sync). Guide-rendering tweaks that should NOT change the data layer live in `docs/json/{app}/quality-profile-groups/groups.json` under an optional `profile_overrides` block, keyed by the profile slug:
+
+```json
+{
+    "name": "Standard",
+    "profiles": {
+        "remux-web-2160p": "fd161a61e3ab826d3a22d53f935696dd"
+    },
+    "profile_overrides": {
+        "remux-web-2160p": {
+            "profile_name": "Remux + WEB 2160p",
+            "add_groups": ["required-repack-proper"],
+            "exclude_groups": [],
+            "force_required": [],
+            "force_optional": ["audio-formats", "optional-golden-rule-uhd"],
+            "include_cfs": {
+                "release-groups-hq": [
+                    "remux-tier-01", "remux-tier-02", "remux-tier-03",
+                    "web-tier-01", "web-tier-02", "web-tier-03"
+                ]
+            },
+            "exclude_cfs": {}
+        }
+    }
+}
+```
+
+| Field | Purpose |
+| --- | --- |
+| `profile_name` | The profile's `name` field, repeated here so the override is self-documenting. The validator enforces it matches the actual profile. |
+| `add_groups[]` | Force-attach a cf-group to this profile even when its own `quality_profiles.include` map doesn't list the profile. Useful for cf-groups currently mapped only to `Base Profile`. |
+| `exclude_groups[]` | Drop a cf-group on this profile even if its `include` map lists it. |
+| `force_required[]` / `force_optional[]` | Override the cf-group's top-level `default` flag for guide rendering only. The data-layer flag is untouched, so sync-tool behavior is unchanged. |
+| `include_cfs{<group>: [...]}` | Per-cf-group CF whitelist. Renders only the listed CFs from that group on this profile. Used for `release-groups-hq` to show only the tier subset relevant to each profile (Remux profiles see Remux + WEB tiers, HD Bluray profiles see HD Bluray + WEB tiers, etc.). |
+| `exclude_cfs{<group>: [...]}` | Per-cf-group CF blacklist; inverse of `include_cfs`. |
+
+**Reverting a per-profile decision** is a one-line edit: delete the override field, and the macro falls back to whatever the data layer says. No data edits, no behavioural change for sync tools.
+
+### Adding a new cf-group
+
+1. Drop `docs/json/{app}/cf-groups/<group-slug>.json` with the schema documented in [cf-groups](#cf-groups).
+2. List every quality-profile name the group should appear on in `quality_profiles.include`. This is the macro's primary filter.
+3. Set the top-level `default` to `"true"` if it should render under **Required** (and be default-on for sync tools), otherwise omit the field.
+4. Run `pre-commit run -a`. The validators ensure every referenced CF and profile name resolves.
+5. Build the site (`mkdocs build --strict`) — the group will surface on every guide page whose profile name you listed.
+
+If the rendered required/optional placement is wrong for one specific profile, add a `force_required` / `force_optional` entry in `groups.json` `profile_overrides` for that profile rather than flipping the cf-group's `default` flag (which would also change sync-tool behavior).
+
+### "Pick a profile" decision flowcharts
+
+The per-app decision charts (`includes/starr/_pick-a-profile-chart-{radarr,sonarr}*.md`) are hand-maintained mermaid `flowchart TD` diagrams, one per audience scope:
+
+- `_pick-a-profile-chart-radarr.md` / `_pick-a-profile-chart-sonarr.md` — Standard + SQP only; foreign-language guides are referenced via dashed pointer nodes.
+- `_pick-a-profile-chart-radarr-german.md` / `_pick-a-profile-chart-sonarr-german.md` — German profiles only.
+- `_pick-a-profile-chart-radarr-french.md` / `_pick-a-profile-chart-sonarr-french.md` — French profiles only.
+
+Each chart has a wrapper include (`how-to-pick-a-profile-flowchart-*.md`) that adds the admonition + an "Open in full-size view" button. The standalone `docs/{Radarr,Sonarr}/pick-a-profile-flowchart*.md` pages render the same chart at full viewport width.
+
+When you add or rename a quality profile, also update the matching chart so every leaf node remains a real profile.
 
 ---
 
