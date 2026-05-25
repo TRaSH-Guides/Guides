@@ -9,24 +9,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    },
-    {
       "name": "BLOOM",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -105,6 +87,24 @@
       "required": false,
       "fields": {
         "value": "^(ViSiON)$"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
       }
     }
   ]
