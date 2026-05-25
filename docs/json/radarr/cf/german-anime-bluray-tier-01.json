@@ -21,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(Pudding-sama)$"
+        "value": "^(Pudding[-]?[Ss]ama)$"
       }
     },
     {
