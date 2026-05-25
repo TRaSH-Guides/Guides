@@ -99,6 +99,15 @@
       }
     },
     {
+      "name": "MADSKY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MADSKY)$"
+      }
+    },
+    {
       "name": "monkee",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
