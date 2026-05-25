@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041-->
 ```mermaid
-%%{init: {"flowchart": {"useMaxWidth": false, "htmlLabels": true, "curve": "basis"}, "themeVariables": {"fontSize": "14px"}}}%%
+%%{init: {"flowchart": {"useMaxWidth": false, "htmlLabels": true, "curve": "basis", "nodeSpacing": 80, "rankSpacing": 110, "padding": 20}, "themeVariables": {"fontSize": "22px"}}}%%
 flowchart TD
     START(["Start: pick a [French] Sonarr profile"]) --> VAR{Audio variant?}
 
