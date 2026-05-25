@@ -1401,18 +1401,18 @@ We've made 3 guides related to this.
 
 ---
 
-#### CBPL
+#### CNLP
 
 <sub>Canal+</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/cbpl.md" !}
+    {! include-markdown "../../includes/cf-descriptions/cnlp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cbpl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cnlp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
