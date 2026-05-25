@@ -75,7 +75,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | Streaming Services Misc | Streaming Services UK | Streaming Services Optional                 |
 |-------------------------|-----------------------|---------------------------------------------|
 | [AUBC](#aubc)           | [4OD](#4od)           | [HD Streaming Boost](#hd-streaming-boost)   |
-| [Canal+](CNLP)          | [ALL4](#all4)         | [UHD Streaming Boost](#uhd-streaming-boost) |
+| [Canal+](#cnlp)         | [ALL4](#all4)         | [UHD Streaming Boost](#uhd-streaming-boost) |
 | [CBC](#cbc)             | [BBC iPlayer](#ip)    |                                             |
 | [Crave](#crav)          | [ITVX](#itvx)         |                                             |
 | [Discovery+](#dscp)     | [MY5](#my5)           |                                             |
@@ -1460,18 +1460,18 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
-#### CBPL
+#### CNLP
 
 <sub>Canal+</sub>
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/cbpl.md" !}
+    {! include-markdown "../../includes/cf-descriptions/cnlp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cbpl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cnlp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

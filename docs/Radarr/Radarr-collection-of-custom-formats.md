@@ -79,7 +79,7 @@ We've made 3 guides related to this.
 | Streaming Services Misc | Streaming Services UK | Streaming Services Anime |
 |-------------------------|-----------------------|--------------------------|
 | [AUBC](#aubc)           | [BBC iPlayer](#ip)    | [Funimation](#funi)      |
-| [Canal+](CNLP)          | [ITVX](#itvx)         | [VRV](#vrv)              |
+| [Canal+](#cnlp)         | [ITVX](#itvx)         | [VRV](#vrv)              |
 | [CBC](#cbc)             | [MY5](#my5)           |                          |
 | [Crave](#crav)          | [NOW](#now)           |                          |
 | [OViD](#ovid)           |                       |                          |
