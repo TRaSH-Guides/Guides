@@ -14,6 +14,11 @@
             "required": false
         },
         {
+            "name": "CNLP",
+            "trash_id": "543b0fb529e6b102837b8a9facdd82fb",
+            "required": false
+        },
+        {
             "name": "CRAV",
             "trash_id": "4e9a630db98d5391aec1368a0256e2fe",
             "required": false
@@ -29,8 +34,8 @@
             "required": false
         },
         {
-            "name": "STRP",
-            "trash_id": "fe4062eac43d4ea75955f8ae48adcf1e",
+            "name": "QIBI",
+            "trash_id": "3ac5d84fce98bab1b531393e9c82f467",
             "required": false
         },
         {
@@ -39,8 +44,8 @@
             "required": false
         },
         {
-            "name": "QIBI",
-            "trash_id": "3ac5d84fce98bab1b531393e9c82f467",
+            "name": "STRP",
+            "trash_id": "fe4062eac43d4ea75955f8ae48adcf1e",
             "required": false
         }
     ],

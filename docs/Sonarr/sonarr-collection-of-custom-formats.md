@@ -75,11 +75,12 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | Streaming Services Misc | Streaming Services UK | Streaming Services Optional                 |
 |-------------------------|-----------------------|---------------------------------------------|
 | [AUBC](#aubc)           | [4OD](#4od)           | [HD Streaming Boost](#hd-streaming-boost)   |
-| [CBC](#cbc)             | [ALL4](#all4)         | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [Crave](#crav)          | [BBC iPlayer](#ip)    |                                             |
-| [Discovery+](#dscp)     | [ITVX](#itvx)         |                                             |
-| [OViD](#ovid)           | [MY5](#my5)           |                                             |
-| [Quibi](#qibi)          | [NOW](#now)           |                                             |
+| [Canal+](CNLP)          | [ALL4](#all4)         | [UHD Streaming Boost](#uhd-streaming-boost) |
+| [CBC](#cbc)             | [BBC iPlayer](#ip)    |                                             |
+| [Crave](#crav)          | [ITVX](#itvx)         |                                             |
+| [Discovery+](#dscp)     | [MY5](#my5)           |                                             |
+| [OViD](#ovid)           | [NOW](#now)           |                                             |
+| [Quibi](#qibi)          |                       |                                             |
 | [Star+](#strp)          |                       |                                             |
 | [YouTube Red](#red)     |                       |                                             |
 
@@ -1453,6 +1454,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/aubc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### CBPL
+
+<sub>Canal+</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cbpl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cbpl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

@@ -79,9 +79,10 @@ We've made 3 guides related to this.
 | Streaming Services Misc | Streaming Services UK | Streaming Services Anime |
 |-------------------------|-----------------------|--------------------------|
 | [AUBC](#aubc)           | [BBC iPlayer](#ip)    | [Funimation](#funi)      |
-| [CBC](#cbc)             | [ITVX](#itvx)         | [VRV](#vrv)              |
-| [Crave](#crav)          | [MY5](#my5)           |                          |
-| [OViD](#ovid)           | [NOW](#now)           |                          |
+| [Canal+](CNLP)          | [ITVX](#itvx)         | [VRV](#vrv)              |
+| [CBC](#cbc)             | [MY5](#my5)           |                          |
+| [Crave](#crav)          | [NOW](#now)           |                          |
+| [OViD](#ovid)           |                       |                          |
 | [Star+](#strp)          |                       |                          |
 
 ---
@@ -1394,6 +1395,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/aubc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### CBPL
+
+<sub>Canal+</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cbpl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cbpl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
