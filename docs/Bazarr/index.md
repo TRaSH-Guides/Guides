@@ -8,7 +8,7 @@ For Support specific related to Bazarr we suggest you join their official [Disco
 
 ### Current Versions
 
-![version](https://img.shields.io/github/v/release/morpheus65535/bazarr?label=Latest&style=for-the-badge&logo=github&color=4051B5){ .off-glb } ![version](https://img.shields.io/github/v/release/morpheus65535/bazarr?include_prereleases&label=Pre-release&style=for-the-badge&logo=github&color=4051B5){ .off-glb }
+![GitHub Release](https://img.shields.io/github/v/release/morpheus65535/bazarr?label=Latest&style=for-the-badge&logo=github&color=4051B5){ .off-glb } ![GitHub Release](https://img.shields.io/github/v/release/morpheus65535/bazarr?include_prereleases&label=Pre-release&style=for-the-badge&logo=github&color=4051B5){ .off-glb }
 
 ## Available guides
 

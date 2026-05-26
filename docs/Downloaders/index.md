@@ -32,6 +32,6 @@ Here you will find Guides for several Download Clients.
 
 ### ruTorrent
 
-[![version](https://img.shields.io/github/v/release/Novik/ruTorrent.svg?color=4051B5&style=for-the-badge&logo=github){ .off-glb }](https://github.com/Novik/ruTorrent){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/Novik/ruTorrent.svg?color=4051B5&style=for-the-badge&logo=github){ .off-glb }](https://github.com/Novik/ruTorrent){:target="\_blank" rel="noopener noreferrer"}
 
 [ruTorrent Guides](/Downloaders/ruTorrent/)
