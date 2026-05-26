@@ -6,13 +6,13 @@ Here you will find Guides for several Download Clients.
 
 ### NZBGet
 
-[![GitHub Release](https://img.shields.io/github/v/release/nzbgetcom/nzbget?display_name=release&style=for-the-badge&logo=github&label=Lastest&color=4051B5){ .off-glb }](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/nzbgetcom/nzbget?display_name=release&style=for-the-badge&logo=github&label=Latest&color=4051B5){ .off-glb }](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}
 
 [NZBGet Guides](/Downloaders/NZBGet/)
 
 ### SABnzbd
 
-
+[![GitHub Release](https://img.shields.io/github/v/release/sabnzbd/sabnzbd?display_name=release&style=for-the-badge&logo=github&label=Latest&color=4051B5){ .off-glb }](https://sabnzbd.org/){:target="\_blank" rel="noopener noreferrer"}
 
 [SABnzbd Guides](/Downloaders/SABnzbd/)
 

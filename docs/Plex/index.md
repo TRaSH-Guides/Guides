@@ -1,6 +1,6 @@
 # Plex
 
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fplex.tv%2Fapi%2Fdownloads%2F5.json&query=%24.computer.Windows.version&style=for-the-badge&logo=plex&label=Version&color=4051B5){ .off-glb }
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fplex.tv%2Fapi%2Fdownloads%2F5.json&query=%24.computer.Windows.version&style=for-the-badge&logo=plex&label=Latest%Version&color=4051B5){ .off-glb }
 
 ## The Following guides are available
 

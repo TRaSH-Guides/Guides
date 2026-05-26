@@ -1,6 +1,6 @@
 # qBittorrent
 
-[![GitHub Release](https://img.shields.io/github/v/release/qbittorrent/qbittorrent?display_name=release&style=for-the-badge&logo=github&label=Lastest&color=4051B5){ .off-glb }](https://www.qbittorrent.org/){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/qbittorrent/qbittorrent?display_name=release&style=for-the-badge&logo=github&label=Latest&color=4051B5){ .off-glb }](https://www.qbittorrent.org/){:target="\_blank" rel="noopener noreferrer"}
 
 - [Basic-Setup](/Downloaders/qBittorrent/Basic-Setup/) - Basic set up of the most common settings.
 - [Paths](/Downloaders/qBittorrent/Paths) - Where to set your root download location.
