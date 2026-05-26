@@ -20,7 +20,7 @@ Here you will find Guides for several Download Clients.
 
 ### qBittorrent
 
-[![GitHub Release](https://img.shields.io/github/v/release/qbittorrent/qbittorrent?display_name=release&style=for-the-badge&logo=github&label=Lastest&color=4051B5){ .off-glb }](https://www.qbittorrent.org/){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/qbittorrent/qbittorrent?display_name=release&style=for-the-badge&logo=github&label=Latest&color=4051B5){ .off-glb }](https://www.qbittorrent.org/){:target="\_blank" rel="noopener noreferrer"}
 
 [qBittorrent Guides](/Downloaders/qBittorrent/)
 
