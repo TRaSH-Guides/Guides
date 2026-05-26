@@ -1,6 +1,6 @@
 # NZBGet
 
-[![GitHub Release](https://img.shields.io/github/v/release/nzbgetcom/nzbget?display_name=release&style=for-the-badge&logo=github&label=Lastest&color=4051B5){ .off-glb }](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/nzbgetcom/nzbget?display_name=release&style=for-the-badge&logo=github&label=Latest&color=4051B5){ .off-glb }](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}
 
 [:material-web: NZBGet Website](https://nzbget.com/){:target="\_blank" rel="noopener noreferrer"} - [:material-github: NZBGet Github](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"} - [:fontawesome-brands-discord: NZBGet Discord](https://discord.gg/mV9Vn9sM7C){:target="\_blank" rel="noopener noreferrer"}
 
