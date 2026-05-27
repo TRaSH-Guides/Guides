@@ -1,0 +1,21 @@
+{
+  "trash_id": "21d9d08e39b05523ec36811ab06b8308",
+  "trash_scores": {
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000
+  },
+  "name": "BW",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Blackout/B&W/Black&Chrome",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<=\\bS\\d+(E\\d+)?\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(W(hite)?|Chrome))))\\b(?!$)"
+      }
+    }
+  ]
+}

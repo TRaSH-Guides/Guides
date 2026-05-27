@@ -103,10 +103,11 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [Remaster](#remaster) | [Bad Dual Groups](#bad-dual-groups)     | [Remux Tier 02](#remux-tier-02)         |
 |                       | [BR-DISK](#br-disk)                     | [HD Bluray Tier 01](#hd-bluray-tier-01) |
 |                       | [BR-DISK (BTN)](#br-disk-btn)           | [HD Bluray Tier 02](#hd-bluray-tier-02) |
-|                       | [Extras](#extras)                       | [WEB Tier 01](#web-tier-01)             |
-|                       | [LQ](#lq)                               | [WEB Tier 02](#web-tier-02)             |
-|                       | [LQ (Release Title)](#lq-release-title) | [WEB Tier 03](#web-tier-03)             |
-|                       | [No-RlsGroup](#no-rlsgroup)             | [WEB Scene](#web-scene)                 |
+|                       | [Black & White](#bw)                    | [WEB Tier 01](#web-tier-01)             |
+|                       | [Extras](#extras)                       | [WEB Tier 02](#web-tier-02)             |
+|                       | [LQ](#lq)                               | [WEB Tier 03](#web-tier-03)             |
+|                       | [LQ (Release Title)](#lq-release-title) | [WEB Scene](#web-scene)                 |
+|                       | [No-RlsGroup](#no-rlsgroup)             |                                         |
 |                       | [Obfuscated](#obfuscated)               |                                         |
 |                       | [Retags](#retags)                       |                                         |
 |                       | [Scene](#scene)                         |                                         |
@@ -2045,6 +2046,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/br-disk-btn.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### BW
+
+<sub>Black & White</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/bw.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bw.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

@@ -28,6 +28,11 @@
             "required": false
         },
         {
+            "name": "BW",
+            "trash_id": "21d9d08e39b05523ec36811ab06b8308",
+            "required": false
+        },
+        {
             "name": "Extras",
             "trash_id": "fbcb31d8dabd2a319072b84fc0b7249c",
             "required": false,
