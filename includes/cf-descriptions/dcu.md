@@ -1,9 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**DC Universe (streaming service)**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**DC Universe (DCU)**
 
-[From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/DC_Universe_(streaming_service)>){:target="\_blank" rel="noopener noreferrer"}
+DC Universe was an American subscription streaming service operated by DC Entertainment and Warner Bros. Digital Networks, launched on September 15, 2018. It featured animated and live-action series based on DC Comics properties, a rotating back catalogue of DC Comics publications, and exclusive original shows such as Titans, Doom Patrol, Harley Quinn, and Young Justice. In January 2021, the video streaming service was shut down and relaunched as DC Universe Infinite, a digital comics-only service, with all original programming moving to HBO Max.
 
-DC Universe was an American subscription video-on-demand (SVOD) and digital comics service operated by DC Entertainment and Warner Bros. Digital Networks, both divisions of WarnerMedia. Launched on September 15, 2018, the service featured a streaming library of animated series and films based on DC Comics properties, new original television series adapted from DC properties, as well as a rotating back catalogue of DC Comics publications, and online community features. In 2020.
-
-In June 2020, WarnerMedia began to phase out DC Universe in favor of its new flagship streaming service HBO Max, initially by offering a promotional offer via DC Universe for new subscribers. DC Universe's original series and future streaming productions were moved to HBO Max and became Max Originals.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [DC Universe Wikipedia page](https://en.wikipedia.org/wiki/DC_Universe_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

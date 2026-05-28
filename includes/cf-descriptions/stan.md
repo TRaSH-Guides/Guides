@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**Stan**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Stan**
 
-[From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Stan_(service)>){:target="\_blank" rel="noopener noreferrer"}
+Stan is an Australian subscription streaming service launched on January 26, 2015, and owned by Nine Entertainment. It offers movies, TV shows, and original productions, and is the fourth largest streaming service in Australia. Its library includes content from both local Australian productions and international titles, particularly from the US and UK. An optional Stan Sport add-on provides access to live sports, including tennis grand slams and the Olympics.
 
-Stan is an Australian over-the-top streaming service. The service offers a broad range of film and television content from both local and foreign productions, particularly from the United States and United Kingdom. Stan also includes a growing library of their own original film and television content. With over 2.6 million subscribers, as of June 2023 Stan is the fourth largest streaming service in Australia, behind Disney+, Amazon Prime Video and Netflix.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Stan Wikipedia page](https://en.wikipedia.org/wiki/Stan_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

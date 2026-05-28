@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**HBO**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**HBO Max (now Max)**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO){:target="\_blank" rel="noopener noreferrer"}
+HBO Max, now rebranded as Max, is Warner Bros. Discovery's streaming service that combines the best of HBO with content from various Warner Bros. Discovery properties. It launched in 2020 and was rebranded as Max in May 2023. It offers a wide range of popular HBO series, blockbuster movies, DC content, Discovery programmes, and original productions. It is one of the most popular streaming services available worldwide.
 
-Home Box Office (HBO) is an American pay television network, which is the flagship property of namesake parent-subsidiary Home Box Office, Inc., itself a unit owned by Warner Bros. Discovery. The overall Home Box Office business unit is based at Warner Bros. Programming featured on the network consists primarily of theatrically released motion pictures and original television programs as well as made-for-cable movies, documentaries, occasional comedy, and concert specials, and periodic interstitial programs (consisting of short films and making-of documentaries).
-<!-- markdownlint-enable MD041-->
+For more information, visit the [HBO Wikipedia page](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

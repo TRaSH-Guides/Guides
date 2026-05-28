@@ -1,9 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**Bravia Core aka Sony Pictures Core**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Bravia Core (Sony Pictures Core)**
 
-[From Sony](https://electronics.sony.com/bravia-core){:target="\_blank" rel="noopener noreferrer"}
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Sony_Pictures_Core){:target="\_blank" rel="noopener noreferrer"}
+Bravia Core is Sony's own streaming service, built exclusively for Sony Bravia XR smart TVs. It offers lossless 4K streaming at up to 80Mbps significantly higher quality than services like Netflix or Disney+ and one of the largest libraries of IMAX Enhanced films. The service has since been renamed Sony Pictures Core and expanded beyond Sony TVs.
 
-Sony Pictures Core (formerly known as Bravia Core) is a video on demand service from Sony for its televisions and smartphones, launched in April 2021. The service offers the streaming of movies at up to 4K resolution provided by Sony Pictures Entertainment. CORE stands for Centre of Real Entertainment.
-Sony claims that Bravia Core has one of the largest libraries of IMAX Enhanced format film content. Streaming, which is marketed as Pure Stream, is claimed to be at speeds of up to 80 Mbit/s.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Sony Pictures Core Wikipedia page](https://en.wikipedia.org/wiki/Sony_Pictures_Core){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

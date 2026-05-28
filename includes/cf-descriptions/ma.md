@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**Movies Anywhere**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Movies Anywhere**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Movies_Anywhere){:target="\_blank" rel="noopener noreferrer"}
+Movies Anywhere is a cloud-based digital locker and streaming platform that lets users stream and download movies they have purchased, including digital copies redeemed from Blu-ray and DVD releases. It is operated by The Walt Disney Company and provides content from major studios including Walt Disney, Sony Pictures, Universal Pictures, and Warner Bros. By linking accounts from different digital stores, users can access their entire movie library in one place, regardless of where they originally bought the film.
 
-Movies Anywhere (MA) is a cloud-based digital rights locker and over-the-top streaming platform that allows users to stream and download purchased films, including digital copies redeemed from codes found in home video releases as well as digital purchases from participating services. Movies Anywhere is operated by The Walt Disney Company. The platform provides content from Walt Disney Studios, Sony Pictures, Universal Pictures, and Warner Bros. The system utilizes an internal platform known as KeyChest, which synchronizes content licenses from digital distribution platforms linked to a central user account.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Movies Anywhere Wikipedia page](https://en.wikipedia.org/wiki/Movies_Anywhere){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->
