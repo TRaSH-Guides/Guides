@@ -1,6 +1,7 @@
 <!-- markdownlint-disable MD041-->
-**DTS X (Can be either lossy or lossless depending on the underlying codec, usually DTS-HD MA for lossless or DTS-HD HRA for lossy.)**<br>
+**DTS:X (Lossless)**
 
-[DTS:X is an object-based audio codec](https://www.whathifi.com/advice/dtsx-what-it-how-can-you-get-it) which aims to create a multi-dimensional sound that “moves around you like it would in real life”.
-You may think that sounds similar to Dolby Atmos, and you’d be right, but where DTS:X's differences lie in the required speaker configuration. While Dolby Atmos requires adding additional overhead channels to your 5.1 or 7.1 setup, DTS:X works with standard surround speaker setups – just like the one you might already have at home. It can support up to 32 speaker locations and an 11.2-channel system.
-DTS:X, like other higher-quality DTS formats (e.g. DTS-HD MA), is lossless.
+DTS:X is an object-based 3D surround sound format developed by DTS, designed to place sounds anywhere in a three-dimensional space around the listener. It is carried by DTS-HD Master Audio, a lossless audio codec commonly used on Blu-ray discs, supporting up to 7.1 channels plus additional audio objects at 96 kHz/24-bit quality. DTS:X supports flexible speaker placement, allowing audio to be remapped to any speaker configuration, with up to 32 speaker locations.
+
+For more information, visit the [DTS:X Wikipedia page](https://en.wikipedia.org/wiki/DTS:X){:target="_blank" rel="noopener noreferrer"} and the [DTS-HD Master Audio Wikipedia page](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MVD036 MD041-->
