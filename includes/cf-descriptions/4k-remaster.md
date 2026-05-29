@@ -1,9 +1,9 @@
-<!-- markdownlint-disable MD041-->
-**4K Remaster**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**4K Remaster**
 
-A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible current release of the movie.
+A 4K remaster means the original film or video was scanned and digitally remastered at 4K resolution (3840x2160 pixels), improving image detail, color accuracy, and overall viewing quality. For older films originally shot on 35mm film, this process involves scanning the original film negative at 4K or higher resolution, followed by frame-by-frame digital cleanup, color correction, and damage repair. The result is a sharper, more detailed image with improved color that is better suited for modern 4K displays.
 
-To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colors, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
+A 4K remaster differs from a 4K upscale. A remaster goes back to the original film source for the highest possible quality, while an upscale simply increases the resolution of an existing digital version, often with less detail and clarity.
 
-Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ color specification. This delivers an expanded color range closer to that contained in source material.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Remaster Wikipedia page](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

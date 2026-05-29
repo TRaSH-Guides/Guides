@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**IMAX**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**IMAX**
 
-[From In Depth Cine](https://www.indepthcine.com/videos/imax){:target="_blank" rel="noopener noreferrer"}
+IMAX, which stands for Image Maximum, is a proprietary motion picture projection format developed by the Canadian company IMAX Corporation in the late 1960s. IMAX theaters are known for their massive screens, significantly larger than those in standard cinemas, providing a more immersive viewing experience. IMAX uses an expanded aspect ratio of 1.43:1, much taller and squarer than the typical widescreen ratio of 2.39:1, capturing significantly more image detail compared to standard cinema formats. Films shot natively with IMAX cameras, such as those by Christopher Nolan, use the full 1.43:1 frame, showing more picture at the top and bottom of the screen compared to standard releases.
 
-IMAX films are shot in tall aspect ratios, typically 1.9:1 or sometimes 1.43:1. Most IMAX film releases also have scenes shot at wider aspect ratios and, as a result, the aspect ratio will change throughout. Because they are shot on large format cameras, there is often less film grain present. This results in a clearer picture.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [IMAX Wikipedia page](https://en.wikipedia.org/wiki/IMAX){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->
