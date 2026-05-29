@@ -1,0 +1,76 @@
+{
+    "name": "[Streaming Services] Miscellaneous",
+    "trash_id": "9fc645b3cef52b149ec13ba3972245d1",
+    "trash_description": "Collection of Miscellaneous Streaming Services for Radarr",
+    "custom_formats": [
+        {
+            "name": "AUBC",
+            "trash_id": "3bf143ecd06f66ed88da4c704350af1d",
+            "required": false
+        },
+        {
+            "name": "CBC",
+            "trash_id": "d9058beaae2e147183870304dd526761",
+            "required": false
+        },
+        {
+            "name": "CNLP",
+            "trash_id": "1f9dfb4b8d9cae1f6dc0099547d53513",
+            "required": false
+        },
+        {
+            "name": "CRAV",
+            "trash_id": "f6ff65b3f4b464a79dcc75950fe20382",
+            "required": false
+        },
+        {
+            "name": "OViD",
+            "trash_id": "fbca986396c5e695ef7b2def3c755d01",
+            "required": false
+        },
+        {
+            "name": "STRP",
+            "trash_id": "ab56ccdc473a1f2897c76187ea365be2",
+            "required": false
+        }
+    ],
+    "quality_profiles": {
+        "include": {
+            "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+            "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+            "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
+            "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
+            "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
+            "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
+            "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+            "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
+            "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
+            "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+            "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+            "[French MULTi.VF] HD Bluray + WEB": "500ecc23572575511fd81893777d1e06",
+            "[French MULTi.VF] HD Remux (1080p)": "6b93fe45f357e9a94228e5d4658e9bb5",
+            "[French MULTi.VF] UHD Bluray + WEB": "e64b266178c7f70e208f493f00e0e50a",
+            "[French MULTi.VF] UHD Remux (2160p)": "595bb95c6b6970468880069dce23e1d2",
+            "[French MULTi.VO] HD Bluray + WEB": "2572ce3ea4eef1c19d59e0e20ed1cea7",
+            "[French MULTi.VO] HD Remux (1080p)": "c6460a102b312200c095a2d0982e0461",
+            "[French MULTi.VO] UHD Bluray + WEB": "92ead7022d13a7858d54e328e6a2f8f9",
+            "[French MULTi.VO] UHD Remux (2160p)": "1fef28c8c919f31cd86283b1baf527d4",
+            "[French VOSTFR] HD Bluray + WEB": "1addc08c4232bc2617684d517df15f75",
+            "[French VOSTFR] HD Remux (1080p)": "d98f20924b001e9f6b9595d5440abc87",
+            "[French VOSTFR] UHD Bluray + WEB": "525bf0513e2ac22fe116e8d7bec0a6b5",
+            "[French VOSTFR] UHD Remux (2160p)": "9b32fc61d8ec83ed131f50f1db80505a",
+            "[Anime] Remux-1080p": "722b624f9af1e492284c4bc842153a38",
+            "[SQP] SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+            "[SQP] SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
+            "[SQP] SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
+            "[SQP] SQP-1 WEB (2160p)": "e91c9adaca0231493f4af0d571b907f9",
+            "[SQP] SQP-2": "c3933358ba2356bafc41524f81471069",
+            "[SQP] SQP-3": "2cf36c1f0106ffac993be003ade51865",
+            "[SQP] SQP-3 (Audio)": "0ada8e60cc3ddf2733b65de10f4a6c72",
+            "[SQP] SQP-4": "013f89e6da27519fe56cf482702a2db9",
+            "[SQP] SQP-4 (MA Hybrid)": "7526db7ac0a1f764793fb181864d0222",
+            "[SQP] SQP-5": "a7bb1539fd147256b21b1098f3dc2016",
+            "Base Profile": "92e9a65a52ae48478fb8e9f34238d823"
+        }
+    }
+}
