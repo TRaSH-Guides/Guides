@@ -1,3 +1,11 @@
+# 2026-05-31 04:03
+- [feat(sonarr): Add NEW Custom Format `BW` (Black & White)](https://github.com/TRaSH-Guides/Guides/pull/2758)
+- [feat(starr): Add streaming services `CNLP` (Canal+) to miscellaneous streaming services](https://github.com/TRaSH-Guides/Guides/pull/2756)
+- [fix(guide): Fix broken application versions in the guide](https://github.com/TRaSH-Guides/Guides/pull/2716)
+- [fix(starr-anime): update PuddingSama regex to match old and new name](https://github.com/TRaSH-Guides/Guides/pull/2754)
+- [feat(starr): Add RlsGrp `MADSKY` to `WEB Tier 01`](https://github.com/TRaSH-Guides/Guides/pull/2753)
+- [feat(starr): Add RlsGrp `CYPHER`, `MLH`, and `XiQUEXiQUE` to the Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/2743)
+
 # 2026-05-24 03:50
 - [feat(starr): Change the default score for the CF `WiTH AD` to `-10k`](https://github.com/TRaSH-Guides/Guides/pull/2744)
 - [feat(starr): Recover the HLG CFs with a score of -10k](https://github.com/TRaSH-Guides/Guides/pull/2742)
