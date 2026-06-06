@@ -18,11 +18,11 @@
 
 ![!When adding a torrent](images/qb-options-downloads-when-adding-a-torrent.png)
 
-1. For consistency with other torrents, we recommend leaving this on `Original`.
+1. Personal preference, we recommend leaving this on `Original` or `Create subfolder`.
 
     !!! success ""
 
-        **Suggested: `Original`**
+        **Suggested: `Original` or `Create subfolder`**
 
 1. Delete the .torrent file after it has been added to qBittorrent.
 
@@ -81,6 +81,23 @@
 #### ATTENTION
 
 {! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+
+### Excluded file names
+
+![Excluded file names](images/qb-options-exclude-file-names.png)
+
+If you're limited to trackers that allow packed torrents, such as RARed files, and want to avoid wasting bandwidth or ratio by downloading torrents that contain them, add the following to your Excluded file names.
+
+You will still need to fix it manually, but it's safer to do so than to waste bandwidth or ratio by downloading torrents with RARed files, or risk getting a hit-and-run. You can still enable downloading those files manually later if you change your mind or if you're downloading other content with the same qBittorrent instance that uses .rar files.
+
+Add the following to your Excluded file names.
+
+```none
+*.rar
+*.r[0-9]*
+```
+
+<sub><sup>This tip has been provided by Asinine.</sup></sub>
 
 ---
 
@@ -152,7 +169,7 @@ The best settings depend on many factors.
 
     !!! success ""
 
-        **Suggested: `For a home connection that you use with others it's best practice to set the upload/download rate to about 70-80% of your maximum upload/download speed.`**
+        **Suggested: `For a home connection that you use with others, it is best practice to set the upload and download rate to about 70-80% of your maximum upload and download speed.`**
 
 ### Alternative Rate Limits
 
@@ -221,7 +238,7 @@ Not going to cover the technical part of what it does, but the following setting
 
 ### Torrent Queueing
 
-![!Torrent Queueing](images/qb-options-bittorrent-torrent-queueing.png)
+![!Torrent Queueing](images/qbt-options-speed-rate-limits-settings.png)
 
 These options allow you to control the number of active torrents being downloaded and uploaded.
 
@@ -239,7 +256,13 @@ These options allow you to control the number of active torrents being downloade
 
         **Suggested: `Disabled`**
 
-1. Your maximum seeding time preference (When both ratio and seeding time are enabled it will trigger the action on whatever happens first.)
+1. Your total seeding time preference (When both ratio and seeding time are enabled it will trigger the action on whatever happens first.)
+
+    !!! success ""
+
+        **Suggested: `Disabled`**
+
+1. Your maximum inactive seeding time preference (When both ratio and seeding time are enabled it will trigger the action on whatever happens first.)
 
     !!! success ""
 
@@ -253,7 +276,7 @@ These options allow you to control the number of active torrents being downloade
 
 !!! tip
 
-    We recommend using the seeding goals in your Starr Apps indexer settings (enable advanced), or use [qBit Manage](/Downloaders/qBittorrent/3rd-party-tools/#qbit-manage){:target="\_blank" rel="noopener noreferrer"}
+    We recommend using the seeding goals in your Starr Apps indexer settings (enable advanced), or use [qui Automation](/Downloaders/qBittorrent/3rd-party-tools/#qui){:target="\_blank" rel="noopener noreferrer"} or [qBit Manage](/Downloaders/qBittorrent/3rd-party-tools/#qbit-manage){:target="\_blank" rel="noopener noreferrer"}
 
 ### Automatically add these trackers to new downloads
 
