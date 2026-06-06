@@ -2251,6 +2251,10 @@ We've made 3 guides related to this.
 
 ### Repack/Proper
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack-proper.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2263,6 +2267,10 @@ We've made 3 guides related to this.
 
 ### Repack2
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack2.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2274,6 +2282,10 @@ We've made 3 guides related to this.
 ---
 
 ### Repack3
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack3.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 

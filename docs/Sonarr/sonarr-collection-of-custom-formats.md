@@ -2357,6 +2357,10 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Repack/Proper
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack-proper.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2369,6 +2373,10 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Repack2
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack2.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2380,6 +2388,10 @@ Special thanks to everyone who has helped in the creation and testing of these C
 ---
 
 ### Repack3
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack3.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
