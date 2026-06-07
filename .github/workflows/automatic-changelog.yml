@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   update-changelog:
+    if: ${{ !github.event.repository.fork }}
     runs-on: ubuntu-latest
 
     steps:
