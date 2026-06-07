@@ -1,3 +1,7 @@
+# 2026-06-07 04:08
+- [feat(sonarr): Change naming scheme from `{Series TitleYear}` to `{Series CleanTitleWithoutYear} {(Series Year)}`](https://github.com/TRaSH-Guides/Guides/pull/2709)
+- [feat(downloaders): Add an option to the Qbittorrent guide to prevent `.rar` files from downloading](https://github.com/TRaSH-Guides/Guides/pull/2745)
+
 # 2026-05-31 04:03
 - [feat(sonarr): Add NEW Custom Format `BW` (Black & White)](https://github.com/TRaSH-Guides/Guides/pull/2758)
 - [feat(starr): Add streaming services `CNLP` (Canal+) to miscellaneous streaming services](https://github.com/TRaSH-Guides/Guides/pull/2756)
