@@ -78,23 +78,21 @@
             "docs/js/**",
             "docs/stylesheets/**",
           ]
-          ]
 "Area: Guide":
   - changed-files:
       - any-glob-to-any-file:
           [
             "includes/**",
-            "docs/**/*.md",
-            "!docs/Bazarr/**",
-            "!docs/Downloaders/**",
-            "!docs/File-and-Folder-Structure/**",
-            "!docs/Glossary/**",
-            "!docs/Guide-Sync/**",
-            "!docs/Lidarr/**",
-            "!docs/Misc/**",
-            "!docs/Plex/**",
-            "!docs/Prowlarr/**",
-            "!docs/Radarr/**",
-            "!docs/Recyclarr/**",
-            "!docs/Sonarr/**",
+            "docs/Bazarr/**",
+            "docs/Downloaders/**",
+            "docs/File-and-Folder-Structure/**",
+            "docs/Glossary/**",
+            "docs/Guide-Sync/**",
+            "docs/Lidarr/**",
+            "docs/Misc/**",
+            "docs/Plex/**",
+            "docs/Prowlarr/**",
+            "docs/Radarr/**",
+            "docs/Recyclarr/**",
+            "docs/Sonarr/**",
           ]
