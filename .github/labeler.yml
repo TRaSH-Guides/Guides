@@ -26,7 +26,6 @@
   - changed-files:
       - any-glob-to-any-file:
           [
-            "docs/json/sonarr/rp/**",
             "docs/json/sonarr/cf/**",
             "docs/json/sonarr/quality-size/**",
             "docs/json/sonarr/naming/**",
@@ -36,6 +35,23 @@
   - changed-files:
       - any-glob-to-any-file:
           ["docs/json/radarr/cf/**", "docs/json/sonarr/cf/**"]
+"Area: Guide Sync":
+  - changed-files:
+      - any-glob-to-any-file:
+          [
+            "docs/json/radarr/cf/**",
+            "docs/json/radarr/cf-groups/**",
+            "docs/json/radarr/naming/**",
+            "docs/json/radarr/quality-size/**",
+            "docs/json/radarr/quality-profiles/**",
+            "docs/json/radarr/quality-size/**",
+            "docs/json/sonarr/cf/**",
+            "docs/json/sonarr/cf-groups/**",
+            "docs/json/sonarr/naming/**",
+            "docs/json/sonarr/quality-size/**",
+            "docs/json/sonarr/quality-profiles/**",
+            "docs/json/sonarr/quality-size/**",
+          ]
 "Area: Starr Naming":
   - changed-files:
       - any-glob-to-any-file:
@@ -56,11 +72,30 @@
   - changed-files:
       - any-glob-to-any-file:
           [
+            ".vscode/**",
+            "overrides/**",
+            "scripts/**",
+            "!docs/assets/**",
+            "!docs/img/**",
+            "!docs/js/**",
+            "!docs/stylesheets/**",
+          ]
+"Area: Guide":
+  - changed-files:
+      - any-glob-to-any-file:
+          [
+            "includes/**",
             "docs/**/*.md",
             "!docs/Bazarr/**",
             "!docs/Downloaders/**",
+            "!docs/File-and-Folder-Structure/**",
+            "!docs/Glossary/**",
+            "!docs/Guide-Sync/**",
+            "!docs/Lidarr/**",
+            "!docs/Misc/**",
             "!docs/Plex/**",
             "!docs/Prowlarr/**",
             "!docs/Radarr/**",
+            "!docs/Recyclarr/**",
             "!docs/Sonarr/**",
           ]
