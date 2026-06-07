@@ -42,13 +42,11 @@
             "docs/json/radarr/cf/**",
             "docs/json/radarr/cf-groups/**",
             "docs/json/radarr/naming/**",
-            "docs/json/radarr/quality-size/**",
             "docs/json/radarr/quality-profiles/**",
             "docs/json/radarr/quality-size/**",
             "docs/json/sonarr/cf/**",
             "docs/json/sonarr/cf-groups/**",
             "docs/json/sonarr/naming/**",
-            "docs/json/sonarr/quality-size/**",
             "docs/json/sonarr/quality-profiles/**",
             "docs/json/sonarr/quality-size/**",
           ]
