@@ -1,8 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**CRAVE**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Crave**
 
-[From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Crave_(streaming_service)>){:target="\_blank" rel="noopener noreferrer"}
+Crave (originally CraveTV) is a Canadian subscription streaming service owned by Bell Media, launched in December 2014. It is Canada's largest homegrown streamer, offering HBO and Max Originals, Showtime, Starz, Hollywood movies, and a growing slate of English and French original series. It is only available in Canada.
 
-Crave (originally CraveTV) is a Canadian subscription video on demand service. The service competes directly with other subscription-based over-the-top streaming services operating in Canada, primarily against American-based services.
-The service features Bell Media original programming, exclusive Canadian access to programming acquired from several U.S. television and streaming services, and various theatrically-released films. Crave's major programming supplier is Warner Bros. Discovery (HBO / Max and Warner Bros. films). Starz, offered in partnership with Lionsgate.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Crave Wikipedia page](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

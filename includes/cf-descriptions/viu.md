@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**VIU**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Viu**
 
-[From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Viu_(streaming_service)>){:target="\_blank" rel="noopener noreferrer"}
+Viu (pronounced "view") is a Hong Kong-based subscription streaming service owned by PCCW Media Group, launched in October 2015. It delivers Asian content across different genres, including Korean dramas, movies, and variety shows, with local language subtitles, as well as original productions under the Viu Originals label. It is available in 16 markets across Asia, the Middle East, and Africa, and operates on both a free ad-supported tier and a paid subscription tier.
 
-Viu (pronounced as view) is a Hong Kong-based over-the-top (OTT) video streaming provider, Viu delivers content in different genres from Asia's top content providers with local language subtitles, as well as original production series under the Viu Original initiative (similar to original programming from other services like Disney+, Amazon Prime Video and Netflix).
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Viu Wikipedia page](https://en.wikipedia.org/wiki/Viu_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

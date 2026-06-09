@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**Max (streaming service) aka HBO Max**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**HBO Max (now Max)**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO_Max){:target="\_blank" rel="noopener noreferrer"}
+HBO Max, now rebranded as Max, is Warner Bros. Discovery's streaming service that combines the best of HBO with content from various Warner Bros. Discovery properties. It launched in 2020 and was rebranded as Max in May 2023. It offers popular HBO series, blockbuster movies, DC content, Discovery programmes, and original productions. It is one of the most popular streaming services available worldwide.
 
-Max, formerly and in some markets still HBO Max, is an American subscription video on-demand over-the-top streaming service. It is a proprietary unit of Warner Bros. Discovery Global Streaming & Interactive Entertainment, which is itself a division of Warner Bros. Discovery (WBD). First launched (as HBO Max) in the United States on May 27, 2020, the service offers content from the libraries of Warner Bros., Discovery Channel, HBO, CNN, Cartoon Network, Adult Swim, Animal Planet, Eurosport, and their related brands.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [HBO Max Wikipedia page](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

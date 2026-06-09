@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**TrueHD (Dolby TrueHD – lossless)**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**TrueHD (Lossless)**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="\_blank" rel="noopener noreferrer"}
+Dolby TrueHD is a 100% lossless audio format, meaning what you hear is bit-for-bit identical to the original master recording. It supports up to 7.1 channels of high-definition audio at up to 192 kHz/24-bit quality, and is found primarily on Blu-ray discs. Unlike TrueHD Atmos, this version carries no 3D object-based audio data.
 
-Dolby TrueHD is a lossless multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Discs and compatible hardware.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Dolby TrueHD Wikipedia page](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

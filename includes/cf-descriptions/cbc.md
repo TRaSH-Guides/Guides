@@ -1,13 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**Canadian Broadcasting Corporation**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**CBC Gem (Canadian Broadcasting Corporation)**
 
-[From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Canadian_Broadcasting_Corporationn>){:target="\_blank" rel="noopener noreferrer"}
+CBC Gem is the Canadian Broadcasting Corporation's free digital streaming service, offering on-demand shows, movies, news, documentaries, and live TV streams from up to 14 regional CBC channels across Canada. A free account is required to watch, with an optional paid Premium plan that removes ads and adds access to CBC News Network. It is only available to viewers in Canada.
 
-The Canadian Broadcasting Corporation (French: Société Radio-Canada), branded as CBC/Radio-Canada, is the Canadian public broadcaster for both radio and television. It is a Crown corporation that serves as the national public broadcaster, with its English-language and French-language service units known as CBC and Radio-Canada, respectively.
-
-**CBC Gem**<br>
-
-[From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/CBC_Gem>){:target="\_blank" rel="noopener noreferrer"}
-
-CBC Gem is CBC Television's over-the-top streaming platform; it launched in 2018, replacing the existing CBC TV app. The service carries live and on-demand programming from CBC Television, CBC News, and CBC Sports, as well as short- and long-form original programming and acquisitions (including films and television series).
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Canadian Broadcasting Corporation Wikipedia page](https://en.wikipedia.org/wiki/Canadian_Broadcasting_Corporation){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

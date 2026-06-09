@@ -1,20 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**DTS-HD HRA (DTS-HD High-Resolution Audio – lossy)**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**DTS-HD HRA (Lossy)**
 
-[Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="\_blank" rel="noopener noreferrer"}
+DTS-HD High Resolution Audio (DTS-HD HRA) is a high-resolution but lossy audio format developed by DTS. It offers a higher bit rate and more audio detail than standard DTS, with support for up to 8 channels and data rates of up to 6 Mbit/s on Blu-ray. Unlike DTS-HD Master Audio, which is lossless, DTS-HD HRA uses lossy compression, meaning some audio information is discarded during encoding. It is backward compatible with standard DTS decoders and is sometimes used on Blu-ray discs where disc space is a concern, as a lower-footprint alternative to DTS-HD MA.
 
-| Codec      | Page   | Paragraph |
-| ---------- | ------ | --------- |
-| DTS-HD MA  | Page 6 | 5.1.1     |
-| DTS-HD HRA | Page 7 | 5.1.2     |
-
-DTS-HD HRA is the lossy version of DTS-HD MA.
-
-| Codec          | DTS-HRA          | DTS-MA            |
-| -------------- | ---------------- | ----------------- |
-| Lossy/lossless | Lossy            | Lossless          |
-| Data rate      | 1.5 - 6.0 Mbit/s | VBR - 24.5 Mbit/s |
-| Channels       | Up to 7.1 ch     | Up to 7.1 ch      |
-| Sampling Freq. | 96 kHz           | 192 kHz           |
-| Resolution     | -                | Up to 24-bit      |
-<!-- markdownlint-enable MD041-->
+For more information, visit the [DTS-HD Master Audio Wikipedia page](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**DD+ (Dolby Digital Plus – lossy)**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**DD+ aka Dolby Digital Plus (Lossy)**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital_Plus){:target="\_blank" rel="noopener noreferrer"}
+Dolby Digital Plus, also known as Enhanced AC-3 and commonly abbreviated as DD+ or E-AC-3, is a digital audio compression format developed by Dolby Laboratories. It is a successor to Dolby Digital (AC-3), supporting a wider range of data rates and an increased channel count. It is a lossy format, meaning some audio detail is removed during compression, and it supports up to 7.1 channels of audio. Unlike DD+ Atmos, this version carries no 3D object-based audio data and is commonly used on streaming platforms and Blu-ray discs for standard surround sound delivery.
 
-Dolby Digital Plus, also known as Enhanced AC-3 (commonly abbreviated as DD+ or E-AC-3, or EC-3), is the successor to Dolby Digital (AC-3). It is a digital audio compression scheme developed by Dolby Labs for the transport and storage of multi-channel digital audio.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Dolby Digital Plus Wikipedia page](https://en.wikipedia.org/wiki/Dolby_Digital_Plus){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->
