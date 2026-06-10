@@ -4,7 +4,7 @@ on:
   push:
     branches: [master]
   # pull_request_target is safe here; this workflow never checks out PR code.
-  pull_request_target:
+  pull_request_target: # zizmor: ignore[dangerous-triggers]
     types: [synchronize]
 
 jobs:
