@@ -91,6 +91,15 @@
       }
     },
     {
+      "name": "R&H",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(R&H)\\b"
+      }
+    },
+    {
       "name": "READ NOTE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
