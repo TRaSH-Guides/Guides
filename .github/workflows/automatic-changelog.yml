@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      # PAT is required to push commits back to the repository.
+      - name: Checkout # zizmor: ignore[artipacked]
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           fetch-depth: 0
@@ -28,7 +29,7 @@ jobs:
 
       - name: Run git log
         run: |
-          git log --no-merges --perl-regexp --author='^(?!.*(\[bot\]|actions@github\.com)).*$' --grep='^(feat|fix|docs|style|refactor|perf|test|build|revert|update)(\((?!mkdocs|pr-naming-check).*?\))?:(?! Update CONTRIBUTORS.md)' --since="${{ env.LAST_EDIT_TIME }}" --pretty="%s" > log_output.txt
+          git log --no-merges --perl-regexp --author='^(?!.*(\[bot\]|actions@github\.com)).*$' --grep='^(feat|fix|docs|style|refactor|perf|test|build|revert|update)(\((?!mkdocs|pr-naming-check).*?\))?:(?! Update CONTRIBUTORS.md)' --since="${LAST_EDIT_TIME}" --pretty="%s" > log_output.txt
 
       - name: Check if there are new commits
         run: |
@@ -48,9 +49,10 @@ jobs:
         if: env.NEW_COMMITS == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
+          PAT: ${{ secrets.PAT }}
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           git diff
           git commit -am "chore(changelog): Update updates.txt" || exit 0
-          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master
+          git push "https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
