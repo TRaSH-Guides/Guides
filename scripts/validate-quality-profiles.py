@@ -193,6 +193,87 @@ def validate_app(app: str) -> list[str]:
                         f" but profile has '{name_to_tid[profile_name]}'"
                     )
 
+    # Validate profile_overrides referenced in groups.json (consumed by main.py
+    # render_profile_cfs macro). Each override must name an existing profile and
+    # all referenced cf-group / CF slugs must resolve.
+    cf_group_slugs: set[str] = set()
+    cf_slugs: set[str] = set()
+    if cf_groups_dir.is_dir():
+        cf_group_slugs = {p.stem for p in cf_groups_dir.glob("*.json")}
+    if cf_dir.is_dir():
+        cf_slugs = {p.stem for p in cf_dir.glob("*.json")}
+
+    for group in groups_data:
+        group_name = group.get("name", "")
+        overrides_map = group.get("profile_overrides") or {}
+        if not isinstance(overrides_map, dict):
+            errors.append(
+                f"[{app}] groups.json group '{group_name}' has malformed"
+                " 'profile_overrides' (expected object)"
+            )
+            continue
+        for slug, override in overrides_map.items():
+            if not isinstance(override, dict):
+                errors.append(
+                    f"[{app}] groups.json profile_overrides['{slug}']"
+                    " is not an object"
+                )
+                continue
+            override_name = override.get("profile_name", "")
+            if not override_name:
+                errors.append(
+                    f"[{app}] groups.json profile_overrides['{slug}']"
+                    " missing required 'profile_name'"
+                )
+            elif override_name not in name_to_tid:
+                errors.append(
+                    f"[{app}] groups.json profile_overrides['{slug}'].profile_name"
+                    f" '{override_name}' doesn't match any quality-profiles/*.json"
+                )
+            elif slug in profile_files:
+                # Cross-check: override profile_name should match the profile
+                # the override is keyed under.
+                expected = profile_files[slug].get("name", "")
+                if expected and expected != override_name:
+                    errors.append(
+                        f"[{app}] groups.json profile_overrides['{slug}'].profile_name"
+                        f" '{override_name}' does not match"
+                        f" quality-profiles/{slug}.json name '{expected}'"
+                    )
+            for field in (
+                "exclude_groups", "add_groups",
+                "force_required", "force_optional",
+            ):
+                for cf_group_slug in override.get(field) or []:
+                    if cf_group_slug not in cf_group_slugs:
+                        errors.append(
+                            f"[{app}] groups.json profile_overrides['{slug}'].{field}"
+                            f" references cf-group '{cf_group_slug}' that doesn't"
+                            " exist in cf-groups/"
+                        )
+            for cf_field in ("include_cfs", "exclude_cfs"):
+                cf_filter = override.get(cf_field) or {}
+                if not isinstance(cf_filter, dict):
+                    errors.append(
+                        f"[{app}] groups.json profile_overrides['{slug}'].{cf_field}"
+                        " must be an object mapping cf-group slug -> CF slug list"
+                    )
+                    continue
+                for cf_group_slug, cf_list in cf_filter.items():
+                    if cf_group_slug not in cf_group_slugs:
+                        errors.append(
+                            f"[{app}] groups.json profile_overrides['{slug}'].{cf_field}"
+                            f" references cf-group '{cf_group_slug}' that doesn't exist"
+                        )
+                        continue
+                    for cf_slug in cf_list:
+                        if cf_slug not in cf_slugs:
+                            errors.append(
+                                f"[{app}] groups.json profile_overrides['{slug}']"
+                                f".{cf_field}['{cf_group_slug}'] references CF"
+                                f" '{cf_slug}' that doesn't exist in cf/"
+                            )
+
     # Check profile formatItems reference valid CFs
     for slug, data in profile_files.items():
         for fi_name, fi_tid in data.get("formatItems", {}).items():
