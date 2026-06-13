@@ -53,3 +53,6 @@ jobs:
 
       - name: Validate custom format consistency
         run: python scripts/validate-custom-formats.py
+
+      - name: Validate SourceSpecification per-app values
+        run: python scripts/validate-source-specifications.py
