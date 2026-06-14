@@ -660,9 +660,9 @@
       <b><a href="https://github.com/jackt0" style="color: #ffa500;">jackt0</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/48860738?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="washedszn">
+      <img src="https://avatars.githubusercontent.com/u/48860738?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="henryecw">
       <br>
-      <b><a href="https://github.com/washedszn" style="color: #ffa500;">washedszn</a></b>
+      <b><a href="https://github.com/henryecw" style="color: #ffa500;">henryecw</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/26818801?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Barophobia">
