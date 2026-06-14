@@ -204,7 +204,7 @@ install_fclones_binary() {
     LATEST_VERSION=$($GITHUB_API_CMD 2>/dev/null | grep -Po '"tag_name": "\K.*?(?=")') || true
     if [[ -z "$LATEST_VERSION" ]]; then
         log "⚠ Could not fetch latest release, using default version $DEFAULT_VERSION (continuing anyway)"
-    LATEST_VERSION="v$DEFAULT_VERSION"
+        LATEST_VERSION="v$DEFAULT_VERSION"
     else
         log "Latest fclones release: $LATEST_VERSION"
     fi
