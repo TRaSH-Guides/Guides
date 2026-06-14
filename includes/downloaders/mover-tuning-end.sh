@@ -435,7 +435,7 @@ process_qbit_instance() {
 
     # Determine Python command
     local python_cmd
-    if [[ -f "${QBIT_MOVER_PATH}.venv/bin/python3" ]]; then
+    if [[ -x "${QBIT_MOVER_PATH}.venv/bin/python3" ]] && "${QBIT_MOVER_PATH}.venv/bin/python3" -c "import qbittorrentapi" 2>/dev/null; then
         python_cmd="${QBIT_MOVER_PATH}.venv/bin/python3"
         log "✓ Using virtual environment"
     elif python3 -c "import qbittorrentapi" 2>/dev/null; then
