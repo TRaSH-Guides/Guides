@@ -1,3 +1,7 @@
+# 2026-06-14 04:17
+- [fix(starr): Move R&H from LQ to LQ (Release Title)](https://github.com/TRaSH-Guides/Guides/pull/2767)
+- [feat(guide): Reviewed and updated descriptions of the custom formats](https://github.com/TRaSH-Guides/Guides/pull/2764)
+
 # 2026-06-07 04:08
 - [feat(sonarr): Change naming scheme from `{Series TitleYear}` to `{Series CleanTitleWithoutYear} {(Series Year)}`](https://github.com/TRaSH-Guides/Guides/pull/2709)
 - [feat(downloaders): Add an option to the Qbittorrent guide to prevent `.rar` files from downloading](https://github.com/TRaSH-Guides/Guides/pull/2745)
