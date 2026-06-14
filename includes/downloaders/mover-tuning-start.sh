@@ -62,7 +62,7 @@ set_ownership() {
 # ================================
 detect_config_format() {
     # Check if array-based config is used
-    if [[ -v HOSTS[@] ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
+    if [[ -v HOSTS ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
         echo "array"
     else
         echo "legacy"
@@ -458,7 +458,7 @@ validate_config() {
         fi
 
         # NAMES array is optional, but if present should match
-        if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
+        if [[ -v NAMES ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
             if [[ ${#NAMES[@]} -ne ${#HOSTS[@]} ]]; then
                 notify "Configuration Error" "NAMES array length (${#NAMES[@]}) doesn't match HOSTS (${#HOSTS[@]})"
                 error "NAMES array length doesn't match HOSTS"
@@ -466,7 +466,7 @@ validate_config() {
         fi
 
         # CA_BUNDLES array is optional, but if present should match
-        if [[ -v CA_BUNDLES[@] ]] && [[ ${#CA_BUNDLES[@]} -gt 0 ]]; then
+        if [[ -v CA_BUNDLES ]] && [[ ${#CA_BUNDLES[@]} -gt 0 ]]; then
             if [[ ${#CA_BUNDLES[@]} -ne ${#HOSTS[@]} ]]; then
                 notify "Configuration Error" "CA_BUNDLES array length (${#CA_BUNDLES[@]}) doesn't match HOSTS (${#HOSTS[@]})"
                 error "CA_BUNDLES array length doesn't match HOSTS"

@@ -49,7 +49,7 @@ notify() {
 # ================================
 detect_config_format() {
     # Check if array-based config is used
-    if [[ -v HOSTS[@] ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
+    if [[ -v HOSTS ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
         echo "array"
     else
         echo "legacy"
@@ -381,17 +381,17 @@ validate_config() {
 
     if [[ "$format" == "array" ]]; then
         # Validate array-based config
-        [[ ${#HOSTS[@]} -gt 0 ]] || error "HOSTS array is empty"
+        [[ -v HOSTS ]] && [[ ${#HOSTS[@]} -gt 0 ]] || error "HOSTS array is empty"
         [[ ${#USERS[@]} -eq ${#HOSTS[@]} ]] || error "USERS array length doesn't match HOSTS"
         [[ ${#PASSWORDS[@]} -eq ${#HOSTS[@]} ]] || error "PASSWORDS array length doesn't match HOSTS"
 
         # NAMES array is optional, but if present should match
-        if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
+        if [[ -v NAMES ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
             [[ ${#NAMES[@]} -eq ${#HOSTS[@]} ]] || error "NAMES array length doesn't match HOSTS"
         fi
 
         # CA_BUNDLES array is optional, but if present should match
-        if [[ -v CA_BUNDLES[@] ]] && [[ ${#CA_BUNDLES[@]} -gt 0 ]]; then
+        if [[ -v CA_BUNDLES ]] && [[ ${#CA_BUNDLES[@]} -gt 0 ]]; then
             [[ ${#CA_BUNDLES[@]} -eq ${#HOSTS[@]} ]] || error "CA_BUNDLES array length doesn't match HOSTS"
         fi
 
@@ -443,7 +443,7 @@ process_qbit_instance() {
     else
         log "✗ qbittorrent-api not found"
         return 1
-fi
+    fi
 
     local ca_bundle_args=()
     if [[ -n "$ca_bundle" ]]; then
