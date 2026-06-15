@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Version: 1.3.1
-# Updated: 20260411
+# Version: 1.3.3
+# Updated: 20260614
 # =====================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.3.1"
+readonly SCRIPT_VERSION="1.3.3"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Get the directory where the script is located
@@ -204,20 +204,21 @@ install_fclones_binary() {
     LATEST_VERSION=$($GITHUB_API_CMD 2>/dev/null | grep -Po '"tag_name": "\K.*?(?=")') || true
     if [[ -z "$LATEST_VERSION" ]]; then
         log "⚠ Could not fetch latest release, using default version $DEFAULT_VERSION (continuing anyway)"
-        LATEST_VERSION="$DEFAULT_VERSION"
+        LATEST_VERSION="v$DEFAULT_VERSION"
     else
         log "Latest fclones release: $LATEST_VERSION"
     fi
 
+    # Remove leading 'v' for version comparison and filename
+    local VERSION_NO_V="${LATEST_VERSION#v}"
+
     # Compare and install if missing or outdated
-    if [[ "$CURRENT_VERSION" != "$LATEST_VERSION" ]]; then
+    if [[ "$CURRENT_VERSION" != "$VERSION_NO_V" ]]; then
         log "Installing/updating fclones to $LATEST_VERSION..."
 
         local TMP_DIR
         TMP_DIR=$(mktemp -d)
 
-        # Remove leading 'v' from filename
-        local VERSION_NO_V="${LATEST_VERSION#v}"
         local DOWNLOAD_URL="https://github.com/pkolaczk/fclones/releases/download/$LATEST_VERSION/fclones-$VERSION_NO_V-linux-glibc-x86_64.tar.gz"
 
         if ! wget -O "$TMP_DIR/fclones.tar.gz" "$DOWNLOAD_URL" 2>/dev/null; then
