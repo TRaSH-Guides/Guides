@@ -49,7 +49,7 @@ notify() {
 # ================================
 detect_config_format() {
     # Check if array-based config is used
-    if [[ -v HOSTS[@] ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
+    if [[ -v HOSTS ]] && [[ ${#HOSTS[@]} -gt 0 ]]; then
         echo "array"
     else
         echo "legacy"
@@ -83,6 +83,7 @@ get_instance_details() {
         INSTANCE_HOST="${HOSTS[$index]}"
         INSTANCE_USER="${USERS[$index]}"
         INSTANCE_PASSWORD="${PASSWORDS[$index]}"
+        INSTANCE_CA_BUNDLE="${CA_BUNDLES[$index]:-}"
     else
         # Legacy format: map index to old variables
         if [[ $index -eq 0 ]]; then
@@ -90,11 +91,13 @@ get_instance_details() {
             INSTANCE_HOST="${QBIT_HOST_1}"
             INSTANCE_USER="${QBIT_USER_1}"
             INSTANCE_PASSWORD="${QBIT_PASS_1}"
+            INSTANCE_CA_BUNDLE="${QBIT_CA_BUNDLE_1:-}"
         elif [[ $index -eq 1 ]]; then
             INSTANCE_NAME="${QBIT_NAME_2}"
             INSTANCE_HOST="${QBIT_HOST_2}"
             INSTANCE_USER="${QBIT_USER_2}"
             INSTANCE_PASSWORD="${QBIT_PASS_2}"
+            INSTANCE_CA_BUNDLE="${QBIT_CA_BUNDLE_2:-}"
         else
             error "Invalid instance index: $index"
         fi
@@ -379,13 +382,18 @@ validate_config() {
 
     if [[ "$format" == "array" ]]; then
         # Validate array-based config
-        [[ ${#HOSTS[@]} -gt 0 ]] || error "HOSTS array is empty"
+        [[ -v HOSTS ]] && [[ ${#HOSTS[@]} -gt 0 ]] || error "HOSTS array is empty"
         [[ ${#USERS[@]} -eq ${#HOSTS[@]} ]] || error "USERS array length doesn't match HOSTS"
         [[ ${#PASSWORDS[@]} -eq ${#HOSTS[@]} ]] || error "PASSWORDS array length doesn't match HOSTS"
 
         # NAMES array is optional, but if present should match
-        if [[ -v NAMES[@] ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
+        if [[ -v NAMES ]] && [[ ${#NAMES[@]} -gt 0 ]]; then
             [[ ${#NAMES[@]} -eq ${#HOSTS[@]} ]] || error "NAMES array length doesn't match HOSTS"
+        fi
+
+        # CA_BUNDLES array is optional, but if present should match
+        if [[ -v CA_BUNDLES ]] && [[ ${#CA_BUNDLES[@]} -gt 0 ]]; then
+            [[ ${#CA_BUNDLES[@]} -eq ${#HOSTS[@]} ]] || error "CA_BUNDLES array length doesn't match HOSTS"
         fi
 
         log "✓ Using array-based configuration (${#HOSTS[@]} instance(s))"
@@ -421,6 +429,7 @@ process_qbit_instance() {
     local host="$2"
     local user="$3"
     local password="$4"
+    local ca_bundle="${5:-}"
 
     log "Processing $name..."
 
@@ -437,6 +446,11 @@ process_qbit_instance() {
         return 1
     fi
 
+    local ca_bundle_args=()
+    if [[ -n "$ca_bundle" ]]; then
+        ca_bundle_args=(--ca-bundle "$ca_bundle")
+    fi
+
     # Execute mover script
     if "$python_cmd" "${QBIT_MOVER_PATH}mover.py" \
         --resume \
@@ -444,7 +458,8 @@ process_qbit_instance() {
         --user "$user" \
         --password "$password" \
         --days_from "$DAYS_FROM" \
-        --days_to "$DAYS_TO"; then
+        --days_to "$DAYS_TO" \
+        "${ca_bundle_args[@]}"; then
         log "✓ Successfully resumed torrents for $name"
         notify "$name" "Resumed @ $(date +%H:%M:%S)"
         return 0
@@ -480,7 +495,7 @@ main() {
     for ((i=0; i<instance_count; i++)); do
         get_instance_details "$i"
 
-        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" || ((failed_instances++))
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_CA_BUNDLE" || ((failed_instances++))
     done
 
     # Run duplicate finder if enabled
