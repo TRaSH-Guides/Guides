@@ -14,7 +14,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<!repac)[^0-9]2[ .]0\\b|\\bStereo\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!repac)[^0-9]2[ .]0\\b|\\bStereo\\b"
       }
     },
     {
