@@ -160,6 +160,11 @@
       <b><a href="https://github.com/jasonla" style="color: #ffa500;">jasonla</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/75089849?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Pa7rickStar">
+      <br>
+      <b><a href="https://github.com/Pa7rickStar" style="color: #ffa500;">Pa7rickStar</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/7110194?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Roxedus">
       <br>
       <b><a href="https://github.com/Roxedus" style="color: #ffa500;">Roxedus</a></b>
@@ -174,7 +179,7 @@
       <br>
       <b><a href="https://github.com/Opt6" style="color: #ffa500;">Opt6</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/1890076?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Kuredant">
       <br>
       <b><a href="https://github.com/Kuredant" style="color: #ffa500;">Kuredant</a></b>
@@ -199,7 +204,7 @@
       <br>
       <b><a href="https://github.com/8a8al00ey" style="color: #ffa500;">8a8al00ey</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/603885?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="lucacome">
       <br>
       <b><a href="https://github.com/lucacome" style="color: #ffa500;">lucacome</a></b>
@@ -213,11 +218,6 @@
       <img src="https://avatars.githubusercontent.com/u/18292463?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="cracrayol">
       <br>
       <b><a href="https://github.com/cracrayol" style="color: #ffa500;">cracrayol</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/75089849?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Pa7rickStar">
-      <br>
-      <b><a href="https://github.com/Pa7rickStar" style="color: #ffa500;">Pa7rickStar</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/85502276?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="KnifeFed">
