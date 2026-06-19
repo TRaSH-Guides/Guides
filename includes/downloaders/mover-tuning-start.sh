@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Version: 1.3.2
+# Version: 1.3.3
 # Updated: 20260614
 # =======================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.3.2"
+readonly SCRIPT_VERSION="1.3.3"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
 readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
@@ -358,40 +358,62 @@ run_auto_installer() {
         log "✓ Virtual environment exists"
     fi
 
-    # Activate virtual environment
-    # shellcheck source=/dev/null
-    source "${VENV_PATH}/bin/activate" || error "Failed to activate virtual environment"
+    # Check if Python is available in the virtual environment
+    local venv_python="${VENV_PATH}/bin/python3"
+    [[ -x "$venv_python" ]] || error "Virtual environment Python is missing or not executable: $venv_python"
 
-    # Upgrade pip if needed
     log "Checking pip version..."
-    if pip3 install --upgrade pip --quiet 2>&1 | grep -q "Successfully installed"; then
-        log "✓ Pip upgraded to $(pip3 --version | awk '{print $2}')"
-        set_ownership "$VENV_PATH"
-    else
-        log "✓ Pip is up to date"
+    # Ensure pip exists inside the virtual environment
+    if ! "$venv_python" -m pip --version >/dev/null 2>&1; then
+        log "⚠ pip not found in virtual environment; attempting to bootstrap with ensurepip..."
+        if ! "$venv_python" -m ensurepip --upgrade; then
+            if python3 -c "import qbittorrentapi" 2>/dev/null; then
+                log "⚠ Warning: Failed to bootstrap pip in virtual environment; system Python has qbittorrent-api, continuing"
+            else
+                error "Failed to bootstrap pip in virtual environment and qbittorrent-api is not available in system Python"
+            fi
+        fi
     fi
 
-    # Install/upgrade qbittorrent-api
-    if python3 -c "import qbittorrentapi" 2>/dev/null; then
-        log "✓ qbittorrent-api installed ($(pip3 show qbittorrent-api 2>/dev/null | awk '/Version:/ {print $2}'))"
-
-        # Check for updates
-        if pip3 install --dry-run --upgrade qbittorrent-api 2>&1 | grep -q "Would install"; then
-            log "Upgrading qbittorrent-api..."
-            pip3 install qbittorrent-api --upgrade --quiet || log "⚠ Warning: Failed to upgrade qbittorrent-api"
-            set_ownership "$VENV_PATH"
-            log "✓ qbittorrent-api upgraded"
+    if "$venv_python" -m pip --version >/dev/null 2>&1; then
+        # Upgrade pip
+        if "$venv_python" -m pip install --dry-run --upgrade pip 2>&1 | grep -q "Would install"; then
+            log "Upgrading pip..."
+            if "$venv_python" -m pip install --upgrade pip --quiet; then
+                set_ownership "$VENV_PATH"
+                log "✓ Pip upgraded to $("$venv_python" -m pip --version | awk '{print $2}')"
+            else
+                log "⚠ Warning: Failed to upgrade pip; continuing with existing version ($("$venv_python" -m pip --version | awk '{print $2}'))"
+            fi
         else
-            log "✓ qbittorrent-api is up to date"
+            log "✓ Pip is up to date ($("$venv_python" -m pip --version | awk '{print $2}'))"
+        fi
+
+        # Install/upgrade qbittorrent-api using the same Python that will run mover.py.
+        if "$venv_python" -c "import qbittorrentapi" 2>/dev/null; then
+            log "✓ qbittorrent-api installed ($("$venv_python" -m pip show qbittorrent-api 2>/dev/null | awk '/Version:/ {print $2}'))"
+
+            if "$venv_python" -m pip install --dry-run --upgrade qbittorrent-api 2>&1 | grep -q "Would install"; then
+                log "Upgrading qbittorrent-api..."
+                "$venv_python" -m pip install qbittorrent-api --upgrade --quiet || log "⚠ Warning: Failed to upgrade qbittorrent-api"
+                set_ownership "$VENV_PATH"
+                log "✓ qbittorrent-api upgraded"
+            else
+                log "✓ qbittorrent-api is up to date"
+            fi
+        else
+            log "Installing qbittorrent-api..."
+            "$venv_python" -m pip install qbittorrent-api --quiet || error "Failed to install qbittorrent-api"
+            set_ownership "$VENV_PATH"
+
+            # Verify install with the same interpreter used by mover.py.
+            "$venv_python" -c "import qbittorrentapi" 2>/dev/null || error "qbittorrent-api installed, but cannot be imported by venv Python"
+
+            log "✓ qbittorrent-api installed"
         fi
     else
-        log "Installing qbittorrent-api..."
-        pip3 install qbittorrent-api --quiet || error "Failed to install qbittorrent-api"
-        set_ownership "$VENV_PATH"
-        log "✓ qbittorrent-api installed"
+        log "⚠ Skipping virtual environment package setup because pip is unavailable"
     fi
-
-    deactivate
 
     # Download mover.py if needed
     if [[ ! -f "$MOVER_SCRIPT" ]]; then
@@ -494,10 +516,12 @@ process_qbit_instance() {
 
     # Determine Python command
     local python_cmd
-    if [[ -f "${VENV_PATH}/bin/python3" ]]; then
+    if [[ -x "${VENV_PATH}/bin/python3" ]] && "${VENV_PATH}/bin/python3" -c "import qbittorrentapi" 2>/dev/null; then
         python_cmd="${VENV_PATH}/bin/python3"
+        log "✓ Using virtual environment"
     elif python3 -c "import qbittorrentapi" 2>/dev/null; then
         python_cmd="python3"
+        log "✓ Using system Python"
     else
         log "✗ qbittorrent-api not found for $name"
         return 1
