@@ -29,33 +29,6 @@
       }
     },
     {
-      "name": "CYPHER",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CYPHER)$"
-      }
-    },
-    {
-      "name": "MLH",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MLH)$"
-      }
-    },
-    {
-      "name": "XiQUEXiQUE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(XiQUEXiQUE)$"
-      }
-    },
-    {
       "name": "BiOMA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -92,12 +65,30 @@
       }
     },
     {
+      "name": "C76",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(C76)$"
+      }
+    },
+    {
       "name": "Cory",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(Cory)$"
+      }
+    },
+    {
+      "name": "CYPHER",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CYPHER)$"
       }
     },
     {
@@ -161,6 +152,15 @@
       "required": false,
       "fields": {
         "value": "^(LCD)$"
+      }
+    },
+    {
+      "name": "MLH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MLH)$"
       }
     },
     {
@@ -260,6 +260,15 @@
       "required": false,
       "fields": {
         "value": "^(WTV)$"
+      }
+    },
+    {
+      "name": "XiQUEXiQUE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(XiQUEXiQUE)$"
       }
     },
     {
