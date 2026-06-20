@@ -693,6 +693,15 @@
       }
     },
     {
+      "name": "RBB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RBB)$"
+      }
+    },
+    {
       "name": "RDN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
