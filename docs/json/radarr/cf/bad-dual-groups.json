@@ -57,6 +57,15 @@
       }
     },
     {
+      "name": "C76",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(C76)$"
+      }
+    },
+    {
       "name": "Cory",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
