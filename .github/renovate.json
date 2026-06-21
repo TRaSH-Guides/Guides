@@ -12,6 +12,7 @@
     ":enableVulnerabilityAlerts",
     ":renovatePrefix"
   ],
+  "minimumReleaseAge": "3 days",
   "pre-commit": {
     "enabled": true
   },
