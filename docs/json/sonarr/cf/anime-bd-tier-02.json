@@ -169,15 +169,6 @@
       }
     },
     {
-      "name": "PMR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)"
-      }
-    },
-    {
       "name": "Vodes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
