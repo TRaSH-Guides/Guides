@@ -110,7 +110,13 @@ jobs:
               if impls and not impls <= GROUP_IMPLS:
                   die(f"{cf} is not a release-group/title list (implementations: {sorted(impls)}).")
               impl = next(iter(impls), "ReleaseGroupSpecification")
-              impl_used = impl
+              if impl_used is None:
+                  impl_used = impl
+              elif impl != impl_used:
+                  die(
+                      f"{cf} uses mixed implementations across apps "
+                      f"({impl_used} vs {impl}); please align implementations."
+                  )
               if any(s.get("name", "").lower() == name.lower() for s in specs):
                   print(f"::notice::{a}: '{name}' already present in {cf}; skipping.")
                   continue
