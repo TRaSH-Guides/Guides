@@ -1,24 +1,26 @@
 name: Build PR & Deploy
 
-on:
+# workflow_run is intentional; this workflow deploys PR previews triggered by a
+# separate unprivileged workflow to safely access secrets.
+on: # zizmor: ignore[dangerous-triggers]
   workflow_run:
     workflows: ["Trigger PR Build"]
     types:
       - completed
 
+permissions: {}
+
 concurrency:
   group: pull-request-builds
   cancel-in-progress: false
-
-permissions:
-  contents: write
-  pull-requests: write
-  actions: read
 
 jobs:
   check:
     runs-on: ubuntu-latest
     if: github.event.repository.fork == false
+    permissions:
+      contents: read
+      actions: read
     outputs:
       should_deploy: ${{ steps.pr_info.outputs.should_deploy }}
       pr_number: ${{ steps.pr_info.outputs.pr_number }}
@@ -49,6 +51,8 @@ jobs:
     needs: check
     if: needs.check.outputs.should_deploy == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       url: ${{ steps.cloudflare.outputs.deployment-url }}
       branch_url: ${{ steps.cloudflare.outputs.pages-deployment-alias-url }}
@@ -56,6 +60,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
+          persist-credentials: false
           ref: ${{ needs.check.outputs.pr_sha }}
           fetch-depth: 0
           sparse-checkout: |
@@ -64,23 +69,13 @@ jobs:
             includes
             overrides
 
-      - name: Setup python
+      # Only workflow_run from repo-owned workflows triggers this job; fork PRs cannot poison the cache.
+      - name: Setup python # zizmor: ignore[cache-poisoning]
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: 3.x
-
-      - name: Get pip cache directory
-        id: pip-cache
-        run: |
-          echo "dir=$(pip cache dir)" >> "$GITHUB_OUTPUT"
-
-      - name: Cache dependencies
-        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
-        with:
-          path: ${{ steps.pip-cache.outputs.dir }}
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          cache: pip
+          cache-dependency-path: docs/requirements.txt
 
       - name: Install dependencies
         run: pip install -r docs/requirements.txt
@@ -106,16 +101,18 @@ jobs:
     needs: [check, build]
     runs-on: ubuntu-latest
     if: always() && needs.check.outputs.should_deploy == 'true'
+    permissions:
+      pull-requests: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-
       - name: Comment PR
+        env:
+          PREVIEW_URL: ${{ needs.build.outputs.url }}
+          BRANCH_PREVIEW_URL: ${{ needs.build.outputs.branch_url }}
+          BUILD_STATUS: ${{ needs.build.result }}
+          PR_SHA: ${{ needs.check.outputs.pr_sha }}
+          PR_NUMBER: ${{ needs.check.outputs.pr_number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          PREVIEW_URL=${{ needs.build.outputs.url }}
-          BRANCH_PREVIEW_URL=${{ needs.build.outputs.branch_url }}
-          BUILD_STATUS=${{ needs.build.result }}
-
           if [ "$BUILD_STATUS" == "success" ]; then
             STATUS_EMOJI="✅"
             STATUS_MESSAGE="Deploy successful!"
@@ -124,13 +121,13 @@ jobs:
             STATUS_MESSAGE="Build failed!"
           fi
 
-          COMMENT_BODY="Deploying with ⚡ Cloudflare Pages<br><table><tr><td><strong>Latest commit:</strong></td><td><code>${{ needs.check.outputs.pr_sha }}</code></td></tr><tr><td><strong>Status:</strong></td><td>&nbsp;$STATUS_EMOJI&nbsp; $STATUS_MESSAGE</td></tr><tr><td><strong>Preview URL:</strong></td><td><a href='$PREVIEW_URL'>$PREVIEW_URL</a></td></tr><tr><td><strong>Branch Preview URL:</strong></td><td><a href='$BRANCH_PREVIEW_URL'>$BRANCH_PREVIEW_URL</a></td></tr></table>"
+          COMMENT_BODY="Deploying with ⚡ Cloudflare Pages<br><table><tr><td><strong>Latest commit:</strong></td><td><code>${PR_SHA}</code></td></tr><tr><td><strong>Status:</strong></td><td>&nbsp;$STATUS_EMOJI&nbsp; $STATUS_MESSAGE</td></tr><tr><td><strong>Preview URL:</strong></td><td><a href='$PREVIEW_URL'>$PREVIEW_URL</a></td></tr><tr><td><strong>Branch Preview URL:</strong></td><td><a href='$BRANCH_PREVIEW_URL'>$BRANCH_PREVIEW_URL</a></td></tr></table>"
 
           ESCAPED_BODY=$(echo "$COMMENT_BODY" | jq -aRs .)
-          COMMENTS_URL="https://api.github.com/repos/${{ github.repository }}/issues/${{ needs.check.outputs.pr_number }}/comments"
+          COMMENTS_URL="https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${PR_NUMBER}/comments"
 
-          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          curl -H "Authorization: token ${GITHUB_TOKEN}" \
               -H "Accept: application/vnd.github+json" \
               -X POST \
               -d "{\"body\": $ESCAPED_BODY }" \
-              $COMMENTS_URL
+              "$COMMENTS_URL"
