@@ -328,8 +328,9 @@
       "required": false,
       "fields": {
         "value": "\\[uba\\]|-uba\\b"
-      },
-      {
+      }
+    },
+    {
       "name": "ZR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -337,7 +338,6 @@
       "fields": {
         "value": "\\b(ZR)\\b|-ZR-"
       }
-    }
     }
   ]
 }
