@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  triage:
+  check-mkdocs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
