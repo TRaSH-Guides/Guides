@@ -70,7 +70,7 @@ Then Continue to [How to set up](/File-and-Folder-Structure/How-to-set-up/) for 
 
 ??? info "**Permissions, ownership, and UMASK** - [Click to show/hide]"
 
-    Hardlinks and instant (atomic) moves require all paths to be on **one filesystem**, but they also depend on **permissions**: every app must be able to read — and the apps that import, upgrade, or delete must be able to write — each other's files. This is governed by the **user and group your apps run as**, the **`UMASK`**, and **ownership** — assumed knowledge here and explained in detail in the [Docker Guide](https://wiki.servarr.com/docker-guide){:target="_blank" rel="noopener noreferrer"}.
+    Hardlinks and instant (atomic) moves require all paths to be on **one filesystem**, but they also depend on **permissions**: every app must be able to read — and the apps that import, upgrade, or delete must be able to write — each other's files. This is governed by the **user and group your apps run as**, the **`UMASK`**, and **ownership** — assumed knowledge here and explained in detail in the [Servarr Docker Guide](https://wiki.servarr.com/docker-guide){:target="_blank" rel="noopener noreferrer"}.
 
     How the user and group are set depends on the image: many images (for example LinuxServer.io) use the `PUID` and `PGID` environment variables, while others use Docker's native `--user` / `user:` directive (a `uid:gid` pair). Either way, pick one of the two setups below and apply it consistently:
 
