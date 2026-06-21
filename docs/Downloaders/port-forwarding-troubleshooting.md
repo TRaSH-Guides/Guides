@@ -43,9 +43,14 @@ Before blaming the network, confirm the client is bound and listening on the exp
 
 === "Windows"
 
+    In an **Administrator** Command Prompt (needed to show the owning program), run a
+    targeted check rather than the noisy full `netstat -ab`:
+
     ```bat
-    netstat -ab
+    netstat -ano | find "<port>"
     ```
+
+    Your port should appear in the `LISTENING` state.
 
 If the port is not listed, fix the client's own configuration (or host firewall, below)
 first — the external path cannot work if nothing is listening locally.
