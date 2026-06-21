@@ -1,3 +1,13 @@
+# 2026-06-21 04:24
+- [feat(starr): Add RlsGrp `C76` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2780)
+- [feat(radarr): Add RlsGrp `RBB` to `LQ` due to cam and microsized releases](https://github.com/TRaSH-Guides/Guides/pull/2779)
+- [fix(radarr): Update the Custom Formats `2.0` and `7.1` to prevent matching on movie titles that contain `2.0`](https://github.com/TRaSH-Guides/Guides/pull/2776)
+- [fix(downloaders): Ensure pip is installed in the Python venv and used for pip installs](https://github.com/TRaSH-Guides/Guides/pull/2769)
+- [feat(downloaders): Add CA bundle support for qBittorrent](https://github.com/TRaSH-Guides/Guides/pull/2772)
+- [fix(downloaders): Normalize fclones version comparison](https://github.com/TRaSH-Guides/Guides/pull/2770)
+- [fix(guide-sync): wrong audio channel count for SQP](https://github.com/TRaSH-Guides/Guides/pull/2773)
+- [feat(guide-sync): Adjusts scoring for an SQP to prevent download loops caused by missing audio format and channels](https://github.com/TRaSH-Guides/Guides/pull/2771)
+
 # 2026-06-14 04:17
 - [fix(starr): Move R&H from LQ to LQ (Release Title)](https://github.com/TRaSH-Guides/Guides/pull/2767)
 - [feat(guide): Reviewed and updated descriptions of the custom formats](https://github.com/TRaSH-Guides/Guides/pull/2764)
