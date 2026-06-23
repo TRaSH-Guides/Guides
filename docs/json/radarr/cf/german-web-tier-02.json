@@ -1,47 +1,11 @@
 {
   "trash_id": "08d120d5a003ec4954b5b255c0691d79",
   "trash_scores": {
-      "default": 1900
+    "default": 1900
   },
   "name": "German Web Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
-    {
-      "name": "VECTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "(VECTOR)$"
-      }
-    },
-    {
-      "name": "MULTiPLEX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "(MULTiPLEX)$"
-      }
-    },
-    {
-      "name": "SiXTYNiNE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "(SiXTYNiNE)$"
-      }
-    },
-    {
-      "name": "Oergel",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "(Oergel)$"
-      }
-    },
     {
       "name": "4SF",
       "implementation": "ReleaseGroupSpecification",
@@ -61,12 +25,57 @@
       }
     },
     {
+      "name": "FLORiX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FLORiX)$"
+      }
+    },
+    {
+      "name": "MULTiPLEX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(MULTiPLEX)$"
+      }
+    },
+    {
+      "name": "Oergel",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(Oergel)$"
+      }
+    },
+    {
       "name": "paranoid06",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(paranoid06)$"
+      }
+    },
+    {
+      "name": "SiXTYNiNE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(SiXTYNiNE)$"
+      }
+    },
+    {
+      "name": "VECTOR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(VECTOR)$"
       }
     },
     {

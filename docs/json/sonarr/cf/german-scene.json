@@ -7,51 +7,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "DETAiLS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DETAiLS)$"
-      }
-    },
-    {
-      "name": "WAYNE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WAYNE)$"
-      }
-    },
-    {
-      "name": "WOMBAT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WOMBAT)$"
-      }
-    },
-    {
-      "name": "SAUERKRAUT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SAUERKRAUT)$"
-      }
-    },
-    {
-      "name": "WvF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WvF)$"
-      }
-    },
-    {
       "name": "4KCONNECTiON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -61,12 +16,12 @@
       }
     },
     {
-      "name": "STARS",
+      "name": "ACED",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(STARS)$"
+        "value": "^(ACED)$"
       }
     },
     {
@@ -79,6 +34,51 @@
       }
     },
     {
+      "name": "bi0hazard",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(bi0hazard)$"
+      }
+    },
+    {
+      "name": "CDD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CDD)$"
+      }
+    },
+    {
+      "name": "CDP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CDP)$"
+      }
+    },
+    {
+      "name": "CONTRiBUTiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CONTRiBUTiON)$"
+      }
+    },
+    {
+      "name": "DETAiLS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DETAiLS)$"
+      }
+    },
+    {
       "name": "DMPD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -88,12 +88,84 @@
       }
     },
     {
+      "name": "ENCOUNTERS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ENCOUNTERS)$"
+      }
+    },
+    {
+      "name": "ENDSTATiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ENDSTATiON)$"
+      }
+    },
+    {
+      "name": "euHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(euHD)$"
+      }
+    },
+    {
       "name": "EXCiTED",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(EXCiTED)$"
+      }
+    },
+    {
+      "name": "FENDT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FENDT)$"
+      }
+    },
+    {
+      "name": "FKKTV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FKKTV)$"
+      }
+    },
+    {
+      "name": "GTVG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GTVG)$"
+      }
+    },
+    {
+      "name": "HAXE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HAXE)$"
+      }
+    },
+    {
+      "name": "HDARCHiV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDARCHiV)$"
       }
     },
     {
@@ -133,6 +205,69 @@
       }
     },
     {
+      "name": "muhHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(muhHD)$"
+      }
+    },
+    {
+      "name": "OCA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OCA)$"
+      }
+    },
+    {
+      "name": "OHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OHD)$"
+      }
+    },
+    {
+      "name": "PL3X",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PL3X)$"
+      }
+    },
+    {
+      "name": "RiLE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RiLE)$"
+      }
+    },
+    {
+      "name": "RIPLEY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RIPLEY)$"
+      }
+    },
+    {
+      "name": "RSG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RSG)$"
+      }
+    },
+    {
       "name": "RUBBiSH",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -148,6 +283,24 @@
       "required": false,
       "fields": {
         "value": "^(RWP)$"
+      }
+    },
+    {
+      "name": "SAUERKRAUT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SAUERKRAUT)$"
+      }
+    },
+    {
+      "name": "STARS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(STARS)$"
       }
     },
     {
@@ -169,48 +322,21 @@
       }
     },
     {
-      "name": "HAXE",
+      "name": "TVNATiON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(HAXE)$"
+        "value": "^(TVNATiON)$"
       }
     },
     {
-      "name": "muhHD",
+      "name": "W4K",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(muhHD)$"
-      }
-    },
-    {
-      "name": "ENDSTATiON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ENDSTATiON)$"
-      }
-    },
-    {
-      "name": "HDARCHiV",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HDARCHiV)$"
-      }
-    },
-    {
-      "name": "PL3X",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PL3X)$"
+        "value": "^(W4K)$"
       }
     },
     {
@@ -223,147 +349,30 @@
       }
     },
     {
-      "name": "OHD",
+      "name": "WAYNE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(OHD)$"
+        "value": "^(WAYNE)$"
       }
     },
     {
-      "name": "ENCOUNTERS",
+      "name": "WOMBAT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(ENCOUNTERS)$"
+        "value": "^(WOMBAT)$"
       }
     },
     {
-      "name": "RSG",
+      "name": "WvF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(RSG)$"
-      }
-    },
-    {
-      "name": "TVNATiON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TVNATiON)$"
-      }
-    },
-    {
-      "name": "FENDT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FENDT)$"
-      }
-    },
-    {
-      "name": "ACED",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ACED)$"
-      }
-    },
-    {
-      "name": "FKKTV",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FKKTV)$"
-      }
-    },
-    {
-      "name": "euHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(euHD)$"
-      }
-    },
-    {
-      "name": "OCA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(OCA)$"
-      }
-    },
-    {
-      "name": "RIPLEY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RIPLEY)$"
-      }
-    },
-    {
-      "name": "GTVG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GTVG)$"
-      }
-    },
-    {
-      "name": "CDP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CDP)$"
-      }
-    },
-    {
-      "name": "CDD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CDD)$"
-      }
-    },
-    {
-      "name": "RiLE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RiLE)$"
-      }
-    },
-    {
-      "name": "CONTRiBUTiON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CONTRiBUTiON)$"
-      }
-    },
-    {
-      "name": "bi0hazard",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(bi0hazard)$"
+        "value": "^(WvF)$"
       }
     }
   ]
