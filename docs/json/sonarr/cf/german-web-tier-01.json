@@ -7,39 +7,30 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "ZeroTwo",
+      "name": "CNY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(ZeroTwo)$"
+        "value": "^(CNY)$"
       }
     },
     {
-      "name": "ZeroTwo Aliases",
+      "name": "KOMET",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|D02KU|WAREZCX|BiTCHNUGGET)\\b"
+        "value": "^(KOMET)$"
       }
     },
     {
-      "name": "TSCC",
+      "name": "MEDiATHEK",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(TSCC)$"
-      }
-    },
-    {
-      "name": "TvR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TvR)$"
+        "value": "^(MEDiATHEK)$"
       }
     },
     {
@@ -49,15 +40,6 @@
       "required": false,
       "fields": {
         "value": "^(NIMA4K)$"
-      }
-    },
-    {
-      "name": "TVS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TVS)$"
       }
     },
     {
@@ -79,33 +61,6 @@
       }
     },
     {
-      "name": "CNY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CNY)$"
-      }
-    },
-    {
-      "name": "WeebPinn",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WeebPinn)$"
-      }
-    },
-    {
-      "name": "MEDiATHEK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MEDiATHEK)$"
-      }
-    },
-    {
       "name": "RiiR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -124,15 +79,6 @@
       }
     },
     {
-      "name": "WalterBishop",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WalterBishop)$"
-      }
-    },    
-    {
       "name": "SLiDE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -140,14 +86,68 @@
       "fields": {
         "value": "^(SLiDE)$"
       }
-    },    
+    },
     {
-      "name": "KOMET",
+      "name": "TSCC",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(KOMET)$"
+        "value": "^(TSCC)$"
+      }
+    },
+    {
+      "name": "TvR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TvR)$"
+      }
+    },
+    {
+      "name": "TVS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TVS)$"
+      }
+    },
+    {
+      "name": "WalterBishop",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WalterBishop)$"
+      }
+    },
+    {
+      "name": "WeebPinn",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WeebPinn)$"
+      }
+    },
+    {
+      "name": "ZeroTwo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ZeroTwo)$"
+      }
+    },
+    {
+      "name": "ZeroTwo Aliases",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|D02KU|WAREZCX|BiTCHNUGGET)\\b"
       }
     },
     {
