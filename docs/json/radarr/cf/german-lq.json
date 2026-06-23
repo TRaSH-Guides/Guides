@@ -410,6 +410,15 @@
       "fields": {
         "value": "^(SD7)$"
       }
+    },
+    {
+      "name": "PiKACHU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PiKACHU)$"
+      }
     }
   ]
 }
