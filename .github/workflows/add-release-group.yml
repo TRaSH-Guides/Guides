@@ -53,6 +53,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
 
       - name: Setup Python
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
@@ -172,12 +174,14 @@ jobs:
 
       - name: Validate changed JSON against the CF schema
         if: steps.edit.outputs.did_change == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.edit.outputs.files }}
         run: |
           while IFS= read -r f; do
             [ -z "$f" ] && continue
             app=$(printf '%s' "$f" | cut -d/ -f3)
             check-jsonschema --schemafile "schemas/${app}-cf.schema.json" "$f"
-          done <<< "${{ steps.edit.outputs.files }}"
+          done <<< "$CHANGED_FILES"
 
       - name: Open pull request
         if: steps.edit.outputs.did_change == 'true'
