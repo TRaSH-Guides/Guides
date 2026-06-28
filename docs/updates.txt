@@ -1,3 +1,11 @@
+# 2026-06-28 04:01
+- [feat(starr): Add release groups to German CFs](https://github.com/TRaSH-Guides/Guides/pull/2791)
+- [feat(starr-anime): Some Anime Tier adjustments](https://github.com/TRaSH-Guides/Guides/pull/2790)
+- [fix(ci): prevent fork-PR code execution in privileged deploy workflow](https://github.com/TRaSH-Guides/Guides/pull/2789)
+- [feat(downloaders): Add port forwarding troubleshooting page](https://github.com/TRaSH-Guides/Guides/pull/2783)
+- [feat(hardlinks): Add permissions, ownership and UMASK section](https://github.com/TRaSH-Guides/Guides/pull/2781)
+- [fix(sonarr): Correct advanced-toggle image in naming-scheme guide](https://github.com/TRaSH-Guides/Guides/pull/2782)
+
 # 2026-06-21 04:24
 - [feat(starr): Add RlsGrp `C76` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2780)
 - [feat(radarr): Add RlsGrp `RBB` to `LQ` due to cam and microsized releases](https://github.com/TRaSH-Guides/Guides/pull/2779)
