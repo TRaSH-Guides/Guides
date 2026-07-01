@@ -6,7 +6,7 @@
   "group": 98,
   "upgradeAllowed": true,
   "cutoff": "Bluray|WEB-2160p",
-  "minFormatScore": 2370,
+  "minFormatScore": 3070,
   "cutoffFormatScore": 10000,
   "minUpgradeFormatScore": 1,
   "language": "Original",
