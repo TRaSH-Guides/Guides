@@ -8,7 +8,7 @@
             "name": "10bit",
             "trash_id": "a5d148168c4506b55cf53984107c396e",
             "required": false,
-            "default": true
+            "default": false
         },
         {
             "name": "Bad Dual Groups",
