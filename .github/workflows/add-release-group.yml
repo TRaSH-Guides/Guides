@@ -1,0 +1,194 @@
+# Manually add a release group/title to a CF group-list and open a PR. Run from the Actions tab.
+name: Add Release Group
+
+on:
+  workflow_dispatch:
+    inputs:
+      cf_group:
+        description: "Which group-list Custom Format to add to"
+        required: true
+        type: choice
+        default: bad-dual-groups
+        options:
+          - bad-dual-groups
+          - lq
+          - lq-release-title
+          - anime-lq-groups
+          - french-lq
+          - french-scene
+          - german-lq
+          - german-scene
+          - german-anime-scene
+          - german-microsized
+          - web-scene
+          - other
+      cf_other:
+        description: "If 'other' above: the CF json basename (e.g. flux). Validated to be a group-list CF."
+        required: false
+        type: string
+      group_name:
+        description: "Release group / title to add (e.g. C76)"
+        required: true
+        type: string
+      regex:
+        description: "Optional regex override. Blank = auto: ^(name)$ for groups, \\b(name)\\b for titles."
+        required: false
+        type: string
+      reason:
+        description: "Reason / description (goes in the PR body) — required"
+        required: true
+        type: string
+      issue:
+        description: "Issue number to reference, e.g. 2777 (optional)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  add-release-group:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.x"
+
+      - name: Install validator
+        run: pip install check-jsonschema
+
+      - name: Add the group and prepare PR metadata
+        id: edit
+        env:
+          CF_GROUP: ${{ inputs.cf_group }}
+          CF_OTHER: ${{ inputs.cf_other }}
+          GROUP_NAME: ${{ inputs.group_name }}
+          REGEX: ${{ inputs.regex }}
+          REASON: ${{ inputs.reason }}
+          ISSUE: ${{ inputs.issue }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, glob
+
+          cf = os.environ["CF_GROUP"].strip()
+          if cf == "other":
+              cf = os.environ["CF_OTHER"].strip()
+          name = os.environ["GROUP_NAME"].strip()
+          override = os.environ.get("REGEX", "").strip()
+          reason = os.environ.get("REASON", "").strip()
+          issue = os.environ.get("ISSUE", "").strip().lstrip("#")
+
+          def die(msg):
+              print(f"::error::{msg}")
+              raise SystemExit(1)
+
+          if not cf:
+              die("No CF group selected — pick one or set the 'other' basename.")
+          if not name:
+              die("group_name is required.")
+          if not reason:
+              die("reason/description is required.")
+
+          apps = [a for a in ("radarr", "sonarr") if os.path.isfile(f"docs/json/{a}/cf/{cf}.json")]
+          if not apps:
+              valid = sorted({os.path.basename(p)[:-5] for p in glob.glob("docs/json/*/cf/*.json")})
+              die(f"CF '{cf}' not found. Existing CF basenames: {', '.join(valid)}")
+
+          GROUP_IMPLS = {"ReleaseGroupSpecification", "ReleaseTitleSpecification"}
+          changed, impl_used = [], None
+          for a in apps:
+              path = f"docs/json/{a}/cf/{cf}.json"
+              with open(path, encoding="utf-8") as fh:
+                  data = json.load(fh)
+              specs = data.get("specifications", [])
+              impls = {s.get("implementation") for s in specs}
+              if impls and not impls <= GROUP_IMPLS:
+                  die(f"{cf} is not a release-group/title list (implementations: {sorted(impls)}).")
+              impl = next(iter(impls), "ReleaseGroupSpecification")
+              if impl_used is None:
+                  impl_used = impl
+              elif impl != impl_used:
+                  die(
+                      f"{cf} uses mixed implementations across apps "
+                      f"({impl_used} vs {impl}); please align implementations."
+                  )
+              if any(s.get("name", "").lower() == name.lower() for s in specs):
+                  print(f"::notice::{a}: '{name}' already present in {cf}; skipping.")
+                  continue
+              if override:
+                  value = override
+              elif impl == "ReleaseTitleSpecification":
+                  value = r"\b(" + re.escape(name) + r")\b"
+              else:
+                  value = "^(" + re.escape(name) + ")$"
+              specs.append({
+                  "name": name,
+                  "implementation": impl,
+                  "negate": False,
+                  "required": False,
+                  "fields": {"value": value},
+              })
+              specs.sort(key=lambda s: s.get("name", "").lower())
+              data["specifications"] = specs
+              with open(path, "w", encoding="utf-8") as fh:
+                  json.dump(data, fh, indent=2, ensure_ascii=False)
+                  fh.write("\n")
+              changed.append((a, path))
+
+          out = open(os.environ["GITHUB_OUTPUT"], "a")
+          if not changed:
+              print("::notice::No changes — group already present in all applicable apps.")
+              out.write("did_change=false\n")
+              raise SystemExit(0)
+
+          kind = "title" if impl_used == "ReleaseTitleSpecification" else "group"
+          apps_str = " + ".join(a for a, _ in changed)
+          scope = "starr" if len(changed) > 1 else changed[0][0]
+          title = f"feat({scope}): add {kind} `{name}` to `{cf}`"
+          branch = f"add-group/{cf}-" + re.sub(r"[^A-Za-z0-9._-]+", "-", name).strip("-").lower()
+
+          body_lines = [
+              f"Adds release {kind} **`{name}`** to **`{cf}`** ({apps_str}) via the Add Release Group workflow.",
+              "",
+              "## Reason",
+              reason,
+          ]
+          if issue:
+              body_lines += ["", f"Closes #{issue}"]
+          body = "\n".join(body_lines)
+
+          for key, val in (("did_change", "true"), ("branch", branch), ("title", title)):
+              out.write(f"{key}={val}\n")
+          out.write("body<<BODYEOF\n" + body + "\nBODYEOF\n")
+          out.write("files<<FILESEOF\n" + "\n".join(p for _, p in changed) + "\nFILESEOF\n")
+          out.close()
+          print(f"::notice::Prepared {title}")
+          PY
+
+      - name: Validate changed JSON against the CF schema
+        if: steps.edit.outputs.did_change == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.edit.outputs.files }}
+        run: |
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            app=$(printf '%s' "$f" | cut -d/ -f3)
+            check-jsonschema --schemafile "schemas/${app}-cf.schema.json" "$f"
+          done <<< "$CHANGED_FILES"
+
+      - name: Open pull request
+        if: steps.edit.outputs.did_change == 'true'
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          branch: ${{ steps.edit.outputs.branch }}
+          title: ${{ steps.edit.outputs.title }}
+          body: ${{ steps.edit.outputs.body }}
+          commit-message: ${{ steps.edit.outputs.title }}
+          delete-branch: true
