@@ -171,6 +171,15 @@
       }
     },
     {
+      "name": "CLEANUP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CLEANUP)$"
+      }
+    },
+    {
       "name": "COLLECTiVE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -312,6 +321,15 @@
       "required": false,
       "fields": {
         "value": "^(FRDS)$"
+      }
+    },
+    {
+      "name": "FS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FS)$"
       }
     },
     {
@@ -780,6 +798,15 @@
       "required": false,
       "fields": {
         "value": "^(SUNSCREEN)$"
+      }
+    },
+    {
+      "name": "SyncUP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SyncUP)$"
       }
     },
     {
