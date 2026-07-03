@@ -1,6 +1,7 @@
 name: Bug/Error Found in the Guide?
 description: Issues are only opened on GitHub by one of the team members after we have confirmed them on our Discord server. Issues raised directly on GitHub will be automatically closed.
 title: "[Bug]"
+type: "Bug"
 labels: ["Type: Bug", "Status: Triage Needed"]
 body:
   - type: checkboxes
