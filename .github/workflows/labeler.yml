@@ -1,7 +1,6 @@
 name: Label Pull Requests
 
 on:
-  push:
   pull_request_target:
 
 jobs:

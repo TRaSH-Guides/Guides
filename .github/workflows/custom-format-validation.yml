@@ -2,6 +2,7 @@ name: Validate Custom Format JSONs
 
 on:
   push:
+    branches: [master]
     paths:
       - .github/workflows/custom-format-validation.yml
       - docs/json/guide-only/*.json
@@ -19,6 +20,10 @@ on:
       - docs/json/radarr/conflicts.json
       - docs/json/sonarr/conflicts.json
       - schemas/**/*.json
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read

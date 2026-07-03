@@ -2,41 +2,66 @@ name: Check for Mkdocs Issues
 
 on:
   push:
+    branches: [master]
   pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   check-mkdocs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pull-requests: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
+          fetch-depth: 0
 
-      - name: Find JSON Files Changed in Commit
+      - name: Find JSON Files Changed
         id: find_json_files
         env:
+          EVENT_NAME: ${{ github.event_name }}
           BEFORE_SHA: ${{ github.event.before }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
           CURRENT_SHA: ${{ github.sha }}
         run: |
-          # Get the list of JSON files changed in the commit
-          JSON_FILES=$(git diff --name-only "$BEFORE_SHA" "$CURRENT_SHA" | grep '\.json$' || true)
-          echo "json_files=$JSON_FILES" >> "$GITHUB_ENV"
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            BASE="$PR_BASE_SHA"
+          elif [[ "$BEFORE_SHA" == "0000000000000000000000000000000000000000" ]]; then
+            # First push to branch — no history to diff against; scan all tracked JSON files
+            # shellcheck disable=SC2046
+            JSON_FILES=$(git ls-files '*.json' | tr '\n' ' ')
+            echo "JSON_FILES=${JSON_FILES}" >> "$GITHUB_ENV"
+            exit 0
+          else
+            BASE="$BEFORE_SHA"
+          fi
+          RAW=$(git diff --name-only "$BASE" "$CURRENT_SHA" | grep '\.json$' || true)
+          # Keep only files that still exist (deleted files cannot be scanned)
+          JSON_FILES=""
+          for f in $RAW; do
+            [[ -f "$f" ]] && JSON_FILES="$JSON_FILES $f"
+          done
+          JSON_FILES="${JSON_FILES# }"
+          echo "JSON_FILES=${JSON_FILES}" >> "$GITHUB_ENV"
 
       - name: Check JSON Files for MkDocs Macro Issues
         run: |
           # Check if any JSON files contain the [[ pattern
           if [[ -n "$JSON_FILES" ]]; then
+            # shellcheck disable=SC2086
             if grep -r '\[\[' $JSON_FILES; then
               echo "::error::Found '[[', which breaks MkDocs macros in JSON files:"
+              # shellcheck disable=SC2086
               grep -r -n '\[\[' $JSON_FILES
               exit 1
             else
-              echo "No '[[', patterns found in JSON files."
+              echo "No '[[' patterns found in JSON files."
             fi
           else
             echo "No JSON files changed in this commit."
