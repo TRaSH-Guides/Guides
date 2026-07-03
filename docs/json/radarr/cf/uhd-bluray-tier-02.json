@@ -48,6 +48,15 @@
       }
     },
     {
+      "name": "HiDt",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiDt)$"
+      }
+    },
+    {
       "name": "HQMUX",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
