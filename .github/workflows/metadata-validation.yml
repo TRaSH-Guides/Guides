@@ -2,6 +2,7 @@ name: Validate Metadata JSON
 
 on:
   push:
+    branches: [master]
     paths:
       - metadata.json
       - metadata.schema.json
@@ -11,6 +12,10 @@ on:
       - metadata.json
       - metadata.schema.json
       - .github/workflows/metadata-validation.yml
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read

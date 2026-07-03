@@ -2,6 +2,7 @@ name: Validate Quality Profiles
 
 on:
   push:
+    branches: [master]
     paths:
       - .github/workflows/quality-profile-validation.yml
       - docs/json/radarr/cf/*.json
@@ -25,6 +26,10 @@ on:
       - docs/json/sonarr/quality-profile-groups/**
       - docs/json/sonarr/cf-groups/**
       - scripts/validate-quality-profiles.py
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
