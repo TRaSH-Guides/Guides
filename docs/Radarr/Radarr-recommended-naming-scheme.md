@@ -35,7 +35,7 @@ First, you need to set up Radarr to show all the naming options:
     {{ radarr['naming']['radarr-naming']['file']['standard'] }}
     ```
 
-    <sub><sup>**Movie**: `The Movie Title (2010) {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+    <sub><sup>**Movie**: `The Movie Title (2010) - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
 === "Plex"
 
@@ -49,7 +49,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['plex-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
     === "Plex (TMDb)"
 
@@ -57,7 +57,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['plex-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
     === "Plex Anime (IMDb)"
 
@@ -67,7 +67,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['plex-anime-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
     === "Plex Anime (TMDb)"
 
@@ -75,7 +75,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['plex-anime-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
     !!! danger "If you use the `{edition-{Edition Tags}}` part of the recommended file name, Plex will recognize the movie edition and add it to the Plex interface - for example, Director's Cut.<br><br>However, this means that if you have two copies of a movie with different editions in a single merged library - for example, a 1080p Director's Cut and a 2160p Theatrical Edition - these will appear as two separate items in Plex.<br><br>If you want a movie to appear only once per library when you keep more than one copy of a movie, replace: `{edition-{Edition Tags}}` with `{Edition Tags}`."
 
@@ -87,7 +87,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
     === "Plex Edition Alternative (TMDb)"
 
@@ -95,7 +95,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
 === "Emby"
 
@@ -109,7 +109,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['emby-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
     === "Emby (TMDb)"
 
@@ -117,7 +117,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['emby-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
     === "Emby Anime (IMDb)"
 
@@ -127,7 +127,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['emby-anime-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
     === "Emby Anime (TMDb)"
 
@@ -135,7 +135,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['emby-anime-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
 === "Jellyfin"
 
@@ -147,7 +147,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
     === "Jellyfin (TMDb)"
 
@@ -155,7 +155,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
     === "Jellyfin Anime (IMDb)"
 
@@ -163,7 +163,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
     === "Jellyfin Anime (TMDb)"
 
@@ -171,7 +171,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][IMAX HYBRID][Bluray-1080p Proper][DTS 5.1][DE][10bit][AVC]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
 ---
 
