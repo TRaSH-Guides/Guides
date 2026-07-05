@@ -1,3 +1,12 @@
+# 2026-07-05 03:36
+- [feat(sonarr-anime): Add HIDIVE & WKN to the anime-remux profile](https://github.com/TRaSH-Guides/Guides/pull/2693)
+- [fix(gha): reliable mkdocs macro guard + stop duplicate CI runs](https://github.com/TRaSH-Guides/Guides/pull/2802)
+- [fix(ci): suppress zizmor adhoc-packages finding in update_contributors](https://github.com/TRaSH-Guides/Guides/pull/2803)
+- [feat(radarr): Add release group HiDt to UHD Bluray Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2800)
+- [feat(radarr): Add release groups FS, SyncUP and CLEANUP to LQ](https://github.com/TRaSH-Guides/Guides/pull/2801)
+- [feat(guide-sync): Adjusted scoring for an SQP to prefer multichannel over 2.0 when it shares the same audio format](https://github.com/TRaSH-Guides/Guides/pull/2778)
+- [fix(downloaders): Restored the deleted image for the Qbit Basic guide](https://github.com/TRaSH-Guides/Guides/pull/2794)
+
 # 2026-06-28 04:01
 - [feat(starr): Add release groups to German CFs](https://github.com/TRaSH-Guides/Guides/pull/2791)
 - [feat(starr-anime): Some Anime Tier adjustments](https://github.com/TRaSH-Guides/Guides/pull/2790)
