@@ -151,6 +151,15 @@
       }
     },
     {
+      "name": "SLiDE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SLiDE)$"
+      }
+    },
+    {
       "name": "WebDL",
       "implementation": "SourceSpecification",
       "negate": false,
