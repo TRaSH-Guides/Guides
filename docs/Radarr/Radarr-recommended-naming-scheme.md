@@ -135,7 +135,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['emby-anime-tmdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
 === "Jellyfin"
 
