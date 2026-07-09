@@ -49,7 +49,7 @@ First, you need to set up Radarr to show all the naming options:
         {{ radarr['naming']['radarr-naming']['file']['plex-imdb'] }}
         ```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
     === "Plex (TMDb)"
 
