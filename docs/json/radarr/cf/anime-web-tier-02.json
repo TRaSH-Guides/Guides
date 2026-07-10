@@ -48,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BlackRose\\b"
+        "value": "\\b(BlackRose)\\b"
       }
     },
     {
