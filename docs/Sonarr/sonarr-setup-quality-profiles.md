@@ -195,7 +195,24 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ??? question "Why do you only have Profiles for WEB-DL - [Click to show/hide]"
 
-    We only do WEB-DL, myself, for TV shows. In our opinion, WEB-DL is the sweet spot between quality and size (you often don't see big differences anyway for TV shows) except for shows like GOT, Vikings, etc.
+    **Why we focus on WEB-DL**
+
+    Most TV shows today debut on streaming services, and many never receive a physical release at all. WEB-DL is usually the best source available, and often the only one.
+
+    TV remuxes also come with a steep storage cost. A season can easily consume hundreds of gigabytes, and larger shows can approach a terabyte. With drive prices where they are, that adds up fast for content where the quality difference over WEB-DL is often hard to notice.
+
+    There isn't much community interest in TV remux profiles either, so we haven't invested time in creating one.
+
+    **How to enable remux on a WEB profile**
+
+    If you prefer remuxes, you can adapt [`WEB-2160p (Alternative)`](/Sonarr/sonarr-setup-quality-profiles/#web-2160p-alternative-quality-profile){:target="_blank" rel="noopener noreferrer"}, the variant above that includes 720p/1080p/2160p WEB and Bluray sources as fallbacks. That profile is built around WEB-DL as the cutoff, so enabling remux takes a few extra steps:
+
+    1. Enable `Bluray-1080p Remux` and `Bluray-2160p Remux`.
+    1. Move both remux qualities above `WEB 2160p`, with `Bluray-2160p Remux` at the top, since quality rank beats custom format score.
+    1. Change **Upgrade Until** from `WEB 2160p` to `Bluray-2160p Remux`; otherwise Sonarr stops at WEB and will not upgrade to remux.
+    1. [Merge](/Sonarr/Tips/Merge-quality/){:target="_blank" rel="noopener noreferrer"} remux with the matching WEB qualities (e.g. `Bluray-2160p Remux` + `WEBDL-2160p` / `WEBRip-2160p`) so upgrades between them work cleanly.
+
+    Keep the existing custom formats; lower qualities in the Alternative profile remain useful as fallbacks when no remux exists. This is still a WEB-focused profile with no dedicated remux release-group scoring, and `Audio Formats` custom formats are not used here. For most TV shows, no remux will exist anyway.
 
 ### Why prefer P2P groups
 
