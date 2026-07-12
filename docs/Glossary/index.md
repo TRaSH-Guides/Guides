@@ -110,7 +110,7 @@ See [Atomic Move](#atomic-move).
 
 A BitTorrent user who is actively downloading a torrent (referred to as 'leeching'). This term can also describe those who download torrents without sharing them afterward.
 
-### [Lidarr](../Lidarr/index.md)
+### [Lidarr](https://wiki.servarr.com/lidarr){:target="\_blank" rel="noopener noreferrer"}
 
 An application designed to help with the automation and management of your music library. One of a group of applications, including Prowlarr, Radarr, and Sonarr, collectively known as the "arrs".
 
