@@ -1,35 +1,35 @@
 "Status: Triage Needed":
-  - "/.*/"
+  - ".*"
 
 "Type: Guide Request":
-  - "^\\[Request\\]"
+  - "(?i)^\\[Request\\]"
 
 "Type: Bug":
-  - "^\\[Bug\\]"
+  - "(?i)^\\[Bug\\]"
 
 "Area: Radarr":
-  - "\\bradarr\\b"
+  - "(?i)\\bradarr\\b"
 
 "Area: Sonarr":
-  - "\\bsonarr\\b"
+  - "(?i)\\bsonarr\\b"
 
 "Area: Bazarr":
-  - "\\bbazarr\\b"
+  - "(?i)\\bbazarr\\b"
 
 "Area: Prowlarr":
-  - "\\bprowlarr\\b"
+  - "(?i)\\bprowlarr\\b"
 
 "Area: Recyclarr":
-  - "\\brecyclarr\\b"
+  - "(?i)\\brecyclarr\\b"
 
 "Area: Synology":
-  - "\\bsynology\\b"
+  - "(?i)\\bsynology\\b"
 
 "Area: Plex":
-  - "\\bplex\\b"
+  - "(?i)\\bplex\\b"
 
 "Area: Downloaders":
-  - "\\b(qbittorrent|sabnzbd|nzbget|deluge|transmission|downloaders?)\\b"
+  - "(?i)\\b(qbittorrent|sabnzbd|nzbget|deluge|transmission|downloaders?)\\b"
 
 "Area: Anime":
-  - "\\banime\\b"
+  - "(?i)\\banime\\b"
