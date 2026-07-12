@@ -1,3 +1,8 @@
+# 2026-07-12 02:55
+- [feat(starr-anime): Add nekotan to Anime BD Tier 03 and BlackRose to Anime Web Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2810)
+- [fix(radarr): Corrected the order of the example naming scheme tokens](https://github.com/TRaSH-Guides/Guides/pull/2805)
+- [fix(sonarr-anime): Update anime-lq-groups - Regex for RL Ari](https://github.com/TRaSH-Guides/Guides/pull/2808)
+
 # 2026-07-05 03:36
 - [feat(sonarr-anime): Add HIDIVE & WKN to the anime-remux profile](https://github.com/TRaSH-Guides/Guides/pull/2693)
 - [fix(gha): reliable mkdocs macro guard + stop duplicate CI runs](https://github.com/TRaSH-Guides/Guides/pull/2802)
