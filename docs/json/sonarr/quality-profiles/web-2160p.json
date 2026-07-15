@@ -3,7 +3,7 @@
   "name": "WEB-2160p",
   "trash_description": "Quality Profile that covers:<br>- WEBDL: 2160p",
   "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#web-2160p",
-  "group": 3,
+  "group": 2,
   "upgradeAllowed": true,
   "cutoff": "WEB 2160p",
   "minFormatScore": 0,

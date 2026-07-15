@@ -2,7 +2,7 @@
   "trash_id": "fe9470e577c300a5ad9a3274f6d1cdf2",
   "name": "Remux + WEB 1080p",
   "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Remux: 1080p",
-  "group": 1,
+  "group": 6,
   "upgradeAllowed": true,
   "cutoff": "Bluray-1080p Remux",
   "minFormatScore": 0,
