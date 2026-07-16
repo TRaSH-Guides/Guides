@@ -1,30 +1,29 @@
 {
-  "trash_id": "d1498e7d189fbe6c7110ceaabb7473e6",
-  "name": "WEB-2160p",
-  "trash_description": "Quality Profile that covers:<br>- WEBDL: 2160p",
-  "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#web-2160p",
-  "group": 2,
+  "trash_id": "911df0e05a395c19d8b3efc76a7467c1",
+  "name": "Remux 2160p (Combined)",
+  "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p, 2160p<br>- Remux: 1080p, 2160p",
+  "group": 7,
   "upgradeAllowed": true,
-  "cutoff": "WEB 2160p",
+  "cutoff": "Bluray-2160p Remux",
   "minFormatScore": 0,
   "cutoffFormatScore": 10000,
   "minUpgradeFormatScore": 1,
   "items": [
+    { "name": "Bluray-2160p Remux", "allowed": true },
     {
       "name": "WEB 2160p",
       "allowed": true,
       "items": ["WEBRip-2160p", "WEBDL-2160p"]
     },
-    { "name": "Bluray-2160p Remux", "allowed": false },
-    { "name": "Bluray-2160p", "allowed": false },
-    { "name": "HDTV-2160p", "allowed": false },
-    { "name": "Bluray-1080p Remux", "allowed": false },
-    { "name": "Bluray-1080p", "allowed": false },
+    { "name": "Bluray-1080p Remux", "allowed": true },
     {
       "name": "WEB 1080p",
-      "allowed": false,
+      "allowed": true,
       "items": ["WEBRip-1080p", "WEBDL-1080p"]
     },
+    { "name": "Bluray-2160p", "allowed": false },
+    { "name": "HDTV-2160p", "allowed": false },
+    { "name": "Bluray-1080p", "allowed": false },
     { "name": "Bluray-720p", "allowed": false },
     {
       "name": "WEB 720p",
@@ -46,12 +45,14 @@
     { "name": "Unknown", "allowed": false }
   ],
   "formatItems": {
-    "Repack/Proper": "ec8fa7296b64e8cd390a1600981f3923",
-    "Repack2": "eb3d5cc0a2be0db205fb823640db6a3c",
-    "Repack3": "44e7c4de10ae50265753082e5dc76047",
+    "Remux Tier 01": "9965a052eb87b0d10313b1cea89eb451",
+    "Remux Tier 02": "8a1d0c3d7497e741736761a1da866a2e",
     "WEB Tier 01": "e6258996055b9fbab7e9cb2f75819294",
     "WEB Tier 02": "58790d4e2fdcd9733aa7ae68ba2bb503",
+    "WEB Scene": "d0c516558625b04b363fa6c5c2c7cfd4",
     "WEB Tier 03": "d84935abd3f8556dcd51d4f27e22d0a6",
-    "WEB Scene": "d0c516558625b04b363fa6c5c2c7cfd4"
+    "Repack3": "44e7c4de10ae50265753082e5dc76047",
+    "Repack2": "eb3d5cc0a2be0db205fb823640db6a3c",
+    "Repack/Proper": "ec8fa7296b64e8cd390a1600981f3923"
   }
 }
