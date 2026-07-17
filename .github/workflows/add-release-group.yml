@@ -75,7 +75,11 @@ jobs:
           ISSUE: ${{ inputs.issue }}
         run: |
           python3 - <<'PY'
-          import json, os, re, glob
+          import glob
+          import json
+          import os
+          import re
+          import uuid
 
           cf = os.environ["CF_GROUP"].strip()
           if cf == "other":
@@ -91,10 +95,16 @@ jobs:
 
           if not cf:
               die("No CF group selected — pick one or set the 'other' basename.")
+          if not re.fullmatch(r"[a-z0-9][a-z0-9._-]*", cf):
+              die(f"Invalid CF basename '{cf}'. Use only lowercase letters, numbers, dots, underscores, and hyphens.")
           if not name:
               die("group_name is required.")
+          if "\n" in name or "\r" in name:
+              die("group_name must be a single line.")
           if not reason:
               die("reason/description is required.")
+          if issue and not issue.isdigit():
+              die("issue must be a GitHub issue number.")
 
           apps = [a for a in ("radarr", "sonarr") if os.path.isfile(f"docs/json/{a}/cf/{cf}.json")]
           if not apps:
@@ -109,9 +119,13 @@ jobs:
                   data = json.load(fh)
               specs = data.get("specifications", [])
               impls = {s.get("implementation") for s in specs}
-              if impls and not impls <= GROUP_IMPLS:
+              if not impls:
+                  die(f"{cf} has no specifications; implementation type cannot be inferred safely.")
+              if not impls <= GROUP_IMPLS:
                   die(f"{cf} is not a release-group/title list (implementations: {sorted(impls)}).")
-              impl = next(iter(impls), "ReleaseGroupSpecification")
+              if len(impls) != 1:
+                  die(f"{cf} mixes release-group and release-title implementations; please align implementations.")
+              impl = next(iter(impls))
               if impl_used is None:
                   impl_used = impl
               elif impl != impl_used:
@@ -142,10 +156,16 @@ jobs:
                   fh.write("\n")
               changed.append((a, path))
 
-          out = open(os.environ["GITHUB_OUTPUT"], "a")
+          def write_multiline(out, key, value):
+              delimiter = f"ghadelimiter_{uuid.uuid4().hex}"
+              while delimiter in value.splitlines():
+                  delimiter = f"ghadelimiter_{uuid.uuid4().hex}"
+              out.write(f"{key}<<{delimiter}\n{value}\n{delimiter}\n")
+
           if not changed:
               print("::notice::No changes — group already present in all applicable apps.")
-              out.write("did_change=false\n")
+              with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+                  out.write("did_change=false\n")
               raise SystemExit(0)
 
           kind = "title" if impl_used == "ReleaseTitleSpecification" else "group"
@@ -164,11 +184,11 @@ jobs:
               body_lines += ["", f"Closes #{issue}"]
           body = "\n".join(body_lines)
 
-          for key, val in (("did_change", "true"), ("branch", branch), ("title", title)):
-              out.write(f"{key}={val}\n")
-          out.write("body<<BODYEOF\n" + body + "\nBODYEOF\n")
-          out.write("files<<FILESEOF\n" + "\n".join(p for _, p in changed) + "\nFILESEOF\n")
-          out.close()
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              for key, val in (("did_change", "true"), ("branch", branch), ("title", title)):
+                  out.write(f"{key}={val}\n")
+              write_multiline(out, "body", body)
+              write_multiline(out, "files", "\n".join(p for _, p in changed))
           print(f"::notice::Prepared {title}")
           PY
 
