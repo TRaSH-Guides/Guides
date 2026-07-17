@@ -38,20 +38,63 @@ class RemuxValidationTests(unittest.TestCase):
 
         self.assertEqual(errors, [])
 
-    def test_rejects_remux_as_radarr_source(self):
+    def test_accepts_not_remux_modifier_value_5(self):
         errors = self.check_specs(
             [
                 {
-                    "name": "Not REMUX",
-                    "implementation": "SourceSpecification",
+                    "name": "Not Remux",
+                    "implementation": "QualityModifierSpecification",
                     "fields": {"value": 5},
                 }
             ]
         )
 
-        self.assertEqual(len(errors), 1)
-        self.assertIn("use Bluray source value 9", errors[0])
-        self.assertIn("QualityModifierSpecification value 5", errors[0])
+        self.assertEqual(errors, [])
+
+    def test_accepts_mixed_sources_with_bluray_and_remux(self):
+        errors = self.check_specs(
+            [
+                {
+                    "name": "WEB-DL",
+                    "implementation": "SourceSpecification",
+                    "fields": {"value": 7},
+                },
+                {
+                    "name": "WEBRip",
+                    "implementation": "SourceSpecification",
+                    "fields": {"value": 8},
+                },
+                {
+                    "name": "Bluray",
+                    "implementation": "SourceSpecification",
+                    "fields": {"value": 9},
+                },
+                {
+                    "name": "Remux",
+                    "implementation": "QualityModifierSpecification",
+                    "fields": {"value": 5},
+                },
+            ]
+        )
+
+        self.assertEqual(errors, [])
+
+    def test_rejects_remux_as_radarr_source(self):
+        for name in ("Remux", "Not REMUX", "Bluray Remux", "BLURAYREMUX"):
+            with self.subTest(name=name):
+                errors = self.check_specs(
+                    [
+                        {
+                            "name": name,
+                            "implementation": "SourceSpecification",
+                            "fields": {"value": 5},
+                        }
+                    ]
+                )
+
+                self.assertEqual(len(errors), 1)
+                self.assertIn("use Bluray source value 9", errors[0])
+                self.assertIn("QualityModifierSpecification value 5", errors[0])
 
     def test_rejects_wrong_radarr_remux_modifier_value(self):
         errors = self.check_specs(
@@ -66,6 +109,20 @@ class RemuxValidationTests(unittest.TestCase):
 
         self.assertEqual(len(errors), 1)
         self.assertIn("expected 5 for Radarr Remux", errors[0])
+
+    def test_remux_modifier_is_ignored_when_check_disabled(self):
+        errors = self.check_specs(
+            [
+                {
+                    "name": "Not Remux",
+                    "implementation": "QualityModifierSpecification",
+                    "fields": {"value": 4},
+                }
+            ],
+            check_remux=False,
+        )
+
+        self.assertEqual(errors, [])
 
     def test_sonarr_remux_remains_a_source(self):
         errors = self.check_specs(
