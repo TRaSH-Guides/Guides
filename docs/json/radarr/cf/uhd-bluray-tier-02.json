@@ -64,6 +64,15 @@
       "fields": {
         "value": "^(HQMUX)$"
       }
+    },
+    {
+      "name": "RandomBytes",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RandomBytes)$"
+      }
     }
   ]
 }
