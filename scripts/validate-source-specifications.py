@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate SourceSpecification value semantics per app.
+"""Validate source and quality-modifier value semantics per app.
 
 Radarr's QualitySource enum spans 1-9; Sonarr's spans 1-7. The shared
 schemas/specs/source-spec.json enforces the union (1-9) at the JSON
@@ -14,6 +14,9 @@ Schema layer. This script enforces the per-app rules:
         under sonarr/cf/. When the wrong value happens to match the
         other app's encoding, the error includes a hint pointing at
         the likely copy-paste source.
+    3. Changed-file Radarr Remux semantics. Radarr represents Remux as
+        Bluray source value 9 plus QualityModifierSpecification value 5.
+        New or modified files cannot encode Remux as a source.
 
 The mapping tables below were verified against:
     Radarr/Radarr  src/NzbDrone.Core/Qualities/QualitySource.cs
@@ -39,6 +42,7 @@ Known limitations (intentional):
 Exit code 0 on success, 1 on any failure.
 """
 
+import argparse
 import json
 import re
 import sys
@@ -77,6 +81,9 @@ SONARR_SOURCE = {
 
 EXPECTED = {"radarr": RADARR_SOURCE, "sonarr": SONARR_SOURCE}
 
+RADARR_REMUX_SOURCE_LABELS = {"REMUX", "NOTREMUX", "BLURAYREMUX"}
+RADARR_REMUX_MODIFIERS = {"REMUX", "NOTREMUX"}
+
 # Per-app valid integer ranges for SourceSpecification.fields.value.
 # The shared JSON schema only enforces the union (1..9); per-app bounds
 # live here so the schema stays simple.
@@ -90,7 +97,29 @@ def normalize(name: str) -> str:
     return re.sub(r"[^A-Z0-9]", "", name.upper())
 
 
-def check_file(app: str, path: Path) -> list[str]:
+def check_radarr_remux(spec: dict, path: Path) -> tuple[bool, str | None]:
+    implementation = spec.get("implementation")
+    spec_name = spec.get("name", "")
+    value = spec.get("fields", {}).get("value")
+    key = normalize(spec_name)
+
+    if implementation == "SourceSpecification" and key in RADARR_REMUX_SOURCE_LABELS:
+        return True, (
+            f"[radarr] cf/{path.name}: SourceSpecification '{spec_name}'"
+            " is invalid for Radarr Remux; use Bluray source value 9 with"
+            " QualityModifierSpecification value 5"
+        )
+    if implementation == "QualityModifierSpecification" and key in RADARR_REMUX_MODIFIERS:
+        if value != 5:
+            return True, (
+                f"[radarr] cf/{path.name}: QualityModifierSpecification"
+                f" '{spec_name}' has value {value}, expected 5 for Radarr Remux"
+            )
+        return True, None
+    return False, None
+
+
+def check_file(app: str, path: Path, check_remux: bool = False) -> list[str]:
     errors: list[str] = []
     try:
         with open(path) as f:
@@ -105,10 +134,18 @@ def check_file(app: str, path: Path) -> list[str]:
     valid = VALID_VALUES[app]
 
     for spec in data.get("specifications", []):
-        if spec.get("implementation") != "SourceSpecification":
-            continue
+        implementation = spec.get("implementation")
         spec_name = spec.get("name", "")
         value = spec.get("fields", {}).get("value")
+        if check_remux and app == "radarr":
+            handled, error = check_radarr_remux(spec, path)
+            if error:
+                errors.append(error)
+            if handled:
+                continue
+
+        if implementation != "SourceSpecification":
+            continue
 
         # Per-app range check. The shared JSON schema accepts the union
         # 1..9; this catches values valid in the other app but not here
@@ -121,8 +158,7 @@ def check_file(app: str, path: Path) -> list[str]:
             )
             continue
 
-        key = normalize(spec_name)
-        expected = table.get(key)
+        expected = table.get(normalize(spec_name))
         if expected is None:
             # Unknown label — range check above is the only constraint.
             continue
@@ -145,22 +181,41 @@ def check_file(app: str, path: Path) -> list[str]:
     return errors
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--remux-files",
+        nargs="*",
+        type=Path,
+        help="Radarr CF files changed by the current push or pull request",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
+    args = parse_args()
     all_errors: list[str] = []
-    for app in ("radarr", "sonarr"):
-        cf_dir = BASE / app / "cf"
-        if not cf_dir.is_dir():
-            continue
-        for f in sorted(cf_dir.glob("*.json")):
-            all_errors.extend(check_file(app, f))
+    if args.remux_files is not None:
+        for path in args.remux_files:
+            all_errors.extend(check_file("radarr", path, check_remux=True))
+    else:
+        for app in ("radarr", "sonarr"):
+            cf_dir = BASE / app / "cf"
+            if not cf_dir.is_dir():
+                continue
+            for f in sorted(cf_dir.glob("*.json")):
+                all_errors.extend(check_file(app, f))
 
     if all_errors:
-        print(f"\nFound {len(all_errors)} SourceSpecification error(s):\n")
+        print(f"\nFound {len(all_errors)} source/modifier validation error(s):\n")
         for err in all_errors:
             print(f"  ERROR: {err}")
         return 1
 
-    print("All SourceSpecification values match the expected per-app mapping.")
+    if args.remux_files is not None:
+        print("Changed Radarr CFs use the expected Remux source and modifier semantics.")
+    else:
+        print("All SourceSpecification values match the expected per-app mapping.")
     return 0
 
 
