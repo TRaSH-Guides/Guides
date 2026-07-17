@@ -91,6 +91,6 @@ repos:
         name: EditorConfig Lint
 
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
-    rev: v1.26.1
+    rev: v1.27.0
     hooks:
       - id: zizmor
