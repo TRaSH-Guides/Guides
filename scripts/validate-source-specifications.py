@@ -158,7 +158,8 @@ def check_file(app: str, path: Path, check_remux: bool = False) -> list[str]:
             )
             continue
 
-        expected = table.get(normalize(spec_name))
+        key = normalize(spec_name)
+        expected = table.get(key)
         if expected is None:
             # Unknown label — range check above is the only constraint.
             continue

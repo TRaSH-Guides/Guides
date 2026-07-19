@@ -80,6 +80,10 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
           HEAD_SHA: ${{ github.sha }}
         run: |
+          if [[ "$BASE_SHA" == "0000000000000000000000000000000000000000" ]]; then
+            echo "Initial branch push; skipping diff-based Remux check."
+            exit 0
+          fi
           mapfile -t changed_files < <(
             git diff --name-only --diff-filter=ACM "$BASE_SHA" "$HEAD_SHA" -- 'docs/json/radarr/cf/*.json'
           )
