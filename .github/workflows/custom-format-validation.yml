@@ -11,6 +11,8 @@ on:
       - docs/json/radarr/conflicts.json
       - docs/json/sonarr/conflicts.json
       - schemas/**/*.json
+      - scripts/validate-source-specifications.py
+      - tests/test_validate_source_specifications.py
   pull_request:
     paths:
       - .github/workflows/custom-format-validation.yml
@@ -20,6 +22,8 @@ on:
       - docs/json/radarr/conflicts.json
       - docs/json/sonarr/conflicts.json
       - schemas/**/*.json
+      - scripts/validate-source-specifications.py
+      - tests/test_validate_source_specifications.py
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -36,6 +40,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
+          fetch-depth: 0
           persist-credentials: false
 
       - name: Setup python
@@ -66,3 +71,20 @@ jobs:
 
       - name: Validate SourceSpecification per-app values
         run: python scripts/validate-source-specifications.py
+
+      - name: Test source and modifier validation
+        run: python -m unittest tests/test_validate_source_specifications.py
+
+      - name: Validate changed Radarr Remux specifications
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          if [[ "$BASE_SHA" == "0000000000000000000000000000000000000000" ]]; then
+            echo "Initial branch push; skipping diff-based Remux check."
+            exit 0
+          fi
+          mapfile -t changed_files < <(
+            git diff --name-only --diff-filter=ACM "$BASE_SHA" "$HEAD_SHA" -- 'docs/json/radarr/cf/*.json'
+          )
+          python scripts/validate-source-specifications.py --remux-files "${changed_files[@]}"
