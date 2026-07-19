@@ -1,3 +1,11 @@
+# 2026-07-19 02:52
+- [feat(guide-sync): Resolve minor conflict with an SQP](https://github.com/TRaSH-Guides/Guides/pull/2831)
+- [feat(radarr): Add RlsGRp `RandomBytes` to `UHD Bluray Tier 02`](https://github.com/TRaSH-Guides/Guides/pull/2827)
+- [feat(guide-sync): Adjusted scoring for an SQP to prefer WEBDL over Blu-ray](https://github.com/TRaSH-Guides/Guides/pull/2825)
+- [feat(guide-sync): Created Sonarr Remux Profiles](https://github.com/TRaSH-Guides/Guides/pull/2819)
+- [feat(guide-sync): Adjusted scoring for an SQP to prefer multichannel over 2.0](https://github.com/TRaSH-Guides/Guides/pull/2820)
+- [feat(sonarr): Update Why only WEB-DL FAQ with remux setup guidance](https://github.com/TRaSH-Guides/Guides/pull/2814)
+
 # 2026-07-12 02:55
 - [feat(starr-anime): Add nekotan to Anime BD Tier 03 and BlackRose to Anime Web Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2810)
 - [fix(radarr): Corrected the order of the example naming scheme tokens](https://github.com/TRaSH-Guides/Guides/pull/2805)
