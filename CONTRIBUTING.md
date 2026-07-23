@@ -124,6 +124,11 @@ _Examples:_
 > [!WARNING]
 > **When adding a release group to a Custom Format, please explain why it's added/removed/moved in the PR.**
 
+You can add a single group by hand (see below) or use the automation:
+
+> [!TIP]
+> **Adding a single group is easiest via the [Add Release Group workflow](https://github.com/TRaSH-Guides/Guides/actions/workflows/add-release-group.yml).** From the Actions tab choose **Run workflow**, pick the group-list Custom Format, enter the group/title name and a reason, and it opens the PR for you (across Radarr and Sonarr automatically, with the correct `ReleaseGroupSpecification` / `ReleaseTitleSpecification` and regex). Hand-editing the JSON is still fine — see below.
+
 ### General Guidelines
 
 > [!CAUTION]
