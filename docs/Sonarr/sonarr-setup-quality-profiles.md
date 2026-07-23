@@ -69,6 +69,8 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 {! include-markdown "../../includes/starr/which-quality-profile-should-you-choose.md" !}
 
+{! include-markdown "../../includes/starr/how-to-pick-a-profile-flowchart-sonarr.md" !}
+
 ---
 
 ## TRaSH Quality Profiles
@@ -81,19 +83,7 @@ If you prefer 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
-{! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+[[ render_profile_cfs('sonarr', 'WEB-1080p') ]]
 
 Note: The `Audio Formats` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
@@ -113,14 +103,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    - It will download WEB-DL 1080p. (If you also enabled `WEB 720p` and/or `HDTV 1080p` it will upgrade until `Upgrade Until`)
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
-
-    So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
-
-    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+{! include-markdown "../../includes/cf/workflow-mermaid-sonarr-web-1080p.md" !}
 
 ---
 
@@ -130,23 +113,7 @@ If you prefer 2160p WEBDL (WEB-2160p)
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
-**The following Custom Formats are required:**
-
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
-
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+[[ render_profile_cfs('sonarr', 'WEB-2160p') ]]
 
 Note: The `Audio Formats` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
@@ -166,14 +133,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    - This will download WEB-2160p with HDR/DV.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
-
-    So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
-
-    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+{! include-markdown "../../includes/cf/workflow-mermaid-sonarr-web-2160p.md" !}
 
 ---
 
