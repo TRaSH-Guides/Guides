@@ -47,7 +47,7 @@ TRaSH-Guides offers detailed documentation that answers common questions and pro
 
 Follow our step-by-step guide, from folder structure to your download client, *Arr apps, and media server.
 
-[Get Started](/Getting-Started/){ .md-button .md-button--primary target="_blank" rel="noopener noreferrer" }
+[Get Started](/Getting-Started/){ .md-button .md-button--primary }
 
 ---
 
