@@ -15,7 +15,7 @@ After setting up your optimal volume/paths found [HERE](/File-and-Folder-Structu
 1. [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/) - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.
 1. [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/) - Recommended naming scheme provided with the help of the Sonarr/Radarr (Support) Team and information provided by the community to prevent download loops.
 1. [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles/) - How to make the most use of the Custom Formats and shows some specifics of our recommended configuration. You can use these examples to understand how to set up your preferences.
-    - [How to setup Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime/) - Same as above but specific for anime.
+    - [How to set up Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime/) - Same as above but specific for anime.
     - [How to set up Quality Profiles (French)](/Sonarr/sonarr-setup-quality-profiles-french-en/) - Same as above but specific for French and English Audio.
     - [How to set up Quality Profiles (German)](/Sonarr/sonarr-setup-quality-profiles-german-en/) - Same as above but specific for German and English Audio.
 

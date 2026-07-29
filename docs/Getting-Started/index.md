@@ -31,7 +31,7 @@ Follow these guides on the Radarr page, in order:
 1. [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="\_blank" rel="noopener noreferrer"} - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.
 1. [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="\_blank" rel="noopener noreferrer"} - Recommended naming scheme provided with the help of the Sonarr/Radarr (Support) Team and information provided by the community to prevent download loops.
 1. [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles/){:target="\_blank" rel="noopener noreferrer"} - How to make the most of the Custom Formats, including specifics of our recommended configuration. You can use these examples to understand how to set up your preferences.
-    - [How to setup Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for anime.
+    - [How to set up Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for anime.
     - [How to set up Quality Profiles (French)](/Radarr/radarr-setup-quality-profiles-french-en/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for French and English Audio.
     - [How to set up Quality Profiles (German)](/Radarr/radarr-setup-quality-profiles-german-en/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for German and English Audio.
 
@@ -48,7 +48,7 @@ Follow these guides on the Sonarr page, in order:
 1. [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/){:target="\_blank" rel="noopener noreferrer"} - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.
 1. [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="\_blank" rel="noopener noreferrer"} - Recommended naming scheme provided with the help of the Sonarr/Radarr (Support) Team and information provided by the community to prevent download loops.
 1. [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles/){:target="\_blank" rel="noopener noreferrer"} - How to make the most use of the Custom Formats and shows some specifics of our recommended configuration. You can use these examples to understand how to set up your preferences.
-    - [How to setup Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for anime.
+    - [How to set up Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for anime.
     - [How to set up Quality Profiles (French)](/Sonarr/sonarr-setup-quality-profiles-french-en/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for French and English Audio.
     - [How to set up Quality Profiles (German)](/Sonarr/sonarr-setup-quality-profiles-german-en/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for German and English Audio.
 

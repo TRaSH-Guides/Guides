@@ -41,7 +41,7 @@ Create a new username and choose a secure password, or create a random username 
 
 ---
 
-## How to setup Port forwarding
+## How to set up Port forwarding
 
 From your `Client Area` dashboard, go to [`My Services`](https://torguard.net/clientarea.php?action=products){:target="\_blank" rel="noopener noreferrer"}.
 
