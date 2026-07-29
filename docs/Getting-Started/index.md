@@ -4,7 +4,7 @@ New to TRaSH-Guides? This page walks you through the recommended order for setti
 
 ## 1. Set Up Shares and Folder Structure
 
-Before installing any applications, set up a proper share and folder structure. This is the foundation everything else depends on, it enables [hardlinks](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-hardlinks){:target="\_blank" rel="noopener noreferrer"} and [instant moves](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-instant-moves-atomic-moves){:target="\_blank" rel="noopener noreferrer"}, so your files can be hardlinked and/or moved between folders without duplicating data or waiting for long imports.
+Before installing any applications, set up a proper share and folder structure. This is the foundation everything else depends on. It enables [hardlinks](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-hardlinks){:target="\_blank" rel="noopener noreferrer"} and [instant moves](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-instant-moves-atomic-moves){:target="\_blank" rel="noopener noreferrer"}, so your files can be hardlinked and/or moved between folders without duplicating data or waiting for long imports.
 
 [Optimal Shares and Folders](/File-and-Folder-Structure/){ .md-button target="\_blank" rel="noopener noreferrer" }
 
