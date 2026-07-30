@@ -4,7 +4,7 @@ New to TRaSH-Guides? This page walks you through the recommended order for setti
 
 ## 1. Set Up Shares and Folder Structure
 
-Before installing any applications, set up a proper share and folder structure. This is the foundation everything else depends on. It enables [hardlinks](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-hardlinks){:target="\_blank" rel="noopener noreferrer"} and [instant moves](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-instant-moves-atomic-moves){:target="\_blank" rel="noopener noreferrer"}, so your files can be hardlinked and/or moved between folders without duplicating data or waiting for long imports.
+Before installing any applications, set up a proper share and folder structure. This is the foundation on which everything else depends. It enables [hardlinks](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-hardlinks){:target="\_blank" rel="noopener noreferrer"} and [instant moves](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-instant-moves-atomic-moves){:target="\_blank" rel="noopener noreferrer"}, so your files can be hardlinked and/or moved between folders without duplicating data or waiting for long imports.
 
 [Optimal Shares and Folders](/File-and-Folder-Structure/){ .md-button target="\_blank" rel="noopener noreferrer" }
 
@@ -28,7 +28,7 @@ With your folders and download client ready, set up your *Arr apps.
 
 Follow these guides on the Radarr page, in order:
 
-1. [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="\_blank" rel="noopener noreferrer"} - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.
+1. [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="\_blank" rel="noopener noreferrer"} - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested using information gathered from release comparisons across various sources and from the community.
 1. [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="\_blank" rel="noopener noreferrer"} - Recommended naming scheme provided with the help of the Sonarr/Radarr (Support) Team and information provided by the community to prevent download loops.
 1. [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles/){:target="\_blank" rel="noopener noreferrer"} - How to make the most of the Custom Formats, including specifics of our recommended configuration. You can use these examples to understand how to set up your preferences.
     - [How to set up Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for anime.
@@ -45,7 +45,7 @@ Once Radarr is configured, do the same for Sonarr and your TV library.
 
 Follow these guides on the Sonarr page, in order:
 
-1. [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/){:target="\_blank" rel="noopener noreferrer"} - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.
+1. [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/){:target="\_blank" rel="noopener noreferrer"} - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested using information gathered from release comparisons across various sources and from the community.
 1. [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="\_blank" rel="noopener noreferrer"} - Recommended naming scheme provided with the help of the Sonarr/Radarr (Support) Team and information provided by the community to prevent download loops.
 1. [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles/){:target="\_blank" rel="noopener noreferrer"} - How to make the most of Custom Formats, including specifics of our recommended configuration. You can use these examples to understand how to set up your preferences.
     - [How to set up Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime/){:target="\_blank" rel="noopener noreferrer"} - Same as above but specific for anime.

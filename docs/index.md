@@ -45,7 +45,7 @@ TRaSH-Guides offers detailed documentation that answers common questions and pro
 
 ## Ready to Set Up Your Media Server?
 
-Follow our step-by-step guide, from folder structure to your download client, *Arr apps, and media server.
+Follow our step-by-step guide from folder structure to your download client, *Arr apps and media server.
 
 [Get Started](/Getting-Started/){ .md-button .md-button--primary }
 
