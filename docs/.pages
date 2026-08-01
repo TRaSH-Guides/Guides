@@ -1,10 +1,9 @@
 nav:
   - Home: index.md
+  - Getting-Started
   - Radarr
   - Sonarr
   - Prowlarr
-  - Lidarr
-  - Bazarr
   - File-and-Folder-Structure
   - Downloaders
   - Plex

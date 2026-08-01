@@ -43,10 +43,18 @@ TRaSH-Guides offers detailed documentation that answers common questions and pro
 
 ---
 
+## Ready to Set Up Your Media Server?
+
+Follow our step-by-step guide from folder structure to your download client, *Arr apps and media server.
+
+[Get Started](/Getting-Started/){ .md-button .md-button--primary }
+
+---
+
 ## Support
 
 - If you have questions or suggestions, click the button below to join our Discord server.
-- If you want to contribute, feel free to create a PR (Pull Request).
+- If you want to contribute, read our [Contributing Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md){:target="_blank" rel="noopener noreferrer"} and open a PR (Pull Request).
 - If you found an actual issue related to the guide, you can open a GitHub [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"}.
 
 --8<-- "includes/support.md"

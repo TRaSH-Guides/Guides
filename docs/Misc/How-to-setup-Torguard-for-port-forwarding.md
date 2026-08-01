@@ -1,6 +1,6 @@
 # Setup TorGuard for port forwarding
 
-These are our supported and recommended settings to set up port forwarding with TorGuard
+These are the settings we support and recommend for setting up port forwarding with TorGuard.
 
 Get 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN Pro, and Anonymous Proxy Premium.
 
@@ -22,7 +22,7 @@ Login to your [Client Area](https://torguard.net/clientarea.php){:target="\_blan
 
 ### Create a user account
 
-First, we're going to create a [User Account](https://torguard.net/clientarea.php?action=changepw){:target="\_blank" rel="noopener noreferrer"} for your VPN so we won't need to use your main account that you use to login to your account on the Torguard site.
+First, we're going to create a [User Account](https://torguard.net/clientarea.php?action=changepw){:target="\_blank" rel="noopener noreferrer"} for your VPN so we won't need to use the main account you use to log in to the Torguard site.
 This account will be used to authenticate with your VPN service that your Torrent client will use.
 
 `Services` > `My Services` > `Manage` > `Manage Credentials`
@@ -41,7 +41,7 @@ Create a new username and choose a secure password, or create a random username 
 
 ---
 
-## How to setup Port forwarding
+## How to set up Port forwarding
 
 From your `Client Area` dashboard, go to [`My Services`](https://torguard.net/clientarea.php?action=products){:target="\_blank" rel="noopener noreferrer"}.
 
@@ -72,7 +72,7 @@ If everything succeeds, you will see the following.
 
 ![status](images/torguard/status.png)
 
-You will also receive an e-mail with the ports you forwarded.
+You will also receive an email with the ports you forwarded.
 
 !!! note "Normally, it takes only a short while for the ports to be approved. If it takes longer or you get `PENDING,` we suggest retrying the process."
 
