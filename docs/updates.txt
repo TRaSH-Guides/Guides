@@ -1,3 +1,8 @@
+# 2026-08-02 02:55
+- [feat(guide): Added Third-Party Apps & Guides page](https://github.com/TRaSH-Guides/Guides/pull/2840)
+- [feat(guide): Added Getting Started page](https://github.com/TRaSH-Guides/Guides/pull/2839)
+- [feat(guide-sync): Updated SQP to v9000](https://github.com/TRaSH-Guides/Guides/pull/2841)
+
 # 2026-07-26 02:56
 - [fix(radarr): Validate Remux source and modifier semantics in CI](https://github.com/TRaSH-Guides/Guides/pull/2829)
 
