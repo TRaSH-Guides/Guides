@@ -234,7 +234,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ??? tip "Proper and Repacks - [Click to show/hide]"
 
-    We also suggest that you change the Propers and Repacks settings in Radarr.
+    We also suggest that you change the Propers and Repacks settings in Sonarr.
 
     `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
 
