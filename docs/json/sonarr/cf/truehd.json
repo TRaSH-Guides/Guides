@@ -25,6 +25,15 @@
       }
     },
     {
+      "name": "Not Atmos Group (non-5.1)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "^(?!.*[^0-9]5[ .][0-1]\\b).*\\b(HQMUX|W4NK3R|DON|CtrlHD)\\b"
+      }
+    },
+    {
       "name": "Not Dolby Digital Plus",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
