@@ -42,7 +42,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO)\\b"
+        "value": "(?<!\\bweb[ ._-]?(dl|rip)?\\b.*)-(EVO)\\b"
       }
     },
     {
@@ -87,7 +87,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(PiRaTeS)\\b"
+        "value": "(?<!\\bweb[ ._-]?(dl|rip)?\\b.*)-(PiRaTeS)\\b"
       }
     },
     {
