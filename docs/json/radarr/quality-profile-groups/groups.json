@@ -8,12 +8,139 @@
       "remux-2160p-alternative": "dd3cd75deb9645bae838d1c5da6388d5",
       "remux-web-2160p": "fd161a61e3ab826d3a22d53f935696dd",
       "uhd-bluray-web": "64fb5f9858489bdac2af690e27c8f42f"
+    },
+    "profile_overrides": {
+      "hd-bluray-web": {
+        "profile_name": "HD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-asian",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-hq"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "hd-bluray-tier-01",
+            "hd-bluray-tier-02",
+            "hd-bluray-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "uhd-bluray-web": {
+        "profile_name": "UHD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-asian",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-hq"
+        ],
+        "force_optional": [
+          "audio-formats",
+          "optional-golden-rule-uhd"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "uhd-bluray-tier-01",
+            "uhd-bluray-tier-02",
+            "uhd-bluray-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        }
+      },
+      "remux-web-1080p": {
+        "profile_name": "Remux + WEB 1080p",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-asian",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-hq"
+        ],
+        "force_optional": [
+          "audio-formats",
+          "optional-golden-rule-hd"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "remux-tier-01",
+            "remux-tier-02",
+            "remux-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        }
+      },
+      "remux-web-2160p": {
+        "profile_name": "Remux + WEB 2160p",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-asian",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-hq"
+        ],
+        "force_optional": [
+          "audio-formats",
+          "optional-golden-rule-uhd"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "remux-tier-01",
+            "remux-tier-02",
+            "remux-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        }
+      }
     }
   },
   {
     "name": "Anime",
     "profiles": {
       "anime-remux-1080p": "722b624f9af1e492284c4bc842153a38"
+    },
+    "profile_overrides": {
+      "anime-remux-1080p": {
+        "profile_name": "[Anime] Remux-1080p",
+        "add_groups": [
+          "required-repack-proper",
+          "required-anime-versions",
+          "release-groups-anime",
+          "release-groups-hq",
+          "streaming-services-anime",
+          "release-groups-asian",
+          "streaming-services-asian",
+          "optional-anime-optional"
+        ],
+        "force_required": [
+          "release-groups-anime",
+          "streaming-services-anime"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "remux-tier-01",
+            "remux-tier-02",
+            "remux-tier-03"
+          ]
+        }
+      }
     }
   },
   {
@@ -31,6 +158,164 @@
       "french-vostfr-hd-remux-web": "d98f20924b001e9f6b9595d5440abc87",
       "french-vostfr-uhd-bluray-web": "525bf0513e2ac22fe116e8d7bec0a6b5",
       "french-vostfr-uhd-remux-web": "9b32fc61d8ec83ed131f50f1db80505a"
+    },
+    "profile_overrides": {
+      "french-multi-vo-hd-bluray-web": {
+        "profile_name": "[French MULTi.VO] HD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "french-multi-vo-hd-remux-web": {
+        "profile_name": "[French MULTi.VO] HD Remux (1080p)",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "french-multi-vo-uhd-bluray-web": {
+        "profile_name": "[French MULTi.VO] UHD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      },
+      "french-multi-vo-uhd-remux-web": {
+        "profile_name": "[French MULTi.VO] UHD Remux (2160p)",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      },
+      "french-multi-vf-hd-bluray-web": {
+        "profile_name": "[French MULTi.VF] HD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "french-multi-vf-hd-remux-web": {
+        "profile_name": "[French MULTi.VF] HD Remux (1080p)",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "french-multi-vf-uhd-bluray-web": {
+        "profile_name": "[French MULTi.VF] UHD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      },
+      "french-multi-vf-uhd-remux-web": {
+        "profile_name": "[French MULTi.VF] UHD Remux (2160p)",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      },
+      "french-vostfr-hd-bluray-web": {
+        "profile_name": "[French VOSTFR] HD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "french-vostfr-hd-remux-web": {
+        "profile_name": "[French VOSTFR] HD Remux (1080p)",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "french-vostfr-uhd-bluray-web": {
+        "profile_name": "[French VOSTFR] UHD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      },
+      "french-vostfr-uhd-remux-web": {
+        "profile_name": "[French VOSTFR] UHD Remux (2160p)",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-french"
+        ],
+        "force_required": [
+          "release-groups-french"
+        ],
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      }
     }
   },
   {
@@ -42,6 +327,149 @@
       "german-uhd-bluray-web": "27cc3d153c0a799fd139ef1ff4c4cc42",
       "german-uhd-bluray-web-alternative": "425da1ba30711b55d2eb371437ec98d7",
       "german-uhd-remux-web": "79faa9943cef2f510b997b1f2a9f3ea6"
+    },
+    "profile_overrides": {
+      "german-anime-hd-bluray-web": {
+        "profile_name": "[German] Anime HD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "required-anime-versions",
+          "release-groups-german-anime",
+          "release-groups-anime"
+        ],
+        "force_required": [
+          "release-groups-german-anime",
+          "release-groups-anime"
+        ],
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "german-hd-bluray-web": {
+        "profile_name": "[German] HD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "hd-bluray-tier-01",
+            "hd-bluray-tier-02",
+            "hd-bluray-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "german-hd-remux-web": {
+        "profile_name": "[German] HD Remux + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "remux-tier-01",
+            "remux-tier-02",
+            "remux-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        },
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "german-uhd-bluray-web": {
+        "profile_name": "[German] UHD Bluray + WEB",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "uhd-bluray-tier-01",
+            "uhd-bluray-tier-02",
+            "uhd-bluray-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      },
+      "german-uhd-bluray-web-alternative": {
+        "profile_name": "[German] UHD Bluray + WEB (Alternative)",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "uhd-bluray-tier-01",
+            "uhd-bluray-tier-02",
+            "uhd-bluray-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      },
+      "german-uhd-remux-web": {
+        "profile_name": "[German] Remux + WEB 2160p",
+        "add_groups": [
+          "required-repack-proper",
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "force_required": [
+          "release-groups-german",
+          "release-groups-hq"
+        ],
+        "include_cfs": {
+          "release-groups-hq": [
+            "remux-tier-01",
+            "remux-tier-02",
+            "remux-tier-03",
+            "web-tier-01",
+            "web-tier-02",
+            "web-tier-03"
+          ]
+        },
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      }
     }
   },
   {
