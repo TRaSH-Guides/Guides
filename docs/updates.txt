@@ -1,3 +1,9 @@
+# 2026-08-09 01:50
+- [fix(starr): CF `TrueHD Atmos` and `TrueHD` to prevent false positives with RlsGrps that only mention TrueHD but are actually TrueHD Atmos](https://github.com/TRaSH-Guides/Guides/pull/2846)
+- [fix(radarr-german): require Bluray source for German Anime Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2821)
+- [feat(radarr): Move ATELiER from Remux Tier 02 to Remux Tier 01](https://github.com/TRaSH-Guides/Guides/pull/2844)
+- [fix(sonarr): Corrected reference from Radarr to Sonarr](https://github.com/TRaSH-Guides/Guides/pull/2842)
+
 # 2026-08-02 02:55
 - [feat(guide): Added Third-Party Apps & Guides page](https://github.com/TRaSH-Guides/Guides/pull/2840)
 - [feat(guide): Added Getting Started page](https://github.com/TRaSH-Guides/Guides/pull/2839)
