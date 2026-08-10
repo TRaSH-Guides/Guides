@@ -1,0 +1,109 @@
+{
+  "trash_id": "c3ecdda99c633e0743627c2cc91566ec",
+  "trash_scores": {
+    "sqp-4-ma-hybrid": 3960
+  },
+  "name": "UHD Bluray RlsGrp (SQP-4 MA)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "Not REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "Not WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "CtrlHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CtrlHD)$"
+      }
+    },
+    {
+      "name": "DON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DON)$"
+      }
+    },
+    {
+      "name": "HiDt",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiDt)$"
+      }
+    },
+    {
+      "name": "MainFrame",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MainFrame)$"
+      }
+    },
+    {
+      "name": "RandomBytes",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RandomBytes)$"
+      }
+    },
+    {
+      "name": "Softboat",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Softboat)$"
+      }
+    },
+    {
+      "name": "W4NK3R",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W4NK3R)$"
+      }
+    }
+  ]
+}
