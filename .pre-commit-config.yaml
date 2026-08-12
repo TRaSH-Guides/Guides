@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.37.4
+    rev: 0.38.0
     hooks:
       - id: check-jsonschema
         name: Validate Guide only Custom Formats
@@ -85,7 +85,7 @@ repos:
         args: ["-c", ".markdownlint.yaml"]
 
   - repo: https://github.com/editorconfig-checker/editorconfig-checker
-    rev: v3.10.0
+    rev: v3.11.1
     hooks:
       - id: editorconfig-checker
         name: EditorConfig Lint
