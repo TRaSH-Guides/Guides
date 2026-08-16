@@ -1456,7 +1456,7 @@ We've made 3 guides related to this.
 
 ---
 
-#### Fand
+#### FAND
 
 <sub>Fandango</sub>
 
