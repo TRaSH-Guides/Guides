@@ -1,3 +1,7 @@
+# 2026-08-16 01:23
+- [feat(guide-sync): Added for an SQP a CF that includes a collection of curated UHD Blu-ray RlsGrps](https://github.com/TRaSH-Guides/Guides/pull/2850)
+- [feat(guide-sync): Added three new Radarr profiles for the officially supported third-party Guide Sync Tools](https://github.com/TRaSH-Guides/Guides/pull/2849)
+
 # 2026-08-09 01:50
 - [fix(starr): CF `TrueHD Atmos` and `TrueHD` to prevent false positives with RlsGrps that only mention TrueHD but are actually TrueHD Atmos](https://github.com/TRaSH-Guides/Guides/pull/2846)
 - [fix(radarr-german): require Bluray source for German Anime Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2821)
