@@ -79,7 +79,8 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [CBC](#cbc)             | [BBC iPlayer](#ip)    |                                             |
 | [Crave](#crav)          | [ITVX](#itvx)         |                                             |
 | [Discovery+](#dscp)     | [MY5](#my5)           |                                             |
-| [OViD](#ovid)           | [NOW](#now)           |                                             |
+| [Fandango](#fand)       | [NOW](#now)           |                                             |
+| [OViD](#ovid)           |                       |                                             |
 | [Quibi](#qibi)          |                       |                                             |
 | [Star+](#strp)          |                       |                                             |
 | [YouTube Red](#red)     |                       |                                             |
@@ -1527,6 +1528,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dscp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### FAND
+
+<sub>Fandango</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/fand.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fand.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
