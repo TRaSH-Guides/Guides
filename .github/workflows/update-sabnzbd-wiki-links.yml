@@ -14,17 +14,38 @@ jobs:
       - name: Detect current SABnzbd wiki version
         id: version
         run: |
-          CURRENT=$(curl -s https://sabnzbd.org/wiki/configuration/ \
-            | grep -oP 'configuration/\K[0-9]+\.[0-9]+' | head -1)
+          set -euo pipefail
+
+          PAGE=$(curl -sS --fail --show-error --max-time 30 --retry 3 --retry-delay 5 \
+            https://sabnzbd.org/wiki/configuration/)
+
+          # Primary: the "Configure" nav link, e.g.
+          # href="https://sabnzbd.org/wiki/configuration/5.1/configure"
+          CURRENT=$(echo "$PAGE" \
+            | grep -oP 'href="https://sabnzbd\.org/wiki/configuration/\K[0-9]+\.[0-9]+(?=/configure")' \
+            | sort -V | tail -1)
+
+          # Fallback: any configuration/X.Y occurrence on the page, highest wins.
           if [ -z "$CURRENT" ]; then
-            echo "Could not detect a version number, stopping." >&2
+            echo "::warning::Primary selector found no match, falling back to a looser pattern."
+            CURRENT=$(echo "$PAGE" \
+              | grep -oP 'configuration/\K[0-9]+\.[0-9]+' \
+              | sort -V | tail -1)
+          fi
+
+          if [ -z "$CURRENT" ]; then
+            echo "::error::Could not detect a SABnzbd wiki version number. The page structure likely changed, both the anchor-based and fallback selectors found nothing. Update the grep pattern in this workflow."
+            echo "--- First 40 lines of the fetched page, for debugging ---"
+            echo "$PAGE" | head -40
             exit 1
           fi
+
           echo "version=$CURRENT" >> "$GITHUB_OUTPUT"
 
-      - name: Replace old version numbers in docs
+      - name: Replace old version numbers in SABnzbd guides
         run: |
-          find docs -name '*.md' -exec sed -i -E \
+          set -euo pipefail
+          find docs/Downloaders/SABnzbd -name '*.md' -exec sed -i -E \
             "s#(sabnzbd\.org/wiki/configuration/)[0-9]+\.[0-9]+#\1${{ steps.version.outputs.version }}#g" {} +
 
       - name: Check for changes
