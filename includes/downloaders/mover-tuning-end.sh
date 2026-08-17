@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Version: 1.3.4
-# Updated: 20260614
+# Version: 1.3.5
+# Updated: 20260817
 # =====================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.3.4"
+readonly SCRIPT_VERSION="1.3.5"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Get the directory where the script is located
@@ -83,6 +83,7 @@ get_instance_details() {
         INSTANCE_HOST="${HOSTS[$index]}"
         INSTANCE_USER="${USERS[$index]}"
         INSTANCE_PASSWORD="${PASSWORDS[$index]}"
+        INSTANCE_API_KEY="${API_KEYS[$index]:-}"
         INSTANCE_CA_BUNDLE="${CA_BUNDLES[$index]:-}"
     else
         # Legacy format: map index to old variables
@@ -91,12 +92,14 @@ get_instance_details() {
             INSTANCE_HOST="${QBIT_HOST_1}"
             INSTANCE_USER="${QBIT_USER_1}"
             INSTANCE_PASSWORD="${QBIT_PASS_1}"
+            INSTANCE_API_KEY="${QBIT_API_KEY_1:-}"
             INSTANCE_CA_BUNDLE="${QBIT_CA_BUNDLE_1:-}"
         elif [[ $index -eq 1 ]]; then
             INSTANCE_NAME="${QBIT_NAME_2}"
             INSTANCE_HOST="${QBIT_HOST_2}"
             INSTANCE_USER="${QBIT_USER_2}"
             INSTANCE_PASSWORD="${QBIT_PASS_2}"
+            INSTANCE_API_KEY="${QBIT_API_KEY_2:-}"
             INSTANCE_CA_BUNDLE="${QBIT_CA_BUNDLE_2:-}"
         else
             error "Invalid instance index: $index"
@@ -391,6 +394,11 @@ validate_config() {
             [[ ${#NAMES[@]} -eq ${#HOSTS[@]} ]] || error "NAMES array length doesn't match HOSTS"
         fi
 
+        # API_KEYS array is optional, but if present should match
+        if [[ -v API_KEYS ]] && [[ ${#API_KEYS[@]} -gt 0 ]]; then
+            [[ ${#API_KEYS[@]} -eq ${#HOSTS[@]} ]] || error "API_KEYS array length doesn't match HOSTS"
+        fi
+
         # CA_BUNDLES array is optional, but if present should match
         if [[ -v CA_BUNDLES ]] && [[ ${#CA_BUNDLES[@]} -gt 0 ]]; then
             [[ ${#CA_BUNDLES[@]} -eq ${#HOSTS[@]} ]] || error "CA_BUNDLES array length doesn't match HOSTS"
@@ -429,7 +437,8 @@ process_qbit_instance() {
     local host="$2"
     local user="$3"
     local password="$4"
-    local ca_bundle="${5:-}"
+    local api_key="${5:-}"
+    local ca_bundle="${6:-}"
 
     log "Processing $name..."
 
@@ -446,20 +455,25 @@ process_qbit_instance() {
         return 1
     fi
 
-    local ca_bundle_args=()
+    local mover_args=(
+        --resume
+        --host "$host"
+        --days_from "$DAYS_FROM"
+        --days_to "$DAYS_TO"
+    )
+
+    if [[ -n "$api_key" ]]; then
+        mover_args+=(--api-key "$api_key")
+    else
+        mover_args+=(--user "$user" --password "$password")
+    fi
+
     if [[ -n "$ca_bundle" ]]; then
-        ca_bundle_args=(--ca-bundle "$ca_bundle")
+        mover_args+=(--ca-bundle "$ca_bundle")
     fi
 
     # Execute mover script
-    if "$python_cmd" "${QBIT_MOVER_PATH}mover.py" \
-        --resume \
-        --host "$host" \
-        --user "$user" \
-        --password "$password" \
-        --days_from "$DAYS_FROM" \
-        --days_to "$DAYS_TO" \
-        "${ca_bundle_args[@]}"; then
+    if "$python_cmd" "${QBIT_MOVER_PATH}mover.py" "${mover_args[@]}"; then
         log "✓ Successfully resumed torrents for $name"
         notify "$name" "Resumed @ $(date +%H:%M:%S)"
         return 0
@@ -495,7 +509,7 @@ main() {
     for ((i=0; i<instance_count; i++)); do
         get_instance_details "$i"
 
-        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_CA_BUNDLE" || ((failed_instances++))
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_API_KEY" "$INSTANCE_CA_BUNDLE" || ((failed_instances++))
     done
 
     # Run duplicate finder if enabled
