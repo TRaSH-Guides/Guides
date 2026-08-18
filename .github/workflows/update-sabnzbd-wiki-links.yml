@@ -1,0 +1,78 @@
+name: Update SABnzbd wiki links
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # Every Monday at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  update-links:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Detect current SABnzbd wiki version
+        id: version
+        run: |
+          set -euo pipefail
+
+          PAGE=$(curl -sS --fail --show-error --max-time 30 --retry 3 --retry-delay 5 \
+            https://sabnzbd.org/wiki/configuration/)
+
+          # Primary: the "Configure" nav link, e.g.
+          # href="https://sabnzbd.org/wiki/configuration/5.1/configure"
+          CURRENT=$(echo "$PAGE" \
+            | grep -oP 'href="https://sabnzbd\.org/wiki/configuration/\K[0-9]+\.[0-9]+(?=/configure")' \
+            | sort -V | tail -1)
+
+          # Fallback: any configuration/X.Y occurrence on the page, highest wins.
+          if [ -z "$CURRENT" ]; then
+            echo "::warning::Primary selector found no match, falling back to a looser pattern."
+            CURRENT=$(echo "$PAGE" \
+              | grep -oP 'configuration/\K[0-9]+\.[0-9]+' \
+              | sort -V | tail -1)
+          fi
+
+          if [ -z "$CURRENT" ]; then
+            echo "::error::Could not detect a SABnzbd wiki version number. The page structure likely changed, both the anchor-based and fallback selectors found nothing. Update the grep pattern in this workflow."
+            echo "--- First 40 lines of the fetched page, for debugging ---"
+            echo "$PAGE" | head -40
+            exit 1
+          fi
+
+          echo "version=$CURRENT" >> "$GITHUB_OUTPUT"
+
+      - name: Replace old version numbers in SABnzbd guides
+        env:
+          SAB_VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          find docs/Downloaders/SABnzbd -name '*.md' -exec sed -i -E \
+            "s#(sabnzbd\.org/wiki/configuration/)[0-9]+\.[0-9]+#\1${SAB_VERSION}#g" {} +
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        if: steps.diff.outputs.changed == 'true'
+        with:
+          commit-message: "fix(downloaders): update SABnzbd wiki links"
+          title: "fix(downloaders): update SABnzbd wiki links to v${{ steps.version.outputs.version }}"
+          branch: fix/downloaders-sabnzbd-wiki-links
+          body: >
+            Auto-generated. Review the diff before merging, sabnzbd.org
+            sometimes restructures pages between versions.
