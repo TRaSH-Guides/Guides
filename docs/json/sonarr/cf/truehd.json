@@ -30,7 +30,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "^(?!.*[^0-9]5[ .][0-1]\\b).*\\b(HQMUX|W4NK3R|DON|CtrlHD)\\b"
+        "value": "^(?!.*[^0-9]5[ .][0-1]\\b).*\\b(HQMUX|W4NK3R|DON|CtrlHD|3L)\\b"
       }
     },
     {
