@@ -24,27 +24,19 @@ jobs:
         run: |
           set -euo pipefail
 
-          PAGE=$(curl -sS --fail --show-error --max-time 30 --retry 3 --retry-delay 5 \
-            https://sabnzbd.org/wiki/configuration/)
+          # sabnzbd.github.io is the wiki's own source of truth. wiki_version is
+          # the X.Y used in /wiki/configuration/<ver>/ links, and reading it is
+          # stable across releases; scraping the rendered page is not.
+          CONFIG=$(curl -sS --fail --show-error --max-time 30 --retry 3 --retry-delay 5 \
+            https://raw.githubusercontent.com/sabnzbd/sabnzbd.github.io/master/_config.yml)
 
-          # Primary: the "Configure" nav link, e.g.
-          # href="https://sabnzbd.org/wiki/configuration/5.1/configure"
-          CURRENT=$(echo "$PAGE" \
-            | grep -oP 'href="https://sabnzbd\.org/wiki/configuration/\K[0-9]+\.[0-9]+(?=/configure")' \
-            | sort -V | tail -1) || true
-
-          # Fallback: any configuration/X.Y occurrence on the page, highest wins.
-          if [ -z "$CURRENT" ]; then
-            echo "::warning::Primary selector found no match, falling back to a looser pattern."
-            CURRENT=$(echo "$PAGE" \
-              | grep -oP 'configuration/\K[0-9]+\.[0-9]+' \
-              | sort -V | tail -1) || true
-          fi
+          CURRENT=$(printf '%s\n' "$CONFIG" \
+            | grep -oP "^wiki_version:[[:space:]]*['\"]?\K[0-9]+\.[0-9]+") || true
 
           if [ -z "$CURRENT" ]; then
-            echo "::error::Could not detect a SABnzbd wiki version number. The page structure likely changed, both the anchor-based and fallback selectors found nothing. Update the grep pattern in this workflow."
-            echo "--- First 40 lines of the fetched page, for debugging ---"
-            echo "$PAGE" | head -40
+            echo "::error::Could not read wiki_version from sabnzbd.github.io _config.yml. The file format may have changed; update the parser in this workflow."
+            echo "--- First 20 lines of _config.yml, for debugging ---"
+            printf '%s\n' "$CONFIG" | head -20
             exit 1
           fi
 
