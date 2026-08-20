@@ -2,7 +2,7 @@ name: Update SABnzbd wiki links
 
 on:
   schedule:
-    - cron: "0 6 * * 1"  # Every Monday at 06:00 UTC
+    - cron: "0 6 * * 6"  # Every Saturday at 06:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -27,9 +27,15 @@ jobs:
           # sabnzbd.github.io is the wiki's own source of truth. wiki_version is
           # the X.Y used in /wiki/configuration/<ver>/ links, and reading it is
           # stable across releases; scraping the rendered page is not.
-          CONFIG=$(curl -sS --fail --show-error --max-time 30 --retry 3 --retry-delay 5 \
-            https://raw.githubusercontent.com/sabnzbd/sabnzbd.github.io/master/_config.yml)
+          if ! CONFIG=$(curl -sS --fail --show-error --max-time 30 --retry 3 --retry-delay 5 \
+            https://raw.githubusercontent.com/sabnzbd/sabnzbd.github.io/master/_config.yml); then
+            echo "::error::Failed to fetch _config.yml from sabnzbd.github.io (network error or non-200 response, not a parser problem)."
+            exit 1
+          fi
 
+          # wiki_version is the X.Y used in /wiki/configuration/<ver>/ paths and in
+          # the sed replacement below, so capture exactly X.Y (a 3-component or
+          # suffixed value would produce broken /configuration/X.Y.Z links).
           CURRENT=$(printf '%s\n' "$CONFIG" \
             | grep -oP "^wiki_version:[[:space:]]*['\"]?\K[0-9]+\.[0-9]+" || true)
 
