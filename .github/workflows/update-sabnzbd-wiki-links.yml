@@ -31,14 +31,14 @@ jobs:
           # href="https://sabnzbd.org/wiki/configuration/5.1/configure"
           CURRENT=$(echo "$PAGE" \
             | grep -oP 'href="https://sabnzbd\.org/wiki/configuration/\K[0-9]+\.[0-9]+(?=/configure")' \
-            | sort -V | tail -1)
+            | sort -V | tail -1) || true
 
           # Fallback: any configuration/X.Y occurrence on the page, highest wins.
           if [ -z "$CURRENT" ]; then
             echo "::warning::Primary selector found no match, falling back to a looser pattern."
             CURRENT=$(echo "$PAGE" \
               | grep -oP 'configuration/\K[0-9]+\.[0-9]+' \
-              | sort -V | tail -1)
+              | sort -V | tail -1) || true
           fi
 
           if [ -z "$CURRENT" ]; then
