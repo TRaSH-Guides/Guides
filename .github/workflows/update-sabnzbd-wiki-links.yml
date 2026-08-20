@@ -24,29 +24,15 @@ jobs:
         run: |
           set -euo pipefail
 
-          # sabnzbd.github.io is the wiki's own source of truth. wiki_version is
-          # the X.Y used in /wiki/configuration/<ver>/ links, and reading it is
-          # stable across releases; scraping the rendered page is not.
-          if ! CONFIG=$(curl -sS --fail --show-error --max-time 30 --retry 3 --retry-delay 5 \
-            https://raw.githubusercontent.com/sabnzbd/sabnzbd.github.io/master/_config.yml); then
-            echo "::error::Failed to fetch _config.yml from sabnzbd.github.io (network error or non-200 response, not a parser problem)."
-            exit 1
-          fi
+          # wiki_version in the wiki's own _config.yml is the canonical X.Y used in
+          # /wiki/configuration/<ver>/ links. Capture exactly X.Y. With set -euo
+          # pipefail the step fails loudly if the fetch (curl --fail) or the parse
+          # (grep no-match) fails, so no hand-rolled error branches are needed.
+          VERSION=$(curl -fsS --retry 3 --max-time 30 \
+            https://raw.githubusercontent.com/sabnzbd/sabnzbd.github.io/master/_config.yml \
+            | grep -oP "^wiki_version:\s*['\"]?\K[0-9]+\.[0-9]+")
 
-          # wiki_version is the X.Y used in /wiki/configuration/<ver>/ paths and in
-          # the sed replacement below, so capture exactly X.Y (a 3-component or
-          # suffixed value would produce broken /configuration/X.Y.Z links).
-          CURRENT=$(printf '%s\n' "$CONFIG" \
-            | grep -oP "^wiki_version:[[:space:]]*['\"]?\K[0-9]+\.[0-9]+" || true)
-
-          if [ -z "$CURRENT" ]; then
-            echo "::error::Could not read wiki_version from sabnzbd.github.io _config.yml. The file format may have changed; update the parser in this workflow."
-            echo "--- First 20 lines of _config.yml, for debugging ---"
-            printf '%s\n' "$CONFIG" | head -20
-            exit 1
-          fi
-
-          echo "version=$CURRENT" >> "$GITHUB_OUTPUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Replace old version numbers in SABnzbd guides
         env:
