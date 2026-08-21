@@ -82,6 +82,7 @@ We've made 3 guides related to this.
 | [Canal+](#cnlp)         | [ITVX](#itvx)         | [VRV](#vrv)              |
 | [CBC](#cbc)             | [MY5](#my5)           |                          |
 | [Crave](#crav)          | [NOW](#now)           |                          |
+| [Fandango](#fand)       |                       |                          |
 | [OViD](#ovid)           |                       |                          |
 | [Star+](#strp)          |                       |                          |
 
@@ -1449,6 +1450,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### FAND
+
+<sub>Fandango</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/fand.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fand.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

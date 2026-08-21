@@ -1,15 +1,15 @@
 {
-  "trash_id": "1f9dfb4b8d9cae1f6dc0099547d53513",
-  "name": "CNLP",
+  "trash_id": "6c6af63910e3e4e8ff32a85102a94c11",
+  "name": "FAND",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "CNLP",
+      "name": "FAND",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
-        "value": "\\b(CNLP)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+        "value": "\\b(FAND)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
       }
     },
     {

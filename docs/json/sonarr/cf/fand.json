@@ -1,15 +1,18 @@
 {
-  "trash_id": "1f9dfb4b8d9cae1f6dc0099547d53513",
-  "name": "CNLP",
+  "trash_id": "1f233ed024e7c35cf50fbd739a82de4b",
+  "trash_scores": {
+    "default": 75
+  },
+  "name": "FAND",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "CNLP",
+      "name": "Fandango",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
-        "value": "\\b(CNLP)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+        "value": "\\b(fand)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
       }
     },
     {
@@ -18,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 7
+        "value": 3
       }
     },
     {
@@ -27,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 8
+        "value": 4
       }
     }
   ]
