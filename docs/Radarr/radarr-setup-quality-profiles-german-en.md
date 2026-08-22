@@ -98,6 +98,8 @@ To help with this, there is a handy service called [Umlautadaptarr](https://gith
 
 ## Quality profiles
 
+{! include-markdown "../../includes/starr/how-to-pick-a-profile-flowchart-radarr-german.md" !}
+
 ### German audio
 
 Depending on what's released first and available, the following Workflow Logic will be used:
@@ -145,21 +147,15 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-hd-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+[[ render_profile_cfs('radarr', '[German] HD Bluray + WEB') ]]
 
-**The following Custom Formats are optional:**
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
 ---
 
@@ -177,23 +173,15 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+[[ render_profile_cfs('radarr', '[German] HD Remux + WEB') ]]
 
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 ---
 
@@ -222,27 +210,17 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-uhd-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+[[ render_profile_cfs('radarr', '[German] UHD Bluray + WEB') ]]
 
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-misc-uhd-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
 ---
 
@@ -262,27 +240,17 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+[[ render_profile_cfs('radarr', '[German] Remux + WEB 2160p') ]]
 
-**The following Custom Formats are optional:**
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-misc-uhd-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 ---
 
@@ -306,10 +274,6 @@ If you prefer High-Quality HD Encodes for Anime (720p/1080p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-anime-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-anime-hd-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
 {! include-markdown "../../includes/german-guide/radarr-german-anime-misc-required.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
@@ -318,13 +282,13 @@ If you prefer High-Quality HD Encodes for Anime (720p/1080p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-anime-streaming-services-en.md" !}
 
-**The following Custom Formats are optional:**
+[[ render_profile_cfs('radarr', '[German] Anime HD Bluray + WEB') ]]
+
+**The following German Custom Formats are also optional:**
 
 {! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-anime-misc-optional.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
 ---
 
