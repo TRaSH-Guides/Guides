@@ -6,6 +6,9 @@ their required/optional CF tables from `cf-groups/*.json`.
 
 The macro filters cf-groups by `quality_profiles.include[<profile name>]` and
 renders a collapsible admonition per group with a markdown table of the CFs.
+A group may set an optional `info` field (markdown string) to render narrative
+text above its table, e.g. the Audio Formats / HDR Formats groups (see
+`schemas/cf-groups.schema.json`).
 Per-profile overrides (skip a group, force required/optional) live in
 `docs/json/{app}/quality-profile-groups/groups.json` under a per-profile
 `profile_overrides` entry (see `schemas/profile-groups.schema.json`).
@@ -86,6 +89,14 @@ def _render_table(
     return lines
 
 
+def _render_info(info: str) -> list[str]:
+    """Indent a group's optional narrative `info` block to nest it inside the
+    admonition, mirroring the indentation used for the table rows."""
+    lines = [f"    {line}" if line else "" for line in info.split("\n")]
+    lines.append("")
+    return lines
+
+
 def _render_group(
     app: str,
     slug: str,
@@ -98,6 +109,9 @@ def _render_group(
 ) -> str:
     title = group.get("name", slug)
     body = [f'??? abstract "{title} - [Click to show/hide]"', ""]
+    info = group.get("info")
+    if info:
+        body.extend(_render_info(info))
     body.extend(
         _render_table(
             app, group, cf_index, cfs_by_slug, score_set,

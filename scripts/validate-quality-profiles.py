@@ -164,6 +164,12 @@ def validate_app(app: str) -> list[str]:
             cfg_data = load_json(cfg_path)
             if cfg_data is None:
                 continue
+            info = cfg_data.get("info")
+            if info is not None and (not isinstance(info, str) or not info.strip()):
+                errors.append(
+                    f"[{app}] cf-groups/{cfg_path.name} has malformed"
+                    " 'info' (expected a non-empty string)"
+                )
             qp = cfg_data.get("quality_profiles")
             if qp is not None and not isinstance(qp, dict):
                 errors.append(
