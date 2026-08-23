@@ -1,8 +1,12 @@
-name: Update contributors
+# Maintain: Contributors - regenerates CONTRIBUTORS.md and commits it back to the repository.
+# Triggers: push to master or main, or manual dispatch.
+name: "Maintain: Contributors"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   push:
     branches: [master, main]
+  workflow_dispatch:
 
 permissions:
   contents: write

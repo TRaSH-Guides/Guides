@@ -1,10 +1,13 @@
-name: Deploy PR Preview
+# Deploy: PR Preview - deploys a built PR preview site to Cloudflare Pages and comments the preview URL on the PR.
+# Triggers: workflow_run completion of the "Deploy: Trigger PR Preview" workflow.
+name: "Deploy: PR Preview"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 # workflow_run is intentional; this workflow deploys PR previews triggered by a
 # separate unprivileged workflow to safely access secrets.
 on: # zizmor: ignore[dangerous-triggers]
   workflow_run:
-    workflows: ["Trigger PR Build"]
+    workflows: ["Deploy: Trigger PR Preview"]
     types:
       - completed
 
