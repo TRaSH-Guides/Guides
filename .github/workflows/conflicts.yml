@@ -1,4 +1,7 @@
-name: Label Conflicts
+# Label: Merge Conflicts - labels pull requests that have merge conflicts with the base branch.
+# Triggers: push to master, or a pull request (non-fork) being synchronized.
+name: "Label: Merge Conflicts"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   push:

@@ -1,4 +1,7 @@
-name: Do Not Merge
+# Gate: Do Not Merge - fails the check when a pull request carries the 'Do Not Merge' label, blocking merge.
+# Triggers: pull request synchronized, opened, reopened, labeled, or unlabeled.
+name: "Gate: Do Not Merge"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   pull_request:
