@@ -1,4 +1,7 @@
-name: Pre-commit
+# Lint: pre-commit - runs the repo's pre-commit hook suite.
+# Triggers: any pull request, or push to master.
+name: "Lint: pre-commit"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   pull_request:

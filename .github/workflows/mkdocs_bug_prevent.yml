@@ -1,9 +1,13 @@
-name: Check for Mkdocs Issues
+# Validate: MkDocs Build - checks changed JSON files for '[[' sequences that break MkDocs macros.
+# Triggers: push to master, any pull request, or manual dispatch.
+name: "Validate: MkDocs Build"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   push:
     branches: [master]
   pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

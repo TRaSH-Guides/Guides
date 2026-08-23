@@ -1,4 +1,7 @@
-name: Validate Custom Format JSONs
+# Validate: Custom Formats - validates radarr/sonarr custom-format JSON files against their schemas and checks cross-file consistency.
+# Triggers: push to master or pull requests touching custom-format JSON/schema files, or manual dispatch.
+name: "Validate: Custom Formats"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   push:
@@ -24,6 +27,7 @@ on:
       - schemas/**/*.json
       - scripts/validate-source-specifications.py
       - tests/test_validate_source_specifications.py
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
