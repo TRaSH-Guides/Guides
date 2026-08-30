@@ -1,3 +1,6 @@
+# 2026-08-30 04:15
+- [feat(radarr): Move ATELiER from HD Bluray Tier 02 to HD Bluray Tier 01](https://github.com/TRaSH-Guides/Guides/pull/2870)
+
 # 2026-08-23 01:24
 - [fix(radarr): CF `LQ (Release Title)` to avoid false positives when matching in file and folder names.](https://github.com/TRaSH-Guides/Guides/pull/2848)
 - [feat(starr): Add streaming service FAND (Fandango) to miscellaneous streaming services](https://github.com/TRaSH-Guides/Guides/pull/2854)
