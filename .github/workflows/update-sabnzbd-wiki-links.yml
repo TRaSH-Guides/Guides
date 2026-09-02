@@ -1,4 +1,7 @@
-name: Update SABnzbd wiki links
+# Maintain: SABnzbd Wiki Links - refreshes SABnzbd wiki version numbers in the docs and opens a PR when they change.
+# Triggers: weekly schedule (Saturday 06:00 UTC), or manual dispatch.
+name: "Maintain: SABnzbd Wiki Links"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   schedule:

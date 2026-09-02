@@ -1,4 +1,7 @@
-name: Update changelog
+# Maintain: Changelog - regenerates docs/updates.txt from recent conventional-commit messages and pushes the update.
+# Triggers: weekly schedule (Sunday 00:00 UTC), or manual dispatch.
+name: "Maintain: Changelog"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   schedule:
