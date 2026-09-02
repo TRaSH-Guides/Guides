@@ -1,4 +1,7 @@
-name: Trigger PR Build
+# Deploy: Trigger PR Preview - builds the mkdocs site for a PR (when rendered content changed) and uploads it as an artifact for the unprivileged-to-privileged handoff.
+# Triggers: pull request (default event types).
+name: "Deploy: Trigger PR Preview"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   pull_request:
