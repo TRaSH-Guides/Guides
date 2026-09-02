@@ -1,9 +1,13 @@
-name: Check for Mkdocs Issues
+# Validate: MkDocs Build - checks changed JSON files for '[[' sequences that break MkDocs macros.
+# Triggers: push to master, any pull request, or manual dispatch.
+name: "Validate: MkDocs Build"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   push:
     branches: [master]
   pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -32,8 +36,8 @@ jobs:
         run: |
           if [[ "$EVENT_NAME" == "pull_request" ]]; then
             BASE="$PR_BASE_SHA"
-          elif [[ "$BEFORE_SHA" == "0000000000000000000000000000000000000000" ]]; then
-            # First push to branch — no history to diff against; scan all tracked JSON files
+          elif [[ "$EVENT_NAME" == "workflow_dispatch" || "$BEFORE_SHA" == "0000000000000000000000000000000000000000" ]]; then
+            # Manual dispatch or first push to branch — no history to diff against; scan all tracked JSON files
             # shellcheck disable=SC2046
             JSON_FILES=$(git ls-files '*.json' | tr '\n' ' ')
             echo "JSON_FILES=${JSON_FILES}" >> "$GITHUB_ENV"

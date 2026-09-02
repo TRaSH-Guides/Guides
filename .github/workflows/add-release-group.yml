@@ -1,5 +1,7 @@
-# Manually add a release group/title to a CF group-list and open a PR. Run from the Actions tab.
-name: Add Release Group
+# Maintain: Add Release Group - manually adds a release group/title to a CF group-list and opens a PR; run from the Actions tab.
+# Triggers: manual dispatch only.
+name: "Maintain: Add Release Group"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   workflow_dispatch:

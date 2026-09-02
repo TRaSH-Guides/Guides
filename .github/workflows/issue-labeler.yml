@@ -1,4 +1,7 @@
-name: Label Issues
+# Label: Issues - applies labels to newly opened issues based on title/body content.
+# Triggers: issue opened.
+name: "Label: Issues"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   issues:

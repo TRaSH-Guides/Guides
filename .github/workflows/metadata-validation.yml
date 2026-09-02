@@ -1,4 +1,7 @@
-name: Validate Metadata JSON
+# Validate: Metadata - validates metadata.json against metadata.schema.json.
+# Triggers: push to master or pull requests touching metadata.json/schema, or manual dispatch.
+name: "Validate: Metadata"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   push:
@@ -12,6 +15,7 @@ on:
       - metadata.json
       - metadata.schema.json
       - .github/workflows/metadata-validation.yml
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
