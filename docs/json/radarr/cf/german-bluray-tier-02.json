@@ -69,6 +69,15 @@
         "value": "^(RocketHD)$"
       }
     },
+        {
+      "name": "toto",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(toto)$"
+      }
+    },
     {
       "name": "Bluray",
       "implementation": "SourceSpecification",
