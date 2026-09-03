@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Version: 1.3.3
-# Updated: 20260614
+# Version: 1.3.4
+# Updated: 20260817
 # =======================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.3.3"
+readonly SCRIPT_VERSION="1.3.4"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
 readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
@@ -96,6 +96,7 @@ get_instance_details() {
         INSTANCE_HOST="${HOSTS[$index]}"
         INSTANCE_USER="${USERS[$index]}"
         INSTANCE_PASSWORD="${PASSWORDS[$index]}"
+        INSTANCE_API_KEY="${API_KEYS[$index]:-}"
         INSTANCE_CA_BUNDLE="${CA_BUNDLES[$index]:-}"
     else
         # Legacy format: map index to old variables
@@ -104,12 +105,14 @@ get_instance_details() {
             INSTANCE_HOST="${QBIT_HOST_1}"
             INSTANCE_USER="${QBIT_USER_1}"
             INSTANCE_PASSWORD="${QBIT_PASS_1}"
+            INSTANCE_API_KEY="${QBIT_API_KEY_1:-}"
             INSTANCE_CA_BUNDLE="${QBIT_CA_BUNDLE_1:-}"
         elif [[ $index -eq 1 ]]; then
             INSTANCE_NAME="${QBIT_NAME_2}"
             INSTANCE_HOST="${QBIT_HOST_2}"
             INSTANCE_USER="${QBIT_USER_2}"
             INSTANCE_PASSWORD="${QBIT_PASS_2}"
+            INSTANCE_API_KEY="${QBIT_API_KEY_2:-}"
             INSTANCE_CA_BUNDLE="${QBIT_CA_BUNDLE_2:-}"
         else
             error "Invalid instance index: $index"
@@ -487,6 +490,14 @@ validate_config() {
             fi
         fi
 
+        # API_KEYS array is optional, but if present should match
+        if [[ -v API_KEYS ]] && [[ ${#API_KEYS[@]} -gt 0 ]]; then
+            if [[ ${#API_KEYS[@]} -ne ${#HOSTS[@]} ]]; then
+                notify "Configuration Error" "API_KEYS array length (${#API_KEYS[@]}) doesn't match HOSTS (${#HOSTS[@]})"
+                error "API_KEYS array length doesn't match HOSTS"
+            fi
+        fi
+
         # CA_BUNDLES array is optional, but if present should match
         if [[ -v CA_BUNDLES ]] && [[ ${#CA_BUNDLES[@]} -gt 0 ]]; then
             if [[ ${#CA_BUNDLES[@]} -ne ${#HOSTS[@]} ]]; then
@@ -510,7 +521,7 @@ validate_config() {
 # PROCESS QBITTORRENT INSTANCE
 # ================================
 process_qbit_instance() {
-    local name="$1" host="$2" user="$3" password="$4" ca_bundle="${5:-}"
+    local name="$1" host="$2" user="$3" password="$4" api_key="${5:-}" ca_bundle="${6:-}"
 
     log "Processing $name..."
 
@@ -527,23 +538,29 @@ process_qbit_instance() {
         return 1
     fi
 
-    local ca_bundle_args=()
-    if [[ -n "$ca_bundle" ]]; then
-        ca_bundle_args=(--ca-bundle "$ca_bundle")
+    local mover_args=(
+        --pause
+        --host "$host"
+        --cache-mount "$CACHE_MOUNT"
+        --days_from "$DAYS_FROM"
+        --days_to "$DAYS_TO"
+    )
+
+    if [[ -n "$api_key" ]]; then
+        mover_args+=(--api-key "$api_key")
+    else
+        mover_args+=(--user "$user" --password "$password")
     fi
 
-    # Run mover script
-    if $python_cmd "$MOVER_SCRIPT" \
-        --pause \
-        --host "$host" \
-        --user "$user" \
-        --password "$password" \
-        --cache-mount "$CACHE_MOUNT" \
-        --days_from "$DAYS_FROM" \
-        --days_to "$DAYS_TO" \
-        "${ca_bundle_args[@]}" 2>&1 | while IFS= read -r line; do
+    if [[ -n "$ca_bundle" ]]; then
+        mover_args+=(--ca-bundle "$ca_bundle")
+    fi
+
+    if "$python_cmd" "$MOVER_SCRIPT" "${mover_args[@]}" 2>&1 |
+        while IFS= read -r line; do
             log "  $line"
-        done; then
+        done
+    then
         log "✓ Successfully processed $name"
         notify "$name" "Paused @ $(date +%H:%M:%S)"
         return 0
@@ -606,7 +623,7 @@ main() {
     for ((i=0; i<instance_count; i++)); do
         get_instance_details "$i"
 
-        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_CA_BUNDLE" || ((failed_instances++))
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_API_KEY" "$INSTANCE_CA_BUNDLE" || ((failed_instances++))
     done
 
     # Summary
