@@ -1,4 +1,7 @@
-name: Trigger PR Build
+# Deploy: Trigger PR Preview - builds the mkdocs site for a PR (when rendered content changed) and uploads it as an artifact for the unprivileged-to-privileged handoff.
+# Triggers: pull request (default event types).
+name: "Deploy: Trigger PR Preview"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   pull_request:
@@ -18,7 +21,7 @@ jobs:
     steps:
       - name: Filter rendered content changes
         id: filter
-        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d # v4.0.1
+        uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d # v4.0.3
         with:
           filters: |
             rendered:
@@ -31,7 +34,7 @@ jobs:
 
       - name: Checkout
         if: steps.filter.outputs.rendered == 'true'
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
           fetch-depth: 0
@@ -47,7 +50,7 @@ jobs:
       # or other PRs, so fork PRs cannot poison the cache used by trusted builds.
       - name: Setup python # zizmor: ignore[cache-poisoning]
         if: steps.filter.outputs.rendered == 'true'
-        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: 3.x
           cache: pip

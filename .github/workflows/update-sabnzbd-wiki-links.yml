@@ -1,0 +1,72 @@
+# Maintain: SABnzbd Wiki Links - refreshes SABnzbd wiki version numbers in the docs and opens a PR when they change.
+# Triggers: weekly schedule (Saturday 06:00 UTC), or manual dispatch.
+name: "Maintain: SABnzbd Wiki Links"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
+
+on:
+  schedule:
+    - cron: "0 6 * * 6"  # Every Saturday at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  update-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: sabnzbd-wiki-links
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Detect current SABnzbd wiki version
+        id: version
+        run: |
+          set -euo pipefail
+
+          # wiki_version in the wiki's own _config.yml is the canonical X.Y used in
+          # /wiki/configuration/<ver>/ links. -m1 guards a duplicate key; the error
+          # branch names which half failed (fetch vs pattern) so a future upstream
+          # format change is obvious in the run log rather than a bare exit 1.
+          VERSION=$(curl -fsS --retry 3 --max-time 30 \
+            https://raw.githubusercontent.com/sabnzbd/sabnzbd.github.io/master/_config.yml \
+            | grep -oPm1 "^wiki_version:\s*['\"]?\K[0-9]+\.[0-9]+") || {
+              echo "::error::Could not read wiki_version from sabnzbd.github.io/_config.yml (fetch failed, or the X.Y pattern is gone and the file format changed)."
+              exit 1
+            }
+
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Replace old version numbers in SABnzbd guides
+        env:
+          SAB_VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          find docs/Downloaders/SABnzbd -name '*.md' -exec sed -i -E \
+            "s#(sabnzbd\.org/wiki/configuration/)[0-9]+\.[0-9]+#\1${SAB_VERSION}#g" {} +
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        if: steps.diff.outputs.changed == 'true'
+        with:
+          commit-message: "fix(downloaders): update SABnzbd wiki links"
+          title: "fix(downloaders): update SABnzbd wiki links to v${{ steps.version.outputs.version }}"
+          branch: fix/downloaders-sabnzbd-wiki-links
+          body: >
+            Auto-generated. Review the diff before merging, sabnzbd.org
+            sometimes restructures pages between versions.

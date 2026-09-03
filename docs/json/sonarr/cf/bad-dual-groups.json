@@ -173,6 +173,15 @@
       }
     },
     {
+      "name": "OldT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OldT)$"
+      }
+    },
+    {
       "name": "PD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

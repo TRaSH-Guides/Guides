@@ -12,7 +12,7 @@
 
 ## General
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/general){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/general){:target="\_blank" rel="noopener noreferrer"}
 
 ### Tuning
 
@@ -25,7 +25,7 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 ## Folders
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/folders){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/folders){:target="\_blank" rel="noopener noreferrer"}
 
 ### User Folders
 
@@ -52,7 +52,7 @@ The default is empty, we picked history because it is easy. It'll end up in the 
 
 --8<-- "includes/downloaders/usp.md"
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/servers){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/servers){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings` => `Servers` => `Add Server`
 ![!Servers](images/sabnzbd-servers.png)
@@ -75,7 +75,7 @@ The default is empty, we picked history because it is easy. It'll end up in the 
 
 ## Categories
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/categories){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/categories){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings`=> `Categories`
 
@@ -85,7 +85,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 ## Switches
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/switches){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/switches){:target="\_blank" rel="noopener noreferrer"}
 
 ### Queue
 
@@ -141,7 +141,7 @@ Afterwards you need to make the following adjustments:
 ## Special
 
 Rarely used options.
-Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.3/special){:target="\_blank" rel="noopener noreferrer"} first, as some have serious side effects.
+Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/5.1/special){:target="\_blank" rel="noopener noreferrer"} first, as some have serious side effects.
 The default values are between parentheses.
 
 ### Unable to connect to SABnzbd

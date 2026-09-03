@@ -18,6 +18,7 @@
     ],
     "quality_profiles": {
         "include": {
+            "Remux + WEB 1080p": "fe9470e577c300a5ad9a3274f6d1cdf2",
             "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
             "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
             "[German] Anime HD Bluray + WEB": "6fe5937e1dcc2269e23b49eb46dfe6d6",

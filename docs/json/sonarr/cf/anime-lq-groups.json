@@ -175,7 +175,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Ari\\]|-Ari\\b"
+        "value": "^\\[Ari\\]|-Ari$"
       }
     },
     {

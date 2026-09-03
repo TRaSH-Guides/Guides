@@ -238,7 +238,7 @@ Not going to cover the technical part of what it does, but the following setting
 
 ### Torrent Queueing
 
-![!Torrent Queueing](images/qbt-options-speed-rate-limits-settings.png)
+![!Torrent Queueing](images/qb-options-bittorrent-torrent-queueing.png)
 
 These options allow you to control the number of active torrents being downloaded and uploaded.
 

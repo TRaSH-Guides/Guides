@@ -178,6 +178,15 @@
       }
     },
     {
+      "name": "nekotan",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(nekotan)\\b"
+      }
+    },
+    {
       "name": "Netaro",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

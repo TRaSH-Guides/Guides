@@ -18,15 +18,6 @@
       }
     },
     {
-      "name": "ATELiER",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ATELiER)$"
-      }
-    },
-    {
       "name": "NCmt",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

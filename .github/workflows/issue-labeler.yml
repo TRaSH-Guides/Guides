@@ -1,0 +1,26 @@
+# Label: Issues - applies labels to newly opened issues based on title/body content.
+# Triggers: issue opened.
+name: "Label: Issues"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Issue Labeler
+        uses: github/issue-labeler@ccca1e16fcb66762200e616fc29b57b940c1cb67  # v3.5
+        with:
+          configuration-path: .github/issue-labeler.yml
+          enable-versioned-regex: "0"
+          include-title: "1"
+          include-body: "1"
+          sync-labels: "0"
+          repo-token: ${{ github.token }}

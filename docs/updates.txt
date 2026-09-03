@@ -1,3 +1,61 @@
+# 2026-08-30 04:15
+- [feat(radarr): Move ATELiER from HD Bluray Tier 02 to HD Bluray Tier 01](https://github.com/TRaSH-Guides/Guides/pull/2870)
+
+# 2026-08-23 01:24
+- [fix(radarr): CF `LQ (Release Title)` to avoid false positives when matching in file and folder names.](https://github.com/TRaSH-Guides/Guides/pull/2848)
+- [feat(starr): Add streaming service FAND (Fandango) to miscellaneous streaming services](https://github.com/TRaSH-Guides/Guides/pull/2854)
+- [fix(gha): read SABnzbd wiki version from sabnzbd.github.io _config.yml](https://github.com/TRaSH-Guides/Guides/pull/2861)
+- [feat(starr): Add RlsGrp `3L` to the `TrueHD Atmos` Custom Format](https://github.com/TRaSH-Guides/Guides/pull/2857)
+- [feat(starr): Add RlsGrp `OldT` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2856)
+
+# 2026-08-16 01:23
+- [feat(guide-sync): Added for an SQP a CF that includes a collection of curated UHD Blu-ray RlsGrps](https://github.com/TRaSH-Guides/Guides/pull/2850)
+- [feat(guide-sync): Added three new Radarr profiles for the officially supported third-party Guide Sync Tools](https://github.com/TRaSH-Guides/Guides/pull/2849)
+
+# 2026-08-09 01:50
+- [fix(starr): CF `TrueHD Atmos` and `TrueHD` to prevent false positives with RlsGrps that only mention TrueHD but are actually TrueHD Atmos](https://github.com/TRaSH-Guides/Guides/pull/2846)
+- [fix(radarr-german): require Bluray source for German Anime Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2821)
+- [feat(radarr): Move ATELiER from Remux Tier 02 to Remux Tier 01](https://github.com/TRaSH-Guides/Guides/pull/2844)
+- [fix(sonarr): Corrected reference from Radarr to Sonarr](https://github.com/TRaSH-Guides/Guides/pull/2842)
+
+# 2026-08-02 02:55
+- [feat(guide): Added Third-Party Apps & Guides page](https://github.com/TRaSH-Guides/Guides/pull/2840)
+- [feat(guide): Added Getting Started page](https://github.com/TRaSH-Guides/Guides/pull/2839)
+- [feat(guide-sync): Updated SQP to v9000](https://github.com/TRaSH-Guides/Guides/pull/2841)
+
+# 2026-07-26 02:56
+- [fix(radarr): Validate Remux source and modifier semantics in CI](https://github.com/TRaSH-Guides/Guides/pull/2829)
+
+# 2026-07-19 02:52
+- [feat(guide-sync): Resolve minor conflict with an SQP](https://github.com/TRaSH-Guides/Guides/pull/2831)
+- [feat(radarr): Add RlsGRp `RandomBytes` to `UHD Bluray Tier 02`](https://github.com/TRaSH-Guides/Guides/pull/2827)
+- [feat(guide-sync): Adjusted scoring for an SQP to prefer WEBDL over Blu-ray](https://github.com/TRaSH-Guides/Guides/pull/2825)
+- [feat(guide-sync): Created Sonarr Remux Profiles](https://github.com/TRaSH-Guides/Guides/pull/2819)
+- [feat(guide-sync): Adjusted scoring for an SQP to prefer multichannel over 2.0](https://github.com/TRaSH-Guides/Guides/pull/2820)
+- [feat(sonarr): Update Why only WEB-DL FAQ with remux setup guidance](https://github.com/TRaSH-Guides/Guides/pull/2814)
+
+# 2026-07-12 02:55
+- [feat(starr-anime): Add nekotan to Anime BD Tier 03 and BlackRose to Anime Web Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2810)
+- [fix(radarr): Corrected the order of the example naming scheme tokens](https://github.com/TRaSH-Guides/Guides/pull/2805)
+- [fix(sonarr-anime): Update anime-lq-groups - Regex for RL Ari](https://github.com/TRaSH-Guides/Guides/pull/2808)
+
+# 2026-07-05 03:36
+- [feat(sonarr-anime): Add HIDIVE & WKN to the anime-remux profile](https://github.com/TRaSH-Guides/Guides/pull/2693)
+- [fix(gha): reliable mkdocs macro guard + stop duplicate CI runs](https://github.com/TRaSH-Guides/Guides/pull/2802)
+- [fix(ci): suppress zizmor adhoc-packages finding in update_contributors](https://github.com/TRaSH-Guides/Guides/pull/2803)
+- [feat(radarr): Add release group HiDt to UHD Bluray Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2800)
+- [feat(radarr): Add release groups FS, SyncUP and CLEANUP to LQ](https://github.com/TRaSH-Guides/Guides/pull/2801)
+- [feat(guide-sync): Adjusted scoring for an SQP to prefer multichannel over 2.0 when it shares the same audio format](https://github.com/TRaSH-Guides/Guides/pull/2778)
+- [fix(downloaders): Restored the deleted image for the Qbit Basic guide](https://github.com/TRaSH-Guides/Guides/pull/2794)
+
+# 2026-06-28 04:01
+- [feat(starr): Add release groups to German CFs](https://github.com/TRaSH-Guides/Guides/pull/2791)
+- [feat(starr-anime): Some Anime Tier adjustments](https://github.com/TRaSH-Guides/Guides/pull/2790)
+- [fix(ci): prevent fork-PR code execution in privileged deploy workflow](https://github.com/TRaSH-Guides/Guides/pull/2789)
+- [feat(downloaders): Add port forwarding troubleshooting page](https://github.com/TRaSH-Guides/Guides/pull/2783)
+- [feat(hardlinks): Add permissions, ownership and UMASK section](https://github.com/TRaSH-Guides/Guides/pull/2781)
+- [fix(sonarr): Correct advanced-toggle image in naming-scheme guide](https://github.com/TRaSH-Guides/Guides/pull/2782)
+
 # 2026-06-21 04:24
 - [feat(starr): Add RlsGrp `C76` to `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/2780)
 - [feat(radarr): Add RlsGrp `RBB` to `LQ` due to cam and microsized releases](https://github.com/TRaSH-Guides/Guides/pull/2779)
