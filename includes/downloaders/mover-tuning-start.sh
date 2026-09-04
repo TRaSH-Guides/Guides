@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =======================================
 # Script: qBittorrent Cache Mover - Start
-# Version: 1.3.3
-# Updated: 20260614
+# Version: 1.3.4
+# Updated: 20260902
 # =======================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.3.3"
+readonly SCRIPT_VERSION="1.3.4"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-start.sh"
 readonly CONFIG_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg"
 
@@ -376,30 +376,60 @@ run_auto_installer() {
     fi
 
     if "$venv_python" -m pip --version >/dev/null 2>&1; then
-        # Upgrade pip
-        if "$venv_python" -m pip install --dry-run --upgrade pip 2>&1 | grep -q "Would install"; then
-            log "Upgrading pip..."
-            if "$venv_python" -m pip install --upgrade pip --quiet; then
-                set_ownership "$VENV_PATH"
-                log "✓ Pip upgraded to $("$venv_python" -m pip --version | awk '{print $2}')"
-            else
-                log "⚠ Warning: Failed to upgrade pip; continuing with existing version ($("$venv_python" -m pip --version | awk '{print $2}'))"
-            fi
+        # Upgrade pip. No --dry-run pre-check here: --dry-run itself was only
+        # added in pip 22.2, so on an outdated pip the check fails silently
+        # and the script would never be able to bootstrap its way to a
+        # version that supports the flag. pip install --upgrade is idempotent,
+        # so just always run it.
+        log "Upgrading pip..."
+        if "$venv_python" -m pip install --upgrade pip --quiet; then
+            set_ownership "$VENV_PATH"
         else
-            log "✓ Pip is up to date ($("$venv_python" -m pip --version | awk '{print $2}'))"
+            log "⚠ Warning: Failed to upgrade pip; continuing with existing version"
         fi
 
+        # A successful upgrade command does NOT guarantee pip is now >= 22.2:
+        # it exits 0 even when no newer pip was available (old interpreter,
+        # pinned/private index, version constraints). Check the resulting
+        # version explicitly rather than trusting the upgrade's exit status.
+        local pip_version supports_dry_run lowest
+        pip_version=$("$venv_python" -m pip --version 2>/dev/null | awk '{print $2}')
+        supports_dry_run=false
+        if [[ -n "$pip_version" ]]; then
+            lowest=$(printf '%s\n' "$pip_version" "22.2" | sort -V | head -n1)
+            [[ "$lowest" == "22.2" ]] && supports_dry_run=true
+        fi
+        log "✓ Pip is $pip_version"
+
         # Install/upgrade qbittorrent-api using the same Python that will run mover.py.
+        # Only use the --dry-run pre-check when pip is confirmed >= 22.2. Even
+        # then, capture the dry-run command's own exit status separately from
+        # the grep match — a dry-run failure (e.g. index timeout) must not be
+        # misread as "nothing to upgrade". Any doubt falls back to the actual
+        # (idempotent, cheap-when-current) upgrade instead of skipping it.
         if "$venv_python" -c "import qbittorrentapi" 2>/dev/null; then
             log "✓ qbittorrent-api installed ($("$venv_python" -m pip show qbittorrent-api 2>/dev/null | awk '/Version:/ {print $2}'))"
 
-            if "$venv_python" -m pip install --dry-run --upgrade qbittorrent-api 2>&1 | grep -q "Would install"; then
-                log "Upgrading qbittorrent-api..."
+            local api_upgrade_needed=true dry_run_output dry_run_status
+            if [[ "$supports_dry_run" == true ]]; then
+                dry_run_output=$("$venv_python" -m pip install --dry-run --upgrade qbittorrent-api 2>&1)
+                dry_run_status=$?
+                if [[ $dry_run_status -eq 0 ]]; then
+                    if echo "$dry_run_output" | grep -q "Would install"; then
+                        api_upgrade_needed=true
+                    else
+                        api_upgrade_needed=false
+                        log "✓ qbittorrent-api is up to date"
+                    fi
+                else
+                    log "⚠ Warning: dry-run check failed — upgrading anyway to be safe"
+                fi
+            fi
+
+            if [[ "$api_upgrade_needed" == true ]]; then
+                log "Ensuring qbittorrent-api is up to date..."
                 "$venv_python" -m pip install qbittorrent-api --upgrade --quiet || log "⚠ Warning: Failed to upgrade qbittorrent-api"
                 set_ownership "$VENV_PATH"
-                log "✓ qbittorrent-api upgraded"
-            else
-                log "✓ qbittorrent-api is up to date"
             fi
         else
             log "Installing qbittorrent-api..."
