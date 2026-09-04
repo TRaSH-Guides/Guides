@@ -274,7 +274,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Daddy(Subs)?\\]|-Daddy(Subs)?\\b"
+        "value": "\\[Daddy(Subs)?\\]|-Daddy(Subs)?$"
       }
     },
     {
@@ -679,7 +679,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Mites)\\b"
+        "value": "\\[Mites\\]|-Mites$"
       }
     },
     {
@@ -940,7 +940,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[SAD\\]|-SAD\\b"
+        "value": "\\[SAD\\]|-SAD$"
       }
     },
     {
