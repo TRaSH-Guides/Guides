@@ -1,4 +1,7 @@
-name: Pull Request Title Validation
+# Validate: PR Title - checks that a pull request title matches the conventional-commit naming pattern.
+# Triggers: pull request opened, reopened, edited, or synchronized.
+name: "Validate: PR Title"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   pull_request:

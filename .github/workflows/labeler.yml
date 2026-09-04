@@ -1,4 +1,7 @@
-name: Label Pull Requests
+# Label: Pull Requests - applies path-based labels to pull requests via actions/labeler.
+# Triggers: pull_request_target (default event types).
+name: "Label: Pull Requests"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   pull_request_target:

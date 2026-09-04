@@ -1,4 +1,7 @@
-name: Validate Quality Profiles
+# Validate: Quality Profiles - validates radarr/sonarr quality-profile and cf-group JSON files.
+# Triggers: push to master or pull requests touching quality-profile/cf-group JSON files, or manual dispatch.
+name: "Validate: Quality Profiles"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   push:
@@ -26,6 +29,7 @@ on:
       - docs/json/sonarr/quality-profile-groups/**
       - docs/json/sonarr/cf-groups/**
       - scripts/validate-quality-profiles.py
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

@@ -1,4 +1,7 @@
-name: Build and Deploy Docs
+# Deploy: Docs (production) - builds the mkdocs site and publishes it to Cloudflare Pages production.
+# Triggers: push to master.
+name: "Deploy: Docs (production)"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   push:
