@@ -85,7 +85,7 @@ repos:
         args: ["-c", ".markdownlint.yaml"]
 
   - repo: https://github.com/editorconfig-checker/editorconfig-checker
-    rev: v3.11.2
+    rev: v3.11.3
     hooks:
       - id: editorconfig-checker
         name: EditorConfig Lint
