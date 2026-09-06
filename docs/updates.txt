@@ -1,3 +1,9 @@
+# 2026-09-06 03:29
+- [fix(sonarr-anime): anchor Anime LQ Groups patterns to release-tag position](https://github.com/TRaSH-Guides/Guides/pull/2880)
+- [fix(downloaders): Update mover-tuning-start.sh](https://github.com/TRaSH-Guides/Guides/pull/2873)
+- [fix(starr): BR-DISK should match 720p full-disc releases](https://github.com/TRaSH-Guides/Guides/pull/2878)
+- [feat(starr-german): Add toto to bluray and web t02](https://github.com/TRaSH-Guides/Guides/pull/2879)
+
 # 2026-08-30 04:15
 - [feat(radarr): Move ATELiER from HD Bluray Tier 02 to HD Bluray Tier 01](https://github.com/TRaSH-Guides/Guides/pull/2870)
 
