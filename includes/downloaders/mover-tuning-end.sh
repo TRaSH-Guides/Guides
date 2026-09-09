@@ -509,7 +509,7 @@ main() {
     for ((i=0; i<instance_count; i++)); do
         get_instance_details "$i"
 
-        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_API_KEY" "$INSTANCE_CA_BUNDLE" || ((failed_instances++))
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_API_KEY" "$INSTANCE_CA_BUNDLE" || failed_instances=$((failed_instances + 1))
     done
 
     # Run duplicate finder if enabled

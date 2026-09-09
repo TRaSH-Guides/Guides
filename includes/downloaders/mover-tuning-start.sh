@@ -413,10 +413,9 @@ run_auto_installer() {
         if "$venv_python" -c "import qbittorrentapi" 2>/dev/null; then
             log "✓ qbittorrent-api installed ($("$venv_python" -m pip show qbittorrent-api 2>/dev/null | awk '/Version:/ {print $2}'))"
 
-            local api_upgrade_needed=true dry_run_output dry_run_status
+            local api_upgrade_needed=true dry_run_output dry_run_status=0
             if [[ "$supports_dry_run" == true ]]; then
-                dry_run_output=$("$venv_python" -m pip install --dry-run --upgrade qbittorrent-api 2>&1)
-                dry_run_status=$?
+                dry_run_output=$("$venv_python" -m pip install --dry-run --upgrade qbittorrent-api 2>&1) || dry_run_status=$?
                 if [[ $dry_run_status -eq 0 ]]; then
                     if echo "$dry_run_output" | grep -q "Would install"; then
                         api_upgrade_needed=true
@@ -653,7 +652,7 @@ main() {
     for ((i=0; i<instance_count; i++)); do
         get_instance_details "$i"
 
-        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_API_KEY" "$INSTANCE_CA_BUNDLE" || ((failed_instances++))
+        process_qbit_instance "$INSTANCE_NAME" "$INSTANCE_HOST" "$INSTANCE_USER" "$INSTANCE_PASSWORD" "$INSTANCE_API_KEY" "$INSTANCE_CA_BUNDLE" || failed_instances=$((failed_instances + 1))
     done
 
     # Summary
