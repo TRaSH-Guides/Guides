@@ -3,12 +3,12 @@ set -euo pipefail # Exit on error, undefined variables, and pipe failures
 
 # =====================================
 # Script: qBittorrent Cache Mover - End
-# Version: 1.3.5
+# Version: 1.3.6
 # Updated: 20260909
 # =====================================
 
 # Script version and update check URLs
-readonly SCRIPT_VERSION="1.3.5"
+readonly SCRIPT_VERSION="1.3.6"
 readonly SCRIPT_RAW_URL="https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh"
 
 # Get the directory where the script is located
