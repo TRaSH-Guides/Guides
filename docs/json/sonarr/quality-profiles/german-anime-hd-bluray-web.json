@@ -14,12 +14,12 @@
       "name": "Merged QPs",
       "allowed": true,
       "items": [
-        "WEBRip-720p",
-        "WEBDL-720p",
-        "Bluray-720p",
-        "WEBDL-1080p",
+        "Bluray-1080p",
         "WEBRip-1080p",
-        "Bluray-1080p"
+        "WEBDL-1080p",
+        "Bluray-720p",
+        "WEBDL-720p",
+        "WEBRip-720p"
       ]
     },
     { "name": "Bluray-2160p Remux", "allowed": false },
