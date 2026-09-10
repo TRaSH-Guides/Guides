@@ -15,6 +15,24 @@
       "fields": {
         "value": "^(126811)$"
       }
+    },
+    {
+      "name": "Internal",
+      "implementation": "IndexerFlagSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 32
+      }
+    },
+    {
+      "name": "Not ATMO5/ATM05 Collab",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "126811.{0,20}ATM[O0]5"
+      }
     }
   ]
 }
