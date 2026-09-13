@@ -49,7 +49,9 @@ We then need to select and organise the qualities as seen below.
 
     We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"} for how to import them.
 
-{! include-markdown "../../includes/cf/radarr-anime.md" !}
+[[ render_profile_cfs('radarr', '[Anime] Remux-1080p') ]]
+
+!!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
 
 ### Default Scoring
 
