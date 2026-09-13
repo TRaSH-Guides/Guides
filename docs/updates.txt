@@ -1,3 +1,9 @@
+# 2026-09-13 03:46
+- [feat(guide-sync): Sorting order fix for the German Anime Profiles and other fixes](https://github.com/TRaSH-Guides/Guides/pull/2886)
+- [feat(downloaders): Add WebUI API key support for qBittorrent (rebase of #2860)](https://github.com/TRaSH-Guides/Guides/pull/2885)
+- [fix(downloaders): stop set -e  killing the mover scripts on a failed instance or dry-run](https://github.com/TRaSH-Guides/Guides/pull/2884)
+- [feat(starr): Removed RlsGrp `HHWEB` from `WEB Tier 03`](https://github.com/TRaSH-Guides/Guides/pull/2881)
+
 # 2026-09-06 03:29
 - [fix(sonarr-anime): anchor Anime LQ Groups patterns to release-tag position](https://github.com/TRaSH-Guides/Guides/pull/2880)
 - [fix(downloaders): Update mover-tuning-start.sh](https://github.com/TRaSH-Guides/Guides/pull/2873)
