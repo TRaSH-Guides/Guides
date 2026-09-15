@@ -1,15 +1,15 @@
 {
   "trash_id": "6c6af63910e3e4e8ff32a85102a94c11",
-  "name": "FAND",
+  "name": "FAH",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "FAND",
+      "name": "Fandango",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FAND)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+        "value": "\\b(FAH|FAND|FDNG)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
       }
     },
     {
