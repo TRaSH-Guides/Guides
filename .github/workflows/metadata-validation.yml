@@ -37,5 +37,7 @@ jobs:
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: 3.x
-      - run: pip install jsonschema
+          cache: pip
+          cache-dependency-path: .github/requirements-ci.txt
+      - run: pip install -r .github/requirements-ci.txt
       - run: jsonschema -i metadata.json metadata.schema.json

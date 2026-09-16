@@ -1,0 +1,2 @@
+check-jsonschema==0.38.0
+jsonschema==4.26.0
