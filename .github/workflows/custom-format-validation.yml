@@ -51,9 +51,11 @@ jobs:
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.x"
+          cache: pip
+          cache-dependency-path: .github/requirements-ci.txt
 
       - name: Install check-jsonschema
-        run: pip install check-jsonschema
+        run: pip install -r .github/requirements-ci.txt
 
       - name: Validate Guide only Custom Formats
         run: check-jsonschema -v --schemafile schemas/guide-only-cf.schema.json docs/json/guide-only/*.json
