@@ -84,6 +84,16 @@
       "groupName": "Pre-commit hooks major",
       "groupSlug": "pre-commit-hooks-major",
       "automerge": false
+    },
+    {
+      "description": "Hold MkDocs on 1.x until the MkDocs 2.0 migration is decided (#2889)",
+      "matchPackageNames": ["mkdocs"],
+      "allowedVersions": "<2"
+    },
+    {
+      "description": "Hold Material for MkDocs on 9.x (MkDocs 2.0 ecosystem migration, #2889)",
+      "matchPackageNames": ["mkdocs-material"],
+      "allowedVersions": "<10"
     }
   ]
 }
