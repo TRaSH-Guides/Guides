@@ -17,6 +17,7 @@ permissions:
 jobs:
   pull-request-title-validation:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Validate Pull Request Title

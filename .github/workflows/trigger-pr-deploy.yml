@@ -17,6 +17,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     if: github.event.repository.fork == false
     steps:
       - name: Filter rendered content changes

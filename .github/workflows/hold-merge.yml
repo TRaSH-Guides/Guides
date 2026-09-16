@@ -9,11 +9,16 @@ on:
 
 permissions: {}
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.event.issue.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   do-not-merge:
     if: contains(github.event.*.labels.*.name, 'Do Not Merge')
     name: Check Do Not Merge
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: check for label
         run: |

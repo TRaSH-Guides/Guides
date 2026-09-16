@@ -6,6 +6,13 @@ run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 on:
   push:
     branches: [master]
+    paths:
+      - 'docs/**'
+      - 'images/**'
+      - 'includes/**'
+      - 'overrides/**'
+      - 'mkdocs.yml'
+      - 'docs/requirements.txt'
 
 permissions:
   contents: read
@@ -14,6 +21,7 @@ jobs:
   build:
     name: Deploy docs
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true

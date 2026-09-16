@@ -10,9 +10,14 @@ on:
   pull_request_target: # zizmor: ignore[dangerous-triggers]
     types: [synchronize]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.event.issue.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   label-conflicts:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: github.event.repository.fork == false
     permissions:
       pull-requests: write

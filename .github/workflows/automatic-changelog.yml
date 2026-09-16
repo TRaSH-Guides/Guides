@@ -11,10 +11,15 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   update-changelog:
     if: ${{ !github.event.repository.fork }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       # PAT is required to push commits back to the repository.

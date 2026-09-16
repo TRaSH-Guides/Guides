@@ -6,12 +6,17 @@ run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 on:
   pull_request_target:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.event.issue.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   labeler:
     permissions:
       contents: read
       pull-requests: write
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Labeler
         uses: actions/labeler@bf12e9b00b37c5c0ca2b87b79b2daf7891dbda13 # v7

@@ -27,6 +27,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     name: Validate metadata.json
     steps:
       - name: Checkout

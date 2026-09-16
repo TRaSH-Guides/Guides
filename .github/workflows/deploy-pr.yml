@@ -20,6 +20,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: github.event.workflow_run.conclusion == 'success' && github.event.repository.fork == false
     permissions:
       contents: read
@@ -65,6 +66,7 @@ jobs:
   comment:
     needs: deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: always() && needs.deploy.outputs.should_deploy == 'true'
     permissions:
       pull-requests: write
