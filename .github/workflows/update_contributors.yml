@@ -11,9 +11,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   update_contributors:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       # PAT is required to push commits back to the repository.
       - name: Checkout code # zizmor: ignore[artipacked]
