@@ -25,8 +25,13 @@ for past sessions) is the first place to look at a stream in trouble.
 For each active stream, Tautulli shows:
 
 - **Decision** - `Direct Play`, `Direct Stream`, or `Transcode`. This is the single most useful
-    field: a transcode means the server is doing work to convert the file, a direct play/stream
-    means it is just sending the file as-is.
+    field: `Direct Play` sends the file as-is, no server work involved. `Direct Stream` remuxes
+    the container and can transcode audio and other non-video components, so it is still some
+    server work even though the video itself isn't re-encoded. `Transcode` converts the video
+    (and/or audio) to a format the client can play. See Plex's
+    [Direct Play and Direct Stream](https://support.plex.tv/articles/200250387-streaming-media-direct-play-and-direct-stream/){:target="_blank" rel="noopener noreferrer"}
+    and [Transcoding Media](https://support.plex.tv/articles/200250377-transcoding-media/){:target="_blank" rel="noopener noreferrer"}
+    articles for the full breakdown.
 - **Transcode reason** - Hovering or expanding the stream shows *why* Plex chose to transcode
     (video codec, audio codec, subtitle burn-in, bitrate too high for the set quality, etc).
 - **Bandwidth** - Total stream bandwidth, split into LAN and WAN where relevant.
@@ -35,11 +40,11 @@ For each active stream, Tautulli shows:
 - **Quality profile** - The bitrate/resolution ceiling the client (or a manual override) has
     requested.
 
-Read the stream stats before assuming the cause.
+!!! tip "Read the stream stats before assuming the cause"
 
-- `Direct Play` with low bandwidth on a LAN device points at the client or its Wi-Fi, not the server.
-- `Transcode` with high CPU usage points at the server or a client compatibility gap.
-- `WAN` with a `relay` connection points at remote access.
+    - `Direct Play` with low bandwidth on a LAN device points at the client or its Wi-Fi, not the server.
+    - `Transcode` with high CPU usage points at the server or a client compatibility gap.
+    - `WAN` with a `relay` connection points at remote access.
 
 ## Reading Tracearr
 
@@ -88,14 +93,14 @@ work:
 
 | Symptom | Likely cause | How to confirm (Tautulli/Tracearr) | Fix |
 | --- | --- | --- | --- |
-| Buffers or stutters on one specific device, others are fine | Weak client Wi-Fi (2.4GHz congestion, TV far from the access point, wall/floor obstruction) | Stream shows `Direct Play`/`Direct Stream` (not a transcode) with low or fluctuating bandwidth, and the device is on `LAN` | Move the AP closer, switch the TV/device to 5GHz or wired Ethernet, or add an access point. See [What does my media player support](/Plex/what-does-my-media-player-support/) for devices with reliable wired/Wi-Fi track records |
-| Plays fine on some apps, transcodes on others for the same file | Client is forcing a transcode it doesn't need to (unsupported codec/container, subtitle format, or an app-side quality cap) | Tautulli/Tracearr `Decision` shows `Transcode` with a stated reason (video/audio codec, subtitle) even though the file plays natively elsewhere | Check the client's supported codecs, use a client/app known to direct play the format (see [What does my media player support](/Plex/what-does-my-media-player-support/)), or fix the file's audio/subtitle track |
-| Multiple simultaneous streams buffer, single streams are fine | Server CPU/GPU can't keep up with concurrent transcodes | Tracearr server CPU/GPU chart spikes to 100% when the second/third transcode starts; Tautulli shows multiple `Transcode` sessions at once | Reduce concurrent transcodes (lower `Maximum simultaneous video transcode`), add/upgrade hardware transcoding, or get clients to direct play instead |
-| Remote (away from home) streams buffer, home streams are fine | Home internet upload bandwidth capped too low for the stream's bitrate | Tautulli/Tracearr bandwidth for the session approaches or exceeds the server's set upload limit | Raise or correctly set the upload speed limit in Plex ([Server Settings: Bandwidth and Transcoding Limits](https://support.plex.tv/articles/227715247-server-settings-bandwidth-and-transcoding-limits/){:target="_blank" rel="noopener noreferrer"}), lower the remote stream's quality, or upgrade upload bandwidth |
-| Any stream with subtitles enabled transcodes, without subtitles it doesn't | Subtitle burn-in forcing a full transcode (client can't handle sidecar/embedded subtitles the way Plex is serving them) | Tautulli/Tracearr shows `Transcode` with the reason tied to subtitles specifically | Use a client with native subtitle support, convert subtitles to a supported format, or accept the transcode cost |
+| Buffers or stutters on one specific device, others are fine | Weak client Wi-Fi (2.4GHz congestion, TV far from the access point, wall/floor obstruction) | Stream shows `Direct Play`/`Direct Stream` (not a transcode) with low or fluctuating bandwidth. `LAN` only confirms the Plex connection path is local, not that the client's own Wi-Fi link is healthy, so treat this as pointing at the client side rather than definitive proof | Move the AP closer, switch the TV/device to 5GHz or wired Ethernet, or add an access point. See [What does my media player support](/Plex/what-does-my-media-player-support/) for devices with reliable wired/Wi-Fi track records |
+| Plays fine on some apps, transcodes on others for the same file | The client cannot direct play/direct stream the media (unsupported codec/container), or its quality setting requires a lower bitrate. Only genuinely "a transcode it doesn't need" when another compatible client plays the same file without transcoding | Tautulli/Tracearr `Decision` shows `Transcode` with a stated reason (video/audio codec, subtitle) even though the file plays natively elsewhere | Check the client's supported codecs, use a client/app known to direct play the format (see [What does my media player support](/Plex/what-does-my-media-player-support/)), or fix the file's audio/subtitle track |
+| Multiple simultaneous streams buffer, single streams are fine | Server CPU/GPU can't keep up with concurrent transcodes | Tracearr shows CPU utilization, and GPU utilization where the platform reports it, climbing as concurrent transcodes stack up; Tautulli shows multiple `Transcode` sessions at once with degraded transcode speed/health | Reduce concurrent transcodes (lower `Maximum simultaneous video transcode`), add/upgrade hardware transcoding, or get clients to direct play instead |
+| Remote (away from home) streams buffer, home streams are fine | Combined WAN stream bandwidth exceeds the server's effective upload capacity, or the remote client's own download bandwidth is the bottleneck | Tautulli/Tracearr bandwidth for all concurrent WAN sessions combined approaches or exceeds the server's set upload limit, and/or the remote client's own connection can't sustain the stream's bitrate | Raise or correctly set the upload speed limit in Plex ([Server Settings: Bandwidth and Transcoding Limits](https://support.plex.tv/articles/227715247-server-settings-bandwidth-and-transcoding-limits/){:target="_blank" rel="noopener noreferrer"}), lower the remote stream's quality, or upgrade upload bandwidth |
+| A particular subtitle track causes transcoding, other tracks (or no subtitles) direct play/stream | Incompatible subtitles requiring burn-in (a format or track the client can't render natively) force a video transcode; a compatible subtitle format can direct play/stream without one | Tautulli/Tracearr shows `Transcode` with the reason tied to that specific subtitle track/format | Use a client with native subtitle support, convert subtitles to a supported format, or accept the transcode cost |
 | Remote streams always look worse than expected | Remote/mobile quality cap set too low in the app or account settings | Tautulli/Tracearr quality profile for the session shows a lower resolution/bitrate than the source | Raise the app's remote streaming quality setting; see [How Do Streaming Quality Selections Work?](https://support.plex.tv/articles/203810306-how-do-streaming-quality-selections-work/){:target="_blank" rel="noopener noreferrer"} |
-| Buffering happens at specific times of day, on a specific ISP | ISP throttling or local congestion (peak-hour contention, streaming/BitTorrent traffic shaping) | Symptom correlates with time of day rather than any Tautulli/Tracearr stream data; direct play with adequate bandwidth still buffers | Test with a wired connection at the same time, run a speed test during the issue, and contact the ISP if throttling is confirmed |
-| Remote streams are slow, but home streams are fast | Indirect (relayed) connection instead of a direct one | Tautulli/Tracearr shows the session as relayed rather than a secure/direct WAN connection | Fix remote access so it connects directly (port forwarding, correct public IP/port, no CGNAT); see [Troubleshooting Remote Access](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="_blank" rel="noopener noreferrer"} |
+| Buffering happens at specific times of day, on a specific ISP | ISP throttling or local congestion (peak-hour contention, streaming/BitTorrent traffic shaping) | Symptom correlates with time of day rather than any Tautulli/Tracearr stream data; direct play with adequate bandwidth still buffers | Test with a wired connection at the same time and run a speed test during the issue. Degraded results point at a connectivity problem but don't by themselves prove throttling; bring the data to the ISP if the pattern persists |
+| Remote streams are slow, but home streams are fast | Indirect (relayed) connection instead of a direct one | Tautulli/Tracearr shows the session as relayed rather than a secure/direct WAN connection | Try to get remote access connecting directly (port forwarding, correct public IP/port). If the ISP uses CGNAT or otherwise blocks inbound connections, a relay may be unavoidable regardless of port forwarding; see [Troubleshooting Remote Access](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="_blank" rel="noopener noreferrer"} |
 
 ## Related guides
 
