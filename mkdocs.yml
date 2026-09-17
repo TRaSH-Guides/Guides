@@ -101,6 +101,7 @@ plugins:
       j2_block_end_string: "%]]"
       j2_variable_start_string: "[["
       j2_variable_end_string: "]]"
+      on_error_fail: true
   - redirects:
       redirect_maps:
         #updates.txt: updates.txt

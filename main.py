@@ -77,9 +77,7 @@ def _render_table(
         if exclude_slugs and slug in exclude_slugs:
             continue
         if not slug:
-            lines.append(
-                f"    | {entry.get('name', '?')} | ? | `{tid}` (unresolved) |"
-            )
+            lines.append(f"    | {entry.get('name', '?')} | ? | `{tid}` (unresolved) |")
             continue
         cf = cfs_by_slug.get(slug, {})
         name = cf.get("name", entry.get("name", slug))
@@ -114,8 +112,13 @@ def _render_group(
         body.extend(_render_info(info))
     body.extend(
         _render_table(
-            app, group, cf_index, cfs_by_slug, score_set,
-            include_slugs, exclude_slugs,
+            app,
+            group,
+            cf_index,
+            cfs_by_slug,
+            score_set,
+            include_slugs,
+            exclude_slugs,
         )
     )
     body.append("")
@@ -238,15 +241,21 @@ def define_env(env):
             caller (e.g. the German guide) manages headers itself.
         """
         if app not in cf_groups:
-            return f"<!-- render_profile_cfs: unknown app '{app}' -->"
+            raise ValueError(
+                f"render_profile_cfs: unknown app '{app}' (expected one of {APPS})"
+            )
 
         data_overrides = _read_overrides(profile_groups_raw[app], profile_name)
         exclude = set(data_overrides.get("exclude_groups") or [])
         add = set(data_overrides.get("add_groups") or [])
         force_req = set(data_overrides.get("force_required") or [])
         force_opt = set(data_overrides.get("force_optional") or [])
-        include_cfs = {k: set(v) for k, v in (data_overrides.get("include_cfs") or {}).items()}
-        exclude_cfs = {k: set(v) for k, v in (data_overrides.get("exclude_cfs") or {}).items()}
+        include_cfs = {
+            k: set(v) for k, v in (data_overrides.get("include_cfs") or {}).items()
+        }
+        exclude_cfs = {
+            k: set(v) for k, v in (data_overrides.get("exclude_cfs") or {}).items()
+        }
         if exclude_groups:
             exclude.update(exclude_groups)
         if add_groups:
@@ -265,7 +274,12 @@ def define_env(env):
         for slug, group in groups:
             bucket = _bucket(group, slug, force_req, force_opt)
             rendered = _render_group(
-                app, slug, group, cf_index[app], cfs[app], score_set,
+                app,
+                slug,
+                group,
+                cf_index[app],
+                cfs[app],
+                score_set,
                 include_slugs=include_cfs.get(slug),
                 exclude_slugs=exclude_cfs.get(slug),
             )
@@ -281,9 +295,10 @@ def define_env(env):
                 chunks.append("**The following Custom Formats are optional:**\n")
             chunks.extend(optional)
         if not chunks:
-            return (
-                f"<!-- render_profile_cfs: no cf-groups list profile '{profile_name}'"
-                f" for {app}; check quality_profiles.include in cf-groups/*.json -->"
+            raise ValueError(
+                f"render_profile_cfs: no cf-groups list profile '{profile_name}'"
+                f" for {app}; check quality_profiles.include in cf-groups/*.json"
+                " (typo'd profile_name, or missing quality_profiles.include entry)"
             )
         return "\n".join(chunks)
 

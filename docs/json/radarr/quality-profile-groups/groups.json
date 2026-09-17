@@ -186,6 +186,7 @@
           "release-groups-french"
         ],
         "force_optional": [
+          "audio-formats",
           "optional-golden-rule-hd"
         ]
       },
@@ -212,6 +213,7 @@
           "release-groups-french"
         ],
         "force_optional": [
+          "audio-formats",
           "optional-golden-rule-uhd"
         ]
       },
@@ -238,6 +240,7 @@
           "release-groups-french"
         ],
         "force_optional": [
+          "audio-formats",
           "optional-golden-rule-hd"
         ]
       },
@@ -264,6 +267,7 @@
           "release-groups-french"
         ],
         "force_optional": [
+          "audio-formats",
           "optional-golden-rule-uhd"
         ]
       },
@@ -290,6 +294,7 @@
           "release-groups-french"
         ],
         "force_optional": [
+          "audio-formats",
           "optional-golden-rule-hd"
         ]
       },
@@ -316,6 +321,7 @@
           "release-groups-french"
         ],
         "force_optional": [
+          "audio-formats",
           "optional-golden-rule-uhd"
         ]
       }
@@ -395,6 +401,7 @@
           ]
         },
         "force_optional": [
+          "audio-formats",
           "optional-golden-rule-hd"
         ]
       },
@@ -470,6 +477,7 @@
           ]
         },
         "force_optional": [
+          "audio-formats",
           "optional-golden-rule-uhd"
         ]
       }
