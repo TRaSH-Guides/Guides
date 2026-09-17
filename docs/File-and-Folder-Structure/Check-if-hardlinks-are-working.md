@@ -74,4 +74,4 @@ It will list all files linked with the same inode number.
 
 It will list all hardlinked files.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

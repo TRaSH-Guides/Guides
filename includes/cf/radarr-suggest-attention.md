@@ -6,5 +6,5 @@ I suggest to follow the following Guides first.
 
 For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.
 
-{! include-markdown "../../includes/cf/score-attention.md" !}
+<!--@include: ../includes/cf/score-attention.md-->
 <!-- markdownlint-enable MD041-->

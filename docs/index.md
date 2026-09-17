@@ -57,7 +57,7 @@ Follow our step-by-step guide from folder structure to your download client, *Ar
 - If you want to contribute, read our [Contributing Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md){:target="_blank" rel="noopener noreferrer"} and open a PR (Pull Request).
 - If you found an actual issue related to the guide, you can open a GitHub [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"}.
 
---8<-- "includes/support.md"
+<!--@include: ../includes/support.md-->
 
 ---
 
@@ -66,6 +66,6 @@ Follow our step-by-step guide from folder structure to your download client, *Ar
 - [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me to the world of Docker containers with DockSTARTer and helping me learn the basics.
 - [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my GitHub guides to MkDocs and making everything look great.
 
---8<-- "CONTRIBUTORS.md"
+<!--@include: ../CONTRIBUTORS.md-->
 
 [Contributors](https://github.com/TRaSH-Guides/Guides/graphs/contributors){:target="_blank" rel="noopener noreferrer"}

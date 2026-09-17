@@ -20,7 +20,7 @@
 
     For example `/<path_to_data>/data`, or even `/data`.
 
-{! include-markdown "../../../includes/file-and-folder-structure/folder-structure.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/folder-structure.md-->
 <!-- markdownlint-disable MD001-->
 ### Fastest way to create the needed subfolders
 
@@ -40,11 +40,11 @@ mkdir -p /data/{usenet/{incomplete,complete}/{tv,movies,music},media/{tv,movies,
 mkdir -p /data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 ```
 <!-- markdownlint-enable MD001-->
-{! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/bad-path-suggestion.md-->
 
-{! include-markdown "../../../includes/file-and-folder-structure/breakdown-folder-structure-docker.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/breakdown-folder-structure-docker.md-->
 
-{! include-markdown "../../../includes/file-and-folder-structure/permissions.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/permissions.md-->
 
 ## Docker-compose Example
 
@@ -59,9 +59,9 @@ mkdir -p /data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 ??? example "docker-compose - [Click to show/hide]"
 
     ```yaml
-    --8<-- "includes/docker/docker-compose.yml"
+    <!--@include: ../../../includes/docker/docker-compose.yml-->
     ```
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-compose-commands.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/docker-compose-commands.md-->
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

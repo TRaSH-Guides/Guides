@@ -54,7 +54,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
     You will find a recommendation on which qualities should be included/merged for the different profiles in the individual profiles sections.
 
-    {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+    <!--@include: ../../includes/starr/move-quality-to-top.md-->
 
     !!! tip "Tip"
         You don't need to include some of these resolutions, such as 2160p or 720p, if you are not interested in them.
@@ -85,7 +85,7 @@ Sonarr also addresses this issue in their own [Wiki](https://wiki.servarr.com/so
 
 ## Score logic
 
-{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
+<!--@include: ../../includes/merge-quality/sonarr-current-logic.md-->
 
 ---
 
@@ -109,7 +109,7 @@ Depending on what's released first and available, the following Workflow Logic w
     Due to technical limitations, releases in which German is the movie's original language will be identified as `German DL` even though they might not contain another language.
     The only (cosmetic) impact of this is that the scores of those releases will be slightly higher than expected.
 
-{! include-markdown "../../includes/german-guide/sonarr-german-advanced-audio-information-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-advanced-audio-information-en.md-->
 
 ---
 
@@ -117,7 +117,7 @@ Depending on what's released first and available, the following Workflow Logic w
 
 This is a must-have for every Quality Profile you use. All these Custom Formats make sure you don't get Low Quality Releases.
 
-{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-unwanted-en.md-->
 
 ---
 
@@ -136,21 +136,21 @@ If you prefer High-Quality HD Encodes (720p/1080p)
     - WEBDL-720p
     - WEBRip-720p
 
-{! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-audio-version-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-hd-bluray-web-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-hd-bluray-web-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-unwanted-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-misc-optional.md-->
 
 ---
 
@@ -166,21 +166,21 @@ If you prefer 1080p Remuxes (Bluray-1080p Remux)
     - WEBDL-1080p
     - WEBRip-1080p
 
-{! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-audio-version-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-unwanted-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-misc-optional.md-->
 
 ---
 
@@ -207,25 +207,25 @@ If you prefer High-Quality UHD Encodes (2160p)
         - WEBDL-720p
         - WEBRip-720p
 
-{! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-audio-version-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-uhd-bluray-web-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-uhd-bluray-web-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/sonarr-hdr-formats.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-resolution-scoring-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-unwanted-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-misc-optional.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-misc-uhd-optional.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-misc-uhd-optional.md-->
 
 ---
 
@@ -243,25 +243,25 @@ If you prefer 2160p Remuxes (Bluray-2160p Remux)
 
     Note: The Bluray-2160p quality is not included as the main fallback for this profile is WEB. However, feel free to add it if needed.
 
-{! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-audio-version-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/sonarr-hdr-formats.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-resolution-scoring-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-unwanted-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-misc-optional.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-misc-uhd-optional.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-misc-uhd-optional.md-->
 
 ---
 
@@ -283,25 +283,25 @@ If you prefer High-Quality HD Encodes for Anime (720p/1080p)
     - WEBDL-720p
     - WEBRip-720p
 
-{! include-markdown "../../includes/german-guide/sonarr-german-anime-audio-version-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-anime-audio-version-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-anime-hd-bluray-web-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-anime-hd-bluray-web-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-anime-misc-required.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-anime-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-anime-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-anime-unwanted-en.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-anime-streaming-services-en.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-anime-streaming-services-en.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-misc-optional.md-->
 
-{! include-markdown "../../includes/german-guide/sonarr-german-anime-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/sonarr-german-anime-misc-optional.md-->
 
 ---
 
@@ -320,4 +320,4 @@ TRaSH provides great guides and explanations about them at the following link:
 - [Someone Said "Nice"?](https://github.com/NiceTSY), for laying the foundation for the German guide through his work on the French guide.
 - and to all the people who helped us to test those profiles and formats (and continue to do so).
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

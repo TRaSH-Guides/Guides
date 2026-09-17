@@ -34,4 +34,4 @@ If you want torrents to be moved upon completion to a specific folder, you can s
 
     Rechecking torrents will not trigger the "completion" call.
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

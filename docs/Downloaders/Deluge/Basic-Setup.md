@@ -1,6 +1,6 @@
 # Basic-Setup
 
-{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!--@include: ../../../includes/downloaders/basic-setup.md-->
 
 ---
 
@@ -40,7 +40,7 @@ Pre-allocate disk space for the added torrents. This limits fragmentation and al
 
     **Suggested: `Enabled`**
 
-{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!--@include: ../../../includes/downloaders/warning-path-location.md-->
 
 ---
 
@@ -206,4 +206,4 @@ The `Label` plugin will allow you to categorize/sort your torrents. You can assi
 
 Labels are a valuable tool, if used properly, to keep your torrents managed and organized.
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

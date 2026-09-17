@@ -246,4 +246,4 @@ However, for the paths, use the information below, depending on whether you have
             E:\data\torrents
             ```
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

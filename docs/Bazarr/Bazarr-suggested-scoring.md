@@ -52,4 +52,4 @@ This will set the Synchronization Score Threshold, meaning at which score Bazarr
 
     We noticed that when setting it to high 98-100 we would get subs that are actually 1 second to slow/fast.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

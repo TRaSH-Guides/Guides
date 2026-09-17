@@ -1,6 +1,6 @@
 # NZBGet - Basic Setup
 
-{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!--@include: ../../../includes/downloaders/basic-setup.md-->
 
 ---
 
@@ -8,7 +8,7 @@
 
 !!! note "Settings that aren't covered mean you can change them to your liking or simply leave them at default."
 
-{! include-markdown "../../../includes/guides/screenshots-are-examples-warning.md" !}
+<!--@include: ../../../includes/guides/screenshots-are-examples-warning.md-->
 
 ---
 
@@ -87,7 +87,7 @@ Directory with post-processing and other scripts.
 
 ### News-Servers
 
---8<-- "includes/downloaders/usp.md"
+<!--@include: ../../../includes/downloaders/usp.md-->
 
 `Settings` => `NEWS-SERVERS`
 
@@ -194,7 +194,7 @@ Server retention time.
 
     **Suggested:** Check your news server what their retention is.
 
---8<-- "includes/downloaders/usp.md"
+<!--@include: ../../../includes/downloaders/usp.md-->
 
 ---
 
@@ -223,7 +223,7 @@ Destination directory for this category.
     - `${DestDir}/movies` for Radarr.
     - `${DestDir}/tv` for Sonarr.
 
-{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!--@include: ../../../includes/downloaders/warning-path-location.md-->
 
 #### CategoryX.Unpack
 
@@ -618,7 +618,7 @@ Files to ignore during unpack.
 
 Add these extensions (*primarily for Windows users as they could potentially be abused or exploited*) to your [UnpackIgnoreExt](#unpackignoreext).
 
-{! include-markdown "../../../includes/downloaders/unwanted-extensions.md" !}
+<!--@include: ../../../includes/downloaders/unwanted-extensions.md-->
 
 !!! tip "If you are using NZBGet to download games and apps, this list shouldn't be used. You can create a separate category, set it to download only, manually extract the files, or use a separate app or instance for them."
 
@@ -701,4 +701,4 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     ![!Radarr: Download Clients - SABnzbd](images/radarr-download-clients-nzbget.png)
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

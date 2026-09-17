@@ -225,4 +225,4 @@ This Custom Format can be used in two ways:
 
     ![!TheTVDB Original Language](images/original-language-tvdb.png)
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

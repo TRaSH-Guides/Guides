@@ -131,4 +131,4 @@ For questions, help, or bug reports:
 
 ---
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

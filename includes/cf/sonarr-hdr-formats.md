@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 ??? abstract "HDR Formats - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf/hdr-formats.md" !}
+    <!--@include: ../includes/cf/hdr-formats.md-->
 
     | Custom Format                                                                                                       |                                Score                                | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------: | ---------------------------------------------------- |
@@ -12,7 +12,7 @@
 
     ---
 
-    {! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
+    <!--@include: ../includes/cf/dv-info-green-purple.md-->
 
-    {! include-markdown "../../includes/cf/dv-info-profiles.md" !}
+    <!--@include: ../includes/cf/dv-info-profiles.md-->
 <!-- markdownlint-enable MD041-->

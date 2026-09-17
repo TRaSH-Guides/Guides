@@ -1,6 +1,6 @@
 # Port Forwarding
 
---8<-- "includes/downloaders/port-forwarding.md"
+<!--@include: ../../../includes/downloaders/port-forwarding.md-->
 
 ---
 
@@ -24,4 +24,4 @@ Make sure you click `Test Active Port` and get a ✓ before moving on.
 
     **Suggested: `Critical`**
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

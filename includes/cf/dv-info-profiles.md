@@ -9,7 +9,7 @@
 
     ---
 
-    {! include-markdown "../../includes/cf/dv-limitations-atv.md" !}
+    <!--@include: ../includes/cf/dv-limitations-atv.md-->
 
 ??? info "Dolby Vision Versions - CMv2.9 and CMv4.0 - [Click to show/hide]"
 

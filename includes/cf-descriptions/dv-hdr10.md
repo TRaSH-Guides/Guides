@@ -10,9 +10,9 @@ You will find this mainly with:
 - Bluray encodes
 - Hybrid WEB-DL (_Hybrid isn't always mentioned_)
 
-{! include-markdown "../../includes/cf-descriptions/dolby-vision.md" !}
+<!--@include: ../includes/cf-descriptions/dolby-vision.md-->
 
-{! include-markdown "../../includes/cf-descriptions/hdr10.md" !}
+<!--@include: ../includes/cf-descriptions/hdr10.md-->
 
-{! include-markdown "../../includes/cf-descriptions/hdr-formats-info.md" !}
+<!--@include: ../includes/cf-descriptions/hdr-formats-info.md-->
 <!-- markdownlint-enable MD041-->

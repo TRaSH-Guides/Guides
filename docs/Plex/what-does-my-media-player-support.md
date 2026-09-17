@@ -81,13 +81,13 @@ The next thing to do is set up a proper quality profile with the info you gather
 
 - [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/radarr-hdr-formats.md-->
 
 #### How to make use of Audio Formats for Radarr
 
 - [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
 ---
 
@@ -99,10 +99,10 @@ The next thing to do is set up a proper quality profile with the info you gather
 
 - [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/sonarr-hdr-formats.md-->
 
 #### How to make use of Audio Formats for Sonarr
 
 At the moment, we've decided not to add `Audio Formats` Custom Formats to the WEB profile. You will hardly find HD audio with WEB-DL (Most newer WEBDL will have Atmos). If you also want HD audio formats, we would suggest going for Remuxes.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

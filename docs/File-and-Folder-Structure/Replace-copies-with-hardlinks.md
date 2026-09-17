@@ -150,4 +150,4 @@ Use the following fclones bash script:
 
 Big thanks to BZ for creating the fclones.sh!
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

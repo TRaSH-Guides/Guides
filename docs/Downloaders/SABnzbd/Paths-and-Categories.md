@@ -1,6 +1,6 @@
 # SABnzbd - Paths and Categories
 
-{! include-markdown "../../../includes/downloaders/path.md" !}
+<!--@include: ../../../includes/downloaders/path.md-->
 
 ---
 
@@ -14,7 +14,7 @@
 
 You don't need to add the full path under `Folder/Path`, it will use the `Relative folders are based on:` path you see on the top of the screenshot, that you've set up as `Completed Download Folder`.
 
-{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!--@include: ../../../includes/downloaders/warning-path-location.md-->
 
 ---
 
@@ -24,4 +24,4 @@ You don't need to add the full path under `Folder/Path`, it will use the `Relati
 
 ![!SABnzbd - Paths and Categories Breakdown](images/sabnzbd-category-breakdown.png)
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

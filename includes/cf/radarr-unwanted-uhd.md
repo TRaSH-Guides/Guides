@@ -24,7 +24,7 @@
     - **{{ radarr['cf']['lq-release-title']['name'] }}:** A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.
     - **{{ radarr['cf']['x265-hd']['name'] }}:** This blocks 720/1080p (HD) releases that are encoded in x265.
 
-        {! include-markdown "../../includes/cf-descriptions/x265-hd-radarr-warning.md" !}
+        <!--@include: ../includes/cf-descriptions/x265-hd-radarr-warning.md-->
 
     - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
     - **{{ radarr['cf']['upscaled']['name'] }}:** A custom format to prevent Radarr from grabbing upscaled releases.
@@ -32,5 +32,5 @@
     - **{{ radarr['cf']['sing-along-versions']['name'] }}:** Blocks releases that contain hardcoded sing-along lyrics for musical sections
     - **{{ radarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
 
-        {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+        <!--@include: ../includes/cf-descriptions/av1.md-->
 <!-- markdownlint-enable MD041-->

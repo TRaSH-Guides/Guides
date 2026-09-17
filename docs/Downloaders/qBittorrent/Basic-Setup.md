@@ -1,6 +1,6 @@
 # qBittorrent - Basic Setup
 
-{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!--@include: ../../../includes/downloaders/basic-setup.md-->
 
 ---
 
@@ -80,7 +80,7 @@
 
 #### ATTENTION
 
-{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!--@include: ../../../includes/downloaders/warning-path-location.md-->
 
 ### Excluded file names
 
@@ -312,7 +312,7 @@ These options allow you to control the number of active torrents being downloade
 
         **Suggested: `Disabled`**
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->
 
 [^1]:
 

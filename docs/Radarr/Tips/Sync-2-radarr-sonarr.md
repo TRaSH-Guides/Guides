@@ -302,6 +302,6 @@ Depending on your chosen option, it will sync movies from ^^==Radarr 1==^^ to ^^
 
 ---
 </div>
---8<-- "includes/annotations/sync-2-radarr-sonar.md"
+<!--@include: ../../../includes/annotations/sync-2-radarr-sonar.md-->
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

@@ -44,4 +44,4 @@ Then, Magic!
 
 As you can see, the folder has now been renamed to the new/updated naming scheme.
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

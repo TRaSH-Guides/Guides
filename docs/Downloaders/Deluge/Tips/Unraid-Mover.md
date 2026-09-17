@@ -4,7 +4,7 @@ When you make use of the unRAID cache drive for your `/data/torrents` share, and
 
 Using the following instructions will allow you to move the files with the use of the Deluge JSON-RPC.
 
---8<-- "includes/downloaders/mover-workflow.md"
+<!--@include: ../../../../includes/downloaders/mover-workflow.md-->
 
 !!! warning
 
@@ -33,7 +33,7 @@ Install the following plugins:
     - python-setuptools
     - python-pip
 
---8<-- "includes/downloaders/nerdtools-replacement-package-slackware.md"
+<!--@include: ../../../../includes/downloaders/nerdtools-replacement-package-slackware.md-->
 
 ---
 
@@ -267,4 +267,4 @@ You can generate your scheduling [HERE](https://crontab.guru/)
 
 ![!Set Run Time](images/Unraid-settings-user-scripts-deluge-mover-cron.png)
 
-{! include-markdown "../../../../includes/support.md" !}
+<!--@include: ../../../../includes/support.md-->

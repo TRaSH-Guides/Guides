@@ -23,12 +23,12 @@
     - **{{ radarr['cf']['french-lq']['name'] }}:** A collection of known low-quality French groups that are often banned from the top trackers due to their releases' lack of quality or other reasons.
     - **{{ radarr['cf']['x265-hd']['name'] }}:** This blocks 720/1080p (HD) releases that are encoded in x265.
 
-        {! include-markdown "../../includes/cf-descriptions/x265-hd-radarr-warning.md" !}
+        <!--@include: ../includes/cf-descriptions/x265-hd-radarr-warning.md-->
 
     - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
     - **{{ radarr['cf']['upscaled']['name'] }}:** A custom format to prevent Radarr from grabbing upscaled releases.
     - **{{ radarr['cf']['extras']['name'] }}:** Blocks releases that only contain extras
     - **{{ radarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
 
-        {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+        <!--@include: ../includes/cf-descriptions/av1.md-->
 <!-- markdownlint-enable MD041-->

@@ -27,4 +27,4 @@ A sleek web interface for qBittorrent built with Vue.js.
 | [qui](https://github.com/autobrr/qui){:target="_blank" rel="noopener noreferrer"}                  | UI Replacement & More | Multiple   | [4.3.9 and newer](https://github.com/autobrr/qui#qbittorrent-version-compatibility){:target="_blank" rel="noopener noreferrer"} |
 | [VueTorrent](https://github.com/VueTorrent/VueTorrent){:target="_blank" rel="noopener noreferrer"} | UI Replacement        | Dark/Light | v5.0.3                                                                                                                          |
 
---8<-- "includes/support.md"
+<!--@include: ../../../../includes/support.md-->

@@ -7,7 +7,7 @@ This basic example is based on the use of Docker images
 
     More info [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
-{! include-markdown "../file-and-folder-structure/bad-path-suggestion.md" !}
+<!--@include: ../file-and-folder-structure/bad-path-suggestion.md-->
 
 !!! warning ""
 

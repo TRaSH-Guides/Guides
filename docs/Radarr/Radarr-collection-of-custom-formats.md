@@ -1,6 +1,6 @@
 # Collection of Custom Formats for Radarr
 
-{! include-markdown "../../includes/starr/cf-not-compatible.md" !}
+<!--@include: ../../includes/starr/cf-not-compatible.md-->
 
 Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
 These CFs have been collected from discussions on Discord or created with help from others.
@@ -25,7 +25,7 @@ We've made 3 guides related to this.
 
     This way you make sure the Custom Format scoring and preferences will be fully utilized.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->
 
 ---
 
@@ -192,7 +192,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/truehd-atmos.md" !}
+    <!--@include: ../../includes/cf-descriptions/truehd-atmos.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -208,7 +208,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dts-x.md" !}
+    <!--@include: ../../includes/cf-descriptions/dts-x.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -224,7 +224,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/atmos-undefined.md" !}
+    <!--@include: ../../includes/cf-descriptions/atmos-undefined.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -240,7 +240,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/ddplus-atmos.md" !}
+    <!--@include: ../../includes/cf-descriptions/ddplus-atmos.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -256,7 +256,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/truehd.md" !}
+    <!--@include: ../../includes/cf-descriptions/truehd.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -272,7 +272,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dts-hd-ma.md" !}
+    <!--@include: ../../includes/cf-descriptions/dts-hd-ma.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -288,7 +288,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/flac.md" !}
+    <!--@include: ../../includes/cf-descriptions/flac.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -304,7 +304,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/pcm.md" !}
+    <!--@include: ../../includes/cf-descriptions/pcm.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -320,7 +320,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dts-hd-hra.md" !}
+    <!--@include: ../../includes/cf-descriptions/dts-hd-hra.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -338,7 +338,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/ddplus.md" !}
+    <!--@include: ../../includes/cf-descriptions/ddplus.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -354,7 +354,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dts-es.md" !}
+    <!--@include: ../../includes/cf-descriptions/dts-es.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -372,7 +372,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dts.md" !}
+    <!--@include: ../../includes/cf-descriptions/dts.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -388,7 +388,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/aac.md" !}
+    <!--@include: ../../includes/cf-descriptions/aac.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -406,7 +406,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dd.md" !}
+    <!--@include: ../../includes/cf-descriptions/dd.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -422,7 +422,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/mp3.md" !}
+    <!--@include: ../../includes/cf-descriptions/mp3.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -438,7 +438,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/opus.md" !}
+    <!--@include: ../../includes/cf-descriptions/opus.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -548,7 +548,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hdr.md" !}
+    <!--@include: ../../includes/cf-descriptions/hdr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -566,7 +566,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    --8<-- "includes/cf-descriptions/dv-boost.md"
+    <!--@include: ../../includes/cf-descriptions/dv-boost.md-->
 
 <!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case, the pointer to `#dv-wo-hdr-fallback` in `includes/dv.md` -->
 
@@ -584,7 +584,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
+    <!--@include: ../../includes/cf-descriptions/hdr10plus-boost.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -604,7 +604,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dv-disk.md" !}
+    <!--@include: ../../includes/cf-descriptions/dv-disk.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -622,7 +622,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dv-wo-hdr-fallback.md" !}
+    <!--@include: ../../includes/cf-descriptions/dv-wo-hdr-fallback.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -638,7 +638,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
+    <!--@include: ../../includes/cf-descriptions/sdr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -654,7 +654,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl-radarr.md" !}
+    <!--@include: ../../includes/cf-descriptions/sdr-no-webdl-radarr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -670,7 +670,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
+    <!--@include: ../../includes/cf-descriptions/hlg.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -694,7 +694,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/amzn.md" !}
+    <!--@include: ../../includes/cf-descriptions/amzn.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -712,7 +712,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/atv.md" !}
+    <!--@include: ../../includes/cf-descriptions/atv.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -730,7 +730,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/atvp.md" !}
+    <!--@include: ../../includes/cf-descriptions/atvp.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -748,7 +748,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/bcore.md" !}
+    <!--@include: ../../includes/cf-descriptions/bcore.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -766,7 +766,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/crit.md" !}
+    <!--@include: ../../includes/cf-descriptions/crit.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -784,7 +784,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
+    <!--@include: ../../includes/cf-descriptions/dsnp.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -802,7 +802,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/play.md" !}
+    <!--@include: ../../includes/cf-descriptions/play.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -820,7 +820,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
+    <!--@include: ../../includes/cf-descriptions/hbo.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -838,7 +838,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+    <!--@include: ../../includes/cf-descriptions/hmax.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -856,7 +856,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
+    <!--@include: ../../includes/cf-descriptions/hulu.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -874,7 +874,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/it.md" !}
+    <!--@include: ../../includes/cf-descriptions/it.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -892,7 +892,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+    <!--@include: ../../includes/cf-descriptions/hmax.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -910,7 +910,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/ma.md" !}
+    <!--@include: ../../includes/cf-descriptions/ma.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -928,7 +928,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/nf.md" !}
+    <!--@include: ../../includes/cf-descriptions/nf.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -946,7 +946,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
+    <!--@include: ../../includes/cf-descriptions/pmtp.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -964,7 +964,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
+    <!--@include: ../../includes/cf-descriptions/pcok.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -982,7 +982,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/roku.md" !}
+    <!--@include: ../../includes/cf-descriptions/roku.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1000,7 +1000,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/stan.md" !}
+    <!--@include: ../../includes/cf-descriptions/stan.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1022,7 +1022,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/cpng.md" !}
+    <!--@include: ../../includes/cf-descriptions/cpng.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1040,7 +1040,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/htsr.md" !}
+    <!--@include: ../../includes/cf-descriptions/htsr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1058,7 +1058,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/friday.md" !}
+    <!--@include: ../../includes/cf-descriptions/friday.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1076,7 +1076,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
+    <!--@include: ../../includes/cf-descriptions/fod.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1094,7 +1094,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hami.md" !}
+    <!--@include: ../../includes/cf-descriptions/hami.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1112,7 +1112,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/iqiy.md" !}
+    <!--@include: ../../includes/cf-descriptions/iqiy.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1130,7 +1130,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/kktv.md" !}
+    <!--@include: ../../includes/cf-descriptions/kktv.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1148,7 +1148,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/kcw.md" !}
+    <!--@include: ../../includes/cf-descriptions/kcw.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1166,7 +1166,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/linetv.md" !}
+    <!--@include: ../../includes/cf-descriptions/linetv.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1184,7 +1184,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/mytvsuper.md" !}
+    <!--@include: ../../includes/cf-descriptions/mytvsuper.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1202,7 +1202,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/tving.md" !}
+    <!--@include: ../../includes/cf-descriptions/tving.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1220,7 +1220,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/tver.md" !}
+    <!--@include: ../../includes/cf-descriptions/tver.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1238,7 +1238,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/u-next.md" !}
+    <!--@include: ../../includes/cf-descriptions/u-next.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1256,7 +1256,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/viki.md" !}
+    <!--@include: ../../includes/cf-descriptions/viki.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1274,7 +1274,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/viu.md" !}
+    <!--@include: ../../includes/cf-descriptions/viu.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1292,7 +1292,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/wavve.md" !}
+    <!--@include: ../../includes/cf-descriptions/wavve.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1310,7 +1310,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/wetv.md" !}
+    <!--@include: ../../includes/cf-descriptions/wetv.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1328,7 +1328,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/youku.md" !}
+    <!--@include: ../../includes/cf-descriptions/youku.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1350,7 +1350,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/pathe.md" !}
+    <!--@include: ../../includes/cf-descriptions/pathe.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1368,7 +1368,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
+    <!--@include: ../../includes/cf-descriptions/vdl.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1390,7 +1390,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/aubc.md" !}
+    <!--@include: ../../includes/cf-descriptions/aubc.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1408,7 +1408,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/cnlp.md" !}
+    <!--@include: ../../includes/cf-descriptions/cnlp.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1426,7 +1426,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/cbc.md" !}
+    <!--@include: ../../includes/cf-descriptions/cbc.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1444,7 +1444,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
+    <!--@include: ../../includes/cf-descriptions/crav.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1462,7 +1462,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fah.md" !}
+    <!--@include: ../../includes/cf-descriptions/fah.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1480,7 +1480,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
+    <!--@include: ../../includes/cf-descriptions/ovid.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1498,7 +1498,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/strp.md" !}
+    <!--@include: ../../includes/cf-descriptions/strp.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1520,7 +1520,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/ip.md" !}
+    <!--@include: ../../includes/cf-descriptions/ip.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1538,7 +1538,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/itvx.md" !}
+    <!--@include: ../../includes/cf-descriptions/itvx.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1556,7 +1556,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/my5.md" !}
+    <!--@include: ../../includes/cf-descriptions/my5.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1574,7 +1574,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/now.md" !}
+    <!--@include: ../../includes/cf-descriptions/now.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1596,7 +1596,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/funi.md" !}
+    <!--@include: ../../includes/cf-descriptions/funi.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1612,7 +1612,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/vrv.md" !}
+    <!--@include: ../../includes/cf-descriptions/vrv.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1632,7 +1632,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/4k-remaster.md" !}
+    <!--@include: ../../includes/cf-descriptions/4k-remaster.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1648,7 +1648,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/criterion-collection.md" !}
+    <!--@include: ../../includes/cf-descriptions/criterion-collection.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1664,7 +1664,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hybrid.md" !}
+    <!--@include: ../../includes/cf-descriptions/hybrid.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1680,7 +1680,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/imax.md" !}
+    <!--@include: ../../includes/cf-descriptions/imax.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1696,7 +1696,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/imax-enhanced.md" !}
+    <!--@include: ../../includes/cf-descriptions/imax-enhanced.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1712,7 +1712,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/masters-of-cinema.md" !}
+    <!--@include: ../../includes/cf-descriptions/masters-of-cinema.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1728,7 +1728,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/open-matte.md" !}
+    <!--@include: ../../includes/cf-descriptions/open-matte.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1744,7 +1744,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/remaster.md" !}
+    <!--@include: ../../includes/cf-descriptions/remaster.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1760,7 +1760,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/special-edition.md" !}
+    <!--@include: ../../includes/cf-descriptions/special-edition.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1776,7 +1776,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/theatrical-cut.md" !}
+    <!--@include: ../../includes/cf-descriptions/theatrical-cut.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1792,7 +1792,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/vinegar-syndrome.md" !}
+    <!--@include: ../../includes/cf-descriptions/vinegar-syndrome.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1812,7 +1812,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/3d.md" !}
+    <!--@include: ../../includes/cf-descriptions/3d.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1828,7 +1828,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+    <!--@include: ../../includes/cf-descriptions/av1.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1844,7 +1844,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/bad-dual-groups.md" !}
+    <!--@include: ../../includes/cf-descriptions/bad-dual-groups.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1860,7 +1860,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/black-and-white-editions.md" !}
+    <!--@include: ../../includes/cf-descriptions/black-and-white-editions.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1876,7 +1876,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/br-disk.md" !}
+    <!--@include: ../../includes/cf-descriptions/br-disk.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1892,7 +1892,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/extras.md" !}
+    <!--@include: ../../includes/cf-descriptions/extras.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1908,7 +1908,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/generated-dynamic-hdr.md" !}
+    <!--@include: ../../includes/cf-descriptions/generated-dynamic-hdr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1924,7 +1924,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/line-mic-dubbed.md" !}
+    <!--@include: ../../includes/cf-descriptions/line-mic-dubbed.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1942,7 +1942,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/lq.md" !}
+    <!--@include: ../../includes/cf-descriptions/lq.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1960,7 +1960,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/lq-release-title.md" !}
+    <!--@include: ../../includes/cf-descriptions/lq-release-title.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1976,7 +1976,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/no-rlsgroup.md" !}
+    <!--@include: ../../includes/cf-descriptions/no-rlsgroup.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1992,7 +1992,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/obfuscated.md" !}
+    <!--@include: ../../includes/cf-descriptions/obfuscated.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2008,7 +2008,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/retags.md" !}
+    <!--@include: ../../includes/cf-descriptions/retags.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2024,7 +2024,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/scene.md" !}
+    <!--@include: ../../includes/cf-descriptions/scene.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2040,7 +2040,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/sing-along-versions.md" !}
+    <!--@include: ../../includes/cf-descriptions/sing-along-versions.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2056,7 +2056,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/upscaled.md" !}
+    <!--@include: ../../includes/cf-descriptions/upscaled.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2076,7 +2076,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/remux-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/remux-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2092,7 +2092,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/remux-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/remux-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2108,7 +2108,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/remux-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/remux-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2124,7 +2124,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/uhd-bluray-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2140,7 +2140,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/uhd-bluray-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2156,7 +2156,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/uhd-bluray-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2172,7 +2172,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hd-bluray-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/hd-bluray-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2188,7 +2188,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hd-bluray-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/hd-bluray-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2204,7 +2204,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hd-bluray-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/hd-bluray-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2220,7 +2220,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/web-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/web-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2236,7 +2236,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/web-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/web-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2252,7 +2252,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/web-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/web-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2272,7 +2272,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/repack-proper.md" !}
+    <!--@include: ../../includes/cf-descriptions/repack-proper.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2288,7 +2288,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/repack2.md" !}
+    <!--@include: ../../includes/cf-descriptions/repack2.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2304,7 +2304,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/repack3.md" !}
+    <!--@include: ../../includes/cf-descriptions/repack3.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2320,7 +2320,7 @@ We've made 3 guides related to this.
 
 ??? question "Why block 720/1080p encodes in x265? - [Click to show/hide]"
 
-    --8<-- "includes/docker/x265.md"
+    <!--@include: ../../includes/docker/x265.md-->
 
 ---
 
@@ -2328,7 +2328,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/x265-no-hdrdv-radarr.md" !}
+    <!--@include: ../../includes/cf-descriptions/x265-no-hdrdv-radarr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2346,7 +2346,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/x265-hd-radarr.md" !}
+    <!--@include: ../../includes/cf-descriptions/x265-hd-radarr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2366,7 +2366,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/freeleech.md" !}
+    <!--@include: ../../includes/cf-descriptions/freeleech.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2382,7 +2382,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/hfr.md" !}
+    <!--@include: ../../includes/cf-descriptions/hfr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2398,7 +2398,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/internal.md" !}
+    <!--@include: ../../includes/cf-descriptions/internal.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2414,7 +2414,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/mpeg2.md" !}
+    <!--@include: ../../includes/cf-descriptions/mpeg2.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2430,7 +2430,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/multi.md" !}
+    <!--@include: ../../includes/cf-descriptions/multi.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2446,7 +2446,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/p2p-internal.md" !}
+    <!--@include: ../../includes/cf-descriptions/p2p-internal.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2462,7 +2462,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/vc-1.md" !}
+    <!--@include: ../../includes/cf-descriptions/vc-1.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2478,7 +2478,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/vp9.md" !}
+    <!--@include: ../../includes/cf-descriptions/vp9.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2494,7 +2494,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/x264.md" !}
+    <!--@include: ../../includes/cf-descriptions/x264.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2510,7 +2510,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/x265.md" !}
+    <!--@include: ../../includes/cf-descriptions/x265.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2526,7 +2526,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/x266.md" !}
+    <!--@include: ../../includes/cf-descriptions/x266.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2546,7 +2546,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/720p.md" !}
+    <!--@include: ../../includes/cf-descriptions/720p.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2562,7 +2562,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/1080p.md" !}
+    <!--@include: ../../includes/cf-descriptions/1080p.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2578,7 +2578,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/2160p.md" !}
+    <!--@include: ../../includes/cf-descriptions/2160p.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2598,7 +2598,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german.md" !}
+    <!--@include: ../../includes/cf-descriptions/german.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2616,7 +2616,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-dl.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-dl.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2632,7 +2632,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-dl-undefined.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-dl-undefined.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2650,7 +2650,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
+    <!--@include: ../../includes/cf-descriptions/language-not-english.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2668,7 +2668,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
+    <!--@include: ../../includes/cf-descriptions/language-not-french.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2686,7 +2686,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
+    <!--@include: ../../includes/cf-descriptions/language-not-original.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2704,7 +2704,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-original-plus-french.md" !}
+    <!--@include: ../../includes/cf-descriptions/language-original-plus-french.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2720,7 +2720,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/not-german-or-english.md" !}
+    <!--@include: ../../includes/cf-descriptions/not-german-or-english.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2736,7 +2736,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/not-german-japanese-or-english.md" !}
+    <!--@include: ../../includes/cf-descriptions/not-german-japanese-or-english.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2752,7 +2752,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/not-german-japanese-korean-chinese-or-english.md" !}
+    <!--@include: ../../includes/cf-descriptions/not-german-japanese-korean-chinese-or-english.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2768,7 +2768,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/wrong-language.md" !}
+    <!--@include: ../../includes/cf-descriptions/wrong-language.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2790,7 +2790,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/with-ad.md" !}
+    <!--@include: ../../includes/cf-descriptions/with-ad.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2808,7 +2808,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/with-asl.md" !}
+    <!--@include: ../../includes/cf-descriptions/with-asl.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2826,7 +2826,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/with-basl.md" !}
+    <!--@include: ../../includes/cf-descriptions/with-basl.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2844,7 +2844,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/with-bsl.md" !}
+    <!--@include: ../../includes/cf-descriptions/with-bsl.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2864,7 +2864,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2880,7 +2880,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2896,7 +2896,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2912,7 +2912,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-04.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-04.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2928,7 +2928,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-05.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-05.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2944,7 +2944,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-06.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-06.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2960,7 +2960,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-07.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-07.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2976,7 +2976,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-08.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-08.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2992,7 +2992,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-web-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3008,7 +3008,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-web-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3024,7 +3024,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-web-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3040,7 +3040,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-04.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-web-tier-04.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3056,7 +3056,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-05.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-web-tier-05.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3072,7 +3072,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-06.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-web-tier-06.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3088,7 +3088,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-raws.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-raws.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3104,7 +3104,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-lq-groups.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-lq-groups.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3124,7 +3124,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/v0.md" !}
+    <!--@include: ../../includes/cf-descriptions/v0.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3140,7 +3140,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/v1.md" !}
+    <!--@include: ../../includes/cf-descriptions/v1.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3156,7 +3156,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/v2.md" !}
+    <!--@include: ../../includes/cf-descriptions/v2.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3172,7 +3172,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/v3.md" !}
+    <!--@include: ../../includes/cf-descriptions/v3.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3188,7 +3188,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/v4.md" !}
+    <!--@include: ../../includes/cf-descriptions/v4.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3208,7 +3208,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/10bit.md" !}
+    <!--@include: ../../includes/cf-descriptions/10bit.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3224,7 +3224,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/anime-dual-audio.md" !}
+    <!--@include: ../../includes/cf-descriptions/anime-dual-audio.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3240,7 +3240,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/dubs-only.md" !}
+    <!--@include: ../../includes/cf-descriptions/dubs-only.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3256,7 +3256,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/uncensored.md" !}
+    <!--@include: ../../includes/cf-descriptions/uncensored.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3276,7 +3276,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-remux-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-remux-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3292,7 +3292,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-remux-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-remux-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3308,7 +3308,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3324,7 +3324,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3340,7 +3340,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3356,7 +3356,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-web-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-web-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3372,7 +3372,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-web-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-web-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3388,7 +3388,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-web-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-web-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3404,7 +3404,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-scene.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-scene.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3424,7 +3424,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3440,7 +3440,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3456,7 +3456,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-anime-bluray-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3472,7 +3472,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3488,7 +3488,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3504,7 +3504,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-anime-web-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3520,7 +3520,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-anime-scene.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-anime-scene.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3540,7 +3540,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-1080p-booster.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-1080p-booster.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3556,7 +3556,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-2160p-booster.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-2160p-booster.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3574,7 +3574,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-lq.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-lq.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3592,7 +3592,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-lq-release-title.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-lq-release-title.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3610,7 +3610,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-microsized.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-microsized.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3626,7 +3626,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/german-subbed.md" !}
+    <!--@include: ../../includes/cf-descriptions/german-subbed.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3646,7 +3646,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-remux-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-remux-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3662,7 +3662,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-remux-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-remux-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3678,7 +3678,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-uhd-bluray-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-uhd-bluray-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3694,7 +3694,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-uhd-bluray-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-uhd-bluray-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3710,7 +3710,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-hd-bluray-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-hd-bluray-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3726,7 +3726,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-hd-bluray-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-hd-bluray-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3742,7 +3742,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-web-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-web-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3758,7 +3758,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-web-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-web-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3774,7 +3774,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-scene.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-scene.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3792,7 +3792,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-lq.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-lq.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3812,7 +3812,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 01 - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-01.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-anime-tier-01.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3828,7 +3828,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 02 - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-02.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-anime-tier-02.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3844,7 +3844,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 03 - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-03.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-anime-tier-03.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3860,7 +3860,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime FanSub - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-anime-fansub.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-anime-fansub.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3880,7 +3880,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-vff.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-vff.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3896,7 +3896,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-vof.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-vof.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3912,7 +3912,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-vfi.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-vfi.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3928,7 +3928,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-vf2.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-vf2.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3944,7 +3944,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-vfq.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-vfq.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3960,7 +3960,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-voq.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-voq.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3976,7 +3976,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-vq.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-vq.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3992,7 +3992,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-vfb.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-vfb.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -4008,7 +4008,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/french-vostfr.md" !}
+    <!--@include: ../../includes/cf-descriptions/french-vostfr.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -4024,7 +4024,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fansub.md" !}
+    <!--@include: ../../includes/cf-descriptions/fansub.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -4040,7 +4040,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fastsub.md" !}
+    <!--@include: ../../includes/cf-descriptions/fastsub.md-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -4100,7 +4100,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/asian-lq.md" !}
+    <!--@include: ../../includes/cf-descriptions/asian-lq.md-->
 
 ??? example "JSON - [Click to show/hide]"
 

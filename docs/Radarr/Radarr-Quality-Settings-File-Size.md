@@ -1,12 +1,12 @@
 # Quality Settings (File Size)
 
---8<-- "includes/starr/quality-size-description-faq.md"
+<!--@include: ../../includes/starr/quality-size-description-faq.md-->
 
 ---
 
 ## Radarr Quality Definitions
 
---8<-- "includes/starr/quality-size-preferred-info.md"
+<!--@include: ../../includes/starr/quality-size-preferred-info.md-->
 
 !!! info "{{ radarr['quality-size']['movie']['qualities'][13]['max'] }} is the displayed value for Unlimited"
 
@@ -55,4 +55,4 @@
     | {{ radarr['quality-size']['anime']['qualities'][19]['quality'] }} | {{ radarr['quality-size']['anime']['qualities'][19]['min'] }} | {{ radarr['quality-size']['anime']['qualities'][19]['preferred'] }} | {{ radarr['quality-size']['anime']['qualities'][19]['max'] }} |
     | {{ radarr['quality-size']['anime']['qualities'][20]['quality'] }} | {{ radarr['quality-size']['anime']['qualities'][20]['min'] }} | {{ radarr['quality-size']['anime']['qualities'][20]['preferred'] }} | {{ radarr['quality-size']['anime']['qualities'][20]['max'] }} |
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

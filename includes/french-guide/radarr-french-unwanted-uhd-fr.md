@@ -23,12 +23,12 @@
     - **{{ radarr['cf']['french-lq']['name'] }} :** Une collection de groupes français connus qui sont souvent bannis en raison du manque de qualité de leurs releases ou pour d'autres raisons.
     - **{{ radarr['cf']['x265-hd']['name'] }} :** Bloque les release 720/1080p (HD) qui sont encodées en x265..
 
-        {! include-markdown "../../includes/cf-descriptions/x265-hd-radarr-warning.md" !}
+        <!--@include: ../includes/cf-descriptions/x265-hd-radarr-warning.md-->
 
     - **{{ radarr['cf']['3d']['name'] }} :** La 3D est-elle encore d'actualité ?
     - **{{ radarr['cf']['upscaled']['name'] }} :** Un Format Personnalisé pour empêcher Radarr de récupérer des versions upscalées (amélioré via IA).
     - **{{ radarr['cf']['extras']['name'] }} :** Bloque les publications qui ne contiennent que des extras
     - **{{ radarr['cf']['av1']['name'] }} :** Cela bloque toutes les publications encodées en AV1.
 
-        {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+        <!--@include: ../includes/cf-descriptions/av1.md-->
 <!-- markdownlint-enable MD041-->

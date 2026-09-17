@@ -1,6 +1,6 @@
 # SABnzbd - Basic Setup
 
-{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!--@include: ../../../includes/downloaders/basic-setup.md-->
 
 ---
 
@@ -34,7 +34,7 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 Here you setup your download path/location.
 
-{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!--@include: ../../../includes/downloaders/warning-path-location.md-->
 
 ### System Folders
 
@@ -50,7 +50,7 @@ The default is empty, we picked history because it is easy. It'll end up in the 
 
 ## Servers
 
---8<-- "includes/downloaders/usp.md"
+<!--@include: ../../../includes/downloaders/usp.md-->
 
 [SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/servers){:target="\_blank" rel="noopener noreferrer"}
 
@@ -105,7 +105,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 Add these extensions (*primarily for Windows users as they could potentially be abused or exploited*) to your `Unwanted extensions` list.
 
-{! include-markdown "../../../includes/downloaders/unwanted-extensions.md" !}
+<!--@include: ../../../includes/downloaders/unwanted-extensions.md-->
 
 Afterwards you need to make the following adjustments:
 
@@ -206,4 +206,4 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 <sub>Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

@@ -64,11 +64,11 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 ---
 
-{! include-markdown "../../includes/merge-quality/radarr-current-logic.md" !}
+<!--@include: ../../includes/merge-quality/radarr-current-logic.md-->
 
 ---
 
-{! include-markdown "../../includes/starr/which-quality-profile-should-you-choose.md" !}
+<!--@include: ../../includes/starr/which-quality-profile-should-you-choose.md-->
 
 ---
 
@@ -82,23 +82,23 @@ If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
 - _Size: 6-15 GB for a Bluray-1080p depending on the running time._
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/radarr-suggest-attention.md-->
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/radarr-cf-hd-bluray-web-scoring.md" !}
+<!--@include: ../../includes/cf/radarr-cf-hd-bluray-web-scoring.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
+<!--@include: ../../includes/cf/radarr-unwanted.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe-noremux.md-->
 
 Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
 
@@ -110,7 +110,7 @@ Use the following main settings in your profile.
 
 The reason why we didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
 ??? abstract "Workflow Logic - [Click to show/hide]"
 
@@ -130,29 +130,29 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 - _Size: 20-60 GB for a Bluray-2160p depending on the running time._
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/radarr-suggest-attention.md-->
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/radarr-hdr-formats.md-->
 
-{! include-markdown "../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md" !}
+<!--@include: ../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
+<!--@include: ../../includes/cf/radarr-unwanted-uhd.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-uhd-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe-noremux.md-->
 
 Use the following main settings in your profile.
 
@@ -160,7 +160,7 @@ Use the following main settings in your profile.
 
 !!! warning "Make sure you don't check the BR-DISK."
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
 ??? abstract "Workflow Logic - [Click to show/hide]"
 
@@ -182,25 +182,25 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 - _Size: 20-40 GB for a Remux-1080p depending on the running time._
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/radarr-suggest-attention.md-->
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
+<!--@include: ../../includes/cf/radarr-cf-remux-web-scoring.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
+<!--@include: ../../includes/cf/radarr-unwanted.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe.md-->
 
 Use the following main settings in your profile.
 
@@ -210,7 +210,7 @@ Use the following main settings in your profile.
 
 The reason why we didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
 ??? abstract "Workflow Logic - [Click to show/hide]"
 
@@ -230,29 +230,29 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 - _Size: 40-100 GB for a Remux-2160p depending on the running time._
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/radarr-suggest-attention.md-->
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/radarr-hdr-formats.md-->
 
-{! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
+<!--@include: ../../includes/cf/radarr-cf-remux-web-scoring.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
+<!--@include: ../../includes/cf/radarr-unwanted-uhd.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-uhd-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe.md-->
 
 Use the following main settings in your profile.
 
@@ -260,7 +260,7 @@ Use the following main settings in your profile.
 
 !!! warning "Make sure you don't check the BR-DISK."
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
 ??? abstract "Workflow Logic - [Click to show/hide]"
 
@@ -282,7 +282,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 - You have a hardware media player device and an audio setup that supports **ALL** HD Audio (TrueHD, DTS-X, DTS-HD, etc).
 
-    {! include-markdown "../../includes/cf/audio-limitations-atv.md" !}
+    <!--@include: ../../includes/cf/audio-limitations-atv.md-->
 
 - You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.
 - You should add **ALL** the Audio formats - don't leave any of them out!
@@ -290,7 +290,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 _The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we prefer having the object metadata (Atmos) over lossless audio._
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
 ---
 
@@ -298,7 +298,7 @@ _The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we 
 
 - You have a 4K TV and a hardware media player device (such as Roku, Apple TV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/radarr-hdr-formats.md-->
 
 ---
 
@@ -318,7 +318,7 @@ _The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we 
 
 ### How Does Custom Format Scoring Work?
 
-{! include-markdown "../../includes/shared/custom-format-basic-scoring-information.md" !}
+<!--@include: ../../includes/shared/custom-format-basic-scoring-information.md-->
 
 ### Custom Formats to avoid certain releases
 
@@ -331,7 +331,7 @@ _The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we 
 
 This is a must-have for every Quality Profile you use in our opinion. All these Custom Formats make sure you don't get low-quality releases.
 
-{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
+<!--@include: ../../includes/cf/radarr-unwanted.md-->
 
 ### Custom Formats with a score of 0
 
@@ -369,14 +369,14 @@ This is a must-have for every Quality Profile you use in our opinion. All these 
 
 ### Why am I getting purple or green colors
 
-{! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
+<!--@include: ../../includes/cf/dv-info-green-purple.md-->
 
 ### Dolby Vision Profiles
 
-{! include-markdown "../../includes/cf/dv-info-profiles.md" !}
+<!--@include: ../../includes/cf/dv-info-profiles.md-->
 
 ## Thanks
 
 Special thanks to everyone who helped with the testing and creation of these Custom Formats.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

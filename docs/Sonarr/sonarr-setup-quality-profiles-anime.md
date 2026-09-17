@@ -109,9 +109,9 @@ We then need to select and organize the qualities as seen below.
 
 ### Default Scoring
 
-{! include-markdown "../../includes/cf/sonarr-anime.md" !}
+<!--@include: ../../includes/cf/sonarr-anime.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services-anime.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services-anime.md-->
 
 The scoring that has been set is the recommended scoring, however, some of the CFs are optional depending on what you prefer.
 `Anime Dual Audio`, `Uncensored` and `10bit` can be given positive scores if you want to prefer content with these attributes.
@@ -218,4 +218,4 @@ Most of my information and knowledge came from:
 
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and sharing general knowledge.)
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

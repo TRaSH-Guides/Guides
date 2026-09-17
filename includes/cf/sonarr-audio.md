@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 ??? abstract "Audio - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf/audio-info.md" !}
+    <!--@include: ../includes/cf/audio-info.md-->
 
     ![!Audio Flowchart](/Radarr/images/flowchart-audio.png)
 

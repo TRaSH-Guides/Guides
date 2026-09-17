@@ -85,4 +85,4 @@ Not available yet. Once someone is willing to write and support a Jellyfin guide
 
 Not available yet. Once someone is willing to write and support an Emby guide, it will be linked here.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

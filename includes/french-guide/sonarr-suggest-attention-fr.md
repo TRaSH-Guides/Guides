@@ -6,5 +6,5 @@ Il est d’abord suggèré de consulter les guides suivants (en anglais seulemen
 
 Pour ce profil de qualité, les formats personnalisés ci-dessous seront utilisés, avec les scores indiqués dans les tableaux.
 
-{! include-markdown "../../includes/french-guide/starr-score-attention-fr.md" !}
+<!--@include: ../includes/french-guide/starr-score-attention-fr.md-->
 <!-- markdownlint-enable MD041-->

@@ -75,23 +75,23 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 ## Logique de scoring (anglais seulement)
 
---8<-- "includes/cf/score-attention.md"
+<!--@include: ../../includes/cf/score-attention.md-->
 
 ---
 
 ## Profils de Qualité
 
-{! include-markdown "../../includes/french-guide/french-guide-language-profiles-fr.md" !}
+<!--@include: ../../includes/french-guide/french-guide-language-profiles-fr.md-->
 
 ---
 
 ### Versions Audio Françaises
 
-{! include-markdown "../../includes/french-guide/french-guide-french-audio-information-fr.md" !}
+<!--@include: ../../includes/french-guide/french-guide-french-audio-information-fr.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-audio-version-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-audio-version-fr.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-audio-description-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-audio-description-fr.md-->
 
 ---
 
@@ -109,25 +109,25 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 !!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
-{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
+<!--@include: ../../includes/french-guide/starr-move-quality-to-top-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/radarr-suggest-attention.md-->
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-unwanted-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe-noremux.md-->
 
 Note: Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes ou des encodages UHD.
 
@@ -135,7 +135,7 @@ Note: Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le p
 
 ### HD Remux (1080p)
 
-{! include-markdown "../../includes/french-guide/radarr-french-advanced-audio-information-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-advanced-audio-information-fr.md-->
 
 !!! tip "Paramètres de base"
     Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
@@ -149,33 +149,33 @@ Note: Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le p
 
 !!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
-{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
+<!--@include: ../../includes/french-guide/starr-move-quality-to-top-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/radarr-suggest-attention.md-->
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-unwanted-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe.md-->
 
 ---
 
 ### UHD Bluray + WEB (2160p)
 
-{! include-markdown "../../includes/french-guide/radarr-french-advanced-audio-information-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-advanced-audio-information-fr.md-->
 
 !!! tip "Paramètres de base"
     Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
@@ -188,39 +188,39 @@ Note: Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le p
 
 !!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
-{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
+<!--@include: ../../includes/french-guide/starr-move-quality-to-top-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/radarr-suggest-attention.md-->
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-fr.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-hdr-format-information-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-hdr-format-information-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-unwanted-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
-{! include-markdown "../../includes/french-guide/french-guide-optional-format-information-fr.md" !}
+<!--@include: ../../includes/french-guide/french-guide-optional-format-information-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-uhd-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe-noremux.md-->
 
 ---
 
 ### UHD Remux (2160p)
 
-{! include-markdown "../../includes/french-guide/radarr-french-advanced-audio-information-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-advanced-audio-information-fr.md-->
 
 !!! tip "Paramètres de base"
     Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
@@ -233,33 +233,33 @@ Note: Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le p
 
 !!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
-{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
+<!--@include: ../../includes/french-guide/starr-move-quality-to-top-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/radarr-suggest-attention.md-->
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-hdr-format-information-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-hdr-format-information-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-unwanted-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
-{! include-markdown "../../includes/french-guide/french-guide-optional-format-information-fr.md" !}
+<!--@include: ../../includes/french-guide/french-guide-optional-format-information-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+<!--@include: ../../includes/cf/radarr-misc-uhd-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe.md-->
 
 ---
 
@@ -267,13 +267,13 @@ Note: Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le p
 
 Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + français).
 
-{! include-markdown "../../includes/french-guide/radarr-french-anime-info-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-anime-info-fr.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-anime-scoring-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-cf-french-anime-scoring-fr.md-->
 
-{! include-markdown "../../includes/cf/radarr-anime-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-anime-misc-required.md-->
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+<!--@include: ../../includes/french-guide/radarr-french-unwanted-fr.md-->
 
 ---
 
@@ -299,4 +299,4 @@ Une FAQ répondant à la plupart des questions que vous pourriez vous poser est 
 - Une mention spéciale pour Piou et Wikoul qui sont potentiellement tous les deux maintenant dans des asiles en raison de la quantité de tests effectués.
 - [TRaSH](https://trash-guides.info/), pour m'avoir accordé un petit espace sur son guide, ses connaissances, et sa gentillesse.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

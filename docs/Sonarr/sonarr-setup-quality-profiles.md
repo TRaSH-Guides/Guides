@@ -63,11 +63,11 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 ---
 
-{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
+<!--@include: ../../includes/merge-quality/sonarr-current-logic.md-->
 
 ---
 
-{! include-markdown "../../includes/starr/which-quality-profile-should-you-choose.md" !}
+<!--@include: ../../includes/starr/which-quality-profile-should-you-choose.md-->
 
 ---
 
@@ -79,21 +79,21 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 If you prefer 720p/1080p WEBDL (WEB-1080p)
 
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/sonarr-suggest-attention.md-->
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
+<!--@include: ../../includes/cf/sonarr-unwanted.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services.md-->
 
-{! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
+<!--@include: ../../includes/cf/sonarr-hq-source-group.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-optional.md-->
 
 Note: The `Audio Formats` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
@@ -111,7 +111,7 @@ Use the following main settings in your profile.
 
 ---
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
 ??? abstract "Workflow Logic - [Click to show/hide]"
 
@@ -128,25 +128,25 @@ Use the following main settings in your profile.
 
 If you prefer 2160p WEBDL (WEB-2160p)
 
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/sonarr-suggest-attention.md-->
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/sonarr-hdr-formats.md-->
 
-{! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
+<!--@include: ../../includes/cf/sonarr-unwanted.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-uhd-streaming-services.md-->
 
-{! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
+<!--@include: ../../includes/cf/sonarr-hq-source-group.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-uhd-optional.md-->
 
 Note: The `Audio Formats` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
@@ -164,7 +164,7 @@ Use the following main settings in your profile.
 
 ---
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
 ??? abstract "Workflow Logic - [Click to show/hide]"
 
@@ -185,7 +185,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 - You have a 4K TV and a hardware media player device (such as Roku, Apple TV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/sonarr-hdr-formats.md-->
 
 ---
 
@@ -244,7 +244,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ### How Does Custom Format Scoring Work?
 
-{! include-markdown "../../includes/shared/custom-format-basic-scoring-information.md" !}
+<!--@include: ../../includes/shared/custom-format-basic-scoring-information.md-->
 
 ### Custom Formats to avoid certain releases
 
@@ -257,7 +257,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 This is a must-have for every Quality Profile you use in our opinion. All these Custom Formats make sure you don't get low-quality releases.
 
-{! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
+<!--@include: ../../includes/cf/sonarr-unwanted.md-->
 
 ### Custom Formats with a score of 0
 
@@ -295,14 +295,14 @@ This is a must-have for every Quality Profile you use in our opinion. All these 
 
 ### Why am I getting purple or green colors
 
-{! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
+<!--@include: ../../includes/cf/dv-info-green-purple.md-->
 
 ### Dolby Vision Profiles
 
-{! include-markdown "../../includes/cf/dv-info-profiles.md" !}
+<!--@include: ../../includes/cf/dv-info-profiles.md-->
 
 ## Thanks
 
 Special thanks to everyone who helped with the testing and creation of these Custom Formats.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

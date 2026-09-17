@@ -19,10 +19,10 @@
     - **{{ sonarr['cf']['lq-release-title']['name'] }}:** A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.
     - **{{ sonarr['cf']['x265-hd']['name'] }}:** This blocks 720/1080p (HD) releases that are encoded in x265.
 
-        {! include-markdown "../../includes/cf-descriptions/x265-hd-sonarr-warning.md" !}
+        <!--@include: ../includes/cf-descriptions/x265-hd-sonarr-warning.md-->
 
     - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extras
     - **{{ sonarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
 
-        {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+        <!--@include: ../includes/cf-descriptions/av1.md-->
 <!-- markdownlint-enable MD041-->

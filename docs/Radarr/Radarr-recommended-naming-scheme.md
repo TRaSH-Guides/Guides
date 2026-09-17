@@ -1,6 +1,6 @@
 # Recommended Naming Scheme
 
---8<-- "includes/starr/renaming-description-faq.md"
+<!--@include: ../../includes/starr/renaming-description-faq.md-->
 
 ---
 
@@ -27,7 +27,7 @@ First, you need to set up Radarr to show all the naming options:
 
 ## Standard Movie Format
 
---8<-- "includes/radarr/imdb-vs-tmdb.md"
+<!--@include: ../../includes/radarr/imdb-vs-tmdb.md-->
 
 === "Standard"
 
@@ -43,7 +43,7 @@ First, you need to set up Radarr to show all the naming options:
 
     === "Plex (IMDb)"
 
-        --8<-- "includes/radarr/tmdb-imdb-info.md"
+        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
         ```bash
         {{ radarr['naming']['radarr-naming']['file']['plex-imdb'] }}
@@ -61,7 +61,7 @@ First, you need to set up Radarr to show all the naming options:
 
     === "Plex Anime (IMDb)"
 
-        --8<-- "includes/radarr/tmdb-imdb-info.md"
+        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
         ```bash
         {{ radarr['naming']['radarr-naming']['file']['plex-anime-imdb'] }}
@@ -81,7 +81,7 @@ First, you need to set up Radarr to show all the naming options:
 
     === "Plex Edition Alternative (IMDb)"
 
-        --8<-- "includes/radarr/tmdb-imdb-info.md"
+        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
         ```bash
         {{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-imdb'] }}
@@ -103,7 +103,7 @@ First, you need to set up Radarr to show all the naming options:
 
     === "Emby (IMDb)"
 
-        --8<-- "includes/radarr/tmdb-imdb-info.md"
+        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
         ```bash
         {{ radarr['naming']['radarr-naming']['file']['emby-imdb'] }}
@@ -121,7 +121,7 @@ First, you need to set up Radarr to show all the naming options:
 
     === "Emby Anime (IMDb)"
 
-        --8<-- "includes/radarr/tmdb-imdb-info.md"
+        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
         ```bash
         {{ radarr['naming']['radarr-naming']['file']['emby-anime-imdb'] }}
@@ -211,7 +211,7 @@ Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's
 
 ## Movie Folder Format
 
---8<-- "includes/radarr/imdb-vs-tmdb.md"
+<!--@include: ../../includes/radarr/imdb-vs-tmdb.md-->
 
 !!! warning "Please note that folder names are created in the database when the movie is added to Radarr, and the ID may be missing or wrong at that time. This could result in your folder having a blank ID. :bangbang:<br><br>If you add the ID to the filename instead, the IMDb/TMDb ID will be pulled fresh for any download or upgrade."
 
@@ -227,11 +227,11 @@ Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's
 
 === "Optional Plex"
 
-    --8<-- "includes/radarr/radarr-folder-name-after-year-info.md"
+    <!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
 
     === "Plex Folder IMDb"
 
-        --8<-- "includes/radarr/tmdb-imdb-info.md"
+        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
         ```bash
         {{ radarr['naming']['radarr-naming']['folder']['plex-imdb'] }}
@@ -249,11 +249,11 @@ Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's
 
 === "Optional Emby"
 
-    --8<-- "includes/radarr/radarr-folder-name-after-year-info.md"
+    <!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
 
     === "Emby Folder IMDb"
 
-        --8<-- "includes/radarr/tmdb-imdb-info.md"
+        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
         ```bash
         {{ radarr['naming']['radarr-naming']['folder']['emby-imdb'] }}
@@ -271,11 +271,11 @@ Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's
 
 === "Optional Jellyfin"
 
-    --8<-- "includes/radarr/radarr-folder-name-after-year-info.md"
+    <!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
 
     === "Jellyfin Folder IMDb"
 
-        --8<-- "includes/radarr/tmdb-imdb-info.md"
+        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
         ```bash
         {{ radarr['naming']['radarr-naming']['folder']['jellyfin-imdb'] }}
@@ -291,4 +291,4 @@ Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's
 
         <sub><sup>**Example**: `The Movie Title (2010) [tmdbid-1520211]`</sup></sub>
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

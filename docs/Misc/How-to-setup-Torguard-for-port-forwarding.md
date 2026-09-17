@@ -111,4 +111,4 @@ Follow the torrent client's guides on how to set up port forwarding.
 - [qBittorrent](/Downloaders/qBittorrent/Port-forwarding/){:target="\_blank" rel="noopener noreferrer"}
 - [Deluge](/Downloaders/Deluge/Port-Forwarding/){:target="\_blank" rel="noopener noreferrer"}
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

@@ -1,6 +1,6 @@
 # Recommended naming scheme
 
---8<-- "includes/starr/renaming-description-faq.md"
+<!--@include: ../../includes/starr/renaming-description-faq.md-->
 
 ---
 
@@ -61,7 +61,7 @@ First, you need to set up Sonarr to show all the naming options:
 
 ## Series Folder Format
 
---8<-- "includes/sonarr/imdb-vs-tvdb.md"
+<!--@include: ../../includes/sonarr/imdb-vs-tvdb.md-->
 
 === "Standard Folder"
 
@@ -77,7 +77,7 @@ First, you need to set up Sonarr to show all the naming options:
 
     === "Plex Folder IMDb"
 
-        --8<-- "includes/sonarr/tvdb-imdb-info.md"
+        <!--@include: ../../includes/sonarr/tvdb-imdb-info.md-->
 
         ```bash
         {{ sonarr['naming']['sonarr-naming']['series']['plex-imdb'] }}
@@ -99,7 +99,7 @@ First, you need to set up Sonarr to show all the naming options:
 
     === "Emby Folder IMDb"
 
-        --8<-- "includes/sonarr/tvdb-imdb-info.md"
+        <!--@include: ../../includes/sonarr/tvdb-imdb-info.md-->
 
         ```bash
         {{ sonarr['naming']['sonarr-naming']['series']['emby-imdb'] }}
@@ -187,4 +187,4 @@ Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's
 
 <sub><sup>**Multi Episode**: `The.Series.Title's!.2010.S01E01-E03.Episode.ATVP.WEBDL-2160p.EAC3.Atmos.5.1.DV.HDR10Plus.h265-RlsGrp`</sup></sub>
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

@@ -72,4 +72,4 @@ In Prowlarr, edit the indexer of your choice, and under `Query Limit` (_API hits
 
 !!! warning "We're adding this to prevent any abuse/hammering to the indexer<br>Ignoring this can sometimes result in a (potentially lifetime) ban."
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

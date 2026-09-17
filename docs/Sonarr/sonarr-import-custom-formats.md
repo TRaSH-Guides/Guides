@@ -70,4 +70,4 @@ How this is done is explained [HERE](/Sonarr/sonarr-setup-custom-formats/#basics
 
 !!! info "You can also use a [Guide sync tool](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"} to sync the Custom Formats or even the complete quality profile(s)."
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

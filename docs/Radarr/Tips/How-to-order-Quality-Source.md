@@ -18,9 +18,9 @@ To accomplish this, you must change the order of the Quality Sources in your Qua
 
 Here, you will see the current logic to understand how the possible downloads are compared.
 
-{! include-markdown "../../../includes/merge-quality/radarr-current-logic.md" !}
+<!--@include: ../../../includes/merge-quality/radarr-current-logic.md-->
 
-{! include-markdown "../../../includes/merge-quality/sonarr-current-logic.md" !}
+<!--@include: ../../../includes/merge-quality/sonarr-current-logic.md-->
 
 ## Change the Order of the Quality Sources
 
@@ -85,4 +85,4 @@ Qualities at the top of the list will appear first in manual searches, so it's r
 [Source: Wiki Servarr - Radarr](https://wiki.servarr.com/radarr/settings#quality-profiles){:target="\_blank" rel="noopener noreferrer"}.
 [Source: Wiki Servarr - Sonarr](https://wiki.servarr.com/sonarr/settings#quality-profiles){:target="\_blank" rel="noopener noreferrer"}.
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

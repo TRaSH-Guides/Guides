@@ -57,4 +57,4 @@ Click `Test` and `Save`.
 
 Now the indexer should be using the VPN of your torrent client.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

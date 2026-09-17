@@ -110,4 +110,4 @@ See the forum thread for details below.
 
 [ltConfig](https://forum.deluge-torrent.org/viewtopic.php?p=235653#p235653){:target="\_blank" rel="noopener noreferrer"}
 
-{! include-markdown "../../../../includes/support.md" !}
+<!--@include: ../../../../includes/support.md-->

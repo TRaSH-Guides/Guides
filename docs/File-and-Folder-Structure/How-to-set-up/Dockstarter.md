@@ -171,4 +171,4 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-rtorrent-settings-autotools](images/ds-rtorrent-settings-autotools.png)
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

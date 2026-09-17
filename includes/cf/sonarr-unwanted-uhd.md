@@ -21,5 +21,5 @@
     - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extras
     - **{{ sonarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
 
-        {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+        <!--@include: ../includes/cf-descriptions/av1.md-->
 <!-- markdownlint-enable MD041-->

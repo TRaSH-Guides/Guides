@@ -85,4 +85,4 @@ Then Continue to [How to set up](/File-and-Folder-Structure/How-to-set-up/) for 
 
         Don't use `UMASK 000` (folders `777`, files `666`) — it makes everything readable and writable by **everyone**, which is poor Linux hygiene.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

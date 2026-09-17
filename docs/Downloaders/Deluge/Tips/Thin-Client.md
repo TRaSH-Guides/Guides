@@ -54,4 +54,4 @@ After switching to `Thin Client` you will need to connect to your daemon. Go to 
 
     BE AWARE: These passwords are stored in PLAIN-TEXT in your `auth` file.
 
-{! include-markdown "../../../../includes/support.md" !}
+<!--@include: ../../../../includes/support.md-->

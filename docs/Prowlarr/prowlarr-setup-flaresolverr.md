@@ -53,4 +53,4 @@ Click `Test` and `Save`.
 
 Now the indexer should be using FlareSolverr.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

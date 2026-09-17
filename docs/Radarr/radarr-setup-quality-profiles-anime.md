@@ -49,7 +49,7 @@ We then need to select and organise the qualities as seen below.
 
     We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"} for how to import them.
 
-{! include-markdown "../../includes/cf/radarr-anime.md" !}
+<!--@include: ../../includes/cf/radarr-anime.md-->
 
 ### Default Scoring
 
@@ -150,4 +150,4 @@ Most of my information and knowledge came from:
 
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and sharing general knowledge.)
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

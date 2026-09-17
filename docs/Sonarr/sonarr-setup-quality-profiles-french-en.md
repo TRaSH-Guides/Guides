@@ -74,23 +74,23 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 ## Score logic
 
-{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
+<!--@include: ../../includes/merge-quality/sonarr-current-logic.md-->
 
 ---
 
 ## Quality Profiles
 
-{! include-markdown "../../includes/french-guide/french-guide-language-profiles-en.md" !}
+<!--@include: ../../includes/french-guide/french-guide-language-profiles-en.md-->
 
 ---
 
 ### French Audio Versions
 
-{! include-markdown "../../includes/french-guide/french-guide-french-audio-information-en.md" !}
+<!--@include: ../../includes/french-guide/french-guide-french-audio-information-en.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-audio-version-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-audio-version-en.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-audio-description-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-audio-description-en.md-->
 
 ---
 
@@ -103,25 +103,25 @@ It is quite important that you follow and understand what is envisioned by Trash
     ??? success "Profile Screenshot - [Click to show/hide]"
         ![HD Bluray + WEB Profile](images/french-sonarr-qp-bluray-webdl-hd.png)
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/sonarr-suggest-attention.md-->
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-cf-french-web-scoring-en.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-unwanted-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-optional.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-streaming-services-en.md-->
 
 Note: The `Audio Formats` Custom Formats aren't used in the profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
@@ -136,29 +136,29 @@ Note: The `Audio Formats` Custom Formats aren't used in the profile, as WEB-DL d
     ??? success "Profile Screenshot - [Click to show/hide]"
         ![UHD Bluray + WEB Profile](images/french-sonarr-qp-bluray-webdl-uhd.png)
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
+<!--@include: ../../includes/cf/sonarr-suggest-attention.md-->
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-cf-french-web-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+<!--@include: ../../includes/cf/sonarr-hdr-formats.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-unwanted-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-uhd-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-uhd-optional.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-streaming-services-en.md-->
 
 Note: The `Audio Formats` Custom Formats aren't used in the profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
@@ -168,15 +168,15 @@ Note: The `Audio Formats` Custom Formats aren't used in the profile, as WEB-DL d
 
 If you are looking to grab Anime with either French subs or MULTi audio (original + French).
 
-{! include-markdown "../../includes/french-guide/sonarr-french-anime-info-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-anime-info-en.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-cf-french-anime-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/sonarr-anime-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-anime-misc-required.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-unwanted-en.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-en.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-streaming-services-anime-en.md-->
 
 ---
 
@@ -202,4 +202,4 @@ A FAQ regarding most of the questions you could have is provided by TRaSH: [FAQ 
 - A special thanks to Piou and Wikoul who are potentially both now in asylums due to the amount of testing.
 - [TRaSH](https://trash-guides.info/), for granting me a small space on his guide for this, his knowledge, and his friendliness.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

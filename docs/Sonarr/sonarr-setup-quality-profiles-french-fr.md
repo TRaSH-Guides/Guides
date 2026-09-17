@@ -75,23 +75,23 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 ## Logique de scoring (anglais seulement)
 
---8<-- "includes/cf/score-attention.md"
+<!--@include: ../../includes/cf/score-attention.md-->
 
 ---
 
 ## Profils de Qualité
 
-{! include-markdown "../../includes/french-guide/french-guide-language-profiles-fr.md" !}
+<!--@include: ../../includes/french-guide/french-guide-language-profiles-fr.md-->
 
 ---
 
 ### Versions Audio Françaises
 
-{! include-markdown "../../includes/french-guide/french-guide-french-audio-information-fr.md" !}
+<!--@include: ../../includes/french-guide/french-guide-french-audio-information-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-audio-version-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-audio-version-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-audio-description-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-audio-description-fr.md-->
 
 ---
 
@@ -104,27 +104,27 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
     ??? success "Capture d'écran du Profile - [Cliquez pour afficher/masquer]"
         ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-hd.png)
 
-{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
+<!--@include: ../../includes/french-guide/starr-move-quality-to-top-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-suggest-attention-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-suggest-attention-fr.md-->
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-unwanted-fr.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services.md-->
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
-{! include-markdown "../../includes/french-guide/french-guide-optional-format-information-fr.md" !}
+<!--@include: ../../includes/french-guide/french-guide-optional-format-information-fr.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-optional.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-streaming-services-fr.md-->
 
 Note : Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.
 
@@ -139,31 +139,31 @@ Note : Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le 
     ??? success "Capture d'écran du Profile - [Cliquez pour afficher/masquer]"
         ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-uhd.png)
 
-{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
+<!--@include: ../../includes/french-guide/starr-move-quality-to-top-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-suggest-attention-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-suggest-attention-fr.md-->
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-hdr-format-information-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-hdr-format-information-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-unwanted-fr.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
+<!--@include: ../../includes/cf/sonarr-uhd-streaming-services.md-->
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
-{! include-markdown "../../includes/french-guide/french-guide-optional-format-information-fr.md" !}
+<!--@include: ../../includes/french-guide/french-guide-optional-format-information-fr.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+<!--@include: ../../includes/cf/sonarr-misc-uhd-optional.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-streaming-services-fr.md-->
 
 Note : Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.
 
@@ -173,13 +173,13 @@ Note : Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le 
 
 Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + français).
 
-{! include-markdown "../../includes/french-guide/sonarr-french-anime-info-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-anime-info-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-cf-french-anime-scoring-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-unwanted-fr.md-->
 
-{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-fr.md" !}
+<!--@include: ../../includes/french-guide/sonarr-french-streaming-services-anime-fr.md-->
 
 ---
 
@@ -205,4 +205,4 @@ Une FAQ répondant à la plupart des questions que vous pourriez vous poser est 
 - Une mention spéciale pour Piou et Wikoul qui sont potentiellement tous les deux maintenant dans des asiles en raison de la quantité de tests effectués.
 - [TRaSH](https://trash-guides.info/), pour m'avoir accordé un petit espace sur son guide, ses connaissances, et sa gentillesse.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

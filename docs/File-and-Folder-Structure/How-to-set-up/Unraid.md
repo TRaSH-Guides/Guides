@@ -65,7 +65,7 @@ Go to your dashboard and select `Shares` on the navigation bar, then choose `Add
 
 On the host (unRAID) you will need to add `/mnt/user` before it. **So `/mnt/user/data`**
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-full.md-->
 
 _I'm using lower-case on all folders on purpose, being Linux is case-sensitive._
 
@@ -109,7 +109,7 @@ When you need to fix your permissions, for example, after you have moved/copied 
 
 ### Breakdown of the Folder Structure
 
-{! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/bad-path-suggestion.md-->
 
 ## Setting up the containers
 
@@ -174,7 +174,7 @@ qBittorrent, Deluge, ruTorrent
 
     The reason why we use `/data/torrents/` for the torrent client is because it only needs access to the torrent data. In the torrent software settings, you’ll need to configure your categories/labels to utilize the right path for specific content. You can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-torrents.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-torrents.md-->
 
 ---
 
@@ -192,7 +192,7 @@ NZBGet or SABnzbd
 
     The reason why we use `/data/usenet/` for the Usenet client is that it only needs access to the Usenet data. In the Usenet software settings, you’ll need to configure your paths to sort content into sub-folders like `/data/usenet/{tv|movies|music}`.
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-usenet.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-usenet.md-->
 
 ---
 
@@ -210,7 +210,7 @@ Sonarr, Radarr and Lidarr
 
     Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. hardlinks will work properly and any moves will be atomic, rather than copying and deleting.
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-full.md-->
 
 ---
 
@@ -228,7 +228,7 @@ Plex, Emby, JellyFin and Bazarr
 
     Plex, Emby, JellyFin, and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV, and/or Music).
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-media.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-media.md-->
 
 ---
 
@@ -254,4 +254,4 @@ Plex, Emby, JellyFin and Bazarr
 
     Check out other videos from IBRACORP [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

@@ -125,4 +125,4 @@
 
 Big Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for his [Docker Guide](https://wiki.servarr.com/docker-guide){:target="\_blank" rel="noopener noreferrer"} that we used as a basis for this guide.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

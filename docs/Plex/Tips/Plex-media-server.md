@@ -691,4 +691,4 @@ For the information in this guide, we made use of the following sources.
 - Extra Information gathered from a Plex employee
 - Own experience
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

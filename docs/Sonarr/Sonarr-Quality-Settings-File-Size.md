@@ -1,12 +1,12 @@
 # Quality Settings (File Size)
 
---8<-- "includes/starr/quality-size-description-faq.md"
+<!--@include: ../../includes/starr/quality-size-description-faq.md-->
 
 ---
 
 ## Sonarr Quality Definitions
 
---8<-- "includes/starr/quality-size-preferred-info.md"
+<!--@include: ../../includes/starr/quality-size-preferred-info.md-->
 
 !!! info "{{ sonarr['quality-size']['series']['qualities'][13]['max'] }} is the displayed value for Unlimited"
 
@@ -54,4 +54,4 @@
     | {{ sonarr['quality-size']['anime']['qualities'][18]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['preferred'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['max'] }} |
     | {{ sonarr['quality-size']['anime']['qualities'][19]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][19]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][19]['preferred'] }} | {{ sonarr['quality-size']['anime']['qualities'][19]['max'] }} |
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

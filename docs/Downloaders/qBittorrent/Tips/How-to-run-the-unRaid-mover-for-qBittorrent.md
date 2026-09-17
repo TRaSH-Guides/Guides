@@ -91,14 +91,14 @@ For this option, you only need to download three files and place them in `/mnt/u
 
     ??? example "mover-tuning-start.sh - [Click to show/hide]"
         ```bash
-        --8<-- "includes/downloaders/mover-tuning-start.sh"
+        <!--@include: ../../../../includes/downloaders/mover-tuning-start.sh-->
         ```
 
 - **[mover-tuning-end.sh](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning-end.sh)** - The script that runs after the mover finishes.
 
     ??? example "mover-tuning-end.sh - [Click to show/hide]"
         ```bash
-        --8<-- "includes/downloaders/mover-tuning-end.sh"
+        <!--@include: ../../../../includes/downloaders/mover-tuning-end.sh-->
         ```
 
 - **[mover-tuning.cfg](https://raw.githubusercontent.com/TRaSH-Guides/Guides/refs/heads/master/includes/downloaders/mover-tuning.cfg)** - This config file holds all the user variables used by the other scripts.
@@ -107,7 +107,7 @@ For this option, you only need to download three files and place them in `/mnt/u
 
     ??? example "mover-tuning.cfg - [Click to show/hide]"
         ```bash
-        --8<-- "includes/downloaders/mover-tuning.cfg"
+        <!--@include: ../../../../includes/downloaders/mover-tuning.cfg-->
         ```
 
 ### Permissions
@@ -483,4 +483,4 @@ You can create your schedule using [crontab guru](https://crontab.guru/).
 
 ---
 
-{! include-markdown "../../../../includes/support.md" !}
+<!--@include: ../../../../includes/support.md-->

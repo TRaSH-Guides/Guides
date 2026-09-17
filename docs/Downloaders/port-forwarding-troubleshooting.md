@@ -164,4 +164,4 @@ recommends selecting *"the name of the VPN's adapter under the Network Interface
     changing your port is **not** a reliable fix for throttling, even though using a
     non-default port is reasonable practice.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

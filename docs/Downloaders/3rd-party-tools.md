@@ -103,4 +103,4 @@ Run cross-seed 24/7 to:
 
 ---
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->
