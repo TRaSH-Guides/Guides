@@ -89,6 +89,49 @@ work:
 - [Server Settings: Bandwidth and Transcoding Limits](https://support.plex.tv/articles/227715247-server-settings-bandwidth-and-transcoding-limits/){:target="_blank" rel="noopener noreferrer"}
 - [Troubleshooting Remote Access](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="_blank" rel="noopener noreferrer"}
 
+## Speed tests
+
+A speed test tells you what a connection can actually do right now, separate from anything
+Tautulli or Tracearr report about the stream itself. Where you run it matters:
+
+- Run it **on the Plex server's connection** to check upload. Upload is the number that limits a
+    remote (WAN) stream, since the server is uploading the stream out to the remote client.
+- Run it **on the client's connection** to check download, since that's what limits how fast the
+    client can pull the stream in.
+
+- [Speedtest by Ookla](https://www.speedtest.net/){:target="_blank" rel="noopener noreferrer"} -
+    the most common test; reports upload, download, latency, and jitter against a nearby server.
+- [Cloudflare Speed Test](https://speed.cloudflare.com/){:target="_blank" rel="noopener noreferrer"} -
+    runs against Cloudflare's network. Useful as a second data point if Ookla's result looks off.
+- [fast.com](https://fast.com/){:target="_blank" rel="noopener noreferrer"} (Netflix) -
+    download-focused, a quick sanity check on the client side.
+- [Troubleshooting Remote Access](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="_blank" rel="noopener noreferrer"}
+    covers what Plex itself checks on the server side for remote access and bandwidth.
+
+### Speed test commands
+
+```bash
+# Ookla CLI (official) - run on the server for upload, on the client for download
+speedtest
+
+# Python speedtest-cli (community, useful where the Ookla CLI isn't packaged)
+pip install speedtest-cli
+speedtest-cli
+
+# LAN throughput between two hosts, isolates a weak Wi-Fi/LAN link from an ISP problem
+# on the server (or another wired LAN host):
+iperf3 -s
+# on the client, replace with the server's LAN IP:
+iperf3 -c 192.168.1.10
+
+# quick one-off throughput check against a public test file
+curl -o /dev/null -w 'Speed: %{speed_download} bytes/sec\n' https://proof.ovh.net/files/100Mb.dat
+```
+
+If `iperf3` between the server and client is fast on the LAN but a Plex stream still buffers, the
+cause is the ISP connection or Plex's own bandwidth limit, not the LAN. If `iperf3` itself is
+slow, the LAN or Wi-Fi link is the problem, before the ISP even enters the picture.
+
 ## FAQ: Common causes and fixes
 
 | Symptom | Likely cause | How to confirm (Tautulli/Tracearr) | Fix |
@@ -101,6 +144,30 @@ work:
 | Remote streams always look worse than expected | Remote/mobile quality cap set too low in the app or account settings | Tautulli/Tracearr quality profile for the session shows a lower resolution/bitrate than the source | Raise the app's remote streaming quality setting; see [How Do Streaming Quality Selections Work?](https://support.plex.tv/articles/203810306-how-do-streaming-quality-selections-work/){:target="_blank" rel="noopener noreferrer"} |
 | Buffering happens at specific times of day, on a specific ISP | ISP throttling or local congestion (peak-hour contention, streaming/BitTorrent traffic shaping) | Symptom correlates with time of day rather than any Tautulli/Tracearr stream data; direct play with adequate bandwidth still buffers | Test with a wired connection at the same time and run a speed test during the issue. Degraded results point at a connectivity problem but don't by themselves prove throttling; bring the data to the ISP if the pattern persists |
 | Remote streams are slow, but home streams are fast | Indirect (relayed) connection instead of a direct one | Tautulli/Tracearr shows the session as relayed rather than a secure/direct WAN connection | Try to get remote access connecting directly (port forwarding, correct public IP/port). If the ISP uses CGNAT or otherwise blocks inbound connections, a relay may be unavoidable regardless of port forwarding; see [Troubleshooting Remote Access](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="_blank" rel="noopener noreferrer"} |
+
+## Jellyfin and Kodi
+
+This page is written for Plex, but the same direct-play-vs-transcode diagnostic applies to
+[Jellyfin](https://jellyfin.org/docs/){:target="_blank" rel="noopener noreferrer"}. Kodi needs a
+different approach since it's a client, not a server.
+
+**Jellyfin** - the Dashboard's
+[active devices/playback view](https://jellyfin.org/docs/general/server/devices/){:target="_blank" rel="noopener noreferrer"}
+shows the same play method (Direct Play, Direct Stream, or Transcode) as Tautulli, plus the reason
+a stream transcoded. Read it the same way as the Tautulli section above, and check the
+[Jellyfin FAQ](https://jellyfin.org/docs/general/faq/){:target="_blank" rel="noopener noreferrer"}
+for common causes. Tracearr already monitors Jellyfin (see the note near the top of this page), so
+a fleet running both Plex and Jellyfin doesn't need a separate tool for this.
+
+**Kodi** - Kodi is a client only; it has no server-side transcoding of its own. Buffering is
+almost always the client's own network (weak Wi-Fi, same as the first FAQ row above) or its cache
+settings, not a server problem. Kodi's
+[advancedsettings.xml](https://kodi.wiki/view/Advancedsettings.xml){:target="_blank" rel="noopener noreferrer"}
+controls buffer size and mode via the `<cache>` settings; see the wiki's
+[video cache how-to](https://kodi.wiki/view/HOW-TO:Modify_the_video_cache){:target="_blank" rel="noopener noreferrer"}
+for tuning them. A wired connection or a larger buffer clears most occasional stutter. Whether
+Kodi can direct play a file at all still depends on the playback device's own codec and container
+support, same as any other client.
 
 ## Related guides
 
