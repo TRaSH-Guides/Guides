@@ -11,6 +11,8 @@ sync.ffs_lock
 
 .vitepress/cache
 .vitepress/dist
+docs/.vitepress/dist
+docs/.vitepress/cache
 
 
 # Logs

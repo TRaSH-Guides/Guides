@@ -1,5 +1,5 @@
 {
-  "name": "guides",
+  "name": "trash-guides",
   "version": "1.0.0",
   "description": "TRaSH-Guides is a comprehensive collection of guides for Radarr, Sonarr, and related media management tools. These guides answer common questions and provide the best settings for your entire media server setup.",
   "homepage": "https://github.com/TRaSH-Guides/Guides#readme",
@@ -17,13 +17,13 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "vitepress": "2.0.0-alpha.20"
+    "vitepress": "2.0.0-alpha.20",
+    "vitepress-sidebar": "^1.40.0"
   },
   "allowScripts": {
     "esbuild@0.21.5": true
