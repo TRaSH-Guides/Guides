@@ -29,149 +29,171 @@ First, you need to set up Radarr to show all the naming options:
 
 <!--@include: ../../includes/radarr/imdb-vs-tmdb.md-->
 
-=== "Standard"
+::: tabs
 
-    ```bash
-    {{ radarr['naming']['radarr-naming']['file']['standard'] }}
-    ```
+== Standard
 
-    <sub><sup>**Movie**: `The Movie Title (2010) - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+```bash
+{{ radarr['naming']['radarr-naming']['file']['standard'] }}
+```
 
-=== "Plex"
+<sub><sup>**Movie**: `The Movie Title (2010) - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
-    This naming scheme is designed to work with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="\_blank" rel="noopener noreferrer"}.
+== Plex
 
-    === "Plex (IMDb)"
+This naming scheme is designed to work with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517).
 
-        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+::: tabs
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['plex-imdb'] }}
-        ```
+== Plex (IMDb)
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+<!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
-    === "Plex (TMDb)"
+```bash
+{{ radarr['naming']['radarr-naming']['file']['plex-imdb'] }}
+```
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['plex-tmdb'] }}
-        ```
+<sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+== Plex (TMDb)
 
-    === "Plex Anime (IMDb)"
+```bash
+{{ radarr['naming']['radarr-naming']['file']['plex-tmdb'] }}
+```
 
-        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+<sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['plex-anime-imdb'] }}
-        ```
+== Plex Anime (IMDb)
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+<!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
-    === "Plex Anime (TMDb)"
+```bash
+{{ radarr['naming']['radarr-naming']['file']['plex-anime-imdb'] }}
+```
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['plex-anime-tmdb'] }}
-        ```
+<sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+== Plex Anime (TMDb)
 
-    !!! danger "If you use the `{edition-{Edition Tags}}` part of the recommended file name, Plex will recognize the movie edition and add it to the Plex interface - for example, Director's Cut.<br><br>However, this means that if you have two copies of a movie with different editions in a single merged library - for example, a 1080p Director's Cut and a 2160p Theatrical Edition - these will appear as two separate items in Plex.<br><br>If you want a movie to appear only once per library when you keep more than one copy of a movie, replace: `{edition-{Edition Tags}}` with `{Edition Tags}`."
+```bash
+{{ radarr['naming']['radarr-naming']['file']['plex-anime-tmdb'] }}
+```
 
-    === "Plex Edition Alternative (IMDb)"
+<sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
-        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+:::
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-imdb'] }}
-        ```
+::: danger If you use the `{edition-{Edition Tags}}` part of the recommended file name, Plex will recognize the movie edition and add it to the Plex interface - for example, Director's Cut.<br><br>However, this means that if you have two copies of a movie with different editions in a single merged library - for example, a 1080p Director's Cut and a 2160p Theatrical Edition - these will appear as two separate items in Plex.<br><br>If you want a movie to appear only once per library when you keep more than one copy of a movie, replace: `{edition-{Edition Tags}}` with `{Edition Tags}`.
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+:::
 
-    === "Plex Edition Alternative (TMDb)"
+::: tabs
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-tmdb'] }}
-        ```
+== Plex Edition Alternative (IMDb)
 
-        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+<!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
-=== "Emby"
+```bash
+{{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-imdb'] }}
+```
 
-    Source: [Emby Wiki/Docs](https://emby.media/support/articles/Movie-Naming.html#id-tags-in-folder--file-names){:target="\_blank" rel="noopener noreferrer"}
+<sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
-    === "Emby (IMDb)"
+== Plex Edition Alternative (TMDb)
 
-        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+```bash
+{{ radarr['naming']['radarr-naming']['file']['plex-edition-alt-tmdb'] }}
+```
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['emby-imdb'] }}
-        ```
+<sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+:::
 
-    === "Emby (TMDb)"
+== Emby
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['emby-tmdb'] }}
-        ```
+Source: [Emby Wiki/Docs](https://emby.media/support/articles/Movie-Naming.html#id-tags-in-folder--file-names)
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+::: tabs
 
-    === "Emby Anime (IMDb)"
+== Emby (IMDb)
 
-        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+<!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['emby-anime-imdb'] }}
-        ```
+```bash
+{{ radarr['naming']['radarr-naming']['file']['emby-imdb'] }}
+```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+<sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
-    === "Emby Anime (TMDb)"
+== Emby (TMDb)
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['emby-anime-tmdb'] }}
-        ```
+```bash
+{{ radarr['naming']['radarr-naming']['file']['emby-tmdb'] }}
+```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+<sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
 
-=== "Jellyfin"
+== Emby Anime (IMDb)
 
-    Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/movies){:target="\_blank" rel="noopener noreferrer"}
+<!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
-    === "Jellyfin (IMDb)"
+```bash
+{{ radarr['naming']['radarr-naming']['file']['emby-anime-imdb'] }}
+```
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['jellyfin-imdb'] }}
-        ```
+<sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+== Emby Anime (TMDb)
 
-    === "Jellyfin (TMDb)"
+```bash
+{{ radarr['naming']['radarr-naming']['file']['emby-anime-tmdb'] }}
+```
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['jellyfin-tmdb'] }}
-        ```
+<sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+:::
 
-    === "Jellyfin Anime (IMDb)"
+== Jellyfin
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-imdb'] }}
-        ```
+Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/movies)
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+::: tabs
 
-    === "Jellyfin Anime (TMDb)"
+== Jellyfin (IMDb)
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-tmdb'] }}
-        ```
+```bash
+{{ radarr['naming']['radarr-naming']['file']['jellyfin-imdb'] }}
+```
 
-        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+<sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+
+== Jellyfin (TMDb)
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['jellyfin-tmdb'] }}
+```
+
+<sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {Ultimate Extended Edition} [3D][CF Name][Bluray-2160p Proper][EAC3 Atmos 5.1][DV HDR10][x265]-RlsGrp`</sup></sub>
+
+== Jellyfin Anime (IMDb)
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-imdb'] }}
+```
+
+<sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+
+== Jellyfin Anime (TMDb)
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-tmdb'] }}
+```
+
+<sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {Ultimate Extended Edition} [3D][CF Name][Bluray-1080p Proper][DTS 5.1][DE][x264 10bit]-RlsGrp`</sup></sub>
+
+:::
+
+:::
 
 ---
 
@@ -213,82 +235,100 @@ Use P2P/Scene naming if you don't like spaces and brackets in the filename. It's
 
 <!--@include: ../../includes/radarr/imdb-vs-tmdb.md-->
 
-!!! warning "Please note that folder names are created in the database when the movie is added to Radarr, and the ID may be missing or wrong at that time. This could result in your folder having a blank ID. :bangbang:<br><br>If you add the ID to the filename instead, the IMDb/TMDb ID will be pulled fresh for any download or upgrade."
+::: warning Please note that folder names are created in the database when the movie is added to Radarr, and the ID may be missing or wrong at that time. This could result in your folder having a blank ID. :bangbang:<br><br>If you add the ID to the filename instead, the IMDb/TMDb ID will be pulled fresh for any download or upgrade.
 
-=== "Standard Folder"
+:::
 
-    The minimum needed and recommended format
+::: tabs
 
-    ```bash
-    {{ radarr['naming']['radarr-naming']['folder']['default'] }}
-    ```
+== Standard Folder
 
-    <sub><sup>**Example**: `The Movie Title (2010)`</sup></sub>
+The minimum needed and recommended format
 
-=== "Optional Plex"
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['default'] }}
+```
 
-    <!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
+<sub><sup>**Example**: `The Movie Title (2010)`</sup></sub>
 
-    === "Plex Folder IMDb"
+== Optional Plex
 
-        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+<!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['folder']['plex-imdb'] }}
-        ```
+::: tabs
 
-        <sub><sup>**Example**: `The Movie Title (2010) {imdb-tt1520211}`</sup></sub>
+== Plex Folder IMDb
 
-    === "Plex Folder TMDb"
+<!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['folder']['plex-tmdb'] }}
-        ```
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['plex-imdb'] }}
+```
 
-        <sub><sup>**Example**: `The Movie Title (2010) {tmdb-1520211}`</sup></sub>
+<sub><sup>**Example**: `The Movie Title (2010) {imdb-tt1520211}`</sup></sub>
 
-=== "Optional Emby"
+== Plex Folder TMDb
 
-    <!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['plex-tmdb'] }}
+```
 
-    === "Emby Folder IMDb"
+<sub><sup>**Example**: `The Movie Title (2010) {tmdb-1520211}`</sup></sub>
 
-        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+:::
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['folder']['emby-imdb'] }}
-        ```
+== Optional Emby
 
-        <sub><sup>**Example**: `The Movie Title (2010) [imdb-tt1520211]`</sup></sub>
+<!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
 
-    === "Emby Folder TMDb"
+::: tabs
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['folder']['emby-tmdb'] }}
-        ```
+== Emby Folder IMDb
 
-        <sub><sup>**Example**: `The Movie Title (2010) [tmdb-1520211]`</sup></sub>
+<!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
 
-=== "Optional Jellyfin"
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['emby-imdb'] }}
+```
 
-    <!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
+<sub><sup>**Example**: `The Movie Title (2010) [imdb-tt1520211]`</sup></sub>
 
-    === "Jellyfin Folder IMDb"
+== Emby Folder TMDb
 
-        <!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['emby-tmdb'] }}
+```
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['folder']['jellyfin-imdb'] }}
-        ```
+<sub><sup>**Example**: `The Movie Title (2010) [tmdb-1520211]`</sup></sub>
 
-        <sub><sup>**Example**: `The Movie Title (2010) [imdbid-tt1520211]`</sup></sub>
+:::
 
-    === "Jellyfin Folder TMDb"
+== Optional Jellyfin
 
-        ```bash
-        {{ radarr['naming']['radarr-naming']['folder']['jellyfin-tmdb'] }}
-        ```
+<!--@include: ../../includes/radarr/radarr-folder-name-after-year-info.md-->
 
-        <sub><sup>**Example**: `The Movie Title (2010) [tmdbid-1520211]`</sup></sub>
+::: tabs
+
+== Jellyfin Folder IMDb
+
+<!--@include: ../../includes/radarr/tmdb-imdb-info.md-->
+
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['jellyfin-imdb'] }}
+```
+
+<sub><sup>**Example**: `The Movie Title (2010) [imdbid-tt1520211]`</sup></sub>
+
+== Jellyfin Folder TMDb
+
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['jellyfin-tmdb'] }}
+```
+
+<sub><sup>**Example**: `The Movie Title (2010) [tmdbid-1520211]`</sup></sub>
+
+:::
+
+:::
 
 <!--@include: ../../includes/support.md-->

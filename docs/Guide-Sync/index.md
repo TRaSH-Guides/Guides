@@ -2,8 +2,10 @@
 
 Here you will find officially supported third-party Guide Sync Tools. These tools follow the Guide guidelines.
 
-!!! Info
-    If you are the author of another TRaSH Guides sync tool and would like to be added to this list, you must also be active in our Guide Discord server for support questions. This means we can work with you if we need to make Guide changes that affect third-party sync tools.<br>If you want to be added here, please open a new post in our [#suggestions](https://discord.com/channels/492590071455940612/1021029470389403818){:target="\_blank" rel="noopener noreferrer"} section of our Discord to make a request.
+::: info
+If you are the author of another TRaSH Guides sync tool and would like to be added to this list, you must also be active in our Guide Discord server for support questions. This means we can work with you if we need to make Guide changes that affect third-party sync tools.<br>If you want to be added here, please open a new post in our [#suggestions](https://discord.com/channels/492590071455940612/1021029470389403818) section of our Discord to make a request.
+
+:::
 
 These are third-party applications that sync several sections of the guide with your Sonarr/Radarr (or multiple).
 
@@ -66,29 +68,31 @@ Going beyond the guides with your own settings.
 
 ## Notifiarr
 
-[Notifiarr](https://notifiarr.com){:target="\_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/pages/faq/faq/#q-what-are-the-user-level-differences){:target="\_blank" rel="noopener noreferrer"})
+[Notifiarr](https://notifiarr.com) ([Patron feature](https://notifiarr.wiki/pages/faq/faq/#q-what-are-the-user-level-differences))
 
 Notifiarr provides notification aggregation, system monitoring, and TRaSH Guides Sync as part of its one-time Patron paid features.
 
 Once set up, it is fully automated and checks for updates to custom formats and guide profiles every X minutes. It then sends these updates to your Radarr and Sonarr clients.
 
-[Instructions](https://notifiarr.wiki/pages/integrations/trash/){:target="\_blank" rel="noopener noreferrer"}
+[Instructions](https://notifiarr.wiki/pages/integrations/trash/)
 
 ### Video Tutorial
 
-!!! tip ""
+::: tip
 
-    Big thanks to IBRACORP for creating a great video that covers the basics.
+Big thanks to IBRACORP for creating a great video that covers the basics.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YTpaw_qGG5E?start=270" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YTpaw_qGG5E?start=270" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    Also check out other videos on the [IBRACORP YouTube channel](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}.
+Also check out other videos on the [IBRACORP YouTube channel](https://www.youtube.com/c/IBRACORP/videos).
+
+:::
 
 ---
 
 ## Recyclarr
 
-[Info](/Recyclarr/){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/guide/){:target="\_blank" rel="noopener noreferrer"}
+[Info](/Recyclarr/) // [Documentation](https://recyclarr.dev/guide/)
 
 Recyclarr is a command-line application utilizing configuration files to sync the guides to Radarr &
 Sonarr.
@@ -97,7 +101,7 @@ Sonarr.
 
 ## Configarr
 
-[GitHub](https://github.com/raydak-labs/configarr){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://configarr.raydak.de){:target="\_blank" rel="noopener noreferrer"}
+[GitHub](https://github.com/raydak-labs/configarr) // [Documentation](https://configarr.raydak.de)
 
 Configarr is a synchronization tool primarily designed to run as a scheduled job (e.g., Cron) in containerized environments such as Docker or Kubernetes.
 Configarr is compatible with the Recyclarr templates until v7.4.0.
@@ -116,7 +120,7 @@ Main features are:
 
 ![GitHub Release](https://img.shields.io/github/v/release/ProphetSe7en/clonarr?label=latest) ![GitHub last commit](https://img.shields.io/github/last-commit/ProphetSe7en/clonarr/main?label=last%20commit)
 
-[GitHub](https://github.com/ProphetSe7en/clonarr){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://github.com/ProphetSe7en/clonarr/blob/main/docs/GETTING-STARTED.md){:target="\_blank" rel="noopener noreferrer"}
+[GitHub](https://github.com/ProphetSe7en/clonarr) // [Documentation](https://github.com/ProphetSe7en/clonarr/blob/main/docs/GETTING-STARTED.md)
 
 TRaSH Guides sync tool for Radarr and Sonarr featuring a built-in web UI. Easily browse, customize, and sync Custom Formats, Quality Profiles, Scores, and Quality Sizes — no YAML configs, no CLI, just a browser.
 

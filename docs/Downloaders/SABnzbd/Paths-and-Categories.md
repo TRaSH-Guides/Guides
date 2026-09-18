@@ -20,7 +20,9 @@ You don't need to add the full path under `Folder/Path`, it will use the `Relati
 
 ## Paths and Categories Breakdown
 
-!!! Warning "This screenshot isn't 100% a reflection of the instructions above,<br> it's mainly to explain the breakdown and the logic."
+::: warning This screenshot isn't 100% a reflection of the instructions above,<br> it's mainly to explain the breakdown and the logic.
+
+:::
 
 ![!SABnzbd - Paths and Categories Breakdown](images/sabnzbd-category-breakdown.png)
 

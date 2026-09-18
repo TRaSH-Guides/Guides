@@ -1,6 +1,6 @@
 # Deluge
 
-[![version](https://img.shields.io/github/release/linuxserver/docker-deluge.svg?color=4051B5&style=for-the-badge&logo=github){ .off-glb }](https://deluge-torrent.org/){:target="\_blank" rel="noopener noreferrer"}
+[![version](https://img.shields.io/github/release/linuxserver/docker-deluge.svg?color=4051B5&style=for-the-badge&logo=github){ .off-glb }](https://deluge-torrent.org/)
 
 - [Installing](/Downloaders/Deluge/Installing/) - Installation instructions.
 - [Basic-Setup](/Downloaders/Deluge/Basic-Setup/) - Basic set up of the most common settings.

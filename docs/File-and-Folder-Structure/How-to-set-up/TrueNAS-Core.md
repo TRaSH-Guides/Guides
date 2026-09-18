@@ -1,22 +1,26 @@
 # TrueNAS Core
 
-!!! note
+::: info
 
-    This guide is based on TrueNAS Core 13, a storage solution based on ZFS. While there are more similarities than differences between Core and Scale in terms of creating datasets, this guide explicitly covers dataset, share, and a basic permissions setup to provide a place for creating and accessing the recommended folder structure. This does not cover jails or other virtualization means on the TrueNAS Core platform.
+This guide is based on TrueNAS Core 13, a storage solution based on ZFS. While there are more similarities than differences between Core and Scale in terms of creating datasets, this guide explicitly covers dataset, share, and a basic permissions setup to provide a place for creating and accessing the recommended folder structure. This does not cover jails or other virtualization means on the TrueNAS Core platform.
 
-    This guide assumes that you've already created a pool, which by default will contain a top-level dataset that was configured during the time of pool configuration. For the examples below, we'll be using a pool name of `tank`. Encryption is recommended on the pool (TrueNAS uses ZFS Encryption with AES-256-GCM in TrueNAS Core 13) but is not required. TrueNAS Core allows for granularity in encrypting individual datasets if you don't want to encrypt at the top-level dataset and have it be inherited down to the other datasets.
+This guide assumes that you've already created a pool, which by default will contain a top-level dataset that was configured during the time of pool configuration. For the examples below, we'll be using a pool name of `tank`. Encryption is recommended on the pool (TrueNAS uses ZFS Encryption with AES-256-GCM in TrueNAS Core 13) but is not required. TrueNAS Core allows for granularity in encrypting individual datasets if you don't want to encrypt at the top-level dataset and have it be inherited down to the other datasets.
 
-    TrueNAS Core defaults to `lz4` encryption as the compression level when creating a pool. This is fine for most workloads, and can be safely inherited down to other datasets under the top-level dataset. `ztsd` is currently the default in FreeBSD, however, TrueNAS Core still defaults to `lz4`. Given that media files are not very compressible by nature, the only benefit that compression provides, in this case, is to supplementary files such as `.srt`, `.nfo`, etc.
+TrueNAS Core defaults to `lz4` encryption as the compression level when creating a pool. This is fine for most workloads, and can be safely inherited down to other datasets under the top-level dataset. `ztsd` is currently the default in FreeBSD, however, TrueNAS Core still defaults to `lz4`. Given that media files are not very compressible by nature, the only benefit that compression provides, in this case, is to supplementary files such as `.srt`, `.nfo`, etc.
 
-    While SMB shares do support hardlinks when Unix extensions are enabled we will only be covering the creation and use of NFS shares.
+While SMB shares do support hardlinks when Unix extensions are enabled we will only be covering the creation and use of NFS shares.
+
+:::
 
 ---
 
 ## Create the main dataset
 
-!!! warning
+::: warning
 
-    To get hardlinks and atomic moves working with ZFS you will need to make use of <u>**ONE**</u> dataset with subfolders. Note that this does not mean multiple datasets under the example top-level dataset `tank` from this example.
+To get hardlinks and atomic moves working with ZFS you will need to make use of <u>**ONE**</u> dataset with subfolders. Note that this does not mean multiple datasets under the example top-level dataset `tank` from this example.
+
+:::
 
 For this example, I'm using the dataset from my existing setup, `Media`. The naming isn't important as host machine mappings can be manipulated as desired.
 
@@ -58,9 +62,11 @@ You'll need to uncheck `New Primary Group` so you can manually populate `Primary
 
 ![truenas-user](images/truenas-user-options.png)
 
-!!! note
+::: info
 
-    If you're using a single, shared user and group setup (1000:1000 is the common one) you can leave New Primary Group checked. Assuming there's not a group that already exists with GID 1000 it will create that group automatically with the same name as the user.
+If you're using a single, shared user and group setup (1000:1000 is the common one) you can leave New Primary Group checked. Assuming there's not a group that already exists with GID 1000 it will create that group automatically with the same name as the user.
+
+:::
 
 ---
 

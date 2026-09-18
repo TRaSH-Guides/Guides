@@ -14,14 +14,18 @@ The `Network` section of `Preferences` is where you will bind Deluge to a specif
 
 `Incoming Port` should be set to a specific port that you have opened/forwarded (if you are behind any NAT/Firewall/VPN.)
 
-!!! WARNING
+::: warning
 
-    Default ports of 6880-6890 are not recommended.
+Default ports of 6880-6890 are not recommended.
+
+:::
 
 Make sure you click `Test Active Port` and get a ✓ before moving on.
 
-!!! success ""
+::: tip
 
-    **Suggested: `Critical`**
+**Suggested: `Critical`**
+
+:::
 
 <!--@include: ../../../includes/support.md-->

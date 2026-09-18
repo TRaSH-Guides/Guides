@@ -9,6 +9,8 @@ search:
 
 The Special Quality Profiles are custom-made and tested Quality Profiles for specific needs or preferences.
 
-!!! danger "All SQP Guides have been removed from the Guides and will be available only in the SQP Discord section."
+::: danger All SQP Guides have been removed from the Guides and will be available only in the SQP Discord section.
+
+:::
 
 <!--@include: ../../includes/support.md-->

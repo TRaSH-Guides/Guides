@@ -2,29 +2,33 @@
 
 Have you recently switched to a setup that supports hardlinks and Instant Moves (Atomic-Moves)? Would you like to replace duplicate files with hardlinks?
 
-If your operating system supports it, you can use [jdupes](https://codeberg.org/jbruchon/jdupes/releases){:target="_blank" rel="noopener noreferrer"} or [fclones](https://github.com/pkolaczk/fclones){:target="_blank" rel="noopener noreferrer"}.
+If your operating system supports it, you can use [jdupes](https://codeberg.org/jbruchon/jdupes/releases) or [fclones](https://github.com/pkolaczk/fclones).
 
-The latest binaries are available for Windows at the links above. For Mac or Linux, you can use a package manager like [homebrew](https://formulae.brew.sh/formula/jdupes){:target="_blank" rel="noopener noreferrer"}, `apt`, or `pacman` to install the latest version.
+The latest binaries are available for Windows at the links above. For Mac or Linux, you can use a package manager like [homebrew](https://formulae.brew.sh/formula/jdupes), `apt`, or `pacman` to install the latest version.
 
 ## Jdupes
 
-!!! info ""
-    We won't cover every command in this guide.
+::: info
+We won't cover every command in this guide.
 
-    If you want to learn what else [jdupes](https://codeberg.org/jbruchon/jdupes){:target="_blank" rel="noopener noreferrer"} can do, please [read the usage manual](https://codeberg.org/jbruchon/jdupes#usage){:target="_blank" rel="noopener noreferrer"}.
+If you want to learn what else [jdupes](https://codeberg.org/jbruchon/jdupes) can do, please [read the usage manual](https://codeberg.org/jbruchon/jdupes#usage).
 
-!!! tip "Performance Considerations"
-    This process can place a heavy load on your system for an extended time, depending on your library size. As duplicates are found and hardlinks are created, the process becomes more efficient because linked files and different-sized files are not repeatedly checked. This means later runs will finish faster.
+:::
 
-    You can speed this up significantly by using a hash database. This stores information about your files (including their signatures) across `jdupes` runs, which greatly increases the speed.
+::: tip Performance Considerations
+This process can place a heavy load on your system for an extended time, depending on your library size. As duplicates are found and hardlinks are created, the process becomes more efficient because linked files and different-sized files are not repeatedly checked. This means later runs will finish faster.
 
-    Simply add the following option **before your directories** with a path that is always available and persistent:
+You can speed this up significantly by using a hash database. This stores information about your files (including their signatures) across `jdupes` runs, which greatly increases the speed.
 
-    ```bash
-    -y "/mnt/user/appdata/scripts/media_hash.db"
-    ```
+Simply add the following option **before your directories** with a path that is always available and persistent:
 
-    **Note:** We don't recommend using `jdupes` on cloud-based setups.
+```bash
+-y "/mnt/user/appdata/scripts/media_hash.db"
+```
+
+**Note:** We don't recommend using `jdupes` on cloud-based setups.
+
+:::
 
 ### Basic Jdupes Usage
 
@@ -38,47 +42,63 @@ jdupes [options] DIR1 DIR2
 
 The example below performs a dry run and shows a summary at the end.
 
-!!! info "Adjust folder paths to match your directory structure."
+::: info Adjust folder paths to match your directory structure.
 
-=== "Without Hash Database"
+:::
 
-    ```bash
-    jdupes -rMX onlyext:mp4,mkv,avi "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
-    ```
+::: tabs
 
-=== "With Hash Database"
+== Without Hash Database
 
-    ```bash
-    jdupes -rMX onlyext:mp4,mkv,avi -y "/mnt/user/appdata/scripts/media_hash.db" "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
-    ```
+```bash
+jdupes -rMX onlyext:mp4,mkv,avi "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+```
+
+== With Hash Database
+
+```bash
+jdupes -rMX onlyext:mp4,mkv,avi -y "/mnt/user/appdata/scripts/media_hash.db" "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+```
+
+:::
 
 ### Hardlink All Duplicates
 
 The example below will hardlink all duplicate files without prompting.
 
-!!! info "Adjust folder paths to match your directory structure."
+::: info Adjust folder paths to match your directory structure.
 
-=== "Without Hash Database"
+:::
 
-    ```bash
-    jdupes -rLX onlyext:mp4,mkv,avi "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
-    ```
+::: tabs
 
-=== "With Hash Database"
+== Without Hash Database
 
-    ```bash
-    jdupes -rLX onlyext:mp4,mkv,avi -y "/mnt/user/appdata/scripts/media_hash.db" "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
-    ```
+```bash
+jdupes -rLX onlyext:mp4,mkv,avi "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+```
+
+== With Hash Database
+
+```bash
+jdupes -rLX onlyext:mp4,mkv,avi -y "/mnt/user/appdata/scripts/media_hash.db" "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+```
+
+:::
 
 ### Important Warnings
 
-!!! bug "Windows Hardlink Limit"
-    Windows only allows a maximum of 1,023 hardlinks per file.
+::: danger Windows Hardlink Limit
+Windows only allows a maximum of 1,023 hardlinks per file.
 
-!!! warning "Quick Mode Risk"
-    The `-Q` or `--quick` option only reads each file once, hashes it, and performs comparisons based solely on the hashes. There is a small but real risk of a hash collision, which is why the standard byte-for-byte comparison exists as a safety check. This option bypasses that safety check.
+:::
 
-    **Do not use this option on any data where data loss is unacceptable. You have been warned!**
+::: warning Quick Mode Risk
+The `-Q` or `--quick` option only reads each file once, hashes it, and performs comparisons based solely on the hashes. There is a small but real risk of a hash collision, which is why the standard byte-for-byte comparison exists as a safety check. This option bypasses that safety check.
+
+**Do not use this option on any data where data loss is unacceptable. You have been warned!**
+
+:::
 
 ## fclones
 
@@ -104,7 +124,7 @@ This is straightforward because two users on our Discord created a bash script t
 
 #### The All-in-One Script (Recommended)
 
-Use option 1 in the following guide: [How to run the unRAID mover for qBittorrent with the Mover Tuning](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/){:target="_blank" rel="noopener noreferrer"} that also will install fclones for you automatically.
+Use option 1 in the following guide: [How to run the unRAID mover for qBittorrent with the Mover Tuning](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/) that also will install fclones for you automatically.
 
 #### How to Install the Standalone fclones on unRAID
 
@@ -128,7 +148,7 @@ We're going to install fclones with the help of a script that will place fclones
 
 5. Copy and paste the script below into the new window that opens, then click **SAVE CHANGES**.
 
-    **[unRAID fclones installer](https://gist.github.com/johnwinger8/e668f05fa2be05cdd7348f5edc394fb8){:target="_blank" rel="noopener noreferrer"}** - This script will install fclones on unRAID or update the current version.
+    **[unRAID fclones installer](https://gist.github.com/johnwinger8/e668f05fa2be05cdd7348f5edc394fb8)** - This script will install fclones on unRAID or update the current version.
 
 6. If you want to keep fclones up to date, you can choose when the script should run to stay current. If you only want to run it once or handle the updates manually, skip this step.
 
@@ -146,7 +166,7 @@ Big thanks to johnwinger for creating the unRAID fclones installer!
 
 Use the following fclones bash script:
 
-**[fclones.sh](https://gist.github.com/BaukeZwart/b570ce6b6165c4f0b64c5b98d9d3af1e){:target="_blank" rel="noopener noreferrer"}** - *Read the instructions inside the script*
+**[fclones.sh](https://gist.github.com/BaukeZwart/b570ce6b6165c4f0b64c5b98d9d3af1e)** - *Read the instructions inside the script*
 
 Big thanks to BZ for creating the fclones.sh!
 

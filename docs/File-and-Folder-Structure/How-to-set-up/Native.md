@@ -1,8 +1,10 @@
 # Native
 
-!!! note
+::: info
 
-    We're not going to explain how to install all the applications, but we will explain which folder structure we recommend.
+We're not going to explain how to install all the applications, but we will explain which folder structure we recommend.
+
+:::
 
 ---
 

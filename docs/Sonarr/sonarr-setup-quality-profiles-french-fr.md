@@ -2,7 +2,9 @@
 
 *aka Comment configurer les Formats Personnalisés pour obtenir un audio et/ou des sous-titres en français ?*<br><br>
 
-!!! note "Ce guide a été créé et est maintenu par [Someone Said "Nice"?](https://github.com/NiceTSY)"
+::: info Ce guide a été créé et est maintenu par [Someone Said "Nice"?](https://github.com/NiceTSY)
+
+:::
 
 ---
 
@@ -10,66 +12,94 @@
 
 Il est important que vous suiviez et compreniez ce qui est prévu par le guide de TRaSH :
 
-- Ajouter des Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
-- Configurer un Profil de Qualité pour utiliser les Formats Personnalisés, comme expliqué dans [How to set up Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
+- Ajouter des Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/) (anglais seulement).
+- Configurer un Profil de Qualité pour utiliser les Formats Personnalisés, comme expliqué dans [How to set up Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics).
 
-!!! warning "Veuillez lire ces deux sections avant de continuer le guide, car elles contiennent des informations importantes. Le reste de ce guide part du principe que vous l'avez fait."
+::: warning Veuillez lire ces deux sections avant de continuer le guide, car elles contiennent des informations importantes. Le reste de ce guide part du principe que vous l'avez fait.
 
-!!! tip
-    TRaSH a créé un [organigramme](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter vos décisions. N'oubliez pas que ce schéma n'inclut aucun des formats personnalisés suivants et que vous devrez toujours lire ce guide pour obtenir des versions MULTi.
+:::
+
+::: tip
+TRaSH a créé un [organigramme](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose) pour faciliter vos décisions. N'oubliez pas que ce schéma n'inclut aucun des formats personnalisés suivants et que vous devrez toujours lire ce guide pour obtenir des versions MULTi.
+
+:::
 
 ---
 
 ## FAQ
 
-!!! info "Je ne suis pas Français de France mais du Canada, est-ce que le guide fonctionne toujours ?"
-    Oui, le guide s'adapte à tous les types de français : VFF, VFQ et VFB (même si ce dernier est assez rare). Assurez-vous simplement de vérifier le scoring dans la section [Versions Audio Françaises](#versions-audio-francaises).
+::: info Je ne suis pas Français de France mais du Canada, est-ce que le guide fonctionne toujours ?
+Oui, le guide s'adapte à tous les types de français : VFF, VFQ et VFB (même si ce dernier est assez rare). Assurez-vous simplement de vérifier le scoring dans la section [Versions Audio Françaises](#versions-audio-francaises).
 
-!!! info "Je suis seulement intéressé par les sous-titres français (VOSTFR)"
-    Veuillez suivre le profil **Original avec sous-titres** (**VOSTFR**).
+:::
 
-!!! info "Puis-je obtenir des HDLight ou 4KLight ?"
-    Pas vraiment, ce guide n'est pas prévu pour cela. Toutefois, si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
+::: info Je suis seulement intéressé par les sous-titres français (VOSTFR)
+Veuillez suivre le profil **Original avec sous-titres** (**VOSTFR**).
 
-!!! info "Qu'en est-il des animes ?"
-    Un exemple de profil pour les animes est également proposé : [Anime](#anime).
+:::
 
-!!! info "FlareSolverr ?"
-    Il existe une section en anglais : [How to set up FlareSolverr](/Prowlarr/prowlarr-setup-flaresolverr/){:target="\_blank" rel="noopener noreferrer"}.
+::: info Puis-je obtenir des HDLight ou 4KLight ?
+Pas vraiment, ce guide n'est pas prévu pour cela. Toutefois, si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
+
+:::
+
+::: info Qu'en est-il des animes ?
+Un exemple de profil pour les animes est également proposé : [Anime](#anime).
+
+:::
+
+::: info FlareSolverr ?
+Il existe une section en anglais : [How to set up FlareSolverr](/Prowlarr/prowlarr-setup-flaresolverr/).
+
+:::
 
 ---
 
 ## Paramètres spécifiques à Prowlarr
 
-!!! abstract "Indexers - Remplacer MULTi par une autre langue dans le nom de la release (Replace MULTi by another language in release name)"
-    Prowlarr permet de remplacer MULTi par une autre langue. Cette option semble excellente mais entraînera des faux positifs concernant les CF audio français.
-    Veuillez préférer l'utilisation de l'option "Indexeurs - Option Multi Langues" dans Sonarr (voir ci-dessous).
+::: info Indexers - Remplacer MULTi par une autre langue dans le nom de la release (Replace MULTi by another language in release name)
+Prowlarr permet de remplacer MULTi par une autre langue. Cette option semble excellente mais entraînera des faux positifs concernant les CF audio français.
+Veuillez préférer l'utilisation de l'option "Indexeurs - Option Multi Langues" dans Sonarr (voir ci-dessous).
 
-!!! abstract "Indexers - Remplacer VOSTFR et SUBFRENCH par ENGLISH (Replace VOSTFR and SUBFRENCH with ENGLISH)"
-    Cette option ne devrait pas être utilisée, principalement parce que vous perdez des informations concernant la release.
-    De plus, `VOSTFR` ne signifie pas que l'audio est en `Anglais` mais plutôt qu'il s'agit de l'audio `Original`, ce qui peut correspondre à de l'`Espagnol`, du `Coréen`, etc.
+:::
 
-!!! abstract "Indexers - Remplacer VFQ par FRENCH (Replace VFQ with FRENCH)"
-    Comme pour l'option MULTi, cela entraînera des faux positifs concernant les CF audio français. Gardez-la désactivée.
+::: info Indexers - Remplacer VOSTFR et SUBFRENCH par ENGLISH (Replace VOSTFR and SUBFRENCH with ENGLISH)
+Cette option ne devrait pas être utilisée, principalement parce que vous perdez des informations concernant la release.
+De plus, `VOSTFR` ne signifie pas que l'audio est en `Anglais` mais plutôt qu'il s'agit de l'audio `Original`, ce qui peut correspondre à de l'`Espagnol`, du `Coréen`, etc.
 
-??? success "Capture d'écran - [Cliquez pour afficher/masquer]"
-    ![French Prowlarr specific settings](images/french-prowlarr-settings.png)
+:::
+
+::: info Indexers - Remplacer VFQ par FRENCH (Replace VFQ with FRENCH)
+Comme pour l'option MULTi, cela entraînera des faux positifs concernant les CF audio français. Gardez-la désactivée.
+
+:::
+
+::: details Capture d'écran - [Cliquez pour afficher/masquer]
+![French Prowlarr specific settings](images/french-prowlarr-settings.png)
+
+:::
 
 ---
 
 ## Paramètres spécifiques à Sonarr
 
-!!! abstract "Media Management - Nommage des épisodes (Episode Naming)"
-    Veuillez consulter ceci : [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
+::: info Media Management - Nommage des épisodes (Episode Naming)
+Veuillez consulter ceci : [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/) (anglais seulement).
 
-!!! abstract "Indexers - Multi Languages option"
-    Dans Sonarr, vous pouvez indiquer que MULTi pour un indexeur signifie qu'une release possède au moins certains audios. Pour les besoins de ce guide, vous sélectionnerez `Original` et `French`.
-    Cette option ne devrait être utilisée que pour les indexeurs français. L'appliquer sur des indexeurs plus "internationaux" peut créer des faux positifs avec les CF audio français.
+:::
 
-    Si vous ne voyez pas l'option, pensez à activer les "Options Avancées" de Sonarr.
+::: info Indexers - Multi Languages option
+Dans Sonarr, vous pouvez indiquer que MULTi pour un indexeur signifie qu'une release possède au moins certains audios. Pour les besoins de ce guide, vous sélectionnerez `Original` et `French`.
+Cette option ne devrait être utilisée que pour les indexeurs français. L'appliquer sur des indexeurs plus "internationaux" peut créer des faux positifs avec les CF audio français.
 
-    ??? success "Capture d'écran - [Cliquez pour afficher/masquer]"
-        ![French Sonarr MULTi settings](images/french-starr-multi-settings.png)
+Si vous ne voyez pas l'option, pensez à activer les "Options Avancées" de Sonarr.
+
+::: details Capture d'écran - [Cliquez pour afficher/masquer]
+![French Sonarr MULTi settings](images/french-starr-multi-settings.png)
+
+:::
+
+:::
 
 ---
 
@@ -97,12 +127,16 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 ### HD Bluray + WEB (1080p)
 
-!!! tip "Basic Settings"
-    Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
-    Pour d'anciennes séries, il peut être utile d'activer la source de qualité `HDTV-720p/1080p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
+::: tip Basic Settings
+Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
+Pour d'anciennes séries, il peut être utile d'activer la source de qualité `HDTV-720p/1080p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
 
-    ??? success "Capture d'écran du Profile - [Cliquez pour afficher/masquer]"
-        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-hd.png)
+::: details Capture d'écran du Profile - [Cliquez pour afficher/masquer]
+![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-hd.png)
+
+:::
+
+:::
 
 <!--@include: ../../includes/french-guide/starr-move-quality-to-top-fr.md-->
 
@@ -132,12 +166,16 @@ Note : Les Formats Personnalisés `Audio Formats` ne sont pas utilisés dans le 
 
 ### UHD Bluray + WEB (2160p)
 
-!!! tip "Basic Settings"
-    Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
-    Pour d'anciennes séries, il peut être utile d'activer la source de qualité `Bluray-720p/1080p`, `Web-720p/1080p`, `HDTV-720p/1080p/2160p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
+::: tip Basic Settings
+Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
+Pour d'anciennes séries, il peut être utile d'activer la source de qualité `Bluray-720p/1080p`, `Web-720p/1080p`, `HDTV-720p/1080p/2160p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
 
-    ??? success "Capture d'écran du Profile - [Cliquez pour afficher/masquer]"
-        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-uhd.png)
+::: details Capture d'écran du Profile - [Cliquez pour afficher/masquer]
+![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-uhd.png)
+
+:::
+
+:::
 
 <!--@include: ../../includes/french-guide/starr-move-quality-to-top-fr.md-->
 
@@ -187,13 +225,13 @@ Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + fran�
 
 TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (*en anglais uniquement*) :
 
-- [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="\_blank" rel="noopener noreferrer"}
+- [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats)
 
 ---
 
 ## Autres Informations
 
-Une FAQ répondant à la plupart des questions que vous pourriez vous poser est fournie par TRaSH (*en anglais uniquement*) : [FAQ & Info](/Sonarr/sonarr-setup-quality-profiles/#faq-info){:target="\_blank" rel="noopener noreferrer"}
+Une FAQ répondant à la plupart des questions que vous pourriez vous poser est fournie par TRaSH (*en anglais uniquement*) : [FAQ & Info](/Sonarr/sonarr-setup-quality-profiles/#faq-info)
 
 ---
 

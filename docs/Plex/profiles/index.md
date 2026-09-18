@@ -1,10 +1,14 @@
 # Plex Profiles
 
-!!! info
+::: info
 
-    Here you will find a collection of profiles you only should use if Plex has issues direct playing your media on your devices, these profiles could help but results might vary.
+Here you will find a collection of profiles you only should use if Plex has issues direct playing your media on your devices, these profiles could help but results might vary.
 
-!!! danger "The profiles aren't tested on the Shield 2019 or newer Chromecast models :warning:"
+:::
+
+::: danger The profiles aren't tested on the Shield 2019 or newer Chromecast models :warning:
+
+:::
 
 ## How to
 
@@ -19,36 +23,46 @@ Example paths:
 
 ## Profiles
 
-!!! tip
+::: tip
 
-    If you got some to share, pls make a PR so we can collect them at one place
+If you got some to share, pls make a PR so we can collect them at one place
+
+:::
 
 ### Android Shield
 
-??? info "Please name the file:"
+::: details Please name the file:
 
-    ``` none
-        Android-SHIELD Android TV.xml
-    ```
+``` none
+    Android-SHIELD Android TV.xml
+```
 
-??? example "Shield Profile"
+:::
 
-    ```sh
-    [[% filter indent(width=4) %]][[% include '/Plex/profiles/Android-SHIELD/Android-SHIELD-Android-TV.xml' %]][[% endfilter %]]
-    ```
+::: details Shield Profile
+
+```sh
+<!--@include: @/Plex/profiles/Android-SHIELD/Android-SHIELD-Android-TV.xml-->
+```
+
+:::
 
 ### Chromecast
 
-??? info "Please name the file:"
+::: details Please name the file:
 
-    ``` none
-        Chromecast.xml
-    ```
+``` none
+    Chromecast.xml
+```
 
-??? example "Chromecast Profile"
+:::
 
-    ```sh
-    [[% filter indent(width=4) %]][[% include '/Plex/profiles/Chromecast/Chromecast.xml' %]][[% endfilter %]]
-    ```
+::: details Chromecast Profile
+
+```sh
+<!--@include: @/Plex/profiles/Chromecast/Chromecast.xml-->
+```
+
+:::
 
 <!--@include: ../../../includes/support.md-->

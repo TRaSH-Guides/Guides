@@ -30,9 +30,9 @@ Frugal Usenet is offering TRaSH-Guides users two exclusive plans:
     - Separate bonus EU-based server
     - 750 GB Blocknews account with every payment
 
-[:fontawesome-solid-link: Get the exclusive TRaSH-Guides deal](https://billing.frugalusenet.com/signup/tgs?keyword=trash-guides-discord){:target="_blank" rel="noopener noreferrer"}
+[:fontawesome-solid-link: Get the exclusive TRaSH-Guides deal](https://billing.frugalusenet.com/signup/tgs?keyword=trash-guides-discord)
 
-[![Frugal Usenet Banner](/img/frugal_468x60.gif)](https://billing.frugalusenet.com/signup/tgs?keyword=trash-guides-discord){:target="_blank" rel="noopener noreferrer"}
+[![Frugal Usenet Banner](/img/frugal_468x60.gif)](https://billing.frugalusenet.com/signup/tgs?keyword=trash-guides-discord)
 
 ---
 
@@ -46,7 +46,7 @@ Get 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN P
 
 **How to redeem:**
 
-1. Use this [referral link](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"}
+1. Use this [referral link](https://torguard.net/aff.php?aff=5575)
 2. Enter the discount code at checkout:
 
     ```none

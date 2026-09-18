@@ -11,19 +11,21 @@ After requesting with Team Radarr, we now have the option to import/export the C
 
 We've made 3 guides related to this.
 
-- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
-- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="\_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of our recommended configuration. You can use these examples to get an idea of how to set up your preferences.
+- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats) - Explains how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats) - Explains how to upgrade your existing Custom Formats.
+- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles) - Explains how to make the most use of Custom Formats and shows some specifics of our recommended configuration. You can use these examples to get an idea of how to set up your preferences.
 
-!!! tip
+::: tip
 
-    It also is recommended to change the Propers and Repacks settings in Radarr's `Settings`.
+It also is recommended to change the Propers and Repacks settings in Radarr's `Settings`.
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
+`Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
 
-    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
+![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
-    This way you make sure the Custom Format scoring and preferences will be fully utilized.
+This way you make sure the Custom Format scoring and preferences will be fully utilized.
+
+:::
 
 <!--@include: ../../includes/support.md-->
 
@@ -190,15 +192,19 @@ We've made 3 guides related to this.
 
 ### TrueHD ATMOS
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/truehd-atmos.md-->
+<!--@include: ../../includes/cf-descriptions/truehd-atmos.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/truehd-atmos.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/truehd-atmos.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -206,15 +212,19 @@ We've made 3 guides related to this.
 
 ### DTS X
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts-x.md-->
+<!--@include: ../../includes/cf-descriptions/dts-x.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dts-x.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dts-x.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -222,15 +232,19 @@ We've made 3 guides related to this.
 
 ### ATMOS (undefined)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/atmos-undefined.md-->
+<!--@include: ../../includes/cf-descriptions/atmos-undefined.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atmos-undefined.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/atmos-undefined.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -238,15 +252,19 @@ We've made 3 guides related to this.
 
 ### DDPlus ATMOS
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ddplus-atmos.md-->
+<!--@include: ../../includes/cf-descriptions/ddplus-atmos.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ddplus-atmos.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/ddplus-atmos.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -254,15 +272,19 @@ We've made 3 guides related to this.
 
 ### TrueHD
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/truehd.md-->
+<!--@include: ../../includes/cf-descriptions/truehd.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/truehd.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/truehd.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -270,15 +292,19 @@ We've made 3 guides related to this.
 
 ### DTS-HD MA
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts-hd-ma.md-->
+<!--@include: ../../includes/cf-descriptions/dts-hd-ma.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dts-hd-ma.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dts-hd-ma.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -286,15 +312,19 @@ We've made 3 guides related to this.
 
 ### FLAC
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/flac.md-->
+<!--@include: ../../includes/cf-descriptions/flac.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/flac.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/flac.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -302,15 +332,19 @@ We've made 3 guides related to this.
 
 ### PCM
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/pcm.md-->
+<!--@include: ../../includes/cf-descriptions/pcm.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pcm.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/pcm.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -318,15 +352,19 @@ We've made 3 guides related to this.
 
 ### DTS-HD HRA
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts-hd-hra.md-->
+<!--@include: ../../includes/cf-descriptions/dts-hd-hra.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dts-hd-hra.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dts-hd-hra.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -336,15 +374,19 @@ We've made 3 guides related to this.
 
 <sub>Dolby Digital Plus = DD+ = DDPlus</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ddplus.md-->
+<!--@include: ../../includes/cf-descriptions/ddplus.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ddplus.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/ddplus.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -352,15 +394,19 @@ We've made 3 guides related to this.
 
 ### DTS-ES
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts-es.md-->
+<!--@include: ../../includes/cf-descriptions/dts-es.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dts-es.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dts-es.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -370,15 +416,19 @@ We've made 3 guides related to this.
 
 <sub>DTS = Basic DTS</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts.md-->
+<!--@include: ../../includes/cf-descriptions/dts.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dts.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dts.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -386,15 +436,19 @@ We've made 3 guides related to this.
 
 ### AAC
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/aac.md-->
+<!--@include: ../../includes/cf-descriptions/aac.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/aac.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/aac.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -404,15 +458,19 @@ We've made 3 guides related to this.
 
 <sub>(Basic) Dolby Digital = DD</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dd.md-->
+<!--@include: ../../includes/cf-descriptions/dd.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dd.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dd.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -420,15 +478,19 @@ We've made 3 guides related to this.
 
 ### MP3
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/mp3.md-->
+<!--@include: ../../includes/cf-descriptions/mp3.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/mp3.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/mp3.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -436,15 +498,19 @@ We've made 3 guides related to this.
 
 ### Opus
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/opus.md-->
+<!--@include: ../../includes/cf-descriptions/opus.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/opus.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/opus.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -456,11 +522,13 @@ We've made 3 guides related to this.
 
 ### 1.0 Mono
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/10-mono.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/10-mono.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -468,11 +536,13 @@ We've made 3 guides related to this.
 
 ### 2.0 Stereo
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/20-stereo.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/20-stereo.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -480,11 +550,13 @@ We've made 3 guides related to this.
 
 ### 3.0 Sound
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/30-sound.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/30-sound.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -492,11 +564,13 @@ We've made 3 guides related to this.
 
 ### 4.0 Sound
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/40-sound.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/40-sound.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -504,11 +578,13 @@ We've made 3 guides related to this.
 
 ### 5.1 Surround
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/51-surround.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/51-surround.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -516,11 +592,13 @@ We've made 3 guides related to this.
 
 ### 6.1 Surround
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/61-surround.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/61-surround.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -528,11 +606,13 @@ We've made 3 guides related to this.
 
 ### 7.1 Surround
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/71-surround.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/71-surround.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -546,15 +626,19 @@ We've made 3 guides related to this.
 
 <sub>HDR</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hdr.md-->
+<!--@include: ../../includes/cf-descriptions/hdr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hdr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hdr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -564,17 +648,21 @@ We've made 3 guides related to this.
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dv-boost.md-->
+<!--@include: ../../includes/cf-descriptions/dv-boost.md-->
+
+:::
 
 <!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case, the pointer to `#dv-wo-hdr-fallback` in `includes/dv.md` -->
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-boost.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/dv-boost.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -582,15 +670,19 @@ We've made 3 guides related to this.
 
 ### HDR10Plus Boost
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hdr10plus-boost.md-->
+<!--@include: ../../includes/cf-descriptions/hdr10plus-boost.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hdr10plus-boost.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -602,15 +694,19 @@ We've made 3 guides related to this.
 
 ### DV (Disk)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dv-disk.md-->
+<!--@include: ../../includes/cf-descriptions/dv-disk.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-disk.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dv-disk.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -620,15 +716,19 @@ We've made 3 guides related to this.
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dv-wo-hdr-fallback.md-->
+<!--@include: ../../includes/cf-descriptions/dv-wo-hdr-fallback.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-wo-hdr-fallback.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dv-wo-hdr-fallback.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -636,15 +736,19 @@ We've made 3 guides related to this.
 
 ### SDR
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/sdr.md-->
+<!--@include: ../../includes/cf-descriptions/sdr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/sdr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -652,15 +756,19 @@ We've made 3 guides related to this.
 
 ### SDR (no WEBDL)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/sdr-no-webdl-radarr.md-->
+<!--@include: ../../includes/cf-descriptions/sdr-no-webdl-radarr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/sdr-no-webdl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -668,15 +776,19 @@ We've made 3 guides related to this.
 
 ### HLG
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hlg.md-->
+<!--@include: ../../includes/cf-descriptions/hlg.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hlg.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hlg.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -692,15 +804,19 @@ We've made 3 guides related to this.
 
 <sub>Amazon Prime Video</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/amzn.md-->
+<!--@include: ../../includes/cf-descriptions/amzn.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/amzn.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/amzn.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -710,15 +826,19 @@ We've made 3 guides related to this.
 
 <sub>Apple TV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/atv.md-->
+<!--@include: ../../includes/cf-descriptions/atv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/atv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -728,15 +848,19 @@ We've made 3 guides related to this.
 
 <sub>Apple TV+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/atvp.md-->
+<!--@include: ../../includes/cf-descriptions/atvp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atvp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/atvp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -746,15 +870,19 @@ We've made 3 guides related to this.
 
 <sub>Bravia Core</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/bcore.md-->
+<!--@include: ../../includes/cf-descriptions/bcore.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bcore.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/bcore.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -764,15 +892,19 @@ We've made 3 guides related to this.
 
 <sub>Criterion Channel</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/crit.md-->
+<!--@include: ../../includes/cf-descriptions/crit.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crit.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/crit.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -782,15 +914,19 @@ We've made 3 guides related to this.
 
 <sub>Disney+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dsnp.md-->
+<!--@include: ../../includes/cf-descriptions/dsnp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dsnp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dsnp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -800,15 +936,19 @@ We've made 3 guides related to this.
 
 <sub>Google Play</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/play.md-->
+<!--@include: ../../includes/cf-descriptions/play.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/play.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/play.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -818,15 +958,19 @@ We've made 3 guides related to this.
 
 <sub>HBO</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hbo.md-->
+<!--@include: ../../includes/cf-descriptions/hbo.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hbo.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hbo.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -836,15 +980,19 @@ We've made 3 guides related to this.
 
 <sub>HBO Max</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hmax.md-->
+<!--@include: ../../includes/cf-descriptions/hmax.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hmax.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hmax.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -854,15 +1002,19 @@ We've made 3 guides related to this.
 
 <sub>Hulu</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hulu.md-->
+<!--@include: ../../includes/cf-descriptions/hulu.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hulu.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -872,15 +1024,19 @@ We've made 3 guides related to this.
 
 <sub>iTunes</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/it.md-->
+<!--@include: ../../includes/cf-descriptions/it.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/it.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/it.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -890,15 +1046,19 @@ We've made 3 guides related to this.
 
 <sub>Max (streaming service)</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hmax.md-->
+<!--@include: ../../includes/cf-descriptions/hmax.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/max.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/max.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -908,15 +1068,19 @@ We've made 3 guides related to this.
 
 <sub>Movies Anywhere</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ma.md-->
+<!--@include: ../../includes/cf-descriptions/ma.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/ma.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -926,15 +1090,19 @@ We've made 3 guides related to this.
 
 <sub>Netflix</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/nf.md-->
+<!--@include: ../../includes/cf-descriptions/nf.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/nf.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/nf.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -944,15 +1112,19 @@ We've made 3 guides related to this.
 
 <sub>Paramount+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/pmtp.md-->
+<!--@include: ../../includes/cf-descriptions/pmtp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/pmtp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -962,15 +1134,19 @@ We've made 3 guides related to this.
 
 <sub>Peacock TV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/pcok.md-->
+<!--@include: ../../includes/cf-descriptions/pcok.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pcok.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/pcok.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -980,15 +1156,19 @@ We've made 3 guides related to this.
 
 <sub>ROKU</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/roku.md-->
+<!--@include: ../../includes/cf-descriptions/roku.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/roku.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/roku.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -998,15 +1178,19 @@ We've made 3 guides related to this.
 
 <sub>Stan</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/stan.md-->
+<!--@include: ../../includes/cf-descriptions/stan.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/stan.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/stan.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1020,15 +1204,19 @@ We've made 3 guides related to this.
 
 <sub>Coupang Play</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/cpng.md-->
+<!--@include: ../../includes/cf-descriptions/cpng.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cpng.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/cpng.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1038,15 +1226,19 @@ We've made 3 guides related to this.
 
 <sub>Disney+ Hotstar</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/htsr.md-->
+<!--@include: ../../includes/cf-descriptions/htsr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/htsr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/htsr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1056,15 +1248,19 @@ We've made 3 guides related to this.
 
 <sub>friDay Video</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/friday.md-->
+<!--@include: ../../includes/cf-descriptions/friday.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/friday.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/friday.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1074,15 +1270,19 @@ We've made 3 guides related to this.
 
 <sub>Fuji Television On Demand aka Fuji TV On Demand</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/fod.md-->
+<!--@include: ../../includes/cf-descriptions/fod.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fod.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/fod.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1092,15 +1292,19 @@ We've made 3 guides related to this.
 
 <sub>Hami Video</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hami.md-->
+<!--@include: ../../includes/cf-descriptions/hami.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hami.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hami.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1110,15 +1314,19 @@ We've made 3 guides related to this.
 
 <sub>iQIYI</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/iqiy.md-->
+<!--@include: ../../includes/cf-descriptions/iqiy.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/iqiy.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/iqiy.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1128,15 +1336,19 @@ We've made 3 guides related to this.
 
 <sub>KKTV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/kktv.md-->
+<!--@include: ../../includes/cf-descriptions/kktv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/kktv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/kktv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1146,15 +1358,19 @@ We've made 3 guides related to this.
 
 <sub>KOCOWA</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/kcw.md-->
+<!--@include: ../../includes/cf-descriptions/kcw.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/kcw.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/kcw.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1164,15 +1380,19 @@ We've made 3 guides related to this.
 
 <sub>LINE TV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/linetv.md-->
+<!--@include: ../../includes/cf-descriptions/linetv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/linetv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/linetv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1182,15 +1402,19 @@ We've made 3 guides related to this.
 
 <sub>myTV SUPER</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/mytvsuper.md-->
+<!--@include: ../../includes/cf-descriptions/mytvsuper.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/mytvsuper.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/mytvsuper.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1200,15 +1424,19 @@ We've made 3 guides related to this.
 
 <sub>TVING</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/tving.md-->
+<!--@include: ../../includes/cf-descriptions/tving.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tving.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/tving.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1218,15 +1446,19 @@ We've made 3 guides related to this.
 
 <sub>TVer</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/tver.md-->
+<!--@include: ../../includes/cf-descriptions/tver.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tver.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/tver.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1236,15 +1468,19 @@ We've made 3 guides related to this.
 
 <sub>U-NEXT</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/u-next.md-->
+<!--@include: ../../includes/cf-descriptions/u-next.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/u-next.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/u-next.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1254,15 +1490,19 @@ We've made 3 guides related to this.
 
 <sub>Rakuten Viki</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/viki.md-->
+<!--@include: ../../includes/cf-descriptions/viki.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/viki.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/viki.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1272,15 +1512,19 @@ We've made 3 guides related to this.
 
 <sub>VIU</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/viu.md-->
+<!--@include: ../../includes/cf-descriptions/viu.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/viu.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/viu.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1290,15 +1534,19 @@ We've made 3 guides related to this.
 
 <sub>Wavve</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/wavve.md-->
+<!--@include: ../../includes/cf-descriptions/wavve.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/wavve.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/wavve.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1308,15 +1556,19 @@ We've made 3 guides related to this.
 
 <sub>WeTV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/wetv.md-->
+<!--@include: ../../includes/cf-descriptions/wetv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/wetv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/wetv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1326,15 +1578,19 @@ We've made 3 guides related to this.
 
 <sub>Youku</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/youku.md-->
+<!--@include: ../../includes/cf-descriptions/youku.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/youku.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/youku.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1348,15 +1604,19 @@ We've made 3 guides related to this.
 
 <sub>Pathé Thuis</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/pathe.md-->
+<!--@include: ../../includes/cf-descriptions/pathe.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/pathe.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1366,15 +1626,19 @@ We've made 3 guides related to this.
 
 <sub>Videoland</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vdl.md-->
+<!--@include: ../../includes/cf-descriptions/vdl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vdl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/vdl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1388,15 +1652,19 @@ We've made 3 guides related to this.
 
 <sub>Australian Broadcasting Corporation</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/aubc.md-->
+<!--@include: ../../includes/cf-descriptions/aubc.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/aubc.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/aubc.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1406,15 +1674,19 @@ We've made 3 guides related to this.
 
 <sub>Canal+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/cnlp.md-->
+<!--@include: ../../includes/cf-descriptions/cnlp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cnlp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/cnlp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1424,15 +1696,19 @@ We've made 3 guides related to this.
 
 <sub>CBC</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/cbc.md-->
+<!--@include: ../../includes/cf-descriptions/cbc.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cbc.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/cbc.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1442,15 +1718,19 @@ We've made 3 guides related to this.
 
 <sub>Crave</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/crav.md-->
+<!--@include: ../../includes/cf-descriptions/crav.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/crav.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1460,15 +1740,19 @@ We've made 3 guides related to this.
 
 <sub>Fandango</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/fah.md-->
+<!--@include: ../../includes/cf-descriptions/fah.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fah.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/fah.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1478,15 +1762,19 @@ We've made 3 guides related to this.
 
 <sub>OViD</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ovid.md-->
+<!--@include: ../../includes/cf-descriptions/ovid.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/ovid.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1496,15 +1784,19 @@ We've made 3 guides related to this.
 
 <sub>Star+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/strp.md-->
+<!--@include: ../../includes/cf-descriptions/strp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/strp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/strp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1518,15 +1810,19 @@ We've made 3 guides related to this.
 
 <sub>BBC iPlayer aka iP</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ip.md-->
+<!--@include: ../../includes/cf-descriptions/ip.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ip.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/ip.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1536,15 +1832,19 @@ We've made 3 guides related to this.
 
 <sub>ITVX aka ITV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/itvx.md-->
+<!--@include: ../../includes/cf-descriptions/itvx.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/itvx.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/itvx.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1554,15 +1854,19 @@ We've made 3 guides related to this.
 
 <sub>MY5 aka Channel 5</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/my5.md-->
+<!--@include: ../../includes/cf-descriptions/my5.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/my5.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/my5.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1572,15 +1876,19 @@ We've made 3 guides related to this.
 
 <sub>NOW</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/now.md-->
+<!--@include: ../../includes/cf-descriptions/now.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/now.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/now.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1594,15 +1902,19 @@ We've made 3 guides related to this.
 
 <sub>Funimation</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/funi.md-->
+<!--@include: ../../includes/cf-descriptions/funi.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/funi.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/funi.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1610,15 +1922,19 @@ We've made 3 guides related to this.
 
 #### VRV
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vrv.md-->
+<!--@include: ../../includes/cf-descriptions/vrv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/vrv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1630,15 +1946,19 @@ We've made 3 guides related to this.
 
 ### 4K Remaster
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/4k-remaster.md-->
+<!--@include: ../../includes/cf-descriptions/4k-remaster.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/4k-remaster.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/4k-remaster.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1646,15 +1966,19 @@ We've made 3 guides related to this.
 
 ### Criterion Collection
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/criterion-collection.md-->
+<!--@include: ../../includes/cf-descriptions/criterion-collection.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/criterion-collection.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/criterion-collection.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1662,15 +1986,19 @@ We've made 3 guides related to this.
 
 ### Hybrid
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hybrid.md-->
+<!--@include: ../../includes/cf-descriptions/hybrid.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hybrid.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hybrid.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1678,15 +2006,19 @@ We've made 3 guides related to this.
 
 ### IMAX
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/imax.md-->
+<!--@include: ../../includes/cf-descriptions/imax.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/imax.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/imax.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1694,15 +2026,19 @@ We've made 3 guides related to this.
 
 ### IMAX Enhanced
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/imax-enhanced.md-->
+<!--@include: ../../includes/cf-descriptions/imax-enhanced.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/imax-enhanced.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/imax-enhanced.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1710,15 +2046,19 @@ We've made 3 guides related to this.
 
 ### Masters of Cinema
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/masters-of-cinema.md-->
+<!--@include: ../../includes/cf-descriptions/masters-of-cinema.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/masters-of-cinema.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/masters-of-cinema.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1726,15 +2066,19 @@ We've made 3 guides related to this.
 
 ### Open Matte
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/open-matte.md-->
+<!--@include: ../../includes/cf-descriptions/open-matte.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/open-matte.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/open-matte.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1742,15 +2086,19 @@ We've made 3 guides related to this.
 
 ### Remaster
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/remaster.md-->
+<!--@include: ../../includes/cf-descriptions/remaster.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remaster.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/remaster.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1758,15 +2106,19 @@ We've made 3 guides related to this.
 
 ### Special Edition
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/special-edition.md-->
+<!--@include: ../../includes/cf-descriptions/special-edition.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/special-edition.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/special-edition.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1774,15 +2126,19 @@ We've made 3 guides related to this.
 
 ### Theatrical Cut
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/theatrical-cut.md-->
+<!--@include: ../../includes/cf-descriptions/theatrical-cut.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/theatrical-cut.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/theatrical-cut.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1790,15 +2146,19 @@ We've made 3 guides related to this.
 
 ### Vinegar Syndrome
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vinegar-syndrome.md-->
+<!--@include: ../../includes/cf-descriptions/vinegar-syndrome.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vinegar-syndrome.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/vinegar-syndrome.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1810,15 +2170,19 @@ We've made 3 guides related to this.
 
 ### 3D
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/3d.md-->
+<!--@include: ../../includes/cf-descriptions/3d.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/3d.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/3d.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1826,15 +2190,19 @@ We've made 3 guides related to this.
 
 ### AV1
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/av1.md-->
+<!--@include: ../../includes/cf-descriptions/av1.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/av1.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/av1.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1842,15 +2210,19 @@ We've made 3 guides related to this.
 
 ### Bad Dual Groups
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/bad-dual-groups.md-->
+<!--@include: ../../includes/cf-descriptions/bad-dual-groups.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/bad-dual-groups.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1858,15 +2230,19 @@ We've made 3 guides related to this.
 
 ### Black and White Editions
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/black-and-white-editions.md-->
+<!--@include: ../../includes/cf-descriptions/black-and-white-editions.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/black-and-white-editions.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/black-and-white-editions.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1874,15 +2250,19 @@ We've made 3 guides related to this.
 
 ### BR-DISK
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/br-disk.md-->
+<!--@include: ../../includes/cf-descriptions/br-disk.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/br-disk.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/br-disk.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1890,15 +2270,19 @@ We've made 3 guides related to this.
 
 ### Extras
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/extras.md-->
+<!--@include: ../../includes/cf-descriptions/extras.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/extras.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/extras.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1906,15 +2290,19 @@ We've made 3 guides related to this.
 
 ### Generated Dynamic HDR
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/generated-dynamic-hdr.md-->
+<!--@include: ../../includes/cf-descriptions/generated-dynamic-hdr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/generated-dynamic-hdr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/generated-dynamic-hdr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1922,15 +2310,19 @@ We've made 3 guides related to this.
 
 ### Line/Mic Dubbed
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/line-mic-dubbed.md-->
+<!--@include: ../../includes/cf-descriptions/line-mic-dubbed.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/line-mic-dubbed.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/line-mic-dubbed.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1940,15 +2332,19 @@ We've made 3 guides related to this.
 
 <sub>Low-Quality Releases = LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/lq.md-->
+<!--@include: ../../includes/cf-descriptions/lq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/lq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/lq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1958,15 +2354,19 @@ We've made 3 guides related to this.
 
 <sub>Low-Quality Releases = LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/lq-release-title.md-->
+<!--@include: ../../includes/cf-descriptions/lq-release-title.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/lq-release-title.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/lq-release-title.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1974,15 +2374,19 @@ We've made 3 guides related to this.
 
 ### No-RlsGroup
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/no-rlsgroup.md-->
+<!--@include: ../../includes/cf-descriptions/no-rlsgroup.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/no-rlsgroup.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/no-rlsgroup.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1990,15 +2394,19 @@ We've made 3 guides related to this.
 
 ### Obfuscated
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/obfuscated.md-->
+<!--@include: ../../includes/cf-descriptions/obfuscated.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/obfuscated.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/obfuscated.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2006,15 +2414,19 @@ We've made 3 guides related to this.
 
 ### Retags
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/retags.md-->
+<!--@include: ../../includes/cf-descriptions/retags.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/retags.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/retags.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2022,15 +2434,19 @@ We've made 3 guides related to this.
 
 ### Scene
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/scene.md-->
+<!--@include: ../../includes/cf-descriptions/scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2038,15 +2454,19 @@ We've made 3 guides related to this.
 
 ### Sing-Along Versions
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/sing-along-versions.md-->
+<!--@include: ../../includes/cf-descriptions/sing-along-versions.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sing-along-versions.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/sing-along-versions.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2054,15 +2474,19 @@ We've made 3 guides related to this.
 
 ### Upscaled
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/upscaled.md-->
+<!--@include: ../../includes/cf-descriptions/upscaled.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/upscaled.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/upscaled.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2074,15 +2498,19 @@ We've made 3 guides related to this.
 
 ### Remux Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/remux-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/remux-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remux-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/remux-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2090,15 +2518,19 @@ We've made 3 guides related to this.
 
 ### Remux Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/remux-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/remux-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remux-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/remux-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2106,15 +2538,19 @@ We've made 3 guides related to this.
 
 ### Remux Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/remux-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/remux-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remux-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/remux-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2122,15 +2558,19 @@ We've made 3 guides related to this.
 
 ### UHD Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uhd-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/uhd-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2138,15 +2578,19 @@ We've made 3 guides related to this.
 
 ### UHD Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uhd-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/uhd-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2154,15 +2598,19 @@ We've made 3 guides related to this.
 
 ### UHD Bluray Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/uhd-bluray-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uhd-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/uhd-bluray-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2170,15 +2618,19 @@ We've made 3 guides related to this.
 
 ### HD Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hd-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/hd-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hd-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hd-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2186,15 +2638,19 @@ We've made 3 guides related to this.
 
 ### HD Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hd-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/hd-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hd-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hd-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2202,15 +2658,19 @@ We've made 3 guides related to this.
 
 ### HD Bluray Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hd-bluray-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/hd-bluray-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hd-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hd-bluray-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2218,15 +2678,19 @@ We've made 3 guides related to this.
 
 ### WEB Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2234,15 +2698,19 @@ We've made 3 guides related to this.
 
 ### WEB Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2250,15 +2718,19 @@ We've made 3 guides related to this.
 
 ### WEB Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2270,15 +2742,19 @@ We've made 3 guides related to this.
 
 ### Repack/Proper
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/repack-proper.md-->
+<!--@include: ../../includes/cf-descriptions/repack-proper.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack-proper.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/repack-proper.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2286,15 +2762,19 @@ We've made 3 guides related to this.
 
 ### Repack2
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/repack2.md-->
+<!--@include: ../../includes/cf-descriptions/repack2.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack2.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/repack2.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2302,15 +2782,19 @@ We've made 3 guides related to this.
 
 ### Repack3
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/repack3.md-->
+<!--@include: ../../includes/cf-descriptions/repack3.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack3.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/repack3.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2318,23 +2802,27 @@ We've made 3 guides related to this.
 
 ## Golden Rule (Optional)
 
-??? question "Why block 720/1080p encodes in x265? - [Click to show/hide]"
+::: details Why block 720/1080p encodes in x265? - [Click to show/hide]
 
-    <!--@include: ../../includes/docker/x265.md-->
+<!--@include: ../../includes/docker/x265.md-->
 
 ---
 
 ### x265 (no HDR/DV)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x265-no-hdrdv-radarr.md-->
+<!--@include: ../../includes/cf-descriptions/x265-no-hdrdv-radarr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/x265-no-hdrdv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2344,15 +2832,19 @@ We've made 3 guides related to this.
 
 <sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x265-hd-radarr.md-->
+<!--@include: ../../includes/cf-descriptions/x265-hd-radarr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-hd.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/x265-hd.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2364,15 +2856,19 @@ We've made 3 guides related to this.
 
 ### FreeLeech
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/freeleech.md-->
+<!--@include: ../../includes/cf-descriptions/freeleech.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/freeleech.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/freeleech.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2380,15 +2876,19 @@ We've made 3 guides related to this.
 
 ### HFR
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hfr.md-->
+<!--@include: ../../includes/cf-descriptions/hfr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hfr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/hfr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2396,15 +2896,19 @@ We've made 3 guides related to this.
 
 ### Internal
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/internal.md-->
+<!--@include: ../../includes/cf-descriptions/internal.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/internal.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/internal.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2412,15 +2916,19 @@ We've made 3 guides related to this.
 
 ### MPEG2
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/mpeg2.md-->
+<!--@include: ../../includes/cf-descriptions/mpeg2.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/mpeg2.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/mpeg2.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2428,15 +2936,19 @@ We've made 3 guides related to this.
 
 ### Multi
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/multi.md-->
+<!--@include: ../../includes/cf-descriptions/multi.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/multi.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/multi.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2444,15 +2956,19 @@ We've made 3 guides related to this.
 
 ### P2P Internal
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/p2p-internal.md-->
+<!--@include: ../../includes/cf-descriptions/p2p-internal.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/p2p-internal.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/p2p-internal.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2460,15 +2976,19 @@ We've made 3 guides related to this.
 
 ### VC-1
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vc-1.md-->
+<!--@include: ../../includes/cf-descriptions/vc-1.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vc-1.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/vc-1.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2476,15 +2996,19 @@ We've made 3 guides related to this.
 
 ### VP9
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vp9.md-->
+<!--@include: ../../includes/cf-descriptions/vp9.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vp9.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/vp9.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2492,15 +3016,19 @@ We've made 3 guides related to this.
 
 ### x264
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x264.md-->
+<!--@include: ../../includes/cf-descriptions/x264.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x264.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/x264.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2508,15 +3036,19 @@ We've made 3 guides related to this.
 
 ### x265
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x265.md-->
+<!--@include: ../../includes/cf-descriptions/x265.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/x265.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2524,15 +3056,19 @@ We've made 3 guides related to this.
 
 ### x266
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x266.md-->
+<!--@include: ../../includes/cf-descriptions/x266.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x266.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/x266.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2544,15 +3080,19 @@ We've made 3 guides related to this.
 
 ### 720p
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/720p.md-->
+<!--@include: ../../includes/cf-descriptions/720p.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/720p.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/720p.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2560,15 +3100,19 @@ We've made 3 guides related to this.
 
 ### 1080p
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/1080p.md-->
+<!--@include: ../../includes/cf-descriptions/1080p.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/1080p.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/1080p.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2576,15 +3120,19 @@ We've made 3 guides related to this.
 
 ### 2160p
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/2160p.md-->
+<!--@include: ../../includes/cf-descriptions/2160p.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/2160p.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/2160p.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2596,15 +3144,19 @@ We've made 3 guides related to this.
 
 ### German
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german.md-->
+<!--@include: ../../includes/cf-descriptions/german.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2614,15 +3166,19 @@ We've made 3 guides related to this.
 
 <sub>Language: German + Original</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-dl.md-->
+<!--@include: ../../includes/cf-descriptions/german-dl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-dl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2630,15 +3186,19 @@ We've made 3 guides related to this.
 
 ### German DL (undefined)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-dl-undefined.md-->
+<!--@include: ../../includes/cf-descriptions/german-dl-undefined.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl-undefined.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-dl-undefined.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2648,15 +3208,19 @@ We've made 3 guides related to this.
 
 <sub>Language: English Only</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/language-not-english.md-->
+<!--@include: ../../includes/cf-descriptions/language-not-english.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-english.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/language-not-english.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2666,15 +3230,19 @@ We've made 3 guides related to this.
 
 <sub>Language: French Only</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/language-not-french.md-->
+<!--@include: ../../includes/cf-descriptions/language-not-french.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-french.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/language-not-french.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2684,15 +3252,19 @@ We've made 3 guides related to this.
 
 <sub>Language: Original Only</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/language-not-original.md-->
+<!--@include: ../../includes/cf-descriptions/language-not-original.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-original.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/language-not-original.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2702,15 +3274,19 @@ We've made 3 guides related to this.
 
 <sub>Language: Original + French</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/language-original-plus-french.md-->
+<!--@include: ../../includes/cf-descriptions/language-original-plus-french.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-plus-french.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/language-original-plus-french.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2718,15 +3294,19 @@ We've made 3 guides related to this.
 
 ### Not German or English
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/not-german-or-english.md-->
+<!--@include: ../../includes/cf-descriptions/not-german-or-english.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/not-german-or-english.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/not-german-or-english.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2734,15 +3314,19 @@ We've made 3 guides related to this.
 
 ### Not German, Japanese or English
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/not-german-japanese-or-english.md-->
+<!--@include: ../../includes/cf-descriptions/not-german-japanese-or-english.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/not-german-japanese-or-english.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/not-german-japanese-or-english.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2750,15 +3334,19 @@ We've made 3 guides related to this.
 
 ### Not German, Japanese, Korean, Chinese or English
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/not-german-japanese-korean-chinese-or-english.md-->
+<!--@include: ../../includes/cf-descriptions/not-german-japanese-korean-chinese-or-english.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/not-german-japanese-korean-chinese-or-english.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/not-german-japanese-korean-chinese-or-english.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2766,15 +3354,19 @@ We've made 3 guides related to this.
 
 ### Wrong Language
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/wrong-language.md-->
+<!--@include: ../../includes/cf-descriptions/wrong-language.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/wrong-language.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/wrong-language.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2788,15 +3380,19 @@ We've made 3 guides related to this.
 
 <sub>Audio Description</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/with-ad.md-->
+<!--@include: ../../includes/cf-descriptions/with-ad.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-ad.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/with-ad.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2806,15 +3402,19 @@ We've made 3 guides related to this.
 
 <sub>American Sign Language</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/with-asl.md-->
+<!--@include: ../../includes/cf-descriptions/with-asl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-asl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/with-asl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2824,15 +3424,19 @@ We've made 3 guides related to this.
 
 <sub>Black American Sign Language</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/with-basl.md-->
+<!--@include: ../../includes/cf-descriptions/with-basl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-basl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/with-basl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2842,15 +3446,19 @@ We've made 3 guides related to this.
 
 <sub>British Sign Language</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/with-bsl.md-->
+<!--@include: ../../includes/cf-descriptions/with-bsl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/with-bsl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/with-bsl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2862,15 +3470,19 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-bd-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2878,15 +3490,19 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-bd-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2894,15 +3510,19 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-bd-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2910,15 +3530,19 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 04
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-04.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-04.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-04.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-bd-tier-04.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2926,15 +3550,19 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 05
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-05.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-05.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-05.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-bd-tier-05.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2942,15 +3570,19 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 06
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-06.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-06.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-06.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-bd-tier-06.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2958,15 +3590,19 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 07
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-07.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-07.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-07.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-bd-tier-07.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2974,15 +3610,19 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 08
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-08.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-08.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-08.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-bd-tier-08.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2990,15 +3630,19 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3006,15 +3650,19 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3022,15 +3670,19 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3038,15 +3690,19 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 04
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-04.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-04.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-04.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-web-tier-04.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3054,15 +3710,19 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 05
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-05.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-05.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-05.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-web-tier-05.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3070,15 +3730,19 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 06
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-06.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-06.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-06.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-web-tier-06.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3086,15 +3750,19 @@ We've made 3 guides related to this.
 
 ### Anime Raws
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-raws.md-->
+<!--@include: ../../includes/cf-descriptions/anime-raws.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-raws.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-raws.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3102,15 +3770,19 @@ We've made 3 guides related to this.
 
 ### Anime LQ Groups
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-lq-groups.md-->
+<!--@include: ../../includes/cf-descriptions/anime-lq-groups.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-lq-groups.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-lq-groups.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3122,15 +3794,19 @@ We've made 3 guides related to this.
 
 ### v0
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v0.md-->
+<!--@include: ../../includes/cf-descriptions/v0.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v0.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/v0.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3138,15 +3814,19 @@ We've made 3 guides related to this.
 
 ### v1
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v1.md-->
+<!--@include: ../../includes/cf-descriptions/v1.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v1.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/v1.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3154,15 +3834,19 @@ We've made 3 guides related to this.
 
 ### v2
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v2.md-->
+<!--@include: ../../includes/cf-descriptions/v2.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v2.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/v2.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3170,15 +3854,19 @@ We've made 3 guides related to this.
 
 ### v3
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v3.md-->
+<!--@include: ../../includes/cf-descriptions/v3.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v3.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/v3.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3186,15 +3874,19 @@ We've made 3 guides related to this.
 
 ### v4
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v4.md-->
+<!--@include: ../../includes/cf-descriptions/v4.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v4.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/v4.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3206,15 +3898,19 @@ We've made 3 guides related to this.
 
 ### 10bit
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/10bit.md-->
+<!--@include: ../../includes/cf-descriptions/10bit.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/10bit.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/10bit.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3222,15 +3918,19 @@ We've made 3 guides related to this.
 
 ### Anime Dual Audio
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-dual-audio.md-->
+<!--@include: ../../includes/cf-descriptions/anime-dual-audio.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/anime-dual-audio.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3238,15 +3938,19 @@ We've made 3 guides related to this.
 
 ### Dubs Only
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dubs-only.md-->
+<!--@include: ../../includes/cf-descriptions/dubs-only.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dubs-only.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/dubs-only.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3254,15 +3958,19 @@ We've made 3 guides related to this.
 
 ### Uncensored
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/uncensored.md-->
+<!--@include: ../../includes/cf-descriptions/uncensored.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uncensored.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/uncensored.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3274,15 +3982,19 @@ We've made 3 guides related to this.
 
 ### German Remux Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-remux-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-remux-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-remux-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-remux-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3290,15 +4002,19 @@ We've made 3 guides related to this.
 
 ### German Remux Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-remux-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-remux-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-remux-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-remux-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3306,15 +4022,19 @@ We've made 3 guides related to this.
 
 ### German Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3322,15 +4042,19 @@ We've made 3 guides related to this.
 
 ### German Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3338,15 +4062,19 @@ We've made 3 guides related to this.
 
 ### German Bluray Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/german-bluray-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-bluray-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3354,15 +4082,19 @@ We've made 3 guides related to this.
 
 ### German Web Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3370,15 +4102,19 @@ We've made 3 guides related to this.
 
 ### German Web Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3386,15 +4122,19 @@ We've made 3 guides related to this.
 
 ### German Web Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/german-web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3402,15 +4142,19 @@ We've made 3 guides related to this.
 
 ### German Scene
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-scene.md-->
+<!--@include: ../../includes/cf-descriptions/german-scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3422,15 +4166,19 @@ We've made 3 guides related to this.
 
 ### German Anime Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-anime-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3438,15 +4186,19 @@ We've made 3 guides related to this.
 
 ### German Anime Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-anime-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3454,15 +4206,19 @@ We've made 3 guides related to this.
 
 ### German Anime Bluray Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-anime-bluray-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3470,15 +4226,19 @@ We've made 3 guides related to this.
 
 ### German Anime Web Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-anime-web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3486,15 +4246,19 @@ We've made 3 guides related to this.
 
 ### German Anime Web Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-anime-web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3502,15 +4266,19 @@ We've made 3 guides related to this.
 
 ### German Anime Web Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-anime-web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3518,15 +4286,19 @@ We've made 3 guides related to this.
 
 ### German Anime Scene
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-scene.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-anime-scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-anime-scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3538,15 +4310,19 @@ We've made 3 guides related to this.
 
 ### German 1080p Booster
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-1080p-booster.md-->
+<!--@include: ../../includes/cf-descriptions/german-1080p-booster.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-1080p-booster.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-1080p-booster.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3554,15 +4330,19 @@ We've made 3 guides related to this.
 
 ### German 2160p Booster
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-2160p-booster.md-->
+<!--@include: ../../includes/cf-descriptions/german-2160p-booster.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-2160p-booster.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-2160p-booster.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3572,15 +4352,19 @@ We've made 3 guides related to this.
 
 <sub>German Low-Quality Releases = German LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-lq.md-->
+<!--@include: ../../includes/cf-descriptions/german-lq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-lq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3590,15 +4374,19 @@ We've made 3 guides related to this.
 
 <sub>Low-Quality Releases = LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-lq-release-title.md-->
+<!--@include: ../../includes/cf-descriptions/german-lq-release-title.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq-release-title.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-lq-release-title.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3608,15 +4396,19 @@ We've made 3 guides related to this.
 
 <sub>German Microsized Releases = German Microsized</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-microsized.md-->
+<!--@include: ../../includes/cf-descriptions/german-microsized.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-microsized.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-microsized.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3624,15 +4416,19 @@ We've made 3 guides related to this.
 
 ### German Subbed
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-subbed.md-->
+<!--@include: ../../includes/cf-descriptions/german-subbed.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-subbed.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/german-subbed.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3644,15 +4440,19 @@ We've made 3 guides related to this.
 
 ### FR Remux Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-remux-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-remux-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-remux-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-remux-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3660,15 +4460,19 @@ We've made 3 guides related to this.
 
 ### FR Remux Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-remux-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/french-remux-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-remux-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-remux-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3676,15 +4480,19 @@ We've made 3 guides related to this.
 
 ### FR UHD Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-uhd-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-uhd-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-uhd-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-uhd-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3692,15 +4500,19 @@ We've made 3 guides related to this.
 
 ### FR UHD Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-uhd-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/french-uhd-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-uhd-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-uhd-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3708,15 +4520,19 @@ We've made 3 guides related to this.
 
 ### FR HD Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-hd-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-hd-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hd-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-hd-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3724,15 +4540,19 @@ We've made 3 guides related to this.
 
 ### FR HD Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-hd-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/french-hd-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hd-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-hd-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3740,15 +4560,19 @@ We've made 3 guides related to this.
 
 ### FR WEB Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3756,15 +4580,19 @@ We've made 3 guides related to this.
 
 ### FR WEB Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/french-web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3772,15 +4600,19 @@ We've made 3 guides related to this.
 
 ### FR Scene Groups
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-scene.md-->
+<!--@include: ../../includes/cf-descriptions/french-scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3790,15 +4622,19 @@ We've made 3 guides related to this.
 
 <sub>French Low-Quality Releases = FR LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-lq.md-->
+<!--@include: ../../includes/cf-descriptions/french-lq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-lq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-lq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3810,15 +4646,19 @@ We've made 3 guides related to this.
 
 ### FR Anime Tier 01
 
-??? question "FR Anime Tier 01 - [Click to show/hide]"
+::: details FR Anime Tier 01 - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-anime-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-anime-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-anime-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3826,15 +4666,19 @@ We've made 3 guides related to this.
 
 ### FR Anime Tier 02
 
-??? question "FR Anime Tier 02 - [Click to show/hide]"
+::: details FR Anime Tier 02 - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-anime-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/french-anime-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-anime-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3842,15 +4686,19 @@ We've made 3 guides related to this.
 
 ### FR Anime Tier 03
 
-??? question "FR Anime Tier 03 - [Click to show/hide]"
+::: details FR Anime Tier 03 - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-anime-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/french-anime-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-anime-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3858,15 +4706,19 @@ We've made 3 guides related to this.
 
 ### FR Anime FanSub
 
-??? question "FR Anime FanSub - [Click to show/hide]"
+::: details FR Anime FanSub - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-anime-fansub.md-->
+<!--@include: ../../includes/cf-descriptions/french-anime-fansub.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-anime-fansub.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3878,15 +4730,19 @@ We've made 3 guides related to this.
 
 ### VFF
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vff.md-->
+<!--@include: ../../includes/cf-descriptions/french-vff.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vff.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-vff.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3894,15 +4750,19 @@ We've made 3 guides related to this.
 
 ### VOF
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vof.md-->
+<!--@include: ../../includes/cf-descriptions/french-vof.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vof.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-vof.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3910,15 +4770,19 @@ We've made 3 guides related to this.
 
 ### VFI
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vfi.md-->
+<!--@include: ../../includes/cf-descriptions/french-vfi.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vfi.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-vfi.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3926,15 +4790,19 @@ We've made 3 guides related to this.
 
 ### VF2
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vf2.md-->
+<!--@include: ../../includes/cf-descriptions/french-vf2.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vf2.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-vf2.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3942,15 +4810,19 @@ We've made 3 guides related to this.
 
 ### VFQ
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vfq.md-->
+<!--@include: ../../includes/cf-descriptions/french-vfq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vfq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-vfq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3958,15 +4830,19 @@ We've made 3 guides related to this.
 
 ### VOQ
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-voq.md-->
+<!--@include: ../../includes/cf-descriptions/french-voq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-voq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-voq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3974,15 +4850,19 @@ We've made 3 guides related to this.
 
 ### VQ
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vq.md-->
+<!--@include: ../../includes/cf-descriptions/french-vq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-vq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3990,15 +4870,19 @@ We've made 3 guides related to this.
 
 ### VFB
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vfb.md-->
+<!--@include: ../../includes/cf-descriptions/french-vfb.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vfb.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-vfb.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4006,15 +4890,19 @@ We've made 3 guides related to this.
 
 ### VOSTFR
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vostfr.md-->
+<!--@include: ../../includes/cf-descriptions/french-vostfr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vostfr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/french-vostfr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4022,15 +4910,19 @@ We've made 3 guides related to this.
 
 ### FanSUB
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/fansub.md-->
+<!--@include: ../../includes/cf-descriptions/fansub.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fansub.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/fansub.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4038,15 +4930,19 @@ We've made 3 guides related to this.
 
 ### FastSUB
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/fastsub.md-->
+<!--@include: ../../includes/cf-descriptions/fastsub.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fastsub.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/fastsub.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4060,11 +4956,13 @@ We've made 3 guides related to this.
 
 ### Asian Tier 01
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/asian-tier-01.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/asian-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4072,11 +4970,13 @@ We've made 3 guides related to this.
 
 ### Asian Tier 02
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/asian-tier-02.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/asian-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4084,11 +4984,13 @@ We've made 3 guides related to this.
 
 ### Asian Tier 03
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/asian-tier-03.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/radarr/cf/asian-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4098,15 +5000,19 @@ We've made 3 guides related to this.
 
 <sub>Asian Low-Quality Releases = Asian LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/asian-lq.md-->
+<!--@include: ../../includes/cf-descriptions/asian-lq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/asian-lq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/radarr/cf/asian-lq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 

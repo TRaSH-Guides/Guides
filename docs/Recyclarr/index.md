@@ -2,9 +2,11 @@
 
 Recyclarr is a command-line application that will automatically synchronize recommended settings from the TRaSH guides to your Sonarr/Radarr instances. It was formerly named "Trash Updater". Here you will find a collection of Recyclarr configs based on the profiles found in the guides.
 
-!!! info "Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your setup scheduler."
+::: info Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your setup scheduler.
 
-For Installation and setup Guide please check the official [Recyclarr Wiki](https://recyclarr.dev/guide/getting-started/){:target="\_blank" rel="noopener noreferrer"}
+:::
+
+For Installation and setup Guide please check the official [Recyclarr Wiki](https://recyclarr.dev/guide/getting-started/)
 
 For any questions or support questions please join the discord support channel.
 
@@ -14,4 +16,4 @@ For any questions or support questions please join the discord support channel.
 
 ### Collection of configs
 
-- [Recyclarr - collection of configs](https://recyclarr.dev/guide/guide-configs/){:target="\_blank" rel="noopener noreferrer"}
+- [Recyclarr - collection of configs](https://recyclarr.dev/guide/guide-configs/)

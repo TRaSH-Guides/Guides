@@ -1,30 +1,34 @@
 # Docker
 
-!!! tip
+::: tip
 
-    If you're new to Docker containers and want an easy setup, we suggest taking a look at [DockSTARTer](https://dockstarter.com/){:target="_blank" rel="noopener noreferrer"}.
-    We've also created a short guide [HERE](/File-and-Folder-Structure/How-to-set-up/Dockstarter/) where we explain the settings for the most used applications.
+If you're new to Docker containers and want an easy setup, we suggest taking a look at [DockSTARTer](https://dockstarter.com/).
+We've also created a short guide [HERE](/File-and-Folder-Structure/How-to-set-up/Dockstarter/) where we explain the settings for the most used applications.
 
-    The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
-    You may choose to rely on DockSTARTer for various changes to your Docker system or use DockSTARTer as a stepping stone and learn to do more advanced configurations.
+The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
+You may choose to rely on DockSTARTer for various changes to your Docker system or use DockSTARTer as a stepping stone and learn to do more advanced configurations.
 
-    *DockSTARTer was actually my first step into the world of Docker containers.*
+*DockSTARTer was actually my first step into the world of Docker containers.*
 
-!!! note
+:::
 
-    I'm not going to explain how to get Docker installed and running, we will only explain which folder structure we recommend.
+::: info
 
-    The paths mentioned below refer to internal paths (or `Container Path`) for the containers!
+I'm not going to explain how to get Docker installed and running, we will only explain which folder structure we recommend.
 
-    External paths (or `Host Path`) depend on where you mounted your share or your drives.
+The paths mentioned below refer to internal paths (or `Container Path`) for the containers!
 
-    For example `/<path_to_data>/data`, or even `/data`.
+External paths (or `Host Path`) depend on where you mounted your share or your drives.
+
+For example `/<path_to_data>/data`, or even `/data`.
+
+:::
 
 <!--@include: ../../../includes/file-and-folder-structure/folder-structure.md-->
 <!-- markdownlint-disable MD001-->
 ### Fastest way to create the needed subfolders
 
-The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTY](https://putty.software/){:target="\_blank" rel="noopener noreferrer"}.
+The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTY](https://putty.software/).
 These options will automatically create the required subfolders for your media library as well as your preferred download client(s).
 If you use both torrents and Usenet, use both commands.
 
@@ -48,19 +52,23 @@ mkdir -p /data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 
 ## Docker-compose Example
 
-!!! example ""
+::: info
 
-    This is a docker-compose example based on a default Ubuntu install.
+This is a docker-compose example based on a default Ubuntu install.
 
-    The storage location used for the host is the same as in the container to make it easier to understand in this case `/data`.
+The storage location used for the host is the same as in the container to make it easier to understand in this case `/data`.
 
-    The appdata (`/config`) will be stored on the host in the `/docker/appdata/{appname}`
+The appdata (`/config`) will be stored on the host in the `/docker/appdata/{appname}`
 
-??? example "docker-compose - [Click to show/hide]"
+:::
 
-    ```yaml
-    <!--@include: ../../../includes/docker/docker-compose.yml-->
-    ```
+::: details docker-compose - [Click to show/hide]
+
+```yaml
+<!--@include: ../../../includes/docker/docker-compose.yml-->
+```
+
+:::
 
 <!--@include: ../../../includes/file-and-folder-structure/docker-compose-commands.md-->
 

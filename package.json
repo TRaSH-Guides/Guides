@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "vitepress": "2.0.0-alpha.20",
+    "vitepress-plugin-tabs": "^0.9.1",
     "vitepress-sidebar": "^1.40.0"
   },
   "allowScripts": {

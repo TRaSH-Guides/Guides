@@ -5,5 +5,5 @@ VP9 is an open-source, royalty-free video codec developed by Google, released in
 
 There have been reported playback and transcoding issues with VP9 content. No respectable release group is currently using it. It is best to avoid this codec for now to prevent compatibility issues.
 
-For more information, visit the [VP9 Wikipedia page](https://en.wikipedia.org/wiki/VP9){:target="_blank" rel="noopener noreferrer"}.
+For more information, visit the [VP9 Wikipedia page](https://en.wikipedia.org/wiki/VP9).
 <!-- markdownlint-enable MD036 MD041-->

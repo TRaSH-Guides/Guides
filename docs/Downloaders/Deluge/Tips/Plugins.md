@@ -2,13 +2,17 @@
 
 Here you will find a list of included and available plugins that may be useful. These are not required but should be seen as ways to advance/customize your setup once you understand the client and its behaviors.
 
-!!! info
+::: info
 
-    All plugins are .egg files, these files will need to be placed inside your deluge config/data directory, inside the `plugins` folder. If you are using a thin client, they will also need to be present on your local instance as well.
+All plugins are .egg files, these files will need to be placed inside your deluge config/data directory, inside the `plugins` folder. If you are using a thin client, they will also need to be present on your local instance as well.
 
-!!! tip
+:::
 
-    Links to the plugins below are directly to the latest versions available on Deluge's forums, see the original and subsequent posts for more information concerning the plugin's features and iterations.
+::: tip
+
+Links to the plugins below are directly to the latest versions available on Deluge's forums, see the original and subsequent posts for more information concerning the plugin's features and iterations.
+
+:::
 
 ---
 
@@ -26,7 +30,7 @@ This plugin is used to continuously update the tracker when adding torrents from
 
 See the forum thread for details below.
 
-[AddTorrentCheck](https://forum.deluge-torrent.org/viewtopic.php?p=236070#p236070){:target="\_blank" rel="noopener noreferrer"}
+[AddTorrentCheck](https://forum.deluge-torrent.org/viewtopic.php?p=236070#p236070)
 
 ---
 
@@ -42,9 +46,11 @@ Use at your own discretion.
 
 Execute will run a program or script upon reaching a specified event. It is recommended that after adding events, you restart Deluge.
 
-!!! info
+::: info
 
-    Checking or Rechecking a torrent will not trigger the "Torrent Completed" event, you will need to actually download the torrent to trigger this.
+Checking or Rechecking a torrent will not trigger the "Torrent Completed" event, you will need to actually download the torrent to trigger this.
+
+:::
 
 ---
 
@@ -52,7 +58,7 @@ Execute will run a program or script upon reaching a specified event. It is reco
 
 Stats does exactly what it sounds like; provides you with statistics on torrent traffic. You can find the latest version on the forums, but depending on which version of Deluge you install an older version may be included.
 
-[Stats](https://forum.deluge-torrent.org/viewtopic.php?p=236443#p236443){:target="\_blank" rel="noopener noreferrer"}
+[Stats](https://forum.deluge-torrent.org/viewtopic.php?p=236443#p236443)
 
 ---
 
@@ -86,7 +92,7 @@ This is one of the forks of the original AutoRemovePlus (also referred to as ARP
 
 Other forks, and the original plugin, can be found on the GitHub page.
 
-[AutoRemovePlus](https://github.com/laur89/deluge-autoremoveplus){:target="\_blank" rel="noopener noreferrer"}
+[AutoRemovePlus](https://github.com/laur89/deluge-autoremoveplus)
 
 ---
 
@@ -94,20 +100,24 @@ Other forks, and the original plugin, can be found on the GitHub page.
 
 If you need to set libtorrent settings to anything other than their defaults, this is the plugin for you. There are presets, but you can fine-tune the settings as you need as well.
 
-!!! ATTENTION
+::: warning
 
-    There is a known bug when trying to enable settings in ltConfig, double-clicking will sometimes not "check" the option.
+There is a known bug when trying to enable settings in ltConfig, double-clicking will sometimes not "check" the option.
 
-    Simply click the option, then use the space bar to enable that checkbox.
+Simply click the option, then use the space bar to enable that checkbox.
 
-!!! tips
+:::
 
-    If you want to seed over 1600 torrents, you will need this plugin. You will need to increase the active_tracker_limit.
+::: tip
 
-    If your tracker's SSL certificate has expired, you can disable validate_https_trackers to bypass validation.
+If you want to seed over 1600 torrents, you will need this plugin. You will need to increase the active_tracker_limit.
+
+If your tracker's SSL certificate has expired, you can disable validate_https_trackers to bypass validation.
+
+:::
 
 See the forum thread for details below.
 
-[ltConfig](https://forum.deluge-torrent.org/viewtopic.php?p=235653#p235653){:target="\_blank" rel="noopener noreferrer"}
+[ltConfig](https://forum.deluge-torrent.org/viewtopic.php?p=235653#p235653)
 
 <!--@include: ../../../../includes/support.md-->

@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD041-->
 I suggest to follow the following Guides first.
 
-- [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/){:target="\_blank" rel="noopener noreferrer"}.
-- [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="\_blank" rel="noopener noreferrer"}.
+- [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/).
+- [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/).
 
 For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.
 
-<!--@include: ../includes/cf/score-attention.md-->
+<!--@include: ../cf/score-attention.md-->
 <!-- markdownlint-enable MD041-->

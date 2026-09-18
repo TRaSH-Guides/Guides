@@ -5,5 +5,5 @@ VC-1 is a lossy video codec developed by Microsoft, commonly found on older Blu-
 
 Many release groups re-encode older VC-1 content to AVC when a disc is also available in AVC, as AVC generally offers better compression and improved visual quality at lower bitrates, along with wider compatibility across modern playback devices.
 
-For more information, visit the [VC-1 Wikipedia page](https://en.wikipedia.org/wiki/VC-1){:target="_blank" rel="noopener noreferrer"}.
+For more information, visit the [VC-1 Wikipedia page](https://en.wikipedia.org/wiki/VC-1).
 <!-- markdownlint-enable MD036 MD041-->

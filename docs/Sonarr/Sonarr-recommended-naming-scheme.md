@@ -29,33 +29,35 @@ First, you need to set up Sonarr to show all the naming options:
 
 ## Episode Format
 
-=== "Standard"
+::: tabs
 
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default'] }}
-    ```
+== Standard
 
-    <sub><sup>**Single Episode**: `The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+```bash
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default'] }}
+```
 
-    <sub><sup>**Multi Episode**: `The Series Title! (2010) - S01E01-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+<sub><sup>**Single Episode**: `The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
-=== "Daily"
+<sub><sup>**Multi Episode**: `The Series Title! (2010) - S01E01-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default'] }}
-    ```
+== Daily
 
-    <sub><sup>**Example**: `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
+```bash
+{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default'] }}
+```
 
-=== "Anime"
+<sub><sup>**Example**: `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default'] }}
-    ```
+== Anime
 
-    <sub><sup>**Single Episode**: `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`</sup></sub>
+```bash
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default'] }}
+```
 
-    <sub><sup>**Multi Episode**: `The Series Title! (2010) - S01E01-E03 - 001-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`</sup></sub>
+<sub><sup>**Single Episode**: `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`</sup></sub>
+
+<sub><sup>**Multi Episode**: `The Series Title! (2010) - S01E01-E03 - 001-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`</sup></sub>
 
 ---
 
@@ -63,71 +65,89 @@ First, you need to set up Sonarr to show all the naming options:
 
 <!--@include: ../../includes/sonarr/imdb-vs-tvdb.md-->
 
-=== "Standard Folder"
+::: tabs
 
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['series']['default'] }}
-    ```
+== Standard Folder
 
-    <sub><sup>**Example**: `The Series Title! (2010)`</sup></sub>
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['default'] }}
+```
 
-=== "Optional Plex"
+<sub><sup>**Example**: `The Series Title! (2010)`</sup></sub>
 
-    This naming scheme is made to be used with the [New Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="\_blank" rel="noopener noreferrer"}
+== Optional Plex
 
-    === "Plex Folder IMDb"
+This naming scheme is made to be used with the [New Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242)
 
-        <!--@include: ../../includes/sonarr/tvdb-imdb-info.md-->
+::: tabs
 
-        ```bash
-        {{ sonarr['naming']['sonarr-naming']['series']['plex-imdb'] }}
-        ```
+== Plex Folder IMDb
 
-        <sub><sup>**Example**: `The Series Title! (2010) {imdb-tt1520211}`</sup></sub>
+<!--@include: ../../includes/sonarr/tvdb-imdb-info.md-->
 
-    === "Plex Folder TVDb"
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['plex-imdb'] }}
+```
 
-        ```bash
-        {{ sonarr['naming']['sonarr-naming']['series']['plex-tvdb'] }}
-        ```
+<sub><sup>**Example**: `The Series Title! (2010) {imdb-tt1520211}`</sup></sub>
 
-        <sub><sup>**Example**: `The Series Title! (2010) {tvdb-1520211}`</sup></sub>
+== Plex Folder TVDb
 
-=== "Optional Emby"
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['plex-tvdb'] }}
+```
 
-    Source: [Emby Wiki/Docs](https://emby.media/support/articles/TV-Naming.html#id-tags-in-folder--file-names){:target="\_blank" rel="noopener noreferrer"}
+<sub><sup>**Example**: `The Series Title! (2010) {tvdb-1520211}`</sup></sub>
 
-    === "Emby Folder IMDb"
+:::
 
-        <!--@include: ../../includes/sonarr/tvdb-imdb-info.md-->
+== Optional Emby
 
-        ```bash
-        {{ sonarr['naming']['sonarr-naming']['series']['emby-imdb'] }}
-        ```
+Source: [Emby Wiki/Docs](https://emby.media/support/articles/TV-Naming.html#id-tags-in-folder--file-names)
 
-        <sub><sup>**Example**: `The Series Title! (2010) [imdb-tt1520211]`</sup></sub>
+::: tabs
 
-    === "Emby Folder TVDb"
+== Emby Folder IMDb
 
-        ```bash
-        {{ sonarr['naming']['sonarr-naming']['series']['emby-tvdb'] }}
-        ```
+<!--@include: ../../includes/sonarr/tvdb-imdb-info.md-->
 
-        <sub><sup>**Example**: `The Series Title! (2010) [tvdb-1520211]`</sup></sub>
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['emby-imdb'] }}
+```
 
-=== "Optional Jellyfin"
+<sub><sup>**Example**: `The Series Title! (2010) [imdb-tt1520211]`</sup></sub>
 
-    Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/shows/){:target="\_blank" rel="noopener noreferrer"}
+== Emby Folder TVDb
 
-    !!! warning "Jellyfin doesn't support IMDb IDs for shows"
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['emby-tvdb'] }}
+```
 
-    === "Jellyfin Folder TVDb"
+<sub><sup>**Example**: `The Series Title! (2010) [tvdb-1520211]`</sup></sub>
 
-        ```bash
-        {{ sonarr['naming']['sonarr-naming']['series']['jellyfin-tvdb'] }}
-        ```
+:::
 
-        <sub><sup>**Example**: `The Series Title! (2010) [tvdbid-1520211]`</sup></sub>
+== Optional Jellyfin
+
+Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/shows/)
+
+::: warning Jellyfin doesn't support IMDb IDs for shows
+
+:::
+
+::: tabs
+
+== Jellyfin Folder TVDb
+
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['jellyfin-tvdb'] }}
+```
+
+<sub><sup>**Example**: `The Series Title! (2010) [tvdbid-1520211]`</sup></sub>
+
+:::
+
+:::
 
 ---
 

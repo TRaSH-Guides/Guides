@@ -10,13 +10,15 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replace it with the `L
 - If you use either merged local/remote setups using mergerfs or similar.
 - You use Docker and **DON'T** have consistent and well-planned paths.
 
-!!! note
+::: info
 
-    If you use Docker it would be smarter to fix the problem at the source of what's causing the actual issue.
+If you use Docker it would be smarter to fix the problem at the source of what's causing the actual issue.
 
-    - [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
+- [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths)
 
-    - [TRaSH Guides](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
+- [TRaSH Guides](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/)
+
+:::
 
 ---
 
@@ -73,9 +75,11 @@ Open up the download client. For this example, we will be using SABnzbd.
 This is what you put in your Host in Remote Path Mapping.
 This could be a `hostname`, `container name` (use `.internal` domain like `sabnzbd.internal` when using hotio containers with VPN) or an `IP Address`
 
-??? example "example what to add in Add Remote Path Mapping - [Click to show/hide]"
+::: details example what to add in Add Remote Path Mapping - [Click to show/hide]
 
-    ![!rpm-add-rpm-select-sabnzbd](images/rpm-add-rpm-select-sabnzbd.png)
+![!rpm-add-rpm-select-sabnzbd](images/rpm-add-rpm-select-sabnzbd.png)
+
+:::
 
 ### Remote Path
 
@@ -85,9 +89,11 @@ In SABnzbd go to `settings` => `Folders`
 
 ![!rpm-sabnzbd-folders-cdf](images/rpm-sabnzbd-folders-cdf.png)
 
-??? example "example what to add in Add Remote Path Mapping - [Click to show/hide]"
+::: details example what to add in Add Remote Path Mapping - [Click to show/hide]
 
-    ![!rpm-add-rpm-remote-path](images/rpm-add-rpm-remote-path.png)
+![!rpm-add-rpm-remote-path](images/rpm-add-rpm-remote-path.png)
+
+:::
 
 ### Local Path
 
@@ -95,9 +101,11 @@ To find out what you need to put in in your local path you need to know how Rada
 
 Click on the browse button and browse to the location where the files are accessible for Radarr.
 
-??? example "example what to add in Add Remote Path Mapping - [Click to show/hide]"
+::: details example what to add in Add Remote Path Mapping - [Click to show/hide]
 
-    ![!rpm-add-local-path](images/rpm-add-local-path.png)
+![!rpm-add-local-path](images/rpm-add-local-path.png)
+
+:::
 
 The final result will look something like this:
 

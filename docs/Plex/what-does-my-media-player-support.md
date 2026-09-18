@@ -4,25 +4,29 @@ We've created an Excel sheet with several tested Media Player devices with info 
 
 We hope this Excel sheet will be helpful for everyone looking for a reliable Media Player device.
 
-Do you see a missing Player/Product? Are you able to provide the needed info? Please join [TRaSH Guides Discord](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+Do you see a missing Player/Product? Are you able to provide the needed info? Please join [TRaSH Guides Discord](https://trash-guides.info/discord)
 
-??? question "How can I provide info on a missing player? What do I need to provide? - [Click to show/hide]"
+::: details How can I provide info on a missing player? What do I need to provide? - [Click to show/hide]
 
-    - Currently, it's only possible to provide info if the playback is seen in Tautulli.
-    - Player or Product that can run the Plex client directly or indirectly (Infuse, Plex Kodi Connect, Plex2Zidoo, etc)
-    - Preferably a TV that can do Dolby Vision, but we also need HDR10+ results.
-    - Player and Product info can be seen in Tautulli.
-    - When doing a playback test for HDR formats provide screenshots of what Tautulli and your TV show, along with whatever other devices you have that show what formats are being used.
-    - When doing an audio format test provide screenshots from Tautulli and your AVR.
-    - Provide this info in [TRaSH Guides Discord](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} in #request-suggestions with a title starting with: `Test Media Player <your tested device>`
+- Currently, it's only possible to provide info if the playback is seen in Tautulli.
+- Player or Product that can run the Plex client directly or indirectly (Infuse, Plex Kodi Connect, Plex2Zidoo, etc)
+- Preferably a TV that can do Dolby Vision, but we also need HDR10+ results.
+- Player and Product info can be seen in Tautulli.
+- When doing a playback test for HDR formats provide screenshots of what Tautulli and your TV show, along with whatever other devices you have that show what formats are being used.
+- When doing an audio format test provide screenshots from Tautulli and your AVR.
+- Provide this info in [TRaSH Guides Discord](https://trash-guides.info/discord) in #request-suggestions with a title starting with: `Test Media Player <your tested device>`
+
+:::
 
 ## What does the spreadsheet cover
 
 This sheet will only cover Players/Products that can run the Plex client directly or indirectly (*Jellyfin/Emby isn't covered **yet** due to the lack of a proper Tautulli app and feedback/info from users*).
 
-!!! info "Jellyfin/Emby"
+::: info Jellyfin/Emby
 
-    While these principles are based on Plex and the capabilities of certain devices, the capabilities of these devices also apply to JellyFin and Emby. Assuming that it's possible to do the equivalent streaming method (direct or indirect play) with your media server, the hardware should act the same as if Plex was used.
+While these principles are based on Plex and the capabilities of certain devices, the capabilities of these devices also apply to JellyFin and Emby. Assuming that it's possible to do the equivalent streaming method (direct or indirect play) with your media server, the hardware should act the same as if Plex was used.
+
+:::
 
 The following aspects are covered
 
@@ -63,9 +67,11 @@ Overall, audio passthrough is the ideal way to send audio from your media server
 
 ## Link to tested Media Player Devices
 
-[Tested Media Players](https://docs.google.com/spreadsheets/d/15Wf_jy5WqOPShczFKQB28cCetBgAGcnA0mNOG-ePwDc/edit?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Tested Media Players](https://docs.google.com/spreadsheets/d/15Wf_jy5WqOPShczFKQB28cCetBgAGcnA0mNOG-ePwDc/edit?usp=sharing)
 
-!!! info "A lot of results have a note added that provides extra information, such as fallback HDR or audio formats, as well as other information that we've gathered from several sources."
+::: info A lot of results have a note added that provides extra information, such as fallback HDR or audio formats, as well as other information that we've gathered from several sources.
+
+:::
 
 ---
 
@@ -75,17 +81,17 @@ The next thing to do is set up a proper quality profile with the info you gather
 
 ### Radarr
 
-[How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
+[How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles) - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 #### How to make use of HDR Formats for Radarr
 
-- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use
+- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles) - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use
 
 <!--@include: ../../includes/cf/radarr-hdr-formats.md-->
 
 #### How to make use of Audio Formats for Radarr
 
-- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use
+- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles) - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use
 
 <!--@include: ../../includes/cf/radarr-audio.md-->
 
@@ -93,11 +99,11 @@ The next thing to do is set up a proper quality profile with the info you gather
 
 ### Sonarr
 
-[How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
+[How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles) - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 #### How to make use of HDR Formats for Sonarr
 
-- [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
+- [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles) - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 <!--@include: ../../includes/cf/sonarr-hdr-formats.md-->
 

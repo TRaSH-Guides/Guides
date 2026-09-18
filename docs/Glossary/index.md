@@ -8,9 +8,11 @@ This glossary provides definitions and explanations of commonly used terms, abbr
 
 ### Atomic Move
 
-!!! info
+::: info
 
-    Also known as: [Instant Move](#instant-move)
+Also known as: [Instant Move](#instant-move)
+
+:::
 
 This action moves the file instantly, rather than copying it to a new location and deleting it from the original.
 
@@ -28,15 +30,17 @@ Depending on its context, whether discussing hosting or media management applica
 
 ### Cross-Seed
 
-The act of [seeding](#seeder) the same torrent files or data across multiple [trackers](#tracker) without re-downloading. It also refers to a [software application of the same name](https://www.cross-seed.org){:target="\_blank" rel="noopener noreferrer"} that automates this process.
+The act of [seeding](#seeder) the same torrent files or data across multiple [trackers](#tracker) without re-downloading. It also refers to a [software application of the same name](https://www.cross-seed.org) that automates this process.
 
 `Cross-Seed` and `crossseed` or `xseed` often refer to the application, while `cross seed` or `xseed` can refer to the action.
 
 ### Custom Format
 
-!!! info
+::: info
 
-    Also known as: [CF](#cf)
+Also known as: [CF](#cf)
+
+:::
 
 A feature that applies pattern matching to a release based on information inferred from the release name on the corresponding indexer during a search. Users can customize patterns in a Custom Format, which can then be assigned individual scores within each [Quality Profile](#quality-profile).
 
@@ -48,21 +52,23 @@ After the release has been imported, when using the TRaSH recommended naming sch
 
 ### Deluge
 
-[Deluge](https://deluge-torrent.org/){:target="\_blank" rel="noopener noreferrer"} is a lightweight, free, open-source, cross-platform BitTorrent client.
+[Deluge](https://deluge-torrent.org/) is a lightweight, free, open-source, cross-platform BitTorrent client.
 
 ### DMCA Takedown
 
-!!! info
+::: info
 
-    Also known as: DMCA
+Also known as: DMCA
 
-DMCA is an abbreviation for [`Digital Millennium Copyright Act`](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act){:target="\_blank" rel="noopener noreferrer"}.
+:::
+
+DMCA is an abbreviation for [`Digital Millennium Copyright Act`](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act).
 
 The DMCA Takedown process allows creators to send notices to hosting/service providers that have material that infringes on their copyright.
 
 When a DMCA takedown request is issued to a [Usenet Service Provider (USP)](#usenet-service-provider), parts of the release may end up missing or incomplete, leaving you unable to complete the extraction.
 
-[More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act){:target="\_blank" rel="noopener noreferrer"}
+[More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act)
 
 ---
 
@@ -124,13 +130,15 @@ An application designed to help with the automation and management of your music
 
 ### Notice & Takedown
 
-!!! info
+::: info
 
-    Also known as: N&T
+Also known as: N&T
+
+:::
 
 The European equivalent of [DMCA](#dmca-takedown).
 
-[More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Notice_and_take_down){:target="\_blank" rel="noopener noreferrer"}
+[More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Notice_and_take_down)
 
 ---
 
@@ -162,19 +170,23 @@ An application designed to help with the automation and management of your [trac
 
 ### qBit Manage
 
-!!! info
+::: info
 
-    Also known as: qbm, qbitmanage, qb_manage
+Also known as: qbm, qbitmanage, qb_manage
 
-[qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"} is a tool for managing your [qBittorrent](#qbittorrent) instance. It automates actions on torrents meeting specified criteria, such as time seeded and tracker.
+:::
+
+[qBit Manage](https://github.com/StuffAnThings/qbit_manage) is a tool for managing your [qBittorrent](#qbittorrent) instance. It automates actions on torrents meeting specified criteria, such as time seeded and tracker.
 
 ### qBittorrent
 
-!!! info
+::: info
 
-    Also known as: qb, qbit, qbittorrent
+Also known as: qb, qbit, qbittorrent
 
-[qBittorrent](https://www.qbittorrent.org/){:target="\_blank" rel="noopener noreferrer"} is a free, open-source, cross-platform BitTorrent client. Please note that it is highly recommended to avoid new major and minor (X and X.X) versions until properly validated by the community, as these often contain significant changes and/or bugs.
+:::
+
+[qBittorrent](https://www.qbittorrent.org/) is a free, open-source, cross-platform BitTorrent client. Please note that it is highly recommended to avoid new major and minor (X and X.X) versions until properly validated by the community, as these often contain significant changes and/or bugs.
 
 ### Quality
 
@@ -186,9 +198,11 @@ Defines the minimum, preferred, and maximum file sizes for any given [Quality](#
 
 ### Quality Profile
 
-!!! info
+::: info
 
-    Also known as: QP
+Also known as: QP
+
+:::
 
 A defined group, and preferential ordering, of qualities, [Custom Format](#custom-format) scores, and additional settings that can be assigned to movies, TV shows, and collections.
 
@@ -206,9 +220,9 @@ An application designed to help with the automation and management of your movie
 
 ### SCENE
 
-This term refers to underground groups specializing in cracking and releasing copyrighted material, known as "scene releases". These groups operate without public websites, do not accept requests, and generally don't interact much with the wider internet. They follow strict [rules](https://scenerules.org/){:target="\_blank" rel="noopener noreferrer"} and prioritize internal competition and prestige within their community. Releases are typically distributed through FTP servers, from which they eventually trickle down to private and then public trackers and indexers.
+This term refers to underground groups specializing in cracking and releasing copyrighted material, known as "scene releases". These groups operate without public websites, do not accept requests, and generally don't interact much with the wider internet. They follow strict [rules](https://scenerules.org/) and prioritize internal competition and prestige within their community. Releases are typically distributed through FTP servers, from which they eventually trickle down to private and then public trackers and indexers.
 
-[More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Warez_scene){:target="\_blank" rel="noopener noreferrer"}
+[More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Warez_scene)
 
 ### Seeder
 
@@ -242,9 +256,11 @@ Servers that help [Peers](#peer) locate each other and form an efficient distrib
 
 ### Usenet Service Provider
 
-!!! info
+::: info
 
-    Also known as: USP
+Also known as: USP
+
+:::
 
 Usenet providers manage the servers that store content and offer subscription-based access for downloading files. [Indexers](#indexer) are required to search for and locate releases on Usenet.
 

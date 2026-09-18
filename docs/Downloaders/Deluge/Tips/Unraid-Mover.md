@@ -4,14 +4,14 @@ When you make use of the unRAID cache drive for your `/data/torrents` share, and
 
 Using the following instructions will allow you to move the files with the use of the Deluge JSON-RPC.
 
-<!--@include: ../../../../includes/downloaders/mover-workflow.md-->
+::: warning
 
-!!! warning
+The screenshots below are only **EXAMPLES** to show you how it should look and where you need to place the data that you need to add. They are **NOT** always a 100% reflection of the actual data, and not always the actual values you need to add.
 
-    The screenshots below are only **EXAMPLES** to show you how it should look and where you need to place the data that you need to add. They are **NOT** always a 100% reflection of the actual data, and not always the actual values you need to add.
+- Always follow the recommendations described in the guide.
+- If you have any questions, or aren't sure, just click the chat badge to join the Discord Channel where you can ask your questions directly.
 
-    - Always follow the recommendations described in the guide.
-    - If you have any questions, or aren't sure, just click the chat badge to join the Discord Channel where you can ask your questions directly.
+:::
 
 ## Needed
 
@@ -19,16 +19,16 @@ Using the following instructions will allow you to move the files with the use o
 
 Download the following standalone Python script.
 
-- [Script (deluge-mover.py)](https://raw.githubusercontent.com/zakkarry/deluge-mover/master/deluge-mover.py){:target="\_blank" rel="noopener noreferrer"}
+- [Script (deluge-mover.py)](https://raw.githubusercontent.com/zakkarry/deluge-mover/master/deluge-mover.py)
 
-Thanks to [zakary](https://github.com/zakkarry){:target="\_blank" rel="noopener noreferrer"} (Developer on [cross-seed](https://github.com/cross-seed/cross-seed){:target="\_blank" rel="noopener noreferrer"})
+Thanks to [zakary](https://github.com/zakkarry) (Developer on [cross-seed](https://github.com/cross-seed/cross-seed))
 
 ### Plugins
 
 Install the following plugins:
 
 - User Scripts
-- You will need to manually install the following packages for the correct Slackware version from [https://packages.slackware.com/](https://packages.slackware.com/){:target="\_blank" rel="noopener noreferrer"}
+- You will need to manually install the following packages for the correct Slackware version from [https://packages.slackware.com/](https://packages.slackware.com/)
     - python3
     - python-setuptools
     - python-pip
@@ -47,97 +47,103 @@ After you install the needed `Plugins` - it's time to configure everything.
 
 You can choose one of the following 3 options (select a tab) to install `requests`.
 
-=== "User scripts"
+::: tabs
 
-    With this option, we're going to install the `requests` module when the Array is started the first time.
+== User scripts
 
-    In your unRAID Dashboard, go to your `Settings` tab and select `User Scripts` in the `User Utilities` section at the bottom.
+With this option, we're going to install the `requests` module when the Array is started the first time.
 
-    ![!User Scripts](images/Unraid-settings-user-scripts-icon.png)
+In your unRAID Dashboard, go to your `Settings` tab and select `User Scripts` in the `User Utilities` section at the bottom.
 
-    At the bottom of the `User Scripts` page select the `ADD NEW SCRIPT` button.
+![!User Scripts](images/Unraid-settings-user-scripts-icon.png)
 
-    ![!Add New Script](images/Unraid-user-scripts-add-new-script-icon.png)
+At the bottom of the `User Scripts` page select the `ADD NEW SCRIPT` button.
 
-    A popup will appear asking you to name the script. For this example, we're going to use `Install requests (deluge-mover)` and then click on `OK`.
+![!Add New Script](images/Unraid-user-scripts-add-new-script-icon.png)
 
-    ![!Install requests module](images/Unraid-user-scripts-add-new-script-enter-name.png)
+A popup will appear asking you to name the script. For this example, we're going to use `Install requests (deluge-mover)` and then click on `OK`.
 
-    Click on the cogwheel of the new script in the list, and select `Edit Script`.
+![!Install requests module](images/Unraid-user-scripts-add-new-script-enter-name.png)
 
-    ![!Select user script](images/Unraid-settings-user-scripts-edit-requests.png)
+Click on the cogwheel of the new script in the list, and select `Edit Script`.
 
-    Copy/Paste the following in the new window that opens, then click `SAVE CHANGES`.
+![!Select user script](images/Unraid-settings-user-scripts-edit-requests.png)
 
-    ```bash
-    #!/bin/bash
-    pip3 install requests
-    ```
+Copy/Paste the following in the new window that opens, then click `SAVE CHANGES`.
 
-    ![!Bash script](images/Unraid-settings-user-scripts-requests.png)
+```bash
+#!/bin/bash
+pip3 install requests
+```
 
-    Select in the schedule list when the script should run, and choose `At First Array Start Only`.
+![!Bash script](images/Unraid-settings-user-scripts-requests.png)
 
-    ![!Set Run Time](images/Unraid-settings-user-scripts-requests-schedule.png)
+Select in the schedule list when the script should run, and choose `At First Array Start Only`.
 
-    Click on `Apply`.
+![!Set Run Time](images/Unraid-settings-user-scripts-requests-schedule.png)
 
-    Finally, you will need to choose `RUN IN BACKGROUND` or restart your unRAID server to install the `requests` module.
+Click on `Apply`.
 
-=== "Python venv"
+Finally, you will need to choose `RUN IN BACKGROUND` or restart your unRAID server to install the `requests` module.
 
-    With this option, we're going to create a [Python virtual environment](https://docs.python.org/3/library/venv.html) on our disk. We will use this to run and store dependencies (`requests`) for this specific environment.
+== Python venv
 
-    By doing this, we will **only need to configure this once** and it will be persistent after reboots *(this differs from the previous steps)*.
+With this option, we're going to create a [Python virtual environment](https://docs.python.org/3/library/venv.html) on our disk. We will use this to run and store dependencies (`requests`) for this specific environment.
 
-    First, you need to choose a location to start a new Python environment.
+By doing this, we will **only need to configure this once** and it will be persistent after reboots *(this differs from the previous steps)*.
 
-    !!! info
+First, you need to choose a location to start a new Python environment.
 
-        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location), try to be consistent.
+::: info
 
-    Suggestions:
+In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location), try to be consistent.
 
-    - `/mnt/user/appdata/deluge/scripts/.venv`
-    - `/mnt/user/data/scripts/.venv`
+:::
 
-    Run the following command in unRAID's terminal in the directory you chose:
+Suggestions:
 
-    ```bash
-    python3 -m venv --clear /mnt/user/data/scripts/.venv
-    ```
+- `/mnt/user/appdata/deluge/scripts/.venv`
+- `/mnt/user/data/scripts/.venv`
 
-    We now need to enter this new environment and install our dependency (`requests`) in it, run:
+Run the following command in unRAID's terminal in the directory you chose:
 
-    ```bash
-    source /mnt/user/data/scripts/.venv/bin/activate
-    pip3 install requests
-    deactivate # to leave the environment
-    ```
+```bash
+python3 -m venv --clear /mnt/user/data/scripts/.venv
+```
 
-    !!! info
+We now need to enter this new environment and install our dependency (`requests`) in it, run:
 
-        Replace `/mnt/user/data/scripts/.venv` with the path you have chosen.
+```bash
+source /mnt/user/data/scripts/.venv/bin/activate
+pip3 install requests
+deactivate # to leave the environment
+```
 
-=== "Go File"
+::: info
 
-    With this option, we're going to install the `requests` module when the unRAID server is started.
+Replace `/mnt/user/data/scripts/.venv` with the path you have chosen.
 
-    On your USB stick/key go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}).
+:::
 
-    Copy/paste the following command
+== Go File
 
-    ```bash
-    pip3 install requests
-    ```
+With this option, we're going to install the `requests` module when the unRAID server is started.
 
-    Restart your unRAID Server or run the above command from the terminal.
+On your USB stick/key go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/)/[Notepad++](https://notepad-plus-plus.org/downloads/)).
+
+Copy/paste the following command
+
+```bash
+pip3 install requests
+```
+
+Restart your unRAID Server or run the above command from the terminal.
 
 ---
 
 ### Script
 
-Now, using your favorite text editor ([VSCode](https://code.visualstudio.com/){:target="\_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="\_blank" rel="noopener noreferrer"}) edit the script you downloaded at the beginning of the guide ([HERE](#deluge-mover-script)).
+Now, using your favorite text editor ([VSCode](https://code.visualstudio.com/)/[Notepad++](https://notepad-plus-plus.org/downloads/)) edit the script you downloaded at the beginning of the guide ([HERE](#deluge-mover-script)).
 
 You only need to change a few options at the top of the script.
 
@@ -180,16 +186,18 @@ age_day_min = 3
 age_day_max = 0
 ```
 
-- `deluge_webui` => The URL you use to access Deluge locally. (_the_ `"` _should remain_)
-- `deluge_password` => Your Deluge WebUI `Password`. (_the_ `"` _should remain_)
+- `deluge_webui` => The URL you use to access Deluge locally. (*the* `"` *should remain*)
+- `deluge_password` => Your Deluge WebUI `Password`. (*the* `"` *should remain*)
 - `check_fs` => If set to `True`, it will check for the file on the cache drive before pausing.
 - `use_mover_old` => See below.
 
-    !!! warning ""
+    ::: warning
 
-        - If you do not use `Mover Tuning`, you **DO NOT** have to make any changes.
-        - If you use `Mover Tuning` but **DON'T** want to use it for the script, change this to `True`
-        - If you use `Mover Tuning` and **DO** want to use it for the script, you will not have to make any changes. However, for this option, inside the `Mover Tuner` you will need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
+    - If you do not use `Mover Tuning`, you **DO NOT** have to make any changes.
+    - If you use `Mover Tuning` but **DON'T** want to use it for the script, change this to `True`
+    - If you use `Mover Tuning` and **DO** want to use it for the script, you will not have to make any changes. However, for this option, inside the `Mover Tuner` you will need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
+
+    :::
 
 - `cache_download_path` => The location (host path) for your cache folder (if check_fs is True)
 - `age_day_min` => Set the minimum age (days) of the torrents that you wish to move.
@@ -225,31 +233,37 @@ Click on the cogwheel of the new script in the list.
 ![!Select user script](images/Unraid-settings-user-scripts-edit-deluge-mover.png)
 
 Choose your method (select a tab) and copy/paste the script in the new window that opens, then click `SAVE CHANGES`.
-=== "Python (Native)"
+::: tabs
 
-    ``` bash
-        #!/bin/bash
-        /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover starting @ `date +%H:%M:%S`."
-        echo "executing script to pause torrents and run mover."
-        python3 /mnt/user/data/scripts/deluge-mover.py
-        echo "deluge-mover completed and resumed all paused torrents."
-        /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover completed @ `date +%H:%M:%S`."
-    ```
+== Python (Native)
 
-=== "Python (venv)"
+``` bash
+    #!/bin/bash
+    /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover starting @ `date +%H:%M:%S`."
+    echo "executing script to pause torrents and run mover."
+    python3 /mnt/user/data/scripts/deluge-mover.py
+    echo "deluge-mover completed and resumed all paused torrents."
+    /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover completed @ `date +%H:%M:%S`."
+```
 
-    ``` bash
-        #!/bin/bash
-        /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover starting @ `date +%H:%M:%S`."
-        echo "executing script to pause torrents and run mover."
-        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/deluge-mover.py
-        echo "deluge-mover completed and resumed all paused torrents."
-        /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover completed @ `date +%H:%M:%S`."
-    ```
+== Python (venv)
 
-!!! info
+``` bash
+    #!/bin/bash
+    /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover starting @ `date +%H:%M:%S`."
+    echo "executing script to pause torrents and run mover."
+    /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/deluge-mover.py
+    echo "deluge-mover completed and resumed all paused torrents."
+    /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover completed @ `date +%H:%M:%S`."
+```
 
-    Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
+:::
+
+::: info
+
+Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
+
+:::
 
 ![!Bash script](images/Unraid-settings-user-scripts-deluge-mover.png)
 

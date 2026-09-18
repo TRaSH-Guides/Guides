@@ -7,19 +7,21 @@ These CFs have been collected from discussions on Discord or created with help f
 
 Special thanks to everyone who has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, and the community.
 
-- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
-- [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="\_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
+- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats) - Explains how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats) - Explains how to upgrade your existing Custom Formats.
+- [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles) - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
-!!! tip
+::: tip
 
-    It also is recommended to change the Propers and Repacks settings in Sonarr's `Settings`.
+It also is recommended to change the Propers and Repacks settings in Sonarr's `Settings`.
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
+`Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
 
-    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
+![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
-    This way you make sure the Custom Format scoring and preferences will be fully utilized.
+This way you make sure the Custom Format scoring and preferences will be fully utilized.
+
+:::
 
 <!--@include: ../../includes/support.md-->
 
@@ -210,15 +212,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### TrueHD ATMOS
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/truehd-atmos.md-->
+<!--@include: ../../includes/cf-descriptions/truehd-atmos.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/truehd-atmos.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/truehd-atmos.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -226,15 +232,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### DTS X
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts-x.md-->
+<!--@include: ../../includes/cf-descriptions/dts-x.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-x.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dts-x.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -242,15 +252,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### ATMOS (undefined)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/atmos-undefined.md-->
+<!--@include: ../../includes/cf-descriptions/atmos-undefined.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atmos-undefined.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/atmos-undefined.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -260,15 +274,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>DDPlus = DD+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ddplus-atmos.md-->
+<!--@include: ../../includes/cf-descriptions/ddplus-atmos.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ddplus-atmos.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/ddplus-atmos.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -276,15 +294,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### TrueHD
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/truehd.md-->
+<!--@include: ../../includes/cf-descriptions/truehd.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/truehd.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/truehd.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -292,15 +314,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### DTS-HD MA
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts-hd-ma.md-->
+<!--@include: ../../includes/cf-descriptions/dts-hd-ma.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-hd-ma.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dts-hd-ma.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -308,15 +334,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FLAC
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/flac.md-->
+<!--@include: ../../includes/cf-descriptions/flac.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/flac.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/flac.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -324,15 +354,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### PCM
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/pcm.md-->
+<!--@include: ../../includes/cf-descriptions/pcm.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcm.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/pcm.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -340,15 +374,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### DTS-HD HRA
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts-hd-hra.md-->
+<!--@include: ../../includes/cf-descriptions/dts-hd-hra.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-hd-hra.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dts-hd-hra.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -358,15 +396,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Dolby Digital Plus = DD+ = DDPlus</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ddplus.md-->
+<!--@include: ../../includes/cf-descriptions/ddplus.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ddplus.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/ddplus.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -374,15 +416,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### DTS-ES
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts-es.md-->
+<!--@include: ../../includes/cf-descriptions/dts-es.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-es.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dts-es.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -392,15 +438,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>DTS = Basic DTS</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dts.md-->
+<!--@include: ../../includes/cf-descriptions/dts.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dts.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -408,15 +458,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### AAC
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/aac.md-->
+<!--@include: ../../includes/cf-descriptions/aac.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/aac.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/aac.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -426,15 +480,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>(Basic) Dolby Digital = DD</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dd.md-->
+<!--@include: ../../includes/cf-descriptions/dd.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dd.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dd.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -442,15 +500,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### MP3
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/mp3.md-->
+<!--@include: ../../includes/cf-descriptions/mp3.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mp3.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/mp3.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -458,15 +520,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Opus
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/opus.md-->
+<!--@include: ../../includes/cf-descriptions/opus.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/opus.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/opus.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -478,11 +544,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 1.0 Mono
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/10-mono.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/10-mono.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -490,11 +558,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 2.0 Stereo
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/20-stereo.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/20-stereo.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -502,11 +572,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 3.0 Sound
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/30-sound.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/30-sound.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -514,11 +586,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 4.0 Sound
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/40-sound.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/40-sound.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -526,11 +600,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 5.1 Surround
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/51-surround.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/51-surround.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -538,11 +614,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 6.1 Surround
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/61-surround.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/61-surround.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -550,11 +628,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 7.1 Surround
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/71-surround.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/71-surround.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -568,15 +648,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>HDR</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hdr.md-->
+<!--@include: ../../includes/cf-descriptions/hdr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hdr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -586,17 +670,21 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dv-boost.md-->
+<!--@include: ../../includes/cf-descriptions/dv-boost.md-->
+
+:::
 
 <!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case, the pointer to `#dv-wo-hdr-fallback` in `includes/dv.md`-->
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-boost.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/dv-boost.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -604,15 +692,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### HDR10Plus Boost
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hdr10plus-boost.md-->
+<!--@include: ../../includes/cf-descriptions/hdr10plus-boost.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hdr10plus-boost.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -624,15 +716,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### DV (Disk)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dv-disk.md-->
+<!--@include: ../../includes/cf-descriptions/dv-disk.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-disk.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dv-disk.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -642,15 +738,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dv-wo-hdr-fallback.md-->
+<!--@include: ../../includes/cf-descriptions/dv-wo-hdr-fallback.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-wo-hdr-fallback.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dv-wo-hdr-fallback.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -658,15 +758,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### SDR
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/sdr.md-->
+<!--@include: ../../includes/cf-descriptions/sdr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/sdr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -674,15 +778,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### SDR (no WEBDL)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/sdr-no-webdl-sonarr.md-->
+<!--@include: ../../includes/cf-descriptions/sdr-no-webdl-sonarr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/sdr-no-webdl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -690,15 +798,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### HLG
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hlg.md-->
+<!--@include: ../../includes/cf-descriptions/hlg.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hlg.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hlg.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -716,15 +828,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Amazon Prime Video</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/amzn.md-->
+<!--@include: ../../includes/cf-descriptions/amzn.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/amzn.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/amzn.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -734,15 +850,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Apple TV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/atv.md-->
+<!--@include: ../../includes/cf-descriptions/atv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/atv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -752,15 +872,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Apple TV+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/atvp.md-->
+<!--@include: ../../includes/cf-descriptions/atvp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atvp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/atvp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -770,15 +894,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>CC = Comedy Central</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/cc.md-->
+<!--@include: ../../includes/cf-descriptions/cc.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cc.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/cc.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -788,15 +916,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>DC Universe (streaming service)</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dcu.md-->
+<!--@include: ../../includes/cf-descriptions/dcu.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dcu.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dcu.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -806,15 +938,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Disney+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dsnp.md-->
+<!--@include: ../../includes/cf-descriptions/dsnp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dsnp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dsnp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -824,15 +960,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Google Play</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/play.md-->
+<!--@include: ../../includes/cf-descriptions/play.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/play.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/play.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -842,15 +982,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>HBO</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hbo.md-->
+<!--@include: ../../includes/cf-descriptions/hbo.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hbo.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hbo.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -860,15 +1004,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>HBO Max</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hmax.md-->
+<!--@include: ../../includes/cf-descriptions/hmax.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hmax.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hmax.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -878,15 +1026,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Hulu</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hulu.md-->
+<!--@include: ../../includes/cf-descriptions/hulu.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hulu.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hulu.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -896,15 +1048,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>iT = iTunes</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/it.md-->
+<!--@include: ../../includes/cf-descriptions/it.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/it.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/it.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -914,15 +1070,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Max (streaming service)</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hmax.md-->
+<!--@include: ../../includes/cf-descriptions/hmax.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/max.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/max.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -932,15 +1092,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Netflix</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/nf.md-->
+<!--@include: ../../includes/cf-descriptions/nf.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/nf.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/nf.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -950,15 +1114,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Paramount+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/pmtp.md-->
+<!--@include: ../../includes/cf-descriptions/pmtp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pmtp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/pmtp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -968,15 +1136,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Peacock TV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/pcok.md-->
+<!--@include: ../../includes/cf-descriptions/pcok.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcok.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/pcok.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -986,15 +1158,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>ROKU</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/roku.md-->
+<!--@include: ../../includes/cf-descriptions/roku.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/roku.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/roku.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1004,15 +1180,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>SHOWTIME</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/sho.md-->
+<!--@include: ../../includes/cf-descriptions/sho.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sho.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/sho.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1022,15 +1202,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Stan</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/stan.md-->
+<!--@include: ../../includes/cf-descriptions/stan.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/stan.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/stan.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1040,15 +1224,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Syfy</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/syfy.md-->
+<!--@include: ../../includes/cf-descriptions/syfy.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/syfy.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/syfy.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1062,15 +1250,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Coupang Play</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/cpng.md-->
+<!--@include: ../../includes/cf-descriptions/cpng.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cpng.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/cpng.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1080,15 +1272,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Disney+ Hotstar</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/htsr.md-->
+<!--@include: ../../includes/cf-descriptions/htsr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/htsr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/htsr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1098,15 +1294,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>DMM TV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dmm-tv.md-->
+<!--@include: ../../includes/cf-descriptions/dmm-tv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dmm-tv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dmm-tv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1116,15 +1316,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>friDay Video</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/friday.md-->
+<!--@include: ../../includes/cf-descriptions/friday.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/friday.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/friday.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1134,15 +1338,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Fuji Television On Demand aka Fuji TV On Demand</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/fod.md-->
+<!--@include: ../../includes/cf-descriptions/fod.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fod.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/fod.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1152,15 +1360,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Hami Video</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hami.md-->
+<!--@include: ../../includes/cf-descriptions/hami.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hami.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hami.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1170,15 +1382,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>iQIYI</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/iqiy.md-->
+<!--@include: ../../includes/cf-descriptions/iqiy.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/iqiy.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/iqiy.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1188,15 +1404,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>KKTV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/kktv.md-->
+<!--@include: ../../includes/cf-descriptions/kktv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/kktv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/kktv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1206,15 +1426,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>KOCOWA</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/kcw.md-->
+<!--@include: ../../includes/cf-descriptions/kcw.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/kcw.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/kcw.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1224,15 +1448,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>LINE TV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/linetv.md-->
+<!--@include: ../../includes/cf-descriptions/linetv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/linetv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/linetv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1242,15 +1470,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>myTV SUPER</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/mytvsuper.md-->
+<!--@include: ../../includes/cf-descriptions/mytvsuper.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mytvsuper.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/mytvsuper.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1260,15 +1492,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>TVING</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/tving.md-->
+<!--@include: ../../includes/cf-descriptions/tving.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/tving.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/tving.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1278,15 +1514,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>TVer</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/tver.md-->
+<!--@include: ../../includes/cf-descriptions/tver.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/tver.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/tver.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1296,15 +1536,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>U-NEXT</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/u-next.md-->
+<!--@include: ../../includes/cf-descriptions/u-next.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/u-next.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/u-next.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1314,15 +1558,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Rakuten Viki</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/viki.md-->
+<!--@include: ../../includes/cf-descriptions/viki.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/viki.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/viki.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1332,15 +1580,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>VIU</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/viu.md-->
+<!--@include: ../../includes/cf-descriptions/viu.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/viu.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/viu.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1350,15 +1602,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Wavve</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/wavve.md-->
+<!--@include: ../../includes/cf-descriptions/wavve.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/wavve.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/wavve.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1368,15 +1624,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>WeTV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/wetv.md-->
+<!--@include: ../../includes/cf-descriptions/wetv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/wetv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/wetv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1386,15 +1646,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Youku</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/youku.md-->
+<!--@include: ../../includes/cf-descriptions/youku.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/youku.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/youku.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1408,15 +1672,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>NLZiet</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/nlz.md-->
+<!--@include: ../../includes/cf-descriptions/nlz.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/nlz.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/nlz.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1426,15 +1694,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Videoland</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vdl.md-->
+<!--@include: ../../includes/cf-descriptions/vdl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vdl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/vdl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1448,15 +1720,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Australian Broadcasting Corporation</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/aubc.md-->
+<!--@include: ../../includes/cf-descriptions/aubc.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/aubc.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/aubc.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1466,15 +1742,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Canal+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/cnlp.md-->
+<!--@include: ../../includes/cf-descriptions/cnlp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cnlp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/cnlp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1484,15 +1764,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>CBC</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/cbc.md-->
+<!--@include: ../../includes/cf-descriptions/cbc.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cbc.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/cbc.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1502,15 +1786,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Crave</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/crav.md-->
+<!--@include: ../../includes/cf-descriptions/crav.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/crav.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/crav.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1520,15 +1808,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Discovery+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dscp.md-->
+<!--@include: ../../includes/cf-descriptions/dscp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dscp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dscp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1538,15 +1830,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Fandango</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/fah.md-->
+<!--@include: ../../includes/cf-descriptions/fah.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fah.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/fah.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1556,15 +1852,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>OViD</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ovid.md-->
+<!--@include: ../../includes/cf-descriptions/ovid.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ovid.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/ovid.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1574,15 +1874,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Quibi</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/qibi.md-->
+<!--@include: ../../includes/cf-descriptions/qibi.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/qibi.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/qibi.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1592,15 +1896,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Star+</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/strp.md-->
+<!--@include: ../../includes/cf-descriptions/strp.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/strp.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/strp.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1610,15 +1918,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>RED = Youtube Red = Youtube Premium</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/red.md-->
+<!--@include: ../../includes/cf-descriptions/red.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/red.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/red.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1632,15 +1944,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>4OD</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/all4.md-->
+<!--@include: ../../includes/cf-descriptions/all4.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/4od.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/4od.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1650,15 +1966,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>ALL4</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/all4.md-->
+<!--@include: ../../includes/cf-descriptions/all4.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/all4.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/all4.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1668,15 +1988,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>BBC iPlayer aka iP</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/ip.md-->
+<!--@include: ../../includes/cf-descriptions/ip.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ip.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/ip.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1686,15 +2010,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>ITVX aka ITV</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/itvx.md-->
+<!--@include: ../../includes/cf-descriptions/itvx.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/itvx.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/itvx.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1704,15 +2032,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>MY5 aka Channel 5</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/my5.md-->
+<!--@include: ../../includes/cf-descriptions/my5.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/my5.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/my5.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1722,15 +2054,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>NOW</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/now.md-->
+<!--@include: ../../includes/cf-descriptions/now.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/now.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/now.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1742,15 +2078,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### HD Streaming Boost
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hd-streaming-boost.md-->
+<!--@include: ../../includes/cf-descriptions/hd-streaming-boost.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-streaming-boost.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hd-streaming-boost.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1758,15 +2098,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### UHD Streaming Boost
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/uhd-streaming-boost.md-->
+<!--@include: ../../includes/cf-descriptions/uhd-streaming-boost.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-boost.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/uhd-streaming-boost.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1780,15 +2124,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>AUViO/RTBF</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-auvio.md-->
+<!--@include: ../../includes/cf-descriptions/french-auvio.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-auvio.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-auvio.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1798,15 +2146,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>MyCANAL = CANAL+/MyCANAL</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-mycanal.md-->
+<!--@include: ../../includes/cf-descriptions/french-mycanal.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-mycanal.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-mycanal.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1816,15 +2168,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>SALTO = SⱯLTO</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-salto.md-->
+<!--@include: ../../includes/cf-descriptions/french-salto.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-salto.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-salto.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1836,15 +2192,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### ABEMA
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/abema.md-->
+<!--@include: ../../includes/cf-descriptions/abema.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/abema.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/abema.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1854,15 +2214,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>ADN = Animation Digital Network</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-adn.md-->
+<!--@include: ../../includes/cf-descriptions/french-adn.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-adn.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-adn.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1870,15 +2234,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### B-Global
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/bglobal.md-->
+<!--@include: ../../includes/cf-descriptions/bglobal.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bglobal.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/bglobal.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1886,15 +2254,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### Bilibili
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/bilibili.md-->
+<!--@include: ../../includes/cf-descriptions/bilibili.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bilibili.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/bilibili.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1904,15 +2276,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Crunchyroll</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/cr.md-->
+<!--@include: ../../includes/cf-descriptions/cr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/cr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1922,15 +2298,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Funimation</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/funi.md-->
+<!--@include: ../../includes/cf-descriptions/funi.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/funi.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/funi.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1938,15 +2318,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### HIDIVE
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hidive.md-->
+<!--@include: ../../includes/cf-descriptions/hidive.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hidive.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hidive.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1954,15 +2338,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 #### VRV
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vrv.md-->
+<!--@include: ../../includes/cf-descriptions/vrv.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vrv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/vrv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1972,15 +2360,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Wakanim</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-wkn.md-->
+<!--@include: ../../includes/cf-descriptions/french-wkn.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-wkn.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-wkn.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -1992,15 +2384,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Hybrid
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hybrid.md-->
+<!--@include: ../../includes/cf-descriptions/hybrid.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hybrid.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hybrid.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2008,15 +2404,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Remaster
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/remaster.md-->
+<!--@include: ../../includes/cf-descriptions/remaster.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remaster.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/remaster.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2028,15 +2428,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### AV1
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/av1.md-->
+<!--@include: ../../includes/cf-descriptions/av1.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/av1.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/av1.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2044,15 +2448,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Bad Dual Groups
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/bad-dual-groups.md-->
+<!--@include: ../../includes/cf-descriptions/bad-dual-groups.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/bad-dual-groups.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2060,15 +2468,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### BR-DISK
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/br-disk.md-->
+<!--@include: ../../includes/cf-descriptions/br-disk.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/br-disk.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/br-disk.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2076,15 +2488,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### BR-DISK (BTN)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/br-disk-btn.md-->
+<!--@include: ../../includes/cf-descriptions/br-disk-btn.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/br-disk-btn.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/br-disk-btn.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2094,15 +2510,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Black & White</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/bw.md-->
+<!--@include: ../../includes/cf-descriptions/bw.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bw.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/bw.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2110,15 +2530,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Extras
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/extras.md-->
+<!--@include: ../../includes/cf-descriptions/extras.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/extras.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/extras.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2128,15 +2552,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Low-Quality Releases = LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/lq.md-->
+<!--@include: ../../includes/cf-descriptions/lq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/lq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/lq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2146,15 +2574,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Low-Quality Releases = LQ</sub>
 
-??? question "LQ (Release Title)- [Click to show/hide]"
+::: details LQ (Release Title)- [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/lq-release-title.md-->
+<!--@include: ../../includes/cf-descriptions/lq-release-title.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/lq-release-title.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/lq-release-title.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2162,15 +2594,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### No-RlsGroup
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/no-rlsgroup.md-->
+<!--@include: ../../includes/cf-descriptions/no-rlsgroup.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/no-rlsgroup.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/no-rlsgroup.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2178,15 +2614,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Obfuscated
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/obfuscated.md-->
+<!--@include: ../../includes/cf-descriptions/obfuscated.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/obfuscated.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/obfuscated.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2194,15 +2634,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Retags
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/retags.md-->
+<!--@include: ../../includes/cf-descriptions/retags.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/retags.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/retags.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2210,15 +2654,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Scene
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/scene.md-->
+<!--@include: ../../includes/cf-descriptions/scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2226,15 +2674,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Upscaled
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/upscaled.md-->
+<!--@include: ../../includes/cf-descriptions/upscaled.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/upscaled.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/upscaled.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2246,15 +2698,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Remux Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/remux-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/remux-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/remux-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2262,29 +2718,37 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Remux Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/remux-tier-02-sonarr.md-->
+<!--@include: ../../includes/cf-descriptions/remux-tier-02-sonarr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/remux-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ### HD Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hd-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/hd-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hd-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2292,29 +2756,37 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### HD Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hd-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/hd-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hd-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ### WEB Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2322,15 +2794,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### WEB Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2338,15 +2814,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### WEB Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2354,15 +2834,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### WEB Scene
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/web-scene.md-->
+<!--@include: ../../includes/cf-descriptions/web-scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/web-scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2376,15 +2860,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Repack/Proper
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/repack-proper.md-->
+<!--@include: ../../includes/cf-descriptions/repack-proper.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-proper.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/repack-proper.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2392,15 +2880,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Repack2
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/repack2.md-->
+<!--@include: ../../includes/cf-descriptions/repack2.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack2.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/repack2.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2408,15 +2900,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Repack3
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/repack3.md-->
+<!--@include: ../../includes/cf-descriptions/repack3.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack3.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/repack3.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2424,23 +2920,27 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ## Golden Rule (Optional)
 
-??? question "Why block 720/1080p encodes in x265? - [Click to show/hide]"
+::: details Why block 720/1080p encodes in x265? - [Click to show/hide]
 
-    <!--@include: ../../includes/docker/x265.md-->
+<!--@include: ../../includes/docker/x265.md-->
 
 ---
 
 ### x265 (no HDR/DV)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x265-no-hdrdv-sonarr.md-->
+<!--@include: ../../includes/cf-descriptions/x265-no-hdrdv-sonarr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/x265-no-hdrdv.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2450,15 +2950,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x265-hd-sonarr.md-->
+<!--@include: ../../includes/cf-descriptions/x265-hd-sonarr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-hd.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/x265-hd.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2470,15 +2974,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FreeLeech
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/freeleech.md-->
+<!--@include: ../../includes/cf-descriptions/freeleech.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/freeleech.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/freeleech.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2486,15 +2994,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### HFR
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/hfr.md-->
+<!--@include: ../../includes/cf-descriptions/hfr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hfr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/hfr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2502,15 +3014,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Internal
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/internal.md-->
+<!--@include: ../../includes/cf-descriptions/internal.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/internal.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/internal.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2518,15 +3034,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### MPEG2
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/mpeg2.md-->
+<!--@include: ../../includes/cf-descriptions/mpeg2.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mpeg2.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/mpeg2.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2534,15 +3054,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Multi
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/multi.md-->
+<!--@include: ../../includes/cf-descriptions/multi.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/multi.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2550,15 +3074,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### P2P Internal
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/p2p-internal.md-->
+<!--@include: ../../includes/cf-descriptions/p2p-internal.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/p2p-internal.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/p2p-internal.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2566,15 +3094,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VC-1
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vc-1.md-->
+<!--@include: ../../includes/cf-descriptions/vc-1.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vc-1.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/vc-1.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2582,15 +3114,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VP9
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/vp9.md-->
+<!--@include: ../../includes/cf-descriptions/vp9.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vp9.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/vp9.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2598,15 +3134,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### x264
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x264.md-->
+<!--@include: ../../includes/cf-descriptions/x264.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x264.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/x264.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2614,15 +3154,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### x265
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x265.md-->
+<!--@include: ../../includes/cf-descriptions/x265.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/x265.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2630,15 +3174,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### x266
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/x266.md-->
+<!--@include: ../../includes/cf-descriptions/x266.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x266.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/x266.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2650,15 +3198,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 720p
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/720p.md-->
+<!--@include: ../../includes/cf-descriptions/720p.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/720p.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/720p.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2666,15 +3218,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 1080p
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/1080p.md-->
+<!--@include: ../../includes/cf-descriptions/1080p.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/1080p.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/1080p.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2682,15 +3238,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 2160p
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/2160p.md-->
+<!--@include: ../../includes/cf-descriptions/2160p.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/2160p.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/2160p.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2702,31 +3262,39 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Multi-Episode
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/multi-episode.md-->
+<!--@include: ../../includes/cf-descriptions/multi-episode.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi-episode.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
 
-<sub><sup>[TOP](#index)</sup>
+```json
+<!--@include: @/json/sonarr/cf/multi-episode.json-->
+```
+
+:::
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
 ### Season Pack
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/season-pack.md-->
+<!--@include: ../../includes/cf-descriptions/season-pack.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/season-pack.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2734,17 +3302,21 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Single Episode
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/single-episode.md-->
+<!--@include: ../../includes/cf-descriptions/single-episode.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/single-episode.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
 
-<sub><sup>[TOP](#index)</sup>
+```json
+<!--@include: @/json/sonarr/cf/single-episode.json-->
+```
+
+:::
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2754,15 +3326,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german.md-->
+<!--@include: ../../includes/cf-descriptions/german.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2772,15 +3348,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Language: German + Original</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-dl.md-->
+<!--@include: ../../includes/cf-descriptions/german-dl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-dl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-dl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2788,15 +3368,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German DL (undefined)
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-dl-undefined.md-->
+<!--@include: ../../includes/cf-descriptions/german-dl-undefined.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-dl-undefined.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-dl-undefined.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2806,15 +3390,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Language: English Only</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/language-not-english.md-->
+<!--@include: ../../includes/cf-descriptions/language-not-english.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-english.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/language-not-english.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2824,15 +3412,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Language: French Only</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/language-not-french.md-->
+<!--@include: ../../includes/cf-descriptions/language-not-french.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-french.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/language-not-french.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2842,15 +3434,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Language: Original Only</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/language-not-original.md-->
+<!--@include: ../../includes/cf-descriptions/language-not-original.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-original.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/language-not-original.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2860,15 +3456,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Language: Original + French</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/language-original-plus-french.md-->
+<!--@include: ../../includes/cf-descriptions/language-original-plus-french.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-original-plus-french.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/language-original-plus-french.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2876,15 +3476,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Not German or English
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/not-german-or-english.md-->
+<!--@include: ../../includes/cf-descriptions/not-german-or-english.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/not-german-or-english.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/not-german-or-english.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2892,15 +3496,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Not German, Japanese or English
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/not-german-japanese-or-english.md-->
+<!--@include: ../../includes/cf-descriptions/not-german-japanese-or-english.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/not-german-japanese-or-english.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/not-german-japanese-or-english.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2908,15 +3516,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Not German, Japanese, Korean, Chinese or English
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/not-german-japanese-korean-chinese-or-english.md-->
+<!--@include: ../../includes/cf-descriptions/not-german-japanese-korean-chinese-or-english.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/not-german-japanese-korean-chinese-or-english.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/not-german-japanese-korean-chinese-or-english.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2924,15 +3536,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Wrong Language
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/wrong-language.md-->
+<!--@include: ../../includes/cf-descriptions/wrong-language.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/wrong-language.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/wrong-language.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2946,15 +3562,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Audio Description</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/with-ad.md-->
+<!--@include: ../../includes/cf-descriptions/with-ad.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/with-ad.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/with-ad.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2964,15 +3584,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>American Sign Language</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/with-asl.md-->
+<!--@include: ../../includes/cf-descriptions/with-asl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/with-asl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/with-asl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -2982,15 +3606,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Black American Sign Language</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/with-basl.md-->
+<!--@include: ../../includes/cf-descriptions/with-basl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/with-basl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/with-basl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3000,15 +3628,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>British Sign Language</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/with-bsl.md-->
+<!--@include: ../../includes/cf-descriptions/with-bsl.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/with-bsl.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/with-bsl.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3020,15 +3652,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime BD Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-bd-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3036,15 +3672,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime BD Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-bd-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3052,15 +3692,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime BD Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-bd-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3068,15 +3712,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime BD Tier 04
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-04.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-04.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-04.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-bd-tier-04.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3084,15 +3732,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime BD Tier 05
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-05.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-05.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-05.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-bd-tier-05.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3100,15 +3752,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime BD Tier 06
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-06.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-06.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-06.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-bd-tier-06.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3116,15 +3772,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime BD Tier 07
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-07.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-07.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-07.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-bd-tier-07.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3132,15 +3792,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime BD Tier 08
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-bd-tier-08.md-->
+<!--@include: ../../includes/cf-descriptions/anime-bd-tier-08.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-08.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-bd-tier-08.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3148,15 +3812,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime Web Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3164,15 +3832,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime Web Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3180,15 +3852,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime Web Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3196,15 +3872,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime Web Tier 04
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-04.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-04.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-04.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-web-tier-04.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3212,15 +3892,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime Web Tier 05
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-05.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-05.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-05.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-web-tier-05.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3228,15 +3912,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime Web Tier 06
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-web-tier-06.md-->
+<!--@include: ../../includes/cf-descriptions/anime-web-tier-06.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-06.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-web-tier-06.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3244,15 +3932,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime Raws
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-raws.md-->
+<!--@include: ../../includes/cf-descriptions/anime-raws.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-raws.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-raws.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3260,15 +3952,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime LQ Groups
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-lq-groups.md-->
+<!--@include: ../../includes/cf-descriptions/anime-lq-groups.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-lq-groups.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-lq-groups.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3280,15 +3976,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### v0
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v0.md-->
+<!--@include: ../../includes/cf-descriptions/v0.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v0.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/v0.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3296,15 +3996,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### v1
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v1.md-->
+<!--@include: ../../includes/cf-descriptions/v1.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v1.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/v1.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3312,15 +4016,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### v2
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v2.md-->
+<!--@include: ../../includes/cf-descriptions/v2.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v2.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/v2.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3328,15 +4036,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### v3
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v3.md-->
+<!--@include: ../../includes/cf-descriptions/v3.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v3.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/v3.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3344,15 +4056,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### v4
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/v4.md-->
+<!--@include: ../../includes/cf-descriptions/v4.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v4.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/v4.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3364,15 +4080,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### 10bit
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/10bit.md-->
+<!--@include: ../../includes/cf-descriptions/10bit.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/10bit.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/10bit.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3380,15 +4100,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Anime Dual Audio
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/anime-dual-audio.md-->
+<!--@include: ../../includes/cf-descriptions/anime-dual-audio.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/anime-dual-audio.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3396,15 +4120,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Dubs Only
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/dubs-only.md-->
+<!--@include: ../../includes/cf-descriptions/dubs-only.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dubs-only.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/dubs-only.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3412,15 +4140,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Uncensored
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/uncensored.md-->
+<!--@include: ../../includes/cf-descriptions/uncensored.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uncensored.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/uncensored.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3432,15 +4164,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Remux Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-remux-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-remux-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-remux-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-remux-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3448,15 +4184,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Remux Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-remux-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-remux-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-remux-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-remux-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3464,15 +4204,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3480,15 +4224,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3496,15 +4244,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Bluray Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-bluray-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/german-bluray-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-bluray-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3512,15 +4264,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Web Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3528,15 +4284,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Web Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3544,15 +4304,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Web Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/german-web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3560,15 +4324,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Scene
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-scene.md-->
+<!--@include: ../../includes/cf-descriptions/german-scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3580,15 +4348,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Anime Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-anime-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-anime-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3596,15 +4368,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Anime Bluray Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-anime-bluray-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-anime-bluray-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3612,15 +4388,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Anime Bluray Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-bluray-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-anime-bluray-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-anime-bluray-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3628,15 +4408,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Anime Web Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-anime-web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-anime-web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3644,15 +4428,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Anime Web Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-anime-web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-anime-web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3660,15 +4448,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Anime Web Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-anime-web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-anime-web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3676,15 +4468,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Anime Scene
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-anime-scene.md-->
+<!--@include: ../../includes/cf-descriptions/german-anime-scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-anime-scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-anime-scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3696,15 +4492,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German 1080p Booster
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-1080p-booster.md-->
+<!--@include: ../../includes/cf-descriptions/german-1080p-booster.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-1080p-booster.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-1080p-booster.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3712,15 +4512,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German 2160p Booster
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-2160p-booster.md-->
+<!--@include: ../../includes/cf-descriptions/german-2160p-booster.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-2160p-booster.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-2160p-booster.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3730,15 +4534,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>German Low-Quality Releases = German LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-lq.md-->
+<!--@include: ../../includes/cf-descriptions/german-lq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-lq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-lq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3748,15 +4556,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Low-Quality Releases = LQ</sub>
 
-??? question "German LQ (Release Title)- [Click to show/hide]"
+::: details German LQ (Release Title)- [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-lq-release-title.md-->
+<!--@include: ../../includes/cf-descriptions/german-lq-release-title.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-lq-release-title.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-lq-release-title.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3766,15 +4578,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>German Microsized Releases = German Microsized</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-microsized.md-->
+<!--@include: ../../includes/cf-descriptions/german-microsized.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-microsized.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-microsized.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3782,15 +4598,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### German Subbed
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/german-subbed.md-->
+<!--@include: ../../includes/cf-descriptions/german-subbed.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-subbed.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/german-subbed.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3802,15 +4622,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR Remux Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-remux-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-remux-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-remux-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-remux-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3818,15 +4642,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR HD Bluray Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-hd-bluray-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-hd-bluray-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-hd-bluray-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-hd-bluray-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3834,15 +4662,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR WEB Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-web-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-web-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-web-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3850,15 +4682,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR WEB Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-web-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/french-web-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-web-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3866,15 +4702,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR WEB Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-web-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/french-web-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-web-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3882,15 +4722,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR Scene Groups
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-scene.md-->
+<!--@include: ../../includes/cf-descriptions/french-scene.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-scene.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-scene.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3900,15 +4744,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>French Low-Quality Releases = FR LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-lq.md-->
+<!--@include: ../../includes/cf-descriptions/french-lq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-lq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-lq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3920,15 +4768,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR Anime Tier 01
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-anime-tier-01.md-->
+<!--@include: ../../includes/cf-descriptions/french-anime-tier-01.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-anime-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3936,15 +4788,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR Anime Tier 02
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-anime-tier-02.md-->
+<!--@include: ../../includes/cf-descriptions/french-anime-tier-02.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-anime-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3952,15 +4808,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR Anime Tier 03
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-anime-tier-03.md-->
+<!--@include: ../../includes/cf-descriptions/french-anime-tier-03.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-anime-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3968,15 +4828,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FR Anime FanSub
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-anime-fansub.md-->
+<!--@include: ../../includes/cf-descriptions/french-anime-fansub.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-anime-fansub.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -3988,15 +4852,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VFF
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vff.md-->
+<!--@include: ../../includes/cf-descriptions/french-vff.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vff.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-vff.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4004,15 +4872,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VOF
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vof.md-->
+<!--@include: ../../includes/cf-descriptions/french-vof.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vof.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-vof.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4020,15 +4892,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VFI
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vfi.md-->
+<!--@include: ../../includes/cf-descriptions/french-vfi.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfi.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-vfi.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4036,15 +4912,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VF2
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vf2.md-->
+<!--@include: ../../includes/cf-descriptions/french-vf2.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vf2.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-vf2.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4052,15 +4932,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VFQ
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vfq.md-->
+<!--@include: ../../includes/cf-descriptions/french-vfq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-vfq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4068,15 +4952,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VOQ
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-voq.md-->
+<!--@include: ../../includes/cf-descriptions/french-voq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-voq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-voq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4084,15 +4972,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VQ
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vq.md-->
+<!--@include: ../../includes/cf-descriptions/french-vq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-vq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4100,15 +4992,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VFB
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vfb.md-->
+<!--@include: ../../includes/cf-descriptions/french-vfb.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfb.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-vfb.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4116,15 +5012,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### VOSTFR
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/french-vostfr.md-->
+<!--@include: ../../includes/cf-descriptions/french-vostfr.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vostfr.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/french-vostfr.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4132,15 +5032,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FanSUB
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/fansub.md-->
+<!--@include: ../../includes/cf-descriptions/fansub.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fansub.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/fansub.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4148,15 +5052,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### FastSUB
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/fastsub.md-->
+<!--@include: ../../includes/cf-descriptions/fastsub.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fastsub.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/fastsub.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4170,11 +5078,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Asian Tier 01
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/asian-tier-01.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/asian-tier-01.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4182,11 +5092,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Asian Tier 02
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/asian-tier-02.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/asian-tier-02.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4194,11 +5106,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Asian Tier 03
 
-??? example "JSON - [Click to show/hide]"
+::: details JSON - [Click to show/hide]
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/asian-tier-03.json' %]][[% endfilter %]]
-    ```
+```json
+<!--@include: @/json/sonarr/cf/asian-tier-03.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 
@@ -4208,15 +5122,19 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 <sub>Asian Low-Quality Releases = Asian LQ</sub>
 
-??? question "Description - [Click to show/hide]"
+::: details Description - [Click to show/hide]
 
-    <!--@include: ../../includes/cf-descriptions/asian-lq.md-->
+<!--@include: ../../includes/cf-descriptions/asian-lq.md-->
 
-??? example "JSON - [Click to show/hide]"
+:::
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/asian-lq.json' %]][[% endfilter %]]
-    ```
+::: details JSON - [Click to show/hide]
+
+```json
+<!--@include: @/json/sonarr/cf/asian-lq.json-->
+```
+
+:::
 
 <sub><sup>[TOP](#index)</sup></sub>
 

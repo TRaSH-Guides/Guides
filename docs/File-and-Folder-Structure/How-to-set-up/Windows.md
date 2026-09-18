@@ -8,9 +8,11 @@ If you want to make extensive use of hardlinks, we would recommend switching to 
 
 ### Alternative recommendation
 
-If moving away from using Windows with multiple disks is not an option, we suggest ignoring hardlinks and instant (Atomic) moves and using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"}. This will allow you to pool multiple disks to appear as one big disk, making it much easier to maintain and set up your file and folder structure.
+If moving away from using Windows with multiple disks is not an option, we suggest ignoring hardlinks and instant (Atomic) moves and using [StableBit DrivePool](https://stablebit.com/). This will allow you to pool multiple disks to appear as one big disk, making it much easier to maintain and set up your file and folder structure.
 
-!!! warning "Windows Storage Spaces may support hardlinks, but the Guides team has not verified this. We are unable to provide support for setups that use Storage Spaces."
+::: warning Windows Storage Spaces may support hardlinks, but the Guides team has not verified this. We are unable to provide support for setups that use Storage Spaces.
+
+:::
 
 ## Folder Structure
 
@@ -22,7 +24,7 @@ Whilst we have used `data`, you can name the root folder/share whatever you want
 
 ### Folder Structure (one-disk setup or using DrivePool)
 
-For this example, we will assume you have a one-disk setup with a large drive added as drive `D:\`, or are using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"} that created one big disk as drive `D:\`.
+For this example, we will assume you have a one-disk setup with a large drive added as drive `D:\`, or are using [StableBit DrivePool](https://stablebit.com/) that created one big disk as drive `D:\`.
 
 ```none
 D:\data
@@ -49,7 +51,7 @@ After you create the base folders to use, follow the #examples-how-to-set-up-you
 
 ### Folder Structure (two-disk setup)
 
-This is a bit more work, but the next best option you can do if you don't want to use the #alternative-recommendation with [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"}.
+This is a bit more work, but the next best option you can do if you don't want to use the #alternative-recommendation with [StableBit DrivePool](https://stablebit.com/).
 
 For this example, we will assume you have one disk added as drive `D:\`, and a second disk as `E:\`.
 
@@ -90,160 +92,182 @@ At the moment, we do not have Windows screenshots for all the apps, but they may
 So, in the meantime, use the [Examples](/File-and-Folder-Structure/Examples/) of how to set up your paths INSIDE your applications.
 However, for the paths, use the information below, depending on whether you have a one-disk or two-disk setup.
 
-!!! warning "Linux uses forward slash `/` and Windows uses backslash `\`<br>So if you see paths with a forward slash, replace it with a backslash for Windows"
+::: warning Linux uses forward slash `/` and Windows uses backslash `\`<br>So if you see paths with a forward slash, replace it with a backslash for Windows
 
-=== "One-Disk Setup"
+:::
 
-    We will assume you have a one-disk setup with a large drive added as drive `D:/` or that you are using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"} that created a single large disk as drive `D:\`.
+::: tabs
 
-    === "Sonarr"
+== One-Disk Setup
 
-        ```none
-        D:\data\media\tv
-        ```
+We will assume you have a one-disk setup with a large drive added as drive `D:/` or that you are using [StableBit DrivePool](https://stablebit.com/) that created a single large disk as drive `D:\`.
 
-    === "Radarr"
+::: tabs
 
-        ```none
-        D:\data\media\movies
-        ```
+== Sonarr
 
-    === "SABnzbd"
+```none
+D:\data\media\tv
+```
 
-        ```none
-        D:\data\usenet\complete
-        ```
+== Radarr
 
-        ```none
-        D:\data\usenet\incomplete
-        ```
+```none
+D:\data\media\movies
+```
 
-    === "NZBGet"
+== SABnzbd
 
-        ```none
-        D:\data\usenet
-        ```
+```none
+D:\data\usenet\complete
+```
 
-    === "qBittorrent"
+```none
+D:\data\usenet\incomplete
+```
 
-        ```none
-        D:\data\torrents
-        ```
+== NZBGet
 
-    === "Deluge"
+```none
+D:\data\usenet
+```
 
-        ```none
-        D:\data\torrents
-        ```
+== qBittorrent
 
-    === "ruTorrent"
+```none
+D:\data\torrents
+```
 
-        ```none
-        D:\data\torrents
-        ```
+== Deluge
 
-=== "Two-Disk Setup"
+```none
+D:\data\torrents
+```
 
-    We will assume you have one disk added as drive `D:/` and a second disk as `E:\`.
+== ruTorrent
 
-    === "Disk 1"
+```none
+D:\data\torrents
+```
 
-        === "Radarr"
+:::
 
-            ```none
-            D:\data\media\movies
-            ```
+== Two-Disk Setup
 
-        === "SABnzbd"
+We will assume you have one disk added as drive `D:/` and a second disk as `E:\`.
 
-            Make sure your category paths are set up correctly so the media file ends up in the correct folder.
+::: tabs
 
-            ```none
-            D:\data\usenet\complete
-            ```
+== Disk 1
 
-            ```none
-            D:\data\usenet\incomplete
-            ```
+::: tabs
 
-        === "NZBGet"
+== Radarr
 
-            Make sure your category paths are set up correctly so the media file ends up in the correct folder.
+```none
+D:\data\media\movies
+```
 
-            ```none
-            D:\data\usenet
-            ```
+== SABnzbd
 
-        === "qBittorrent"
+Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-            Make sure your category paths are set up correctly so the media file ends up in the correct folder.
+```none
+D:\data\usenet\complete
+```
 
-            ```none
-            D:\data\torrents
-            ```
+```none
+D:\data\usenet\incomplete
+```
 
-        === "Deluge"
+== NZBGet
 
-            Make sure your label paths are set correctly so the media file ends up in the correct folder.
+Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-            ```none
-            D:\data\torrents
-            ```
+```none
+D:\data\usenet
+```
 
-        === "ruTorrent"
+== qBittorrent
 
-            ```none
-            D:\data\torrents
-            ```
+Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-    === "Disk 2"
+```none
+D:\data\torrents
+```
 
-        === "Sonarr"
+== Deluge
 
-            ```none
-            E:\data\media\tv
-            ```
+Make sure your label paths are set correctly so the media file ends up in the correct folder.
 
-        === "SABnzbd"
+```none
+D:\data\torrents
+```
 
-            Make sure your category paths are set up correctly so the media file ends up in the correct folder.
+== ruTorrent
 
-            ```none
-            E:\data\usenet\complete
-            ```
+```none
+D:\data\torrents
+```
 
-            ```none
-            E:\data\usenet\incomplete
-            ```
+:::
 
-        === "NZBGet"
+== Disk 2
 
-            Make sure your category paths are set up correctly so the media file ends up in the correct folder.
+::: tabs
 
-            ```none
-            E:\data\usenet
-            ```
+== Sonarr
 
-        === "qBittorrent"
+```none
+E:\data\media\tv
+```
 
-            Make sure your category paths are set up correctly so the media file ends up in the correct folder.
+== SABnzbd
 
-            ```none
-            E:\data\torrents
-            ```
+Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-        === "Deluge"
+```none
+E:\data\usenet\complete
+```
 
-            Make sure your label paths are set up correctly so the media file ends up in the correct folder.
+```none
+E:\data\usenet\incomplete
+```
 
-            ```none
-            E:\data\torrents
-            ```
+== NZBGet
 
-        === "ruTorrent"
+Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-            ```none
-            E:\data\torrents
-            ```
+```none
+E:\data\usenet
+```
+
+== qBittorrent
+
+Make sure your category paths are set up correctly so the media file ends up in the correct folder.
+
+```none
+E:\data\torrents
+```
+
+== Deluge
+
+Make sure your label paths are set up correctly so the media file ends up in the correct folder.
+
+```none
+E:\data\torrents
+```
+
+== ruTorrent
+
+```none
+E:\data\torrents
+```
+
+:::
+
+:::
+
+:::
 
 <!--@include: ../../../includes/support.md-->

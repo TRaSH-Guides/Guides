@@ -2,19 +2,23 @@
 
 This basic example is based on the use of Docker images
 
-!!! tip ""
+::: tip
 
-    Keep in mind the path are set up so it works with hardlinks and instant moves.
+Keep in mind the path are set up so it works with hardlinks and instant moves.
 
-    More info [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
+More info [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/)
 
-!!! info
+:::
 
-    Pick one path layout and use it for all of them.
+::: info
 
-    It doesn't matter if you prefer to use `/data`, `/shared`, `/storage` or whatever.
+Pick one path layout and use it for all of them.
 
-    The screenshots in the examples use the following root path `/data`
+It doesn't matter if you prefer to use `/data`, `/shared`, `/storage` or whatever.
+
+The screenshots in the examples use the following root path `/data`
+
+:::
 
 ---
 
@@ -38,10 +42,12 @@ You don't need to add the full path under `Save Path`, it will use the root down
 
 ## Downloads do not go into the category folder
 
-!!! warning "Downloads do not go into the category folder"
+::: warning Downloads do not go into the category folder
 
-    When your downloads end up in `/data/torrents/` and not in `/data/torrents/{tv|movies|music}` then you probably forgot to change `Default Torrent Management Mode:` to `Automatic`
+When your downloads end up in `/data/torrents/` and not in `/data/torrents/{tv|movies|music}` then you probably forgot to change `Default Torrent Management Mode:` to `Automatic`
 
-    ![!qBittorrent - Default Torrent Management Mode](images/qb-saving-management.png)
+![!qBittorrent - Default Torrent Management Mode](images/qb-saving-management.png)
+
+:::
 
 <!--@include: ../../../includes/support.md-->

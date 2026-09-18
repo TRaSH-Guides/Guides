@@ -9,22 +9,26 @@ Some prefer high-quality audio (HD Audio), others high-quality video. Many prefe
 
 Here we will try to explain how to make the most of Custom Formats to help you set up your quality profiles for your personal preferences.
 
-- We've also created an Excel sheet with several tested [media player devices](/Plex/what-does-my-media-player-support){:target="\_blank" rel="noopener noreferrer"} to display what formats and capabilities they support, sourced from information provided by our community. We hope this Excel sheet will be a helpful resource for those looking for a reliable media player device and will help you choose the appropriate quality profile.
+- We've also created an Excel sheet with several tested [media player devices](/Plex/what-does-my-media-player-support) to display what formats and capabilities they support, sourced from information provided by our community. We hope this Excel sheet will be a helpful resource for those looking for a reliable media player device and will help you choose the appropriate quality profile.
 
 ---
 
 ## Basics
 
-After you've added the Custom Formats, as explained in [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
+After you've added the Custom Formats, as explained in [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/).
 You will need to set it up in the quality Profile you want to use/prefer to make use of the Custom Formats.
 
-!!! info "You can also use a [Guide sync tool](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"} to sync the Custom Formats or even the complete quality profile(s)."
+::: info You can also use a [Guide sync tool](/Guide-Sync/) to sync the Custom Formats or even the complete quality profile(s).
+
+:::
 
 `Settings` => `Profiles`
 
 ![!cf-settings-profiles](images/cf-settings-profiles.png)
 
-!!! info "Sonarr Custom Formats can be set per profile and isn't global"
+::: info Sonarr Custom Formats can be set per profile and isn't global
+
+:::
 
 Select the profile that you want to use/prefer.
 
@@ -40,26 +44,32 @@ Select the profile that you want to use/prefer.
 
 At the bottom, in your chosen profile, you will see the added Custom Formats where you can start setting up the scores.
 
-??? success "Screenshot example - [Click to show/hide]"
+::: details Screenshot example - [Click to show/hide]
 
-    ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
+![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
 
-    !!! warning
+::: warning
 
-        These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and are not 100% up to date with the actual data you need to add.
+These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and are not 100% up to date with the actual data you need to add.
 
-        - Always follow the data described in the guide.
-        - If you have any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+- Always follow the data described in the guide.
+- If you have any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
 
-!!! info "Keep in mind Custom Formats are made to fine-tune your Quality Profile.<br>Generally, quality trumps all"
+:::
 
-    Custom formats are controlled by Quality Profiles.
+:::
 
-    - The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded.
-    - A score of 0 results in the custom format being informational only.
-    - The Minimum score requires releases to reach this threshold otherwise they will be rejected.
-    - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
-    - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
+::: info Keep in mind Custom Formats are made to fine-tune your Quality Profile.<br>Generally, quality trumps all
+
+Custom formats are controlled by Quality Profiles.
+
+- The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded.
+- A score of 0 results in the custom format being informational only.
+- The Minimum score requires releases to reach this threshold otherwise they will be rejected.
+- Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
+- Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
+
+:::
 
 ---
 
@@ -73,7 +83,9 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 ## TRaSH Quality Profiles
 
-!!! tip "The following Quality Profiles can be combined into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p when and if it becomes available _AFTER_ the 1080p release is made."
+::: tip The following Quality Profiles can be combined into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p when and if it becomes available _AFTER_ the 1080p release is made.
+
+:::
 
 ### WEB-1080p
 
@@ -103,24 +115,28 @@ Use the following main settings in your profile.
 
 #### WEB-1080p alternative Quality Profile
 
-!!! tip
+::: tip
 
-    For some older shows, you might want to enable the `WEB-720p`, `HDTV-720p/1080p`, or even `Bluray-720p/1080p` quality source. Depending on your preferences, you can put them above or below the `WEB-1080p`.
+For some older shows, you might want to enable the `WEB-720p`, `HDTV-720p/1080p`, or even `Bluray-720p/1080p` quality source. Depending on your preferences, you can put them above or below the `WEB-1080p`.
 
-    ![Alternative Option](images/cf-profile-alternative-web1080.png)
+![Alternative Option](images/cf-profile-alternative-web1080.png)
+
+:::
 
 ---
 
 <!--@include: ../../includes/starr/move-quality-to-top.md-->
 
-??? abstract "Workflow Logic - [Click to show/hide]"
+::: details Workflow Logic - [Click to show/hide]
 
-    - It will download WEB-DL 1080p. (If you also enabled `WEB 720p` and/or `HDTV 1080p` it will upgrade until `Upgrade Until`)
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
+- It will download WEB-DL 1080p. (If you also enabled `WEB 720p` and/or `HDTV 1080p` it will upgrade until `Upgrade Until`)
+- The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
-    So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
+So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
 
-    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+
+:::
 
 ---
 
@@ -156,24 +172,28 @@ Use the following main settings in your profile.
 
 #### WEB-2160p alternative Quality Profile
 
-!!! tip
+::: tip
 
-    You might want to combine the `WEB-720p/1080p` into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p when and if it becomes available after the 1080p release is made, and perhaps enable the `HDTV-720p/1080p` and/or `Bluray-720p/1080p` for some older shows, or even the `Bluray-2160p` quality source because you prefer HD audio. Depending on your preferences, you can put them above or below the `WEB-2160p`.
+You might want to combine the `WEB-720p/1080p` into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p when and if it becomes available after the 1080p release is made, and perhaps enable the `HDTV-720p/1080p` and/or `Bluray-720p/1080p` for some older shows, or even the `Bluray-2160p` quality source because you prefer HD audio. Depending on your preferences, you can put them above or below the `WEB-2160p`.
 
-    ![Alternative Option](images/cf-profile-alternative-web2160.png)
+![Alternative Option](images/cf-profile-alternative-web2160.png)
+
+:::
 
 ---
 
 <!--@include: ../../includes/starr/move-quality-to-top.md-->
 
-??? abstract "Workflow Logic - [Click to show/hide]"
+::: details Workflow Logic - [Click to show/hide]
 
-    - This will download WEB-2160p with HDR/DV.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
+- This will download WEB-2160p with HDR/DV.
+- The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
-    So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
+So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
 
-    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+
+:::
 
 ---
 
@@ -193,54 +213,62 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ### Why only WEB-DL
 
-??? question "Why do you only have Profiles for WEB-DL - [Click to show/hide]"
+::: details Why do you only have Profiles for WEB-DL - [Click to show/hide]
 
-    **Why we focus on WEB-DL**
+**Why we focus on WEB-DL**
 
-    Most TV shows today debut on streaming services, and many never receive a physical release at all. WEB-DL is usually the best source available, and often the only one.
+Most TV shows today debut on streaming services, and many never receive a physical release at all. WEB-DL is usually the best source available, and often the only one.
 
-    TV remuxes also come with a steep storage cost. A season can easily consume hundreds of gigabytes, and larger shows can approach a terabyte. With drive prices where they are, that adds up fast for content where the quality difference over WEB-DL is often hard to notice.
+TV remuxes also come with a steep storage cost. A season can easily consume hundreds of gigabytes, and larger shows can approach a terabyte. With drive prices where they are, that adds up fast for content where the quality difference over WEB-DL is often hard to notice.
 
-    There isn't much community interest in TV remux profiles either, so we haven't invested time in creating one.
+There isn't much community interest in TV remux profiles either, so we haven't invested time in creating one.
 
-    **How to enable remux on a WEB profile**
+**How to enable remux on a WEB profile**
 
-    If you prefer remuxes, you can adapt [`WEB-2160p (Alternative)`](/Sonarr/sonarr-setup-quality-profiles/#web-2160p-alternative-quality-profile){:target="_blank" rel="noopener noreferrer"}, the variant above that includes 720p/1080p/2160p WEB and Bluray sources as fallbacks. That profile is built around WEB-DL as the cutoff, so enabling remux takes a few extra steps:
+If you prefer remuxes, you can adapt [`WEB-2160p (Alternative)`](/Sonarr/sonarr-setup-quality-profiles/#web-2160p-alternative-quality-profile), the variant above that includes 720p/1080p/2160p WEB and Bluray sources as fallbacks. That profile is built around WEB-DL as the cutoff, so enabling remux takes a few extra steps:
 
-    1. Enable `Bluray-1080p Remux` and `Bluray-2160p Remux`.
-    1. Move both remux qualities above `WEB 2160p`, with `Bluray-2160p Remux` at the top, since quality rank beats custom format score.
-    1. Change **Upgrade Until** from `WEB 2160p` to `Bluray-2160p Remux`; otherwise Sonarr stops at WEB and will not upgrade to remux.
-    1. [Merge](/Sonarr/Tips/Merge-quality/){:target="_blank" rel="noopener noreferrer"} remux with the matching WEB qualities (e.g. `Bluray-2160p Remux` + `WEBDL-2160p` / `WEBRip-2160p`) so upgrades between them work cleanly.
+1. Enable `Bluray-1080p Remux` and `Bluray-2160p Remux`.
+1. Move both remux qualities above `WEB 2160p`, with `Bluray-2160p Remux` at the top, since quality rank beats custom format score.
+1. Change **Upgrade Until** from `WEB 2160p` to `Bluray-2160p Remux`; otherwise Sonarr stops at WEB and will not upgrade to remux.
+1. [Merge](/Sonarr/Tips/Merge-quality/) remux with the matching WEB qualities (e.g. `Bluray-2160p Remux` + `WEBDL-2160p` / `WEBRip-2160p`) so upgrades between them work cleanly.
 
-    Keep the existing custom formats; lower qualities in the Alternative profile remain useful as fallbacks when no remux exists. This is still a WEB-focused profile with no dedicated remux release-group scoring, and `Audio Formats` custom formats are not used here. For most TV shows, no remux will exist anyway.
+Keep the existing custom formats; lower qualities in the Alternative profile remain useful as fallbacks when no remux exists. This is still a WEB-focused profile with no dedicated remux release-group scoring, and `Audio Formats` custom formats are not used here. For most TV shows, no remux will exist anyway.
+
+:::
 
 ### Why prefer P2P groups
 
-??? question "Why do you prefer P2P groups over scene groups - [Click to show/hide]"
+::: details Why do you prefer P2P groups over scene groups - [Click to show/hide]
 
-    Scene groups are always in a rush to bring releases out as fast as possible.
+Scene groups are always in a rush to bring releases out as fast as possible.
 
-    We noticed, often, that we got Repacks/Propers from them, or of different groups and quality. P2P release groups are a bit smarter, and sort of work together, by not doing the same releases. Also, we noticed that with some scene releases the 5.1 audio was stripped out or converted to AAC audio.
+We noticed, often, that we got Repacks/Propers from them, or of different groups and quality. P2P release groups are a bit smarter, and sort of work together, by not doing the same releases. Also, we noticed that with some scene releases the 5.1 audio was stripped out or converted to AAC audio.
 
-    In our opinion, the P2P releases are better quality. However, there is one scene group that does bring out quality releases `-deflate`/`-inflate`.
+In our opinion, the P2P releases are better quality. However, there is one scene group that does bring out quality releases `-deflate`/`-inflate`.
+
+:::
 
 ### Why so many repacks/propers
 
-??? question "Why do we see so many repacks/propers of Amazon WEB-DLs lately - [Click to show/hide]"
+::: details Why do we see so many repacks/propers of Amazon WEB-DLs lately - [Click to show/hide]
 
-    A large portion of Amazon WEB-DLs in the last weeks have only had 192Kbps DD+5.1 (because that's all Amazon made available initially). The proper 640Kbps DD+5.1 audio might appear a few hours, or a few months, later. The lower quality release will be REPACKED when the higher quality audio is available.
+A large portion of Amazon WEB-DLs in the last weeks have only had 192Kbps DD+5.1 (because that's all Amazon made available initially). The proper 640Kbps DD+5.1 audio might appear a few hours, or a few months, later. The lower quality release will be REPACKED when the higher quality audio is available.
+
+:::
 
 ### Proper and Repacks
 
-??? tip "Proper and Repacks - [Click to show/hide]"
+::: details Proper and Repacks - [Click to show/hide]
 
-    We also suggest that you change the Propers and Repacks settings in Sonarr.
+We also suggest that you change the Propers and Repacks settings in Sonarr.
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
+`Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
 
-    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
+![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
-    This way you make sure the Custom Format preferences will be used instead.
+This way you make sure the Custom Format preferences will be used instead.
+
+:::
 
 ### How Does Custom Format Scoring Work?
 
@@ -248,10 +276,12 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ### Custom Formats to avoid certain releases
 
-??? question "How to use a Custom Format to avoid certain releases? - [Click to show/hide]"
+::: details How to use a Custom Format to avoid certain releases? - [Click to show/hide]
 
-    For Custom Formats matching what you want to avoid, set it to something really low like `-10000` and not something like `-10`.
-    When you add your preferred Custom Format and set it to something like `+10`, it's possible that, for example, the `BR-DISK` will be downloaded - (-10)+(+10)=0 - if your `Minimum Custom Format Score` is set at `0`.
+For Custom Formats matching what you want to avoid, set it to something really low like `-10000` and not something like `-10`.
+When you add your preferred Custom Format and set it to something like `+10`, it's possible that, for example, the `BR-DISK` will be downloaded - (-10)+(+10)=0 - if your `Minimum Custom Format Score` is set at `0`.
+
+:::
 
 ### Releases you should avoid
 
@@ -261,37 +291,45 @@ This is a must-have for every Quality Profile you use in our opinion. All these 
 
 ### Custom Formats with a score of 0
 
-??? question "What do Custom Formats with a score of 0 do? - [Click to show/hide]"
+::: details What do Custom Formats with a score of 0 do? - [Click to show/hide]
 
-    All Custom Formats with a score of 0 are purely informational and don't do anything.
+All Custom Formats with a score of 0 are purely informational and don't do anything.
+
+:::
 
 ### Minimum Custom Format Score
 
-??? info "Minimum Custom Format Score - [Click to show/hide]"
+::: details Minimum Custom Format Score - [Click to show/hide]
 
-    Some people suggest not to use negative scores for your Custom Formats and set this option to a higher score than 0.
+Some people suggest not to use negative scores for your Custom Formats and set this option to a higher score than 0.
 
-    The reason why we don't prefer/use this is because you could limit yourself when some new groups or whatever will be released.
+The reason why we don't prefer/use this is because you could limit yourself when some new groups or whatever will be released.
 
-    Also, it makes it much more clear what you prefer and what you want to avoid.
+Also, it makes it much more clear what you prefer and what you want to avoid.
+
+:::
 
 ### Audio Channels
 
-??? info "Audio Channels - [Click to show/hide]"
+::: details Audio Channels - [Click to show/hide]
 
-    Elsewhere in the guide, you will find a separate group of custom formats called `Audio Channels`. These will match the number of audio channels in a release, for example, 2.0 (stereo) or 5.1/7.1 (surround sound). We wouldn't add the audio channels Custom Formats as you could limit yourself in the amount of releases you're able to get. Only use them if you have a specific need for them.
+Elsewhere in the guide, you will find a separate group of custom formats called `Audio Channels`. These will match the number of audio channels in a release, for example, 2.0 (stereo) or 5.1/7.1 (surround sound). We wouldn't add the audio channels Custom Formats as you could limit yourself in the amount of releases you're able to get. Only use them if you have a specific need for them.
 
-    Using this with any kind of Remux Quality Profile is useless, in our opinion, being that 99% of all Remuxes are multi-audio anyway. You can get better scores just by using the `Audio Formats` Custom Formats.
+Using this with any kind of Remux Quality Profile is useless, in our opinion, being that 99% of all Remuxes are multi-audio anyway. You can get better scores just by using the `Audio Formats` Custom Formats.
+
+:::
 
 ### Avoid using the x264/x265 Custom Format
 
-??? tip "Avoid using the x264/x265 Custom Format - [Click to show/hide]"
+::: details Avoid using the x264/x265 Custom Format - [Click to show/hide]
 
-    Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} Custom Format.
+Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) Custom Format.
 
-    Something like 95% of video files are x264 and have much better direct play support. If you have more than a of couple users, you will notice much more transcoding.
+Something like 95% of video files are x264 and have much better direct play support. If you have more than a of couple users, you will notice much more transcoding.
 
-    Use x265 only for 4k releases and the [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} makes sure you still get the x265 releases.
+Use x265 only for 4k releases and the [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) makes sure you still get the x265 releases.
+
+:::
 
 ### Why am I getting purple or green colors
 
