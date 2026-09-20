@@ -1,3 +1,7 @@
+# 2026-09-20 03:56
+- [feat(plex): add streaming and buffering troubleshooting guide (Tautulli/Tracearr)](https://github.com/TRaSH-Guides/Guides/pull/2893)
+- [feat(starr): update CF `FAND` to also match `FAH` and `FDNG`](https://github.com/TRaSH-Guides/Guides/pull/2888)
+
 # 2026-09-13 03:46
 - [feat(guide-sync): Sorting order fix for the German Anime Profiles and other fixes](https://github.com/TRaSH-Guides/Guides/pull/2886)
 - [feat(downloaders): Add WebUI API key support for qBittorrent (rebase of #2860)](https://github.com/TRaSH-Guides/Guides/pull/2885)
