@@ -46,6 +46,7 @@ export default defineConfig(
         ],
       },
       cleanUrls: true,
+      ignoreDeadLinks: true,
     },
     // https://vitepress-sidebar.cdget.com/advanced-usage/configuration-file
     [

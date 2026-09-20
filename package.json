@@ -23,8 +23,20 @@
   },
   "devDependencies": {
     "vitepress": "2.0.0-alpha.20",
-    "vitepress-plugin-tabs": "^0.9.1",
-    "vitepress-sidebar": "^1.40.0"
+    "vitepress-plugin-tabs": "0.9.1",
+    "vitepress-sidebar": "1.40.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "24.21.0",
+      "onFail": "warn"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": "11.19.0",
+      "onFail": "warn"
+    }
   },
   "allowScripts": {
     "esbuild@0.21.5": true
