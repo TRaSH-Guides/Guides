@@ -49,6 +49,6 @@ Get 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN P
 1. Use this [referral link](https://torguard.net/aff.php?aff=5575)
 2. Enter the discount code at checkout:
 
-    ```none
+    ```txt
     TRaSH-Guides-60%
     ```

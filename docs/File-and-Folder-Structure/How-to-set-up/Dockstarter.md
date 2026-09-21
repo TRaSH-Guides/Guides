@@ -11,7 +11,7 @@ We're using the default paths in this example, and we will keep the other paths 
 We're going to use a mounted drive that we're going to use as storage for downloads and your media.
 In this example, the mounted drive will be mounted to `/mnt/` with the following folder structure.
 
-```none
+```txt
 storage
 ├── downloads
 │  ├── torrents

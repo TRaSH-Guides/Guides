@@ -112,7 +112,7 @@ You will still need to fix it manually, but it's safer to do so than to waste ba
 
 Add the following to your Excluded file names.
 
-```none
+```txt
 *.rar
 *.r[0-9]*
 ```

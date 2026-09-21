@@ -26,7 +26,7 @@ Whilst we have used `data`, you can name the root folder/share whatever you want
 
 For this example, we will assume you have a one-disk setup with a large drive added as drive `D:\`, or are using [StableBit DrivePool](https://stablebit.com/) that created one big disk as drive `D:\`.
 
-```none
+```txt
 D:\data
 ├── torrents
 │   ├── books
@@ -57,7 +57,7 @@ For this example, we will assume you have one disk added as drive `D:\`, and a s
 
 #### disk 1
 
-```none
+```txt
 D:\data
 ├── torrents
 │   └── movies
@@ -71,7 +71,7 @@ D:\data
 
 #### disk 2
 
-```none
+```txt
 E:\data
 ├── torrents
 │   └── tv
@@ -106,47 +106,47 @@ We will assume you have a one-disk setup with a large drive added as drive `D:/`
 
 == Sonarr
 
-```none
+```txt
 D:\data\media\tv
 ```
 
 == Radarr
 
-```none
+```txt
 D:\data\media\movies
 ```
 
 == SABnzbd
 
-```none
+```txt
 D:\data\usenet\complete
 ```
 
-```none
+```txt
 D:\data\usenet\incomplete
 ```
 
 == NZBGet
 
-```none
+```txt
 D:\data\usenet
 ```
 
 == qBittorrent
 
-```none
+```txt
 D:\data\torrents
 ```
 
 == Deluge
 
-```none
+```txt
 D:\data\torrents
 ```
 
 == ruTorrent
 
-```none
+```txt
 D:\data\torrents
 ```
 
@@ -164,7 +164,7 @@ We will assume you have one disk added as drive `D:/` and a second disk as `E:\`
 
 == Radarr
 
-```none
+```txt
 D:\data\media\movies
 ```
 
@@ -172,11 +172,11 @@ D:\data\media\movies
 
 Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-```none
+```txt
 D:\data\usenet\complete
 ```
 
-```none
+```txt
 D:\data\usenet\incomplete
 ```
 
@@ -184,7 +184,7 @@ D:\data\usenet\incomplete
 
 Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-```none
+```txt
 D:\data\usenet
 ```
 
@@ -192,7 +192,7 @@ D:\data\usenet
 
 Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-```none
+```txt
 D:\data\torrents
 ```
 
@@ -200,13 +200,13 @@ D:\data\torrents
 
 Make sure your label paths are set correctly so the media file ends up in the correct folder.
 
-```none
+```txt
 D:\data\torrents
 ```
 
 == ruTorrent
 
-```none
+```txt
 D:\data\torrents
 ```
 
@@ -218,7 +218,7 @@ D:\data\torrents
 
 == Sonarr
 
-```none
+```txt
 E:\data\media\tv
 ```
 
@@ -226,11 +226,11 @@ E:\data\media\tv
 
 Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-```none
+```txt
 E:\data\usenet\complete
 ```
 
-```none
+```txt
 E:\data\usenet\incomplete
 ```
 
@@ -238,7 +238,7 @@ E:\data\usenet\incomplete
 
 Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-```none
+```txt
 E:\data\usenet
 ```
 
@@ -246,7 +246,7 @@ E:\data\usenet
 
 Make sure your category paths are set up correctly so the media file ends up in the correct folder.
 
-```none
+```txt
 E:\data\torrents
 ```
 
@@ -254,13 +254,13 @@ E:\data\torrents
 
 Make sure your label paths are set up correctly so the media file ends up in the correct folder.
 
-```none
+```txt
 E:\data\torrents
 ```
 
 == ruTorrent
 
-```none
+```txt
 E:\data\torrents
 ```
 

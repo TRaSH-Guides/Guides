@@ -176,7 +176,7 @@ You can add your own subfolders for your download client(s) using the command ab
 
 So your appdata folder will look like this.
 
-```none
+```txt
 docker
 └── appdata
     ├── radarr
@@ -212,7 +212,7 @@ wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/doc
 
 This docker-compose file will have the following Docker containers included.
 
-```none
+```txt
     - Radarr
     - Sonarr
     - Bazarr (Subtitle searcher and downloader)

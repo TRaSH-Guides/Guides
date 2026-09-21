@@ -9,7 +9,7 @@
 
 1. In your Unraid Dashboard go to `APP` and type in the search box:
 
-    ```none
+    ```txt
     python 3 for unraid
     ```
 

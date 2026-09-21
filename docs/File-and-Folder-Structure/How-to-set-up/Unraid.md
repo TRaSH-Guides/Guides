@@ -161,7 +161,7 @@ Unraid doesn't create a custom Docker network by default, you need to create one
 
 - Open a terminal window and type:
 
-    ```none
+    ```txt
     docker network create your_uber_cool_network_name
     ```
 

@@ -33,7 +33,7 @@ If you got some to share, pls make a PR so we can collect them at one place
 
 ::: details Please name the file:
 
-``` none
+``` txt
     Android-SHIELD Android TV.xml
 ```
 
@@ -51,7 +51,7 @@ If you got some to share, pls make a PR so we can collect them at one place
 
 ::: details Please name the file:
 
-``` none
+``` txt
     Chromecast.xml
 ```
 
