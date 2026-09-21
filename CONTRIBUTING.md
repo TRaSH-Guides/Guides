@@ -400,18 +400,22 @@ The macro is `render_profile_cfs(app, profile_name, ...)`, defined in `main.py` 
 [[ render_profile_cfs('radarr', 'Remux + WEB 2160p') ]]
 ```
 
-`profile_name` must match the exact `name` field of the target `docs/json/{app}/quality-profiles/<slug>.json` file. Typos are caught by `scripts/validate-quality-profiles.py` at pre-commit time.
+`profile_name` must match the exact `name` field of the target `docs/json/{app}/quality-profiles/<slug>.json` file. Typos are caught by `scripts/validate-quality-profiles.py` at pre-commit time; an unknown `app` or a `profile_name` that matches no cf-group also raises a build error at `mkdocs build` time (the macros plugin's `on_error_fail` is enabled), so a typo can't silently drop a profile's tables.
 
 For each cf-group whose `quality_profiles.include` contains `profile_name`, the macro emits:
 
 ```markdown
 ??? abstract "<group.name> - [Click to show/hide]"
 
+    <optional info block, if set>
+
     | Custom Format | Score | Trash ID |
     | --- | :---: | --- |
     | [<cf.name>](/<App>/<App>-collection-of-custom-formats/#<cf-slug>) | <score> | <trash_id> |
     ...
 ```
+
+A cf-group may set an optional top-level `info` field: a markdown string rendered above the table, inside the same collapsible admonition. Use it for narrative guidance the table itself can't convey, e.g. `docs/json/{radarr,sonarr}/cf-groups/audio-formats.json` and `hdr-formats-hdr.json` carry a "why should I choose this" block. It's the only supported way to add custom guide content above a generated group table; the field is documented in `schemas/cf-groups.schema.json`.
 
 Each CF row's `<score>` comes from `cf.trash_scores[<profile's trash_score_set>]`, falling back to `cf.trash_scores.default`, and finally `0` for informational CFs with no `trash_scores`. Required vs optional bucketing is driven by the cf-group's top-level `default` flag (`"true"` → required, anything else → optional), unless an override flips it (see below).
 
