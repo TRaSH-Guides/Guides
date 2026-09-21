@@ -1,0 +1,492 @@
+{
+  "/Getting-Started/": [
+    {
+      "text": "Home",
+      "link": "/Getting-Started/"
+    }
+  ],
+  "/Radarr/": [
+    {
+      "text": "Home",
+      "link": "/Radarr/"
+    },
+    {
+      "text": "Quality Settings (File Size)",
+      "link": "/Radarr/Radarr-Quality-Settings-File-Size"
+    },
+    {
+      "text": "Recommended naming scheme",
+      "link": "/Radarr/Radarr-recommended-naming-scheme"
+    },
+    {
+      "text": "How to set up Quality Profiles",
+      "link": "/Radarr/radarr-setup-quality-profiles"
+    },
+    {
+      "text": "How to set up Quality Profiles (Anime)",
+      "link": "/Radarr/radarr-setup-quality-profiles-anime"
+    },
+    {
+      "text": "How to set up Quality Profiles (French)",
+      "link": "/Radarr/radarr-setup-quality-profiles-french-en"
+    },
+    {
+      "text": "How to set up Quality Profiles (German)",
+      "link": "/Radarr/radarr-setup-quality-profiles-german-en"
+    },
+    {
+      "text": "How to import Custom Formats",
+      "link": "/Radarr/Radarr-import-custom-formats"
+    },
+    {
+      "text": "How to Update Custom Formats",
+      "link": "/Radarr/Radarr-how-to-update-custom-formats"
+    },
+    {
+      "text": "Collection of Custom Formats",
+      "link": "/Radarr/Radarr-collection-of-custom-formats"
+    },
+    {
+      "text": "Tips",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "How to Merge Quality",
+          "link": "/Radarr/Tips/Merge-quality"
+        },
+        {
+          "text": "How to Order Quality Sources",
+          "link": "/Radarr/Tips/How-to-order-Quality-Source"
+        },
+        {
+          "text": "How to rename your folders",
+          "link": "/Radarr/Tips/Radarr-rename-your-folders"
+        },
+        {
+          "text": "How to set up Language Custom Formats",
+          "link": "/Radarr/Tips/How-to-setup-language-custom-formats"
+        },
+        {
+          "text": "How to Sync 2 Radarr or Sonarr with each other",
+          "link": "/Radarr/Tips/Sync-2-radarr-sonarr"
+        },
+        {
+          "text": "Remote Path Mappings",
+          "link": "/Radarr/Tips/Radarr-remote-path-mapping"
+        },
+        {
+          "text": "Show Unknown Movie Items",
+          "link": "/Radarr/Tips/Radarr-show-unknown-movie-items"
+        }
+      ]
+    }
+  ],
+  "/Sonarr/": [
+    {
+      "text": "Home",
+      "link": "/Sonarr/"
+    },
+    {
+      "text": "Quality Settings (File Size)",
+      "link": "/Sonarr/Sonarr-Quality-Settings-File-Size"
+    },
+    {
+      "text": "Recommended naming scheme",
+      "link": "/Sonarr/Sonarr-recommended-naming-scheme"
+    },
+    {
+      "text": "How to set up Quality Profiles",
+      "link": "/Sonarr/sonarr-setup-quality-profiles"
+    },
+    {
+      "text": "How to set up Quality Profiles (Anime)",
+      "link": "/Sonarr/sonarr-setup-quality-profiles-anime"
+    },
+    {
+      "text": "How to set up Quality Profiles (French)",
+      "link": "/Sonarr/sonarr-setup-quality-profiles-french-en"
+    },
+    {
+      "text": "How to set up Quality Profiles (German)",
+      "link": "/Sonarr/sonarr-setup-quality-profiles-german-en"
+    },
+    {
+      "text": "How to import Custom Formats",
+      "link": "/Sonarr/sonarr-import-custom-formats"
+    },
+    {
+      "text": "How to Update Custom Formats",
+      "link": "/Sonarr/sonarr-how-to-update-custom-formats"
+    },
+    {
+      "text": "Collection of Custom Formats",
+      "link": "/Sonarr/sonarr-collection-of-custom-formats"
+    },
+    {
+      "text": "Tips",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "How to Merge Quality",
+          "link": "/Sonarr/Tips/Merge-quality"
+        },
+        {
+          "text": "How to Order Quality Sources",
+          "link": "/Sonarr/Tips/How-to-order-Quality-Source"
+        },
+        {
+          "text": "How to rename your folders",
+          "link": "/Sonarr/Tips/Sonarr-rename-your-folders"
+        },
+        {
+          "text": "How to set up Language Custom Formats",
+          "link": "/Sonarr/Tips/How-to-setup-language-custom-formats"
+        },
+        {
+          "text": "How to Sync 2 Radarr or Sonarr with each other",
+          "link": "/Sonarr/Tips/Sync-2-radarr-sonarr"
+        },
+        {
+          "text": "Remote Path Mappings",
+          "link": "/Sonarr/Tips/Sonarr-remote-path-mapping"
+        }
+      ]
+    }
+  ],
+  "/Prowlarr/": [
+    {
+      "text": "Home",
+      "link": "/Prowlarr/"
+    },
+    {
+      "text": "How to set up proxy for certain indexers",
+      "link": "/Prowlarr/prowlarr-setup-proxy"
+    },
+    {
+      "text": "How to set up FlareSolverr",
+      "link": "/Prowlarr/prowlarr-setup-flaresolverr"
+    },
+    {
+      "text": "How to set up indexers with limited API",
+      "link": "/Prowlarr/prowlarr-setup-limited-api"
+    }
+  ],
+  "/File-and-Folder-Structure/": [
+    {
+      "text": "Home",
+      "link": "/File-and-Folder-Structure/"
+    },
+    {
+      "text": "Hardlinks and Instant Moves",
+      "link": "/File-and-Folder-Structure/Hardlinks-and-Instant-Moves"
+    },
+    {
+      "text": "How To Set Up",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Home",
+          "link": "/File-and-Folder-Structure/How-to-set-up/"
+        },
+        {
+          "text": "Docker",
+          "link": "/File-and-Folder-Structure/How-to-set-up/Docker"
+        },
+        {
+          "text": "Dockstarter",
+          "link": "/File-and-Folder-Structure/How-to-set-up/Dockstarter"
+        },
+        {
+          "text": "Native",
+          "link": "/File-and-Folder-Structure/How-to-set-up/Native"
+        },
+        {
+          "text": "Synology",
+          "link": "/File-and-Folder-Structure/How-to-set-up/Synology"
+        },
+        {
+          "text": "TrueNAS Core",
+          "link": "/File-and-Folder-Structure/How-to-set-up/TrueNAS-Core"
+        },
+        {
+          "text": "Unraid",
+          "link": "/File-and-Folder-Structure/How-to-set-up/Unraid"
+        },
+        {
+          "text": "Windows",
+          "link": "/File-and-Folder-Structure/How-to-set-up/Windows"
+        }
+      ]
+    },
+    {
+      "text": "Examples",
+      "link": "/File-and-Folder-Structure/Examples"
+    },
+    {
+      "text": "Check if Hardlinks Are Working",
+      "link": "/File-and-Folder-Structure/Check-if-hardlinks-are-working"
+    },
+    {
+      "text": "Replace Copies With Hardlinks",
+      "link": "/File-and-Folder-Structure/Replace-copies-with-hardlinks"
+    }
+  ],
+  "/Downloaders/": [
+    {
+      "text": "Home",
+      "link": "/Downloaders/"
+    },
+    {
+      "text": "NZBGet",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Basic-Setup",
+          "link": "/Downloaders/NZBGet/Basic-Setup"
+        },
+        {
+          "text": "Path and Categories",
+          "link": "/Downloaders/NZBGet/Paths-and-Categories"
+        },
+        {
+          "text": "Scripts",
+          "link": "/Downloaders/NZBGet/scripts/"
+        }
+      ]
+    },
+    {
+      "text": "SABnzbd",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Basic-Setup",
+          "link": "/Downloaders/SABnzbd/Basic-Setup"
+        },
+        {
+          "text": "Path and Categories",
+          "link": "/Downloaders/SABnzbd/Paths-and-Categories"
+        },
+        {
+          "text": "Scripts",
+          "link": "/Downloaders/SABnzbd/scripts/"
+        }
+      ]
+    },
+    {
+      "text": "qBittorrent",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Basic-Setup",
+          "link": "/Downloaders/qBittorrent/Basic-Setup"
+        },
+        {
+          "text": "Paths",
+          "link": "/Downloaders/qBittorrent/Paths"
+        },
+        {
+          "text": "How to add Categories",
+          "link": "/Downloaders/qBittorrent/How-to-add-categories"
+        },
+        {
+          "text": "Port forwarding",
+          "link": "/Downloaders/qBittorrent/Port-forwarding"
+        },
+        {
+          "text": "Tips",
+          "collapsed": true,
+          "items": [
+            {
+              "text": "How To Run The unRaid Mover For qBittorrent",
+              "link": "/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent"
+            },
+            {
+              "text": "qBit UI Replacements",
+              "link": "/Downloaders/qBittorrent/Tips/qBit-UI-replacements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Deluge",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Installing",
+          "link": "/Downloaders/Deluge/Installing"
+        },
+        {
+          "text": "Basic-Setup",
+          "link": "/Downloaders/Deluge/Basic-Setup"
+        },
+        {
+          "text": "Using Labels",
+          "link": "/Downloaders/Deluge/Using-Labels"
+        },
+        {
+          "text": "Port forwarding",
+          "link": "/Downloaders/Deluge/Port-Forwarding"
+        },
+        {
+          "text": "Tips",
+          "collapsed": true,
+          "items": [
+            {
+              "text": "Plugins",
+              "link": "/Downloaders/Deluge/Tips/Plugins"
+            },
+            {
+              "text": "Thin Client",
+              "link": "/Downloaders/Deluge/Tips/Thin-Client"
+            },
+            {
+              "text": "Unraid Mover",
+              "link": "/Downloaders/Deluge/Tips/Unraid-Mover"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "ruTorrent",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Home",
+          "link": "/Downloaders/ruTorrent/"
+        },
+        {
+          "text": "ruTorrent Basic Setup",
+          "link": "/Downloaders/ruTorrent/ruTorrent-Basic-Setup"
+        }
+      ]
+    },
+    {
+      "text": "Port Forwarding Troubleshooting",
+      "link": "/Downloaders/port-forwarding-troubleshooting"
+    },
+    {
+      "text": "3rd Party tools",
+      "link": "/Downloaders/3rd-party-tools"
+    }
+  ],
+  "/Plex/": [
+    {
+      "text": "Home",
+      "link": "/Plex/"
+    },
+    {
+      "text": "Suggested Plex Media Server Settings",
+      "link": "/Plex/Tips/Plex-media-server/"
+    },
+    {
+      "text": "Optimal Plex Client Settings",
+      "link": "/Plex/Tips/Optimal-plex-client-settings/"
+    },
+    {
+      "text": "What does my media player support",
+      "link": "/Plex/what-does-my-media-player-support"
+    },
+    {
+      "text": "Streaming and Buffering Troubleshooting",
+      "link": "/Plex/streaming-troubleshooting"
+    },
+    {
+      "text": "Stop 4k Video Transcoding",
+      "link": "/Plex/Tips/4k-transcoding/"
+    },
+    {
+      "text": "Profiles",
+      "link": "/Plex/profiles/"
+    }
+  ],
+  "/Guide-Sync/": [
+    {
+      "text": "Home",
+      "link": "/Guide-Sync/"
+    },
+    {
+      "text": "Radarr - Custom Format Groups",
+      "link": "/Guide-Sync/radarr-cf-groups"
+    },
+    {
+      "text": "Sonarr - Custom Format Groups",
+      "link": "/Guide-Sync/sonarr-cf-groups"
+    }
+  ],
+  "/Misc/": [
+    {
+      "text": "Home",
+      "link": "/Misc/"
+    },
+    {
+      "text": "How to provide a Docker compose",
+      "link": "/Misc/how-to-provide-a-docker-compose"
+    },
+    {
+      "text": "Setup TorGuard for port forwarding",
+      "link": "/Misc/How-to-setup-Torguard-for-port-forwarding"
+    },
+    {
+      "text": "x265-4k and Golden Rule",
+      "link": "/Misc/x265-4k"
+    }
+  ],
+  "/3rd-Party-Apps/": [
+    {
+      "text": "Home",
+      "link": "/3rd-Party-Apps/"
+    }
+  ],
+  "/Glossary/": [
+    {
+      "text": "Home",
+      "link": "/Glossary/"
+    }
+  ],
+  "/Bazarr/": [
+    {
+      "text": "Home",
+      "link": "/Bazarr/"
+    },
+    {
+      "text": "Basic-Guide",
+      "link": "https://wiki.bazarr.media/Getting-Started/Setup-Guide/"
+    },
+    {
+      "text": "After Install Configuration",
+      "link": "https://wiki.bazarr.media/Getting-Started/First-time-installation-configuration/"
+    },
+    {
+      "text": "Suggested Scoring",
+      "link": "/Bazarr/Bazarr-suggested-scoring"
+    },
+    {
+      "text": "Scripts",
+      "link": "/Bazarr/scripts/"
+    }
+  ],
+  "/Lidarr/": [
+    {
+      "text": "Home",
+      "link": "/Lidarr/"
+    }
+  ],
+  "/Recyclarr/": [
+    {
+      "text": "Home",
+      "link": "/Recyclarr/"
+    },
+    {
+      "text": "Collection of configs",
+      "link": "/Recyclarr/recyclarr-configs"
+    }
+  ],
+  "/SQP/": [
+    {
+      "text": "Home",
+      "link": "/SQP/"
+    }
+  ]
+}

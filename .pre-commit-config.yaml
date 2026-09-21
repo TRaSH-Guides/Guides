@@ -68,6 +68,18 @@ repos:
         files: >-
           ^docs/json/(radarr|sonarr)/(cf|quality-profiles|quality-profile-groups|cf-groups)/
 
+      - id: generate-vitepress-sidebar
+        name: Generate VitePress Sidebar
+        description: >-
+          Rebuilds docs/.vitepress/sidebar.generated.json from docs/**/.pages
+          so the sidebar stays explicit and human-ordered.
+        entry: python scripts/generate-vitepress-sidebar.py
+        language: python
+        additional_dependencies: ["pyyaml"]
+        pass_filenames: false
+        files: >-
+          ^docs/(.*/)?\.pages$|^docs/.*\.md$|^scripts/generate-vitepress-sidebar\.py$
+
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
     hooks:
