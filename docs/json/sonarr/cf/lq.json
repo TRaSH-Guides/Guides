@@ -9,6 +9,15 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "126811",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(126811)$"
+      }
+    },
+    {
       "name": "BRiNK",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
