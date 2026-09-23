@@ -8,5 +8,5 @@ This custom format matches various special editions that are not the theatrical 
 - **Director's Cut.** The version of the film edited by the director, usually released for home media.
 - **Extended Cut.** Any version of the film that is longer than the theatrical cut, though in very rare cases it may be shorter.
 
-For more information, visit the [Special Edition Wikipedia page](https://en.wikipedia.org/wiki/Special_edition){:target="_blank" rel="noopener noreferrer"}.
+For more information, visit the [Special Edition Wikipedia page](https://en.wikipedia.org/wiki/Special_edition).
 <!-- markdownlint-enable MD036 MD041-->

@@ -1,12 +1,14 @@
 # Basic-Setup
 
-{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!--@include: ../../../includes/downloaders/basic-setup.md-->
 
 ---
 
-!!! Note
+::: info
 
-    Settings that aren't covered means you can change them to your liking or just leave them on default.
+Settings that aren't covered means you can change them to your liking or just leave them on default.
+
+:::
 
 ---
 
@@ -28,19 +30,23 @@ Once you are here, you can edit your download settings in the `Downloads` sectio
 
 Copy (and delete upon removal) of the .torrent file upon completion.
 
-!!! success ""
+::: tip
 
-    **Suggested: `Personal preference`**
+**Suggested: `Personal preference`**
+
+:::
 
 ### Pre-allocated Files
 
 Pre-allocate disk space for the added torrents. This limits fragmentation and also makes sure if you use a cache drive or a feeder disk, that the space is available.
 
-!!! success ""
+::: tip
 
-    **Suggested: `Enabled`**
+**Suggested: `Enabled`**
 
-{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+:::
+
+<!--@include: ../../../includes/downloaders/warning-path-location.md-->
 
 ---
 
@@ -48,9 +54,11 @@ Pre-allocate disk space for the added torrents. This limits fragmentation and al
 
 Here you can set your rate limits, meaning your maximum download/upload/connections.
 
-!!! info
+::: info
 
-    In Deluge, the value of `-1` is used for "infinity" or "unlimited".
+In Deluge, the value of `-1` is used for "infinity" or "unlimited".
+
+:::
 
 ![!Bandwidth Settings](images/Deluge-bandwidth-settings.png)
 
@@ -60,9 +68,11 @@ The best settings depend on many factors.
 - Your hardware.
 - Bandwidth needed by other services in your home network.
 
-!!! success ""
+::: tip
 
-    **Suggested:** `For a home connection that you use with others it's best practice to set the upload/download rate to about 70-80% of your maximum upload/download speed.`
+**Suggested:** `For a home connection that you use with others it's best practice to set the upload/download rate to about 70-80% of your maximum upload/download speed.`
+
+:::
 
 ## Global Bandwidth Limits
 
@@ -70,19 +80,23 @@ These are the client-wide settings, they will apply to the total traffic of all 
 
 ![!Global Bandwidth Settings](images/Deluge-globalbw-settings.png)
 
-!!! tip
+::: tip
 
-    The only thing you NEED to place a limit on is half-open connections and connections per second.
+The only thing you NEED to place a limit on is half-open connections and connections per second.
 
-    For most high-speed broadband connections ~100-150 seems ideal. If you experience lag when initiating a download, try lowering these values.
+For most high-speed broadband connections ~100-150 seems ideal. If you experience lag when initiating a download, try lowering these values.
+
+:::
 
 ### Per-Torrent Limits
 
 In addition to global limits, you can set limits per torrent.
 
-!!! info
+::: info
 
-    If you only wish to apply global limits, set all of these to `-1`.
+If you only wish to apply global limits, set all of these to `-1`.
+
+:::
 
 ![!Per-Torrent Bandwidth Settings](images/Deluge-torrentbw-settings.png)
 
@@ -92,9 +106,11 @@ In addition to global limits, you can set limits per torrent.
 
 These settings are intended to manage your number of active seeds, downloads, and uploads.
 
-!!! info
+::: info
 
-    In Deluge, the value of `-1` is used for "infinity" or "unlimited".
+In Deluge, the value of `-1` is used for "infinity" or "unlimited".
+
+:::
 
 ### Active Torrents
 
@@ -118,61 +134,77 @@ This is where you will bind Deluge to a specific interface/address, specify port
 
 ### Incoming Port
 
-!!! info ""
+::: info
 
-    You've followed the [Setup TorGuard for port forwarding](/Misc/How-to-setup-Torguard-for-port-forwarding/){:target="\_blank" rel="noopener noreferrer"} and want to know where in your download client you should add the port you've port forwarded.
+You've followed the [Setup TorGuard for port forwarding](/Misc/How-to-setup-Torguard-for-port-forwarding/) and want to know where in your download client you should add the port you've port forwarded.
+
+:::
 
 `Incoming Port` should be set to a specific port that you have opened/forwarded (if you are behind any NAT/Firewall/VPN.)
 
-!!! WARNING
+::: warning
 
-    Default ports of 6880-6890 are not recommended.
+Default ports of 6880-6890 are not recommended.
+
+:::
 
 Make sure you click `Test Active Port` and get a ✓ before moving on.
 
-!!! success ""
+::: tip
 
-    **Suggested: `Critical`**
+**Suggested: `Critical`**
+
+:::
 
 ### Encryption
 
 Encryption should be enabled on both `Incoming` and `Outgoing`. The default `Level` of `Either` will accept both encrypted and standard connections.
 
-!!! success ""
+::: tip
 
-    **Suggested: `Level = Full Stream`**
+**Suggested: `Level = Full Stream`**
+
+:::
 
 ### Network Extras
 
 You can configure your network protocols in this section. Depending on which type of tracker you use, some of these will be beneficial while on other trackers (private) it will put you at risk of being banned/disabled.
 
-!!! warning
+::: warning
 
-    Please read this section carefully.
+Please read this section carefully.
+
+:::
 
 1. UPnP and NAT-PMP should be both disabled in your router, as well as in Deluge, as they can pose security risks.
 
     ![!Network UPNP](images/Deluge-network-extras-upnp.png)
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 1. Public trackers can benefit from having settings like DHT (Distributed Hash Table) and Peer Exchange (PEX) enabled. These protocols rely on sources besides the trackers to get peers. **The following settings are recommended ONLY for public trackers.**
 
     ![!Network Extras (Public)](images/Deluge-network-extras-public.png)
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Recommended`**
+    **Suggested: `Recommended`**
+
+    :::
 
 1. Decent private trackers will use the "private flag" and ignore these settings by default. However, it is strongly recommended that you use the following settings if you use private trackers. Almost all private trackers have rules stating that you must disable DHT, PEX, and LSD/LPD (Local Peer Discovery). Failing to do so puts your account at risk of being disabled.
 
     ![!Network Extras (Public)](images/Deluge-network-extras.png)
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 ---
 
@@ -182,23 +214,29 @@ Finally, you will want to enable some plugins. There are plenty of plugins on th
 
 ![!Plugin Settings](images/Deluge-plugin-settings.png)
 
-!!! tip
+::: tip
 
-    If you are familiar with the client and plugins you can find more information [here](./Tips/Plugins.md)
+If you are familiar with the client and plugins you can find more information [here](./Tips/Plugins.md)
 
-!!! info
+:::
 
-    If you are running a Docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled. Instead, it may be configured in the container.
+::: info
+
+If you are running a Docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled. Instead, it may be configured in the container.
+
+:::
 
 ### WebUI
 
 Once you have enabled the `WebUI` plugin, it will appear in your `Preferences` menu list, and you will need to enable the web interface and set the port you want the WebUI to listen on.
 
-!!! info
+::: info
 
-    The default WebUI password is `deluge` and you can change that in preferences inside the WebUI once you access it through your browser.
+The default WebUI password is `deluge` and you can change that in preferences inside the WebUI once you access it through your browser.
 
-    Remember your password, we will need this later.
+Remember your password, we will need this later.
+
+:::
 
 ### Label
 
@@ -206,4 +244,4 @@ The `Label` plugin will allow you to categorize/sort your torrents. You can assi
 
 Labels are a valuable tool, if used properly, to keep your torrents managed and organized.
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

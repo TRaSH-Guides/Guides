@@ -1,19 +1,24 @@
 <!-- markdownlint-disable MD041-->
 This basic example is based on the use of Docker images
 
-!!! tip ""
+::: tip
 
-    Keep in mind the path are setup so it works with hardlinks and instant moves.
+Keep in mind the path are setup so it works with hardlinks and instant moves.
 
-    More info [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
+More info [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/)
 
-{! include-markdown "../file-and-folder-structure/bad-path-suggestion.md" !}
+:::
 
-!!! warning ""
+<!--@include: ../file-and-folder-structure/bad-path-suggestion.md-->
 
-    But you're able to change this, by not using the pre-defined/recommended paths like:
+::: warning
 
-    - `/downloads` => `/data/downloads`, `/data/usenet`, `/data/torrents`
-    - `/movies` => `/data/media/movies`
-    - `/tv` => `/data/media/tv`
+But you're able to change this, by not using the pre-defined/recommended paths like:
+
+- `/downloads` => `/data/downloads`, `/data/usenet`, `/data/torrents`
+- `/movies` => `/data/media/movies`
+- `/tv` => `/data/media/tv`
+
+:::
+
 <!-- markdownlint-enable MD041-->

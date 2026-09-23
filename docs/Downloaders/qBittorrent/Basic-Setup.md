@@ -1,12 +1,14 @@
 # qBittorrent - Basic Setup
 
-{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!--@include: ../../../includes/downloaders/basic-setup.md-->
 
 ---
 
-!!! Note
+::: info
 
-    Settings that aren't covered means you can change them to your own liking or just leave them on default.
+Settings that aren't covered means you can change them to your own liking or just leave them on default.
+
+:::
 
 ---
 
@@ -20,29 +22,37 @@
 
 1. Personal preference, we recommend leaving this on `Original` or `Create subfolder`.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Original` or `Create subfolder`**
+    **Suggested: `Original` or `Create subfolder`**
+
+    :::
 
 1. Delete the .torrent file after it has been added to qBittorrent.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Personal preference`**
+    **Suggested: `Personal preference`**
+
+    :::
 
 1. Pre-allocated disk space for the added torrents limits fragmentation and also makes sure if you use a cache drive or a feeder disk that the space is available.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Personal Preferences`**
+    **Suggested: `Personal Preferences`**
 
-    !!! danger "Important: Disable Pre-allocation in qBittorrent if you're using unRaid with a cache drive"
+    :::
 
-        Go to qBittorrent → Options → Downloads and **disable** this option:
+    ::: danger Important: Disable Pre-allocation in qBittorrent if you're using unRaid with a cache drive
 
-        `Pre-allocate disk space for all files`
+    Go to qBittorrent → Options → Downloads and **disable** this option:
 
-        When this option is enabled, it keeps the reserved space locked (in use) until you quit qBittorrent.
+    `Pre-allocate disk space for all files`
+
+    When this option is enabled, it keeps the reserved space locked (in use) until you quit qBittorrent.
+
+    :::
 
 ### Saving Management
 
@@ -50,37 +60,47 @@
 
 1. Make sure this is set to `Automatic`. Your downloads will not go into the category folder otherwise.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Automatic`**
+    **Suggested: `Automatic`**
+
+    :::
 
 1. This helps you to manage your file location based on categories.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Enabled`**
+    **Suggested: `Enabled`**
+
+    :::
 
 1. Same as `Step 2`
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Enabled`**
+    **Suggested: `Enabled`**
+
+    :::
 
 1. Your download root path (Download folder/location).
 
-    !!! success ""
+    ::: tip
 
-        **Read the `ATTENTION` block below**
+    **Read the `ATTENTION` block below**
+
+    :::
 
 1. If you enable this, your incomplete downloads will be placed in this directory until completed. This could be useful if you want your downloads to use a separate SSD/Feeder disk[^1], but this also results in extra unnecessary moves or in worse cases a slower and more I/O intensive copy + delete.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Personal preference`**
+    **Suggested: `Personal preference`**
+
+    :::
 
 #### ATTENTION
 
-{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!--@include: ../../../includes/downloaders/warning-path-location.md-->
 
 ### Excluded file names
 
@@ -92,7 +112,7 @@ You will still need to fix it manually, but it's safer to do so than to waste ba
 
 Add the following to your Excluded file names.
 
-```none
+```txt
 *.rar
 *.r[0-9]*
 ```
@@ -109,27 +129,35 @@ Add the following to your Excluded file names.
 
 1. Set this to TCP for the best performance
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `TCP`**
+    **Suggested: `TCP`**
+
+    :::
 
 1. Your port used for incoming connections, this is the port you opened in your router/firewall or port forwarded at your VPN provider to make sure you're connectable.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `The port you opened in your router/firewall or port forwarded at your VPN provider`**
+    **Suggested: `The port you opened in your router/firewall or port forwarded at your VPN provider`**
+
+    :::
 
 1. This should be disabled in your router for several security reasons.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 1. Make sure this is disabled so you don't mess up the forwarded port.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 ### Connections Limits
 
@@ -137,9 +165,11 @@ Add the following to your Excluded file names.
 
 The best settings for this depend on many factors so we won't be covering this.
 
-!!! success ""
+::: tip
 
-    **Suggested: `personal preference based on your setup and connection.`**
+**Suggested: `personal preference based on your setup and connection.`**
+
+:::
 
 ### Proxy Server
 
@@ -147,9 +177,11 @@ The best settings for this depend on many factors so we won't be covering this.
 
 This is where you would add for example your SOCKS5 settings from your VPN provider.
 
-!!! success ""
+::: tip
 
-    **Suggested: `I personally don't recommend this insecure option being it's unencrypted and only spoofs your IP.`**
+**Suggested: `I personally don't recommend this insecure option being it's unencrypted and only spoofs your IP.`**
+
+:::
 
 ---
 
@@ -167,9 +199,11 @@ The best settings depend on many factors.
 - Your hardware used.
 - Bandwidth needed by other services in your home network.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `For a home connection that you use with others, it is best practice to set the upload and download rate to about 70-80% of your maximum upload and download speed.`**
+    **Suggested: `For a home connection that you use with others, it is best practice to set the upload and download rate to about 70-80% of your maximum upload and download speed.`**
+
+    :::
 
 ### Alternative Rate Limits
 
@@ -182,9 +216,11 @@ Examples:
 - Limit your upload/download rate during the daytime when you make the most use of it, and unlimited it during nighttime when no one is using the connection.
 - If you have an internet connection that's limited during specific hours (unlimited bandwidth during the night, but limited during the day)
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Personal preference`**
+    **Suggested: `Personal preference`**
+
+    :::
 
 ### Rate Limits Settings
 
@@ -194,21 +230,27 @@ Not going to cover the technical part of what it does, but the following setting
 
 1. Prevents you from being flooded if the uTP protocol is used for any reason.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Enabled`**
+    **Suggested: `Enabled`**
+
+    :::
 
 1. Apply rate limit to transport overhead
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 1. Apply rate limit to peers on LAN
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Enabled`**
+    **Suggested: `Enabled`**
+
+    :::
 
 ---
 
@@ -220,21 +262,27 @@ Not going to cover the technical part of what it does, but the following setting
 
 1. These settings are mainly used for public trackers (and should be enabled for them) and not for private trackers, decent private trackers use a private flag where they ignore these settings.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Personal preference`**
+    **Suggested: `Personal preference`**
+
+    :::
 
 1. Recommended setting `Allow encryption` rather than enforcing it allows more peers to connect and is recommended on underpowered systems as it will allow for lower overhead.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Allow encryption`**
+    **Suggested: `Allow encryption`**
+
+    :::
 
 1. Anonymous mode hides the client's (qBittorrent) fingerprint from the peer-ID, sets the ‘User-Agent’ to Null and doesn’t share your IP address directly with trackers (though peers will still see your IP address). If using private trackers, it's recommended to `disable` this. We also got reports from people who are using this that they had worse speeds.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 ### Torrent Queueing
 
@@ -242,9 +290,11 @@ Not going to cover the technical part of what it does, but the following setting
 
 These options allow you to control the number of active torrents being downloaded and uploaded.
 
-!!! success ""
+::: tip
 
-    **Suggested: `personal preference based on your setup and connection.`**
+**Suggested: `personal preference based on your setup and connection.`**
+
+:::
 
 ### Seeding Limits
 
@@ -252,43 +302,57 @@ These options allow you to control the number of active torrents being downloade
 
 1. Your maximum seeding ratio preference. (When both ratio and seeding time are enabled it will trigger the action on whatever happens first.)
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 1. Your total seeding time preference (When both ratio and seeding time are enabled it will trigger the action on whatever happens first.)
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 1. Your maximum inactive seeding time preference (When both ratio and seeding time are enabled it will trigger the action on whatever happens first.)
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
+
+    :::
 
 1. What to do when ratio or seeding time is reached.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Paused and Disabled`**
+    **Suggested: `Paused and Disabled`**
 
-!!! tip
+    :::
 
-    We recommend using the seeding goals in your Starr Apps indexer settings (enable advanced), or use [qui Automation](/Downloaders/qBittorrent/3rd-party-tools/#qui){:target="\_blank" rel="noopener noreferrer"} or [qBit Manage](/Downloaders/qBittorrent/3rd-party-tools/#qbit-manage){:target="\_blank" rel="noopener noreferrer"}
+::: tip
+
+We recommend using the seeding goals in your Starr Apps indexer settings (enable advanced), or use [qui Automation](/Downloaders/qBittorrent/3rd-party-tools/#qui) or [qBit Manage](/Downloaders/qBittorrent/3rd-party-tools/#qbit-manage)
+
+:::
 
 ### Automatically add these trackers to new downloads
 
 ![!Automatically add these trackers to new downloads](images/qb-options-bittorrent-automatically-add-these-trackers.png)
 
-!!! success ""
+::: tip
 
-    **Recommendation: `Disabled`**
+**Recommendation: `Disabled`**
 
-!!! WARNING
+:::
 
-    :bangbang: **NEVER USE THIS OPTION ON (Semi-)PRIVATE TRACKERS** :bangbang:
+::: warning
+
+:bangbang: **NEVER USE THIS OPTION ON (Semi-)PRIVATE TRACKERS** :bangbang:
+
+:::
 
 ---
 
@@ -308,11 +372,13 @@ These options allow you to control the number of active torrents being downloade
 
 1. In some cases when this is enabled it could result in issues.
 
-    !!! success ""
+    ::: tip
 
-        **Suggested: `Disabled`**
+    **Suggested: `Disabled`**
 
---8<-- "includes/support.md"
+    :::
+
+<!--@include: ../../../includes/support.md-->
 
 [^1]:
 

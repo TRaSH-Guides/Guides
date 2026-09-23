@@ -10,13 +10,15 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replaces it with the `
 - If you use either merged local/remote setups using mergerfs or similar.
 - You use Docker and **DON'T** have consistent and well-planned paths.
 
-!!! note
+::: info
 
-    If you use Docker it would be smarter to fix the problem at the source of what's causing the actual issue.
+If you use Docker it would be smarter to fix the problem at the source of what's causing the actual issue.
 
-    - [Sonarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
+- [Sonarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths)
 
-    - [TRaSH Guides](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
+- [TRaSH Guides](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/)
+
+:::
 
 ---
 
@@ -52,38 +54,46 @@ A screen will pop up with the following options:
 
 ---
 
-??? example "Examples"
+::: details Examples
 
-    === "QBittorrent"
+::: tabs
 
-        ## Host
+== QBittorrent
 
-        To find what you need to put in your host you navigate in Sonarr to the Settings => Download Clients Tab.
-        There you open up the download client for this example we will be using QBittorrent
+## Host
 
-        ![Qbittorrent client](images/qbit_client.png)
+To find what you need to put in your host you navigate in Sonarr to the Settings => Download Clients Tab.
+There you open up the download client for this example we will be using QBittorrent
 
-        This is what you put in your Host in Remote Path Mapping.
+![Qbittorrent client](images/qbit_client.png)
 
-        !!! tip
-            When using hotio containers with VPN, use the `.internal` domain for container names (e.g., `qbittorrent.internal`).
+This is what you put in your Host in Remote Path Mapping.
 
-        ## Remote Path
+::: tip
+When using hotio containers with VPN, use the `.internal` domain for container names (e.g., `qbittorrent.internal`).
 
-        To find what you need to put in your remote path you need to open up your download client and look what you've used there as download location.
+:::
 
-        In QBittorrent navigate to Tools => Options (or ALT+O) and navigate to the Download settings.
+## Remote Path
 
-        ![Qbittorrent download settings](images/qbit_options.png)
+To find what you need to put in your remote path you need to open up your download client and look what you've used there as download location.
 
-        This is what you add in your Remote Path in Remote Path Mapping.
+In QBittorrent navigate to Tools => Options (or ALT+O) and navigate to the Download settings.
 
-        ## Local Path
+![Qbittorrent download settings](images/qbit_options.png)
 
-        To find out what you need to put in in your local path you need to know how Sonarr can access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Sonarr needs to have local access to it, so you need to figure out the best way for Sonarr to access the download client's downloaded files yourself.
+This is what you add in your Remote Path in Remote Path Mapping.
 
-        The final result will look something like this.
+## Local Path
 
-        ![Qbittorrent final result](images/qbit_final.png)
+To find out what you need to put in in your local path you need to know how Sonarr can access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Sonarr needs to have local access to it, so you need to figure out the best way for Sonarr to access the download client's downloaded files yourself.
 
---8<-- "includes/support.md"
+The final result will look something like this.
+
+![Qbittorrent final result](images/qbit_final.png)
+
+:::
+
+:::
+
+<!--@include: ../../../includes/support.md-->

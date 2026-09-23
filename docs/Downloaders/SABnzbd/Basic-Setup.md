@@ -1,18 +1,20 @@
 # SABnzbd - Basic Setup
 
-{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!--@include: ../../../includes/downloaders/basic-setup.md-->
 
 ---
 
-!!! Note
+::: info
 
-    Settings that aren't covered means you can change them to your liking, or just leave them on default.
+Settings that aren't covered means you can change them to your liking, or just leave them on default.
 
-    **I also recommend to enable the `Advanced Settings` on the top right.**
+**I also recommend to enable the `Advanced Settings` on the top right.**
+
+:::
 
 ## General
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/general){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/general)
 
 ### Tuning
 
@@ -25,7 +27,7 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 ## Folders
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/folders){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/folders)
 
 ### User Folders
 
@@ -34,14 +36,16 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 Here you setup your download path/location.
 
-{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!--@include: ../../../includes/downloaders/warning-path-location.md-->
 
 ### System Folders
 
 `Settings` => `Folders` => `System Folders`
 ![!Folders: System Folders](images/sabnzbd-folders-system-folders.png)
 
-!!! info "Starting from 4.3.x+ SABnzbd has a hidden (archive) history."
+::: info Starting from 4.3.x+ SABnzbd has a hidden (archive) history.
+
+:::
 
 Using the .nzb Backup Folder is still recommended as it is useful for dupe detection (hash matching) or if you need to retry something from the past.
 The default is empty, we picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is only compressed nzb files, so it can end up pretty big. The choice is yours what you prefer.
@@ -50,16 +54,18 @@ The default is empty, we picked history because it is easy. It'll end up in the 
 
 ## Servers
 
---8<-- "includes/downloaders/usp.md"
+<!--@include: ../../../includes/downloaders/usp.md-->
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/servers){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/servers)
 
 `Settings` => `Servers` => `Add Server`
 ![!Servers](images/sabnzbd-servers.png)
 
-!!! info ""
+::: info
 
-    USP = Usenet Service Provider
+USP = Usenet Service Provider
+
+:::
 
 1. Server description.
 1. The hostname you get from your USP.
@@ -75,17 +81,17 @@ The default is empty, we picked history because it is easy. It'll end up in the 
 
 ## Categories
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/categories){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/categories)
 
 `Settings`=> `Categories`
 
-Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SABnzbd/Paths-and-Categories/){:target="\_blank" rel="noopener noreferrer"}
+Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SABnzbd/Paths-and-Categories/)
 
 ---
 
 ## Switches
 
-[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/switches){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/5.1/switches)
 
 ### Queue
 
@@ -101,11 +107,13 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 #### Prevent unwanted extensions
 
-!!! info "The Starr apps focus solely on media files and typically ignore all those extensions."
+::: info The Starr apps focus solely on media files and typically ignore all those extensions.
+
+:::
 
 Add these extensions (*primarily for Windows users as they could potentially be abused or exploited*) to your `Unwanted extensions` list.
 
-{! include-markdown "../../../includes/downloaders/unwanted-extensions.md" !}
+<!--@include: ../../../includes/downloaders/unwanted-extensions.md-->
 
 Afterwards you need to make the following adjustments:
 
@@ -114,7 +122,9 @@ Afterwards you need to make the following adjustments:
 
 ![!Unwanted Extensions](images/sabnzbd-switches-queue-unwanted.png)
 
-!!! note "If you are using SABnzbd to download games and apps, this list shouldn't be used. You can either create a separate category, set it to download only, and manually extract the files, or use a separate app or instance for them."
+::: info If you are using SABnzbd to download games and apps, this list shouldn't be used. You can either create a separate category, set it to download only, and manually extract the files, or use a separate app or instance for them.
+
+:::
 
 ### Post processing
 
@@ -136,12 +146,14 @@ Afterwards you need to make the following adjustments:
 
 `Settings` => `Sorting`
 
-!!! danger ":bangbang: **MAKE SURE THAT SORTING IS ENTIRELY DISABLED** :bangbang:"
+::: danger :bangbang: **MAKE SURE THAT SORTING IS ENTIRELY DISABLED** :bangbang:
+
+:::
 
 ## Special
 
 Rarely used options.
-Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/5.1/special){:target="\_blank" rel="noopener noreferrer"} first, as some have serious side effects.
+Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/5.1/special) first, as some have serious side effects.
 The default values are between parentheses.
 
 ### Unable to connect to SABnzbd
@@ -158,8 +170,10 @@ Then go in to `Settings` => `Special` => `Values`.
 
 Scroll down to `host_whitelist (  )` and enter your Docker container name and or your domain name.
 
-!!! tip
-    When using hotio containers with VPN, use the `.internal` domain for container names (e.g., `sabnzbd.internal`) to ensure proper connectivity.
+::: tip
+When using hotio containers with VPN, use the `.internal` domain for container names (e.g., `sabnzbd.internal`) to ensure proper connectivity.
+
+:::
 
 Example: `sabnzbd.domain.tld, sabnzbd.internal`
 
@@ -174,36 +188,40 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 ### Sonarr
 
-??? example "Sonarr - [Click to show/hide]"
+::: details Sonarr - [Click to show/hide]
 
-    `Settings` => `Download Clients`
+`Settings` => `Download Clients`
 
-    ![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
+![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` in step 3.
+Make sure you check both boxes under `Completed Download Handling` in step 3.
 
-    Select SABnzbd in step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+Select SABnzbd in step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
 
-    ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-sabnzbd.png)
+![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-sabnzbd.png)
+
+:::
 
 ### Radarr
 
-??? example "Radarr - [Click to show/hide]"
+::: details Radarr - [Click to show/hide]
 
-    `Settings` => `Download Clients`
+`Settings` => `Download Clients`
 
-    ![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
+![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` in step 3,
+Make sure you check both boxes under `Completed Download Handling` in step 3,
 
-    and both boxes under `Failed Download Handling` in step 4.
+and both boxes under `Failed Download Handling` in step 4.
 
-    Select SABnzbd in step 5 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+Select SABnzbd in step 5 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
 
-    ![!Radarr: Download Clients - SABnzbd](images/radarr-download-clients-sabnzbd.png)
+![!Radarr: Download Clients - SABnzbd](images/radarr-download-clients-sabnzbd.png)
+
+:::
 
 ---
 
-<sub>Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
+<sub>Thanks to [fryfrog](https://github.com/fryfrog) for helping me with the settings and providing the info needed to create this Guide.</sub>
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

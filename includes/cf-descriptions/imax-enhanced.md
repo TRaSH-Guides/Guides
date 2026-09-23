@@ -7,7 +7,7 @@ IMAX Enhanced is a certification program designed to ensure the highest quality 
 
 Note: IMAX Enhanced is a home video certification standard for streaming and disc releases, and is separate from the IMAX cinema format used in theaters.
 
-For more information, visit the [IMAX Enhanced Wikipedia page](https://en.wikipedia.org/wiki/IMAX_Enhanced){:target="_blank" rel="noopener noreferrer"}.
+For more information, visit the [IMAX Enhanced Wikipedia page](https://en.wikipedia.org/wiki/IMAX_Enhanced).
 
 Due to the higher bitrate and implied picture quality improvement, it is recommended that the IMAX Enhanced custom format be enabled on WEB profiles, especially for those seeking "The IMAX Experience" including fewer black bars or letterboxing.
 

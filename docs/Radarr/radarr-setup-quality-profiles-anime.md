@@ -2,12 +2,14 @@
 
 _aka How to set up Custom Formats (Anime)_<br><br>
 
-!!! note
+::: info
 
-    This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
+This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
 
-The aim of this guide is to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="\_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
-The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"}
+:::
+
+The aim of this guide is to grab the best release overall (as per [SeaDex](https://releases.moe/)) and not necessarily just dual audio.
+The vast majority of releases can be found on [Nyaa](https://nyaa.si/)
 
 ---
 
@@ -15,19 +17,19 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 
 ### Recommended naming scheme
 
-For naming please refer to [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="\_blank" rel="noopener noreferrer"}
+For naming please refer to [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/)
 
 ---
 
 ## Quality Settings
 
-For quality settings please refer to [Radarr Quality Definitions](/Radarr/Radarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="\_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Radarr Quality Definitions](/Radarr/Radarr-Quality-Settings-File-Size/#animeanimatedcartoons)
 
 ---
 
 ## Quality Profile
 
-We need to create a new profile called `[Anime] Remux-1080p` due to the way anime can be named we will need to merge a few qualities together see [here](/Radarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} for an example.
+We need to create a new profile called `[Anime] Remux-1080p` due to the way anime can be named we will need to merge a few qualities together see [here](/Radarr/Tips/Merge-quality/) for an example.
 
 We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p`, and lastly `HDTV-720p` into the same group as `WEBDL-720p` and `WEBRip-720p` so that the scoring will work correctly.
 
@@ -45,11 +47,13 @@ We then need to select and organise the qualities as seen below.
 
 ## Anime CF/Scoring
 
-!!! note
+::: info
 
-    We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"} for how to import them.
+We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/) for how to import them.
 
-{! include-markdown "../../includes/cf/radarr-anime.md" !}
+:::
+
+<!--@include: ../../includes/cf/radarr-anime.md-->
 
 ### Default Scoring
 
@@ -84,9 +88,11 @@ Below is an example of the scoring set to prefer `Dual Audio` over any tier.
 
 ### Uncensored Scoring
 
-!!! note
+::: info
 
-    Most BDs are uncensored by default, so most groups do not include that in the name.
+Most BDs are uncensored by default, so most groups do not include that in the name.
+
+:::
 
 If you prefer `Uncensored` releases you have a few options depending on your preference.
 
@@ -112,29 +118,39 @@ After this has been done your profile should look as seen below. This is an exam
 
 ## FAQ
 
-??? question "Is this guide meant for backfilling my library?"
+::: details Is this guide meant for backfilling my library?
 
-    No. This guide is designed to grab the best available releases going forward, not for backfilling an existing library. Backfilling would require manual intervention and searching to find older releases.
+No. This guide is designed to grab the best available releases going forward, not for backfilling an existing library. Backfilling would require manual intervention and searching to find older releases.
 
-??? question "Why are there no English subtitles available for some anime?"
+:::
 
-    Not all anime releases include English subtitles. If you want to filter for only releases with English subtitles, or if you prefer raw (no subs) releases, you can configure this in Prowlarr.
+::: details Why are there no English subtitles available for some anime?
 
-    Go to `Indexers` => Select your anime indexer => and look for the `Anime English-Translated` category option.
+Not all anime releases include English subtitles. If you want to filter for only releases with English subtitles, or if you prefer raw (no subs) releases, you can configure this in Prowlarr.
 
-    ![!indexer-anime-english-translated](/Prowlarr/images/indexer-anime-english-translated.png)
+Go to `Indexers` => Select your anime indexer => and look for the `Anime English-Translated` category option.
 
-??? question "How do I configure this for no Remuxes?"
+![!indexer-anime-english-translated](/Prowlarr/images/indexer-anime-english-translated.png)
 
-    If you don't want Remuxes, you can simply remove `Bluray-1080p Remux` from your quality profile or uncheck it in the qualities list. The guide will then prefer the highest-scoring encodes instead.
+:::
 
-??? question "How do I set up a WEB-only profile?"
+::: details How do I configure this for no Remuxes?
 
-    If you only want WEB releases (no Bluray encodes or Remuxes), create a quality profile that only includes `WEBDL-1080p`, `WEBRip-1080p`, `WEBDL-720p`, and `WEBRip-720p`. The Anime Web Tier custom formats will still score these releases appropriately.
+If you don't want Remuxes, you can simply remove `Bluray-1080p Remux` from your quality profile or uncheck it in the qualities list. The guide will then prefer the highest-scoring encodes instead.
 
-??? question "Should I run a single instance or dual instances?"
+:::
 
-    It's recommended to run two Radarr instances (one for Anime and one for regular movies). This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign movies accordingly.
+::: details How do I set up a WEB-only profile?
+
+If you only want WEB releases (no Bluray encodes or Remuxes), create a quality profile that only includes `WEBDL-1080p`, `WEBRip-1080p`, `WEBDL-720p`, and `WEBRip-720p`. The Anime Web Tier custom formats will still score these releases appropriately.
+
+:::
+
+::: details Should I run a single instance or dual instances?
+
+It's recommended to run two Radarr instances (one for Anime and one for regular movies). This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign movies accordingly.
+
+:::
 
 ---
 
@@ -150,4 +166,4 @@ Most of my information and knowledge came from:
 
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and sharing general knowledge.)
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

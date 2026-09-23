@@ -15,6 +15,9 @@
 - :x: Ce que le profil cherche à éviter
 - :warning: Pas le but principal du profil mais peut arriver
 
-!!! tip "Pour le profil VOSTFR, il est recommandé de configurer Bazarr"
-    Pour ce faire, suivez le [Bazarr Setup Guide](/Bazarr/Setup-Guide) (anglais seulement). Bazarr vous aidera à obtenir des sous-titres `Français` lorsque aucune release VOSTFR n'est disponible.
+::: tip Pour le profil VOSTFR, il est recommandé de configurer Bazarr
+Pour ce faire, suivez le [Bazarr Setup Guide](/Bazarr/Setup-Guide) (anglais seulement). Bazarr vous aidera à obtenir des sous-titres `Français` lorsque aucune release VOSTFR n'est disponible.
+
+:::
+
 <!-- markdownlint-enable MD041-->

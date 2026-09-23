@@ -5,5 +5,5 @@ Open matte is a filmmaking technique in which motion pictures are photographed u
 
 One issue with open matte presentations is that they can reveal things the production did not intend to be seen. Because the theatrical crop was expected to hide part of the frame, equipment or set edges may have been placed just outside the intended visible area. In an open matte version, that extra space can sometimes expose boom mics, lights, or unfinished set elements.
 
-For more information, visit the [Open Matte Wikipedia page](https://en.wikipedia.org/wiki/Open_matte){:target="_blank" rel="noopener noreferrer"}.
+For more information, visit the [Open Matte Wikipedia page](https://en.wikipedia.org/wiki/Open_matte).
 <!-- markdownlint-enable MD036 MD041-->

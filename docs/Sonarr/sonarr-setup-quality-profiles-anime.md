@@ -2,18 +2,22 @@
 
 _aka How to set up Custom Formats (Anime)_<br><br>
 
-!!! warning
+::: warning
 
-    You must be running Sonarr V4 to be able to use this setup.
+You must be running Sonarr V4 to be able to use this setup.
 
-    ![V4](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/nightly/VERSION.json&label=Current%20V4%20Version&style=for-the-badge&color=4051B5){ .off-glb }
+![V4](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/nightly/VERSION.json&label=Current%20V4%20Version&style=for-the-badge&color=4051B5){ .off-glb }
 
-!!! note
+:::
 
-    This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
+::: info
 
-This guide aims to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="\_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
-The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"}
+This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
+
+:::
+
+This guide aims to grab the best release overall (as per [SeaDex](https://releases.moe/)) and not necessarily just dual audio.
+The vast majority of releases can be found on [Nyaa](https://nyaa.si/)
 
 ---
 
@@ -23,9 +27,11 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 
 When adding a new series make sure you set the series type to Anime
 
-??? success "example - [Click to show/hide]"
+::: details example - [Click to show/hide]
 
-    ![!cfa-seriestype](images/cfa-seriestype.png)
+![!cfa-seriestype](images/cfa-seriestype.png)
+
+:::
 
 ### Recommended naming scheme
 
@@ -33,15 +39,17 @@ When adding a new series make sure you set the series type to Anime
 {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default'] }}
 ```
 
-??? abstract "Results: - [Click to show/hide]"
+::: details Results: - [Click to show/hide]
 
-    Single Episode:
+Single Episode:
 
-    `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [Surround Sound x264 HDTV-720p v2][10bit][AVC][DTS 5.1][JA]-RlsGrp`
+`The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [Surround Sound x264 HDTV-720p v2][10bit][AVC][DTS 5.1][JA]-RlsGrp`
 
-    Multi Episode:
+Multi Episode:
 
-    `The Series Title! (2010) - S01E01-E03 - 001-003 - Episode Title [Surround Sound x264 HDTV-720p v2][10bit][AVC][DTS 5.1][JA]-RlsGrp`
+`The Series Title! (2010) - S01E01-E03 - 001-003 - Episode Title [Surround Sound x264 HDTV-720p v2][10bit][AVC][DTS 5.1][JA]-RlsGrp`
+
+:::
 
 #### Series Folder Format
 
@@ -77,15 +85,15 @@ Result:
 
 ## Quality Settings
 
-For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="\_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#animeanimatedcartoons)
 
-If you are only running a single instance of Sonarr you can instead use [Sonarr Quality Definitions](/Sonarr/Sonarr-Quality-Settings-File-Size/#standard){:target="\_blank" rel="noopener noreferrer"}
+If you are only running a single instance of Sonarr you can instead use [Sonarr Quality Definitions](/Sonarr/Sonarr-Quality-Settings-File-Size/#standard)
 
 ---
 
 ## Quality Profile
 
-We need to create a new profile called `[Anime] Remux-1080p` due to the way anime can be named we will need to merge a few qualities - see [here](/Sonarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} for an example.
+We need to create a new profile called `[Anime] Remux-1080p` due to the way anime can be named we will need to merge a few qualities - see [here](/Sonarr/Tips/Merge-quality/) for an example.
 
 We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p`, and `HDTV-720p` into the same group as `WEBDL-720p` and `WEBRip-720p` so that the scoring will work correctly.
 
@@ -103,15 +111,17 @@ We then need to select and organize the qualities as seen below.
 
 ## Anime CF/Scoring
 
-!!! note
+::: info
 
-    We're going to make use of the below custom formats. See [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"} for how to import them.
+We're going to make use of the below custom formats. See [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/) for how to import them.
+
+:::
 
 ### Default Scoring
 
-{! include-markdown "../../includes/cf/sonarr-anime.md" !}
+<!--@include: ../../includes/cf/sonarr-anime.md-->
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services-anime.md" !}
+<!--@include: ../../includes/cf/sonarr-streaming-services-anime.md-->
 
 The scoring that has been set is the recommended scoring, however, some of the CFs are optional depending on what you prefer.
 `Anime Dual Audio`, `Uncensored` and `10bit` can be given positive scores if you want to prefer content with these attributes.
@@ -144,9 +154,11 @@ Below is an example of the scoring set to prefer `Dual Audio` over any tier.
 
 ### Uncensored Scoring
 
-!!! note
+::: info
 
-    Most BDs are uncensored by default, so most groups do not include that in the name.
+Most BDs are uncensored by default, so most groups do not include that in the name.
+
+:::
 
 If you prefer `Uncensored` releases you have a few options depending on your preference.
 
@@ -172,37 +184,51 @@ After this has been done your profile should look as seen below. This is an exam
 
 ## FAQ
 
-??? question "Is this guide meant for backfilling my library?"
+::: details Is this guide meant for backfilling my library?
 
-    No. This guide is designed to grab the best available releases going forward, not for backfilling an existing library. Backfilling would require manual intervention and searching to find older releases.
+No. This guide is designed to grab the best available releases going forward, not for backfilling an existing library. Backfilling would require manual intervention and searching to find older releases.
 
-??? question "Why is Sonarr search running slow for anime?"
+:::
 
-    Sonarr searches for anime using both absolute episode numbers and season/episode numbers. This dual search method can cause slower search times compared to regular TV shows, especially on indexers with large anime databases.
+::: details Why is Sonarr search running slow for anime?
 
-??? question "Why are there no English subtitles available for some anime?"
+Sonarr searches for anime using both absolute episode numbers and season/episode numbers. This dual search method can cause slower search times compared to regular TV shows, especially on indexers with large anime databases.
 
-    Not all anime releases include English subtitles. If you want to filter for only releases with English subtitles, or if you prefer raw (no subs) releases, you can configure this in Prowlarr.
+:::
 
-    Go to `Indexers` => Select your anime indexer => and look for the `Anime English-Translated` category option.
+::: details Why are there no English subtitles available for some anime?
 
-    ![!indexer-anime-english-translated](/Prowlarr/images/indexer-anime-english-translated.png)
+Not all anime releases include English subtitles. If you want to filter for only releases with English subtitles, or if you prefer raw (no subs) releases, you can configure this in Prowlarr.
 
-??? question "How do I configure this for no Remuxes?"
+Go to `Indexers` => Select your anime indexer => and look for the `Anime English-Translated` category option.
 
-    If you don't want Remuxes, you can simply remove `Bluray-1080p Remux` from your quality profile or uncheck it in the qualities list. The guide will then prefer the highest-scoring encodes instead.
+![!indexer-anime-english-translated](/Prowlarr/images/indexer-anime-english-translated.png)
 
-??? question "How do I set up a WEB-only profile?"
+:::
 
-    If you only want WEB releases (no Bluray encodes or Remuxes), create a quality profile that only includes `WEBDL-1080p`, `WEBRip-1080p`, `WEBDL-720p`, and `WEBRip-720p`. The Anime Web Tier custom formats will still score these releases appropriately.
+::: details How do I configure this for no Remuxes?
 
-??? question "Why are some raw releases showing up as Dual Audio?"
+If you don't want Remuxes, you can simply remove `Bluray-1080p Remux` from your quality profile or uncheck it in the qualities list. The guide will then prefer the highest-scoring encodes instead.
 
-    Some groups like ToonsHub and VARYG release raw anime (no English audio/subs) but their naming conventions can cause them to be incorrectly detected as Dual Audio. If you encounter this, you may need to use the `Uncensored` custom format to help differentiate these releases.
+:::
 
-??? question "Should I run a single instance or dual instances?"
+::: details How do I set up a WEB-only profile?
 
-    It's recommended to run two Sonarr instances (one for Anime and one for regular TV shows). This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign series accordingly.
+If you only want WEB releases (no Bluray encodes or Remuxes), create a quality profile that only includes `WEBDL-1080p`, `WEBRip-1080p`, `WEBDL-720p`, and `WEBRip-720p`. The Anime Web Tier custom formats will still score these releases appropriately.
+
+:::
+
+::: details Why are some raw releases showing up as Dual Audio?
+
+Some groups like ToonsHub and VARYG release raw anime (no English audio/subs) but their naming conventions can cause them to be incorrectly detected as Dual Audio. If you encounter this, you may need to use the `Uncensored` custom format to help differentiate these releases.
+
+:::
+
+::: details Should I run a single instance or dual instances?
+
+It's recommended to run two Sonarr instances (one for Anime and one for regular TV shows). This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign series accordingly.
+
+:::
 
 ---
 
@@ -218,4 +244,4 @@ Most of my information and knowledge came from:
 
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and sharing general knowledge.)
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->
