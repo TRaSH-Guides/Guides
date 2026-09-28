@@ -1,6 +1,6 @@
 # qBittorrent - Port forwarding
 
---8<-- "includes/downloaders/port-forwarding.md"
+<!--@include: ../../../includes/downloaders/port-forwarding.md-->
 
 ---
 

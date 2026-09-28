@@ -1,6 +1,6 @@
 # ruTorrent - Basic Setup
 
-{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!--@include: ../../../includes/downloaders/basic-setup.md-->
 
 ---
 
@@ -8,4 +8,4 @@
 
 I've asked several people that used this download client for some help/feedback, but most of them just switched to qBittorrent.
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

@@ -1,15 +1,17 @@
 # Dockstarter
 
-!!! note
+::: info
 
-    We're using the default paths in this example, and we will keep the other paths unchanged so nothing will break if you make a mistake.
+We're using the default paths in this example, and we will keep the other paths unchanged so nothing will break if you make a mistake.
+
+:::
 
 ## Folder Structure
 
 We're going to use a mounted drive that we're going to use as storage for downloads and your media.
 In this example, the mounted drive will be mounted to `/mnt/` with the following folder structure.
 
-```none
+```txt
 storage
 ├── downloads
 │  ├── torrents
@@ -67,9 +69,11 @@ When that's all set then you will need to change the paths you're going to use i
 
 ## DockSTARTer Examples
 
-!!! info
+::: info
 
-    The screenshots in the examples are using the following root path `/storage`
+The screenshots in the examples are using the following root path `/storage`
+
+:::
 
 - [Sonarr](#sonarr)
 - [Radarr](#radarr)
@@ -79,96 +83,110 @@ When that's all set then you will need to change the paths you're going to use i
 - [Deluge](#deluge)
 - [ruTorrent](#rutorrent)
 
-??? example "Sonarr Examples - [Click to show/hide]"
+::: details Sonarr Examples - [Click to show/hide]
 
-    ##### Sonarr
+##### Sonarr
 
-    `Settings` => `Media Management` => `Importing`
+`Settings` => `Media Management` => `Importing`
 
-    ![sonarr-enable-hardlinks](/File-and-Folder-Structure/images/sonarr-enable-hardlinks.png)
+![sonarr-enable-hardlinks](/File-and-Folder-Structure/images/sonarr-enable-hardlinks.png)
 
-    `Settings` => `Media Management` => `Root Folders`
+`Settings` => `Media Management` => `Root Folders`
 
-    ![ds-sonarr-root-folder](images/ds-sonarr-root-folder.png)
+![ds-sonarr-root-folder](images/ds-sonarr-root-folder.png)
 
-    `Series` => `Add New`
+`Series` => `Add New`
 
-    ![ds-sonarr-add-new](images/ds-sonarr-add-new.png)
+![ds-sonarr-add-new](images/ds-sonarr-add-new.png)
 
-    ![ds-sonarr-tv](images/ds-sonarr-tv.png)
+![ds-sonarr-tv](images/ds-sonarr-tv.png)
 
-??? example "Radarr Examples - [Click to show/hide]"
+:::
 
-    ##### Radarr
+::: details Radarr Examples - [Click to show/hide]
 
-    `Settings` => `Media Management` => `Importing`
+##### Radarr
 
-    ![radarr-enable-hardlinks](/File-and-Folder-Structure/images/radarr-enable-hardlinks.png)
+`Settings` => `Media Management` => `Importing`
 
-    `Settings` => `Media Management` => `Root Folders`
+![radarr-enable-hardlinks](/File-and-Folder-Structure/images/radarr-enable-hardlinks.png)
 
-    ![ds-radarr-root-folder](images/ds-radarr-root-folder.png)
+`Settings` => `Media Management` => `Root Folders`
 
-    `Movies` => `Add New`
+![ds-radarr-root-folder](images/ds-radarr-root-folder.png)
 
-    ![ds-radarr-add-new](images/ds-radarr-add-new.png)
+`Movies` => `Add New`
 
-    ![ds-radarr-movies](images/ds-radarr-movies.png)
+![ds-radarr-add-new](images/ds-radarr-add-new.png)
 
-??? example "SABnzbd Examples - [Click to show/hide]"
+![ds-radarr-movies](images/ds-radarr-movies.png)
 
-    ##### SABnzbd
+:::
 
-    `SABnzbd config` => `Folders`
+::: details SABnzbd Examples - [Click to show/hide]
 
-    ![ds-sabnzbd-folders](images/ds-sabnzbd-folders.png)
+##### SABnzbd
 
-    `SABnzbd config` => `Categories`
+`SABnzbd config` => `Folders`
 
-    ![ds-sabnzbd-categories](images/ds-sabnzbd-categories.png)
+![ds-sabnzbd-folders](images/ds-sabnzbd-folders.png)
 
-??? example "NZBGet Examples - [Click to show/hide]"
+`SABnzbd config` => `Categories`
 
-    ##### NZBGet
+![ds-sabnzbd-categories](images/ds-sabnzbd-categories.png)
 
-    `Settings` => `PATHS`
+:::
 
-    ![ds-nzbget-settings-paths](images/ds-nzbget-settings-paths.png)
+::: details NZBGet Examples - [Click to show/hide]
 
-    `Settings` => `CATEGORIES`
+##### NZBGet
 
-    ![ds-nzbget-settings-categories](images/ds-nzbget-settings-categories.png)
+`Settings` => `PATHS`
 
-??? example "qBittorrent Examples - [Click to show/hide]"
+![ds-nzbget-settings-paths](images/ds-nzbget-settings-paths.png)
 
-    ##### qBittorrent
+`Settings` => `CATEGORIES`
 
-    `Options` => `Downloads`
+![ds-nzbget-settings-categories](images/ds-nzbget-settings-categories.png)
 
-    ![ds-qbt-options-downloads](images/ds-qbt-options-downloads.png)
+:::
 
-??? example "Deluge Example - [Click to show/hide]"
+::: details qBittorrent Examples - [Click to show/hide]
 
-    ##### Deluge
+##### qBittorrent
 
-    `Preferences` => `Downloads`
+`Options` => `Downloads`
 
-    ![ds-deluge-preferences-downloads](images/ds-deluge-preferences-downloads.png)
+![ds-qbt-options-downloads](images/ds-qbt-options-downloads.png)
 
-??? example "ruTorrent Examples - [Click to show/hide]"
+:::
 
-    ##### ruTorrent
+::: details Deluge Example - [Click to show/hide]
 
-    `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
+##### Deluge
 
-    ![ds-rtorrent.rc](images/ds-rtorrent.rc.png)
+`Preferences` => `Downloads`
 
-    `Settings` => `Downloads`
+![ds-deluge-preferences-downloads](images/ds-deluge-preferences-downloads.png)
 
-    ![ds-rtorrent-settings-downloads](images/ds-rtorrent-settings-downloads.png)
+:::
 
-    `Settings` => `Autotools`
+::: details ruTorrent Examples - [Click to show/hide]
 
-    ![ds-rtorrent-settings-autotools](images/ds-rtorrent-settings-autotools.png)
+##### ruTorrent
 
---8<-- "includes/support.md"
+`../config/rtorrent/config/rtorrent.rc` (path to your appdata)
+
+![ds-rtorrent.rc](images/ds-rtorrent.rc.png)
+
+`Settings` => `Downloads`
+
+![ds-rtorrent-settings-downloads](images/ds-rtorrent-settings-downloads.png)
+
+`Settings` => `Autotools`
+
+![ds-rtorrent-settings-autotools](images/ds-rtorrent-settings-autotools.png)
+
+:::
+
+<!--@include: ../../../includes/support.md-->

@@ -4,11 +4,11 @@
 
 # TRaSH-Guides
 
-[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
-[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-Guides/Guides?color=4051B5&label=Last%20Update&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/commits/master){:target="_blank" rel="noopener noreferrer"}
-[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/graphs/contributors){:target="_blank" rel="noopener noreferrer"}
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/pulls){:target="_blank" rel="noopener noreferrer"}
-[![GitHub issues](https://img.shields.io/github/issues/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"}
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord)
+[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-Guides/Guides?color=4051B5&label=Last%20Update&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/commits/master)
+[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/graphs/contributors)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/issues)
 
 _TRaSH Guides: Guides that aren't trash._
 
@@ -54,18 +54,18 @@ Follow our step-by-step guide from folder structure to your download client, *Ar
 ## Support
 
 - If you have questions or suggestions, click the button below to join our Discord server.
-- If you want to contribute, read our [Contributing Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md){:target="_blank" rel="noopener noreferrer"} and open a PR (Pull Request).
-- If you found an actual issue related to the guide, you can open a GitHub [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"}.
+- If you want to contribute, read our [Contributing Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md) and open a PR (Pull Request).
+- If you found an actual issue related to the guide, you can open a GitHub [issue](https://github.com/TRaSH-Guides/Guides/issues).
 
---8<-- "includes/support.md"
+<!--@include: ../includes/support.md-->
 
 ---
 
 ### Special Thanks
 
-- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me to the world of Docker containers with DockSTARTer and helping me learn the basics.
-- [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my GitHub guides to MkDocs and making everything look great.
+- [iXNyNe aka nemchik](https://github.com/nemchik) for introducing me to the world of Docker containers with DockSTARTer and helping me learn the basics.
+- [Roxedus](https://github.com/Roxedus) for helping me with the transfer/conversion of my GitHub guides to MkDocs and making everything look great.
 
---8<-- "CONTRIBUTORS.md"
+<!--@include: ../CONTRIBUTORS.md-->
 
-[Contributors](https://github.com/TRaSH-Guides/Guides/graphs/contributors){:target="_blank" rel="noopener noreferrer"}
+[Contributors](https://github.com/TRaSH-Guides/Guides/graphs/contributors)

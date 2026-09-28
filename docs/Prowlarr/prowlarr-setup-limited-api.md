@@ -4,7 +4,9 @@ So you have access to a few (unpaid) Usenet indexers with limited API calls and 
 
 In this Guide, we will show you a trick on how you can make more use of them without hitting the API limit in the first hour.
 
-!!! info "This is mainly a Usenet option but might be useful for a few trackers that have rate limits. We will use for this guide mainly Usenet indexers as examples."
+::: info This is mainly a Usenet option but might be useful for a few trackers that have rate limits. We will use for this guide mainly Usenet indexers as examples.
+
+:::
 
 ## Sync Profiles
 
@@ -26,7 +28,9 @@ For this, we're going to create 2 new Sync Profiles
 
 #### Automatic Search
 
-!!! info "This one will only be used when an item is added to the Starr apps and you do an `Add + Search`.<br>If a "Usenet" download fails it will search for a replacement.<br>When you click on the `Search All`, `Search Monitored` or on the `magnifying icon`."
+::: info This one will only be used when an item is added to the Starr apps and you do an `Add + Search`.<br>If a "Usenet" download fails it will search for a replacement.<br>When you click on the `Search All`, `Search Monitored` or on the `magnifying icon`.
+
+:::
 
 Click on the + sign and create a new sync profile with the following options.
 
@@ -41,7 +45,9 @@ Click on the + sign and create a new sync profile with the following options.
 
 #### Interactive Search
 
-!!! info "This will be only used when you do an interactive search."
+::: info This will be only used when you do an interactive search.
+
+:::
 
 Click on the + sign and create a new sync profile with the following options.
 
@@ -70,6 +76,8 @@ For this example, we're going to use `Automatic Search`.
 
 In Prowlarr, edit the indexer of your choice, and under `Query Limit` (_API hits_) and `Grab Limit` (_Downloads_) you can set your indexer's API limits. These limits can be found in several places, depending on the indexer. The usual places include in your profile or when you go to a page where you select which package you want to buy.
 
-!!! warning "We're adding this to prevent any abuse/hammering to the indexer<br>Ignoring this can sometimes result in a (potentially lifetime) ban."
+::: warning We're adding this to prevent any abuse/hammering to the indexer<br>Ignoring this can sometimes result in a (potentially lifetime) ban.
 
---8<-- "includes/support.md"
+:::
+
+<!--@include: ../../includes/support.md-->

@@ -4,54 +4,66 @@ These are the settings we support and recommend for setting up port forwarding w
 
 Get 60% off the following plans: Anonymous Proxy, Anonymous VPN, Anonymous VPN Pro, and Anonymous Proxy Premium.
 
-Use this [link](/user-promotion-deals/#torguard){:target="_blank" rel="noopener noreferrer"} for more info.
+Use this [link](/user-promotion-deals/#torguard) for more info.
 
-!!! bug "As of 13 March 2022, Torguard Settles Piracy Lawsuit has agreed to use commercially reasonable efforts to block BitTorrent traffic on its servers in the US using firewall technology. :bangbang:<br><br>I talked to several people, and they can still use Torguard for Torrents, perhaps because the connection is encrypted. Others just selected a server in another country.<br>- [Source Torguard](https://torguard.net/blog/why-torguard-is-blocking-bittorrent-on-us-servers/){:target="_blank" rel="noopener noreferrer"}.<br>- [Source Torrentfreak](https://torrentfreak.com/torguard-settles-piracy-lawsuit-and-agrees-to-block-torrent-traffic-on-u-s-servers-220314/){:target="_blank" rel="noopener noreferrer"}."
+::: danger As of 13 March 2022, Torguard Settles Piracy Lawsuit has agreed to use commercially reasonable efforts to block BitTorrent traffic on its servers in the US using firewall technology. :bangbang:<br><br>I talked to several people, and they can still use Torguard for Torrents, perhaps because the connection is encrypted. Others just selected a server in another country.<br>- [Source Torguard](https://torguard.net/blog/why-torguard-is-blocking-bittorrent-on-us-servers/).<br>- [Source Torrentfreak](https://torrentfreak.com/torguard-settles-piracy-lawsuit-and-agrees-to-block-torrent-traffic-on-u-s-servers-220314/).
 
-!!! warning "If servers in the United States are not working for you, please try another country"
+:::
+
+::: warning If servers in the United States are not working for you, please try another country
+
+:::
 
 ---
 
 ## Log in to your Client area
 
-Login to your [Client Area](https://torguard.net/clientarea.php){:target="\_blank" rel="noopener noreferrer"}.
+Login to your [Client Area](https://torguard.net/clientarea.php).
 
-??? success "Example - [Click to show/hide]"
+::: details Example - [Click to show/hide]
 
-    ![!Client Area Login](images/torguard/client-area-login.png)
+![!Client Area Login](images/torguard/client-area-login.png)
+
+:::
 
 ### Create a user account
 
-First, we're going to create a [User Account](https://torguard.net/clientarea.php?action=changepw){:target="\_blank" rel="noopener noreferrer"} for your VPN so we won't need to use the main account you use to log in to the Torguard site.
+First, we're going to create a [User Account](https://torguard.net/clientarea.php?action=changepw) for your VPN so we won't need to use the main account you use to log in to the Torguard site.
 This account will be used to authenticate with your VPN service that your Torrent client will use.
 
 `Services` > `My Services` > `Manage` > `Manage Credentials`
 
-??? success "Example - [Click to show/hide]"
+::: details Example - [Click to show/hide]
 
-    ![!Services > My Services](images/torguard/services-my-services.png)
+![!Services > My Services](images/torguard/services-my-services.png)
 
-    ![!Client Area Manage Credentials](images/torguard/client-area-manage-credentials.png)
+![!Client Area Manage Credentials](images/torguard/client-area-manage-credentials.png)
+
+:::
 
 Create a new username and choose a secure password, or create a random username and password.
 
-??? success "Example - [Click to show/hide]"
+::: details Example - [Click to show/hide]
 
-    ![!Create User Account](images/torguard/create_user_account.png)
+![!Create User Account](images/torguard/create_user_account.png)
+
+:::
 
 ---
 
 ## How to set up Port forwarding
 
-From your `Client Area` dashboard, go to [`My Services`](https://torguard.net/clientarea.php?action=products){:target="\_blank" rel="noopener noreferrer"}.
+From your `Client Area` dashboard, go to [`My Services`](https://torguard.net/clientarea.php?action=products).
 
 Then click on `Manage` and select `Port Forward Request`.
 
 `Services` > `My Services` > `Manage` > `Port Forward Request`
 
-??? success "Example - [Click to show/hide]"
+::: details Example - [Click to show/hide]
 
-    ![!Port Forward Request](images/torguard/req_port_fwd.png)
+![!Port Forward Request](images/torguard/req_port_fwd.png)
+
+:::
 
 ### Port Forward Request
 
@@ -66,7 +78,9 @@ Then click on `Manage` and select `Port Forward Request`.
 1. Click on the `+` sign, and do the same with the `UDP` `Protocol`.
 1. Then click on `Submit Request`.
 
-!!! warning ":bangbang: DON'T CHANGE OPTION 2 `UDP` to `TCP` :bangbang:"
+::: warning :bangbang: DON'T CHANGE OPTION 2 `UDP` to `TCP` :bangbang:
+
+:::
 
 If everything succeeds, you will see the following.
 
@@ -74,19 +88,23 @@ If everything succeeds, you will see the following.
 
 You will also receive an email with the ports you forwarded.
 
-!!! note "Normally, it takes only a short while for the ports to be approved. If it takes longer or you get `PENDING,` we suggest retrying the process."
+::: info Normally, it takes only a short while for the ports to be approved. If it takes longer or you get `PENDING,` we suggest retrying the process.
+
+:::
 
 ---
 
 ## How to create the config file
 
-From your `Client Area` dashboard, go to your [`Config Generator`](https://torguard.net/tgconf.php?action=vpn-openvpnconfig){:target="\_blank" rel="noopener noreferrer"}.
+From your `Client Area` dashboard, go to your [`Config Generator`](https://torguard.net/tgconf.php?action=vpn-openvpnconfig).
 
 `Tools` > `Config Generator`
 
-??? success "Example Select Tools > Config Generator - [Click to show/hide]"
+::: details Example Select Tools > Config Generator - [Click to show/hide]
 
-    ![!Tools - Config Generator](images/torguard/tools-config-generator.png)
+![!Tools - Config Generator](images/torguard/tools-config-generator.png)
+
+:::
 
 ### Config Generator
 
@@ -108,7 +126,7 @@ Rename the `.conf` file you just downloaded to `wg0.conf` and copy it to the wir
 
 Follow the torrent client's guides on how to set up port forwarding.
 
-- [qBittorrent](/Downloaders/qBittorrent/Port-forwarding/){:target="\_blank" rel="noopener noreferrer"}
-- [Deluge](/Downloaders/Deluge/Port-Forwarding/){:target="\_blank" rel="noopener noreferrer"}
+- [qBittorrent](/Downloaders/qBittorrent/Port-forwarding/)
+- [Deluge](/Downloaders/Deluge/Port-Forwarding/)
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

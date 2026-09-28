@@ -2,7 +2,9 @@
 
 *aka How to set up Custom Formats to get German Audio if available*<br><br>
 
-!!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious), [PCJones](https://github.com/PCJones) and [LaurenceBarnes](https://github.com/LaurenceBarnes)"
+::: info This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious), [PCJones](https://github.com/PCJones) and [LaurenceBarnes](https://github.com/LaurenceBarnes)
+
+:::
 
 There isn't a *best* way to set up Custom Formats to get German (or German+English dual) audio. It depends on your setup (hardware devices) and personal preferences.
 
@@ -16,17 +18,19 @@ In this Guide, we try to give a recommendation that suits most users.
 
 It is quite important that you follow and understand what is expected by TRaSH's guide:
 
-- Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to set up Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
+- Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/).
+- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to set up Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics).
 
-!!! warning "Please read those two sections before continuing the guide, as they contain important information. The rest of this guide will assume you did."
+::: warning Please read those two sections before continuing the guide, as they contain important information. The rest of this guide will assume you did.
+
+:::
 
 ---
 
 ## Using this Guide
 
 There are two ways of using this Guide, with and without TRaSH original Guide's international/English-based group tiers.
-(which can be found here: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+(which can be found here: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/)).
 
 In this Guide, we focus on combining both languages and thus include the Custom Formats from TRaSH's original Guide.
 
@@ -38,44 +42,64 @@ These Custom Formats are recommended if you prefer German Dual-Language releases
 
 There are a couple of changes that are needed for German Custom Formats to work properly:
 
-??? abstract "Set the language to `Any` in the quality profile - [Click to show/hide]"
-    We choose `Any` for the language profile, as otherwise, English movies identified with German audio and vice-versa will not be grabbed.
+::: details Set the language to `Any` in the quality profile - [Click to show/hide]
+We choose `Any` for the language profile, as otherwise, English movies identified with German audio and vice-versa will not be grabbed.
 
-    ??? success "Screenshot example - [Click to show/hide]"
-        ![!cf-quality-profile-cf](images/german-cf-profile-language.png)
+::: details Screenshot example - [Click to show/hide]
+![!cf-quality-profile-cf](images/german-cf-profile-language.png)
 
-??? abstract "Disable Propers and Repacks - [Click to show/hide]"
-    Change the Propers and Repacks setting in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Formats.
+:::
 
-    This way, you can ensure that Custom Formats preferences are used and not ignored.
+:::
 
-    You can still prefer Propers and Repacks through the provided Custom Formats.
+::: details Disable Propers and Repacks - [Click to show/hide]
+Change the Propers and Repacks setting in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Formats.
 
-    ??? success "Screenshot example - [Click to show/hide]"
-        ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
+This way, you can ensure that Custom Formats preferences are used and not ignored.
 
-??? abstract "Merge Qualities - [Click to show/hide]"
+You can still prefer Propers and Repacks through the provided Custom Formats.
 
-    To allow upgrades based on language without release qualities interfering, we need to [merge all desired qualities](/Radarr/Tips/Merge-quality/) into one group.
+::: details Screenshot example - [Click to show/hide]
+![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
 
-    You will find a recommendation on which qualities should be included/merged for the different profiles in the individual profiles sections.
+:::
 
-    {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+:::
 
-    !!! tip "Tip"
-        You don't need to include some of these resolutions, such as 2160p or 720p, if you are not interested in them.
+::: details Merge Qualities - [Click to show/hide]
 
-??? abstract "Adapt the Standard Movie Format and Movie Folder Format - [Click to show/hide]"
-    Please have a look here: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
+To allow upgrades based on language without release qualities interfering, we need to [merge all desired qualities](/Radarr/Tips/Merge-quality/) into one group.
 
-    !!! tip "Movie format/folder with the German movie name."
-        Radarr supports the ISO-2 naming convention for naming movies, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
+You will find a recommendation on which qualities should be included/merged for the different profiles in the individual profiles sections.
 
-??? abstract "Set the Maximum Custom Format Score - [Click to show/hide]"
-    To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `35k`, which is more than the highest reachable score.
+<!--@include: ../../includes/starr/move-quality-to-top.md-->
 
-    !!! tip "Tip"
-        If you want to stop upgrades at a specific score, feel free to adapt this setting based on your needs.
+::: tip Tip
+You don't need to include some of these resolutions, such as 2160p or 720p, if you are not interested in them.
+
+:::
+
+:::
+
+::: details Adapt the Standard Movie Format and Movie Folder Format - [Click to show/hide]
+Please have a look here: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/).
+
+::: tip Movie format/folder with the German movie name.
+Radarr supports the ISO-2 naming convention for naming movies, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
+
+:::
+
+:::
+
+::: details Set the Maximum Custom Format Score - [Click to show/hide]
+To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `35k`, which is more than the highest reachable score.
+
+::: tip Tip
+If you want to stop upgrades at a specific score, feel free to adapt this setting based on your needs.
+
+:::
+
+:::
 
 ---
 
@@ -92,7 +116,7 @@ To help with this, there is a handy service called [Umlautadaptarr](https://gith
 
 ## Score logic
 
---8<-- "includes/cf/score-attention.md"
+<!--@include: ../../includes/cf/score-attention.md-->
 
 ---
 
@@ -106,17 +130,21 @@ Depending on what's released first and available, the following Workflow Logic w
 - When a `German` or `German DL` version is released, it will upgrade to that version.
 - The downloaded media will be upgraded to any of the added Custom Formats until the defined Score defined in the Quality Profile under `Upgrade Until Custom Format Score` is reached.
 
-!!! tip "Download German audio ^^only^^"
+::: tip Download German audio ^^only^^
 
-    Set the `Minimum Custom Format Score` in your Quality Profile to `10k`
-    Note: Most German releases come in dual languages, so you might still see an English audio track in addition to the German one.
+Set the `Minimum Custom Format Score` in your Quality Profile to `10k`
+Note: Most German releases come in dual languages, so you might still see an English audio track in addition to the German one.
 
-!!! warning "Releases where German is the original language"
+:::
 
-    Due to technical limitations, releases in which German is the movie's original language will be identified as `German DL` even though they might not contain another language.
-    The only (cosmetic) impact of this is that the scores of those releases will be slightly higher than expected.
+::: warning Releases where German is the original language
 
-{! include-markdown "../../includes/german-guide/radarr-german-advanced-audio-information-en.md" !}
+Due to technical limitations, releases in which German is the movie's original language will be identified as `German DL` even though they might not contain another language.
+The only (cosmetic) impact of this is that the scores of those releases will be slightly higher than expected.
+
+:::
+
+<!--@include: ../../includes/german-guide/radarr-german-advanced-audio-information-en.md-->
 
 ---
 
@@ -124,7 +152,7 @@ Depending on what's released first and available, the following Workflow Logic w
 
 This is a must-have for every Quality Profile you use. All these Custom Formats make sure you don't get Low Quality Releases.
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-unwanted-en.md-->
 
 ---
 
@@ -132,34 +160,36 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 If you prefer High-Quality HD Encodes (720p/1080p)
 
-!!! abstract "Recommended merging of qualities"
+::: info Recommended merging of qualities
 
-    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
 
-    - Bluray-1080p
-    - WEBDL-1080p
-    - WEBRip-1080p
-    - Bluray-720p
-    - WEBDL-720p
-    - WEBRip-720p
+- Bluray-1080p
+- WEBDL-1080p
+- WEBRip-1080p
+- Bluray-720p
+- WEBDL-720p
+- WEBRip-720p
 
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+:::
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-hd-bluray-web-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-audio-version-en.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-hd-bluray-web-scoring-en.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-unwanted-en.md-->
+
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe-noremux.md-->
 
 ---
 
@@ -167,33 +197,35 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 If you prefer 1080p Remuxes (Remux-1080p)
 
-!!! abstract "Recommended merging of qualities"
+::: info Recommended merging of qualities
 
-    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
 
-    - Remux-1080p
-    - WEBDL-1080p
-    - WEBRip-1080p
+- Remux-1080p
+- WEBDL-1080p
+- WEBRip-1080p
 
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+:::
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-audio-version-en.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-unwanted-en.md-->
+
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe.md-->
 
 ---
 
@@ -201,48 +233,52 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 If you prefer High-Quality UHD Encodes (2160p)
 
-!!! abstract "Recommended merging of qualities"
+::: info Recommended merging of qualities
 
-    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
 
-    - Bluray-2160p
-    - WEBDL-2160p
-    - WEBRip-2160p
+- Bluray-2160p
+- WEBDL-2160p
+- WEBRip-2160p
 
-    ??? tip "Alternative Quality Profile - [Click to show/hide]"
+::: details Alternative Quality Profile - [Click to show/hide]
 
-        You may add the following qualities to the merged quality group if you want to grab HD (720p/1080p) releases before a UHD release is available:
+You may add the following qualities to the merged quality group if you want to grab HD (720p/1080p) releases before a UHD release is available:
 
-        - Bluray-1080p
-        - WEBDL-1080p
-        - WEBRip-1080p
-        - Bluray-720p
-        - WEBDL-720p
-        - WEBRip-720p
+- Bluray-1080p
+- WEBDL-1080p
+- WEBRip-1080p
+- Bluray-720p
+- WEBDL-720p
+- WEBRip-720p
 
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+:::
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-uhd-bluray-web-scoring-en.md" !}
+:::
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-audio-version-en.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-uhd-bluray-web-scoring-en.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
+<!--@include: ../../includes/cf/radarr-hdr-formats.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md-->
+
+<!--@include: ../../includes/german-guide/radarr-german-unwanted-en.md-->
+
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-misc-optional.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-misc-uhd-optional.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-misc-uhd-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe-noremux.md-->
 
 ---
 
@@ -250,39 +286,41 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 If you prefer 2160p Remuxes (Remux-2160p)
 
-!!! abstract "Recommended merging of qualities"
+::: info Recommended merging of qualities
 
-    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
 
-    - Remux-2160p
-    - WEBDL-2160p
-    - WEBRip-2160p
+- Remux-2160p
+- WEBDL-2160p
+- WEBRip-2160p
 
-    Note: The Bluray-2160p quality is not included as the main fallback for this profile is WEB. However, feel free to add it if needed.
+Note: The Bluray-2160p quality is not included as the main fallback for this profile is WEB. However, feel free to add it if needed.
 
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+:::
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-audio-version-en.md-->
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/cf/radarr-hdr-formats.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md-->
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-unwanted-en.md-->
+
+<!--@include: ../../includes/cf/radarr-streaming-services.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+<!--@include: ../../includes/cf/radarr-audio.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-misc-optional.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-misc-uhd-optional.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-misc-uhd-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe.md-->
 
 ---
 
@@ -290,41 +328,45 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 If you prefer High-Quality HD Encodes for Anime (720p/1080p)
 
-??? abstract "Adapt the Quality Settings to Anime - [Click to show/hide]"
-    Please have a look here: [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="_blank" rel="noopener noreferrer"}.
+::: details Adapt the Quality Settings to Anime - [Click to show/hide]
+Please have a look here: [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/#animeanimatedcartoons).
 
-!!! abstract "Recommended merging of qualities"
+:::
 
-    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+::: info Recommended merging of qualities
 
-    - Bluray-1080p
-    - WEBDL-1080p
-    - WEBRip-1080p
-    - Bluray-720p
-    - WEBDL-720p
-    - WEBRip-720p
+We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
 
-{! include-markdown "../../includes/german-guide/radarr-german-anime-audio-version-en.md" !}
+- Bluray-1080p
+- WEBDL-1080p
+- WEBRip-1080p
+- Bluray-720p
+- WEBDL-720p
+- WEBRip-720p
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-anime-hd-bluray-web-scoring-en.md" !}
+:::
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-anime-audio-version-en.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-anime-misc-required.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-anime-hd-bluray-web-scoring-en.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
+<!--@include: ../../includes/cf/radarr-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-anime-unwanted-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-anime-misc-required.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-anime-streaming-services-en.md" !}
+<!--@include: ../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md-->
+
+<!--@include: ../../includes/german-guide/radarr-german-anime-unwanted-en.md-->
+
+<!--@include: ../../includes/german-guide/radarr-german-anime-streaming-services-en.md-->
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-misc-optional.md-->
 
-{! include-markdown "../../includes/german-guide/radarr-german-anime-misc-optional.md" !}
+<!--@include: ../../includes/german-guide/radarr-german-anime-misc-optional.md-->
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+<!--@include: ../../includes/cf/radarr-movie-versions-imaxe-noremux.md-->
 
 ---
 
@@ -332,8 +374,8 @@ If you prefer High-Quality HD Encodes for Anime (720p/1080p)
 
 TRaSH provides great guides and explanations about them at the following links:
 
-- [Audio Formats](/Radarr/radarr-setup-quality-profiles/#audio-formats){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
+- [Audio Formats](/Radarr/radarr-setup-quality-profiles/#audio-formats)
+- [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats)
 
 ---
 
@@ -344,4 +386,4 @@ TRaSH provides great guides and explanations about them at the following links:
 - [Someone Said "Nice"?](https://github.com/NiceTSY), for laying the foundation for the German guide through his work on the French guide.
 - and to all the people who helped us to test those profiles and formats (and continue to do so).
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->
