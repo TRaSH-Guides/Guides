@@ -127,3 +127,17 @@ td {
   height: 50px;
   border-radius: 50%;
 }
+
+/* Mermaid: let dense flowcharts (the pick-a-profile decision tree)
+ * use the full content column rather than the squished default.
+ * Combined with `useMaxWidth: false` in the chart's init directive,
+ * this gives a readable layout. Standalone fullscreen pages widen
+ * via per-page CSS. */
+.md-typeset .mermaid {
+  text-align: center;
+  overflow-x: auto;
+}
+.md-typeset .mermaid svg {
+  max-width: none;
+  height: auto;
+}

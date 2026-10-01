@@ -2,6 +2,7 @@
   "name": "[HDR Formats] HDR",
   "trash_id": "ef20e67b95a381fb3bc6d1f06ea24f46",
   "trash_description": "All users with HDR-capable equipment should add the HDR custom format.",
+  "info": "You have a 4K TV and a hardware media player device (such as Roku, Apple TV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).",
   "default": "true",
   "custom_formats": [
     {
