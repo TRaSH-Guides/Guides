@@ -12,7 +12,7 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
 - You've set the `scripts` folder inside the SABnzbd settings under `Folder > User Folders > Scripts Folder`. ([More Infos](https://sabnzbd.org/wiki/configuration/4.3/folders))
 - Your script got sufficient rights to execute. ([More Infos](https://sabnzbd.org/wiki/configuration/4.5/scripts/post-processing-scripts))
 - You've checked the installation location for Python 3 using `which python3` in the container using `docker exec sabnzbd which python3` for example.
-  - The `#!/usr/bin/python3` shebang line at the start of the script must be replaced with the correct path.
+  - Only the interpreter path in the `#!/usr/bin/python3 -OO` shebang line at the start of the script must be replaced with the correct path; the `-OO` argument must be preserved.
 
 ## Clean
 
