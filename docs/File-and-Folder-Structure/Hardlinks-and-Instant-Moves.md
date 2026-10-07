@@ -66,4 +66,23 @@ Then Continue to [How to set up](/File-and-Folder-Structure/How-to-set-up/) for 
 
     Sonarr, Radarr, Lidarr, etc.
 
+### Permissions, ownership, and UMASK
+
+??? info "**Permissions, ownership, and UMASK** - [Click to show/hide]"
+
+    Hardlinks and instant (atomic) moves require all paths to be on **one filesystem**, but they also depend on **permissions**: every app must be able to read — and the apps that import, upgrade, or delete must be able to write — each other's files. This is governed by the **user and group your apps run as**, the **`UMASK`**, and **ownership** — assumed knowledge here and explained in detail in the [Servarr Docker Guide](https://wiki.servarr.com/docker-guide){:target="_blank" rel="noopener noreferrer"}.
+
+    How the user and group are set depends on the image: many images (for example LinuxServer.io) use the `PUID` and `PGID` environment variables, while others use Docker's native `--user` / `user:` directive (a `uid:gid` pair). Either way, pick one of the two setups below and apply it consistently:
+
+    | Setup | Users | `UMASK` | Resulting default permissions |
+    | --- | --- | --- | --- |
+    | **Per-app user + shared group** (recommended) | a separate user per app, all in one shared group | `002` | folders `775` (`drwxrwxr-x`), files `664` (`-rw-rw-r--`) |
+    | **Single shared user** (simpler, less strict) | one user for every app | `022` | folders `755` (`drwxr-xr-x`), files `644` (`-rw-r--r--`) |
+
+    `UMASK 002` keeps the **group-write** bit, so files and folders created by one app can be read and written by the others. The single-user setup can use `022` because one user owns everything.
+
+    !!! warning
+
+        Don't use `UMASK 000` (folders `777`, files `666`) — it makes everything readable and writable by **everyone**, which is poor Linux hygiene.
+
 --8<-- "includes/support.md"

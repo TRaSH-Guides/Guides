@@ -27,6 +27,15 @@
       }
     },
     {
+      "name": "ATELiER",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ATELiER)$"
+      }
+    },
+    {
       "name": "BiZKiT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

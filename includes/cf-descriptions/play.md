@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**PLAY**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Google TV**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Google_TV_(service)){:target="\_blank" rel="noopener noreferrer"}
+Google TV, previously known as Play Movies & TV, is Google's digital platform for buying, renting, and browsing movies and TV shows. It brings together content from over 700,000 titles across multiple streaming apps into one place, with personalized recommendations based on your viewing history. It also allows users to purchase or rent the latest releases directly through the platform.
 
-Google TV, formerly known as Google Play Movies & TV, is a digital distribution service for movies and television series developed by Google. Launched in 2011 as part of the Google Play product line, the service offers search and discovery of video titles across multiple streaming services, including rental or purchase options, alongside watchlist features for accessing titles from eligible devices and platforms.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Google TV Wikipedia page](https://en.wikipedia.org/wiki/Google_TV_(service)){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

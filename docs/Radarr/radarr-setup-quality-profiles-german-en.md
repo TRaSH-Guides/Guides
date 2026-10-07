@@ -1,6 +1,6 @@
-# How to setup Quality Profiles (German)
+# How to set up Quality Profiles (German)
 
-*aka How to setup Custom Formats to get German Audio if available*<br><br>
+*aka How to set up Custom Formats to get German Audio if available*<br><br>
 
 !!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious), [PCJones](https://github.com/PCJones) and [LaurenceBarnes](https://github.com/LaurenceBarnes)"
 
@@ -17,7 +17,7 @@ In this Guide, we try to give a recommendation that suits most users.
 It is quite important that you follow and understand what is expected by TRaSH's guide:
 
 - Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
+- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to set up Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
 
 !!! warning "Please read those two sections before continuing the guide, as they contain important information. The rest of this guide will assume you did."
 

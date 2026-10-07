@@ -1,6 +1,11 @@
 {
   "trash_id": "127bdbadcf3e4463a8c707759fbaad75",
   "trash_regex": "https://regex101.com/r/YWHIIr/1",
+  "trash_scores": {
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000
+  },
   "name": "WiTH AD",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [

@@ -11,7 +11,7 @@
 Il est important que vous suiviez et compreniez ce qui est prévu par le guide de TRaSH :
 
 - Ajouter des Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
-- Configurer un Profil de Qualité pour utiliser les Formats Personnalisés, comme expliqué dans [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
+- Configurer un Profil de Qualité pour utiliser les Formats Personnalisés, comme expliqué dans [How to set up Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
 
 !!! warning "Veuillez lire ces deux sections avant de continuer le guide, car elles contiennent des informations importantes. Le reste de ce guide part du principe que vous l'avez fait."
 

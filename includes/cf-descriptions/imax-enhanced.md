@@ -1,13 +1,15 @@
 <!-- markdownlint-disable MD041-->
-**IMAX Enhanced**<br>
+**IMAX Enhanced**
 
 **Get more picture and fewer black bars (letterboxing).**
 
-[From Wired](https://www.wired.com/story/what-is-imax-enhanced/){:target="_blank" rel="noopener noreferrer"}
+IMAX Enhanced is a certification program designed to ensure the highest quality playback at home, covering resolution, color, brightness, contrast, and sound. Launched by IMAX and DTS, it combines digitally remastered 4K HDR content with DTS audio technologies, requiring certified consumer electronics to meet a strict set of audio and video performance standards. The audio portion uses a variant of the DTS:X immersive audio format to recreate a deeper, wider soundstage than typical home audio.
 
-IMAX Enhanced is a standard for digital releases. It features scenes shot on IMAX cameras and produced in HDR10 DV. IMAX Enhanced releases often have a higher bitrate than other WEB options and are encoded into various formats, including SDR conversions.
+Note: IMAX Enhanced is a home video certification standard for streaming and disc releases, and is separate from the IMAX cinema format used in theaters.
 
-Due to the higher bitrate and implied picture quality improvement, it is recommended that the IMAX Enhanced custom format be enabled on WEB profiles, especially for those seeking 'The IMAX Experience'—including fewer "black bars" or letterboxing.
+For more information, visit the [IMAX Enhanced Wikipedia page](https://en.wikipedia.org/wiki/IMAX_Enhanced){:target="_blank" rel="noopener noreferrer"}.
+
+Due to the higher bitrate and implied picture quality improvement, it is recommended that the IMAX Enhanced custom format be enabled on WEB profiles, especially for those seeking "The IMAX Experience" including fewer black bars or letterboxing.
 
 ![!Imax Enhanced Example](/Radarr/images/imax-e/imax-e.1.png)
 

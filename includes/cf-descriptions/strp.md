@@ -1,9 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**Star+**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Star+**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Star%2B){:target="\_blank" rel="noopener noreferrer"}
+Star+ was Disney's standalone streaming service for Latin America, offering general entertainment content including live sports from ESPN, international originals, animated comedies, and movie premieres. In 2024, Disney shut down Star+ and merged all of its content into Disney+, consolidating the two services into a single platform for Latin American viewers.
 
-Star+ (Star Plus; stylized as ST★R+) is a subscription video on-demand over-the-top streaming service available in almost all Ibero-American states. The service is owned by The Walt Disney Company through the Disney Entertainment division and business segment.
-
-In December 2023, it was confirmed that Star+ will be merged into Disney+ in the second quarter of 2024 with all of its content, including live sports from ESPN, migrating to Disney+ and its standalone app being discontinued.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Star+ Wikipedia page](https://en.wikipedia.org/wiki/Star%2B){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

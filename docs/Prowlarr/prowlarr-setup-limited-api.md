@@ -1,4 +1,4 @@
-# How to setup indexers with limited API
+# How to set up indexers with limited API
 
 So you have access to a few (unpaid) Usenet indexers with limited API calls and you still want to add them as backup for failed downloads, but you're always hitting the API limits in the first hour and can't make full use of them.
 

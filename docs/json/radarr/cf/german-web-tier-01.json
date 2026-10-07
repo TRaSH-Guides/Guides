@@ -7,39 +7,39 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "ZeroTwo",
+      "name": "CNY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(ZeroTwo)$"
+        "value": "^(CNY)$"
       }
     },
     {
-      "name": "ZeroTwo Aliases",
+      "name": "D02KU",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET)\\b"
+        "value": "^(D02KU)$"
       }
     },
     {
-      "name": "TSCC",
+      "name": "KOMET",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(TSCC)$"
+        "value": "^(KOMET)$"
       }
     },
     {
-      "name": "TvR",
+      "name": "MEDiATHEK",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(TvR)$"
+        "value": "^(MEDiATHEK)$"
       }
     },
     {
@@ -52,21 +52,12 @@
       }
     },
     {
-      "name": "TVS",
+      "name": "pmHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(TVS)$"
-      }
-    },
-    {
-      "name": "D02KU",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(D02KU)$"
+        "value": "^(pmHD)$"
       }
     },
     {
@@ -88,33 +79,6 @@
       }
     },
     {
-      "name": "CNY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CNY)$"
-      }
-    },
-    {
-      "name": "WeebPinn",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WeebPinn)$"
-      }
-    },
-    {
-      "name": "MEDiATHEK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MEDiATHEK)$"
-      }
-    },
-    {
       "name": "RiiR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -133,6 +97,42 @@
       }
     },
     {
+      "name": "SLiDE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SLiDE)$"
+      }
+    },
+    {
+      "name": "TSCC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TSCC)$"
+      }
+    },
+    {
+      "name": "TvR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TvR)$"
+      }
+    },
+    {
+      "name": "TVS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TVS)$"
+      }
+    },
+    {
       "name": "WalterBishop",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -142,12 +142,30 @@
       }
     },
     {
-      "name": "pmHD",
+      "name": "WeebPinn",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(pmHD)$"
+        "value": "^(WeebPinn)$"
+      }
+    },
+    {
+      "name": "ZeroTwo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ZeroTwo)$"
+      }
+    },
+    {
+      "name": "ZeroTwo Aliases",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET)\\b"
       }
     },
     {

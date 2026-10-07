@@ -1,4 +1,4 @@
-# How to setup Language Custom Formats
+# How to set up Language Custom Formats
 
 Here we will explain how to set up your preferred language Custom Format, with a few examples.
 

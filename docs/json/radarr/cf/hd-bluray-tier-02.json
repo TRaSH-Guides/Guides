@@ -40,15 +40,6 @@
       }
     },
     {
-      "name": "ATELiER",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ATELiER)$"
-      }
-    },
-    {
       "name": "EA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

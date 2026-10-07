@@ -1,4 +1,7 @@
-name: Trigger PR Build
+# Deploy: Trigger PR Preview - builds the mkdocs site for a PR (when rendered content changed) and uploads it as an artifact for the unprivileged-to-privileged handoff.
+# Triggers: pull request (default event types).
+name: "Deploy: Trigger PR Preview"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
 on:
   pull_request:
@@ -8,22 +11,78 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
+  pull-requests: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     if: github.event.repository.fork == false
     steps:
-      - name: Save PR info
-        run: |
-          mkdir -p ./pr_info
-          echo ${{ github.event.pull_request.number }} > ./pr_info/PR_NUMBER
-          echo ${{ github.event.pull_request.head.sha }} > ./pr_info/PR_SHA
+      - name: Filter rendered content changes
+        id: filter
+        uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d # v4.0.3
+        with:
+          filters: |
+            rendered:
+              - 'docs/**'
+              - 'images/**'
+              - 'includes/**'
+              - 'overrides/**'
+              - 'mkdocs.yml'
+              - 'docs/requirements.txt'
 
-      - name: Upload PR info
+      - name: Checkout
+        if: steps.filter.outputs.rendered == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          sparse-checkout: |
+            docs
+            images
+            includes
+            overrides
+            mkdocs.yml
+            docs/requirements.txt
+
+      # PR caches are scoped to the merge ref and cannot be restored by the base branch
+      # or other PRs, so fork PRs cannot poison the cache used by trusted builds.
+      - name: Setup python # zizmor: ignore[cache-poisoning]
+        if: steps.filter.outputs.rendered == 'true'
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: 3.x
+          cache: pip
+          cache-dependency-path: docs/requirements.txt
+
+      - name: Install dependencies
+        if: steps.filter.outputs.rendered == 'true'
+        run: pip install -r docs/requirements.txt
+
+      - name: Build mkdocs
+        if: steps.filter.outputs.rendered == 'true'
+        run: |
+          mkdocs build --clean
+          mkdocs --version
+
+      - name: Save PR metadata
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_SHA: ${{ github.event.pull_request.head.sha }}
+          SHOULD_DEPLOY: ${{ steps.filter.outputs.rendered }}
+        run: |
+          mkdir -p ./pr_build
+          echo "$PR_NUMBER" > ./pr_build/PR_NUMBER
+          echo "$PR_SHA" > ./pr_build/PR_SHA
+          echo "$SHOULD_DEPLOY" > ./pr_build/SHOULD_DEPLOY
+          if [ "$SHOULD_DEPLOY" = "true" ]; then
+            mv site pr_build/site
+          fi
+
+      - name: Upload PR build
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: pr_info
-          path: pr_info/
+          name: pr_build
+          path: pr_build/

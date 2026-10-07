@@ -7,7 +7,10 @@
       "remux-2160p-combined": "d1d310673359205736b4b84acd5ea8c8",
       "remux-2160p-alternative": "dd3cd75deb9645bae838d1c5da6388d5",
       "remux-web-2160p": "fd161a61e3ab826d3a22d53f935696dd",
-      "uhd-bluray-web": "64fb5f9858489bdac2af690e27c8f42f"
+      "uhd-bluray-web": "64fb5f9858489bdac2af690e27c8f42f",
+      "web-1080p": "e8c5acb741363a0dbda67d3978f4912f",
+      "web-2160p": "0537bd27bcf8da604f30a862343b1742",
+      "web-2160p-combined": "05fbf054ac8ad0303335026cc2632f1a"
     }
   },
   {

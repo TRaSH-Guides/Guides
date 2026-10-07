@@ -2,6 +2,22 @@
 
 Here you will find a collection of 3rd party tools for several downloaders we cover.
 
+## qui
+
+A fast, single-binary qBittorrent web UI: manage multiple instances, automate torrent workflows, and cross-seed across trackers.
+
+Features:
+
+- Single Binary: No dependencies, just download and run
+- Multi-Instance Support: Manage all your qBittorrent instances from one place
+- Fast & Responsive: Optimized for performance with large torrent collections
+- Cross-Seed: Automatically find and add matching torrents across trackers
+- Automations: Rule-based torrent management with conditions and actions
+- Backups & Restore: Scheduled snapshots with multiple restore modes
+- Reverse Proxy: Transparent qBittorrent proxy for external apps
+
+[qui](https://github.com/autobrr/qui){:target="\_blank" rel="noopener noreferrer"}
+
 ## qBit Manage
 
 This is a program used to manage your qBittorrent instance such as:

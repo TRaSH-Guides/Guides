@@ -1,7 +1,7 @@
 {
   "name": "[SQP-4 (MA Hybrid) Optional] SDR",
   "trash_id": "19b55e2ab8b6c05d11858236ef5c93a9",
-  "trash_description": "You have three options for this custom format. Please read the instructions in the written guide on Discord.",
+  "trash_description": "You have two options for this custom format. Please read the instructions in the written guide on Discord.",
   "custom_formats": [
     {
       "name": "SDR",

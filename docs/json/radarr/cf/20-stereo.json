@@ -3,7 +3,7 @@
   "trash_scores": {
     "sqp-1-web-1080p": -175,
     "sqp-1-web-2160p": -175,
-    "sqp-4-ma-hybrid": -275
+    "sqp-4-ma-hybrid": 310
   },
   "name": "2.0 Stereo",
   "includeCustomFormatWhenRenaming": false,
@@ -14,7 +14,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<!repac)[^0-9]2[ .]0\\b|\\bStereo\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b.*?)(?<!repac)[^0-9]2[ .]0\\b|\\bStereo\\b"
       }
     },
     {

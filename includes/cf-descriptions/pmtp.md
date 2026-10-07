@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**Paramount+**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Paramount+**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paramount%2B){:target="\_blank" rel="noopener noreferrer"}
+Paramount+ is an American subscription streaming service owned by Paramount Skydance, featuring content from major brands including CBS, Nickelodeon, MTV, Comedy Central, BET, Showtime, and Paramount Pictures, along with original series, films, and live sports. It started out as CBS All Access in 2014 before being rebranded as Paramount+ in 2021.
 
-Paramount+ is an American subscription video on-demand over-the-top streaming service owned by Paramount Global. The service's content is drawn primarily from the libraries of CBS Media Ventures, CBS Studios, Paramount Media Networks (formerly Viacom Media Networks and ViacomCBS Domestic Media Networks), and Paramount Pictures, while also including original series and films, live streaming sports coverage, and in the United States, live streaming of local CBS broadcast stations.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Paramount+ Wikipedia page](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->

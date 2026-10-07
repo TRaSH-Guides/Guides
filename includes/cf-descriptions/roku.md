@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
-**ROKU**<br>
+**The Roku Channel**
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Roku_Channel){:target="\_blank" rel="noopener noreferrer"}
+The Roku Channel is a free, ad-supported streaming service owned by Roku, Inc., launched in September 2017. It is the most popular free ad-supported streaming service in the US, reaching 145 million people as of 2024, and includes over 500 free channels and more than 80,000 free movies and shows. It is available in the US, Canada, Mexico, and the UK, with optional paid subscriptions for premium content.
 
-The Roku Channel is an over-the-top streaming television service available in the United States, Canada, Mexico and the United Kingdom. The service was launched in 2017, and is owned and operated by Roku, Inc. It is the most popular free ad-supported streaming television (FAST) service in the United States, reportedly reaching 145 million people, as of 2024.
+For more information, visit the [Roku Channel Wikipedia page](https://en.wikipedia.org/wiki/The_Roku_Channel){:target="_blank" rel="noopener noreferrer"}.
 <!-- markdownlint-enable MD041-->

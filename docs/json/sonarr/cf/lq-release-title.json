@@ -45,6 +45,15 @@
       }
     },
     {
+      "name": "R&H",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(R&H)\\b"
+      }
+    },
+    {
       "name": "TeeWee",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

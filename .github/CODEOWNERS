@@ -14,3 +14,19 @@
 
 # Pre-commit config wires schemas and validators into CI
 /.pre-commit-config.yaml @TRaSH-Guides/sync-tool-maintainers
+
+# CI workflows are structural contracts (validation, deploy, release automation)
+/.github/workflows/ @TRaSH-Guides/sync-tool-maintainers
+
+# Ownership rules themselves need maintainer review to change
+/.github/CODEOWNERS @TRaSH-Guides/sync-tool-maintainers
+
+# CI automation and linter configs are enforcement machinery, same as workflows
+/.github/renovate.json @TRaSH-Guides/sync-tool-maintainers
+/.github/labeler.yml @TRaSH-Guides/sync-tool-maintainers
+/.github/issue-labeler.yml @TRaSH-Guides/sync-tool-maintainers
+/.github/stale.yml @TRaSH-Guides/sync-tool-maintainers
+/.github/scripts/ @TRaSH-Guides/sync-tool-maintainers
+/.yamllint.yml @TRaSH-Guides/sync-tool-maintainers
+/.markdownlint.yaml @TRaSH-Guides/sync-tool-maintainers
+/.editorconfig @TRaSH-Guides/sync-tool-maintainers

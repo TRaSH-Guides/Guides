@@ -1,0 +1,6 @@
+---
+description: Repository AI agent instructions
+alwaysApply: true
+---
+
+Follow all instructions in `AGENTS.md` when working in this repository. Claude should also read `CLAUDE.md`.

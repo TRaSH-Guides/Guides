@@ -10,24 +10,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 8
-      }
-    },
-    {
       "name": "ABBIE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -145,6 +127,15 @@
       }
     },
     {
+      "name": "MADSKY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MADSKY)$"
+      }
+    },
+    {
       "name": "NOSiViD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -214,6 +205,24 @@
       "required": false,
       "fields": {
         "value": "^(ZoroSenpai)$"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
       }
     }
   ]

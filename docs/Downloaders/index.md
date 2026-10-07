@@ -6,13 +6,13 @@ Here you will find Guides for several Download Clients.
 
 ### NZBGet
 
-[![version](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fhotio%2Fnzbget%2Frelease%2FVERSION.json&label=Latest%20Version&style=for-the-badge&color=4051B5){ .off-glb }](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/nzbgetcom/nzbget?display_name=release&style=for-the-badge&logo=github&label=Latest&color=4051B5){ .off-glb }](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}
 
 [NZBGet Guides](/Downloaders/NZBGet/)
 
 ### SABnzbd
 
-[![version](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fhotio%2Fsabnzbd%2Frelease%2FVERSION.json&label=Latest%20Version&style=for-the-badge&color=4051B5){ .off-glb }](https://sabnzbd.org/){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/sabnzbd/sabnzbd?display_name=release&style=for-the-badge&logo=github&label=Latest&color=4051B5){ .off-glb }](https://sabnzbd.org/){:target="\_blank" rel="noopener noreferrer"}
 
 [SABnzbd Guides](/Downloaders/SABnzbd/)
 
@@ -20,7 +20,7 @@ Here you will find Guides for several Download Clients.
 
 ### qBittorrent
 
-[![version](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fhotio%2Fqbittorrent%2Frelease%2FVERSION.json&label=Latest%20Version&style=for-the-badge&color=4051B5){ .off-glb }](https://www.qbittorrent.org/){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/qbittorrent/qbittorrent?display_name=release&style=for-the-badge&logo=github&label=Latest&color=4051B5){ .off-glb }](https://www.qbittorrent.org/){:target="\_blank" rel="noopener noreferrer"}
 
 [qBittorrent Guides](/Downloaders/qBittorrent/)
 
@@ -32,6 +32,6 @@ Here you will find Guides for several Download Clients.
 
 ### ruTorrent
 
-[![version](https://img.shields.io/github/v/release/Novik/ruTorrent.svg?color=4051B5&style=for-the-badge&logo=github){ .off-glb }](https://github.com/Novik/ruTorrent){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub Release](https://img.shields.io/github/v/release/Novik/ruTorrent.svg?color=4051B5&style=for-the-badge&logo=github){ .off-glb }](https://github.com/Novik/ruTorrent){:target="\_blank" rel="noopener noreferrer"}
 
 [ruTorrent Guides](/Downloaders/ruTorrent/)

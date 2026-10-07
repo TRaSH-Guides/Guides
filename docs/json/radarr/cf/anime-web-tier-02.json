@@ -43,6 +43,15 @@
       }
     },
     {
+      "name": "BlackRose",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BlackRose)\\b"
+      }
+    },
+    {
       "name": "Cyan",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

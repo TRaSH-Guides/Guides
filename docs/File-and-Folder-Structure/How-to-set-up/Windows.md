@@ -1,24 +1,24 @@
 # Windows
 
-Windows is less flexible than some other operating systems in respect of support for hardlinks and instant (Atomic) moves. In most cases, you need to use a single disk containing both your download location and media library. However, there is an option detailed below that will allow you to make use of hardlinks and instant (Atomic) moves if you run a two-disk setup.
+Windows is less flexible than some other operating systems with respect to support for hardlinks and instant (Atomic) moves. In most cases, you need to use a single disk containing both your download location and media library. However, there is an option detailed below that will allow you to make use of hardlinks and instant (Atomic) moves if you run a two-disk setup.
 
 ## Recommendation
 
-If you want to make extensive use of hardlinks, we would recommend switching to another operating system. For more information and suggestions on this topic, join our Discord support channel. The link can be found at the bottom of every guide page.
+If you want to make extensive use of hardlinks, we would recommend switching to another operating system. For more information and suggestions on this topic, join our Discord support channel. The link is at the bottom of every guide page.
 
 ### Alternative recommendation
 
 If moving away from using Windows with multiple disks is not an option, we suggest ignoring hardlinks and instant (Atomic) moves and using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"}. This will allow you to pool multiple disks to appear as one big disk, making it much easier to maintain and set up your file and folder structure.
 
-!!! warning "It is possible that Windows Storage Spaces supports hardlinks, but this has not been verified by the Guides team. We are unable to provide support for setups that use Storage Spaces."
+!!! warning "Windows Storage Spaces may support hardlinks, but the Guides team has not verified this. We are unable to provide support for setups that use Storage Spaces."
 
 ## Folder Structure
 
-The `data` folder has sub-folders for `torrents` and `usenet`, and each of these has sub-folders for `tv`, `movie`, and `music` downloads to keep things organized.
+The `data` folder contains subfolders for `torrents` and `usenet`, and each of these has subfolders for `tv`, `movie`, and `music` downloads to keep things organized.
 
 The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders. These are where your libraries reside, and what you’d pass to Plex, Emby, or JellyFin.
 
-Whilst we have used `data`, you can name the root folder/share whatever you want. We suggest following the guide folder naming to make it easier for yourself and others to help you.
+Whilst we have used `data`, you can name the root folder/share whatever you want. We suggest following the guide folder naming to make it easier for you and others to help.
 
 ### Folder Structure (one-disk setup or using DrivePool)
 
@@ -45,7 +45,7 @@ D:\data
     └── tv
 ```
 
-After you create the base folders to use it's time to follow the #examples-how-to-set-up-your-paths-inside-your-applications for a one-disk setup.
+After you create the base folders to use, follow the #examples-how-to-set-up-your-paths-inside-your-applications for a one-disk setup.
 
 ### Folder Structure (two-disk setup)
 
@@ -81,20 +81,20 @@ E:\data
     └── tv
 ```
 
-After you create the base folders to use it's time to follow the #examples-how-to-set-up-your-paths-inside-your-applications for a two-disk setup.
+After you create the base folders to use, follow the #examples-how-to-set-up-your-paths-inside-your-applications for a two-disk setup.
 
-## Examples how to set up your paths INSIDE your applications
+## Examples of how to set up your paths INSIDE your applications
 
-At the moment, we do not have Windows-based screenshots for all of the apps, but they might be added later.
+At the moment, we do not have Windows screenshots for all the apps, but they may be added later.
 
-So, in the meantime, use the [Examples](/File-and-Folder-Structure/Examples/) of how to setup your paths INSIDE your applications.
-However, for the paths, use the info provided below depending on whether you have a one-disk setup or a two-disk setup.
+So, in the meantime, use the [Examples](/File-and-Folder-Structure/Examples/) of how to set up your paths INSIDE your applications.
+However, for the paths, use the information below, depending on whether you have a one-disk or two-disk setup.
 
-!!! warning "Linux used forward slash `/` and Windows uses backslash `\`<br>So if you see paths with a forward slash replace it with a backslash for Windows"
+!!! warning "Linux uses forward slash `/` and Windows uses backslash `\`<br>So if you see paths with a forward slash, replace it with a backslash for Windows"
 
 === "One-Disk Setup"
 
-    We will assume you have a one-disk setup with a large drive added as drive `D:/` or are using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"} that created one big disk as drive `D:\`.
+    We will assume you have a one-disk setup with a large drive added as drive `D:/` or that you are using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"} that created a single large disk as drive `D:\`.
 
     === "Sonarr"
 

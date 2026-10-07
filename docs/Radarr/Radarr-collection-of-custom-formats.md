@@ -79,9 +79,11 @@ We've made 3 guides related to this.
 | Streaming Services Misc | Streaming Services UK | Streaming Services Anime |
 |-------------------------|-----------------------|--------------------------|
 | [AUBC](#aubc)           | [BBC iPlayer](#ip)    | [Funimation](#funi)      |
-| [CBC](#cbc)             | [ITVX](#itvx)         | [VRV](#vrv)              |
-| [Crave](#crav)          | [MY5](#my5)           |                          |
-| [OViD](#ovid)           | [NOW](#now)           |                          |
+| [Canal+](#cnlp)         | [ITVX](#itvx)         | [VRV](#vrv)              |
+| [CBC](#cbc)             | [MY5](#my5)           |                          |
+| [Crave](#crav)          | [NOW](#now)           |                          |
+| [Fandango](#fah)        |                       |                          |
+| [OViD](#ovid)           |                       |                          |
 | [Star+](#strp)          |                       |                          |
 
 ---
@@ -658,6 +660,22 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### HLG
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hlg.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1384,6 +1402,24 @@ We've made 3 guides related to this.
 
 ---
 
+#### CNLP
+
+<sub>Canal+</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cnlp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cnlp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 #### CBC
 
 <sub>CBC</sub>
@@ -1414,6 +1450,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### FAH
+
+<sub>Fandango</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/fah.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fah.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -2216,6 +2270,10 @@ We've made 3 guides related to this.
 
 ### Repack/Proper
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack-proper.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2228,6 +2286,10 @@ We've made 3 guides related to this.
 
 ### Repack2
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack2.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2239,6 +2301,10 @@ We've made 3 guides related to this.
 ---
 
 ### Repack3
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack3.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2346,6 +2412,10 @@ We've made 3 guides related to this.
 
 ### MPEG2
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/mpeg2.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2357,6 +2427,10 @@ We've made 3 guides related to this.
 ---
 
 ### Multi
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/multi.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2524,7 +2598,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-german.md" !}
+    {! include-markdown "../../includes/cf-descriptions/german.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2542,7 +2616,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
+    {! include-markdown "../../includes/cf-descriptions/german-dl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2558,7 +2632,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !}
+    {! include-markdown "../../includes/cf-descriptions/german-dl-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2646,7 +2720,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-or-english.md" !}
+    {! include-markdown "../../includes/cf-descriptions/not-german-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2662,7 +2736,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-or-english.md" !}
+    {! include-markdown "../../includes/cf-descriptions/not-german-japanese-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2678,7 +2752,7 @@ We've made 3 guides related to this.
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-korean-chinese-or-english.md" !}
+    {! include-markdown "../../includes/cf-descriptions/not-german-japanese-korean-chinese-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 

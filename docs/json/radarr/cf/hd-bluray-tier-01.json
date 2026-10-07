@@ -40,6 +40,15 @@
       }
     },
     {
+      "name": "ATELiER",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ATELiER)$"
+      }
+    },
+    {
       "name": "BBQ",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

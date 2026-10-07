@@ -75,11 +75,13 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | Streaming Services Misc | Streaming Services UK | Streaming Services Optional                 |
 |-------------------------|-----------------------|---------------------------------------------|
 | [AUBC](#aubc)           | [4OD](#4od)           | [HD Streaming Boost](#hd-streaming-boost)   |
-| [CBC](#cbc)             | [ALL4](#all4)         | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [Crave](#crav)          | [BBC iPlayer](#ip)    |                                             |
-| [Discovery+](#dscp)     | [ITVX](#itvx)         |                                             |
-| [OViD](#ovid)           | [MY5](#my5)           |                                             |
-| [Quibi](#qibi)          | [NOW](#now)           |                                             |
+| [Canal+](#cnlp)         | [ALL4](#all4)         | [UHD Streaming Boost](#uhd-streaming-boost) |
+| [CBC](#cbc)             | [BBC iPlayer](#ip)    |                                             |
+| [Crave](#crav)          | [ITVX](#itvx)         |                                             |
+| [Discovery+](#dscp)     | [MY5](#my5)           |                                             |
+| [Fandango](#fah)        | [NOW](#now)           |                                             |
+| [OViD](#ovid)           |                       |                                             |
+| [Quibi](#qibi)          |                       |                                             |
 | [Star+](#strp)          |                       |                                             |
 | [YouTube Red](#red)     |                       |                                             |
 
@@ -103,10 +105,11 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [Remaster](#remaster) | [Bad Dual Groups](#bad-dual-groups)     | [Remux Tier 02](#remux-tier-02)         |
 |                       | [BR-DISK](#br-disk)                     | [HD Bluray Tier 01](#hd-bluray-tier-01) |
 |                       | [BR-DISK (BTN)](#br-disk-btn)           | [HD Bluray Tier 02](#hd-bluray-tier-02) |
-|                       | [Extras](#extras)                       | [WEB Tier 01](#web-tier-01)             |
-|                       | [LQ](#lq)                               | [WEB Tier 02](#web-tier-02)             |
-|                       | [LQ (Release Title)](#lq-release-title) | [WEB Tier 03](#web-tier-03)             |
-|                       | [No-RlsGroup](#no-rlsgroup)             | [WEB Scene](#web-scene)                 |
+|                       | [Black & White](#bw)                    | [WEB Tier 01](#web-tier-01)             |
+|                       | [Extras](#extras)                       | [WEB Tier 02](#web-tier-02)             |
+|                       | [LQ](#lq)                               | [WEB Tier 03](#web-tier-03)             |
+|                       | [LQ (Release Title)](#lq-release-title) | [WEB Scene](#web-scene)                 |
+|                       | [No-RlsGroup](#no-rlsgroup)             |                                         |
 |                       | [Obfuscated](#obfuscated)               |                                         |
 |                       | [Retags](#retags)                       |                                         |
 |                       | [Scene](#scene)                         |                                         |
@@ -679,6 +682,22 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### HLG
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hlg.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1443,6 +1462,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
+#### CNLP
+
+<sub>Canal+</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cnlp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cnlp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 #### CBC
 
 <sub>CBC</sub>
@@ -1491,6 +1528,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dscp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### FAH
+
+<sub>Fandango</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/fah.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fah.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -2035,6 +2090,24 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ---
 
+### BW
+
+<sub>Black & White</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/bw.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bw.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ### Extras
 
 ??? question "Description - [Click to show/hide]"
@@ -2303,6 +2376,10 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Repack/Proper
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack-proper.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2315,6 +2392,10 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### Repack2
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack2.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2326,6 +2407,10 @@ Special thanks to everyone who has helped in the creation and testing of these C
 ---
 
 ### Repack3
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/repack3.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2433,6 +2518,10 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ### MPEG2
 
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/mpeg2.md" !}
+
 ??? example "JSON - [Click to show/hide]"
 
     ```json
@@ -2444,6 +2533,10 @@ Special thanks to everyone who has helped in the creation and testing of these C
 ---
 
 ### Multi
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/multi.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2663,7 +2756,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-german.md" !}
+    {! include-markdown "../../includes/cf-descriptions/german.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2681,7 +2774,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
+    {! include-markdown "../../includes/cf-descriptions/german-dl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2697,7 +2790,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !}
+    {! include-markdown "../../includes/cf-descriptions/german-dl-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2785,7 +2878,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-or-english.md" !}
+    {! include-markdown "../../includes/cf-descriptions/not-german-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2801,7 +2894,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-or-english.md" !}
+    {! include-markdown "../../includes/cf-descriptions/not-german-japanese-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2817,7 +2910,7 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
 ??? question "Description - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-not-german-japanese-korean-chinese-or-english.md" !}
+    {! include-markdown "../../includes/cf-descriptions/not-german-japanese-korean-chinese-or-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 

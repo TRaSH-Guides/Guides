@@ -1,7 +1,7 @@
-<!-- markdownlint-disable MD041-->
-**SHOWTIME**<br>
+<!-- markdownlint-disable MD036 MD041-->
+**Showtime (SHO)**
 
-[From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Showtime_(TV_network)>){:target="\_blank" rel="noopener noreferrer"}
+Showtime is an American premium pay TV network owned by Paramount Skydance, launched on July 1, 1976. It is known for producing original TV series, independent films, and documentaries. In June 2023, Showtime was fully merged into Paramount+, with all its content now available under the combined "Paramount+ with Showtime" subscription plan. It is well known for hit series such as Billions, Homeland, Shameless, and Dexter.
 
-Paramount+ with Showtime, also known as Showtime (the former name of its main channel from 1976 to 2024, but still used for certain marketing and channel branding contexts), is an American premium television network and the flagship property of Showtime Networks, a sub-division of the Paramount Media Networks division of Paramount Global. Paramount+ with Showtime's programming includes original television series produced exclusively for the linear network and developed for the co-owned Paramount+ streaming service, theatrically released and independent motion pictures, documentaries, and occasional stand-up comedy specials, made-for-TV movies and softcore adult programming.
-<!-- markdownlint-enable MD041-->
+For more information, visit the [Showtime Wikipedia page](https://en.wikipedia.org/wiki/Showtime_(TV_network)){:target="_blank" rel="noopener noreferrer"}.
+<!-- markdownlint-enable MD036 MD041-->
