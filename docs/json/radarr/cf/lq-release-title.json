@@ -109,6 +109,15 @@
       }
     },
     {
+      "name": "SiCFoI + CM4v",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?=.*\\b(CMv4)\\b).*\\b(SiCFoI)\\b"
+      }
+    },
+    {
       "name": "SWTYBLZ",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
