@@ -15,6 +15,9 @@
 - :x: What the profile is trying to avoid
 - :warning: Not the main purpose of the profile but can happen
 
-!!! tip "For the VOSTFR profile, it is recommended to get Bazarr up and running"
-    To do so, follow the [Bazarr Setup Guide](/Bazarr/Setup-Guide). Bazarr will help you get `French` subtitles when no VOSTFR releases are available.
+::: tip For the VOSTFR profile, it is recommended to get Bazarr up and running
+To do so, follow the [Bazarr Setup Guide](/Bazarr/Setup-Guide). Bazarr will help you get `French` subtitles when no VOSTFR releases are available.
+
+:::
+
 <!-- markdownlint-enable MD041-->

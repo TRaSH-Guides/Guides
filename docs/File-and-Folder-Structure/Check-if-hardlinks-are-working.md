@@ -6,17 +6,21 @@ You can use 3 options to check if you got working hardlinks.
 
 _All methods require logging in to your terminal with PuTTY or similar software._
 
-!!! warning
+::: warning
 
-    - You **CAN'T** create hardlinks for directories :bangbang:
-    - You **CAN'T** hardlink across separate file systems, partitions, or mounts :bangbang:
-    - Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)
+- You **CAN'T** create hardlinks for directories :bangbang:
+- You **CAN'T** hardlink across separate file systems, partitions, or mounts :bangbang:
+- Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)
+
+:::
 
 ---
 
 ## Usenet
 
-!!! info "If you use Usenet, these examples won't work because you use instant/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k Remux or any other big file, and you should notice it's almost instant and not a slower and more I/O intensive copy + delete."
+::: info If you use Usenet, these examples won't work because you use instant/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k Remux or any other big file, and you should notice it's almost instant and not a slower and more I/O intensive copy + delete.
+
+:::
 
 ## Mac or Linux Method 1: Using ls
 
@@ -60,9 +64,11 @@ This will reveal the inode of your file on the left side of the file.
 
 - In your terminal type: `find /mnt/user/data/ -inum ###` or `find . -inum ###` if you're in your root folder.
 
-!!! note ""
+::: info
 
-    `###` = Your inode number on the left of the file you found.
+`###` = Your inode number on the left of the file you found.
+
+:::
 
 ![!hardlinks inode](images/hardlinks-inode.png)
 
@@ -74,4 +80,4 @@ It will list all files linked with the same inode number.
 
 It will list all hardlinked files.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

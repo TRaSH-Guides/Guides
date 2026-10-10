@@ -5,5 +5,5 @@ Groups that:
 
 - Are new, and have released several dozen objectively good quality releases
 - Have retired and their releases don't meet current quality standards
-- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines).
 <!-- markdownlint-enable MD041-->

@@ -5,5 +5,5 @@ A remaster is a change in the sound or image quality of previously created media
 
 A remaster differs from a restoration. A restoration goes back to the original film elements for the most faithful result, while a remaster improves an existing digital version without necessarily returning to the source material.
 
-For more information, visit the [Remaster Wikipedia page](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}.
+For more information, visit the [Remaster Wikipedia page](https://en.wikipedia.org/wiki/Remaster).
 <!-- markdownlint-enable MD036 MD041-->
