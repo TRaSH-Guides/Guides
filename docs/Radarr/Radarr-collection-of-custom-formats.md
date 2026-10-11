@@ -66,14 +66,15 @@ We've made 3 guides related to this.
 | [HBO](#hbo)                | [KOCOWA](#kcw)            |                          |
 | [HBO Max](#hmax)           | [LINE TV](#linetv)        |                          |
 | [Hulu](#hulu)              | [myTV SUPER](#mytvsuper)  |                          |
-| [iTunes](#it)              | [TVING](#tving)           |                          |
-| [Max](#max)                | [TVer](#tver)             |                          |
-| [Movies Anywhere](#ma)     | [U-NEXT](#u-next)         |                          |
-| [Netflix](#nf)             | [Viki](#viki)             |                          |
-| [Paramount+](#pmtp)        | [VIU](#viu)               |                          |
-| [Peacock TV](#pcok)        | [Wavve](#wavve)           |                          |
-| [ROKU](#roku)              | [WeTV](#wetv)             |                          |
-| [Stan](#stan)              | [Youku](#youku)           |                          |
+| [IMF](#imf)                | [TVING](#tving)           |                          |
+| [iTunes](#it)              | [TVer](#tver)             |                          |
+| [Max](#max)                | [U-NEXT](#u-next)         |                          |
+| [Movies Anywhere](#ma)     | [Viki](#viki)             |                          |
+| [Netflix](#nf)             | [VIU](#viu)               |                          |
+| [Paramount+](#pmtp)        | [Wavve](#wavve)           |                          |
+| [Peacock TV](#pcok)        | [WeTV](#wetv)             |                          |
+| [ROKU](#roku)              | [Youku](#youku)           |                          |
+| [Stan](#stan)              |                           |                          |
 |                            |                           |                          |
 
 | Streaming Services Misc | Streaming Services UK | Streaming Services Anime |
@@ -862,6 +863,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### IMF
+
+<sub>Interoperable Master Format</sub>
+
+??? question "Description - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/imf.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/imf.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
