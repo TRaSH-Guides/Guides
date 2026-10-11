@@ -1,7 +1,9 @@
 <!-- markdownlint-disable MD036 MD041-->
 **IMF (Interoperable Master Format)**
 
-IMF (Interoperable Master Format) is a standardized file format for storing and delivering finished video content. Releases that use IMF as a source are created from the highest available source, resulting in a higher quality WEBRip compared to those sourced from standard streaming delivery files.
+IMF (Interoperable Master Format) isn't a streaming service but a standardized file format for storing and delivering finished video content.
+
+Releases that use IMF as a source are created from the highest available source, resulting in a higher-quality WEBRip than those sourced from standard streaming delivery files.
 
 IMF is widely used by major studios and streaming platforms to manage and distribute large catalogs of content efficiently and consistently.
 
