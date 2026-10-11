@@ -52,7 +52,7 @@
     {
       "name": "IMF",
       "trash_id": "7737598007e71665c5edc7f1626bfbf1",
-      "required": false
+      "required": true
     },
     {
       "name": "iT",
