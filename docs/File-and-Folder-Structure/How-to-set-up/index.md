@@ -14,4 +14,4 @@ Select your desired method of installation:
 - [Unraid](/File-and-Folder-Structure/How-to-set-up/Unraid/)
 - [Windows](/File-and-Folder-Structure/How-to-set-up/Windows/)
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

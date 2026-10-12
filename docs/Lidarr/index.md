@@ -2,7 +2,7 @@
 
 ## Basic guides
 
-For Installation, Quick Start Guide, and the basics of Lidarr, please check the official [WikiArr](https://wiki.servarr.com/lidarr){:target="\_blank" rel="noopener noreferrer"}.
+For Installation, Quick Start Guide, and the basics of Lidarr, please check the official [WikiArr](https://wiki.servarr.com/lidarr).
 
 ### Current Versions
 
@@ -10,4 +10,6 @@ For Installation, Quick Start Guide, and the basics of Lidarr, please check the 
 
 ## Available guides
 
-!!! failure "TRaSH Guides do not have any guides related to Lidarr.<br>We suggest that you use [Davo's Community Lidarr Guide](https://wiki.servarr.com/lidarr/community-guide "Like TRaSH Guides, but Davo for Lidarr"){:target="\_blank" rel="noopener noreferrer"}"
+::: danger TRaSH Guides do not have any guides related to Lidarr.<br>We suggest that you use [Davo's Community Lidarr Guide](https://wiki.servarr.com/lidarr/community-guide "Like TRaSH Guides, but Davo for Lidarr")
+
+:::

@@ -4,19 +4,23 @@
 
 If you are already running Deluge in `daemon` or `console` mode, or running via Docker, this is usually enabled by default. You will need to check your compose or core.conf for the "daemon_port" if you do not know it.
 
-!!! tip
+::: tip
 
-    You can also access the daemon settings in `Preferences` in the WebUI if you do not have access to the GTK/UI
+You can also access the daemon settings in `Preferences` in the WebUI if you do not have access to the GTK/UI
+
+:::
 
 You will need to have "Allow Remote Connections" enabled if you are not connecting to Deluge from localhost.
 
 ![!Daemon Settings](../images/Deluge-tc-daemon.png)
 
-!!! info
+::: info
 
-    If you do not have access to the WebUI, and are instead doing this by editing Deluge's `core.conf`, you will need to change "allow_remote" to true.
+If you do not have access to the WebUI, and are instead doing this by editing Deluge's `core.conf`, you will need to change "allow_remote" to true.
 
-    Restart Deluge for the changes to take effect.
+Restart Deluge for the changes to take effect.
+
+:::
 
 ---
 
@@ -30,9 +34,11 @@ Simply go to `Edit` => `Preferences` and switch from `Standalone` to `Thin Clien
 
 Restart Deluge.
 
-!!! info
+::: info
 
-    You will still need to set the daemon to run at start-up.
+You will still need to set the daemon to run at start-up.
+
+:::
 
 ### Connections Manager
 
@@ -40,18 +46,22 @@ After switching to `Thin Client` you will need to connect to your daemon. Go to 
 
 ![!Label Options](../images/Deluge-tc-connman.png)
 
-!!! ATTENTION
+::: warning
 
-    If you mistyped your password while adding the connection, it will prompt you to enter it. There is a bug that does not accept/save the correct password unless it is entered through the `Add`/`Edit` Menu.
+If you mistyped your password while adding the connection, it will prompt you to enter it. There is a bug that does not accept/save the correct password unless it is entered through the `Add`/`Edit` Menu.
 
-    If you mistype the password while you are adding the connection, go to `Edit` on the connection and retype the password into the password field.
+If you mistype the password while you are adding the connection, go to `Edit` on the connection and retype the password into the password field.
 
-!!! WARNING
+:::
 
-    You can find your users and passwords for the daemon in the `auth` file inside your appdata/config folder for Deluge.
+::: warning
 
-    You can add users in the `Daemon` settings in preferences as well.
+You can find your users and passwords for the daemon in the `auth` file inside your appdata/config folder for Deluge.
 
-    BE AWARE: These passwords are stored in PLAIN-TEXT in your `auth` file.
+You can add users in the `Daemon` settings in preferences as well.
 
-{! include-markdown "../../../../includes/support.md" !}
+BE AWARE: These passwords are stored in PLAIN-TEXT in your `auth` file.
+
+:::
+
+<!--@include: ../../../../includes/support.md-->

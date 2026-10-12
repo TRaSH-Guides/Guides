@@ -39,12 +39,14 @@ This score is the minimal score that the subs should match for your release, set
 
 This will set the Synchronization Score Threshold, meaning at which score Bazarr will sync the subtitles.
 
-!!! info
+::: info
 
-    The synchronization is "best effort", based on the following.
+The synchronization is "best effort", based on the following.
 
-    - it uses the embedded subtitles track as a reference, if not present.
-    - it needs to extract the audio track and analyze it to define the start of sentence markers.
+- it uses the embedded subtitles track as a reference, if not present.
+- it needs to extract the audio track and analyze it to define the start of sentence markers.
+
+:::
 
 [^1]:
     Why not set the Synchronization Score to max?
@@ -52,4 +54,4 @@ This will set the Synchronization Score Threshold, meaning at which score Bazarr
 
     We noticed that when setting it to high 98-100 we would get subs that are actually 1 second to slow/fast.
 
---8<-- "includes/support.md"
+<!--@include: ../../includes/support.md-->

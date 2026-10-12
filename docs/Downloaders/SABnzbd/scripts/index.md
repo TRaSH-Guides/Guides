@@ -4,7 +4,9 @@ A collection of community-provided and maintained scripts for SABnzbd.
 
 If you have a script you want to share, don't hesitate to create a [PR](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md) for it.
 
-!!! warning "Because these scripts are community-provided and maintained we can't assure that they are still 100% working"
+::: warning Because these scripts are community-provided and maintained we can't assure that they are still 100% working
+
+:::
 
 ## Prerequisites
 
@@ -14,54 +16,62 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
 
 ## Clean
 
-??? info "Clean NZB name"
+::: details Clean NZB name
 
-    - Title: `Clean.py`
-    - Author(s): ???
-    - Made compatible for SABnzbd: AlexK
+- Title: `Clean.py`
+- Author(s): ???
+- Made compatible for SABnzbd: AlexK
 
-    Removes the following suffixes from NZB name:
-    NZBgeek / Obfuscated / BUYMORE / Scrambled /etc...
-    Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
+Removes the following suffixes from NZB name:
+NZBgeek / Obfuscated / BUYMORE / Scrambled /etc...
+Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
 
-    Install Instructions:
+Install Instructions:
 
-        1. Copy script to SABnzbd's `scripts` folder
-        2. Use your preferred shell and navigate to the `scripts` folder with the command `cd` (example `cd /mnt/user/appdata/sabnzdb/scripts`).
-        3. Run: `sudo chmod +x Clean.py`
-        4. Run: `dos2unix Clean.py`
-        5. In SABnzbd go to `Settings` => `Switches`
-        6. Change Pre-queue user script and select: `Clean.py`
+    1. Copy script to SABnzbd's `scripts` folder
+    2. Use your preferred shell and navigate to the `scripts` folder with the command `cd` (example `cd /mnt/user/appdata/sabnzdb/scripts`).
+    3. Run: `sudo chmod +x Clean.py`
+    4. Run: `dos2unix Clean.py`
+    5. In SABnzbd go to `Settings` => `Switches`
+    6. Change Pre-queue user script and select: `Clean.py`
 
-    ![!Enable Clean.py](/Downloaders/SABnzbd/images/sabnzbd-switches-queue-clean.png)
+![!Enable Clean.py](/Downloaders/SABnzbd/images/sabnzbd-switches-queue-clean.png)
 
-??? example "Script"
+:::
 
-    ```python
-    [[% filter indent(width=4) %]][[% include 'Downloaders/SABnzbd/scripts/Clean/Clean.py' %]][[% endfilter %]]
-    ```
+::: details Script
+
+```python
+<!--@include: @/Downloaders/SABnzbd/scripts/Clean/Clean.py-->
+```
+
+:::
 
 ## replace_for
 
-??? info "Replaces underscores with dots"
+::: details Replaces underscores with dots
 
-    - Title: `replace_for.py`
-    - Author: miker
+- Title: `replace_for.py`
+- Author: miker
 
-    Replaces underscores with dots in downloaded filename to prevent download loops with poorly named releases on some indexers (often HONE releases).
+Replaces underscores with dots in downloaded filename to prevent download loops with poorly named releases on some indexers (often HONE releases).
 
-    Install Instructions:
+Install Instructions:
 
-        1. Copy script to SABnzbd's script folder
-        2. Run: `sudo chmod +x replace_for.py`
-        3. Run: `dos2unix replace_for.py`
-        4. In SABnzbd go to `Settings` => `Categories`
-        5. Change script for required categories and select: `replace_for.py`
+    1. Copy script to SABnzbd's script folder
+    2. Run: `sudo chmod +x replace_for.py`
+    3. Run: `dos2unix replace_for.py`
+    4. In SABnzbd go to `Settings` => `Categories`
+    5. Change script for required categories and select: `replace_for.py`
 
-    ![!Enable replace_for.py](/Downloaders/SABnzbd/images/sabnzbd-categories-replace_for.png)
+![!Enable replace_for.py](/Downloaders/SABnzbd/images/sabnzbd-categories-replace_for.png)
 
-??? example "Script"
+:::
 
-    ```python
-    [[% filter indent(width=4) %]][[% include 'Downloaders/SABnzbd/scripts/replace_for/replace_for.py' %]][[% endfilter %]]
-    ```
+::: details Script
+
+```python
+<!--@include: @/Downloaders/SABnzbd/scripts/replace_for/replace_for.py-->
+```
+
+:::

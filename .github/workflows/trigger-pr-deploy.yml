@@ -32,6 +32,8 @@ jobs:
               - 'overrides/**'
               - 'mkdocs.yml'
               - 'docs/requirements.txt'
+              - 'package.json'
+              - 'package-lock.json'
 
       - name: Checkout
         if: steps.filter.outputs.rendered == 'true'
@@ -46,26 +48,27 @@ jobs:
             overrides
             mkdocs.yml
             docs/requirements.txt
+            package.json
+            package-lock.json
 
       # PR caches are scoped to the merge ref and cannot be restored by the base branch
       # or other PRs, so fork PRs cannot poison the cache used by trusted builds.
-      - name: Setup python # zizmor: ignore[cache-poisoning]
+      - name: Setup Node.js # zizmor: ignore[cache-poisoning]
         if: steps.filter.outputs.rendered == 'true'
-        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          python-version: 3.x
-          cache: pip
-          cache-dependency-path: docs/requirements.txt
+          node-version-file: "package.json"
+          cache: "npm"
 
       - name: Install dependencies
         if: steps.filter.outputs.rendered == 'true'
-        run: pip install -r docs/requirements.txt
+        run: npm install
 
-      - name: Build mkdocs
+      - name: Build docs
         if: steps.filter.outputs.rendered == 'true'
         run: |
-          mkdocs build --clean
-          mkdocs --version
+          npm run docs:build
+          mv docs/.vitepress/dist site
 
       - name: Save PR metadata
         env:

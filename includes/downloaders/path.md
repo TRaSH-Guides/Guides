@@ -1,17 +1,22 @@
 <!-- markdownlint-disable MD041-->
 This basic example is based on the use of Docker images
 
-!!! tip ""
+::: tip
 
-    Keep in mind the path are setup so it works with hardlinks and instant moves.
+Keep in mind the path are setup so it works with hardlinks and instant moves.
 
-    More info [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
+More info [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/)
 
-!!! info
+:::
 
-    Pick one path layout and use it for all of them.
+::: info
 
-    It doesn't matter if you prefer to use `/data`, `/shared`, `/storage` or whatever.
+Pick one path layout and use it for all of them.
 
-    The screenshots in the examples are using the following root path `/data`
+It doesn't matter if you prefer to use `/data`, `/shared`, `/storage` or whatever.
+
+The screenshots in the examples are using the following root path `/data`
+
+:::
+
 <!-- markdownlint-enable MD041-->

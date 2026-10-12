@@ -5,5 +5,5 @@ A 4K remaster means the original film or video was scanned and digitally remaste
 
 A 4K remaster differs from a 4K upscale. A remaster goes back to the original film source for the highest possible quality, while an upscale simply increases the resolution of an existing digital version, often with less detail and clarity.
 
-For more information, visit the [Remaster Wikipedia page](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}.
+For more information, visit the [Remaster Wikipedia page](https://en.wikipedia.org/wiki/Remaster).
 <!-- markdownlint-enable MD036 MD041-->
