@@ -107,8 +107,7 @@
           "description": "32-character hexadecimal trash_id of the Custom Format."
         }
       },
-      "additionalProperties": false,
-      "minProperties": 1
+      "additionalProperties": false
     },
     "trash_quality_definition": {
       "type": "object",
