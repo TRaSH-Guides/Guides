@@ -12,10 +12,12 @@ on:
       - docs/json/radarr/quality-profiles/**
       - docs/json/radarr/quality-profile-groups/**
       - docs/json/radarr/cf-groups/**
+      - docs/json/radarr/quality-size/**
       - docs/json/sonarr/cf/*.json
       - docs/json/sonarr/quality-profiles/**
       - docs/json/sonarr/quality-profile-groups/**
       - docs/json/sonarr/cf-groups/**
+      - docs/json/sonarr/quality-size/**
       - scripts/validate-quality-profiles.py
   pull_request:
     paths:
@@ -24,10 +26,12 @@ on:
       - docs/json/radarr/quality-profiles/**
       - docs/json/radarr/quality-profile-groups/**
       - docs/json/radarr/cf-groups/**
+      - docs/json/radarr/quality-size/**
       - docs/json/sonarr/cf/*.json
       - docs/json/sonarr/quality-profiles/**
       - docs/json/sonarr/quality-profile-groups/**
       - docs/json/sonarr/cf-groups/**
+      - docs/json/sonarr/quality-size/**
       - scripts/validate-quality-profiles.py
   workflow_dispatch:
 

@@ -107,8 +107,21 @@
           "description": "32-character hexadecimal trash_id of the Custom Format."
         }
       },
+      "additionalProperties": false
+    },
+    "trash_quality_definition": {
+      "type": "object",
+      "description": "Optional. The quality size definition this profile suggests, for services that store quality sizes per profile (e.g., Sonarr v5). Maps a readable label to the trash_id of a quality size file. Sync tools match on the trash_id only, so the label is for readability and may differ from the quality size type. Exactly one entry. Omit if the profile does not suggest a quality definition.",
+      "patternProperties": {
+        "^.+$": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{32}$",
+          "description": "32-character hexadecimal trash_id of the quality size definition."
+        }
+      },
       "additionalProperties": false,
-      "minProperties": 1
+      "minProperties": 1,
+      "maxProperties": 1
     }
   },
   "required": [

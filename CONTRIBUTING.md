@@ -269,6 +269,7 @@ The quality-profiles hold the basic quality profile settings that you also see i
 - `language` - Language. **(This is only for Radarr)**
 - `items` - Qualities. => The allowed quality sources are in reverse order, meaning that the highest quality allowed in your profile is at the bottom of the list.
 - `formatItems` - Custom Formats. => The mandatory Custom Formats that are needed for this quality profiles, excluding the ones that are added with the [cf-groups](cf-groups)
+- `trash_quality_definition` - Suggested Quality Size. **(Optional, used by Sonarr v5 and newer)** => One entry that maps a readable label to the `trash_id` of a file in `docs/json/xxxarr/quality-size`. Sync apps match only the `trash_id`, so the label is for readability.
 
 ### cf-groups
 
