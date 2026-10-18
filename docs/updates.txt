@@ -1,3 +1,6 @@
+# 2026-10-18 03:33
+- [feat(radarr): Add NEW Custom Format `IMF` to `General Streaming Services`](https://github.com/TRaSH-Guides/Guides/pull/2911)
+
 # 2026-10-11 04:38
 - [feat(radarr): Add RlsGrp `SicFoI + CM4v` to  `LQ (Release Title)`](https://github.com/TRaSH-Guides/Guides/pull/2907)
 - [feat(starr): Add RlsGrp `SumVision` to `Generated Dynamic HDR`](https://github.com/TRaSH-Guides/Guides/pull/2906)
