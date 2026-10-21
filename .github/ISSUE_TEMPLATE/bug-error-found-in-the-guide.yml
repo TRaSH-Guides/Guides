@@ -72,3 +72,11 @@ body:
       placeholder: Add context...
     validations:
       required: false
+  - type: checkboxes
+    id: ai-disclosure
+    attributes:
+      label: AI disclosure
+      description: Check this box if AI was used to create this issue.
+      options:
+        - label: This issue was created with AI assistance.
+          required: false

@@ -18,12 +18,12 @@ When opening a pull request:
     - **Open Questions and Pre-Merge TODOs**
     - **Requirements** (check both boxes when applicable)
 4. Open as a **draft** if the work is incomplete or not ready for review.
-5. Add an **AI disclosure** section at the end of the PR body:
+5. Tick the **AI disclosure** box at the end of the PR template. Do not add a second section:
 
 ```markdown
 ## AI disclosure
 
-This pull request was created with AI assistance.
+- [x] This pull request was created with AI assistance.
 ```
 
 ## GitHub issues
@@ -32,13 +32,7 @@ When opening a GitHub issue:
 
 1. Follow repository policy in [.github/ISSUE_TEMPLATE/config.yml](.github/ISSUE_TEMPLATE/config.yml). Bug reports are normally confirmed on [Discord](https://trash-guides.info/discord) first and opened on GitHub by the team. Do not open bug issues directly unless a maintainer has asked you to.
 2. If an issue is appropriate, use [.github/ISSUE_TEMPLATE/bug-error-found-in-the-guide.yml](.github/ISSUE_TEMPLATE/bug-error-found-in-the-guide.yml) and complete every required field.
-3. Add an **AI disclosure** section at the end of the issue body:
-
-```markdown
-## AI disclosure
-
-This issue was created with AI assistance.
-```
+3. Tick the **AI disclosure** checkbox ("This issue was created with AI assistance.") at the end of the issue form. Do not add a second section.
 
 ## AI disclosure
 
