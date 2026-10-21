@@ -1,5 +1,7 @@
 mkdocs>=1.6,<2
 mkdocs-glightbox==0.5.2
+# selectolax 1.x makes glightbox 0.5.2 drop every <img> (blueswen/mkdocs-glightbox#74)
+selectolax==0.4.13
 mkdocs-awesome-pages-plugin==2.10.1
 mkdocs-git-revision-date-localized-plugin==1.6.0
 mkdocs-macros-plugin==1.5.0
