@@ -42,11 +42,18 @@
 
 ---
 
-## Recommended qui Workflows & Scripts
+## Recommended qui Workflows
 
-| qui Workflows & Scripts | Description |
+| qui Workflows | Description |
 | --- | --- |
 | **[Azure qui Workflows](https://gitea.okami.icu/azure/qui-automations)** [:fontawesome-brands-git-alt:](https://gitea.okami.icu/azure/qui-automations "Gitea") | Per-tracker qui automation rule set for qBittorrent. Seeds everything hardlinked into your library forever and cleans up the rest after each tracker's seeding minimums. Includes a script to install and update the workflows through qui's API. |
 | **[BZ qui Workflows](https://github.com/BZ00001/qui_workflows)** [:fontawesome-brands-github:](https://github.com/BZ00001/qui_workflows "GitHub") [:fontawesome-brands-discord:](/discord "Discord") | Community qui automation rule set for qBittorrent. The base workflow that TRaSH qui Workflows builds on. |
-| **[BZ Scripts](https://github.com/BZ00001/scripts)** [:fontawesome-brands-github:](https://github.com/BZ00001/scripts "GitHub") [:fontawesome-brands-discord:](/discord "Discord") | Standalone Python scripts for Radarr, Sonarr, Plex, and Kometa maintenance, covering tag-based upgrade searches, file renaming, and orphaned Kometa asset cleanup. |
 | **[TRaSH qui Workflows](https://github.com/TRaSH-/qui_workflows)** [:fontawesome-brands-github:](https://github.com/TRaSH-/qui_workflows "GitHub") [:fontawesome-brands-discord:](/discord "Discord") | TRaSH's own tier-based qui automation rule set for qBittorrent, based on the BZ workflow with adjusted noHL seeding time and optional pre-information tags. |
+
+---
+
+## Recommended Scripts
+
+| Scripts | Description |
+| --- | --- |
+| **[BZ Scripts](https://github.com/BZ00001/scripts)** [:fontawesome-brands-github:](https://github.com/BZ00001/scripts "GitHub") [:fontawesome-brands-discord:](/discord "Discord") | Standalone Python scripts for Radarr, Sonarr, Plex, and Kometa maintenance, covering tag-based upgrade searches, file renaming, and orphaned Kometa asset cleanup. |
