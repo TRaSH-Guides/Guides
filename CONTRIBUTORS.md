@@ -10,14 +10,14 @@
       <b><a href="https://github.com/TRaSH-" style="color: #ffa500;">TRaSH-</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/111231042?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="yammes08">
-      <br>
-      <b><a href="https://github.com/yammes08" style="color: #ffa500;">yammes08</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/15520607?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="FonduemangVI">
       <br>
       <b><a href="https://github.com/FonduemangVI" style="color: #ffa500;">FonduemangVI</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/111231042?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="yammes08">
+      <br>
+      <b><a href="https://github.com/yammes08" style="color: #ffa500;">yammes08</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/47067662?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="nuxencs">
