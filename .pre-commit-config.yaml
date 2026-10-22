@@ -45,6 +45,12 @@ repos:
         args: ["-v", "--schemafile", "schemas/sonarr-naming.schema.json"]
 
       - id: check-jsonschema
+        name: Validate Quality Profiles
+        files: ^docs/json/(radarr|sonarr)/quality-profiles/[^/]+\.json$
+        types: [json]
+        args: ["-v", "--schemafile", "schemas/quality-profile.schema.json"]
+
+      - id: check-jsonschema
         name: Validate Conflicts
         files: ^docs/json/(radarr|sonarr)/conflicts\.json$
         types: [json]

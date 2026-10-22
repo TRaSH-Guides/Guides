@@ -9,6 +9,7 @@ Checks:
     5. Filenames follow naming conventions (lowercase, dashes only)
     6. Profile formatItems reference valid CFs (trash_id exists, name matches)
     7. Each profile belongs to exactly one group in groups.json
+    8. Profile trash_quality_definition references a valid quality-size trash_id
 
 Exit code 0 on success, 1 on any failure.
 """
@@ -51,6 +52,13 @@ def validate_app(app: str) -> list[str]:
             name = data.get("name", "")
             if tid:
                 cf_by_tid[tid] = (f.name, name)
+
+    # Load quality-size trash_ids for trash_quality_definition validation
+    quality_size_tids: set[str] = set()
+    for f in sorted((BASE / app / "quality-size").glob("*.json")):
+        data = load_json(f)
+        if data and data.get("trash_id"):
+            quality_size_tids.add(data["trash_id"])
 
     # Load profile files
     profile_files: dict[str, dict] = {}  # slug -> data
@@ -208,6 +216,16 @@ def validate_app(app: str) -> list[str]:
                 errors.append(
                     f"[{app}] Profile '{slug}.json' formatItems name mismatch:"
                     f" '{fi_name}' but cf/{cf_filename} has '{cf_name}'"
+                )
+
+    # Check profile trash_quality_definition references a valid quality size
+    for slug, data in profile_files.items():
+        for qd_label, qd_tid in data.get("trash_quality_definition", {}).items():
+            if qd_tid not in quality_size_tids:
+                errors.append(
+                    f"[{app}] Profile '{slug}.json' trash_quality_definition"
+                    f" references trash_id '{qd_tid}' ({qd_label}) which doesn't"
+                    f" exist in {app} quality-size"
                 )
 
     return errors
