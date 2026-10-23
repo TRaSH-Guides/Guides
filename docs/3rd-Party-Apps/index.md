@@ -1,9 +1,11 @@
 # Third-Party Apps & Guides
 
-!!! info
-    This page only includes guides that follow the Guide guidelines, and apps that are somewhat related to what this guide covers and stands for. [Third-party Guide Sync Tools](/Guide-Sync/) are only listed here if they are approved and officially supported.
+::: info
+This page only includes guides that follow the Guide guidelines, and apps that are somewhat related to what this guide covers and stands for. [Third-party Guide Sync Tools](/Guide-Sync/) are only listed here if they are approved and officially supported.
 
-    If you have a suggestion or recommendation, or want to request that an app or guide be added, join our [Discord server](/discord) and post your request in #suggestions.
+If you have a suggestion or recommendation, or want to request that an app or guide be added, join our [Discord server](/discord) and post your request in #suggestions.
+
+:::
 
 ---
 

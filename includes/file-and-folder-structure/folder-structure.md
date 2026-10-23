@@ -1,15 +1,17 @@
 <!-- markdownlint-disable MD041-->
 ## Folder Structure
 
-!!! warning
+::: warning
 
-    It doesn't really matter which path you use for your media and appdata,
+It doesn't really matter which path you use for your media and appdata,
 
-    the only thing you should avoid is `/home`.
+the only thing you should avoid is `/home`.
 
-    Because user folders in `/home` are expected to have some restrictive permissions.
+Because user folders in `/home` are expected to have some restrictive permissions.
 
-    It just could end up creating a permissions mess, so it's better to just avoid entirely.
+It just could end up creating a permissions mess, so it's better to just avoid entirely.
+
+:::
 
 For this example we're going to make use of a share called `data`.
 
@@ -17,5 +19,5 @@ The `data` folder has sub-folders for `torrents` and `usenet` and each of these 
 
 _In this examples I'm using lower case on all folder on purpose, being Linux is case sensitive._
 
-{! include-markdown "./docker-tree-full.md" !}
+<!--@include: ./docker-tree-full.md-->
 <!-- markdownlint-enable MD041-->

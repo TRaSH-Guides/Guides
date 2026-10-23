@@ -5,5 +5,5 @@ Audio Description (AD) is an extra narration track that describes key visual det
 
 Some releases include Audio Description, marked as `WITH AD` or `AD`. Note: this is not the same as advertisements.
 
-For more information, visit the [Audio Description Wikipedia page](https://en.wikipedia.org/wiki/Audio_description){:target="_blank" rel="noopener noreferrer"}.
+For more information, visit the [Audio Description Wikipedia page](https://en.wikipedia.org/wiki/Audio_description).
 <!-- markdownlint-enable MD036 MD041-->

@@ -12,15 +12,17 @@ Examples:
 
 To accomplish this, you must change the order of the Quality Sources in your Quality Profile.
 
-!!! warning "Qualities higher in the list are more preferred even if not checked. Qualities within the same group are equal. Only checked qualities are wanted."
+::: warning Qualities higher in the list are more preferred even if not checked. Qualities within the same group are equal. Only checked qualities are wanted.
+
+:::
 
 ## Current Logic
 
 Here, you will see the current logic to understand how the possible downloads are compared.
 
-{! include-markdown "../../../includes/merge-quality/radarr-current-logic.md" !}
+<!--@include: ../../../includes/merge-quality/radarr-current-logic.md-->
 
-{! include-markdown "../../../includes/merge-quality/sonarr-current-logic.md" !}
+<!--@include: ../../../includes/merge-quality/sonarr-current-logic.md-->
 
 ## Change the Order of the Quality Sources
 
@@ -68,7 +70,9 @@ Don't forget to change the `Upgrade Until` to your preferred download Quality So
 
 ### Order matters even if not checked
 
-!!! warning "Qualities higher in the list are more preferred even if not checked. Qualities within the same group are equal. Only checked qualities are wanted."
+::: warning Qualities higher in the list are more preferred even if not checked. Qualities within the same group are equal. Only checked qualities are wanted.
+
+:::
 
 The order listed in the profile matters even if the Quality is not checked. For example, if you have a 2160p version but want the 720p version, Radarr will reject all 720p results because 1080p and 2160p are listed as higher than 720p even though 1080p was not checked.
 
@@ -82,7 +86,7 @@ Qualities at the top of the list will appear first in manual searches, so it's r
 
 ---
 
-[Source: Wiki Servarr - Radarr](https://wiki.servarr.com/radarr/settings#quality-profiles){:target="\_blank" rel="noopener noreferrer"}.
-[Source: Wiki Servarr - Sonarr](https://wiki.servarr.com/sonarr/settings#quality-profiles){:target="\_blank" rel="noopener noreferrer"}.
+[Source: Wiki Servarr - Radarr](https://wiki.servarr.com/radarr/settings#quality-profiles).
+[Source: Wiki Servarr - Sonarr](https://wiki.servarr.com/sonarr/settings#quality-profiles).
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

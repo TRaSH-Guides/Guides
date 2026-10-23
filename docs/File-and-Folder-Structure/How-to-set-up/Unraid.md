@@ -1,8 +1,10 @@
 # unRAID
 
-!!! warning "**DO NOT** use the template paths from unRAID or the suggested paths from SpaceInvader One"
+::: warning **DO NOT** use the template paths from unRAID or the suggested paths from SpaceInvader One
 
-    SpaceInvader One YouTube guides are great for learning how to start with unRAID or how to set up certain applications - and yes I did and still do use them.<br><br>The main reason why he's probably using those paths is because they are predefined in the templates.
+SpaceInvader One YouTube guides are great for learning how to start with unRAID or how to set up certain applications - and yes I did and still do use them.<br><br>The main reason why he's probably using those paths is because they are predefined in the templates.
+
+:::
 
 ---
 
@@ -10,54 +12,82 @@
 
 Make sure `Tunable (support Hard Links)` is enabled in your `Settings` => `Global Share Settings`.
 
-=== "unRAID 6.12"
-    ![Enable Hardlink support (New)](images/unraid-enable-hardlinks_612.png)
+::: tabs
 
-=== "unRAID 6.11"
-    ![Enable Hardlink support](images/unraid-enable-hardlinks.png)
+== unRAID 6.12
+
+![Enable Hardlink support (New)](images/unraid-enable-hardlinks_612.png)
+
+== unRAID 6.11
+
+![Enable Hardlink support](images/unraid-enable-hardlinks.png)
+
+:::
 
 ## Create the main share
 
-!!! warning "To get Hardlinks and Atomic-Moves working with unRAID,<br>You will need to make use of <u>**ONE**</u> share with subfolders."
+::: warning To get Hardlinks and Atomic-Moves working with unRAID,<br>You will need to make use of <u>**ONE**</u> share with subfolders.
+
+:::
 
 In this example, I'm using my setup and the preferred share `data`.
 
 Go to your dashboard and select `Shares` on the navigation bar, then choose `Add Share`.
 
-=== "unRAID 6.12 (No Cache)"
-    ![!unraid-main-share-array-6-12](images/unraid_main_share_array_612.png)
+::: tabs
 
-=== "unRAID 6.12 (Cache)"
-    ![!unraid-main-share-cache-6-12](images/unraid_main_share_cache_612.png)
+== unRAID 6.12 (No Cache)
 
-=== "unRAID 6.11"
-    ![!unraid-main-share](images/unraid-main-share.png)
+![!unraid-main-share-array-6-12](images/unraid_main_share_array_612.png)
+
+== unRAID 6.12 (Cache)
+
+![!unraid-main-share-cache-6-12](images/unraid_main_share_cache_612.png)
+
+== unRAID 6.11
+
+![!unraid-main-share](images/unraid-main-share.png)
+
+:::
 
 1. Use `data`
 1. Set up your share with the applicable settings.
 
-    === "unRAID 6.12 (No Cache)"
-        Select the `Primary storage` as `Array` (shown in the `No Cache` tab above).
+    ::: tabs
 
-    === "unRAID 6.12 (Cache)"
-        1. Select the `Primary storage` as `Cache` (shown in the `Cache` tab above).
-        1. Select the `Secondary storage` as `Array`
-        1. Make sure `Mover action` is set to `Cache -> Array`
+    == unRAID 6.12 (No Cache)
 
-    === "unRAID 6.11"
-        Choose `Yes` on step (2) (unRAID 6.11 tab above). If not using a cache drive, keep this option disabled.
+    Select the `Primary storage` as `Array` (shown in the `No Cache` tab above).
 
-    !!! info "Hardlinks will stay intact if you're using a cache"
+    == unRAID 6.12 (Cache)
+
+    1. Select the `Primary storage` as `Cache` (shown in the `Cache` tab above).
+    1. Select the `Secondary storage` as `Array`
+    1. Make sure `Mover action` is set to `Cache -> Array`
+
+    == unRAID 6.11
+
+    Choose `Yes` on step (2) (unRAID 6.11 tab above). If not using a cache drive, keep this option disabled.
+
+    :::
+
+    ::: info Hardlinks will stay intact if you're using a cache
+
+    :::
 
 1. Click on `ADD SHARE`
 
-!!! note
+::: info
 
-    Keep in mind, regarding the use of the cache drive, unRAID's integrated mover cannot move files that are in use, like seeding torrents. You will need to stop/pause the torrents so the mover can move the files from the cache to your array.
+Keep in mind, regarding the use of the cache drive, unRAID's integrated mover cannot move files that are in use, like seeding torrents. You will need to stop/pause the torrents so the mover can move the files from the cache to your array.
 
-    !!! tip "If you use qBittorrent you can automate the process by following the following Guide [HERE](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/){:target="_blank" rel="noopener noreferrer"}<br>If you use Deluge you can automate the process by following the following Guide [HERE](/Downloaders/Deluge/Tips/Unraid-Mover/){:target="_blank" rel="noopener noreferrer"}"
+::: tip If you use qBittorrent you can automate the process by following the following Guide [HERE](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/)<br>If you use Deluge you can automate the process by following the following Guide [HERE](/Downloaders/Deluge/Tips/Unraid-Mover/)
 
-    With Usenet, you won't have any issues.
+:::
+
+With Usenet, you won't have any issues.
+
+:::
 
 ---
 
@@ -65,7 +95,7 @@ Go to your dashboard and select `Shares` on the navigation bar, then choose `Add
 
 On the host (unRAID) you will need to add `/mnt/user` before it. **So `/mnt/user/data`**
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-full.md-->
 
 _I'm using lower-case on all folders on purpose, being Linux is case-sensitive._
 
@@ -75,7 +105,7 @@ You will need to create these subfolders yourself. You can do this in any way yo
 
 ### Fastest way to create the needed subfolders
 
-The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTY](https://putty.software/){:target="\_blank" rel="noopener noreferrer"} or use the terminal from the dashboard.
+The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTY](https://putty.software/) or use the terminal from the dashboard.
 These options will automatically create the required subfolders for your media library as well as your preferred download client(s).
 If you use both torrents and Usenet, use both commands.
 
@@ -98,7 +128,9 @@ When you need to fix your permissions, for example, after you have moved/copied 
 1. UnRaid's `Docker Safe New Perms` that  can be found under Tools in the Dashboard. (_This utility will restore standard unRaid permissions to all shares and files without affecting any APPDATA shares for Docker applications._)
 1. From the terminal by using the following two commands.
 
-    !!! danger "Only run this command if you strictly follow the guide's suggested folder and share setup."
+    ::: danger Only run this command if you strictly follow the guide's suggested folder and share setup.
+
+    :::
 
     ```bash
     chown -R nobody:users /mnt/user/data/
@@ -109,31 +141,35 @@ When you need to fix your permissions, for example, after you have moved/copied 
 
 ### Breakdown of the Folder Structure
 
-{! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/bad-path-suggestion.md-->
 
 ## Setting up the containers
 
-!!! tip "Create a custom Docker network"
-    Why would you want a custom Docker network?
+::: tip Create a custom Docker network
+Why would you want a custom Docker network?
 
-    A major benefit of having your Docker containers on the same custom Docker network is that they will be able to communicate with each other using their container names with the `.internal` domain (e.g., `radarr.internal`, `sonarr.internal`), rather than having to use IP addresses.
+A major benefit of having your Docker containers on the same custom Docker network is that they will be able to communicate with each other using their container names with the `.internal` domain (e.g., `radarr.internal`, `sonarr.internal`), rather than having to use IP addresses.
 
-    Using the `.internal` domain is recommended to avoid DNS conflicts and follows best practices for container networking.
+Using the `.internal` domain is recommended to avoid DNS conflicts and follows best practices for container networking.
 
-    !!! warning "Network Requirement"
-        The `.internal` domain will only resolve if all containers are attached to the same custom Docker network.
+::: warning Network Requirement
+The `.internal` domain will only resolve if all containers are attached to the same custom Docker network.
 
-    Unraid doesn't create a custom Docker network by default, you need to create one yourself.
+:::
 
-    - Open a terminal window and type:
+Unraid doesn't create a custom Docker network by default, you need to create one yourself.
 
-        ```none
-        docker network create your_uber_cool_network_name
-        ```
+- Open a terminal window and type:
 
-    - or watch the following video below on how to create a custom Docker network
+    ```txt
+    docker network create your_uber_cool_network_name
+    ```
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7fzBDCI8O2w?si=itGS624rC7jxD8ly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- or watch the following video below on how to create a custom Docker network
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7fzBDCI8O2w?si=itGS624rC7jxD8ly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+:::
 
 ---
 
@@ -151,12 +187,14 @@ Go to your dashboard and select the Docker container you want to edit, or, if yo
 
 1. Don't forget to remove all individual location mounts, for example `/movies`, `/tv`, `/books`, or `/downloads`, so you can avoid making mistakes by using them. You only need the `/config` mount, and then whichever paths/mounts/volumes are described in this guide.
 
-!!! info
-    unRAID makes it pretty clear which is the Host Path and Container Path.
+::: info
+unRAID makes it pretty clear which is the Host Path and Container Path.
 
-    `Container Path:` => The path that will be used from inside the container.
+`Container Path:` => The path that will be used from inside the container.
 
-    `Host Path:` => The actual/absolute path used on your unRAID Server (The Host).
+`Host Path:` => The actual/absolute path used on your unRAID Server (The Host).
+
+:::
 
 ---
 
@@ -170,11 +208,13 @@ qBittorrent, Deluge, ruTorrent
 
 `Host Path:` => `/mnt/user/data/torrents/`
 
-!!! info
+::: info
 
-    The reason why we use `/data/torrents/` for the torrent client is because it only needs access to the torrent data. In the torrent software settings, you’ll need to configure your categories/labels to utilize the right path for specific content. You can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
+The reason why we use `/data/torrents/` for the torrent client is because it only needs access to the torrent data. In the torrent software settings, you’ll need to configure your categories/labels to utilize the right path for specific content. You can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-torrents.md" !}
+:::
+
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-torrents.md-->
 
 ---
 
@@ -188,11 +228,13 @@ NZBGet or SABnzbd
 
 `Host Path:` => `/mnt/user/data/usenet/`
 
-!!! info
+::: info
 
-    The reason why we use `/data/usenet/` for the Usenet client is that it only needs access to the Usenet data. In the Usenet software settings, you’ll need to configure your paths to sort content into sub-folders like `/data/usenet/{tv|movies|music}`.
+The reason why we use `/data/usenet/` for the Usenet client is that it only needs access to the Usenet data. In the Usenet software settings, you’ll need to configure your paths to sort content into sub-folders like `/data/usenet/{tv|movies|music}`.
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-usenet.md" !}
+:::
+
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-usenet.md-->
 
 ---
 
@@ -206,11 +248,13 @@ Sonarr, Radarr and Lidarr
 
 `Host Path:` => `/mnt/user/data/`
 
-!!! info
+::: info
 
-    Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. hardlinks will work properly and any moves will be atomic, rather than copying and deleting.
+Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. hardlinks will work properly and any moves will be atomic, rather than copying and deleting.
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
+:::
+
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-full.md-->
 
 ---
 
@@ -224,11 +268,13 @@ Plex, Emby, JellyFin and Bazarr
 
 `Host Path:` => `/mnt/user/data/media/`
 
-!!! info
+::: info
 
-    Plex, Emby, JellyFin, and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV, and/or Music).
+Plex, Emby, JellyFin, and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV, and/or Music).
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-media.md" !}
+:::
+
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-media.md-->
 
 ---
 
@@ -242,16 +288,20 @@ Plex, Emby, JellyFin and Bazarr
 
 ## Video Tutorial
 
-!!! tip ""
+::: tip
 
-    !!! warning "Videos are generally outdated very fast, so make sure you always follow and double-check with the written guide."
+::: warning Videos are generally outdated very fast, so make sure you always follow and double-check with the written guide.
 
-    Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unRAID section.
+:::
 
-    The reason why I have this video at the end is because I want the users to ACTUALLY LEARN and UNDERSTAND why it's recommended to use this folder structure before going straight to a YouTube video.
+Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unRAID section.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AMcHsQJ7My0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+The reason why I have this video at the end is because I want the users to ACTUALLY LEARN and UNDERSTAND why it's recommended to use this folder structure before going straight to a YouTube video.
 
-    Check out other videos from IBRACORP [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AMcHsQJ7My0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
---8<-- "includes/support.md"
+Check out other videos from IBRACORP [HERE](https://www.youtube.com/c/IBRACORP/videos)
+
+:::
+
+<!--@include: ../../../includes/support.md-->

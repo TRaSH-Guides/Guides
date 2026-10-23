@@ -1,14 +1,16 @@
 # Synology
 
-!!! note
+::: info
 
-    Being I don't have a Synology myself and I kind of hate the Synology GUI for managing Docker containers, we're going to do this with the use of docker-compose through a terminal.
+Being I don't have a Synology myself and I kind of hate the Synology GUI for managing Docker containers, we're going to do this with the use of docker-compose through a terminal.
 
-    This is faster than the GUI and after installing, it shows up in the Docker GUI.
+This is faster than the GUI and after installing, it shows up in the Docker GUI.
 
-    Thanks to faxity for the initial compose that I used to create the Synology Guide.
+Thanks to faxity for the initial compose that I used to create the Synology Guide.
 
-    And a very big thanks to [Bokkoman](https://www.buymeacoffee.com/bokkoman){:target="_blank" rel="noopener noreferrer"} and [BZwart](https://github.com/BaukeZwart){:target="_blank" rel="noopener noreferrer"} that updated this Guide for DSM 7 and also offered their help on discord as Synology Support Team.
+And a very big thanks to [Bokkoman](https://www.buymeacoffee.com/bokkoman) and [BZwart](https://github.com/BaukeZwart) that updated this Guide for DSM 7 and also offered their help on discord as Synology Support Team.
+
+:::
 
 ## Introduction
 
@@ -25,35 +27,39 @@ This page will provide you with guidance on how to install several Docker images
 
 ### Automated Script
 
-??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [Click to show/hide]"
+::: details Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [Click to show/hide]
 
-    !!! Warning
+::: warning
 
-        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script can or will reset all personal changes made in the compose/env.
+Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script can or will reset all personal changes made in the compose/env.
 
-        The script is only tested on Synology DSM7 and higher.
+The script is only tested on Synology DSM7 and higher.
 
-        **:bangbang: We are not held liable if anything breaks on your system. Use at your own risk :bangbang:**
+**:bangbang: We are not held liable if anything breaks on your system. Use at your own risk :bangbang:**
 
-    To get this working you will need to enable terminal access (SSH) and home folders.
+:::
 
-    Be sure to delete current running Docker containers related to this guide (ie. *arr apps, download clients), and backup settings before you do.
+To get this working you will need to enable terminal access (SSH) and home folders.
 
-    To enable SSH on your Synology take a look [HERE](#ssh){:target="_blank" rel="noopener noreferrer"}.
+Be sure to delete current running Docker containers related to this guide (ie. *arr apps, download clients), and backup settings before you do.
 
-    To enable Home folders, go to `Control Panel` > `User & Group` > `Advanced` > `Enable user home service` at the bottom.
+To enable SSH on your Synology take a look [HERE](#ssh).
 
-    ![!home-folders](images/home-folders.png)
+To enable Home folders, go to `Control Panel` > `User & Group` > `Advanced` > `Enable user home service` at the bottom.
 
-    When you enable these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.
+![!home-folders](images/home-folders.png)
 
-    ```bash
-    curl -sL git.io/syno-script > ~/syno-script
-    ```
+When you enable these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.
 
-    ```bash
-    sudo bash ~/syno-script
-    ```
+```bash
+curl -sL git.io/syno-script > ~/syno-script
+```
+
+```bash
+sudo bash ~/syno-script
+```
+
+:::
 
 ## Install Docker
 
@@ -112,7 +118,7 @@ To enable terminal access, you need to enable SSH in the Synology Settings.
 
 ![!synology-control-panel](images/synology-ssh.png)
 
-Then use a program like [PuTTY](https://putty.software/){:target="\_blank" rel="noopener noreferrer"} or Powershell/Terminal to SSH into your Synology.
+Then use a program like [PuTTY](https://putty.software/) or Powershell/Terminal to SSH into your Synology.
 
 Enter the login information of a Synology user account that has admin privileges, as only members of the 'administrators' user group can use SSH.
 
@@ -137,9 +143,9 @@ Let's create a good folder structure on the shares we use (`docker` and `data`).
 The structure will look like this. You can of course edit this, but do this when you know what you are doing.
 _We are using lowercase on all folders on purpose, being Linux is case-sensitive._
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/docker-tree-full.md-->
 
-{! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
+<!--@include: ../../../includes/file-and-folder-structure/bad-path-suggestion.md-->
 
 To create the folder structure for your media library and also for your preferred download client, run one or both of the following commands:
 
@@ -170,7 +176,7 @@ You can add your own subfolders for your download client(s) using the command ab
 
 So your appdata folder will look like this.
 
-```none
+```txt
 docker
 └── appdata
     ├── radarr
@@ -196,7 +202,7 @@ For this, we need two files:
 
 We will start by downloading the `docker-compose.yml` file
 
-Download this [docker-compose.yml](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml){:target="\_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you can get your important stuff together. Or use the command below:
+Download this [docker-compose.yml](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml) to your `/volume1/docker/appdata` location so you can get your important stuff together. Or use the command below:
 
 ```bash
 wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
@@ -206,7 +212,7 @@ wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/doc
 
 This docker-compose file will have the following Docker containers included.
 
-```none
+```txt
     - Radarr
     - Sonarr
     - Bazarr (Subtitle searcher and downloader)
@@ -216,41 +222,47 @@ This docker-compose file will have the following Docker containers included.
 
 What's not included (and where are the download clients?).
 
-We didn't add a download client to it, because it depends on what you prefer (usenet/torrent) and which client you prefer. We have a repository [Repository](https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates){:target="\_blank" rel="noopener noreferrer"} on Github where we provide and maintain some templates that are ready to use with the main `docker-compose.yml`.
+We didn't add a download client to it, because it depends on what you prefer (usenet/torrent) and which client you prefer. We have a repository [Repository](https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates) on Github where we provide and maintain some templates that are ready to use with the main `docker-compose.yml`.
 
 The only thing you need to do is copy & paste what's inside the template file into the main `docker-compose.yml` on the bottom, the templates also have a command that you need to use to create the [appdata](#appdata) folder that we explained earlier. Without the appdata folder for the application, the creation of the container will fail because of the missing folder.
 
 Second, we will download the `.env` file
 
-Download this [.env](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env){:target="\_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location next to the `docker-compose.yml`. Or use this command:
+Download this [.env](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env) to your `/volume1/docker/appdata` location next to the `docker-compose.yml`. Or use this command:
 
 ```bash
 wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
 ```
 
-!!! warning
+::: warning
 
-    :bangbang: MAKE SURE THE FILE KEEPS THE ORIGINAL NAME `.env` WITH THE DOT BEFORE IT :bangbang:
+:bangbang: MAKE SURE THE FILE KEEPS THE ORIGINAL NAME `.env` WITH THE DOT BEFORE IT :bangbang:
+
+:::
 
 ---
 
 ### Changes and preparations
 
-!!! tip
+::: tip
 
-    If you need to edit docker-compose.yml or the .env file we advise to use [Notepad++](https://notepad-plus-plus.org/){:target="\_blank" rel="noopener noreferrer"} or [Visual Studio Code](https://code.visualstudio.com/){:target="\_blank" rel="noopener noreferrer"}
+If you need to edit docker-compose.yml or the .env file we advise to use [Notepad++](https://notepad-plus-plus.org/) or [Visual Studio Code](https://code.visualstudio.com/)
+
+:::
 
 The `.env` file we downloaded holds the variables/information you need to change for everything to work. I added explanations in the `.env` file.
 
 1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)
 1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)
 1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
-1. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="\_blank" rel="noopener noreferrer"})
+1. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones))
 1. Install and Create a task scheduler for Pullio, so your containers stay up to date.
 
-!!! info ""
+::: info
 
-    The `.env` holds more variables/information for other containers you don't need to remove those variables and will be only used when you install the other containers.
+The `.env` holds more variables/information for other containers you don't need to remove those variables and will be only used when you install the other containers.
+
+:::
 
 ---
 
@@ -284,7 +296,7 @@ At `Task Settings` tab, add the following line in the Run Command section:
 
 It can be frustrating to test the script if no Docker image updates are available, therefore you can run the command `sudo pullio` --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.
 
-More info about Pullio [HERE](https://hotio.dev/scripts/pullio/){:target="\_blank" rel="noopener noreferrer"}
+More info about Pullio [HERE](https://hotio.dev/scripts/pullio/)
 
 ---
 
@@ -294,9 +306,11 @@ Now we need to make sure that the newly created files and folders have the corre
 
 If you have an existing library, it is advised to move these to the new `data` share prior to running the commands below.
 
-!!! note
+::: info
 
-    If you're using a different user than `docker` (the user-generated in the beginning), then you need to change the `docker:users` part in the command below!!!
+If you're using a different user than `docker` (the user-generated in the beginning), then you need to change the `docker:users` part in the command below!!!
+
+:::
 
 ```bash
 sudo chown -R docker:users /volume1/data /volume1/docker
@@ -306,18 +320,22 @@ sudo chown -R docker:users /volume1/data /volume1/docker
 sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 ```
 
-!!! note
+::: info
 
-    If you move files from a different library into the newly created library afterward, you need to rerun these commands. !!!
+If you move files from a different library into the newly created library afterward, you need to rerun these commands. !!!
+
+:::
 
 ---
 
 ## Run the Docker Compose
 
-!!! tip
+::: tip
 
-    make sure you delete/remove all your existing Docker containers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
-    If you had previously installed apps, make a backup of their config folders or backup through the WebUI of the app.
+make sure you delete/remove all your existing Docker containers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
+If you had previously installed apps, make a backup of their config folders or backup through the WebUI of the app.
+
+:::
 
 If you have followed all the steps and your compose file is ready, run the following commands:
 
@@ -329,23 +347,25 @@ cd /volume1/docker/appdata
 sudo docker-compose up -d
 ```
 
-You will notice that all the images will be downloaded, and after that, the containers will be started. If you get an error then read what the error says and try to fix it (missing folders, permissions errors, etc). If you can't figure out the solution to your errors, join the guides-discord [here](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"} and create a support ticket.
+You will notice that all the images will be downloaded, and after that, the containers will be started. If you get an error then read what the error says and try to fix it (missing folders, permissions errors, etc). If you can't figure out the solution to your errors, join the guides-discord [here](https://trash-guides.info/discord) and create a support ticket.
 
 ---
 
 **If you need help setting up the applications, look at the [Examples](/File-and-Folder-Structure/Examples/) of how to set up the paths inside your applications.**
 
-!!! warning
+::: warning
 
-    If you need to make any changes, only edit the `docker-compose.yml` file. To activate the changes, [run the commands from here](#run-the-docker-compose) again.
+If you need to make any changes, only edit the `docker-compose.yml` file. To activate the changes, [run the commands from here](#run-the-docker-compose) again.
 
-    Any changes you do/did in the GUI will be reverted when you run the docker-compose command.
+Any changes you do/did in the GUI will be reverted when you run the docker-compose command.
 
-    Just don't use the GUI, only for information purposes !!!
+Just don't use the GUI, only for information purposes !!!
 
-{! include-markdown "../../../includes/file-and-folder-structure/docker-compose-commands.md" !}
+:::
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/file-and-folder-structure/docker-compose-commands.md-->
+
+<!--@include: ../../../includes/support.md-->
 
 ---
 
@@ -357,10 +377,12 @@ Due to some iptables configuration in DSM, you can get an incorrect IP reported 
 
 To fix this, you will need to add a Scheduled Task that executes at boot as the root user which will check if the rules exist, and, if not - re-add them.
 
-??? question "Task bash command - [Click to show/hide]"
+::: details Task bash command - [Click to show/hide]
 
-    ```bash
-    --8<-- "includes/file-and-folder-structure/docker-iptables-fix.sh"
-    ```
+```bash
+<!--@include: ../../../includes/file-and-folder-structure/docker-iptables-fix.sh-->
+```
 
---8<-- "includes/support.md"
+:::
+
+<!--@include: ../../../includes/support.md-->

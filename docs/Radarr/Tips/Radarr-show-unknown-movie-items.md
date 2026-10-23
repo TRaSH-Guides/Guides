@@ -12,4 +12,4 @@ Then on the top right click on `Options` and a new window will pop up and enable
 
 ![!Enable Show Unknown Movie Items](images/Radarr-show-unknown-movie-item.png)
 
---8<-- "includes/support.md"
+<!--@include: ../../../includes/support.md-->

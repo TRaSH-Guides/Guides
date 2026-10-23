@@ -2,11 +2,13 @@
 
 Here we will try to explain how you can manually update Custom Formats for Radarr v3+, With any changes from the guide or changes provided to you from other sources, without losing the scoring in your Quality Profile.
 
-!!! info "Keep in mind Custom Formats are made to fine-tune your Quality Profile.<br>Generally, quality trumps all"
+::: info Keep in mind Custom Formats are made to fine-tune your Quality Profile.<br>Generally, quality trumps all
+
+:::
 
 ## How to Copy/Paste the JSON
 
-The manual way is almost the same as the Import Custom Format way found [HERE](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}
+The manual way is almost the same as the Import Custom Format way found [HERE](/Radarr/Radarr-import-custom-formats/)
 
 ### In Radarr
 
@@ -20,7 +22,7 @@ The manual way is almost the same as the Import Custom Format way found [HERE](/
 
 ### Paste the Custom Format
 
-In the empty `Custom Format JSON` box (1) you just paste the `JSON` that you got from the [Custom Format Collection](/Radarr/Radarr-collection-of-custom-formats/){:target="\_blank" rel="noopener noreferrer"} or provided to you from other sources followed by the `Import` button (2).
+In the empty `Custom Format JSON` box (1) you just paste the `JSON` that you got from the [Custom Format Collection](/Radarr/Radarr-collection-of-custom-formats/) or provided to you from other sources followed by the `Import` button (2).
 
 ![cf-import-cf](images/cf-import-cf.png)
 
@@ -30,10 +32,14 @@ After selecting the `Import` button you will get a screen that has all the Custo
 
 ![cf-import-done](images/cf-import-done.png)
 
-!!! warning "The Import to update existing Custom Formats replaces the existing Custom Format, so all manual changes you did to it will be lost :warning:"
+::: warning The Import to update existing Custom Formats replaces the existing Custom Format, so all manual changes you did to it will be lost :warning:
+
+:::
 
 ### Guide sync tool
 
-!!! info "You can also use a [Guide sync tool](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"} to sync the Custom Formats or even the complete quality profile(s)."
+::: info You can also use a [Guide sync tool](/Guide-Sync/) to sync the Custom Formats or even the complete quality profile(s).
 
---8<-- "includes/support.md"
+:::
+
+<!--@include: ../../includes/support.md-->
