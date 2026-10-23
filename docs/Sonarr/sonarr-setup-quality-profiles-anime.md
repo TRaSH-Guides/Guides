@@ -202,7 +202,7 @@ After this has been done your profile should look as seen below. This is an exam
 
 ??? question "Should I run a single instance or dual instances?"
 
-    It's recommended to run two Sonarr instances (one for Anime and one for regular TV shows). This allows you to have completely separate quality profiles, custom formats, and settings optimised for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign series accordingly.
+    It's recommended to run two Sonarr instances (one for Anime and one for regular TV shows). This allows you to have completely separate quality profiles, custom formats, and settings optimized for each type of content without conflicts. However, if you prefer a single instance, you can create separate quality profiles and assign series accordingly.
 
 ---
 

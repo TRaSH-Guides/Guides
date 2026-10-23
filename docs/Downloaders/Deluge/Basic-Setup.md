@@ -22,7 +22,7 @@ Once you are here, you can edit your download settings in the `Downloads` sectio
 
 ### Download Path
 
-`Download to` is where you want you want Deluge to download your media. If you want to move your files upon completion - check the box and enter a path for that option as well.
+`Download to` is where you want Deluge to download your media. If you want to move your files upon completion - check the box and enter a path for that option as well.
 
 ### Saving .torrent Copies
 
