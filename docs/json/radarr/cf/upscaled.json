@@ -5,7 +5,7 @@
     "german": -35000,
     "german-anime": -35000
   },
-  "trash_regex": "https://regex101.com/r/MDx42o/latest",
+  "trash_regex": "https://regex101.com/r/JWGGD2/1",
   "name": "Upscaled",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -69,7 +69,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(AI[ ._-]?(Enhanced?|Remaster(ed)?)|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b"
       }
     }
   ]
