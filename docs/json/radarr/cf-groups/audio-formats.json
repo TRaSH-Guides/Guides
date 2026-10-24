@@ -2,6 +2,7 @@
     "name": "[Audio] Audio Formats",
     "trash_id": "9d5acd8f1da78dfbae788182f7605200",
     "trash_description": "Audio Formats, something you see mainly with Remuxes and UHD HQ Encodes. Add this only if you choose a Quality Profile that covers Remuxes and HQ UHD Encodes.",
+    "info": "**Why should I choose all Audio formats?**\n\n- You have a hardware media player device and an audio setup that supports **ALL** HD Audio (TrueHD, DTS-X, DTS-HD, etc).\n- You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.\n- You should add **ALL** the Audio formats - don't leave any of them out!\n- Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.\n\n_The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we prefer having the object metadata (Atmos) over lossless audio._",
     "default": "true",
     "custom_formats": [
         {
