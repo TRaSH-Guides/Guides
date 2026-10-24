@@ -2,6 +2,7 @@
   "trash_id": "e58cf4e090184db3b3d7c79c1a9e9b4a",
   "name": "Base Profile",
   "trash_description": "This is a base profile that we use for testing",
+  "trash_quality_definition": { "series": "bef99584217af744e404ed44a33af589" },
   "group": 99,
   "upgradeAllowed": true,
   "cutoff": "Bluray-2160p Remux",

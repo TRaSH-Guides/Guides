@@ -2,6 +2,7 @@
   "trash_id": "6fe5937e1dcc2269e23b49eb46dfe6d6",
   "name": "[German] Anime HD Bluray + WEB",
   "trash_description": "German Anime Quality Profile that covers:<br>- WEBDL: 720p, 1080p<br>- Bluray: 720p, 1080p",
+  "trash_quality_definition": { "anime": "387e6278d8e06083d813358762e0ac63" },
   "group": 11,
   "trash_score_set": "german-anime",
   "upgradeAllowed": true,

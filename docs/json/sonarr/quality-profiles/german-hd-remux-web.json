@@ -3,6 +3,7 @@
   "name": "[German] HD Remux + WEB",
   "trash_description": "German Quality Profile that covers:<br>- WEBDL: 1080p<br>- Remux: 1080p",
   "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-german-en/#hd-remux-web",
+  "trash_quality_definition": { "series": "bef99584217af744e404ed44a33af589" },
   "group": 11,
   "trash_score_set": "german",
   "upgradeAllowed": true,

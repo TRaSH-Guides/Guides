@@ -3,6 +3,7 @@
   "name": "WEB-1080p",
   "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p",
   "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/#web-1080p",
+  "trash_quality_definition": { "series": "bef99584217af744e404ed44a33af589" },
   "group": 1,
   "upgradeAllowed": true,
   "cutoff": "WEB 1080p",
