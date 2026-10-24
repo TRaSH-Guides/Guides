@@ -255,7 +255,7 @@ The quality-profiles hold the basic quality profile settings that you also see i
     - If the profile is for anime, start with `[Anime]` => example: `[Anime] Something`.
 - `trash_description` - Description of what the quality profile covers => example: `Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p`
     - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
-- `trash_quality_definition` - Suggested Quality Size. **(Optional, used by Sonarr v5 and newer)** => One entry that maps a readable label to the `trash_id` of a file in `docs/json/xxxarr/quality-size`. Sync apps match only the `trash_id`, so the label is for readability.
+- `trash_quality_definition` - Suggested Quality Size. **(Optional, used by Sonarr v5 and newer)** => One entry that maps a readable label to the `trash_id` of a file in `docs/json/sonarr/quality-size`. Sync apps match only the `trash_id`, so the label is for readability.
     - series: { "series": "bef99584217af744e404ed44a33af589" }
     - anime: { "anime": "387e6278d8e06083d813358762e0ac63" }
 
