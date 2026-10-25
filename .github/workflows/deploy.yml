@@ -48,6 +48,23 @@ jobs:
       - name: Install dependencies
         run: pip install -r docs/requirements.txt
 
+      # Built at deploy time instead of committed, so no PAT is needed to push to master.
+      # Pulled into docs/index.md via the CONTRIBUTORS.md snippet.
+      - name: Generate contributors
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            printf '## Contributors\n\n<div class="contributors" markdown="0">\n'
+            gh api "repos/${GITHUB_REPOSITORY}/contributors?per_page=100" --paginate --jq '
+              .[]
+              | select(.type == "User")
+              | select(.login | ascii_downcase | IN("actions-user", "mynameisbogdan", "imgbotapp") | not)
+              | "<a href=\"\(.html_url)\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"\(.avatar_url)&s=100\" alt=\"\(.login)\" loading=\"lazy\"><b>\(.login)</b></a>"'
+            printf '</div>\n'
+          } > CONTRIBUTORS.md
+          echo "Contributors: $(grep -c '^<a ' CONTRIBUTORS.md)"
+
       - name: Build mkdocs
         run: |
           mkdocs build --clean

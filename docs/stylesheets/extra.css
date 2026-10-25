@@ -100,3 +100,30 @@ td {
 [data-md-component="announce"] .md-banner__inner {
   display: none;
 }
+
+/* Contributors grid, generated at deploy time (see .github/workflows/deploy.yml) */
+.md-typeset .contributors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.5rem;
+}
+.md-typeset .contributors a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem;
+  background-color: #1e2129;
+  border: 1px solid #373a42;
+  color: #ffa500;
+  text-align: center;
+  word-break: break-word;
+}
+.md-typeset .contributors a:hover {
+  background-color: #303850;
+}
+.md-typeset .contributors img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
