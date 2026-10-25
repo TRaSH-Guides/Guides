@@ -1,3 +1,11 @@
+# 2026-10-25 03:41
+- [fix(radarr): 3D CF misses releases with underscore-joined tags](https://github.com/TRaSH-Guides/Guides/pull/2919)
+- [fix(radarr): Upscaled CF misses AI-REMASTER releases](https://github.com/TRaSH-Guides/Guides/pull/2920)
+- [feat(sonarr): Add quality size to the Sonarr profiles JSON to support Sonarr v5 for the 3rd-party guide-sync apps](https://github.com/TRaSH-Guides/Guides/pull/2917)
+- [fix(misc): Remove duplicated words and align spelling with en-US](https://github.com/TRaSH-Guides/Guides/pull/2922)
+- [fix(radarr): LQ misses HDS when Radarr parses the group as 10bit-HDS](https://github.com/TRaSH-Guides/Guides/pull/2921)
+- [feat(guide-sync): Add trash_quality_definition to quality profile schema](https://github.com/TRaSH-Guides/Guides/pull/2912)
+
 # 2026-10-18 03:33
 - [feat(radarr): Add NEW Custom Format `IMF` to `General Streaming Services`](https://github.com/TRaSH-Guides/Guides/pull/2911)
 
