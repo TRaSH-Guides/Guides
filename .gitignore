@@ -8,6 +8,3 @@ site/
 .DS_Store
 sync.ffs_db
 sync.ffs_lock
-
-# Generated at deploy time by .github/workflows/deploy.yml
-/CONTRIBUTORS.md
