@@ -127,3 +127,9 @@ td {
   height: 50px;
   border-radius: 50%;
 }
+
+/* Site-wide: wider content, never narrower than Material's 61rem default */
+.md-grid {
+  max-width: max(61rem, 75%);
+}
+
