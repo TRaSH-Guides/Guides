@@ -1,3 +1,7 @@
+# 2026-11-01 04:55
+- [feat(guide): Added apps and qui workflows to the Third-Party Apps & Guides section](https://github.com/TRaSH-Guides/Guides/pull/2918)
+- [feat(guide): Add Banned Release Groups page](https://github.com/TRaSH-Guides/Guides/pull/2908)
+
 # 2026-10-25 03:41
 - [fix(radarr): 3D CF misses releases with underscore-joined tags](https://github.com/TRaSH-Guides/Guides/pull/2919)
 - [fix(radarr): Upscaled CF misses AI-REMASTER releases](https://github.com/TRaSH-Guides/Guides/pull/2920)
