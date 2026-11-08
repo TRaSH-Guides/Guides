@@ -1,3 +1,6 @@
+# 2026-11-08 04:59
+- [feat(guide): Added PR numbers and updated descriptions to the public Banned RlsGrps list](https://github.com/TRaSH-Guides/Guides/pull/2929)
+
 # 2026-11-01 04:55
 - [feat(guide): Added apps and qui workflows to the Third-Party Apps & Guides section](https://github.com/TRaSH-Guides/Guides/pull/2918)
 - [feat(guide): Add Banned Release Groups page](https://github.com/TRaSH-Guides/Guides/pull/2908)
