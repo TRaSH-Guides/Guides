@@ -34,15 +34,6 @@
       }
     },
     {
-      "name": "FLORiX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FLORiX)$"
-      }
-    },
-    {
       "name": "MULTiPLEX",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
