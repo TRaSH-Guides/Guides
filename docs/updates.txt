@@ -1,3 +1,6 @@
+# 2026-11-15 05:24
+- [feat(starr-german): Move florix to web tier 03](https://github.com/TRaSH-Guides/Guides/pull/2935)
+
 # 2026-11-08 04:59
 - [feat(guide): Added PR numbers and updated descriptions to the public Banned RlsGrps list](https://github.com/TRaSH-Guides/Guides/pull/2929)
 
