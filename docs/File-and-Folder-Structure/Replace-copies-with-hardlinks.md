@@ -4,7 +4,7 @@ Have you recently switched to a setup that supports hardlinks and Instant Moves 
 
 If your operating system supports it, you can use [jdupes](https://codeberg.org/jbruchon/jdupes/releases){:target="_blank" rel="noopener noreferrer"} or [fclones](https://github.com/pkolaczk/fclones){:target="_blank" rel="noopener noreferrer"}.
 
-The latest binaries are available for Windows at the links above. For Mac or Linux, you can use a package manager like [homebrew](https://formulae.brew.sh/formula/jdupes){:target="_blank" rel="noopener noreferrer"}, `apt`, or `pacman` to install the latest version.
+The latest binaries are available for Windows at the links above. For Mac or Linux, you can use a package manager like [homebrew](https://formulae.brew.sh/formula/jdupes){:target="_blank" rel="noopener noreferrer"}, `apt`, or `pacman`. Check the version you get: `apt` has no fclones package, and its jdupes may have the broken hash database described below.
 
 ## Jdupes
 
@@ -23,6 +23,8 @@ The latest binaries are available for Windows at the links above. For Mac or Lin
     ```bash
     -y "/mnt/user/appdata/scripts/media_hash.db"
     ```
+
+    **Note:** The hash database is broken in jdupes 1.28.0 to 1.31.1. Use 1.31.2 or newer, and check your version with `jdupes -v`.
 
     **Note:** We don't recommend using `jdupes` on cloud-based setups.
 
@@ -86,16 +88,21 @@ There are several ways to run fclones. We're only going to show the option we've
 
 ### Basic fclones Usage
 
-Here's the basic command structure:
+Here's the basic command structure. `fclones group` writes a list of duplicates, then `fclones link` reads that list and replaces the copies with hardlinks:
 
 ```bash
-fclones [options] DIR1 DIR2
+fclones group [options] DIR1 DIR2 > dupes.txt
+fclones link < dupes.txt
 ```
 
 ### Usage Example
 
+The `--dry-run` line shows what would change without changing anything.
+
 ```bash
-fclones --one-fs --hidden --follow-links "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+fclones group --one-fs --hidden --follow-links "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies" > dupes.txt
+fclones link --dry-run < dupes.txt
+fclones link < dupes.txt
 ```
 
 ### fclones on unRAID
