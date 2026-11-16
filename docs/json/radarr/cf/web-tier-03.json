@@ -28,6 +28,15 @@
       }
     },
     {
+      "name": "FIEND",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FIEND)$"
+      }
+    },
+    {
       "name": "GNOMiSSiON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
