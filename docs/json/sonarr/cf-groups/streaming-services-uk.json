@@ -36,6 +36,7 @@
     ],
     "quality_profiles": {
         "include": {
+            "Remux + WEB 1080p": "fe9470e577c300a5ad9a3274f6d1cdf2",
             "Remux + WEB 2160p": "76a5053bdb2d1e4a8f16a69a37d46c12",
             "Remux 2160p (Alternative)": "361717d531db5a6002e0f547ace46551",
             "Remux 2160p (Combined)": "911df0e05a395c19d8b3efc76a7467c1",
