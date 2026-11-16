@@ -110,6 +110,15 @@
       "fields": {
         "value": "^(sbR)$"
       }
+    },
+    {
+      "name": "SoLaR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SoLaR)$"
+      }
     }
   ]
 }

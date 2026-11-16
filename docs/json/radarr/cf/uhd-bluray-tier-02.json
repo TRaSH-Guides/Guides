@@ -73,6 +73,15 @@
       "fields": {
         "value": "^(RandomBytes)$"
       }
+    },
+    {
+      "name": "SoLaR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SoLaR)$"
+      }
     }
   ]
 }
