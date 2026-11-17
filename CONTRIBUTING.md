@@ -414,9 +414,20 @@ The macro is `render_profile_cfs(app, profile_name, ...)`, defined in `main.py` 
 [[ render_profile_cfs('radarr', 'Remux + WEB 2160p') ]]
 ```
 
-`profile_name` must match the exact `name` field of the target `docs/json/{app}/quality-profiles/<slug>.json` file. Typos are caught by `scripts/validate-quality-profiles.py` at pre-commit time; an unknown `app` or a `profile_name` that matches no cf-group also raises a build error at `mkdocs build` time (the macros plugin's `on_error_fail` is enabled), so a typo can't silently drop a profile's tables.
+`profile_name` must match the exact `name` field of the target `docs/json/{app}/quality-profiles/<slug>.json` file. Typos are caught by `scripts/validate-quality-profiles.py` at pre-commit time; an unknown `app` or a `profile_name` with no custom formats also raises a build error at `mkdocs build` time (the macros plugin's `on_error_fail` is enabled), so a typo can't silently drop a profile's tables.
 
-For each cf-group whose `quality_profiles.include` contains `profile_name`, the macro emits:
+When one guide section covers several profiles (the French VOSTFR, MULTi.VF, and MULTi.VO variants), pass a list of profile names. A table whose scores differ between the profiles gets one score column per profile, labelled from the bracketed part of the name; any other table keeps the single `Score` column:
+
+```jinja
+[[ render_profile_cfs('radarr', ['[French VOSTFR] HD Bluray + WEB', '[French MULTi.VF] HD Bluray + WEB', '[French MULTi.VO] HD Bluray + WEB']) ]]
+```
+
+The macro selects Custom Formats the same way sync tools do:
+
+- **Required** = the profile's `formatItems` (one `[Required] Profile Custom Formats` table), plus the `required: true` and `default: true` CFs of every cf-group whose `quality_profiles.include` contains `profile_name` and that has `"default": "true"`.
+- **Optional** = every other CF of those groups, and all CFs of the attached groups that are not default.
+
+For each such cf-group the macro emits:
 
 ```markdown
 ??? abstract "<group.name> - [Click to show/hide]"
@@ -431,7 +442,7 @@ For each cf-group whose `quality_profiles.include` contains `profile_name`, the 
 
 A cf-group may set an optional top-level `info` field: a markdown string rendered above the table, inside the same collapsible admonition. Use it for narrative guidance the table itself can't convey, e.g. `docs/json/{radarr,sonarr}/cf-groups/audio-formats.json` and `hdr-formats-hdr.json` carry a "why should I choose this" block. It's the only supported way to add custom guide content above a generated group table; the field is documented in `schemas/cf-groups.schema.json`.
 
-Each CF row's `<score>` comes from `cf.trash_scores[<profile's trash_score_set>]`, falling back to `cf.trash_scores.default`, and finally `0` for informational CFs with no `trash_scores`. Required vs optional bucketing is driven by the cf-group's top-level `default` flag (`"true"` → required, anything else → optional), unless an override flips it (see below).
+Each CF row's `<score>` comes from `cf.trash_scores[<profile's trash_score_set>]`, falling back to `cf.trash_scores.default`, and finally `0` for informational CFs with no `trash_scores`. A CF that appears in more than one table is only listed in the first one. Bucketing follows the data (see above) unless an override changes it (see below).
 
 ### Per-profile overrides
 
@@ -446,17 +457,7 @@ The data layer (`cf-groups/*.json`, `cf/*.json`) is the canonical source of trut
     "profile_overrides": {
         "remux-web-2160p": {
             "profile_name": "Remux + WEB 2160p",
-            "add_groups": ["required-repack-proper"],
-            "exclude_groups": [],
-            "force_required": [],
-            "force_optional": ["audio-formats", "optional-golden-rule-uhd"],
-            "include_cfs": {
-                "release-groups-hq": [
-                    "remux-tier-01", "remux-tier-02", "remux-tier-03",
-                    "web-tier-01", "web-tier-02", "web-tier-03"
-                ]
-            },
-            "exclude_cfs": {}
+            "force_optional": ["audio-formats", "optional-golden-rule-uhd"]
         }
     }
 }
@@ -468,8 +469,9 @@ The data layer (`cf-groups/*.json`, `cf/*.json`) is the canonical source of trut
 | `add_groups[]` | Force-attach a cf-group to this profile even when its own `quality_profiles.include` map doesn't list the profile. Useful for cf-groups currently mapped only to `Base Profile`. |
 | `exclude_groups[]` | Drop a cf-group on this profile even if its `include` map lists it. |
 | `force_required[]` / `force_optional[]` | Override the cf-group's top-level `default` flag for guide rendering only. The data-layer flag is untouched, so sync-tool behavior is unchanged. |
-| `include_cfs{<group>: [...]}` | Per-cf-group CF whitelist. Renders only the listed CFs from that group on this profile. Used for `release-groups-hq` to show only the tier subset relevant to each profile (Remux profiles see Remux + WEB tiers, HD Bluray profiles see HD Bluray + WEB tiers, etc.). |
+| `include_cfs{<group>: [...]}` | Per-cf-group CF whitelist. Renders only the listed CFs from that group on this profile. |
 | `exclude_cfs{<group>: [...]}` | Per-cf-group CF blacklist; inverse of `include_cfs`. |
+| `documented_elsewhere[]` | CF filename slugs that a hand-written include in the same guide section already documents (with its own notes). The macro omits them from every generated table for this profile so a CF is never listed twice. Remove a slug when you delete the include that documents it. |
 
 **Reverting a per-profile decision** is a one-line edit: delete the override field, and the macro falls back to whatever the data layer says. No data edits, no behavioural change for sync tools.
 
@@ -477,11 +479,11 @@ The data layer (`cf-groups/*.json`, `cf/*.json`) is the canonical source of trut
 
 1. Drop `docs/json/{app}/cf-groups/<group-slug>.json` with the schema documented in [cf-groups](#cf-groups).
 2. List every quality-profile name the group should appear on in `quality_profiles.include`. This is the macro's primary filter.
-3. Set the top-level `default` to `"true"` if it should render under **Required** (and be default-on for sync tools), otherwise omit the field.
+3. Set the top-level `default` to `"true"` if the group should be on by default for sync tools. Only its `required: true` and `default: true` CFs then render under **Required**; omit the field for an opt-in group, which renders entirely under **Optional**.
 4. Run `pre-commit run -a`. The validators ensure every referenced CF and profile name resolves.
 5. Build the site (`mkdocs build --strict`) — the group will surface on every guide page whose profile name you listed.
 
-If the rendered required/optional placement is wrong for one specific profile, add a `force_required` / `force_optional` entry in `groups.json` `profile_overrides` for that profile rather than flipping the cf-group's `default` flag (which would also change sync-tool behavior).
+If the rendered placement is wrong for one specific profile, fix the data (the profile's `formatItems`, or the cf-group's `default`/`required` flags) so guide and sync tools agree. Use a `force_required` / `force_optional` entry in `groups.json` `profile_overrides` only for a guide-only exception.
 
 ### "Pick a profile" decision flowcharts
 

@@ -265,6 +265,13 @@ def validate_app(app: str) -> list[str]:
                             f" references cf-group '{cf_group_slug}' that doesn't"
                             " exist in cf-groups/"
                         )
+            for cf_slug in override.get("documented_elsewhere") or []:
+                if cf_slug not in cf_slugs:
+                    errors.append(
+                        f"[{app}] groups.json profile_overrides['{slug}']"
+                        f".documented_elsewhere references CF '{cf_slug}'"
+                        " that doesn't exist in cf/"
+                    )
             for cf_field in ("include_cfs", "exclude_cfs"):
                 cf_filter = override.get(cf_field) or {}
                 if not isinstance(cf_filter, dict):

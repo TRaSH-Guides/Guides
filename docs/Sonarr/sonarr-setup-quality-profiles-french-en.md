@@ -113,7 +113,7 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
 
-[[ render_profile_cfs('sonarr', '[French MULTi.VO] HD Bluray + WEB (1080p)') ]]
+[[ render_profile_cfs('sonarr', ['[French VOSTFR] HD Bluray + WEB (1080p)', '[French MULTi.VF] HD Bluray + WEB (1080p)', '[French MULTi.VO] HD Bluray + WEB (1080p)']) ]]
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-en.md" !}
 
@@ -138,7 +138,7 @@ Note: The `Audio Formats` Custom Formats aren't used in the profile, as WEB-DL d
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
 
-[[ render_profile_cfs('sonarr', '[French MULTi.VO] UHD Bluray + WEB (2160p)') ]]
+[[ render_profile_cfs('sonarr', ['[French VOSTFR] UHD Bluray + WEB (2160p)', '[French MULTi.VF] UHD Bluray + WEB (2160p)', '[French MULTi.VO] UHD Bluray + WEB (2160p)']) ]]
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-en.md" !}
 

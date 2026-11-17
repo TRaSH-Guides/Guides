@@ -118,7 +118,7 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
-[[ render_profile_cfs('radarr', '[French MULTi.VO] HD Bluray + WEB') ]]
+[[ render_profile_cfs('radarr', ['[French VOSTFR] HD Bluray + WEB', '[French MULTi.VF] HD Bluray + WEB', '[French MULTi.VO] HD Bluray + WEB']) ]]
 
 Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.
 
@@ -148,7 +148,7 @@ Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB prof
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
-[[ render_profile_cfs('radarr', '[French MULTi.VO] HD Remux (1080p)') ]]
+[[ render_profile_cfs('radarr', ['[French VOSTFR] HD Remux (1080p)', '[French MULTi.VF] HD Remux (1080p)', '[French MULTi.VO] HD Remux (1080p)']) ]]
 
 ---
 
@@ -175,7 +175,7 @@ Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB prof
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
-[[ render_profile_cfs('radarr', '[French MULTi.VO] UHD Bluray + WEB') ]]
+[[ render_profile_cfs('radarr', ['[French VOSTFR] UHD Bluray + WEB', '[French MULTi.VF] UHD Bluray + WEB', '[French MULTi.VO] UHD Bluray + WEB']) ]]
 
 ---
 
@@ -204,7 +204,7 @@ Note: The `Audio Formats` Custom Formats aren't used in the HD Bluray + WEB prof
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
-[[ render_profile_cfs('radarr', '[French MULTi.VO] UHD Remux (2160p)') ]]
+[[ render_profile_cfs('radarr', ['[French VOSTFR] UHD Remux (2160p)', '[French MULTi.VF] UHD Remux (2160p)', '[French MULTi.VO] UHD Remux (2160p)']) ]]
 
 ---
 

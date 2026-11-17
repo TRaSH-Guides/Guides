@@ -4,8 +4,11 @@ Builds lookup tables from `docs/json/{radarr,sonarr}/` and registers the
 `render_profile_cfs` macro used by the quality-profile guides to auto-populate
 their required/optional CF tables from `cf-groups/*.json`.
 
-The macro filters cf-groups by `quality_profiles.include[<profile name>]` and
-renders a collapsible admonition per group with a markdown table of the CFs.
+Required CFs are the profile's `formatItems` plus the `required` and `default`
+CFs of each default-on cf-group that lists the profile in
+`quality_profiles.include`. Everything else in an attached group is optional,
+mirroring how Recyclarr selects CFs. Each bucket renders as a collapsible
+admonition per group with a markdown table of the CFs.
 A group may set an optional `info` field (markdown string) to render narrative
 text above its table, e.g. the Audio Formats / HDR Formats groups (see
 `schemas/cf-groups.schema.json`).
@@ -17,6 +20,7 @@ Per-profile overrides (skip a group, force required/optional) live in
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -27,6 +31,7 @@ COLLECTION_URL = {
     "sonarr": "/Sonarr/sonarr-collection-of-custom-formats/",
 }
 BASE_PROFILE_NAME = "Base Profile"
+PROFILE_CFS_TITLE = "[Required] Profile Custom Formats"
 
 
 def _load_dir(directory: Path) -> dict[str, dict[str, Any]]:
@@ -56,34 +61,52 @@ def _resolve_score(cf: dict[str, Any], score_set: str) -> str:
     return "0"
 
 
+def _is_true(value: Any) -> bool:
+    return str(value).lower() == "true"
+
+
+def _variant_label(profile_name: str) -> str:
+    """`[French MULTi.VF] HD Remux` -> `MULTi.VF`, used as a score column label."""
+    match = re.match(r"\[(?:French )?([^\]]+)\]", profile_name)
+    return match.group(1) if match else profile_name
+
+
 def _render_table(
     app: str,
-    group: dict[str, Any],
+    rows: list[tuple[dict[str, Any], dict[str, str]]],
     cf_index: dict[str, str],
     cfs_by_slug: dict[str, dict[str, Any]],
-    score_set: str,
-    include_slugs: set[str] | None = None,
-    exclude_slugs: set[str] | None = None,
 ) -> list[str]:
-    lines = [
-        "    | Custom Format | Score | Trash ID |",
-        "    | --- | :---: | --- |",
-    ]
-    for entry in group.get("custom_formats", []):
+    """Render CF rows as a table. `rows` pairs each CF entry with its score per
+    profile variant. One `Score` column is used unless the variants disagree (or
+    a variant lacks the CF), in which case each variant gets its own column."""
+    labels = list(rows[0][1]) if rows else []
+    per_variant = len(labels) > 1 and any(
+        len(scores) != len(labels) or len(set(scores.values())) > 1
+        for _, scores in rows
+    )
+    if per_variant:
+        head = ["Custom Format"] + [f"{label} Score" for label in labels] + ["Trash ID"]
+        align = ["---"] + [":---:"] * len(labels) + ["---"]
+    else:
+        head = ["Custom Format", "Score", "Trash ID"]
+        align = ["---", ":---:", "---"]
+    lines = ["    | " + " | ".join(head) + " |", "    | " + " | ".join(align) + " |"]
+    for entry, scores in rows:
         tid = entry.get("trash_id", "")
         slug = cf_index.get(tid)
-        if include_slugs is not None and slug not in include_slugs:
-            continue
-        if exclude_slugs and slug in exclude_slugs:
-            continue
         if not slug:
-            lines.append(f"    | {entry.get('name', '?')} | ? | `{tid}` (unresolved) |")
+            cells = [entry.get("name", "?")] + ["?"] * (len(labels) if per_variant else 1)
+            lines.append("    | " + " | ".join(cells + [f"`{tid}` (unresolved)"]) + " |")
             continue
         cf = cfs_by_slug.get(slug, {})
         name = cf.get("name", entry.get("name", slug))
-        link = _cf_slug_link(app, slug)
-        score = _resolve_score(cf, score_set)
-        lines.append(f"    | [{name}]({link}) | {score} | {cf.get('trash_id', tid)} |")
+        link = f"[{name}]({_cf_slug_link(app, slug)})"
+        if per_variant:
+            cells = [scores.get(label, "-") for label in labels]
+        else:
+            cells = [next(iter(scores.values()))]
+        lines.append("    | " + " | ".join([link] + cells + [cf.get("trash_id", tid)]) + " |")
     return lines
 
 
@@ -95,47 +118,45 @@ def _render_info(info: str) -> list[str]:
     return lines
 
 
-def _render_group(
+def _render_section(
     app: str,
-    slug: str,
-    group: dict[str, Any],
+    section: dict[str, Any],
     cf_index: dict[str, str],
     cfs_by_slug: dict[str, dict[str, Any]],
-    score_set: str,
-    include_slugs: set[str] | None = None,
-    exclude_slugs: set[str] | None = None,
 ) -> str:
-    title = group.get("name", slug)
-    body = [f'??? abstract "{title} - [Click to show/hide]"', ""]
-    info = group.get("info")
-    if info:
-        body.extend(_render_info(info))
-    body.extend(
-        _render_table(
-            app,
-            group,
-            cf_index,
-            cfs_by_slug,
-            score_set,
-            include_slugs,
-            exclude_slugs,
-        )
-    )
+    body = [f'??? abstract "{section["title"]} - [Click to show/hide]"', ""]
+    if section["info"]:
+        body.extend(_render_info(section["info"]))
+    body.extend(_render_table(app, section["rows"], cf_index, cfs_by_slug))
     body.append("")
     return "\n".join(body)
 
 
-def _bucket(
+def _split_entries(
     group: dict[str, Any],
-    slug: str,
-    force_required: set[str],
-    force_optional: set[str],
-) -> str:
+    forced: str | None,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Split a group's CFs into (required, optional) the way sync tools select them.
+
+    In a default-on group only `required: true` and `default: true` CFs are always
+    enabled; the rest are opt-in. A group that is not default-on is entirely
+    opt-in. `forced` ("required" or "optional") overrides this for the whole group.
+    """
+    entries = group.get("custom_formats", [])
+    if forced == "required":
+        return list(entries), []
+    if forced == "optional" or not _is_true(group.get("default")):
+        return [], list(entries)
+    always = [e for e in entries if _is_true(e.get("required")) or _is_true(e.get("default"))]
+    return always, [e for e in entries if e not in always]
+
+
+def _forced(slug: str, force_required: set[str], force_optional: set[str]) -> str | None:
     if slug in force_required:
         return "required"
     if slug in force_optional:
         return "optional"
-    return "required" if group.get("default") == "true" else "optional"
+    return None
 
 
 def _profile_score_set(
@@ -219,10 +240,84 @@ def define_env(env):
         else:
             profile_groups_raw[app] = []
 
+    def build_plan(
+        app: str,
+        profile_name: str,
+        exclude_groups: list[str] | None,
+        add_groups: list[str] | None,
+        force_required: list[str] | None,
+        force_optional: list[str] | None,
+    ) -> dict[str, list[dict[str, Any]]]:
+        """Select the CFs a profile enables, split into required and optional.
+
+        Required: the profile's `formatItems`, plus the `required` and `default`
+        CFs of each default-on cf-group that lists the profile. Optional: the
+        rest of those groups and every CF of the other attached groups.
+        """
+        data_overrides = _read_overrides(profile_groups_raw[app], profile_name)
+        exclude = set(data_overrides.get("exclude_groups") or []) | set(exclude_groups or [])
+        add = set(data_overrides.get("add_groups") or []) | set(add_groups or [])
+        force_req = set(data_overrides.get("force_required") or []) | set(force_required or [])
+        force_opt = set(data_overrides.get("force_optional") or []) | set(force_optional or [])
+        include_cfs = {
+            k: set(v) for k, v in (data_overrides.get("include_cfs") or {}).items()
+        }
+        exclude_cfs = {
+            k: set(v) for k, v in (data_overrides.get("exclude_cfs") or {}).items()
+        }
+        documented = set(data_overrides.get("documented_elsewhere") or [])
+
+        score_set = _profile_score_set(profiles_by_name[app], profile_name)
+        shown: set[str | None] = set()
+
+        def rows_for(slug: str, entries: list[dict[str, Any]]) -> list:
+            keep = include_cfs.get(slug)
+            drop = exclude_cfs.get(slug, set())
+            rows = []
+            for entry in entries:
+                cf_slug = cf_index[app].get(entry.get("trash_id", ""))
+                if keep is not None and cf_slug not in keep:
+                    continue
+                if cf_slug in drop or cf_slug in documented or cf_slug in shown:
+                    continue
+                score = _resolve_score(cfs[app].get(cf_slug, {}), score_set)
+                rows.append((entry, score))
+            return rows
+
+        plan: dict[str, list[dict[str, Any]]] = {"required": [], "optional": []}
+
+        def emit(bucket: str, title: str, info: str | None, rows: list) -> None:
+            if rows:
+                shown.update(cf_index[app].get(entry.get("trash_id", "")) for entry, _ in rows)
+                plan[bucket].append({"title": title, "info": info, "rows": rows})
+
+        profile = profiles_by_name[app].get(profile_name) or {}
+        format_items = [
+            {"name": name, "trash_id": tid}
+            for name, tid in (profile.get("formatItems") or {}).items()
+        ]
+        emit("required", PROFILE_CFS_TITLE, None, rows_for("", format_items))
+
+        split = [
+            (slug, group, _split_entries(group, _forced(slug, force_req, force_opt)))
+            for slug, group in _collect_groups(cf_groups[app], profile_name, exclude, add)
+        ]
+        with_info: set[str] = set()
+        for slug, group, (always, _opt) in split:
+            rows = rows_for(slug, always)
+            if rows and group.get("info"):
+                with_info.add(slug)
+            emit("required", group.get("name", slug), group.get("info"), rows)
+        for slug, group, (_always, opt) in split:
+            # A group's `info` renders once, above its first table.
+            info = None if slug in with_info else group.get("info")
+            emit("optional", group.get("name", slug), info, rows_for(slug, opt))
+        return plan
+
     @env.macro
     def render_profile_cfs(
         app: str,
-        profile_name: str,
+        profile_name: str | list[str],
         exclude_groups: list[str] | None = None,
         add_groups: list[str] | None = None,
         force_required: list[str] | None = None,
@@ -232,10 +327,12 @@ def define_env(env):
     ) -> str:
         """Render required + optional CF tables for `profile_name` in `app`.
 
-        Filters `docs/json/{app}/cf-groups/*.json` by `quality_profiles.include`.
         Per-call overrides supplement the data-driven overrides from
         `quality-profile-groups/groups.json` `profile_overrides`.
 
+        - `profile_name` may be a list of profiles that share one guide section
+            (e.g. the French VOSTFR / MULTi.VF / MULTi.VO variants). Tables whose
+            scores differ between them get one score column per profile.
         - `only="required"` / `only="optional"` renders just one bucket.
         - `emit_headers=False` suppresses the bold section labels when the
             caller (e.g. the German guide) manages headers itself.
@@ -245,60 +342,51 @@ def define_env(env):
                 f"render_profile_cfs: unknown app '{app}' (expected one of {APPS})"
             )
 
-        data_overrides = _read_overrides(profile_groups_raw[app], profile_name)
-        exclude = set(data_overrides.get("exclude_groups") or [])
-        add = set(data_overrides.get("add_groups") or [])
-        force_req = set(data_overrides.get("force_required") or [])
-        force_opt = set(data_overrides.get("force_optional") or [])
-        include_cfs = {
-            k: set(v) for k, v in (data_overrides.get("include_cfs") or {}).items()
-        }
-        exclude_cfs = {
-            k: set(v) for k, v in (data_overrides.get("exclude_cfs") or {}).items()
-        }
-        if exclude_groups:
-            exclude.update(exclude_groups)
-        if add_groups:
-            add.update(add_groups)
-        if force_required:
-            force_req.update(force_required)
-        if force_optional:
-            force_opt.update(force_optional)
-
-        score_set = _profile_score_set(profiles_by_name[app], profile_name)
-
-        groups = _collect_groups(cf_groups[app], profile_name, exclude, add)
-
-        required: list[str] = []
-        optional: list[str] = []
-        for slug, group in groups:
-            bucket = _bucket(group, slug, force_req, force_opt)
-            rendered = _render_group(
-                app,
-                slug,
-                group,
-                cf_index[app],
-                cfs[app],
-                score_set,
-                include_slugs=include_cfs.get(slug),
-                exclude_slugs=exclude_cfs.get(slug),
+        names = [profile_name] if isinstance(profile_name, str) else list(profile_name)
+        labels = [_variant_label(n) for n in names] if len(names) > 1 else [""]
+        plans = [
+            build_plan(
+                app, n, exclude_groups, add_groups, force_required, force_optional
             )
-            (required if bucket == "required" else optional).append(rendered)
+            for n in names
+        ]
+
+        rendered: dict[str, list[str]] = {}
+        for bucket in ("required", "optional"):
+            merged: dict[str, dict[str, Any]] = {}
+            for label, plan in zip(labels, plans):
+                for section in plan[bucket]:
+                    target = merged.setdefault(
+                        section["title"],
+                        {"title": section["title"], "info": section["info"], "rows": {}},
+                    )
+                    for entry, score in section["rows"]:
+                        row = target["rows"].setdefault(entry.get("trash_id", ""), (entry, {}))
+                        row[1][label] = score
+            rendered[bucket] = [
+                _render_section(
+                    app,
+                    {**sec, "rows": list(sec["rows"].values())},
+                    cf_index[app],
+                    cfs[app],
+                )
+                for sec in merged.values()
+            ]
 
         chunks: list[str] = []
-        if required and only != "optional":
+        if rendered["required"] and only != "optional":
             if emit_headers:
                 chunks.append("**The following Custom Formats are required:**\n")
-            chunks.extend(required)
-        if optional and only != "required":
+            chunks.extend(rendered["required"])
+        if rendered["optional"] and only != "required":
             if emit_headers:
                 chunks.append("**The following Custom Formats are optional:**\n")
-            chunks.extend(optional)
+            chunks.extend(rendered["optional"])
         if not chunks:
             raise ValueError(
-                f"render_profile_cfs: no cf-groups list profile '{profile_name}'"
-                f" for {app}; check quality_profiles.include in cf-groups/*.json"
-                " (typo'd profile_name, or missing quality_profiles.include entry)"
+                f"render_profile_cfs: no custom formats found for {names} in {app};"
+                " check the profile name and quality_profiles.include in"
+                " cf-groups/*.json"
             )
         return "\n".join(chunks)
 
