@@ -116,6 +116,7 @@ Release groups (RlsGrps) flagged by the LQ, LQ (Release Title), and Generated Dy
 | SHD | Incorrect DV profile usage and incompatible file containers (.ts). | [#2023](https://github.com/TRaSH-Guides/Guides/pull/2023) |
 | ShieldBearer | Encodes. The group does not say when it uses a different language. | [#1911](https://github.com/TRaSH-Guides/Guides/pull/1911) |
 | STUTTERSHIT | Re-encoded releases from a RARBG group. | - |
+| SumVision | Generated Dynamic HDR (Dolby Vision metadata generated from HDR10+ metadata). | [#2906](https://github.com/TRaSH-Guides/Guides/pull/2906) |
 | SUNSCREEN | CAM releases labeled as WEB-DL, with ads and watermarks. | [#2206](https://github.com/TRaSH-Guides/Guides/pull/2206) |
 | SWTYBLZ | Quality issues and associated with RARBG. | [#1967](https://github.com/TRaSH-Guides/Guides/pull/1967) |
 | SyncUP | Low-quality pre-releases (TS, CAM, or mislabeled as WEB-DL). | [#2801](https://github.com/TRaSH-Guides/Guides/pull/2801) |
@@ -297,6 +298,7 @@ A group in more than one custom format appears in more than one tab. Radarr and 
     | Flights | Most releases have Generated Dynamic HDR (fake DV/HDR10+). | [#2429](https://github.com/TRaSH-Guides/Guides/pull/2429) |
     | GuyZo | Fake 2160p releases and Generated Dynamic HDR. | [#2653](https://github.com/TRaSH-Guides/Guides/pull/2653) |
     | SasukeducK | Generated Dynamic HDR, non-retail audio, and pre-retail releases. | [#1832](https://github.com/TRaSH-Guides/Guides/pull/1832) |
+    | SumVision | Generated Dynamic HDR (Dolby Vision metadata generated from HDR10+ metadata). | [#2906](https://github.com/TRaSH-Guides/Guides/pull/2906) |
     | tarunk9c | Generated Dynamic HDR (non-retail DV and HDR10+ layers made with DaVinci Resolve). | [#1644](https://github.com/TRaSH-Guides/Guides/pull/1644) |
     | VD0N | Generated Dynamic HDR. | [#2325](https://github.com/TRaSH-Guides/Guides/pull/2325) |
     | VECTOR | Generated Dynamic HDR (user-generated dynamic HDR metadata made with DaVinci Resolve). | [#2023](https://github.com/TRaSH-Guides/Guides/pull/2023) |
