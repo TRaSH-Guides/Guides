@@ -1,7 +1,7 @@
 {
   "name": "[Optional] Accessibility",
   "trash_id": "bc3c13e52f2971319bc1748ffa3d1078",
-  "trash_description": "Optional Custom Formats: be sure to read the individual descriptions in the guide before adding all of them.",
+  "trash_description": "Blocks releases with Audio Description (AD) or sign language (ASL, BASL, BSL).<br><br>Enable these Custom Formats at their default scores to block these releases.<br>If you need these accessibility versions, give them a positive score.",
   "custom_formats": [
     {
       "name": "WiTH AD",
