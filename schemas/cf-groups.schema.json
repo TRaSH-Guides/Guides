@@ -14,6 +14,11 @@
       "type": "string",
       "minLength": 1
     },
+    "info": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional markdown narrative rendered above this group's CF table by the render_profile_cfs macro (e.g. usage guidance)."
+    },
     "default": {
       "type": "string",
       "enum": ["true", "false"]
