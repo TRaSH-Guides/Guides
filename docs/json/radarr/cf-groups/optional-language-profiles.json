@@ -52,11 +52,6 @@
             "name": "Not German, Japanese, Korean, Chinese or English",
             "trash_id": "9a8f58fae5df94783c214c0ed63f589c",
             "required": false
-        },
-        {
-            "name": "Wrong Language",
-            "trash_id": "2051402ee9ca81162017d98cbe1dff2c",
-            "required": false
         }
     ],
     "quality_profiles": {

@@ -138,7 +138,6 @@ We've made 3 guides related to this.
 | [Not German or English](#not-german-or-english)                                                    |                          |
 | [Not German, Japanese or English](#not-german-japanese-or-english)                                 |                          |
 | [Not German, Japanese, Korean, Chinese or English](#not-german-japanese-korean-chinese-or-english) |                          |
-| [Wrong Language](#wrong-language)                                                                  |                          |
 
 ---
 
@@ -2777,22 +2776,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/not-german-japanese-korean-chinese-or-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Wrong Language
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/wrong-language.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/wrong-language.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
