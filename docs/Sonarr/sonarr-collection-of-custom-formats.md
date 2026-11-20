@@ -153,7 +153,6 @@ Special thanks to everyone who has helped in the creation and testing of these C
 | [Not German or English](#not-german-or-english)                                                    |                          |
 | [Not German, Japanese or English](#not-german-japanese-or-english)                                 |                          |
 | [Not German, Japanese, Korean, Chinese or English](#not-german-japanese-korean-chinese-or-english) |                          |
-| [Wrong Language](#wrong-language)                                                                  |                          |
 
 ---
 
@@ -2916,22 +2915,6 @@ Special thanks to everyone who has helped in the creation and testing of these C
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/not-german-japanese-korean-chinese-or-english.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Wrong Language
-
-??? question "Description - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/wrong-language.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/wrong-language.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
