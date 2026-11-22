@@ -1,3 +1,12 @@
+# 2026-11-22 05:38
+- [feat(starr): Deprecated the `Wrong Language` CF since it duplicates `Language: Not Original`](https://github.com/TRaSH-Guides/Guides/pull/2945)
+- [feat(guide-sync): Improve the description of the optional Accessibility Group](https://github.com/TRaSH-Guides/Guides/pull/2944)
+- [feat(radarr): Added RlsGrp `FIEND` to `WEB Tier 03`](https://github.com/TRaSH-Guides/Guides/pull/2941)
+- [feat(guide): Added a missing RlsGrp to the public Banned RlsGrps list](https://github.com/TRaSH-Guides/Guides/pull/2940)
+- [feat(radarr): Add SoLaR to HD and UHD Bluray Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2942)
+- [feat(guide-sync): Add DV (w/o HDR fallback) to Sonarr remux profiles](https://github.com/TRaSH-Guides/Guides/pull/2939)
+- [fix(hardlinks): Correct the fclones commands and the jdupes hash database note](https://github.com/TRaSH-Guides/Guides/pull/2931)
+
 # 2026-11-15 05:24
 - [feat(starr-german): Move florix to web tier 03](https://github.com/TRaSH-Guides/Guides/pull/2935)
 
