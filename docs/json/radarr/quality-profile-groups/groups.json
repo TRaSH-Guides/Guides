@@ -99,8 +99,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vo-hd-remux-web": {
@@ -133,8 +132,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vo-uhd-bluray-web": {
@@ -172,8 +170,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vo-uhd-remux-web": {
@@ -206,8 +203,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vf-hd-bluray-web": {
@@ -239,8 +235,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vf-hd-remux-web": {
@@ -273,8 +268,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vf-uhd-bluray-web": {
@@ -312,8 +306,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vf-uhd-remux-web": {
@@ -346,8 +339,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-vostfr-hd-bluray-web": {
@@ -379,8 +371,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-vostfr-hd-remux-web": {
@@ -413,8 +404,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-vostfr-uhd-bluray-web": {
@@ -452,8 +442,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-vostfr-uhd-remux-web": {
@@ -486,8 +475,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       }
     }

@@ -79,8 +79,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vo-bluray-web-2160p": {
@@ -113,8 +112,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vf-bluray-web-1080p": {
@@ -147,8 +145,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-multi-vf-bluray-web-2160p": {
@@ -181,8 +178,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-vostfr-bluray-web-1080p": {
@@ -215,8 +211,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       },
       "french-vostfr-bluray-web-2160p": {
@@ -249,8 +244,7 @@
           "web-tier-01",
           "web-tier-02",
           "web-tier-03",
-          "x265-hd",
-          "x265-no-hdrdv"
+          "x265-hd"
         ]
       }
     }
