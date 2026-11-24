@@ -1,0 +1,221 @@
+name: Media Player Test Report
+description: Add your test results for a media player to the Tested Media Players table.
+title: "[Media Player] "
+labels: ["Type: Media Player Report"]
+body:
+  - type: markdown
+    attributes:
+      value: "Add your results to the [Tested Media Players](https://trash-guides.info/Plex/tested-media-players/) table.\n\n1. Post your test and screenshots in the [suggestions channel](https://discord.com/channels/492590071455940612/1021029470389403818) of the TRaSH Guides Discord, with the test media players tag.\n2. Fill in this form. It needs the first three fields and at least one ✅ Yes or ❌ No result; the rest is optional.\n3. Submit. A pull request with your results opens automatically. To fix something later, edit this issue."
+  - type: input
+    id: device
+    attributes:
+      label: "Device"
+      description: "The hardware you tested on, for example `SHIELD Android TV (2019) (Pro)`. For an existing row, copy its spelling from the table."
+    validations:
+      required: true
+  - type: input
+    id: player
+    attributes:
+      label: "Player/Product"
+      description: "The app you played with, for example `Plex for Android (TV)` or `Infuse`. For a Kodi add-on, write `Kodi (PM4K)`."
+    validations:
+      required: true
+  - type: input
+    id: discord_thread
+    attributes:
+      label: "Discord thread"
+      description: "The link to your post in the suggestions channel."
+      placeholder: "https://discord.com/channels/..."
+    validations:
+      required: true
+  - type: input
+    id: device_comment
+    attributes:
+      label: "Device note"
+      description: "Optional. Shown when someone hovers the device name, for example the firmware version."
+  - type: input
+    id: player_comment
+    attributes:
+      label: "Player/Product note"
+      description: "Optional. Shown when someone hovers the app name, for example the app version or a setting you changed."
+  - type: markdown
+    attributes:
+      value: "## Results\n\nLeave a format on **Not tested** if you didn't test it. Hover a column name on the [table](https://trash-guides.info/Plex/tested-media-players/) to see what that format is."
+  - type: markdown
+    attributes:
+      value: "### Dolby Vision and HDR"
+  - type: dropdown
+    id: dv_p5
+    attributes:
+      label: "DV P5"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: dv_p7
+    attributes:
+      label: "DV P7"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: dv_p8
+    attributes:
+      label: "DV P8"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: fel
+    attributes:
+      label: "FEL"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: mel
+    attributes:
+      label: "MEL"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: hdr10
+    attributes:
+      label: "HDR10"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: hdr10_plus
+    attributes:
+      label: "HDR10+"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: textarea
+    id: hdr_notes
+    attributes:
+      label: "Dolby Vision and HDR notes"
+      description: "Optional. Type a note after a format's name and it becomes the hover text on that result. Leave the other lines as they are."
+      value: "DV P5: \nDV P7: \nDV P8: \nFEL: \nMEL: \nHDR10: \nHDR10+: \n"
+      render: text
+  - type: markdown
+    attributes:
+      value: "### Audio"
+  - type: dropdown
+    id: truehd_atmos
+    attributes:
+      label: "TrueHD ATMOS"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: dts_x
+    attributes:
+      label: "DTS X"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: dd_plus_atmos
+    attributes:
+      label: "DD+ ATMOS"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: truehd
+    attributes:
+      label: "TrueHD"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: dts_hd_ma
+    attributes:
+      label: "DTS-HD MA"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: flac_pcm
+    attributes:
+      label: "FLAC/PCM"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: dd_plus_eac3
+    attributes:
+      label: "DD+/E-AC3"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: dts
+    attributes:
+      label: "DTS"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: aac
+    attributes:
+      label: "AAC"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: dd_ac3
+    attributes:
+      label: "DD/AC3"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: textarea
+    id: audio_notes
+    attributes:
+      label: "Audio notes"
+      description: "Optional. Type a note after a format's name and it becomes the hover text on that result. Leave the other lines as they are."
+      value: "TrueHD ATMOS: \nDTS X: \nDD+ ATMOS: \nTrueHD: \nDTS-HD MA: \nFLAC/PCM: \nDD+/E-AC3: \nDTS: \nAAC: \nDD/AC3: \n"
+      render: text
+  - type: markdown
+    attributes:
+      value: "### Video and subtitles"
+  - type: dropdown
+    id: hi10
+    attributes:
+      label: "Hi10"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: ass_ssa
+    attributes:
+      label: "ASS/SSA"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: dropdown
+    id: pgs
+    attributes:
+      label: "PGS"
+      options: ["Not tested", "✅ Yes", "❌ No"]
+      default: 0
+  - type: textarea
+    id: video_notes
+    attributes:
+      label: "Video and subtitles notes"
+      description: "Optional. Type a note after a format's name and it becomes the hover text on that result. Leave the other lines as they are."
+      value: "Hi10: \nASS/SSA: \nPGS: \n"
+      render: text
+  - type: markdown
+    attributes:
+      value: "## Credit"
+  - type: input
+    id: tested_by
+    attributes:
+      label: "Tested by"
+      description: "Optional. The name to credit, for example your Discord name. Blank uses your GitHub name."
+  - type: input
+    id: test_date
+    attributes:
+      label: "Date of test"
+      description: "Optional. Blank uses the month you open this issue, in UTC."
+      placeholder: "November 2026"
+  - type: input
+    id: tv_avr
+    attributes:
+      label: "TV / AVR used"
+      description: "Optional. Results like Dolby Vision only show if the TV supports them."
+      placeholder: "LG C2 + Denon X3800H"
+  - type: checkboxes
+    id: ai-disclosure
+    attributes:
+      label: AI disclosure
+      description: Check this box if AI was used to create this issue.
+      options:
+        - label: This issue was created with AI assistance.
+          required: false

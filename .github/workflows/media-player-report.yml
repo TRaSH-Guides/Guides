@@ -1,0 +1,197 @@
+# Maintain: Media Player Report - turns a Media Player Test Report issue into a pull request that adds its results to the Tested Media Players table.
+# Triggers: report issue opened, edited, reopened or closed; push to master changing the table (refreshes every open labelled report); manual dispatch.
+name: "Maintain: Media Player Report"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
+
+on:
+  issues:
+    types: [opened, edited, reopened, closed]
+  push:
+    branches: [master]
+    paths:
+      - docs/Plex/tested-media-players.md
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue number to rebuild. Blank rebuilds every open report."
+        required: false
+        type: string
+
+permissions: {}
+
+env:
+  LABEL: "Type: Media Player Report"
+  BRANCH_PREFIX: feat/plex-media-player-report-issue-
+
+jobs:
+  list:
+    if: >-
+      github.event_name != 'issues' ||
+      (github.event.issue.state == 'open' && contains(github.event.issue.body, '### Discord thread'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: read
+    outputs:
+      issues: ${{ steps.list.outputs.issues }}
+    steps:
+      - name: List the reports to build
+        id: list
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number || inputs.issue }}
+        run: |
+          if [[ -z "$NUMBER" ]]; then
+            issues=$(gh issue list --label "$LABEL" --state open --limit 256 --json number --jq 'map(.number)')
+            [[ $(jq length <<< "$issues") -lt 256 ]] || echo "::warning::There are 256 or more open reports; only 256 are refreshed."
+          elif [[ "$NUMBER" =~ ^[0-9]+$ ]]; then
+            issues="[$NUMBER]"
+          else
+            echo "::error::The issue must be a number." && exit 1
+          fi
+          echo "issues=$issues" >> "$GITHUB_OUTPUT"
+
+  close:
+    if: github.event.action == 'closed' && contains(github.event.issue.body, '### Discord thread')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.event.issue.number }}
+      cancel-in-progress: true
+    steps:
+      - name: Close the report's pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          branch="$BRANCH_PREFIX$ISSUE"
+          pr=$(gh pr list --head "$branch" --state open --json number,isCrossRepository --jq 'map(select(.isCrossRepository | not)) | .[0].number // empty')
+          [[ -n "$pr" ]] || exit 0
+          gh pr close "$pr" --comment "Closed because #$ISSUE was closed."
+          gh api --method DELETE "repos/$GH_REPO/git/refs/heads/$branch"
+
+  report:
+    needs: list
+    if: needs.list.outputs.issues != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: write
+      contents: write
+      issues: write
+      pull-requests: write
+    strategy:
+      fail-fast: false
+      matrix:
+        issue: ${{ fromJSON(needs.list.outputs.issues) }}
+    concurrency:
+      group: ${{ github.workflow }}-${{ matrix.issue }}
+      cancel-in-progress: true
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      ISSUE: ${{ matrix.issue }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: master
+          persist-credentials: false
+
+      - name: Setup python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.x"
+
+      - name: Add the report to the table
+        id: apply
+        run: |
+          gh issue view "$ISSUE" --json body,author,createdAt,state > "$RUNNER_TEMP/issue.json"
+          if [[ $(jq '.state == "OPEN" and (.body // "" | contains("### Discord thread"))' "$RUNNER_TEMP/issue.json") != true ]]; then
+            echo "::warning::Issue $ISSUE isn't an open media player report, so there's nothing to build."
+            echo "status=skipped" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          jq -r .body "$RUNNER_TEMP/issue.json" > "$RUNNER_TEMP/body.md"
+          author=$(jq -r .author.login "$RUNNER_TEMP/issue.json")
+          created=$(jq -r .createdAt "$RUNNER_TEMP/issue.json")
+          if ! python scripts/media-player-report.py apply docs/Plex/tested-media-players.md --body "$RUNNER_TEMP/body.md" \
+            --issue "$ISSUE" --author "$author" --created "$created" --repo "$GITHUB_REPOSITORY" > "$RUNNER_TEMP/result.json"; then
+            cat "$RUNNER_TEMP/result.json"
+            exit 1
+          fi
+          delimiter="ghadelimiter_$(openssl rand -hex 16)"
+          {
+            echo "status=$(jq -r .status "$RUNNER_TEMP/result.json")"
+            echo "title=$(jq -r '.title // ""' "$RUNNER_TEMP/result.json")"
+            echo "summary<<$delimiter"
+            jq -r .summary "$RUNNER_TEMP/result.json"
+            echo "$delimiter"
+          } >> "$GITHUB_OUTPUT"
+
+      # The form only applies its label once the label exists
+      - name: Label the issue
+        if: ${{ !cancelled() && steps.apply.outputs.status != 'skipped' }}
+        run: |
+          gh label create "$LABEL" --color 0e8a16 --description "Results for the Tested Media Players table" 2>/dev/null || true
+          gh issue edit "$ISSUE" --add-label "$LABEL"
+
+      - name: Check the table
+        if: steps.apply.outputs.status == 'changed'
+        run: python scripts/media-player-report.py check docs/Plex/tested-media-players.md
+
+      # With nothing to add, this closes the report's pull request if it has one
+      - name: Open or update the pull request
+        id: pr
+        if: steps.apply.outputs.status == 'changed' || steps.apply.outputs.status == 'unchanged'
+        uses: peter-evans/create-pull-request@3ffccacd46053766916f087ce41d627c0b8cf2d1 # v8.1.3
+        with:
+          branch: ${{ env.BRANCH_PREFIX }}${{ matrix.issue }}
+          title: ${{ steps.apply.outputs.title }}
+          commit-message: ${{ steps.apply.outputs.title }}
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          add-paths: docs/Plex/tested-media-players.md
+          delete-branch: true
+          body: |
+            ${{ steps.apply.outputs.summary }}
+
+            To change these results, edit #${{ matrix.issue }}. This branch is rebuilt from the issue whenever the issue or the table changes, so commits pushed to it are replaced. To turn the report down, close #${{ matrix.issue }}.
+
+            Closes #${{ matrix.issue }}
+
+      # Pull requests opened with GITHUB_TOKEN start no workflows, but a dispatch does
+      - name: Run pre-commit on the pull request
+        if: steps.pr.outputs.pull-request-operation == 'created' || steps.pr.outputs.pull-request-operation == 'updated'
+        run: gh workflow run pre-commit.yml --ref "$BRANCH_PREFIX$ISSUE"
+
+      - name: Comment on the issue
+        if: ${{ !cancelled() && steps.apply.outputs.status != 'skipped' }}
+        env:
+          STATUS: ${{ job.status == 'failure' && 'failed' || steps.apply.outputs.status }}
+          SUMMARY: ${{ steps.apply.outputs.summary }}
+          PR: ${{ steps.pr.outputs.pull-request-number }}
+          OPERATION: ${{ steps.pr.outputs.pull-request-operation }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          marker="<!-- media-player-report -->"
+          case "$STATUS" in
+            changed) intro="Thanks for testing! #$PR adds your results to the table once a maintainer merges it. To change something, edit this issue and the pull request updates." ;;
+            unchanged) intro="There's nothing new to add to the table." ;;
+            in-table) intro="Your results are in the table. Thanks for testing!" ;;
+            invalid) intro="Your report needs a fix before it can be added. Edit this issue to fix it. Until then, any pull request for this report keeps its earlier results." ;;
+            *) intro="Something went wrong while adding this report. A maintainer can check the [workflow run]($RUN)." SUMMARY="" ;;
+          esac
+          [[ "$OPERATION" == closed ]] && intro="$intro The pull request for this report is closed."
+          printf '%s\n\n%s\n\n%s\n' "$marker" "$intro" "$SUMMARY" > "$RUNNER_TEMP/comment.md"
+          ids=$(gh api --paginate "repos/$GH_REPO/issues/$ISSUE/comments" \
+            --jq ".[] | select(.user.login == \"github-actions[bot]\" and (.body | startswith(\"$marker\"))) | .id")
+          if [[ -n "$ids" ]]; then
+            gh api --method PATCH "repos/$GH_REPO/issues/comments/${ids%%$'\n'*}" -F "body=@$RUNNER_TEMP/comment.md" > /dev/null
+          else
+            gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/comment.md"
+          fi

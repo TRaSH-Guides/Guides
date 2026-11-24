@@ -6,6 +6,8 @@ We hope this Excel sheet will be helpful for everyone looking for a reliable Med
 
 Do you see a missing Player/Product? Are you able to provide the needed info? Please join [TRaSH Guides Discord](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
+After posting your test on Discord, you can add your results to the table with the [Media Player Test Report](https://github.com/TRaSH-Guides/Guides/issues/new?template=media-player-test-report.yml){:target="_blank" rel="noopener noreferrer"} form. It opens a pull request for the team to review.
+
 ??? question "How can I provide info on a missing player? What do I need to provide? - [Click to show/hide]"
 
     - Currently, it's only possible to provide info if the playback is seen in Tautulli.

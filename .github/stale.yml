@@ -6,6 +6,7 @@ daysUntilClose: 10
 exemptLabels:
   - pinned
   - security
+  - "Type: Media Player Report"
 # Label to use when marking an issue as stale
 staleLabel: stale
 # Comment to post when marking an issue as stale. Set to `false` to disable
