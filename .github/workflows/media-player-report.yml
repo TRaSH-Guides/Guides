@@ -160,7 +160,7 @@ jobs:
           body: |
             ${{ steps.apply.outputs.summary }}
 
-            To change these results, edit #${{ matrix.issue }}. This branch is rebuilt from the issue whenever the issue or the table changes, so commits pushed to it are replaced. To turn the report down, close #${{ matrix.issue }}.
+            To change these results, edit #${{ matrix.issue }}. This branch is rebuilt from the issue whenever the issue or the table changes, so commits pushed to it are replaced. To reject the report, close #${{ matrix.issue }}.
 
             Closes #${{ matrix.issue }}
 
