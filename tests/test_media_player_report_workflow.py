@@ -103,6 +103,9 @@ class WorkflowStep(unittest.TestCase):
 
 
 class ListStep(WorkflowStep):
+    def test_a_report_is_recognised_by_the_label_the_workflow_adds(self):
+        self.assertIn(f"contains(github.event.issue.labels.*.name, '{WORKFLOW['env']['LABEL']}')", WORKFLOW["jobs"]["list"]["if"])
+
     def test_a_dispatched_number_is_built_and_anything_else_refused(self):
         self.assertEqual(self.run_step("list", "List the reports to build", NUMBER="42").returncode, 0)
         self.assertEqual(self.outputs(), {"issues": "[42]"})
@@ -138,8 +141,8 @@ class ApplyStep(WorkflowStep):
         })
         self.assertIn("\n| Test Box[^report-7-tested] | Test Player | :white_check_mark: |", self.table.read_text(encoding="utf-8"))
 
-    def test_a_closed_issue_or_another_kind_of_issue_is_skipped(self):
-        for changes in ({"state": "CLOSED"}, {"body": "How do I set up Plex?"}, {"body": None}):
+    def test_another_kind_of_issue_is_skipped(self):
+        for changes in ({"body": "How do I set up Plex?"}, {"body": None}):
             with self.subTest(changes):
                 result = self.apply(**changes)
                 self.assertEqual((result.returncode, self.outputs()), (0, {"status": "skipped"}))
@@ -151,6 +154,27 @@ class ApplyStep(WorkflowStep):
         result = self.apply()
         self.assertEqual(result.returncode, 1)
         self.assertTrue(result.stdout.startswith("::error file=docs/Plex/tested-media-players.md::the columns are "), result.stdout)
+
+
+    def test_closing_a_report_closes_its_own_pull_request_only(self):
+        listed = (
+            "pr list --head feat/plex-media-player-report-issue-7 --state open --json number,isCrossRepository "
+            "--jq map(select(.isCrossRepository | not)) | .[0].number // empty"
+        )
+        for prs, expected in (
+            ([{"number": 321, "isCrossRepository": False}], [
+                listed, "pr close 321 --comment Closed because #7 was closed.",
+                "api --method DELETE repos/TRaSH-Guides/Guides/git/refs/heads/feat/plex-media-player-report-issue-7",
+            ]),
+            ([{"number": 999, "isCrossRepository": True}], [listed]),
+            ([], [listed]),
+        ):
+            with self.subTest(prs):
+                self.answer("prs", prs)
+                result = self.apply(state="CLOSED")
+                self.assertEqual((result.returncode, result.stdout, self.outputs()), (0, "", {"status": "skipped"}))
+                self.assertEqual(self.calls(), ["issue view 7 --json body,author,createdAt,state", *expected])
+                self.assertEqual(self.table.read_text(encoding="utf-8"), TABLE)
 
 
 class CommentStep(WorkflowStep):
@@ -187,26 +211,6 @@ class CommentStep(WorkflowStep):
         self.assertEqual(self.run_step("report", "Comment on the issue", STATUS="in-table", SUMMARY="", PR="", OPERATION="", RUN="").returncode, 0)
         posted = [call for call in self.calls() if not call.startswith("api --paginate")]
         self.assertEqual(posted, [f"issue comment 7 --body-file {self.dir / 'comment.md'}"])
-
-
-class CloseJob(WorkflowStep):
-    def test_closing_a_report_closes_its_own_pull_request_only(self):
-        listed = (
-            "pr list --head feat/plex-media-player-report-issue-7 --state open --json number,isCrossRepository "
-            "--jq map(select(.isCrossRepository | not)) | .[0].number // empty"
-        )
-        for prs, expected in (
-            ([{"number": 321, "isCrossRepository": False}], [
-                listed, "pr close 321 --comment Closed because #7 was closed.",
-                "api --method DELETE repos/TRaSH-Guides/Guides/git/refs/heads/feat/plex-media-player-report-issue-7",
-            ]),
-            ([{"number": 999, "isCrossRepository": True}], [listed]),
-            ([], [listed]),
-        ):
-            with self.subTest(prs):
-                self.answer("prs", prs)
-                self.assertEqual(self.run_step("close", "Close the report's pull request").returncode, 0)
-                self.assertEqual(self.calls(), expected)
 
 
 if __name__ == "__main__":

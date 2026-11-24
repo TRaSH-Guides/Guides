@@ -25,9 +25,11 @@ env:
 
 jobs:
   list:
+    # The label must match env.LABEL: a report keeps it after an edit removes the form's headings
     if: >-
       github.event_name != 'issues' ||
-      (github.event.issue.state == 'open' && contains(github.event.issue.body, '### Discord thread'))
+      contains(github.event.issue.body, '### Discord thread') ||
+      contains(github.event.issue.labels.*.name, 'Type: Media Player Report')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -51,29 +53,6 @@ jobs:
             echo "::error::The issue must be a number." && exit 1
           fi
           echo "issues=$issues" >> "$GITHUB_OUTPUT"
-
-  close:
-    if: github.event.action == 'closed' && contains(github.event.issue.body, '### Discord thread')
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    permissions:
-      contents: write
-      pull-requests: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.event.issue.number }}
-      cancel-in-progress: true
-    steps:
-      - name: Close the report's pull request
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          ISSUE: ${{ github.event.issue.number }}
-        run: |
-          branch="$BRANCH_PREFIX$ISSUE"
-          pr=$(gh pr list --head "$branch" --state open --json number,isCrossRepository --jq 'map(select(.isCrossRepository | not)) | .[0].number // empty')
-          [[ -n "$pr" ]] || exit 0
-          gh pr close "$pr" --comment "Closed because #$ISSUE was closed."
-          gh api --method DELETE "repos/$GH_REPO/git/refs/heads/$branch"
 
   report:
     needs: list
@@ -108,11 +87,22 @@ jobs:
         with:
           python-version: "3.x"
 
+      # Closing is done here, not in its own job, so the last job queued for an issue acts on its final state
       - name: Add the report to the table
         id: apply
         run: |
           gh issue view "$ISSUE" --json body,author,createdAt,state > "$RUNNER_TEMP/issue.json"
-          if [[ $(jq '.state == "OPEN" and (.body // "" | contains("### Discord thread"))' "$RUNNER_TEMP/issue.json") != true ]]; then
+          if [[ $(jq -r .state "$RUNNER_TEMP/issue.json") != OPEN ]]; then
+            echo "status=skipped" >> "$GITHUB_OUTPUT"
+            branch="$BRANCH_PREFIX$ISSUE"
+            pr=$(gh pr list --head "$branch" --state open --json number,isCrossRepository --jq 'map(select(.isCrossRepository | not)) | .[0].number // empty')
+            if [[ -n "$pr" ]]; then
+              gh pr close "$pr" --comment "Closed because #$ISSUE was closed."
+              gh api --method DELETE "repos/$GH_REPO/git/refs/heads/$branch"
+            fi
+            exit 0
+          fi
+          if [[ $(jq '.body // "" | contains("### Discord thread")' "$RUNNER_TEMP/issue.json") != true ]]; then
             echo "::warning::Issue $ISSUE isn't an open media player report, so there's nothing to build."
             echo "status=skipped" >> "$GITHUB_OUTPUT"
             exit 0
