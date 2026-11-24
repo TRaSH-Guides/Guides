@@ -9,7 +9,7 @@ Some prefer high-quality audio (HD Audio), others high-quality video. Many prefe
 
 Here we will try to explain how to make the most of Custom Formats to help you set up your quality profiles for your personal preferences.
 
-- We've also created an Excel sheet with several tested [media player devices](/Plex/what-does-my-media-player-support){:target="\_blank" rel="noopener noreferrer"} to display what formats and capabilities they support, sourced from information provided by our community. We hope this Excel sheet will be a helpful resource for those looking for a reliable media player device and will help you choose the appropriate quality profile.
+- We've also created a table with several tested [media player devices](/Plex/what-does-my-media-player-support){:target="\_blank" rel="noopener noreferrer"} to display what formats and capabilities they support, sourced from information provided by our community. We hope this table will be a helpful resource for those looking for a reliable media player device and will help you choose the appropriate quality profile.
 
 ---
 

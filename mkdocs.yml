@@ -30,9 +30,11 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/github-permalink-style.css
+  - stylesheets/tested-media-players.css
 
 extra_javascript:
   - js/hide_announce.js
+  - js/tested-media-players.js
 
 markdown_extensions:
   - abbr # used for Tooltips
@@ -169,6 +171,7 @@ theme:
     - content.action.edit
     - content.action.view
     - content.tooltips
+    - content.footnote.tooltips
     - search.suggest
     - search.highlight
     - toc.follow

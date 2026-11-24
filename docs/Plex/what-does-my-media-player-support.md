@@ -1,8 +1,8 @@
 # What does my Media Player Support
 
-We've created an Excel sheet with several tested Media Player devices with info that our community has provided.
+We've created a table with several tested Media Player devices with info that our community has provided.
 
-We hope this Excel sheet will be helpful for everyone looking for a reliable Media Player device.
+We hope this table will be helpful for everyone looking for a reliable Media Player device.
 
 Do you see a missing Player/Product? Are you able to provide the needed info? Please join [TRaSH Guides Discord](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
@@ -14,11 +14,11 @@ Do you see a missing Player/Product? Are you able to provide the needed info? Pl
     - Player and Product info can be seen in Tautulli.
     - When doing a playback test for HDR formats provide screenshots of what Tautulli and your TV show, along with whatever other devices you have that show what formats are being used.
     - When doing an audio format test provide screenshots from Tautulli and your AVR.
-    - Provide this info in [TRaSH Guides Discord](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} in #request-suggestions with a title starting with: `Test Media Player <your tested device>`
+    - Provide this info in [TRaSH Guides Discord](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} in the [suggestions channel](https://discord.com/channels/492590071455940612/1021029470389403818){:target="_blank" rel="noopener noreferrer"} with the test media players tag and a title starting with: `Test Media Player <your tested device>`
 
-## What does the spreadsheet cover
+## What does the table cover
 
-This sheet will only cover Players/Products that can run the Plex client directly or indirectly (*Jellyfin/Emby isn't covered **yet** due to the lack of a proper Tautulli app and feedback/info from users*).
+This table will only cover Players/Products that can run the Plex client directly or indirectly (*Jellyfin/Emby isn't covered **yet** due to the lack of a proper Tautulli app and feedback/info from users*).
 
 !!! info "Jellyfin/Emby"
 
@@ -28,7 +28,7 @@ The following aspects are covered
 
 ### Does it support the most common HDR formats
 
-The sheet also has notes added for extra info
+The table also has notes added for extra info
 
 - Dolby Vision Profile 5 (*does not have an HDR10 baselayer, so it cannot fallback to HDR10*)
 - Dolby Vision Profile 7 (*DV + HDR10 baselayer, so it can fallback to HDR10*)
@@ -63,7 +63,7 @@ Overall, audio passthrough is the ideal way to send audio from your media server
 
 ## Link to tested Media Player Devices
 
-[Tested Media Players](https://docs.google.com/spreadsheets/d/15Wf_jy5WqOPShczFKQB28cCetBgAGcnA0mNOG-ePwDc/edit?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Tested Media Players](tested-media-players.md)
 
 !!! info "A lot of results have a note added that provides extra information, such as fallback HDR or audio formats, as well as other information that we've gathered from several sources."
 
@@ -71,7 +71,7 @@ Overall, audio passthrough is the ideal way to send audio from your media server
 
 ## What should I do next with this info
 
-The next thing to do is set up a proper quality profile with the info you gathered from this sheet.
+The next thing to do is set up a proper quality profile with the info you gathered from this table.
 
 ### Radarr
 

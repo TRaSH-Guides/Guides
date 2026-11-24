@@ -1,0 +1,139 @@
+/* Tested Media Players table: screen-height scroll box with sticky header, on screen only so print shows every row */
+@media screen {
+  .md-typeset .media-players .md-typeset__scrollwrap {
+    max-height: calc(100vh - 4rem);
+    overflow: auto;
+  }
+}
+/* Material's overflow: hidden on tables stops position: sticky */
+.md-typeset .media-players table:not([class]) {
+  overflow: visible;
+}
+.media-players tr {
+  background-color: var(--md-default-bg-color);
+}
+.md-typeset .media-players table:not([class]) th,
+.md-typeset .media-players table:not([class]) td {
+  padding: 6px;
+  background-color: inherit;
+}
+.md-typeset .media-players table:not([class]) th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  min-width: 0;
+  white-space: nowrap;
+  vertical-align: bottom;
+  box-shadow: inset 0 -1px 0 var(--md-typeset-table-color);
+}
+/* Keeps footnote numbers beside the result, with room for two digits */
+.md-typeset .media-players table:not([class]) td:nth-child(n + 3) {
+  min-width: 3em;
+  white-space: nowrap;
+}
+/* Footnote numbers take no width, so icons with and without one line up */
+.md-typeset .media-players table:not([class]) td:nth-child(n + 3) sup {
+  display: inline-block;
+  width: 0;
+}
+/* With several numbers, only the last takes no width, so they don't overlap */
+.md-typeset .media-players table:not([class]) td:nth-child(n + 3) sup:has(+ sup) {
+  width: auto;
+}
+/* Material's hover color is see-through, which shows cells scrolled under the sticky ones */
+.md-typeset .media-players table:not([class]) tbody tr:hover > td {
+  background-color: var(--md-default-bg-color);
+  background-image: linear-gradient(var(--md-typeset-table-color--light), var(--md-typeset-table-color--light));
+}
+/* Rows and columns clicked to keep your place, see tested-media-players.js */
+.media-players {
+  --media-players-selected: color-mix(in srgb, var(--md-accent-fg-color) 40%, transparent);
+  --media-players-device-width: 9rem;
+}
+/* An unsupported color-mix() in a custom property only fails where it's used, so this can't be a plain fallback */
+@supports not (color: color-mix(in srgb, red, blue)) {
+  .media-players {
+    --media-players-selected: var(--md-accent-fg-color--transparent);
+  }
+}
+.md-typeset .media-players table:not([class]) tbody tr,
+.md-typeset .media-players table:not([class]) th:nth-child(n + 3) {
+  cursor: pointer;
+}
+.md-typeset .media-players table:not([class]) tbody tr.media-players__row--selected > td,
+.md-typeset .media-players table:not([class]) thead th.media-players__column--selected,
+.md-typeset .media-players table:not([class]) tbody tr > td.media-players__column--selected {
+  background-color: var(--md-default-bg-color);
+  background-image: linear-gradient(var(--media-players-selected), var(--media-players-selected));
+}
+.md-typeset .media-players table:not([class]) tbody tr.media-players__row--selected > td.media-players__column--selected {
+  background-image: linear-gradient(var(--media-players-selected), var(--media-players-selected)), linear-gradient(var(--media-players-selected), var(--media-players-selected));
+}
+.md-typeset .media-players table:not([class]) tbody tr.media-players__row--selected > td:first-child {
+  box-shadow: inset 3px 0 0 var(--md-accent-fg-color);
+}
+
+/* Sticky Device column, plus Player/Product from tablet width; long words wrap so neither column grows */
+.md-typeset .media-players table:not([class]) :is(th, td):first-child {
+  position: sticky;
+  left: 0;
+  width: 6rem;
+  min-width: 6rem;
+}
+.md-typeset .media-players table:not([class]) :is(th, td):nth-child(-n + 2) {
+  overflow-wrap: anywhere;
+}
+.md-typeset .media-players table:not([class]) td:nth-child(-n + 2) {
+  z-index: 1;
+}
+.md-typeset .media-players table:not([class]) th:nth-child(-n + 2) {
+  z-index: 3;
+}
+@media screen and (min-width: 45em) {
+  .md-typeset .media-players table:not([class]) :is(th, td):first-child {
+    width: var(--media-players-device-width);
+    min-width: var(--media-players-device-width);
+  }
+  .md-typeset .media-players table:not([class]) :is(th, td):nth-child(2) {
+    position: sticky;
+    left: var(--media-players-device-width);
+    width: 7rem;
+    min-width: 7rem;
+  }
+}
+
+/* Expand and Open in new tab buttons, see tested-media-players.js */
+.md-typeset .media-players__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.5em;
+}
+@media print {
+  .md-typeset .media-players__actions {
+    display: none;
+  }
+}
+@media screen {
+  .media-players--expanded {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+    background-color: var(--md-default-bg-color);
+  }
+  .md-typeset .media-players--expanded .md-typeset__scrollwrap {
+    flex: 1;
+    align-self: stretch;
+    max-height: none;
+    margin: 0;
+    overscroll-behavior: contain;
+  }
+}
+/* Tooltips are appended to body, so lift them above the expanded table */
+body:has(.media-players--expanded) .md-tooltip2--active {
+  z-index: 11;
+}
