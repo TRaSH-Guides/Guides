@@ -1,0 +1,64 @@
+# Validate: Media Player Report - tests the report script and checks the Tested Media Players table is in the layout it writes.
+# Triggers: push to master or pull requests touching the table, the script, its tests, the report form or workflow, the stale settings or the CI requirements, or manual dispatch.
+name: "Validate: Media Player Report"
+run-name: "${{ github.workflow }} · ${{ github.event_name }}"
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - .github/workflows/media-player-report-validation.yml
+      - .github/ISSUE_TEMPLATE/media-player-test-report.yml
+      - .github/workflows/media-player-report.yml
+      - .github/stale.yml
+      - .github/requirements-ci.txt
+      - docs/Plex/tested-media-players.md
+      - scripts/media-player-report.py
+      - tests/test_media_player_report*.py
+  pull_request:
+    paths:
+      - .github/workflows/media-player-report-validation.yml
+      - .github/ISSUE_TEMPLATE/media-player-test-report.yml
+      - .github/workflows/media-player-report.yml
+      - .github/stale.yml
+      - .github/requirements-ci.txt
+      - docs/Plex/tested-media-players.md
+      - scripts/media-player-report.py
+      - tests/test_media_player_report*.py
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.x"
+          cache: pip
+          cache-dependency-path: .github/requirements-ci.txt
+
+      - name: Install test dependencies
+        run: pip install -r .github/requirements-ci.txt
+
+      - name: Test the report script
+        run: python -m unittest discover -s tests -p "test_media_player_report*.py"
+
+      # Skips only while the table page isn't on the branch yet
+      - name: Check the table layout
+        if: hashFiles('docs/Plex/tested-media-players.md') != ''
+        run: python scripts/media-player-report.py check docs/Plex/tested-media-players.md
