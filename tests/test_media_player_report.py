@@ -177,6 +177,7 @@ class NewRowTests(TableFile):
         self.assertEqual(result["summary"], "- Adds a row for **Beta Box** with **Plex for Beta**.\n- Adds DV P5 ✅, HDR10 ❌.")
         beta = "| Beta Box[^report-7-tested] | Plex for Beta | :white_check_mark:[^report-7-dv-p5] | | | | | :x:[^report-7-hdr10] |" + " |" * 14
         self.assertIn(f"{ALPHA_INFUSE}\n{beta}\n{GAMMA}\n", self.text())
+        self.assertEqual(self.text().count("| Beta Box"), 1)
         self.assertIn(
             "[^fallback]: Will fallback to HDR10\n"
             "[^report-7-tested]: Test Result Provided by: Some&#95;One<br>\n"
@@ -204,7 +205,7 @@ class NewRowTests(TableFile):
         result = self.apply(issue({"DV P5": "✅ Yes"}, Device="alpha bx"))
         self.assertIn("No row has this device yet, so this adds a new row. Did you mean **Alpha Box**?", result["summary"])
         self.table.write_text(TABLE)
-        result = self.apply(issue({"DV P5": "✅ Yes"}, **{"Device": "Alpha Box", "Player/Product": "infuse"}), number=8)
+        result = self.apply(issue({"DV P5": "✅ Yes"}, **{"Device": "Alpha Box", "Player/Product": "Infuze"}), number=8)
         self.assertIn("No row has this player/product yet, so this adds a new row. Did you mean **Infuse**?", result["summary"])
 
     def test_defaults_the_credit_to_the_author_and_issue_month(self):
@@ -245,9 +246,23 @@ class ExistingRowTests(TableFile):
 
     def test_removes_a_footnote_nothing_uses_any_more(self):
         self.apply(issue({"DTS X": "✅ Yes"}, **{"Device": "Zeta TV", "Player/Product": "Plex for Zeta"}))
+        zeta = row("Zeta TV[^zeta-tested][^report-7-tested]", "Plex for Zeta", OK, OK, OK, "", "", OK, f"{UNKNOWN}[^untested]", OK, OK)
+        self.assertIn(f"\n{zeta}\n", self.text())
         self.assertNotIn("zeta-dtsx", self.text())
         self.assertIn("[^untested]: No result yet.\n", self.text())
         self.assertEqual(self.run_script("check", self.table), (0, ""))
+
+    def test_matches_names_that_differ_only_in_capitals_and_keeps_the_table_spelling(self):
+        result = self.apply(issue({"MEL": "❌ No"}, **{"Device": "gamma STICK", "Player/Product": "plex for android (tv)"}))
+        self.assertEqual(result["title"], "feat(plex): Add test results for Gamma Stick with Plex for Android (TV)")
+        self.assertEqual(result["summary"], "- Updates the row for **Gamma Stick** with **Plex for Android (TV)**.\n- Adds MEL ❌.")
+        gamma = row("Gamma Stick[^report-7-tested]", "Plex for Android (TV)", NO, NO, NO, "", NO, OK, f"{UNKNOWN}[^untested]", OK, OK, OK, OK, OK, OK, OK, NO)
+        self.assertIn(f"\n{gamma}\n", self.text())
+        self.assertEqual(self.text().count("| Gamma Stick"), 1)
+        self.table.write_text(TABLE)
+        result = self.apply(issue({"MEL": "❌ No"}, **{"Device": "alpha box", "Player/Product": "Kodi"}), number=8)
+        self.assertEqual(result["summary"], "- Adds a row for **Alpha Box** with **Kodi**.\n- Adds MEL ❌.")
+        self.assertIn(f"{ALPHA_INFUSE}\n| Alpha Box[^report-8-tested] | Kodi |", self.text())
 
     def test_changes_nothing_when_every_result_is_already_there(self):
         result = self.apply(issue({"DV P5": "✅ Yes"}, **{"Device": "Alpha Box", "Player/Product": "Infuse"}))

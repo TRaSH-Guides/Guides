@@ -256,13 +256,15 @@ def credit(fid, report, issue, repo):
 
 
 def apply(table, report, issue, repo):
-    """Add the report to the table. Returns (status, summary bullets)."""
-    device, player = report["Device"], report["Player/Product"]
+    """Add the report to the table, renaming its Device and Player/Product to the table's capitals. Returns (status, summary bullets)."""
     fid = f"report-{issue}-tested"
     if fid in table.defs:
         return "in-table", ["This report is already in the table."]
+    device = next((bare(r[0]) for r in table.rows if bare(r[0]).casefold() == report["Device"].casefold()), report["Device"])
+    row = next((r for r in table.rows if bare(r[0]) == device and bare(r[1]).casefold() == report["Player/Product"].casefold()), None)
+    player = bare(row[1]) if row else report["Player/Product"]
+    report["Device"], report["Player/Product"] = device, player
     new = {fid: credit(fid, report, issue, repo)}
-    row = next((r for r in table.rows if bare(r[0]) == device and bare(r[1]) == player), None)
     summary = [f"Updates the row for **{device}** with **{player}**."]
     if row is None:
         summary = [f"Adds a row for **{device}** with **{player}**.", *hints(table, device, player)]
