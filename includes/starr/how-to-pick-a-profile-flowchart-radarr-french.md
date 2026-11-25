@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-!!! abstract "Pick a [French] Radarr profile - decision flowchart"
+??? abstract "Pick a [French] Radarr profile - decision flowchart - [Click to show/hide]"
 
     French-only profile decision tree. Start by picking the audio variant
     (MULTi.VO / MULTi.VF / VOSTFR), then narrow on resolution + source.

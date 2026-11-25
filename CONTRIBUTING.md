@@ -493,9 +493,11 @@ The per-app decision charts (`includes/starr/_pick-a-profile-chart-{radarr,sonar
 - `_pick-a-profile-chart-radarr-german.md` / `_pick-a-profile-chart-sonarr-german.md` — German profiles only.
 - `_pick-a-profile-chart-radarr-french.md` / `_pick-a-profile-chart-sonarr-french.md` — French profiles only.
 
-Each chart has a wrapper include (`how-to-pick-a-profile-flowchart-*.md`) that adds the admonition + an "Open in full-size view" button. The standalone `docs/{Radarr,Sonarr}/pick-a-profile-flowchart*.md` pages render the same chart at full viewport width.
+Each chart has a wrapper include (`how-to-pick-a-profile-flowchart-*.md`) that adds a collapsed (`???`) admonition + an "Open in full-size view" button. The standalone `docs/{Radarr,Sonarr}/pick-a-profile-flowchart*.md` pages render the same chart at full viewport width.
 
 When you add or rename a quality profile, also update the matching chart so every leaf node remains a real profile.
+
+Material's Mermaid theme overrides `classDef` text colors, so wrap each decision and leaf label in an inline `<span style='color:...'>` (dark text on decision nodes, white on leaf nodes) to keep contrast in both light and dark mode. Avoid `font-weight:bold` in `classDef`: the label is measured before the style applies and the bold text overflows its box.
 
 ---
 

@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-!!! abstract "Pick a [German] Radarr profile - decision flowchart"
+??? abstract "Pick a [German] Radarr profile - decision flowchart - [Click to show/hide]"
 
     German-only profile decision tree. Live-action splits on resolution
     then source preference (encode vs Remux). Anime takes the single

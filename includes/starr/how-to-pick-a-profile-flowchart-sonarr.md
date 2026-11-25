@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-!!! abstract "Pick a Sonarr profile - decision flowchart"
+??? abstract "Pick a Sonarr profile - decision flowchart - [Click to show/hide]"
 
     Follow the branches that match your hardware, language preference, and
     storage budget. Every leaf node corresponds to a real quality profile
