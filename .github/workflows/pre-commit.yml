@@ -1,5 +1,5 @@
 # Lint: pre-commit - runs the repo's pre-commit hook suite.
-# Triggers: any pull request, or push to master.
+# Triggers: any pull request, push to master, or manual dispatch (the media player report workflow uses it for its pull requests).
 name: "Lint: pre-commit"
 run-name: "${{ github.workflow }} · ${{ github.event_name }}"
 
@@ -7,6 +7,7 @@ on:
   pull_request:
   push:
     branches: [master]
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
