@@ -11,12 +11,31 @@
       "remux-web-2160p": "76a5053bdb2d1e4a8f16a69a37d46c12",
       "remux-2160p-combined": "911df0e05a395c19d8b3efc76a7467c1",
       "remux-2160p-alternative": "361717d531db5a6002e0f547ace46551"
+    },
+    "profile_overrides": {
+      "web-1080p": {
+        "profile_name": "WEB-1080p",
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ]
+      },
+      "web-2160p": {
+        "profile_name": "WEB-2160p",
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      }
     }
   },
   {
     "name": "Anime",
     "profiles": {
       "anime-remux-1080p": "20e0fc959f1f1704bed501f23bdae76f"
+    },
+    "profile_overrides": {
+      "anime-remux-1080p": {
+        "profile_name": "[Anime] Remux-1080p"
+      }
     }
   },
   {
@@ -28,6 +47,206 @@
       "french-multi-vf-bluray-web-2160p": "68c8b82ad2b7ea1941fce71eb56421c3",
       "french-vostfr-bluray-web-1080p": "b34c968f58433a38e0e690d42a1dc37e",
       "french-vostfr-bluray-web-2160p": "d6252dce6af535107ed4b03e68052ae8"
+    },
+    "profile_overrides": {
+      "french-multi-vo-bluray-web-1080p": {
+        "profile_name": "[French MULTi.VO] HD Bluray + WEB (1080p)",
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ],
+        "documented_elsewhere": [
+          "av1",
+          "br-disk",
+          "extras",
+          "fastsub",
+          "french-auvio",
+          "french-hd-bluray-tier-01",
+          "french-lq",
+          "french-mycanal",
+          "french-salto",
+          "french-scene",
+          "french-vostfr",
+          "french-web-tier-01",
+          "french-web-tier-02",
+          "french-web-tier-03",
+          "language-not-french",
+          "language-not-original",
+          "language-original-plus-french",
+          "lq",
+          "lq-release-title",
+          "multi",
+          "web-scene",
+          "web-tier-01",
+          "web-tier-02",
+          "web-tier-03",
+          "x265-hd"
+        ]
+      },
+      "french-multi-vo-bluray-web-2160p": {
+        "profile_name": "[French MULTi.VO] UHD Bluray + WEB (2160p)",
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ],
+        "documented_elsewhere": [
+          "av1",
+          "br-disk",
+          "extras",
+          "fastsub",
+          "french-auvio",
+          "french-hd-bluray-tier-01",
+          "french-lq",
+          "french-mycanal",
+          "french-salto",
+          "french-scene",
+          "french-vostfr",
+          "french-web-tier-01",
+          "french-web-tier-02",
+          "french-web-tier-03",
+          "language-not-french",
+          "language-not-original",
+          "language-original-plus-french",
+          "lq",
+          "lq-release-title",
+          "multi",
+          "web-scene",
+          "web-tier-01",
+          "web-tier-02",
+          "web-tier-03",
+          "x265-hd"
+        ]
+      },
+      "french-multi-vf-bluray-web-1080p": {
+        "profile_name": "[French MULTi.VF] HD Bluray + WEB (1080p)",
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ],
+        "documented_elsewhere": [
+          "av1",
+          "br-disk",
+          "extras",
+          "fastsub",
+          "french-auvio",
+          "french-hd-bluray-tier-01",
+          "french-lq",
+          "french-mycanal",
+          "french-salto",
+          "french-scene",
+          "french-vostfr",
+          "french-web-tier-01",
+          "french-web-tier-02",
+          "french-web-tier-03",
+          "language-not-french",
+          "language-not-original",
+          "language-original-plus-french",
+          "lq",
+          "lq-release-title",
+          "multi",
+          "web-scene",
+          "web-tier-01",
+          "web-tier-02",
+          "web-tier-03",
+          "x265-hd"
+        ]
+      },
+      "french-multi-vf-bluray-web-2160p": {
+        "profile_name": "[French MULTi.VF] UHD Bluray + WEB (2160p)",
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ],
+        "documented_elsewhere": [
+          "av1",
+          "br-disk",
+          "extras",
+          "fastsub",
+          "french-auvio",
+          "french-hd-bluray-tier-01",
+          "french-lq",
+          "french-mycanal",
+          "french-salto",
+          "french-scene",
+          "french-vostfr",
+          "french-web-tier-01",
+          "french-web-tier-02",
+          "french-web-tier-03",
+          "language-not-french",
+          "language-not-original",
+          "language-original-plus-french",
+          "lq",
+          "lq-release-title",
+          "multi",
+          "web-scene",
+          "web-tier-01",
+          "web-tier-02",
+          "web-tier-03",
+          "x265-hd"
+        ]
+      },
+      "french-vostfr-bluray-web-1080p": {
+        "profile_name": "[French VOSTFR] HD Bluray + WEB (1080p)",
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ],
+        "documented_elsewhere": [
+          "av1",
+          "br-disk",
+          "extras",
+          "fastsub",
+          "french-auvio",
+          "french-hd-bluray-tier-01",
+          "french-lq",
+          "french-mycanal",
+          "french-salto",
+          "french-scene",
+          "french-vostfr",
+          "french-web-tier-01",
+          "french-web-tier-02",
+          "french-web-tier-03",
+          "language-not-french",
+          "language-not-original",
+          "language-original-plus-french",
+          "lq",
+          "lq-release-title",
+          "multi",
+          "web-scene",
+          "web-tier-01",
+          "web-tier-02",
+          "web-tier-03",
+          "x265-hd"
+        ]
+      },
+      "french-vostfr-bluray-web-2160p": {
+        "profile_name": "[French VOSTFR] UHD Bluray + WEB (2160p)",
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ],
+        "documented_elsewhere": [
+          "av1",
+          "br-disk",
+          "extras",
+          "fastsub",
+          "french-auvio",
+          "french-hd-bluray-tier-01",
+          "french-lq",
+          "french-mycanal",
+          "french-salto",
+          "french-scene",
+          "french-vostfr",
+          "french-web-tier-01",
+          "french-web-tier-02",
+          "french-web-tier-03",
+          "language-not-french",
+          "language-not-original",
+          "language-original-plus-french",
+          "lq",
+          "lq-release-title",
+          "multi",
+          "web-scene",
+          "web-tier-01",
+          "web-tier-02",
+          "web-tier-03",
+          "x265-hd"
+        ]
+      }
     }
   },
   {
@@ -39,6 +258,191 @@
       "german-uhd-bluray-web": "3b0fa37fddaaefc931b75f2889d4b4f5",
       "german-uhd-bluray-web-alternative": "7324309a7d1e10dc0dc2cea6c70ed852",
       "german-uhd-remux-web": "08cececf1840290f6fd490b7d79e8642"
+    },
+    "profile_overrides": {
+      "german-anime-hd-bluray-web": {
+        "profile_name": "[German] Anime HD Bluray + WEB",
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ],
+        "documented_elsewhere": [
+          "1080p",
+          "10bit",
+          "720p",
+          "abema",
+          "amzn",
+          "anime-dual-audio",
+          "anime-lq-groups",
+          "anime-raws",
+          "atv",
+          "atvp",
+          "av1",
+          "bglobal",
+          "bilibili",
+          "br-disk",
+          "cr",
+          "dsnp",
+          "extras",
+          "french-adn",
+          "french-vostfr",
+          "funi",
+          "german",
+          "german-1080p-booster",
+          "german-dl",
+          "german-dl-undefined",
+          "german-lq",
+          "german-lq-release-title",
+          "german-microsized",
+          "german-subbed",
+          "hbo",
+          "hmax",
+          "lq",
+          "lq-release-title",
+          "max",
+          "nf",
+          "no-rlsgroup",
+          "not-german-japanese-or-english",
+          "obfuscated",
+          "retags",
+          "uncensored",
+          "upscaled",
+          "v0",
+          "v1",
+          "v2",
+          "v3",
+          "v4",
+          "vrv",
+          "x265-hd"
+        ]
+      },
+      "german-hd-bluray-web": {
+        "profile_name": "[German] HD Bluray + WEB",
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ],
+        "documented_elsewhere": [
+          "1080p",
+          "720p",
+          "av1",
+          "br-disk",
+          "extras",
+          "german",
+          "german-1080p-booster",
+          "german-dl",
+          "german-dl-undefined",
+          "german-lq",
+          "german-lq-release-title",
+          "german-microsized",
+          "lq",
+          "lq-release-title",
+          "no-rlsgroup",
+          "not-german-or-english",
+          "obfuscated",
+          "retags",
+          "upscaled",
+          "x265-hd"
+        ]
+      },
+      "german-hd-remux-web": {
+        "profile_name": "[German] HD Remux + WEB",
+        "force_optional": [
+          "optional-golden-rule-hd"
+        ],
+        "documented_elsewhere": [
+          "1080p",
+          "720p",
+          "av1",
+          "br-disk",
+          "extras",
+          "german",
+          "german-1080p-booster",
+          "german-dl",
+          "german-dl-undefined",
+          "german-lq",
+          "german-lq-release-title",
+          "german-microsized",
+          "lq",
+          "lq-release-title",
+          "no-rlsgroup",
+          "not-german-or-english",
+          "obfuscated",
+          "retags",
+          "upscaled",
+          "x265-hd"
+        ]
+      },
+      "german-uhd-bluray-web": {
+        "profile_name": "[German] UHD Bluray + WEB",
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ],
+        "documented_elsewhere": [
+          "1080p",
+          "2160p",
+          "720p",
+          "av1",
+          "br-disk",
+          "extras",
+          "german",
+          "german-1080p-booster",
+          "german-2160p-booster",
+          "german-dl",
+          "german-dl-undefined",
+          "german-lq",
+          "german-lq-release-title",
+          "german-microsized",
+          "lq",
+          "lq-release-title",
+          "no-rlsgroup",
+          "not-german-or-english",
+          "obfuscated",
+          "retags",
+          "sdr",
+          "sdr-no-webdl",
+          "upscaled",
+          "x265-hd",
+          "x265-no-hdrdv"
+        ]
+      },
+      "german-uhd-bluray-web-alternative": {
+        "profile_name": "[German] UHD Bluray + WEB (Alternative)",
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ]
+      },
+      "german-uhd-remux-web": {
+        "profile_name": "[German] UHD Remux + WEB",
+        "force_optional": [
+          "optional-golden-rule-uhd"
+        ],
+        "documented_elsewhere": [
+          "1080p",
+          "2160p",
+          "720p",
+          "av1",
+          "br-disk",
+          "extras",
+          "german",
+          "german-1080p-booster",
+          "german-2160p-booster",
+          "german-dl",
+          "german-dl-undefined",
+          "german-lq",
+          "german-lq-release-title",
+          "german-microsized",
+          "lq",
+          "lq-release-title",
+          "no-rlsgroup",
+          "not-german-or-english",
+          "obfuscated",
+          "retags",
+          "sdr",
+          "sdr-no-webdl",
+          "upscaled",
+          "x265-hd",
+          "x265-no-hdrdv"
+        ]
+      }
     }
   },
   {
